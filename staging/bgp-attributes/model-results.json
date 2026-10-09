@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "presets": 17,
+  "byteTypeCases": 3072,
+  "knownTypes": 11,
+  "mountedBehavior": "Stub DOM validation/reset and inert text contract verified; no real browser layout verification in this test.",
+  "scope": "Declared type and FLAGS only; no protocol/packet/device execution."
+}

@@ -1,0 +1,1125 @@
+[
+  {
+    "id": "s3-g8-t0",
+    "batch": "10",
+    "title": "Multicast fundamentals",
+    "subtitle": "Separate receiver demand, ingress validation and downstream replication from actual delivery.",
+    "level": "Intermediate → Advanced",
+    "minutes": 55,
+    "definition": "IPv4 multicast identifies a receiver group rather than one destination host. A sender produces datagrams addressed to a multicast group, while interested receivers request reception locally. Routers can replicate a received datagram onto multiple selected downstream interfaces instead of requiring the sender to transmit a separate unicast copy to every receiver. The general IPv4 multicast destination range is 224.0.0.0 through 239.255.255.255. Group address choice, scope, source identity and receiver state all matter; simply assigning an address in that range does not create a functioning routed service.",
+    "purpose": "Use multicast when the application and network support distribution of the same information to multiple receivers and the operational cost is justified. The purpose of this lesson is to reason about one supplied router hop, not to promise efficiency for every workload. First identify the original source and receiver demand, then validate the incoming interface and outgoing choices. Keep control-plane membership and routing observations separate from evidence that a source actually transmits and an application consumes the intended content. That separation makes a failed receiver easier to diagnose without changing unrelated routing policy.",
+    "mental": "Draw a single incoming arrow into a router and two possible outgoing arrows. Label the incoming arrow with its actual interface, the expected interface toward the selected reverse-path target and the datagram TTL at this router. Label each outgoing arrow with supplied OIL membership, settled local receiver demand and downstream readiness. Only arrows whose declarations agree become hypothetical copies. The drawing does not cause a source to send, establish a PIM tree, install a kernel route or authorize an application. A green receiver label belongs to a different page from a packet capture.",
+    "components": [
+      "Source and group form different pieces of identity. This worksheet fixes the original source to 192.0.2.10. ASM uses demonstration group 239.1.1.1; SSM uses 232.1.1.1. ASM names a group that can receive from multiple sources under the applicable service and filtering policy, whereas SSM identifies the requested channel by both source and group. Documentation addresses and groups are teaching context, not automatically authorized production allocation.",
+      "Administrative scope and hop lifetime answer different questions. The example ASM group falls inside 239/8, the administratively scoped range. Scope boundaries require an explicit network design and enforcement; the address alone is not an access-control rule. TTL limits how many routed hops a datagram can traverse. The worksheet uses the TTL already present at this router, and requires it to be greater than one for this routed forwarding step.",
+      "Reverse Path Forwarding validates arrival against a selected reverse-path context. It is not an ordinary destination lookup for group G and is not the receiver return route. A supplied source-tree context points toward source 192.0.2.10; a supplied shared-tree context points toward RP 192.0.2.254. The worksheet takes the expected ingress as evidence supplied by the learner rather than deriving it from a unicast table or simulating the multicast routing information base.",
+      "An outgoing interface list, or OIL, describes potential replication interfaces. This fixed topology uses down-a and down-b, each serving local attached receivers. It requires the corresponding local settled demand and downstream readiness as well as OIL membership. A real transit interface can instead have downstream PIM demand; requiring a local host on every transit interface would be wrong. The worksheet deliberately avoids that topology and makes its local-receiver assumption explicit.",
+      "IGMP communicates receiver interest on an attached IPv4 LAN; PIM distributes multicast routing state between routers. Neither protocol is the application payload. A PIM neighbor can be present while a particular group lacks usable downstream state. A local membership record can be present while the source is silent. Switch IGMP snooping is another independent Layer 2 forwarding mechanism and is not modeled by this two-interface router worksheet.",
+      "Multicast delivery is not made reliable simply because replication is possible. The application chooses its transport and recovery behavior. UDP is common but multicast itself does not define a UDP port, acknowledgments or authentication. Receiver socket binding, host filtering, source transmission, policy boundaries and actual loss can all matter. The sourceReady and applicationReady controls are supplied prerequisites only and do not measure any of those systems.",
+      "Replication can save upstream bandwidth while increasing aggregate downstream work. A single received packet with two permitted downstream copies still consumes capacity on both downstream links. A route entry or membership line does not establish actual packet rate, hardware programming or a successful media session. Observe per-interface counters and the original receiver transaction in a controlled target context before concluding that the service is healthy."
+    ],
+    "mechanism": [
+      "Bound the exercise to one router, source, group, VRF and two attached receiver LANs. Record ASM or SSM explicitly. Select the supplied source or shared context before choosing the expected reverse-path ingress. SSM accepts only a source-tree context in this worksheet; an incompatible shared SSM selection is invalid input, not a silently repaired topology.",
+      "Declare whether the RPF route exists and which interface the datagram actually arrives on. A missing route or a different actual ingress fails the modeled RPF check. The expected interface must be up-a or up-b; the actual ingress can also name either downstream interface to expose a wrong-arrival case. No routing lookup is performed by the browser.",
+      "Read the TTL at this hop as an unsigned eight-bit integer. Zero and one are accepted boundary inputs but cannot pass the routed forwarding gate. Values from two through 255 pass that gate; a hypothetical forwarded copy would have TTL decremented by one. This limited check does not implement per-interface TTL thresholds, tunnel behavior or every multicast scope rule.",
+      "For each local downstream independently, require OIL membership, settled receiver demand and readiness. Combine those with successful RPF and the TTL gate to count hypothetical copies. A failing downstream does not automatically remove the other downstream copy. The model never sends a packet back onto its incoming interface and does not infer how a real routing protocol produced the OIL.",
+      "Finally record original source and receiver application readiness separately. Toggling either changes the scoped readiness conclusion without fabricating a packet or changing the hypothetical replication rules. On a prepared target, inspect multicast state, RPF and counters, then verify the original source/receiver exchange with actual evidence. Label a browser declaration as a declaration throughout the report."
+    ],
+    "flow": [
+      [
+        "Identify the channel",
+        "Fix source, group and supplied reverse-path context."
+      ],
+      [
+        "Validate ingress and TTL",
+        "Use declared RPF route/ingress and require TTL greater than one."
+      ],
+      [
+        "Evaluate each downstream",
+        "Combine supplied OIL, local demand and readiness independently."
+      ],
+      [
+        "Verify the original service",
+        "Observe source transmission and receiver behavior separately from the worksheet."
+      ]
+    ],
+    "comparison": [
+      [
+        "Unicast / multicast",
+        "One destination host / a group of interested receivers",
+        "Replication still requires usable forwarding state."
+      ],
+      [
+        "RPF / destination lookup",
+        "Validate the incoming reverse-path context / choose a unicast destination next hop",
+        "Do not look up G as an ordinary host route to derive RPF."
+      ],
+      [
+        "ASM / SSM",
+        "Group service / source-and-group channel",
+        "SSM requires an identified source."
+      ],
+      [
+        "Membership / source traffic",
+        "Receiver interest / emitted application datagrams",
+        "Interest cannot create a sender."
+      ],
+      [
+        "OIL / actual copies",
+        "Declared outgoing set / measured forwarding",
+        "A state line is not a packet capture."
+      ]
+    ],
+    "example": "In the baseline, source 192.0.2.10 and ASM group 239.1.1.1 arrive on up-a, matching the supplied expected ingress. TTL is eight. Both downstreams have OIL membership, local demand and readiness, so the worksheet declares two hypothetical copies. Removing only oilB leaves one. Changing the actual ingress to up-b leaves zero, even if both receiver LANs remain interested. Setting sourceReady false leaves the hypothetical forwarding calculation unchanged while marking service prerequisites incomplete: no receiver declaration proves that a source sent any datagram.",
+    "commands": [
+      {
+        "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+        "code": "vtysh -c 'show ip multicast'",
+        "explanation": "Inspect multicast interface context.",
+        "expected": "GUIDED, NOT EXECUTED: Record the actual interfaces and target VRF; do not infer a particular channel solely from global readiness."
+      },
+      {
+        "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+        "code": "vtysh -c 'show ip pim rpf'",
+        "explanation": "Inspect RPF information for currently used channel state.",
+        "expected": "GUIDED, NOT EXECUTED: Record actual source/group and RPF interface; confirm the selected reverse-path context separately."
+      },
+      {
+        "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+        "code": "vtysh -c 'show ip mroute'",
+        "explanation": "Inspect installed kernel multicast route state.",
+        "expected": "GUIDED, NOT EXECUTED: Record actual channel ingress and outgoing interfaces without asserting sample output or hardware delivery."
+      },
+      {
+        "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+        "code": "vtysh -c 'show ip multicast count'",
+        "explanation": "Inspect actual multicast packet counts per interface.",
+        "expected": "GUIDED, NOT EXECUTED: Record counters and observation interval; counts need correlation with the exact source and receiver transaction."
+      }
+    ],
+    "configuration": "For a prepared isolated FRR stable 8.4 target, plan which interfaces support multicast routing, which LANs need IGMP and whether the group is ASM or SSM. FRR documents separate ip pim and ip igmp interface controls; enabling PIM alone is not evidence that IGMP reports are processed on a receiver LAN. Capture baseline interface, RPF and route state before reviewing a change. Apply only an owned target-specific configuration through normal change control, then repeat exact-channel observations. This lesson executes no daemon, join, configuration update or packet generator.",
+    "ports": "Multicast data uses the application-selected transport and port. PIM is IP protocol 103, and its link-local multicast control messages use 224.0.0.13; some PIM messages are unicast. IGMP is IP protocol 2 rather than a TCP or UDP service. The worksheet opens no socket and transmits no control or application traffic.",
+    "production": "Document source ownership, group allocation, receiver networks, service model and multicast boundaries before deployment. Keep routing and receiver evidence within the same VRF and address family. Collect a baseline at the first-hop, transit and last-hop routers rather than extrapolating one router view to the whole tree. Correlate source packet rate with downstream and receiver observations. For resilience, document the intended RPF changes and tree convergence separately; the static worksheet has no failure history or convergence timer.",
+    "troubleshooting": [
+      [
+        "Symptom",
+        "One or both receiver LANs lack the intended stream."
+      ],
+      [
+        "Hypotheses",
+        "The source is silent, ingress fails RPF, TTL expires, OIL demand is absent or a downstream/app declaration is incomplete."
+      ],
+      [
+        "Test",
+        "Read multicast interfaces, channel RPF, installed multicast state and real counters on the prepared target."
+      ],
+      [
+        "Observation",
+        "Record exact source/group and each interface rather than using one healthy neighbor as proof."
+      ],
+      [
+        "Conclusion / next test",
+        "Identify the first unmet prerequisite and inspect that layer with actual evidence."
+      ],
+      [
+        "Fix and verify",
+        "Change only the owned boundary or forwarding dependency, then repeat the original source-to-receiver transaction."
+      ]
+    ],
+    "security": "A multicast group address is not a credential. Bound permitted sources and receiver networks, filter inappropriate control traffic and enforce group scope at the intended boundaries. Receiver requests can consume network resources; require policy and resource limits appropriate to the service. Avoid exposing sensitive content solely because a host joined a group. The browser controls represent no authorization, and a supplied accepted source does not prove its identity against spoofing.",
+    "performance": "Measure the stream rate, number of downstream copies, link capacity, loss and application buffering independently. Two copies can double downstream aggregate work without doubling upstream source traffic. Evaluate multicast route and membership scale, hardware support and control-plane load on the actual platform. A positive worksheet result only says the supplied gates agree for this hop; it establishes no throughput, jitter, convergence time or receiver quality.",
+    "mistakes": [
+      "Treating receiver membership as proof that the source transmits.",
+      "Using a destination lookup for the group as the RPF test.",
+      "Assuming an OIL line proves packets or a complete PIM tree.",
+      "Forwarding a TTL-one input through another routed hop.",
+      "Requiring local hosts on every real PIM transit interface.",
+      "Treating administratively scoped group addressing as application authentication."
+    ],
+    "interactive": "multicast-fundamentals",
+    "lab": {
+      "objective": "Explain one-hop declared replication and separate it from the original service prerequisites.",
+      "requirements": "Browser-local supplied-state tabletop. Optional FRR 8.4 show observations require an authorized prepared target with known source, group and VRF. No target commands have been executed.",
+      "topology": [
+        "192.0.2.10 → up-a/up-b → one router",
+        "ASM 239.1.1.1 or SSM 232.1.1.1",
+        "down-a → local receiver LAN A",
+        "down-b → local receiver LAN B"
+      ],
+      "steps": [
+        "Load baseline and record the source, group, selected RPF target, actual/expected ingress and TTL. Explain both downstream gates rather than treating two copies as a universal property of multicast.",
+        "Load one-oil and downstream-down. Identify the interface whose declaration changed and explain why the other interface remains independent.",
+        "Compare wrong-ingress with no-rpf-route. Both produce zero hypothetical copies, but the failed declarations are different and would require different target evidence.",
+        "Compare ttl-zero, ttl-one and max-ttl. State the accepted numeric boundary and the stricter forwarding requirement.",
+        "Load no-members, source-silent and app-not-ready. Separate local interest, hypothetical replication and service readiness in the written result.",
+        "Load shared and ssm. Identify the supplied reverse-path target without claiming the browser builds either routing tree.",
+        "On a prepared target only, inspect the four guided show groups and record actual observations. Correlate with the original source and each receiver using independent traffic evidence."
+      ],
+      "verification": "Report each supplied gate, the hypothetical copy count and source/application readiness separately. Cite actual target evidence for any live result. Do not generalize this local-receiver topology to transit-interface demand.",
+      "troubleshooting": "If the result is zero, identify RPF, TTL and downstream conditions individually. Invalid source, incompatible SSM/shared context or numeric input hides stale results until corrected. Use keyboard reset to restore the supplied baseline.",
+      "challenge": "Can receiver A remain interested while the source is silent? Can downstream B lose its OIL membership without removing the A copy? Explain both using the declared gates.",
+      "cleanup": "Reset changes only local worksheet controls. Guided commands are read-only. No router, packet, membership report, learner progress or persistent network state is changed.",
+      "topologyKind": "shared"
+    },
+    "quick": [
+      {
+        "testedConcept": "RPF",
+        "question": "Does RPF here use an ordinary destination lookup for G?",
+        "answer": "No; it validates the supplied selected reverse-path ingress.",
+        "explanation": "The selected target is the source or supplied RP context.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "TTL",
+        "question": "Can TTL one pass this routed forwarding hop?",
+        "answer": "No.",
+        "explanation": "A routed copy needs TTL greater than one.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Readiness",
+        "question": "Does local receiver demand prove source traffic?",
+        "answer": "No.",
+        "explanation": "Source transmission is an independent declaration and needs actual evidence.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      }
+    ],
+    "exams": [
+      {
+        "testedConcept": "Replication",
+        "question": "RPF passes, TTL is eight, and both downstreams meet all declared gates. How many hypothetical copies?",
+        "answer": "Two",
+        "options": [
+          "Two",
+          "One because multicast cannot replicate",
+          "Zero unless TCP acknowledges",
+          "An observed packet rate of two per second"
+        ],
+        "explanation": "Each supplied downstream independently qualifies.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Independent OIL",
+        "question": "Only oilB becomes false in the baseline. What changes?",
+        "answer": "Only A remains a hypothetical copy",
+        "options": [
+          "Source traffic is proven stopped",
+          "Only A remains a hypothetical copy",
+          "Both copies necessarily disappear",
+          "B remains because its name is second"
+        ],
+        "explanation": "The downstream declarations are independent.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Wrong ingress",
+        "question": "Expected ingress is up-a but actual arrival is up-b. What does the model declare?",
+        "answer": "RPF fails and no hypothetical routed copy passes",
+        "options": [
+          "Every receiver must leave the group",
+          "The application socket is closed",
+          "RPF fails and no hypothetical routed copy passes",
+          "A destination route to G always overrides RPF"
+        ],
+        "explanation": "The supplied ingress does not match the expectation.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "TTL boundary",
+        "question": "Which supplied TTL first permits this routed hop?",
+        "answer": "Two",
+        "options": [
+          "Zero",
+          "One",
+          "256",
+          "Two"
+        ],
+        "explanation": "Values greater than one pass this limited hop gate.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Source readiness",
+        "question": "Source readiness is false while all forwarding declarations pass. What follows?",
+        "answer": "Hypothetical copies remain, but service prerequisites are incomplete",
+        "options": [
+          "Hypothetical copies remain, but service prerequisites are incomplete",
+          "The source necessarily transmitted",
+          "Membership creates source packets",
+          "The OIL must become empty"
+        ],
+        "explanation": "Source readiness is separate from hypothetical forwarding.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "SSM identity",
+        "question": "What identifies the SSM channel in this lesson?",
+        "answer": "Source 192.0.2.10 and group 232.1.1.1",
+        "options": [
+          "The router MAC address",
+          "Source 192.0.2.10 and group 232.1.1.1",
+          "Only an application UDP port",
+          "Only group 239.1.1.1"
+        ],
+        "explanation": "SSM identifies source and group together.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Local topology",
+        "question": "Why does this worksheet require memberA for down-a?",
+        "answer": "Down-a serves a local attached receiver LAN in this fixed topology",
+        "options": [
+          "PIM uses no downstream routing state",
+          "A local member proves hardware programming",
+          "Down-a serves a local attached receiver LAN in this fixed topology",
+          "Every transit interface universally needs a local IGMP host"
+        ],
+        "explanation": "Real transit demand can instead come from downstream PIM state.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Scope",
+        "question": "What does using 239.1.1.1 establish by itself?",
+        "answer": "It is an administratively scoped demonstration group, not an access credential",
+        "options": [
+          "Every host is authenticated",
+          "Every router must forward it outside the domain",
+          "The group automatically creates policy boundaries",
+          "It is an administratively scoped demonstration group, not an access credential"
+        ],
+        "explanation": "Boundary enforcement and authorization need separate controls.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Evidence",
+        "question": "Which evidence most directly distinguishes installed multicast state from actual traffic?",
+        "answer": "State observations correlated with counters and the original receiver transaction",
+        "options": [
+          "State observations correlated with counters and the original receiver transaction",
+          "Only the group address",
+          "Only a PIM neighbor name",
+          "Only the worksheet reset button"
+        ],
+        "explanation": "State and actual forwarding answer different questions.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Transport",
+        "question": "Which statement describes multicast application transport?",
+        "answer": "The application chooses transport and ports; multicast itself supplies no UDP port",
+        "options": [
+          "PIM is TCP 103",
+          "The application chooses transport and ports; multicast itself supplies no UDP port",
+          "Every stream uses TCP 179",
+          "IGMP is a UDP application on port two"
+        ],
+        "explanation": "IP protocol numbers differ from transport ports.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      }
+    ],
+    "glossary": {
+      "RPF": "Reverse Path Forwarding: validate the selected incoming reverse-path context.",
+      "OIL": "Outgoing interface list used for potential replication.",
+      "ASM": "Any-Source Multicast group service under applicable policy.",
+      "SSM": "Source-Specific Multicast channel identified by source and group.",
+      "TTL": "IPv4 hop lifetime field; this hop requires a value greater than one."
+    },
+    "prerequisites": [
+      "s1-g2-t0",
+      "s1-g4-t0",
+      "s1-g1-t0"
+    ],
+    "related": [
+      "s3-g8-t1",
+      "s3-g8-t2"
+    ],
+    "sources": [
+      {
+        "title": "RFC 1112: host extensions for IPv4 multicast",
+        "url": "https://www.rfc-editor.org/rfc/rfc1112.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 2365: administratively scoped IP multicast",
+        "url": "https://www.rfc-editor.org/rfc/rfc2365.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 1812: router TTL behavior",
+        "url": "https://www.rfc-editor.org/rfc/rfc1812.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 4607: Source-Specific Multicast for IP",
+        "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+        "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "id": "s3-g8-t1",
+    "batch": "10",
+    "title": "PIM",
+    "subtitle": "Read selected ASM and SSM tree context before checking RPF and downstream state.",
+    "level": "Intermediate → Advanced",
+    "minutes": 60,
+    "definition": "Protocol Independent Multicast coordinates multicast routing between routers. This lesson focuses on PIM Sparse Mode and the source-specific subset used for SSM. Protocol independent means PIM can use underlying unicast routing information or a separate multicast-capable routing information base; it does not mean routing information is unnecessary. ASM can use a shared tree rooted at a rendezvous point and a source tree toward a particular sender. SSM uses source-specific reception and source-tree state without the shared-tree RP requirement.",
+    "purpose": "Use PIM to distribute multicast routing demand between routers while keeping local receiver signaling and application traffic distinct. The practical goal is to identify which selected tree a particular observation describes and which reverse-path target follows from that context. A route to a source, an RP mapping, a PIM neighbor and an outgoing interface are different observations. Record them together for the exact channel and router role before diagnosing a failure. This worksheet consumes a supplied selected-tree snapshot rather than implementing PIM protocol exchanges.",
+    "mental": "Imagine two possible upstream compass targets. In the supplied ASM shared-tree context the compass points toward RP 192.0.2.254. In a supplied source-tree context it points toward source 192.0.2.10. Pick the context before comparing actual ingress with the expected reverse-path interface. Then check the selected tree declaration and downstream demands. For SSM there is only the source channel: a source-specific receiver declaration matters, while the RP readiness checkbox has no effect. None of these labels establish when a real router would switch trees.",
+    "components": [
+      "An ASM shared tree groups reception around an RP for the group. Its notation is commonly (*,G), distinct from a source-specific (S,G) tree. A learner inspecting only a destination group must still identify which state and router role the output describes. The browser fixes group 239.1.1.1 and RP 192.0.2.254 for its supplied shared context; it does not discover an RP, choose among mappings or prove the RP is reachable.",
+      "A source-tree context points reverse-path checks toward the particular source. The example source is 192.0.2.10. ASM can have source-specific state as well as shared-tree state, and real forwarding behavior includes state interactions that this worksheet excludes. Selecting source here means the relevant context has already been supplied. It does not trigger a shortest-path-tree switchover, send a Join, suppress a Register or compute an implementation threshold.",
+      "SSM identifies the channel by source and group and removes the shared RP tree from that channel. The example group 232.1.1.1 is in the IPv4 SSM range. The supplied source-specific receiver gate is required, and the selected context must be a source tree. The worksheet rejects a shared SSM selection rather than treating it as an alternate valid service. A missing RP readiness declaration does not block an otherwise ready SSM channel.",
+      "RPF depends on the route information used for the selected context. FRR documents configurable lookup behavior involving the multicast and unicast RIBs. A useful target investigation therefore includes the selected RPF source of information and expected interface, not merely a destination route toward G. Here rpfRoute is an explicit boolean and expectedIngress is supplied as up-a or up-b. Actual ingress must match it for the limited hop calculation.",
+      "Selected tree state, downstream interest and interface readiness are independent. This fixed two-LAN example requires local settled membership at each downstream as well as OIL membership. A routed transit interface can have PIM downstream demand without directly attached IGMP listeners; the example does not model that topology. TreeState is also supplied independently, so healthy receiver declarations cannot create missing upstream state automatically.",
+      "PIM neighbors and local receiver membership have different origins and scopes. Hello processing discovers neighboring routers; receiver IGMP state can cause local demand that informs routing. PIM Register, Register-Stop, Join/Prune and Assert behavior require protocol state and timers. The worksheet models none of those message sequences, DR elections, RP discovery procedures or loop-prevention history. It represents a bounded explanation of declared state rather than a protocol emulator.",
+      "RFC 7761 is the PIM-SM base specification. Its update history includes RFC 8736 and RFC 9436; RFC 9436 supersedes RFC 8736 and updates message type space and reserved/flag bits. This lesson does not parse those headers. Operational documentation is pinned to FRR stable 8.4, while source references distinguish specification history from the target implementation. Do not assume every current feature or default exists in that older prepared target."
+    ],
+    "mechanism": [
+      "Identify the source, group, VRF, router role and selected state. For ASM, choose shared or source context deliberately. For SSM, choose source context and document how receivers identify the desired source. Keep the selected-tree snapshot separate from how a real router learned or transitioned to it.",
+      "Apply the independent selected-context gates. TreeState must be true in every PIM case. RP readiness is required only for the selected ASM shared context. SourceSpecific is required for SSM. Changing the unused RP gate on a source-tree scenario must not invent an RP dependency.",
+      "Determine the selected reverse-path target, declare route presence and compare actual with expected ingress. Then read TTL at this router. Matching ingress with a route present and TTL greater than one permits this limited hop stage, provided the selected-context gates also hold. A group membership checkbox cannot bypass those checks.",
+      "Evaluate OIL membership, local settled receiver demand and downstream readiness independently for down-a and down-b. Count hypothetical copies whose supplied gates pass. The browser does not calculate the OIL from PIM messages, Assert winners, pruning or a kernel multicast forwarding cache, and it does not claim hardware has programmed an entry.",
+      "Record original source transmission and receiver application readiness separately. Inspect actual target neighbor, RP, RPF and installed multicast state as different evidence sources. Correlate them with traffic only in an authorized prepared environment. If the target lacks a command or expected state, record its version and exact error instead of substituting fabricated output."
+    ],
+    "flow": [
+      [
+        "Select the tree context",
+        "ASM shared points toward RP; source tree and SSM point toward source."
+      ],
+      [
+        "Check independent tree gates",
+        "Require declared tree state and the context-specific RP or source-specific gate."
+      ],
+      [
+        "Validate ingress and downstreams",
+        "Combine RPF, TTL and supplied OIL/local demand/readiness."
+      ],
+      [
+        "Observe actual operation",
+        "Inspect target state and original traffic separately; the worksheet sends no PIM message."
+      ]
+    ],
+    "comparison": [
+      [
+        "ASM shared / source tree",
+        "RPF toward supplied RP / RPF toward supplied source",
+        "Selecting context does not simulate a transition."
+      ],
+      [
+        "ASM / SSM",
+        "May use RP shared and source state / source-specific channel without RP tree",
+        "SSM needs the receiver to identify S."
+      ],
+      [
+        "PIM / IGMP",
+        "Router routing coordination / attached-LAN receiver signaling",
+        "A neighbor is not a host membership record."
+      ],
+      [
+        "Tree state / forwarding",
+        "Selected control context / actual data movement",
+        "A supplied ready tree does not prove source packets."
+      ],
+      [
+        "RPF route / route to G",
+        "Selected reverse-path information / ordinary destination interpretation",
+        "The group is not an ordinary unicast host destination."
+      ]
+    ],
+    "example": "The ASM shared baseline declares tree state and RP readiness, matches ingress up-a to the expected up-a, and has TTL eight plus two downstream demands. It yields two hypothetical copies toward the local receiver LANs. On source-tree, changing rpReady to false does not remove the copies because that selected context points toward source 192.0.2.10. The SSM preset also ignores RP readiness but requires source-specific demand. If sourceSpecific is false, its selected-context gate fails despite an otherwise matching RPF declaration. These outcomes explain supplied contexts and establish no live switchover or transmission.",
+    "commands": [
+      {
+        "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+        "code": "vtysh -c 'show ip pim neighbor'",
+        "explanation": "Inspect observed PIM neighbors.",
+        "expected": "GUIDED, NOT EXECUTED: Record real neighbors per interface; a neighbor line does not prove this channel has a tree."
+      },
+      {
+        "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+        "code": "vtysh -c 'show ip pim rp-info'",
+        "explanation": "Inspect target RP mappings.",
+        "expected": "GUIDED, NOT EXECUTED: Record actual group mapping and context; this is an ASM/shared investigation, not an SSM RP requirement."
+      },
+      {
+        "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+        "code": "vtysh -c 'show ip pim rpf'",
+        "explanation": "Inspect actual RPF information for used channels.",
+        "expected": "GUIDED, NOT EXECUTED: Record source/group, selected lookup information and interface without deriving RPF from a destination group lookup."
+      },
+      {
+        "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+        "code": "vtysh -c 'show ip mroute'",
+        "explanation": "Inspect installed kernel multicast route state.",
+        "expected": "GUIDED, NOT EXECUTED: Record actual incoming and outgoing interfaces and correlate with exact-channel evidence; no live packet result is asserted."
+      }
+    ],
+    "configuration": "For a prepared FRR stable 8.4 lab, review interface PIM participation, underlying route availability, group classification and receiver IGMP separately. ASM requires a consistent reviewed RP design for the relevant shared group range; SSM should be classified with the intended source-specific range and receiver source subscription. Do not copy an ASM RP requirement into SSM as a generic fix. Preserve existing mappings, routing context and baseline state before change control. The four supplied command groups are read-only, and the worksheet executes no configuration, Join, Register or routing daemon operation.",
+    "ports": "All PIM control messages use IP protocol number 103. Link-local multicast messages, including Hello and Join/Prune, use IPv4 all-PIM-routers 224.0.0.13 with local hop scope; Register and Register-Stop are examples of unicast PIM messages. Protocol 103 is not TCP or UDP port 103. The actual multicast payload uses the protocol and port chosen by the application.",
+    "production": "Maintain a source/group and RP map for ASM alongside the permitted SSM channel list. Document first-hop, transit and last-hop roles, route sources used for RPF, group boundaries and target versions. Capture state before a routing change and correlate changes across routers after it. Review control-plane scale, neighbor dependencies and failure recovery with actual timed observations. This static declaration exercise cannot estimate convergence, duplicate suppression or the interval during which a switchover affects receiver traffic.",
+    "troubleshooting": [
+      [
+        "Symptom",
+        "Receivers request the group, but the expected routed stream is absent."
+      ],
+      [
+        "Hypotheses",
+        "Wrong selected tree context, missing RP dependency for shared ASM, missing SSM source-specific request, failed RPF, missing tree/OIL or a silent source."
+      ],
+      [
+        "Test",
+        "Inspect actual PIM neighbors, RP mapping, channel RPF and installed multicast routes in the same VRF."
+      ],
+      [
+        "Observation",
+        "Record which output proves each layer and whether it describes shared or source state."
+      ],
+      [
+        "Conclusion / next test",
+        "Isolate the failed dependency and correlate source traffic before treating membership as routing proof."
+      ],
+      [
+        "Fix and verify",
+        "Apply an owned target-specific change, repeat state observations and verify the original receiver service."
+      ]
+    ],
+    "security": "Protect the router control plane and multicast boundaries from unauthorized joins, source injection and excessive state creation. A source-specific subscription identifies a requested source but does not cryptographically authenticate datagrams. Review RP ownership and group-range policy, constrain permitted control traffic and redact topology evidence when sharing. The worksheet never grants application access; its declaration fields are not credentials or a substitute for source identity and content security.",
+    "performance": "Measure channel scale, OIL fanout, control-plane state and actual downstream packet rates on the target. Separate routing convergence from application buffering and loss recovery. RP and source-tree context can have different operational paths, but this worksheet does not rank their latency or decide a switchover policy. A selected-context ready result is only a logical combination of supplied gates; no throughput, packet duplication, CPU cost or live convergence metric is produced.",
+    "mistakes": [
+      "Interpreting protocol independent as independent of all route information.",
+      "Looking up the group as a unicast destination to determine RPF.",
+      "Requiring RP readiness for every SSM channel.",
+      "Treating selected source context as a simulated SPT transition.",
+      "Assuming an IGMP host record proves a PIM neighbor or installed tree.",
+      "Calling a declaration worksheet a live multicast test."
+    ],
+    "interactive": "pim",
+    "lab": {
+      "objective": "Explain selected ASM shared, ASM source and SSM source contexts and their independent declared gates.",
+      "requirements": "Browser-local selected-state tabletop only. Optional FRR 8.4 observations require a prepared authorized router, known VRF and exact source/group. No PIM message or target command was executed.",
+      "topology": [
+        "Source 192.0.2.10",
+        "ASM RP context 192.0.2.254 for 239.1.1.1",
+        "SSM channel (192.0.2.10,232.1.1.1)",
+        "One router with up-a/up-b and two local receiver LANs"
+      ],
+      "steps": [
+        "Load baseline, record the selected shared context and explain why its RPF target is the supplied RP. Name the independent tree and RP readiness declarations.",
+        "Compare source-tree and source-no-rp. Explain why the selected source context retains its copies without using the RP gate; do not describe this selection as a live tree switch.",
+        "Load ssm and no-source-specific. Identify the source and group and explain the source-specific receiver requirement without inventing an RP dependency.",
+        "Load no-tree, no-rpf-route and wrong-rpf. Separate the supplied selected state, route availability and actual ingress comparison, even when their copy counts are identical.",
+        "Load ttl-one, empty-oil and no-member. Identify the precise hop or downstream gate behind each result and explain the fixed local-receiver topology.",
+        "Compare source-silent and app-not-ready with baseline. Keep hypothetical forwarding separate from original service readiness.",
+        "On a prepared target only, use the four guided read-only groups. Record target context, actual observations and any missing evidence. Then correlate the original stream with independent source and receiver measurements."
+      ],
+      "verification": "Report the selected tree, RPF target, context gates, RPF ingress/route, TTL and downstream declarations separately. A live claim requires actual output and traffic evidence. No FSM, transition or routing installation is simulated.",
+      "troubleshooting": "If the tree context is incompatible with SSM, output hides until corrected. Check context-specific dependencies before treating an RP or source route as universally required. Unknown scenario IDs remain invalid after later field changes; reset returns to baseline.",
+      "challenge": "Why can rpReady false block selected ASM shared context yet leave SSM and an ASM source context unchanged? What real evidence would establish when a router switched from a shared tree to a source tree?",
+      "cleanup": "Reset affects local controls only. Guided show commands change no PIM state. No Join, Prune, Assert, Register, daemon, packet stream or learner progress was created.",
+      "topologyKind": "shared"
+    },
+    "quick": [
+      {
+        "testedConcept": "Context",
+        "question": "Where does RPF point in this selected ASM shared context?",
+        "answer": "Toward supplied RP 192.0.2.254.",
+        "explanation": "The selected context determines the reverse-path target.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "SSM",
+        "question": "Does an SSM source tree need this RP readiness gate?",
+        "answer": "No.",
+        "explanation": "It requires source-specific receiver demand and source context.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Model limits",
+        "question": "Does selecting source context simulate a PIM switchover?",
+        "answer": "No.",
+        "explanation": "Tree selection is supplied settled context, not an FSM.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      }
+    ],
+    "exams": [
+      {
+        "testedConcept": "Protocol independence",
+        "question": "What does protocol independent mean in PIM?",
+        "answer": "It can use underlying route information without requiring one particular unicast routing protocol",
+        "options": [
+          "It can use underlying route information without requiring one particular unicast routing protocol",
+          "It needs no RPF route information",
+          "It forwards independently of all interfaces",
+          "It authenticates every source"
+        ],
+        "explanation": "Route information remains a dependency.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Shared RPF",
+        "question": "The worksheet selects ASM shared context. Which target is used?",
+        "answer": "Supplied RP 192.0.2.254",
+        "options": [
+          "The receiver application port",
+          "Supplied RP 192.0.2.254",
+          "The multicast destination as an ordinary unicast host",
+          "Always source 192.0.2.10"
+        ],
+        "explanation": "The supplied shared context points toward RP.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Source RPF",
+        "question": "The worksheet selects ASM source context. Which target is used?",
+        "answer": "Source 192.0.2.10",
+        "options": [
+          "The group MAC address",
+          "The IGMP querier election winner",
+          "Source 192.0.2.10",
+          "Always the RP"
+        ],
+        "explanation": "The selected source context points toward S.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "SSM RP",
+        "question": "SSM source context is ready and source-specific demand is true, but rpReady is false. What follows?",
+        "answer": "The unused RP gate does not block this context",
+        "options": [
+          "Every SSM route requires an RP",
+          "The group changes to ASM automatically",
+          "A live Register was transmitted",
+          "The unused RP gate does not block this context"
+        ],
+        "explanation": "SSM does not use a shared RP tree.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "SSM receiver",
+        "question": "Which missing declaration blocks the SSM selected-context gate?",
+        "answer": "Source-specific receiver demand",
+        "options": [
+          "Source-specific receiver demand",
+          "Unused RP readiness",
+          "An ASM shared-tree mapping",
+          "A TCP 103 session"
+        ],
+        "explanation": "SSM reception identifies a source.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Tree state",
+        "question": "Both local receiver LANs are interested but treeState is false. What follows?",
+        "answer": "The supplied selected-context gate fails",
+        "options": [
+          "The RP number becomes zero",
+          "The supplied selected-context gate fails",
+          "IGMP creates tree state automatically in this model",
+          "The application is guaranteed to receive"
+        ],
+        "explanation": "Demand and selected tree state remain independent.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Ingress",
+        "question": "RPF route exists but actual ingress differs from expected. What does the limited model declare?",
+        "answer": "No hypothetical routed copy passes RPF",
+        "options": [
+          "The source changes address",
+          "Every router globally withdraws the group",
+          "No hypothetical routed copy passes RPF",
+          "The OIL bypasses all ingress checks"
+        ],
+        "explanation": "RPF checks selected incoming context.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Control protocol",
+        "question": "Which statement about PIM control is correct?",
+        "answer": "PIM uses IP protocol 103; link-local multicast control uses 224.0.0.13",
+        "options": [
+          "PIM uses TCP port 103 for every message",
+          "Every PIM message is multicast to the group payload address",
+          "PIM is a UDP application on port 179",
+          "PIM uses IP protocol 103; link-local multicast control uses 224.0.0.13"
+        ],
+        "explanation": "Some PIM messages are unicast, and protocol numbers are not transport ports.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Selected snapshot",
+        "question": "What does the source-tree selector establish in this worksheet?",
+        "answer": "A supplied selected context, without computing a tree transition",
+        "options": [
+          "A supplied selected context, without computing a tree transition",
+          "Observed SPT switchover timing",
+          "A transmitted Join/Prune sequence",
+          "A kernel installation result"
+        ],
+        "explanation": "No PIM FSM is implemented.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Current references",
+        "question": "Which reference relationship is accurate?",
+        "answer": "RFC 9436 updates PIM specifications and obsoletes RFC 8736",
+        "options": [
+          "FRR 8.4 proves all future PIM defaults",
+          "RFC 9436 updates PIM specifications and obsoletes RFC 8736",
+          "RFC 8736 obsoletes RFC 9436",
+          "RFC 7761 is an IGMPv3 specification"
+        ],
+        "explanation": "The lesson preserves the actual update history.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      }
+    ],
+    "glossary": {
+      "PIM": "Protocol Independent Multicast, router coordination using routing information.",
+      "RP": "Rendezvous Point used for ASM shared-tree context.",
+      "RPF": "Selected reverse-path ingress validation.",
+      "OIL": "Outgoing interface list for potential replication.",
+      "SSM": "Source-specific channel without the shared RP tree."
+    },
+    "prerequisites": [
+      "s3-g8-t0",
+      "s1-g4-t0",
+      "s3-g1-t0"
+    ],
+    "related": [
+      "s3-g8-t2",
+      "s3-g8-t0"
+    ],
+    "sources": [
+      {
+        "title": "RFC 7761: PIM-SM base specification",
+        "url": "https://www.rfc-editor.org/rfc/rfc7761",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 8736: historical PIM update superseded by RFC 9436",
+        "url": "https://www.rfc-editor.org/rfc/rfc8736",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 9436: current message type/flag update, obsoletes RFC 8736",
+        "url": "https://www.rfc-editor.org/rfc/rfc9436",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 4607: Source-Specific Multicast for IP",
+        "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+        "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "id": "s3-g8-t2",
+    "batch": "10",
+    "title": "IGMP",
+    "subtitle": "Combine settled local receiver filters without inventing report, timer or querier behavior.",
+    "level": "Intermediate → Advanced",
+    "minutes": 55,
+    "definition": "Internet Group Management Protocol communicates IPv4 receiver membership information between systems and multicast routers on an attached network. IGMPv3 adds source filtering so a receiver can request traffic from a listed source set or from all sources except a listed set. RFC 9776 is the current IGMPv3 specification used here: it obsoletes RFC 3376 and updates RFC 2236. This lesson treats two already-settled host filters as supplied state; it does not implement how reports, queries, compatibility modes or timers produce that state.",
+    "purpose": "Use IGMP to explain local receiver demand while keeping multicast routing, source transmission and application authorization separate. A receiver can be interested in group G without any source currently sending, and a source filter can request one channel without proving that the router has a usable path. The goal is to read INCLUDE and EXCLUDE accurately, combine multiple receivers on one LAN, and identify the evidence still needed for a live service. A report capture, router record and receiver application observation answer different questions and should not be collapsed into one healthy label.",
+    "mental": "Give each of two hosts a card naming the same group and its settled filter. INCLUDE lists wanted sources. EXCLUDE lists unwanted sources, so an empty EXCLUDE list requests every source in the worksheet universe. For each source, ask whether at least one usable host card requests it; that is the attached LAN demand union. Check the card validity and explicitly declared timer liveness before using it. A missing querier observation does not erase the cards instantly. The source still needs to transmit, and the receiver application still needs separate evidence.",
+    "components": [
+      "The local scope is one attached receiver LAN and two supplied host records, A and B. Both records describe the selected demonstration group: 239.1.1.1 for ASM or 232.1.1.1 for SSM. The worksheet universe contains only sources 192.0.2.10 and 192.0.2.20. Restricting the universe makes settled acceptance visible, but it is not a statement that IGMP permits only two source addresses or that these documentation addresses identify assigned production senders.",
+      "INCLUDE mode requests only the listed sources. An empty INCLUDE set requests none of the worksheet sources. EXCLUDE mode requests sources absent from the listed set. An empty EXCLUDE set therefore requests both worksheet sources. EXCLUDE containing .10 requests .20 in this bounded universe. These are receiver filter meanings, not firewall rules, source authentication or complete router forwarding decisions.",
+      "Receiver demand on the attached LAN is a union of usable host acceptance. If host A excludes .10 but host B includes .10, the LAN still has demand for .10 because B wants it. Do not intersect every host request and thereby silence a receiver that remains interested. A real multicast router maintains aggregate group and source records with protocol rules; the worksheet compares supplied settled host demand rather than synthesizing those router records.",
+      "Each host card has recordValid and timerLive declarations. Both must hold before that card contributes to the local union. Declaring timerLive false removes that supplied host demand in this exercise; it does not model a particular source timer or group timer transition. IGMP router timers have different meanings in INCLUDE and EXCLUDE state. There is no clock, report arrival, leave-processing sequence or automatic expiry calculation in this worksheet.",
+      "QuerierPresent records whether a querier is currently observed. It does not itself decide whether a supplied settled record is live. Real queries and timer procedures refresh and age protocol state over time; absence of one observed query is not evidence that every record expired immediately. The no-querier scenario deliberately retains explicit live records to expose this distinction. A live investigation must measure the target timer and protocol history rather than infer time from a checkbox.",
+      "SSM requires source-specific reception. For an SSM group this worksheet allows only INCLUDE host reporting to contribute demand, following source-specific guidance; an EXCLUDE card is shown as incompatible with that reporting requirement and contributes none. The mode is an explicit service constraint, not an application authentication step. Group-only reception does not identify an SSM channel, and an RP dependency should not be added as a substitute for an identified source.",
+      "IGMP and switch snooping are related but separate. A switch may inspect membership exchanges to constrain Layer 2 replication, while a router uses receiver information alongside multicast routing state. This exercise simulates neither snooping tables nor unknown-multicast behavior, router ports or fast-leave policy. It also does not compute compatibility with older queriers. Evidence about local host demand must be kept distinct from evidence about a switch path or a routed multicast tree."
+    ],
+    "mechanism": [
+      "Select the group service model and record both supplied settled host filters. Choose INCLUDE or EXCLUDE explicitly and list only exact worksheet source addresses. Source duplicates collapse into sets and input order has no effect. The local limit of eight supplied entries per host before deduplication bounds this teaching input; it is not an IGMP packet or network protocol maximum.",
+      "Validate each host card separately. Strict booleans are required for record validity and timer liveness, and malformed source lists or unknown modes hide output. An invalid record is a supplied declaration rather than a parser error; it is displayed but contributes no accepted sources. Sparse arrays, extra fields and coerced values are rejected at the model API boundary.",
+      "Apply the selected service constraint. In ASM, valid live INCLUDE and EXCLUDE cards use their respective settled filter meanings. In SSM, only a valid live INCLUDE card contributes to demand. The output explicitly names EXCLUDE incompatibility instead of pretending it created an ASM-like SSM request or silently changing the group.",
+      "Compute acceptance for .10 and .20 on each usable card, then combine acceptance with OR across hosts. This local union answers whether someone on the attached LAN requests a source. It does not establish a PIM join, an outgoing routed interface, a multicast forwarding cache or an application socket actually receiving content.",
+      "Keep querier observation, original source readiness and application readiness in their own output. The scoped source-.10 readiness conclusion requires local demand for .10 plus the two readiness declarations. It measures nothing. On a prepared FRR target, inspect IGMP interfaces, groups, sources and statistics, then correlate actual reports and timer state with source traffic and the original receiver transaction."
+    ],
+    "flow": [
+      [
+        "Read settled host cards",
+        "Choose INCLUDE/EXCLUDE and exact source sets for the selected group."
+      ],
+      [
+        "Check explicit record gates",
+        "Require validity and timer liveness; SSM demand requires INCLUDE reporting."
+      ],
+      [
+        "Combine local acceptance",
+        "OR the usable host acceptance independently for each worksheet source."
+      ],
+      [
+        "Collect actual evidence",
+        "Inspect IGMP state and original source/application behavior separately."
+      ]
+    ],
+    "comparison": [
+      [
+        "INCLUDE / EXCLUDE",
+        "Request listed sources / request sources not listed",
+        "Empty lists have opposite meanings."
+      ],
+      [
+        "Host acceptance / LAN demand",
+        "One host filter / union across usable hosts",
+        "One host exclusion does not cancel another host request."
+      ],
+      [
+        "Querier observation / timer liveness",
+        "Observed control role / supplied settled record condition",
+        "No querier does not imply instant expiry."
+      ],
+      [
+        "IGMP / PIM",
+        "Attached-LAN receiver signaling / routing between routers",
+        "A group record does not prove a routed tree."
+      ],
+      [
+        "Membership / authorization",
+        "Receiver interest / permission to consume content",
+        "IGMP is not an application credential."
+      ]
+    ],
+    "example": "In baseline ASM, host A is valid and live with INCLUDE {.10}; host B is valid and live with INCLUDE {.20}. The attached LAN therefore requests both worksheet sources. If A changes to EXCLUDE {.10} and B requests no sources, only .20 remains requested. If B instead includes .10, its interest restores .10 to the union despite A excluding it. Turning querierPresent off preserves this supplied settled demand while leaving timer liveness explicit. In SSM, EXCLUDE does not contribute to this modeled source-specific receiver demand. None of those calculations proves a source emitted a datagram.",
+    "commands": [
+      {
+        "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+        "code": "vtysh -c 'show ip igmp interface'",
+        "explanation": "Inspect IGMP interface/version and operational context.",
+        "expected": "GUIDED, NOT EXECUTED: Record actual attached LAN and target state, including observed querier context where shown; no timer history is invented."
+      },
+      {
+        "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+        "code": "vtysh -c 'show ip igmp groups'",
+        "explanation": "Inspect actual router group records.",
+        "expected": "GUIDED, NOT EXECUTED: Record exact group and actual state/timers; these aggregate router records are not the worksheet host cards."
+      },
+      {
+        "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+        "code": "vtysh -c 'show ip igmp sources'",
+        "explanation": "Inspect actual IGMP source records.",
+        "expected": "GUIDED, NOT EXECUTED: Correlate exact group/source and displayed state with target version; do not infer acceptance from one list without its mode/context."
+      },
+      {
+        "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+        "code": "vtysh -c 'show ip igmp statistics'",
+        "explanation": "Inspect IGMP protocol statistics.",
+        "expected": "GUIDED, NOT EXECUTED: Record counters and observation interval; report counts do not establish source traffic or application authorization."
+      }
+    ],
+    "configuration": "On a prepared isolated FRR stable 8.4 receiver LAN, review ip igmp interface participation and the intended version alongside PIM and group classification. FRR documents v2/v3 controls and a v3 default for that target version, but the actual effective interface configuration must be inspected. Static join configuration represents an explicit local join and must not be confused with an observed host report. Preserve baseline group/source/timer observations before changing anything. This lesson does not configure a join, generate a query, force a leave or alter report compatibility.",
+    "ports": "IGMP is IP protocol number 2, not TCP or UDP port 2. General Queries use IPv4 all-systems 224.0.0.1; group-specific and group-and-source-specific queries use the group of interest. IGMPv3 Reports use 224.0.0.22. Historically IGMPv2 membership reports are sent to the reported group and v2 Leave Group messages to 224.0.0.2; those are version-specific behavior, not the destination for every current report. The worksheet sends none of these messages.",
+    "production": "Document receiver LANs, effective IGMP version, querier ownership, group model and intended source filters. Keep host socket interest, router aggregate state and switch snooping observations distinct. During a receiver outage, record actual timer values and timestamps before concluding state aged out. Include source selection and authorization for the original application in the service runbook. For SSM, make source discovery or configuration explicit at the application layer; IGMP receiver demand does not discover a trusted sender automatically.",
+    "troubleshooting": [
+      [
+        "Symptom",
+        "A receiver requests a group but receives no intended source, or a LAN receives an unwanted source."
+      ],
+      [
+        "Hypotheses",
+        "Wrong INCLUDE/EXCLUDE interpretation, another receiver demand, missing validity/liveness, incompatible SSM reporting, absent source traffic or a separate routing/snooping/application issue."
+      ],
+      [
+        "Test",
+        "Inspect actual IGMP interface, group, source and statistic observations on the prepared target."
+      ],
+      [
+        "Observation",
+        "Record mode, source set, group, timer and timestamp together; one missing query is not instant-expiry evidence."
+      ],
+      [
+        "Conclusion / next test",
+        "Separate local demand from routed delivery, then inspect the first unproven dependency."
+      ],
+      [
+        "Fix and verify",
+        "Change only the owned host/filter or network dependency through change control and verify the original receiver service."
+      ]
+    ],
+    "security": "Receiver membership requests generally do not authenticate a user or source. Enforce application access, source integrity and multicast boundaries independently. Consider resource exhaustion from excessive group or source state and apply supported target policy limits. Treat reported source addresses as requested identities, not cryptographic evidence. The browser source lists contain documentation addresses and confer no permission; a positive local demand union establishes neither authorized content access nor actual packet origin.",
+    "performance": "Measure host and router group/source scale, report/query load and actual receiver loss under the intended workload. Membership records can exist while traffic rate is zero. Timer choices affect protocol responsiveness and state maintenance, but this settled worksheet cannot estimate timer convergence or compatibility-mode delays. Switch replication and application buffering need separate measurements. The union calculation over two sources is an explanatory bounded result, not a throughput, snooping efficiency or router capacity model.",
+    "mistakes": [
+      "Treating INCLUDE empty and EXCLUDE empty as the same request.",
+      "Intersecting all host requests instead of keeping demand from any usable receiver.",
+      "Assuming no querier instantly expires every settled record.",
+      "Treating router EXCLUDE timers as a simple host timer simulation.",
+      "Using group-only or EXCLUDE reporting to invent SSM source-specific demand.",
+      "Calling membership an application credential or proof of source packets."
+    ],
+    "interactive": "igmp",
+    "lab": {
+      "objective": "Explain settled receiver filter acceptance and attached-LAN union over two fixed sources while preserving explicit record and service declarations.",
+      "requirements": "Browser-local two-host tabletop. Optional FRR 8.4 observations require a prepared authorized receiver LAN and known group/VRF. No query, report, leave or target command was executed.",
+      "topology": [
+        "One attached receiver LAN",
+        "Host A settled INCLUDE/EXCLUDE record",
+        "Host B settled INCLUDE/EXCLUDE record",
+        "Sources 192.0.2.10 and 192.0.2.20; ASM 239.1.1.1 or SSM 232.1.1.1"
+      ],
+      "steps": [
+        "Load baseline and explain each host request before computing the union. Record that the source addresses name requested senders rather than packets observed at the receiver.",
+        "Compare include-empty and exclude-empty. Write the meaning of each empty set explicitly so a visual empty input is not mistaken for identical demand.",
+        "Load exclude-one and union. Explain why a second host can request a source that the first excludes; this is local demand, not a computed router filter-mode transition.",
+        "Load record-invalid and timer-expired. Identify the explicit host gate that removes A demand and keep protocol parser errors separate from these supplied states.",
+        "Compare no-querier with baseline. Demand remains because timer liveness was supplied; describe the target evidence needed to conclude an actual record expired.",
+        "Compare ssm and ssm-exclude. Explain the source-specific INCLUDE reporting requirement and identify which card is incompatible.",
+        "Load source-silent and app-not-ready, then enter a malformed source list. Observe independent readiness and immediate hiding of stale results; use keyboard reset to restore baseline.",
+        "On a prepared target only, inspect the four show groups and correlate actual IGMP state with host reports, timestamps and original traffic. Do not replace missing output with the worksheet result."
+      ],
+      "verification": "Report usable host cards, their accepted source sets and attached-LAN union separately from querier observation and source/application readiness. Label every timer assertion as supplied or measured. Actual service claims need independent evidence.",
+      "troubleshooting": "If a source is missing from demand, check mode/set, validity, liveness and SSM compatibility per host. If demand exists but service fails, investigate source, routing, switching and application evidence outside this model. Unknown scenario selections remain invalid after later edits.",
+      "challenge": "Can one host exclude .10 while the LAN still requests .10? Can no querier be observed while settled records remain live? Explain both without inventing protocol timing.",
+      "cleanup": "Reset affects local controls only. Guided show commands are read-only. No query, report, leave, source stream, snooping table or learner progress was changed.",
+      "topologyKind": "shared"
+    },
+    "quick": [
+      {
+        "testedConcept": "Empty filters",
+        "question": "What does INCLUDE empty request?",
+        "answer": "None of the worksheet sources.",
+        "explanation": "INCLUDE requests only listed sources.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Union",
+        "question": "A excludes .10 but B includes .10. Is there LAN demand for .10?",
+        "answer": "Yes, if B is valid and live.",
+        "explanation": "Any usable host request contributes to the union.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Timer scope",
+        "question": "Does observing no querier instantly expire these supplied records?",
+        "answer": "No.",
+        "explanation": "Timer liveness is explicit; no timer or querier FSM is simulated.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      }
+    ],
+    "exams": [
+      {
+        "testedConcept": "INCLUDE",
+        "question": "A usable host has INCLUDE {.10}. Which worksheet source does it request?",
+        "answer": "Only 192.0.2.10",
+        "options": [
+          "Only 192.0.2.10",
+          "Only 192.0.2.20",
+          "Both because INCLUDE means every source",
+          "Neither because IGMP cannot filter sources"
+        ],
+        "explanation": "Only listed sources are requested.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "INCLUDE empty",
+        "question": "What does a valid live INCLUDE {} card accept?",
+        "answer": "Neither worksheet source",
+        "options": [
+          "Every source except .20",
+          "Neither worksheet source",
+          "Both sources",
+          "Only whichever source arrived last"
+        ],
+        "explanation": "An empty wanted list requests none.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "EXCLUDE empty",
+        "question": "What does a valid live ASM EXCLUDE {} card accept?",
+        "answer": "Both worksheet sources",
+        "options": [
+          "Only .10",
+          "Only the querier address",
+          "Both worksheet sources",
+          "Neither source"
+        ],
+        "explanation": "No sources are excluded in this bounded universe.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Union",
+        "question": "A excludes .10 and B includes .10; both cards are usable in ASM. What is LAN demand for .10?",
+        "answer": "Present because B requests it",
+        "options": [
+          "Absent because any host exclusion is global",
+          "Unknown until an RP authenticates the source",
+          "An observed source packet rate",
+          "Present because B requests it"
+        ],
+        "explanation": "The settled local demand is a union.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Validity",
+        "question": "Host A requests .10 but recordValid is false; B requests only .20. Which demand remains?",
+        "answer": "Only .20",
+        "options": [
+          "Only .20",
+          "Both because the invalid record wins",
+          "Only .10 because it is listed first",
+          "No source can be requested by B"
+        ],
+        "explanation": "Only usable records contribute.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Explicit timer",
+        "question": "What does timerLive false mean here?",
+        "answer": "That supplied host card contributes no demand; no expiry sequence is simulated",
+        "options": [
+          "A querier election completed",
+          "That supplied host card contributes no demand; no expiry sequence is simulated",
+          "A live target timer was measured",
+          "Every LAN group is globally deleted"
+        ],
+        "explanation": "This is an explicit settled declaration.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Querier",
+        "question": "QuerierPresent becomes false while both supplied records remain valid and live. What happens to demand?",
+        "answer": "It remains unchanged in this settled worksheet",
+        "options": [
+          "The router switches to PIM shared tree",
+          "The application is authorized",
+          "It remains unchanged in this settled worksheet",
+          "All records expire immediately"
+        ],
+        "explanation": "Querier observation does not infer time.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "SSM reporting",
+        "question": "Which host filter contributes source-specific demand for the worksheet SSM group?",
+        "answer": "A valid live INCLUDE record identifying sources",
+        "options": [
+          "EXCLUDE empty as an all-source SSM subscription",
+          "Only a group-only IGMPv2 leave",
+          "An RP mapping without a source",
+          "A valid live INCLUDE record identifying sources"
+        ],
+        "explanation": "SSM demand identifies S and G.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Protocol scope",
+        "question": "Which destination is used for IGMPv3 Reports?",
+        "answer": "224.0.0.22",
+        "options": [
+          "224.0.0.22",
+          "224.0.0.13 for all reports",
+          "The RP unicast address for every report",
+          "TCP port 2"
+        ],
+        "explanation": "IGMP is IP protocol 2 and current v3 reports use the router-listener group.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      },
+      {
+        "testedConcept": "Current specification",
+        "question": "Which statement reflects the current IGMPv3 source used here?",
+        "answer": "RFC 9776 obsoletes RFC 3376 and updates RFC 2236",
+        "options": [
+          "RFC 9776 is only a switch snooping algorithm",
+          "RFC 9776 obsoletes RFC 3376 and updates RFC 2236",
+          "RFC 3376 obsoletes RFC 9776",
+          "RFC 7761 is the IGMPv3 specification"
+        ],
+        "explanation": "The lesson uses the current specification and labels older behavior historically.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice"
+      }
+    ],
+    "glossary": {
+      "IGMP": "Attached-network IPv4 receiver membership signaling.",
+      "INCLUDE": "Request reception only from listed sources.",
+      "EXCLUDE": "Request reception from sources not listed.",
+      "Querier": "Router control role issuing membership queries on an attached network.",
+      "SettledRecord": "Supplied host filter with explicit validity/liveness, without report/timer processing."
+    },
+    "prerequisites": [
+      "s3-g8-t0",
+      "s1-g1-t0",
+      "s1-g2-t0"
+    ],
+    "related": [
+      "s3-g8-t1",
+      "s3-g8-t0"
+    ],
+    "sources": [
+      {
+        "title": "RFC 9776: current IGMPv3 specification; obsoletes RFC 3376 and updates RFC 2236",
+        "url": "https://www.rfc-editor.org/rfc/rfc9776",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 4604: IGMPv3 source-specific reporting and SSM-aware host/router guidance",
+        "url": "https://www.rfc-editor.org/rfc/rfc4604",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 2236: historical IGMPv2 reports and Leave Group behavior",
+        "url": "https://www.rfc-editor.org/rfc/rfc2236",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 4607: Source-Specific Multicast for IP",
+        "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+        "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  }
+]

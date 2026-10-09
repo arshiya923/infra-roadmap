@@ -1,0 +1,10 @@
+#dc-tool {min-width:0;overflow-wrap:anywhere}
+#dc-tool fieldset {margin:1.2rem 0;border:1px solid var(--line);padding:1rem;min-width:0}
+#dc-tool label {display:block;margin-bottom:.4rem}
+#dc-tool input:not([type=checkbox]),#dc-tool select {max-width:100%;width:100%;box-sizing:border-box;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:.55rem}
+#dc-tool input[type=checkbox] {width:auto}
+#dc-tool .comparison-scroll {overflow-x:auto;max-width:100%}
+#dc-tool table {min-width:650px}
+#dc-error {color:var(--amber)}
+#dc-tool details {margin-top:1rem}
+#dc-tool :focus-visible {outline:2px solid var(--accent);outline-offset:3px}

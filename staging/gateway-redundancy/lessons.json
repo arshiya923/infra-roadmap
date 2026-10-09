@@ -1,0 +1,1130 @@
+[
+  {
+    "batch": "10",
+    "level": "Intermediate → Advanced",
+    "minutes": 65,
+    "configuration": "Browser declarations require no router configuration. Optional inspection requires two exclusively owned, already prepared routers on a mapped isolated broadcast LAN, known VIP/group/version, working management and documented upstream/return intent. No interface shutdown, role priority change, peer reset, ARP clear, save or persistent service is supplied. Record exact prior configuration before any separately authorized target experiment.",
+    "performance": "This tabletop uses settled declarations and boolean path prerequisites. It measures no timer interval, failure detection, convergence, lost packets, capacity or latency. A virtual gateway role is not a throughput promise; upstream route and system forwarding readiness can differ from control participation. Shorter protocol timers need actual platform and failure-scenario testing.",
+    "security": "Protect the shared LAN and control-plane participation against unauthorized gateway advertisements and address conflicts. Verify applicable authentication and control-plane safeguards on the exact supported release; this worksheet does not configure or test them. Preserve sensitive configuration privately and keep independent management. A valid role or ARP entry does not authenticate upstream route ownership or prove endpoint service. Scoped IOS XE documentation distinguishes text and MD5 authentication; text is not encrypted, and authentication is not encryption of routed application traffic. Actual target support and safe key handling require separate review.",
+    "id": "s3-g7-t0",
+    "title": "HSRP",
+    "subtitle": "Keep the virtual gateway identity separate from active history, tracking and upstream readiness.",
+    "interactive": "hsrp",
+    "definition": "Hot Standby Router Protocol is Cisco first-hop redundancy for hosts using a virtual default gateway on a shared LAN. One active router serves the group while a standby can assume that responsibility. The host retains its virtual gateway address rather than selecting a new physical router address. This original topic scopes IPv4 HSRP version 2 group 10 and a supplied settled checkpoint; it is not a timer-driven simulator or an upstream routing protocol.",
+    "purpose": "Use HSRP to reduce dependence on one first-hop router while preserving a stable host gateway identity. Explain which router owns the role now and why, then verify its actual route and return path separately. LAN control participation can survive an upstream outage, so role redundancy alone cannot establish end-to-end recovery. Separate groups can support planned traffic sharing, but one group in this worksheet has one active owner.",
+    "mental": "A host writes one virtual gateway address on its envelope. A and B coordinate who handles that gateway, but the current owner has history: a stronger returning router does not automatically take over when preemption is disabled. Upstream and return readiness are separate checklists. The browser reads those declarations; it sends no hello, ARP or data packet.",
+    "components": [
+      "Virtual identity: VIP 192.0.2.1 on one broadcast LAN, A real IPv4 192.0.2.2 and B 192.0.2.3. Group 10 in version 2 maps to virtual MAC 0000.0c9f.f00a. The VIP is the host default gateway; router management uses independently mapped real addresses.",
+      "Active and standby: the active handles the virtual gateway; the available alternate is the backup in this two-router scope. Both routers need consistent group, VIP, version, LAN and supported intent. A failed LAN/control declaration is separate from a router with a working LAN but failed uplink.",
+      "Priority and history: default priority is 100. Initial selection favors higher priority, with higher real interface IPv4 breaking the supplied equal-priority tie. A currently available active is retained unless an available higher-priority challenger is configured to preempt. Equal priority does not displace the existing active.",
+      "Preemption and failure: HSRP preemption is disabled by default in the scoped IOS XE guidance. Recovery of a higher-priority router and takeover after active failure are different cases. After a declared failure/hold-expiry checkpoint, an available backup can become active without preemption; this model does not run timers.",
+      "Tracking: only configured tracking decrements priority for a declared down object. This model computes max(0, supplied priority minus configured decrement); inputs are checkpoint values from 0 to 255, while scoped IOS XE configuration guidance uses 1 to 255. An uplink failure alone does not imply tracking is configured, and a lower priority still needs challenger preemption for a live-owner displacement.",
+      "Version scope: v1 uses 224.0.0.2, groups 0–255 and virtual MAC 0000.0c07.acXX; v2 uses 224.0.0.102, groups 0–4095 and 0000.0c9f.fXXX. Both IPv4 versions use UDP 1985. They do not interoperate in the same group; changing versions changes identity and reinitializes groups. Only v2 group 10 is modeled."
+    ],
+    "mechanism": [
+      "Record the host subnet/default gateway, both physical router addresses and group/version before interpreting state. The fixed LAN is assumed coherent; VLAN partitions, mismatched authentication and dual-active history are excluded rather than silently resolved.",
+      "Read current active history and participant availability. With no previous active, choose the highest available supplied priority; equal defaults elect B because .3 exceeds .2. This is one settled selection contract, not a startup FSM trace.",
+      "Apply configured tracking only. A supplied priority 110 and configured down-object decrement 20 yield 90. No tracking declaration leaves 110 even when the upstream-path checkbox is false.",
+      "For an available existing active, require the higher-priority challenger’s preemption setting to change ownership. A higher-priority A returning while B serves can stay backup. Enabling A preemption changes the settled choice; no minimum/reload/synchronization delay is calculated.",
+      "For an unavailable existing active, distinguish pending detection from a declared completed failure/expiry. Pending retains the previous unavailable role and forwarding is false; a completed declaration permits the available backup to take over. Reject expiry paired with an available active or no previous active.",
+      "Check selected active availability, system forwarding and upstream path together, then add original return readiness. Report only whether these declarations agree. Actual ARP/switch learning and the original endpoint transaction remain separately observed evidence."
+    ],
+    "flow": [
+      [
+        "Map the virtual gateway",
+        "Record LAN, host default, real addresses, group and version."
+      ],
+      [
+        "Review active history",
+        "Compare available priorities, configured tracking and preemption."
+      ],
+      [
+        "Check the selected path",
+        "Separate active role from system forwarding and upstream readiness."
+      ],
+      [
+        "Verify the original exchange",
+        "Inspect actual host ARP, both directions and exact recovery."
+      ]
+    ],
+    "comparison": [
+      [
+        "VIP / real router IP",
+        "Stable host gateway / physical identity",
+        "Do not make the host track whichever router currently wins."
+      ],
+      [
+        "Priority / preemption",
+        "Preference / permission to displace a live active",
+        "Higher returning priority alone need not change ownership."
+      ],
+      [
+        "Failure takeover / preemption",
+        "Unavailable active / live active replacement",
+        "Declared expiry takeover can occur without preempt."
+      ],
+      [
+        "Tracking / uplink failure",
+        "Configured priority dependency / path observation",
+        "A failed path does not automatically change priority."
+      ],
+      [
+        "v1 / v2",
+        "Different group/address/format scope",
+        "They do not interoperate within the same group."
+      ]
+    ],
+    "example": "Start with A active at 110 and B at 100. Select A uplink failed without tracking: A remains active but original exchange prerequisites fail. Select configured tracking and B preemption: A’s effective priority becomes 90 and B takes the settled active role. Remove only B preemption and A remains active despite priority 90. Compare that live-owner displacement with A unavailable after declared expiry, where B can take over without preemption. The browser computes declarations, not a measured outage.",
+    "ports": "Scoped IPv4 HSRP v2 hellos use UDP port 1985 and destination 224.0.0.102; v1 uses the same UDP port with 224.0.0.2. Routed endpoint traffic is separate. No socket or control packet is emitted here.",
+    "commands": [
+      {
+        "code": "show standby brief",
+        "explanation": "Read both observers’ current group roles and virtual gateway summary.",
+        "expected": "GUIDED, NOT EXECUTED: Record interface, group, version context, priority and active/standby identities from actual output; a row is not service evidence.",
+        "filename": "ios",
+        "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required"
+      },
+      {
+        "code": "show standby\nshow track",
+        "explanation": "Inspect detailed HSRP/preemption/tracking context.",
+        "expected": "GUIDED, NOT EXECUTED: Compare configured and effective priority, track-object state and supported delays; preserve actual output instead of assuming tracking exists.",
+        "filename": "ios",
+        "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required"
+      },
+      {
+        "code": "show ip arp",
+        "explanation": "Inspect ARP context at the actual observer.",
+        "expected": "GUIDED, NOT EXECUTED: Correlate virtual versus real identities and separately inspect the original host cache. Router ARP alone does not prove host learning or packet delivery.",
+        "filename": "ios",
+        "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required"
+      },
+      {
+        "code": "show ip route\nshow running-config",
+        "explanation": "Read upstream route and original intent privately.",
+        "expected": "GUIDED, NOT EXECUTED: Scope table/VRF and intended destination/return routes. Configuration can be sensitive; neither record certifies hardware forwarding or service.",
+        "filename": "ios",
+        "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required"
+      }
+    ],
+    "production": "Choose and document a supported HSRP version/group, VIP ownership, active preference, recovery/preemption delay and meaningful tracked dependencies. Check that both gateways have independent usable upstream and return paths, matching LAN/security intent and operational monitoring. Review failure, recovery, maintenance and VLAN-partition scenarios on owned equipment before rollout. The worksheet excludes dual-active protection and stateful NAT/firewall/session synchronization.",
+    "troubleshooting": [
+      [
+        "Higher-priority return stays backup",
+        "Check current history and the returning router’s preemption setting."
+      ],
+      [
+        "Active remains after upstream failure",
+        "Check whether appropriate tracking is actually configured and whether the alternate can preempt."
+      ],
+      [
+        "Active dead but backup not selected in worksheet",
+        "Distinguish pending detection from declared completed expiry."
+      ],
+      [
+        "Both actual routers claim active",
+        "Inspect LAN connectivity, group/version/VIP/authentication and both observers; the model excludes partition history."
+      ],
+      [
+        "Virtual gateway reachable, service fails",
+        "Continue to routes, system forwarding, policy and return path."
+      ]
+    ],
+    "mistakes": [
+      "Calling the VIP a physical interface address of both routers.",
+      "Assuming highest priority always displaces a working active.",
+      "Enabling tracking in the explanation when it is absent in the configuration.",
+      "Requiring preemption for failure takeover.",
+      "Copying HSRP v1 MAC/group rules into HSRP v2.",
+      "Calling a supplied checkpoint measured convergence."
+    ],
+    "prerequisites": [
+      "s2-g2-t0",
+      "s1-g4-t2",
+      "s1-g1-t1"
+    ],
+    "related": [
+      "s3-g7-t1",
+      "s3-g7-t2",
+      "s3-g0-t0"
+    ],
+    "lab": {
+      "objective": "Explain active history, preemption, tracking and independent path prerequisites in one fixed HSRP v2 group.",
+      "requirements": "Browser only for the supplied worksheet. Optional guided inspection needs separately prepared isolated supported routers and a mapped host/peer/table context. No Cisco runtime, packets or live failover is executed by this topic.",
+      "topologyKind": "shared",
+      "topology": [
+        "Host → VIP 192.0.2.1 on one LAN",
+        "A .2 ↔ B .3, v2 group 10",
+        "Active virtual MAC → system/upstream declaration",
+        "Original destination → separate return declaration"
+      ],
+      "steps": [
+        "Compare current A with initial equal default priorities.",
+        "Compare A return with preemption disabled and enabled.",
+        "Compare pending active failure with completed expiry.",
+        "Compare upstream failure with no tracking, configured decrement without preemption, and decrement plus B preemption.",
+        "Remove only return and only system readiness while retaining the active role.",
+        "Test invalid range/history inputs, keyboard-scroll the named table and Reset."
+      ],
+      "verification": "Independent model tests exercise supplied scenarios, role/preemption/availability cases, invalid types/ranges/context, mounted output hiding and Reset. Structural checks cover a named keyboard-focusable scroll region. These contract checks are separate from primary real-browser acceptance and prove no device execution or packet delivery.",
+      "troubleshooting": "Separate control role, LAN availability, system forwarding, upstream route and original return declarations. For actual investigation preserve both observers and original host context; do not diagnose every missing exchange by changing the election priority.",
+      "challenge": "Why can B take over after declared active failure without preempt yet remain backup when a live A’s configured tracking lowers its priority?",
+      "cleanup": "Reset restores the initial supplied scenario without device or learner-progress mutation. This worksheet owns no routers, namespaces, daemons or ARP changes. Any separately authorized target experiment must reconcile its own exact baseline and exclusive resources."
+    },
+    "glossary": {
+      "Hot Standby Router Protocol (HSRP)": "Cisco first-hop redundancy coordinating a virtual gateway.",
+      "Virtual IP address (VIP)": "Host-facing virtual default gateway IPv4 identity.",
+      "Active router": "Router currently serving the scoped virtual gateway.",
+      "Standby router": "Available primary backup in this two-router group.",
+      "Preemption": "Configured permission for higher-priority replacement of an available active.",
+      "Configured tracking": "Explicit dependency that can decrement gateway priority.",
+      "Completed failure/expiry declaration": "Supplied completed failure-detection checkpoint, not an elapsed simulation.",
+      "Virtual MAC address": "Group/version identity used for the virtual gateway at Layer 2."
+    },
+    "exams": [
+      {
+        "testedConcept": "Host gateway",
+        "question": "What default gateway does the fixed host use while A and B change roles?",
+        "answer": "192.0.2.1, the virtual gateway.",
+        "explanation": "HSRP preserves a virtual host gateway identity.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "192.0.2.1, the virtual gateway.",
+          "192.0.2.2, A’s real interface address.",
+          "192.0.2.3, B’s real interface address.",
+          "224.0.0.102, the hello multicast destination."
+        ]
+      },
+      {
+        "testedConcept": "Initial tie",
+        "question": "No previous active exists; A and B are available at priority 100. Which router wins this fixed initial selection?",
+        "answer": "B because its real IPv4 .3 is higher than A .2.",
+        "explanation": "The supplied equal-priority initial tie uses real interface IPv4.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "A because the lower real interface IPv4 wins a tie.",
+          "B because its real IPv4 .3 is higher than A .2.",
+          "A because the virtual gateway address is lower than both real addresses.",
+          "Neither until preemption is enabled for the initial election."
+        ]
+      },
+      {
+        "testedConcept": "Recovery history",
+        "question": "B is serving; higher-priority A returns with A preemption disabled. What does this settled worksheet select?",
+        "answer": "B retains the available active role.",
+        "explanation": "Highest returning priority does not override disabled preemption.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "A takes over solely because 110 exceeds 100.",
+          "B retains the role only if B’s own preemption is enabled.",
+          "B retains the available active role.",
+          "A and B share the active role for this one group."
+        ]
+      },
+      {
+        "testedConcept": "Failure takeover",
+        "question": "A is unavailable and completed failure/expiry is declared. Can available B take over without preemption?",
+        "answer": "Yes, failure takeover differs from displacing a live active.",
+        "explanation": "Failure takeover is a different case from recovery preemption.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "No; B needs preemption even after active failure.",
+          "No; failure takeover requires B to have higher priority than A had.",
+          "Yes, but B must replace the virtual IP with its own real address.",
+          "Yes, failure takeover differs from displacing a live active."
+        ]
+      },
+      {
+        "testedConcept": "Configured tracking",
+        "question": "A priority 110 has configured down-object decrement 20; B is 100 with preempt enabled. What is the scoped result?",
+        "answer": "A becomes 90 and B can take over.",
+        "explanation": "Only configured tracking changes A’s effective priority.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "A becomes 90 and B can take over.",
+          "A stays 110 because tracking changes only the hello timer.",
+          "A becomes 90 but remains active even though B can preempt at 100.",
+          "B becomes 80 because the tracked failure lowers both routers’ priorities."
+        ]
+      },
+      {
+        "testedConcept": "No tracking",
+        "question": "A’s uplink declaration fails but tracking is absent. What can remain true?",
+        "answer": "A can remain active at its supplied priority while path readiness fails.",
+        "explanation": "Control availability and upstream dependency are separate.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "B becomes active because any uplink failure implicitly configures tracking.",
+          "A can remain active at its supplied priority while path readiness fails.",
+          "A’s priority automatically drops by the default decrement despite absent tracking.",
+          "B must have a higher group number to take over."
+        ]
+      },
+      {
+        "testedConcept": "Version 2 identity",
+        "question": "What is the fixed HSRP v2 group 10 virtual MAC?",
+        "answer": "0000.0c9f.f00a.",
+        "explanation": "The v2 group number is represented in its three-hex-digit suffix.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "0000.5e00.010a.",
+          "0000.0c07.ac0a.",
+          "0000.0c9f.f00a.",
+          "0000.0c9f.f010."
+        ]
+      },
+      {
+        "testedConcept": "Protocol transport",
+        "question": "Which control destination is scoped for IPv4 HSRP v2?",
+        "answer": "UDP 1985 to 224.0.0.102.",
+        "explanation": "HSRP and GLBP share a multicast destination but use different UDP ports.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "UDP 1985 to 224.0.0.2.",
+          "IP protocol 112 to 224.0.0.18.",
+          "UDP 3222 to 224.0.0.102.",
+          "UDP 1985 to 224.0.0.102."
+        ]
+      },
+      {
+        "testedConcept": "History consistency",
+        "question": "Which declaration pair does the worksheet reject?",
+        "answer": "Completed expiry while the previous active is still declared available.",
+        "explanation": "Expiry is scoped to a previous active now unavailable.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Completed expiry while the previous active is still declared available.",
+          "Previous active A unavailable and expiry complete.",
+          "No previous active and both routers unavailable with no expiry declaration.",
+          "Current B available with higher-priority A preemption disabled."
+        ]
+      },
+      {
+        "testedConcept": "Proof limit",
+        "question": "A is active and upstream/system declarations are ready, but returnReady is false. What follows?",
+        "answer": "Original exchange prerequisites do not agree.",
+        "explanation": "The return path remains an independent original-transaction requirement.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The active role must automatically move to the standby.",
+          "Original exchange prerequisites do not agree.",
+          "HSRP priority must be decremented because the return checkbox is false.",
+          "Changing the virtual MAC is required before checking the return path."
+        ]
+      }
+    ],
+    "quick": [
+      {
+        "testedConcept": "Default priority",
+        "question": "What is the scoped default HSRP priority?",
+        "answer": "100.",
+        "explanation": "Initial preference is separate from existing-role history.",
+        "difficulty": "Beginner",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Equal recovery",
+        "question": "Does equal priority displace an available active in this model?",
+        "answer": "No.",
+        "explanation": "Initial ties and live-owner replacement are distinct.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Execution scope",
+        "question": "Does selecting completed expiry measure the hold interval?",
+        "answer": "No; it is a supplied checkpoint.",
+        "explanation": "The worksheet has no timers or packets.",
+        "difficulty": "Advanced",
+        "type": "short-answer"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cisco IOS XE17: HSRP roles, preemption, tracking and inspection",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-0.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17: HSRP v2 identities and interoperability",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-v2.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco HSRP FAQ: equal-priority initial selection and tracking",
+        "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/9281-3.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco HSRP troubleshooting: both IPv4 versions use UDP 1985",
+        "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/10583-62.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17: ARP read-only inspection",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+        "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "batch": "10",
+    "level": "Intermediate → Advanced",
+    "minutes": 65,
+    "configuration": "Browser declarations require no router configuration. Optional inspection requires two exclusively owned, already prepared routers on a mapped isolated broadcast LAN, known VIP/group/version, working management and documented upstream/return intent. No interface shutdown, role priority change, peer reset, ARP clear, save or persistent service is supplied. Record exact prior configuration before any separately authorized target experiment.",
+    "performance": "This tabletop uses settled declarations and boolean path prerequisites. It measures no timer interval, failure detection, convergence, lost packets, capacity or latency. A virtual gateway role is not a throughput promise; upstream route and system forwarding readiness can differ from control participation. Shorter protocol timers need actual platform and failure-scenario testing.",
+    "security": "Protect the shared LAN and control-plane participation against unauthorized gateway advertisements and address conflicts. Verify applicable authentication and control-plane safeguards on the exact supported release; this worksheet does not configure or test them. Preserve sensitive configuration privately and keep independent management. A valid role or ARP entry does not authenticate upstream route ownership or prove endpoint service. RFC 9568 does not define an authentication mechanism for VRRP packets. TTL 255 checking helps bound packet origin to the link; it does not authenticate a participating host or protect against every on-link attack. This worksheet validates no packets.",
+    "id": "s3-g7-t1",
+    "title": "VRRP",
+    "subtitle": "Apply current VRRP v3 owner and preemption rules before judging the usable gateway path.",
+    "interactive": "vrrp",
+    "definition": "Virtual Router Redundancy Protocol elects one router to take forwarding responsibility for a virtual router on a multiaccess LAN. RFC 9568 is the current VRRP v3 specification for IPv4 and IPv6 and obsoletes RFC 5798. This lesson scopes IPv4 VRID 10 and uses current Active/Backup terminology; some Cisco displays still say MASTER. It models one supplied selection checkpoint, not protocol packet validation or a timed state machine.",
+    "purpose": "Use a standard virtual gateway protocol when supported routers must share first-hop responsibility. Understand ordinary preemption, the special IPv4 address owner and physical versus virtual identity before comparing implementations. VRRP does not install upstream routes or synchronize application state. A winning role still needs system forwarding, an upstream path and the original return path.",
+    "mental": "Two routers share responsibility for one virtual gateway address. A router that actually owns that address has a reserved precedence; an ordinary backup has a configurable preference and default-enabled preemption. Keep the owner’s actual primary address distinct from an ordinary router borrowing forwarding responsibility. The role card and original-service card require separate evidence.",
+    "components": [
+      "Fixed identities: VIP 192.0.2.1 and VRID 10 on one broadcast LAN. Normally A primary is .2 and B .3. If A is explicitly declared address owner, its primary becomes .1 and its priority must be 255. B is never owner in this bounded model; there is no double-owner input.",
+      "Priority: nonowner values are 1–254, default 100. Priority 255 is reserved for the IPvX address owner. Zero is a special relinquishing advertisement, not an ordinary configured backup priority; this worksheet rejects zero rather than simulating a shutdown packet.",
+      "Active and Backup: current RFC terminology separates the serving router from available alternates. Ordinary starting/restarting higher-priority backup preemption is enabled by default; disabling it can retain a lower-priority available active. The address owner takes precedence regardless of the ordinary preemption flag.",
+      "Tie/history: an initial supplied equal-priority choice selects the higher real IPv4, B .3. Equal priority does not force an ordinary returning backup to displace a currently available active in this contract. Full competing-active packet history and partition recovery are excluded.",
+      "Wire identity: IPv4 VRRP v3 uses IP protocol number 112, multicast 224.0.0.18 and TTL 255. VRID 10 maps to MAC 0000.5e00.010a. VRRP is not UDP HSRP/GLBP or BGP TCP 179. Packet type, checksum, version and TTL validation are source-described and unmodeled.",
+      "Scope of address use: the owner’s VIP is a real address on that router; a nonowner active can forward transit frames to the virtual MAC. Acceptance of traffic addressed to the VIP itself involves owner/Accept_Mode rules. A ping of the VIP is therefore not a universal transit-service test."
+    ],
+    "mechanism": [
+      "Record version, family, VRID, protected address, primary addresses and the actual owner declaration. Match the current standard to the implementation’s supported behavior; older Cisco guide text and MASTER output are not evidence of RFC 9568 feature compliance.",
+      "Validate strict ownership: A owner requires priority 255 and primary .1; ordinary A/B need 1–254. The model derives A’s primary from that owner declaration, so an inconsistent owner/priority pair cannot silently become valid.",
+      "With no previous active, select the highest available priority, using higher real IPv4 for a supplied initial tie. An available owner wins. These settled rules do not calculate advertisement or Active_Down intervals.",
+      "With an available ordinary active, a higher-priority available challenger needs its own preemption enabled. Owner A takes precedence on return even if its ordinary preemption checkbox is false. Equal-priority recovery retains the existing ordinary active in the scoped contract.",
+      "With the previous active unavailable, keep a pending-declaration view until failure/expiry is explicitly complete; then the available backup may take over regardless of ordinary preemption. No priority-zero packet, shutdown or skew-time acceleration is executed.",
+      "Inspect active availability and independent system/upstream readiness, then original return. The worksheet reports supplied prerequisite agreement. Actual virtual-MAC learning, packet validation and the endpoint exchange require their own observation."
+    ],
+    "flow": [
+      [
+        "Map VRID and ownership",
+        "Record protected address, primary IPs, version and owner."
+      ],
+      [
+        "Review settled selection",
+        "Apply owner precedence, available priorities and ordinary preemption."
+      ],
+      [
+        "Check forwarding dependencies",
+        "Separate active role from system and upstream state."
+      ],
+      [
+        "Verify actual service",
+        "Inspect host/virtual-MAC context and the original return exchange."
+      ]
+    ],
+    "comparison": [
+      [
+        "Owner / nonowner",
+        "Real protected address / backup forwarding responsibility",
+        "Only the owner uses reserved priority 255."
+      ],
+      [
+        "VRRP / HSRP default preempt",
+        "Enabled / disabled in scoped guidance",
+        "Recovery behavior must not be copied between them."
+      ],
+      [
+        "Initial tie / existing role",
+        "Higher real IP / retained available role at equal priority",
+        "The worksheet does not invent advertisement race history."
+      ],
+      [
+        "Priority zero / configurable backup",
+        "Relinquishing advertisement / values 1–254",
+        "Zero is not a normal configured priority here."
+      ],
+      [
+        "VIP reachability / transit service",
+        "Address acceptance / routed original exchange",
+        "Owner and Accept_Mode matter for traffic to the VIP."
+      ]
+    ],
+    "example": "B currently serves at 100 and A returns at 110. Default-enabled A preemption selects A in the settled ordinary case; disabling it retains B. Now declare A the actual .1 address owner and priority 255: owner precedence selects A even with ordinary preempt disabled. If owner A becomes unavailable and expiry is declared complete, B can serve the same VIP as a nonowner; that does not make B priority 255 or owner. Remove returnReady and the role remains while exchange prerequisites fail.",
+    "ports": "IPv4 VRRP v3 is IP protocol 112 to 224.0.0.18 with TTL 255. It does not use a TCP or UDP service port. The fixed virtual MAC is0000.5e00.010a for VRID 10. No advertisements or checksum checks run in the browser.",
+    "commands": [
+      {
+        "code": "show vrrp brief",
+        "explanation": "Read both prepared observers’ VRRP group summaries.",
+        "expected": "GUIDED, NOT EXECUTED: Record version/family/VRID, priority, ownership, preemption and displayed MASTER/BACKUP scope. Map MASTER to the current RFC Active concept without claiming exact current-standard implementation compliance.",
+        "filename": "ios",
+        "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required"
+      },
+      {
+        "code": "show vrrp detail",
+        "explanation": "Inspect supported detailed VRRP configuration/status.",
+        "expected": "GUIDED, NOT EXECUTED: Record the actual platform parser, advertised intervals and ownership context; no timer behavior or packet validation is inferred from a worksheet.",
+        "filename": "ios",
+        "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required"
+      },
+      {
+        "code": "show ip arp",
+        "explanation": "Read actual scoped Layer 2 address context.",
+        "expected": "GUIDED, NOT EXECUTED: Correlate virtual MAC and host gateway cache separately. A VIP echo result or router cache alone is not a transit/application result.",
+        "filename": "ios",
+        "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required"
+      },
+      {
+        "code": "show ip route\nshow running-config",
+        "explanation": "Preserve route and owner/preemption intent separately.",
+        "expected": "GUIDED, NOT EXECUTED: Inspect original destination and return context in the applicable table. Keep configuration private; no mutation or save is supplied.",
+        "filename": "ios",
+        "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required"
+      }
+    ],
+    "production": "Choose a supported VRRP version/family and document owner versus nonowner semantics, default or changed preemption, group/address mapping and peer compatibility. RFC 9568 covers more validation and behavior than this worksheet. Review actual release compliance, Accept_Mode, address conflicts, tracking extensions and failure/recovery policy in an owned test. First-hop redundancy does not synchronize NAT/firewall sessions or create independent upstream paths.",
+    "troubleshooting": [
+      [
+        "Owner checkbox rejected",
+        "Set A priority 255 only with owner declaration; nonowners must remain1–254."
+      ],
+      [
+        "Higher-priority return stays backup",
+        "Check ordinary preemption and whether the returning router is an actual address owner."
+      ],
+      [
+        "Actual MASTER differs from predicted declaration",
+        "Preserve both peers’ version/address/priority history and actual packets; the model excludes race and partition history."
+      ],
+      [
+        "VIP ping differs from transit",
+        "Inspect owner/Accept_Mode and test the original routed destination separately."
+      ],
+      [
+        "Active available, traffic fails",
+        "Check upstream/system and original return evidence."
+      ]
+    ],
+    "mistakes": [
+      "Using obsolete RFC 5798 as the current specification without noting RFC 9568.",
+      "Configuring priority 255 for an ordinary nonowner.",
+      "Treating priority 0 as a normal configured backup preference.",
+      "Copying HSRP default preemption to VRRP.",
+      "Describing VRRP as UDP 112 or TCP 179.",
+      "Calling a declared expiry a measured Active_Down interval."
+    ],
+    "prerequisites": [
+      "s3-g7-t0",
+      "s2-g2-t0",
+      "s1-g4-t2"
+    ],
+    "related": [
+      "s3-g7-t2",
+      "s1-g1-t1",
+      "s3-g0-t0"
+    ],
+    "lab": {
+      "objective": "Apply ordinary recovery versus address-owner precedence in fixed IPv4 VRRP v3 and separate the selected role from original exchange readiness.",
+      "requirements": "Browser only for the supplied worksheet. Optional guided inspection needs separately prepared isolated supported routers and a mapped host/peer/table context. No Cisco runtime, packets or live failover is executed by this topic.",
+      "topologyKind": "shared",
+      "topology": [
+        "One LAN, VIP 192.0.2.1, VRID 10",
+        "A .2 or actual owner .1 ↔ B .3",
+        "Virtual MAC 0000.5e00.010a",
+        "Active path → system/upstream → independent return"
+      ],
+      "steps": [
+        "Compare initial equal defaults with current A history.",
+        "Compare ordinary A recovery with default preempt enabled and then disabled.",
+        "Select owner recovery; explain A primary .1, priority 255 and precedence despite ordinary preempt off.",
+        "Compare owner failure, ordinary failure after expiry and pending detection.",
+        "Remove upstream, system and return gates separately.",
+        "Reject zero, nonowner255, owner-without255 and inconsistent expiry; keyboard-scroll and Reset."
+      ],
+      "verification": "Independent model tests exercise supplied scenarios, role/preemption/availability cases, invalid types/ranges/context, mounted output hiding and Reset. Structural checks cover a named keyboard-focusable scroll region. These contract checks are separate from primary real-browser acceptance and prove no device execution or packet delivery.",
+      "troubleshooting": "Separate control role, LAN availability, system forwarding, upstream route and original return declarations. For actual investigation preserve both observers and original host context; do not diagnose every missing exchange by changing the election priority.",
+      "challenge": "Why can owner A preempt with ordinary preempt disabled while nonowner A at 110 cannot? After owner failure, why does B retain a nonowner priority while serving the protected gateway?",
+      "cleanup": "Reset restores the initial supplied scenario without device or learner-progress mutation. This worksheet owns no routers, namespaces, daemons or ARP changes. Any separately authorized target experiment must reconcile its own exact baseline and exclusive resources."
+    },
+    "glossary": {
+      "Virtual Router Redundancy Protocol (VRRP)": "Standard first-hop election protocol.",
+      "Virtual Router Identifier (VRID)": "Virtual Router Identifier, scoped here to 10.",
+      "Active router": "Current RFC serving-router term; some CLI output says MASTER.",
+      "Backup router": "Router available to assume forwarding responsibility.",
+      "IPv4 address owner": "Router with the protected IPv4 as an actual interface address.",
+      "Preempt_Mode": "Ordinary backup recovery permission, default true.",
+      "Priority 255": "Reserved address-owner precedence.",
+      "Priority zero advertisement": "Relinquishing advertisement value, not modeled configuration.",
+      "Accept_Mode": "Defined behavior for packets addressed to the protected address; outside this worksheet."
+    },
+    "exams": [
+      {
+        "testedConcept": "Current specification",
+        "question": "Which document currently specifies VRRP v3 for IPv4 and IPv6?",
+        "answer": "RFC 9568, which obsoletes RFC 5798.",
+        "explanation": "The lesson uses the current RFC 9568.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "RFC 9568, which obsoletes RFC 5798.",
+          "RFC 5798, with RFC 9568 applying only toIPv6.",
+          "RFC 3768, with version3 using its unchanged IPv4-only specification.",
+          "RFC 2281, the HSRP specification used by VRRP v3."
+        ]
+      },
+      {
+        "testedConcept": "Ordinary default",
+        "question": "What is the VRRP ordinary preemption default in RFC 9568?",
+        "answer": "Enabled.",
+        "explanation": "Preempt_Mode defaults to True.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Disabled, matching the scoped HSRP default.",
+          "Enabled.",
+          "Enabled only for routers at the default priority 100.",
+          "Disabled for nonowners and configurable only on the owner."
+        ]
+      },
+      {
+        "testedConcept": "Reserved owner",
+        "question": "A declares VIP .1 as its actual primary address. What priority must the scoped owner use?",
+        "answer": "255.",
+        "explanation": "The owner has reserved priority 255.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "100, the nonowner default.",
+          "254, the highest configurable nonowner value.",
+          "255.",
+          "0, the relinquishing advertisement value."
+        ]
+      },
+      {
+        "testedConcept": "Owner recovery",
+        "question": "B is active, owner A returns with ordinary preempt disabled. Which settled result follows?",
+        "answer": "A takes precedence as the address owner.",
+        "explanation": "Owner precedence is independent of the ordinary preemption flag.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "B retains the role because A’s ordinary preemption is disabled.",
+          "A must wait for B to fail before its ownership takes effect.",
+          "B must first increase its own priority to 255.",
+          "A takes precedence as the address owner."
+        ]
+      },
+      {
+        "testedConcept": "Nonowner priority",
+        "question": "Which configured input is rejected for nonowner B?",
+        "answer": "255.",
+        "explanation": "255 is reserved for the sole modeled owner A.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "255.",
+          "254.",
+          "100.",
+          "1."
+        ]
+      },
+      {
+        "testedConcept": "Priority zero",
+        "question": "What does priority 0 mean in the specification?",
+        "answer": "An Active relinquishing advertisement, not a normal backup configuration.",
+        "explanation": "The worksheet rejects 0 instead of simulating shutdown advertisements.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The default configured backup priority.",
+          "An Active relinquishing advertisement, not a normal backup configuration.",
+          "The reserved address-owner priority.",
+          "The tie-break value for the lower interface IPv4 address."
+        ]
+      },
+      {
+        "testedConcept": "Wire transport",
+        "question": "Which IPv4 transport identity is correct?",
+        "answer": "IP protocol 112 to 224.0.0.18, TTL 255.",
+        "explanation": "VRRP is carried directly over IP.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "UDP 112 to 224.0.0.18, TTL 255.",
+          "UDP 1985 to 224.0.0.102, TTL 255.",
+          "IP protocol 112 to 224.0.0.18, TTL 255.",
+          "IP protocol 112 to 224.0.0.102, TTL 1."
+        ]
+      },
+      {
+        "testedConcept": "Virtual MAC",
+        "question": "What MAC maps to fixed IPv4 VRID 10?",
+        "answer": "0000.5e00.010a.",
+        "explanation": "VRID 10 is hexadecimal 0a in the IPv4 VRRP MAC block.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "0000.0c9f.f00a.",
+          "0000.5e00.020a.",
+          "0000.5e00.0110.",
+          "0000.5e00.010a."
+        ]
+      },
+      {
+        "testedConcept": "VIP versus service",
+        "question": "Why is pinging the VIP not a universal transit-service acceptance test?",
+        "answer": "Owner/Accept_Mode address acceptance and original transit forwarding are different scopes.",
+        "explanation": "Inspect the original routed destination and return separately.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Owner/Accept_Mode address acceptance and original transit forwarding are different scopes.",
+          "The virtual MAC is used only for router management rather than transit.",
+          "An ordinary backup answers all VIP ARP requests even while another router is active.",
+          "Reaching the VIP establishes the destination server’s independent return route."
+        ]
+      },
+      {
+        "testedConcept": "Failure takeover",
+        "question": "Owner A is unavailable after declared expiry; B is available at 100. What can B do?",
+        "answer": "Serve the virtual router as a nonowner without acquiring ownership.",
+        "explanation": "Role takeover does not change physical address ownership.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Become owner at 255 automatically.",
+          "Serve the virtual router as a nonowner without acquiring ownership.",
+          "Take over only after making the VIP its actual primary address.",
+          "Remain backup because disabled ordinary preemption forbids failure takeover."
+        ]
+      }
+    ],
+    "quick": [
+      {
+        "testedConcept": "Nonowner default",
+        "question": "What is the default nonowner priority?",
+        "answer": "100.",
+        "explanation": "The legal nonowner range is1–254.",
+        "difficulty": "Beginner",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Terminology",
+        "question": "How does older CLI MASTER relate to current RFC Active?",
+        "answer": "It names the serving role in that display context.",
+        "explanation": "Do not infer full current-standard compliance from a label.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Wire scope",
+        "question": "Does this worksheet validate TTL, checksum or priority-zero packets?",
+        "answer": "No.",
+        "explanation": "It computes supplied role/readiness declarations only.",
+        "difficulty": "Advanced",
+        "type": "short-answer"
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 9568: current VRRP v3, owner, preemption, packet and MAC rules",
+        "url": "https://www.rfc-editor.org/rfc/rfc9568",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17: show vrrp brief inspection syntax; implementation scoped",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-vrrp-0.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17 FHRP VRRP guide: show vrrp detail",
+        "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr3-fwd/fhrp/fhrp-configuration-guide/vrrp.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17: ARP inspection",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+        "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "batch": "10",
+    "level": "Intermediate → Advanced",
+    "minutes": 65,
+    "configuration": "Browser declarations require no router configuration. Optional inspection requires two exclusively owned, already prepared routers on a mapped isolated broadcast LAN, known VIP/group/version, working management and documented upstream/return intent. No interface shutdown, role priority change, peer reset, ARP clear, save or persistent service is supplied. Record exact prior configuration before any separately authorized target experiment.",
+    "performance": "This tabletop uses settled declarations and boolean path prerequisites. It measures no timer interval, failure detection, convergence, lost packets, capacity or latency. A virtual gateway role is not a throughput promise; upstream route and system forwarding readiness can differ from control participation. Shorter protocol timers need actual platform and failure-scenario testing.",
+    "security": "Protect the shared LAN and control-plane participation against unauthorized gateway advertisements and address conflicts. Verify applicable authentication and control-plane safeguards on the exact supported release; this worksheet does not configure or test them. Preserve sensitive configuration privately and keep independent management. A valid role or ARP entry does not authenticate upstream route ownership or prove endpoint service. The scoped GLBP guide provides text and MD5 authentication configuration; do not interpret a text string as encrypted control traffic. Actual authentication/version compatibility and key handling remain target-specific and are not exercised here.",
+    "id": "s3-g7-t2",
+    "title": "GLBP",
+    "subtitle": "Separate the ARP-answering gateway from the forwarder serving each supplied virtual MAC.",
+    "interactive": "glbp",
+    "definition": "Gateway Load Balancing Protocol is Cisco first-hop redundancy that combines one virtual gateway IPv4 address with multiple virtual MAC forwarders. The Active Virtual Gateway (AVG) coordinates the group and answers host ARP requests; Active Virtual Forwarders (AVFs) forward traffic addressed to their virtual MACs. This lesson scopes Cisco IOS 15M&T documentation and a fixed two-host IPv4 tabletop. It consumes supplied assignments and settled ownership rather than implementing Cisco load balancing or timed handoff.",
+    "purpose": "Use GLBP where a supported Cisco platform and reviewed design need first-hop forwarding distributed among group members while hosts share one default gateway IP. Inspect which MAC each host learned and which router now serves that MAC. Losing or recovering the AVG and losing an AVF are different operations. Host distribution does not prove equal traffic, independent upstream paths or session continuity.",
+    "mental": "One receptionist answers the shared gateway address and hands different hosts different virtual desk numbers. Each desk number has a current forwarding owner. The receptionist can change without changing every supplied cached desk assignment, and one surviving router can serve more than one desk. The worksheet records those assignments and owners; it does not schedule packets or simulate the receptionist’s allocation algorithm.",
+    "components": [
+      "Fixed group and host view: group 10, VIP 192.0.2.1, routers A/B on one LAN and two supplied hosts. Host 1 and Host 2 carry explicit cached assignments to symbolic V-MAC-A, V-MAC-B or none. These symbols are identities in this model, not generated literal GLBP MAC bytes.",
+      "AVG role: one active virtual gateway coordinates virtual MAC assignment and answers ARP for the virtual IP. Its settled owner, LAN availability and ARP-answer readiness are independent supplied declarations. It can also serve a forwarder, but AVG is not synonymous with all forwarding.",
+      "AVF role: each supplied virtual MAC has settled owner A, B or none. A host’s existing cached MAC selects that forwarder in this tabletop; ownership can be declared handed off so B serves both MACs. Control availability, system forwarding and upstream readiness determine separate prerequisite gates.",
+      "Load sharing: supported vendor modes include round-robin, weighted and host-dependent assignment behavior. This model implements none of those algorithms; it only compares supplied host ARP entries. One VIP leading hosts to different MACs is not per-packet ECMP, a fairness measurement or proof that each application flow is balanced.",
+      "Preemption and weighting: the scoped IOS 15M&T guide disables AVG preemption by default but enables forwarder preemption with a default 30-second delay. Gateway priority influences AVG preference; weighting and tracked thresholds govern forwarding capacity/eligibility. They are separate quantities, not interchangeable preference fields. No delay or threshold engine runs here.",
+      "Handoff history: actual GLBP forwarder redundancy includes redirect and forwarder-timeout behavior for virtual MACs. A supplied settled owner is not proof of that process or cache refresh. The worksheet explicitly excludes failed-gateway timer history, host ARP expiry and partition/dual-AVG reconciliation."
+    ],
+    "mechanism": [
+      "Record supported platform/release, LAN, group, VIP and both roles from both routers. The guide source is IOS 15M&T; inspect support on the actual target rather than assuming all IOS XE 17 switches implement GLBP.",
+      "Read the supplied settled AVG separately from per-MAC owners. AVG B with V-MAC-A still owned by A is a valid tabletop checkpoint. The model does not elect AVG from priority or infer AVF ownership from that election.",
+      "For new ARP answering, require a supplied AVG that participates on the LAN and an ARP-answer-ready declaration. This gate says nothing about whether a host already has a cached assignment or whether that assignment has a usable forwarder.",
+      "For each cached host assignment, find its supplied MAC owner; none yields no forwarder. Require that owner to participate, have system forwarding and have an upstream path. Add the original return gate separately. Existing cached-host forwarding does not depend on a fresh ARP-answer gate in this fixed no-cache-expiry contract.",
+      "Compare declared handoff B owning both virtual MACs with A failed while V-MAC-A still assigned to A. The first changes the owner declaration; the second leaves that host’s forward prerequisite false. Neither predicts how long a real takeover or redirect lasts.",
+      "Correlate actual host cache, AVG/forwarder records, route and original exchange for separate target investigation. Preserve weighted/host-dependent settings and tracking intent without deriving packet distribution from the two supplied records."
+    ],
+    "flow": [
+      [
+        "Map one VIP and both roles",
+        "Record group, AVG, virtual MACs and per-MAC owners."
+      ],
+      [
+        "Read host assignments",
+        "Compare the two supplied cached ARP MACs."
+      ],
+      [
+        "Check each forwarder path",
+        "Resolve its declared owner and independent forwarding/upstream gates."
+      ],
+      [
+        "Verify both transactions",
+        "Inspect actual ARP, return and original service separately."
+      ]
+    ],
+    "comparison": [
+      [
+        "AVG / AVF",
+        "ARP/assignment coordination / per-MAC forwarding",
+        "A router can fill both roles; role names are not interchangeable."
+      ],
+      [
+        "VIP / virtual MAC",
+        "Shared Layer 3 gateway / host-assigned Layer 2 identity",
+        "Different hosts can use different MACs for the same VIP."
+      ],
+      [
+        "Gateway priority / weighting",
+        "AVG preference / forwarding capacity and thresholds",
+        "Changing one is not the same as changing the other."
+      ],
+      [
+        "New ARP / cached forwarding",
+        "Answer function / existing host assignment",
+        "A cached host can retain prerequisites while new ARP answering fails."
+      ],
+      [
+        "Declared handoff / timed process",
+        "Supplied settled owner / real redirect/timeout history",
+        "This model computes no timing or vendor allocation."
+      ]
+    ],
+    "example": "Baseline assigns Host 1 V-MAC-A served by A and Host 2 V-MAC-B served by B while AVG is A. Both hosts use VIP .1. Select no AVG: new ARP answering is false, but the supplied cached hosts can retain forwarding prerequisites. Select failed A with MAC ownership still on A: Host 1’s prerequisite fails while Host 2’s can remain. Select settled handoff: B is AVG and owns both MACs, so both cached hosts use B under the supplied readiness gates. This comparison measures no packets and does not calculate a redirect timer.",
+    "ports": "The scoped IPv4 GLBP guide uses UDP 3222 to 224.0.0.102 for multicast hello exchange; assignment request/reply messages have their own defined unicast exchange. HSRP v2 uses the same multicast address but UDP 1985. No control message or ARP request is emitted here.",
+    "commands": [
+      {
+        "code": "show glbp brief",
+        "explanation": "Read supplied target gateway and forwarder summaries from both observers.",
+        "expected": "GUIDED, NOT EXECUTED: Record interface/group, AVG and forwarder rows rather than collapsing all Active labels into one role. Actual syntax/support must match the prepared platform.",
+        "filename": "ios",
+        "platform": "Prepared isolated Cisco IOS 15M&T GLBP-supported context · read-only inspection; exact platform/support required"
+      },
+      {
+        "code": "show glbp",
+        "explanation": "Inspect detailed gateway, forwarder, weighting and preemption context.",
+        "expected": "GUIDED, NOT EXECUTED: Preserve actual virtual MAC owner, priority, weighting/threshold and redirect/timeout fields. They are observations, not worksheet-computed delays.",
+        "filename": "ios",
+        "platform": "Prepared isolated Cisco IOS 15M&T GLBP-supported context · read-only inspection; exact platform/support required"
+      },
+      {
+        "code": "show ip arp",
+        "explanation": "Read actual address-resolution context separately from roles.",
+        "expected": "GUIDED, NOT EXECUTED: Record each original host’s actual VIP cache through its own supported host tool; router ARP alone does not establish both host assignments.",
+        "filename": "ios",
+        "platform": "Prepared isolated Cisco IOS 15M&T; ARP syntax cross-checked with IOS XE 17 guide · read-only inspection; exact platform/support required"
+      },
+      {
+        "code": "show ip route\nshow running-config",
+        "explanation": "Read upstream route and original GLBP intent privately.",
+        "expected": "GUIDED, NOT EXECUTED: Inspect each selected forwarder’s applicable destination and return scope. The record does not prove traffic fairness, state synchronization or original service.",
+        "filename": "ios",
+        "platform": "Prepared isolated Cisco IOS 15M&T; base inspection syntax also documented in IOS XE 17 · read-only inspection; exact platform/support required"
+      }
+    ],
+    "production": "Confirm GLBP support and operational limits on the actual Cisco platform before design. Choose assignment mode, AVG priority/recovery policy, AVF weighting/tracked dependencies and redirect/forwarder behavior deliberately. Monitor host assignment and per-forwarder path health independently. Test uneven host traffic, failure and recovery with actual caches and original applications. A two-host worksheet is not an upstream ECMP or stateful firewall/NAT distribution design.",
+    "troubleshooting": [
+      [
+        "One host fails but another works",
+        "Compare actual cached MAC and its settled forwarder owner/path."
+      ],
+      [
+        "AVG changes, traffic owner unchanged",
+        "AVG coordinates ARP; per-MAC forwarding is separate."
+      ],
+      [
+        "New hosts fail while cached hosts continue",
+        "Investigate AVG/ARP-answer availability separately from existing forwarding."
+      ],
+      [
+        "Weighting mistaken for gateway priority",
+        "Inspect the configured quantity and tracked thresholds; AVG and AVF roles differ."
+      ],
+      [
+        "Handoff timing claimed from declarations",
+        "Preserve actual redirect/timeout/capture records; this model has no timing evidence."
+      ]
+    ],
+    "mistakes": [
+      "Calling every Active row the AVG.",
+      "Treating one VIP as necessarily one forwarding MAC.",
+      "Describing supplied ARP assignments as per-packet ECMP.",
+      "Assuming AVG election changes every AVF owner.",
+      "Using gateway priority as forwarding weighting.",
+      "Copying AVG preemption defaults to AVF.",
+      "Claiming a settled handoff proves30-second observed failover."
+    ],
+    "prerequisites": [
+      "s3-g7-t0",
+      "s1-g1-t1",
+      "s2-g2-t0"
+    ],
+    "related": [
+      "s3-g7-t1",
+      "s3-g0-t0",
+      "s1-g4-t2"
+    ],
+    "lab": {
+      "objective": "Trace two supplied cached host MAC assignments to independent settled forwarder owners and distinguish new ARP answering from existing forwarding.",
+      "requirements": "Browser only for the supplied worksheet. Optional guided inspection needs separately prepared isolated supported routers and a mapped host/peer/table context. No Cisco runtime, packets or live failover is executed by this topic.",
+      "topologyKind": "shared",
+      "topology": [
+        "Host 1 and Host 2 share VIP 192.0.2.1",
+        "AVG A or B or none → new ARP-answer gate",
+        "V-MAC-A/B → separately supplied A/B/none owner",
+        "Per-owner system/upstream → original return"
+      ],
+      "steps": [
+        "Read split assignments and then both hosts assigned V-MAC-A.",
+        "Select supplied AVG B with unchanged MAC owners.",
+        "Compare no AVG and failed ARP-answer readiness with unchanged cached host forwarding.",
+        "Compare A unavailable without handoff with declared B ownership of both MACs.",
+        "Remove one MAC owner, one host cache, one owner uplink and return readiness separately.",
+        "Reject invalid role/MAC/boolean declarations; keyboard-scroll and Reset."
+      ],
+      "verification": "Independent model tests exercise supplied scenarios, role/preemption/availability cases, invalid types/ranges/context, mounted output hiding and Reset. Structural checks cover a named keyboard-focusable scroll region. These contract checks are separate from primary real-browser acceptance and prove no device execution or packet delivery.",
+      "troubleshooting": "Separate control role, LAN availability, system forwarding, upstream route and original return declarations. For actual investigation preserve both observers and original host context; do not diagnose every missing exchange by changing the election priority.",
+      "challenge": "Why can cached Host 2 retain forwarding prerequisites without an available AVG, and why can B serving two virtual MACs coexist with one shared gateway IP?",
+      "cleanup": "Reset restores the initial supplied scenario without device or learner-progress mutation. This worksheet owns no routers, namespaces, daemons or ARP changes. Any separately authorized target experiment must reconcile its own exact baseline and exclusive resources."
+    },
+    "glossary": {
+      "Gateway Load Balancing Protocol (GLBP)": "Cisco gateway redundancy with virtual-MAC load sharing.",
+      "Active Virtual Gateway (AVG)": "Active Virtual Gateway coordinating assignment and ARP.",
+      "Active Virtual Forwarder (AVF)": "Active Virtual Forwarder serving traffic for a virtual MAC.",
+      "Virtual MAC address": "Layer 2 identity assigned to a host for the shared gateway.",
+      "Forwarder weighting": "Forwarding capacity/eligibility quantity with tracked thresholds.",
+      "Gateway priority": "Preference used for AVG selection, distinct from weighting.",
+      "Redirect time": "Actual protocol handoff parameter, not calculated here.",
+      "Cached host assignment": "Supplied host ARP mapping, with no expiry simulation."
+    },
+    "exams": [
+      {
+        "testedConcept": "AVG purpose",
+        "question": "Which role coordinates virtual MAC assignment and answers ARP for the shared VIP?",
+        "answer": "AVG.",
+        "explanation": "AVG responsibility differs from per-MAC forwarding.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "AVG.",
+          "The AVF serving Host 1’s cached MAC, irrespective of the AVG.",
+          "The standby virtual gateway before it becomes AVG.",
+          "Each AVF independently assigning all of the group’s virtual MACs."
+        ]
+      },
+      {
+        "testedConcept": "AVF purpose",
+        "question": "What selects the forwarding owner for an existing supplied host entry?",
+        "answer": "Its cached virtual MAC and that MAC’s settled owner.",
+        "explanation": "The worksheet resolves supplied MAC ownership per host.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The current AVG identity, regardless of the cached MAC.",
+          "Its cached virtual MAC and that MAC’s settled owner.",
+          "The highest gateway priority, regardless of the MAC owner.",
+          "The highest weighting value, without checking the supplied owner."
+        ]
+      },
+      {
+        "testedConcept": "Shared VIP",
+        "question": "Can two hosts use the same GLBP gateway IP but different supplied MACs?",
+        "answer": "Yes, the AVG can provide different virtual MAC assignments.",
+        "explanation": "GLBP separates shared VIP from individual host MAC assignment.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "No; one VIP requires one shared virtual MAC for all hosts.",
+          "Yes, but only by configuring different virtual IPs on the hosts.",
+          "Yes, the AVG can provide different virtual MAC assignments.",
+          "Yes, because GLBP alternates the next-hop MAC for each packet."
+        ]
+      },
+      {
+        "testedConcept": "AVG default",
+        "question": "Which preemption default is documented in the scoped IOS 15M&T guide?",
+        "answer": "AVG disabled; AVF enabled with default 30-second delay.",
+        "explanation": "Gateway and forwarder preemption have different defaults.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "AVG enabled and AVF disabled.",
+          "Both enabled with the same 30-second delay.",
+          "Both disabled until gateway priority exceeds 100.",
+          "AVG disabled; AVF enabled with default 30-second delay."
+        ]
+      },
+      {
+        "testedConcept": "Weighting distinction",
+        "question": "Which distinction is correct?",
+        "answer": "Gateway priority concerns AVG preference; weighting concerns forwarding capacity/thresholds.",
+        "explanation": "Do not exchange those independent policy quantities.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Gateway priority concerns AVG preference; weighting concerns forwarding capacity/thresholds.",
+          "Weighting selects AVG and gateway priority selects the host-assigned MAC.",
+          "Gateway priority and weighting are the same advertised quantity.",
+          "Tracking gateway priority automatically changes every host’s cached MAC."
+        ]
+      },
+      {
+        "testedConcept": "Cached versus new",
+        "question": "No AVG is supplied, but both cached MAC owners and their paths are ready. What can the model report?",
+        "answer": "Cached host prerequisites can agree while new ARP answering is false.",
+        "explanation": "The contract excludes cache expiry and distinguishes the gates.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "New ARP answering remains true because any AVF is necessarily the AVG.",
+          "Cached host prerequisites can agree while new ARP answering is false.",
+          "Every cached assignment is automatically cleared when the AVG is unavailable.",
+          "Existing host forwarding requires a fresh AVG ARP answer for each packet."
+        ]
+      },
+      {
+        "testedConcept": "Settled handoff",
+        "question": "B is declared owner of both virtual MACs after handoff. What does this prove?",
+        "answer": "Only the supplied settled ownership and resulting readiness predicates.",
+        "explanation": "The worksheet does not execute handoff timers or packets.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "A measured zero-loss transfer between forwarders.",
+          "An observed 30-second takeover matching the documented default.",
+          "Only the supplied settled ownership and resulting readiness predicates.",
+          "A computed weighted allocation placing both hosts on B."
+        ]
+      },
+      {
+        "testedConcept": "Uneven host failure",
+        "question": "A is unavailable but still declared V-MAC-A owner; B serves V-MAC-B. Which host lacks forward prerequisites in the baseline assignments?",
+        "answer": "Host 1, whose supplied cache selects V-MAC-A.",
+        "explanation": "Failure follows the supplied MAC owner and its availability.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Both because only the AVG can forward traffic.",
+          "Only Host 2 because its MAC differs from the original AVG’s MAC.",
+          "Neither because another live member automatically owns all failed MACs in this model.",
+          "Host 1, whose supplied cache selects V-MAC-A."
+        ]
+      },
+      {
+        "testedConcept": "Protocol identity",
+        "question": "Which IPv4 multicast hello transport is scoped for GLBP?",
+        "answer": "UDP 3222 to 224.0.0.102.",
+        "explanation": "Do not conflate it with HSRP or VRRP.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "UDP 3222 to 224.0.0.102.",
+          "UDP 1985 to 224.0.0.102.",
+          "UDP 3222 to 224.0.0.2.",
+          "IP protocol 112 to 224.0.0.18."
+        ]
+      },
+      {
+        "testedConcept": "Algorithm limit",
+        "question": "Does the worksheet derive Cisco round-robin or weighted assignments from traffic?",
+        "answer": "No; both host assignments are supplied explicitly.",
+        "explanation": "The model deliberately does not implement vendor allocation or packet scheduling.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Yes, the order of the two host rows runs round-robin assignment.",
+          "No; both host assignments are supplied explicitly.",
+          "Yes, changing AVG computes a new weighted allocation.",
+          "Yes, the two ownership declarations implement per-packet ECMP."
+        ]
+      }
+    ],
+    "quick": [
+      {
+        "testedConcept": "Role separation",
+        "question": "Does AVG necessarily own every virtual MAC?",
+        "answer": "No.",
+        "explanation": "Per-MAC AVF ownership is separate.",
+        "difficulty": "Beginner",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Packet distribution",
+        "question": "Do different supplied host MACs prove per-packet ECMP?",
+        "answer": "No.",
+        "explanation": "The assignments say nothing about measured flow or packet distribution.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Timer scope",
+        "question": "Does declaring a handoff run redirect or forwarder-timeout timers?",
+        "answer": "No.",
+        "explanation": "They are source-described limitations, not executable history.",
+        "difficulty": "Advanced",
+        "type": "short-answer"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cisco IOS 15M&T: GLBP roles, ARP sharing, preemption, weighting and show syntax",
+        "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipapp_fhrp/configuration/15-mt/fhp-15-mt-book/Configuring-GLBP.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE 17: base ARP inspection syntax only",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+        "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  }
+]

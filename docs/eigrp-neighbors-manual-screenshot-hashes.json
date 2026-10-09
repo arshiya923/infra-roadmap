@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant; eleven images individually inspected",
+  "sha256": {
+    "en-desktop.png": "9fc06e7a697afe0a0915b00d69cf7dfd3425b40c0e35d568a3e129fd75bac02f",
+    "en-light-mobile.png": "a3e32b46f3502b990ea08d526cf59f3dc6b673c2a658860b1eda62a0baa84163",
+    "en-dark-mobile.png": "3d65dabe839fb3c3952fcdceb8a40709abc8fbe1e02e40450c6eb39d2fbc3d1a",
+    "en-table-start.png": "a5f01d2a6dad1e4747358e7f8736272d97093ce2a2e439a282db4020dca3ea83",
+    "en-table-end.png": "a8c892613ba2ebe5f22a6028cf4af4fb3c94da8171f0226c44cb4027ff9a1494",
+    "en-flow.png": "6e4152c54138aee32301b677d0b8880e8cd2b28e49d19b48fdf590bcda2675a1",
+    "en-lab.png": "2a33c2c7f3e2653f46eddf881caf971517321cac2f98ab1df6ac472d82876a62",
+    "en-example-light.png": "0b41ff5c58c2a46af43922f71ee817a0687361652a6ff3eaff55ef5bde4f29f8",
+    "en-example-dark.png": "75a26976ddb09b86de6d17fa6ef319962b3836ea4c3b2c1723313c6ac2c13aae",
+    "en-lab-start.png": "70f5e04328cf5ec9e95f9b9db019162ecfd8324ea841f7231de3cfdab9786534",
+    "en-lab-end.png": "fc9cecf7ff3d888d3bacc6fd5a0f721b7d4e4d6abc6d0aa3008e7b4b5e3c987e"
+  },
+  "freshRegressionReinspection": {
+    "reviewed": [
+      "en-desktop.png",
+      "en-light-mobile.png",
+      "en-dark-mobile.png"
+    ],
+    "notes": "Primary assistant reinspected the three changed images after fresh source regeneration: updated source hash, current hold countdown and thirteen retained startup headers remain readable in desktop and both mobile themes. Other eight images are byte-identical to prior individual inspection."
+  }
+}

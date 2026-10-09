@@ -1,0 +1,284 @@
+{
+  "date": "2026-10-09",
+  "scope": "Twenty-one accepted lessons; actual Cisco/control/phone/aggregation procedures unexecuted, model/Linux evidence separate",
+  "result": "LIMITED",
+  "commands": [
+    {
+      "command": "?",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "configure terminal\ninterface GigabitEthernet1\ndescription Temporary\nend\nshow running-config",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "configure terminal\ninterface GigabitEthernet1\nno description\nend",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "copy running-config startup-config",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "description Practice\nexit\nend\nshow running-config",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "dir flash:",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "enable\nconfigure terminal\ninterface GigabitEthernet1",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "help",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "set",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "show ?",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "show boot",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "show boot\nshow romvar",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "show inventory",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "show ip interface brief",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "show romvar",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "show running-config",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "show running-config\nshow startup-config",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "show startup-config",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "show version",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser-model evidence is separate"
+    },
+    {
+      "command": "show file systems",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser/local byte lab evidence is separate"
+    },
+    {
+      "command": "pwd",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser/local byte lab evidence is separate"
+    },
+    {
+      "command": "show file systems\ndir flash:",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser/local byte lab evidence is separate"
+    },
+    {
+      "command": "verify /sha512 flash:<approved-image>.bin <trusted-expected-sha512>",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser/local byte lab evidence is separate"
+    },
+    {
+      "command": "show version\nshow boot",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; model and local byte evidence is separate"
+    },
+    {
+      "command": "show vlan brief",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser/Linux evidence cannot substitute"
+    },
+    {
+      "command": "configure terminal\nvlan 10\nname USERS\nend\nshow vlan brief",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser/Linux evidence cannot substitute"
+    },
+    {
+      "command": "show interfaces GigabitEthernet1/0/1 switchport",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser/Linux evidence cannot substitute"
+    },
+    {
+      "command": "configure terminal\ninterface GigabitEthernet1/0/1\nswitchport mode access\nswitchport access vlan 10\nend\nshow interfaces GigabitEthernet1/0/1 switchport",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser/Linux evidence cannot substitute"
+    },
+    {
+      "command": "show interfaces trunk",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser/Linux evidence cannot substitute"
+    },
+    {
+      "command": "show interfaces GigabitEthernet1/0/2 switchport",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser/Linux evidence cannot substitute"
+    },
+    {
+      "command": "configure terminal\ninterface GigabitEthernet1/0/2\nswitchport mode trunk\nswitchport trunk allowed vlan 10,20\nswitchport trunk native vlan 99\nend\nshow interfaces trunk",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; browser/Linux evidence cannot substitute"
+    },
+    {
+      "command": "show interfaces GigabitEthernet1/0/2 switchport\nshow interfaces trunk",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target/phone verified; model/Linux evidence cannot substitute"
+    },
+    {
+      "command": "configure terminal\ninterface GigabitEthernet1/0/2\nswitchport mode trunk\nswitchport nonegotiate\nend\nshow interfaces GigabitEthernet1/0/2 switchport",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target/phone verified; model/Linux evidence cannot substitute"
+    },
+    {
+      "command": "show vtp status\nshow vtp counters",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target/phone verified; model/Linux evidence cannot substitute"
+    },
+    {
+      "command": "show vlan brief\nshow interfaces trunk",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target/phone verified; model/Linux evidence cannot substitute"
+    },
+    {
+      "command": "show vtp devices",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target/phone verified; model/Linux evidence cannot substitute"
+    },
+    {
+      "command": "show interfaces GigabitEthernet1/0/1 switchport\nshow vlan brief",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target/phone verified; model/Linux evidence cannot substitute"
+    },
+    {
+      "command": "show cdp neighbors detail",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target/phone verified; model/Linux evidence cannot substitute"
+    },
+    {
+      "command": "configure terminal\ninterface GigabitEthernet1/0/1\nswitchport mode access\nswitchport access vlan 10\nswitchport voice vlan 20\nend\nshow interfaces GigabitEthernet1/0/1 switchport",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target/phone verified; model/Linux evidence cannot substitute"
+    },
+    {
+      "command": "show etherchannel summary\nshow etherchannel 1 detail",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; authored cases do not substitute for actual execution"
+    },
+    {
+      "command": "show running-config interface port-channel 1\nshow running-config interface gigabitEthernet 1/0/1\nshow running-config interface gigabitEthernet 1/0/2",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; authored cases do not substitute for actual execution"
+    },
+    {
+      "command": "show interfaces trunk\nshow etherchannel load-balance",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; authored cases do not substitute for actual execution"
+    },
+    {
+      "command": "show lacp 1 neighbor\nshow lacp 1 internal\nshow lacp 1 counters",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; authored cases do not substitute for actual execution"
+    },
+    {
+      "command": "show etherchannel 1 summary\nshow etherchannel 1 detail",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; authored cases do not substitute for actual execution"
+    },
+    {
+      "command": "show running-config interface port-channel 1\nshow running-config interface gigabitEthernet 1/0/1",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; authored cases do not substitute for actual execution"
+    },
+    {
+      "command": "show pagp 1 neighbor\nshow pagp 1 internal\nshow pagp 1 counters",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; authored cases do not substitute for actual execution"
+    },
+    {
+      "command": "show interfaces gigabitEthernet 1/0/1 switchport\nshow interfaces trunk",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No authorized Cisco target verified; authored cases do not substitute for actual execution"
+    },
+    {
+      "command": "configure terminal\ninterface range GigabitEthernet1/0/1 - 2\nshutdown\nswitchport mode trunk\nswitchport trunk allowed vlan 10,20\nswitchport trunk native vlan 99\nchannel-group 1 mode active\nexit\ninterface port-channel 1\nswitchport mode trunk\nswitchport trunk allowed vlan 10,20\nswitchport trunk native vlan 99\nend",
+      "topicId": "s2-g3-t1",
+      "platform": "Fresh isolated Catalyst 9300 IOS XE 17.15 lab switch A · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Isolated two-peer procedure reviewed against Catalyst 9300 17.15 guide; no Cisco parser or hardware execution. Browser model does not execute these commands."
+    },
+    {
+      "command": "configure terminal\ninterface range GigabitEthernet1/0/1 - 2\nshutdown\nswitchport mode trunk\nswitchport trunk allowed vlan 10,20\nswitchport trunk native vlan 99\nchannel-group 1 mode passive\nexit\ninterface port-channel 1\nswitchport mode trunk\nswitchport trunk allowed vlan 10,20\nswitchport trunk native vlan 99\nend",
+      "topicId": "s2-g3-t1",
+      "platform": "Fresh isolated Catalyst 9300 IOS XE 17.15 lab switch B · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Isolated two-peer procedure reviewed against Catalyst 9300 17.15 guide; no Cisco parser or hardware execution. Browser model does not execute these commands."
+    },
+    {
+      "command": "configure terminal\ninterface port-channel 1\nno shutdown\nexit\ninterface range GigabitEthernet1/0/1 - 2\nno shutdown\nend\nshow etherchannel 1 summary\nshow lacp 1 neighbor\nshow interfaces trunk",
+      "topicId": "s2-g3-t1",
+      "platform": "Both prepared isolated Catalyst 9300 IOS XE 17.15 peers · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Isolated two-peer procedure reviewed against Catalyst 9300 17.15 guide; no Cisco parser or hardware execution. Browser model does not execute these commands."
+    }
+  ],
+  "modelEvidence": [
+    "docs/cisco-models-results.json",
+    "docs/boot-models-results.json",
+    "docs/browser-lifecycle-results.json",
+    "docs/port-models-results.json",
+    "docs/browser-ports-results.json",
+    "docs/vlan-control-models-results.json",
+    "docs/browser-vlan-control-results.json",
+    "docs/browser-channel-results.json",
+    "docs/aggregation-models-results.json",
+    "docs/browser-aggregation-results.json"
+  ],
+  "localHashLabEvidence": "docs/image-audit-results.json",
+  "executedNonVendorLabs": [
+    {
+      "command": "sudo bash labs/vlan-trunk.sh --run",
+      "result": "PASS",
+      "evidence": "docs/vlan-lab-results.json",
+      "scope": "Owned Linux namespaces; not Cisco switching/control protocols"
+    }
+  ]
+}

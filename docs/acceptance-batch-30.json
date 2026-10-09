@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-09",
+  "batch": "30",
+  "status": "accepted",
+  "scope": "Actual unprivileged Linux owner-read denial/recovery, bounded child exit fault/recovery and owned-file restoration. systemd unit/timer administration and LVM changes are guided, unexecuted extensions; pressure observations are read-only.",
+  "primaryReview": "Reviewed all three lesson bodies and 39 questions against their platform scope. Inspected the desktop evidence desk; browser checks cover all viewports/themes. Actual Ubuntu ordinary-user runs show permission denial and restoration, exits 0/3/0, exact file restoration and cleanup. The upstream systemd site returned 403; Ubuntu Noble packaged manuals were checked instead.",
+  "sources": [
+    "https://ubuntu.com/server/docs/how-to/security/user-management/",
+    "https://manpages.ubuntu.com/manpages/noble/man5/systemd.service.5.html",
+    "https://manpages.ubuntu.com/manpages/noble/man1/journalctl.1.html",
+    "https://manpages.ubuntu.com/manpages/noble/man5/systemd.timer.5.html",
+    "https://manpages.ubuntu.com/manpages/noble/man8/lvextend.8.html",
+    "https://docs.kernel.org/accounting/psi.html"
+  ],
+  "hashes": {
+    "content/batch-30.js": "237df8faed74e99176968c9b8e03c70231fb124b2c71746216aeaf21910a75a2",
+    "docs/browser-expansion-30.json": "5da5f924b403871329423233445315d9712d7a5d467fbdd602807ee714762137",
+    "docs/expansion-lab-30.json": "61bd3a7c386aa4f7a568fdf532f7e41cf78c44c3188da2eede028c4cf60606b8",
+    "scripts/expansion.js": "a1eaed8af5dd10c212f31c1d4c9182f01ed8ae73c7f94ad7c265547f2201b045"
+  },
+  "finalReverification": "docs/expansion-final-verification.json"
+}

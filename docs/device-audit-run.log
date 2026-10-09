@@ -1,0 +1,550 @@
+AUDIT s3-g5-t0
+AUDIT s3-g5-t1
+AUDIT s3-g5-t2
+AUDIT s3-g5-t3
+AUDIT s3-g5-t4
+AUDIT s3-g6-t0
+AUDIT s3-g6-t1
+AUDIT s3-g7-t0
+AUDIT s3-g7-t1
+AUDIT s3-g7-t2
+AUDIT s3-g8-t0
+AUDIT s3-g8-t1
+AUDIT s3-g8-t2
+AUDIT s3-g9-t0
+AUDIT s3-g9-t1
+AUDIT s3-g9-t2
+AUDIT s3-g9-t3
+AUDIT s3-g9-t4
+AUDIT s3-g9-t5
+AUDIT lab-3
+AUDIT s4-g0-t0
+AUDIT s4-g0-t1
+AUDIT s4-g0-t2
+AUDIT s4-g0-t3
+AUDIT s4-g1-t0
+AUDIT s4-g1-t1
+AUDIT s4-g2-t0
+AUDIT s4-g2-t1
+AUDIT s4-g2-t2
+AUDIT s4-g3-t0
+AUDIT s4-g3-t1
+AUDIT s4-g3-t2
+AUDIT s4-g3-t3
+AUDIT s4-g4-t0
+AUDIT s4-g4-t1
+AUDIT s4-g4-t2
+AUDIT s4-g4-t3
+AUDIT s4-g4-t4
+AUDIT s4-g4-t5
+AUDIT s4-g4-t6
+AUDIT s4-g5-t0
+AUDIT s4-g5-t1
+AUDIT s4-g5-t2
+AUDIT s4-g5-t3
+AUDIT s4-g6-t0
+AUDIT s4-g6-t1
+AUDIT s4-g6-t2
+AUDIT s4-g6-t3
+AUDIT s4-g6-t4
+AUDIT lab-4
+AUDIT s5-g0-t0
+AUDIT s5-g0-t1
+AUDIT s5-g0-t2
+AUDIT s5-g0-t3
+AUDIT s5-g0-t4
+AUDIT s5-g1-t0
+AUDIT s5-g1-t1
+AUDIT s5-g1-t2
+AUDIT s5-g1-t3
+AUDIT s5-g2-t0
+AUDIT s5-g2-t1
+AUDIT s5-g2-t2
+AUDIT s5-g2-t3
+AUDIT s5-g2-t4
+AUDIT s5-g2-t5
+AUDIT s5-g2-t6
+AUDIT s5-g3-t0
+AUDIT s5-g3-t1
+AUDIT s5-g4-t0
+AUDIT s5-g4-t1
+AUDIT s5-g4-t2
+AUDIT s5-g4-t3
+AUDIT s5-g4-t4
+AUDIT s5-g5-t0
+AUDIT s5-g5-t1
+AUDIT s5-g5-t2
+AUDIT s5-g5-t3
+AUDIT s5-g5-t4
+AUDIT s5-g5-t5
+AUDIT s5-g6-t0
+AUDIT s5-g6-t1
+AUDIT s5-g6-t2
+AUDIT lab-5
+AUDIT s6-g0-t0
+AUDIT s6-g0-t1
+AUDIT s6-g0-t2
+AUDIT s6-g0-t3
+AUDIT s6-g0-t4
+AUDIT s6-g0-t5
+AUDIT s6-g0-t6
+AUDIT s6-g0-t7
+AUDIT s6-g0-t8
+AUDIT s6-g1-t0
+AUDIT s6-g1-t1
+AUDIT s6-g1-t2
+AUDIT s6-g1-t3
+AUDIT s6-g1-t4
+AUDIT s6-g1-t5
+AUDIT s6-g1-t6
+AUDIT s6-g1-t7
+AUDIT s6-g1-t8
+AUDIT s6-g2-t0
+AUDIT s6-g2-t1
+AUDIT s6-g2-t2
+AUDIT s6-g2-t3
+AUDIT s6-g3-t0
+AUDIT s6-g3-t1
+AUDIT s6-g3-t2
+AUDIT s6-g3-t3
+AUDIT s6-g3-t4
+AUDIT s6-g3-t5
+AUDIT s6-g3-t6
+AUDIT s6-g3-t7
+AUDIT s6-g4-t0
+AUDIT s6-g4-t1
+AUDIT s6-g4-t2
+AUDIT s6-g4-t3
+AUDIT s6-g4-t4
+AUDIT s6-g4-t5
+AUDIT s6-g4-t6
+AUDIT s6-g4-t7
+AUDIT s6-g4-t8
+AUDIT s6-g5-t0
+AUDIT s6-g5-t1
+AUDIT s6-g5-t2
+AUDIT s6-g5-t3
+AUDIT lab-6
+AUDIT s7-g0-t0
+AUDIT s7-g0-t1
+AUDIT s7-g0-t2
+AUDIT s7-g0-t3
+AUDIT s7-g0-t4
+AUDIT s7-g0-t5
+AUDIT s7-g0-t6
+AUDIT s7-g0-t7
+AUDIT s7-g1-t0
+AUDIT s7-g1-t1
+AUDIT s7-g1-t2
+AUDIT s7-g1-t3
+AUDIT s7-g2-t0
+AUDIT s7-g2-t1
+AUDIT s7-g2-t2
+AUDIT s7-g2-t3
+AUDIT s7-g3-t0
+AUDIT s7-g3-t1
+AUDIT s7-g3-t2
+AUDIT s7-g4-t0
+AUDIT s7-g4-t1
+AUDIT s7-g4-t2
+AUDIT s7-g5-t0
+AUDIT s7-g5-t1
+AUDIT s7-g5-t2
+AUDIT s7-g5-t3
+AUDIT s7-g5-t4
+AUDIT s7-g5-t5
+AUDIT s7-g5-t6
+AUDIT s7-g5-t7
+AUDIT s7-g5-t8
+AUDIT lab-7
+AUDIT s8-g0-t0
+AUDIT s8-g0-t1
+AUDIT s8-g0-t2
+AUDIT s8-g0-t3
+AUDIT s8-g0-t4
+AUDIT s8-g0-t5
+AUDIT s8-g0-t6
+AUDIT s8-g1-t0
+AUDIT s8-g1-t1
+AUDIT s8-g1-t2
+AUDIT s8-g1-t3
+AUDIT s8-g1-t4
+AUDIT s8-g1-t5
+AUDIT s8-g2-t0
+AUDIT s8-g2-t1
+AUDIT s8-g2-t2
+AUDIT s8-g2-t3
+AUDIT s8-g2-t4
+AUDIT s8-g2-t5
+AUDIT s8-g2-t6
+AUDIT s8-g2-t7
+AUDIT s8-g2-t8
+AUDIT s8-g3-t0
+AUDIT s8-g3-t1
+AUDIT s8-g3-t2
+AUDIT s8-g3-t3
+AUDIT s8-g4-t0
+AUDIT s8-g4-t1
+AUDIT s8-g4-t2
+AUDIT s8-g5-t0
+AUDIT s8-g5-t1
+AUDIT s8-g5-t2
+AUDIT s8-g5-t3
+AUDIT s8-g5-t4
+AUDIT s8-g5-t5
+AUDIT s8-g5-t6
+AUDIT s8-g5-t7
+AUDIT s8-g5-t8
+AUDIT s8-g5-t9
+AUDIT s8-g5-t10
+AUDIT s8-g5-t11
+AUDIT s8-g6-t0
+AUDIT s8-g6-t1
+AUDIT s8-g6-t2
+AUDIT s8-g6-t3
+AUDIT s8-g6-t4
+AUDIT lab-8
+AUDIT s9-g0-t0
+AUDIT s9-g0-t1
+AUDIT s9-g0-t2
+AUDIT s9-g0-t3
+AUDIT s9-g0-t4
+AUDIT s9-g0-t5
+AUDIT s9-g0-t6
+AUDIT s9-g0-t7
+AUDIT s9-g0-t8
+AUDIT s9-g1-t0
+AUDIT s9-g1-t1
+AUDIT s9-g1-t2
+AUDIT s9-g1-t3
+AUDIT s9-g1-t4
+AUDIT s9-g1-t5
+AUDIT s9-g1-t6
+AUDIT s9-g1-t7
+AUDIT s9-g1-t8
+AUDIT s9-g1-t9
+AUDIT s9-g2-t0
+AUDIT s9-g2-t1
+AUDIT s9-g2-t2
+AUDIT s9-g2-t3
+AUDIT s9-g3-t0
+AUDIT s9-g3-t1
+AUDIT s9-g3-t2
+AUDIT s9-g3-t3
+AUDIT s9-g3-t4
+AUDIT s9-g3-t5
+AUDIT s9-g4-t0
+AUDIT s9-g4-t1
+AUDIT s9-g4-t2
+AUDIT s9-g4-t3
+AUDIT s9-g4-t4
+AUDIT s9-g5-t0
+AUDIT s9-g5-t1
+AUDIT s9-g5-t2
+AUDIT s9-g5-t3
+AUDIT s9-g5-t4
+AUDIT s9-g5-t5
+AUDIT s9-g5-t6
+AUDIT s9-g6-t0
+AUDIT s9-g6-t1
+AUDIT s9-g6-t2
+AUDIT s9-g6-t3
+AUDIT s9-g6-t4
+AUDIT s9-g6-t5
+AUDIT s9-g6-t6
+AUDIT s9-g6-t7
+AUDIT s9-g6-t8
+AUDIT s9-g7-t0
+AUDIT s9-g7-t1
+AUDIT s9-g7-t2
+AUDIT s9-g7-t3
+AUDIT s9-g8-t0
+AUDIT s9-g8-t1
+AUDIT s9-g8-t2
+AUDIT s9-g8-t3
+AUDIT s9-g8-t4
+AUDIT s9-g8-t5
+AUDIT s9-g8-t6
+AUDIT lab-9
+AUDIT device-0
+AUDIT device-1
+AUDIT device-2
+AUDIT device-3
+AUDIT device-4
+AUDIT device-5
+AUDIT device-6
+AUDIT device-7
+AUDIT device-8
+AUDIT device-9
+AUDIT device-10
+AUDIT device-11
+AUDIT device-12
+AUDIT device-13
+AUDIT device-14
+AUDIT device-15
+AUDIT device-16
+AUDIT hardware-0
+AUDIT hardware-1
+AUDIT hardware-2
+AUDIT hardware-3
+AUDIT hardware-4
+AUDIT hardware-5
+AUDIT hardware-6
+AUDIT hardware-7
+AUDIT hardware-8
+AUDIT hardware-9
+AUDIT hardware-10
+AUDIT hardware-11
+AUDIT hardware-12
+AUDIT hardware-13
+AUDIT hardware-14
+AUDIT hardware-15
+AUDIT hardware-16
+AUDIT hardware-17
+AUDIT hardware-18
+AUDIT hardware-19
+AUDIT trouble-0
+AUDIT trouble-1
+AUDIT trouble-2
+AUDIT trouble-3
+AUDIT trouble-4
+AUDIT trouble-5
+AUDIT trouble-6
+AUDIT trouble-7
+AUDIT trouble-8
+AUDIT trouble-9
+AUDIT trouble-10
+AUDIT trouble-11
+AUDIT trouble-12
+AUDIT trouble-13
+AUDIT trouble-14
+AUDIT trouble-15
+AUDIT trouble-16
+AUDIT trouble-17
+AUDIT trouble-18
+AUDIT trouble-19
+AUDIT trouble-20
+AUDIT capstone-final
+AUDIT s0-g0-t0
+AUDIT s0-g0-t1
+AUDIT s0-g0-t2
+AUDIT s0-g0-t3
+AUDIT s0-g0-t4
+AUDIT s0-g0-t5
+AUDIT s0-g0-t6
+AUDIT s0-g1-t0
+AUDIT s0-g1-t1
+AUDIT s0-g1-t2
+AUDIT s0-g1-t3
+AUDIT s0-g2-t0
+AUDIT s0-g2-t1
+AUDIT s0-g2-t2
+AUDIT s0-g2-t3
+AUDIT s0-g2-t4
+AUDIT s0-g2-t5
+AUDIT s0-g2-t6
+AUDIT s0-g2-t7
+AUDIT s0-g2-t8
+AUDIT s0-g2-t9
+AUDIT s0-g2-t10
+AUDIT s0-g3-t0
+AUDIT s0-g3-t1
+AUDIT s0-g3-t2
+AUDIT s0-g3-t3
+AUDIT s0-g3-t4
+AUDIT s0-g3-t5
+AUDIT s0-g3-t6
+AUDIT s0-g3-t7
+AUDIT lab-0
+AUDIT s1-g0-t0
+AUDIT s1-g0-t1
+AUDIT s1-g1-t0
+AUDIT s1-g1-t1
+AUDIT s1-g1-t2
+AUDIT s1-g2-t0
+AUDIT s1-g2-t1
+AUDIT s1-g2-t2
+AUDIT s1-g2-t3
+AUDIT s1-g3-t0
+AUDIT s1-g3-t1
+AUDIT s1-g3-t2
+AUDIT s1-g3-t3
+AUDIT s1-g3-t4
+AUDIT s1-g4-t0
+AUDIT s1-g4-t1
+AUDIT s1-g4-t2
+AUDIT s1-g4-t3
+AUDIT s1-g5-t0
+AUDIT s1-g5-t1
+AUDIT s1-g5-t2
+AUDIT s1-g5-t3
+AUDIT s1-g5-t4
+AUDIT s1-g5-t5
+AUDIT s1-g5-t6
+AUDIT s1-g5-t7
+AUDIT s1-g5-t8
+AUDIT s1-g5-t9
+AUDIT s1-g5-t10
+AUDIT lab-1
+AUDIT s2-g0-t0
+AUDIT s2-g0-t1
+AUDIT s2-g0-t2
+AUDIT s2-g0-t3
+AUDIT s2-g1-t0
+AUDIT s2-g1-t1
+AUDIT s2-g1-t2
+AUDIT s2-g1-t3
+AUDIT s2-g1-t4
+AUDIT s2-g1-t5
+AUDIT s2-g1-t6
+AUDIT s2-g1-t7
+AUDIT s2-g2-t0
+AUDIT s2-g2-t1
+AUDIT s2-g2-t2
+AUDIT s2-g2-t3
+AUDIT s2-g2-t4
+AUDIT s2-g2-t5
+AUDIT s2-g3-t0
+AUDIT s2-g3-t1
+AUDIT s2-g3-t2
+AUDIT s2-g4-t0
+AUDIT s2-g4-t1
+AUDIT s2-g4-t2
+AUDIT s2-g5-t0
+AUDIT s2-g5-t1
+AUDIT s2-g5-t2
+AUDIT s2-g5-t3
+AUDIT s2-g5-t4
+AUDIT s2-g5-t5
+AUDIT s2-g6-t0
+AUDIT s2-g6-t1
+AUDIT s2-g6-t2
+AUDIT lab-2
+AUDIT s3-g0-t0
+AUDIT s3-g0-t1
+AUDIT s3-g0-t2
+AUDIT s3-g1-t0
+AUDIT s3-g1-t1
+AUDIT s3-g1-t2
+AUDIT s3-g1-t3
+AUDIT s3-g1-t4
+AUDIT s3-g2-t0
+AUDIT s3-g2-t1
+AUDIT s3-g2-t2
+AUDIT s3-g2-t3
+AUDIT s3-g3-t0
+AUDIT s3-g3-t1
+AUDIT s3-g3-t2
+AUDIT s3-g3-t3
+AUDIT s3-g4-t0
+AUDIT s3-g4-t1
+AUDIT s3-g4-t2
+AUDIT s3-g4-t3
+{
+  "result": "PASS",
+  "checks": [
+    "Prerequisite graph is acyclic and all prerequisites are authored",
+    "Per-lesson exams have ten distinct prompts; comparison/flow/port context present",
+    "All authored lessons have substantial structured content (word count used only as a floor, not proof of accuracy)",
+    "Initial reader loads only the selected lesson bundle",
+    "All 442 authored routes: unique DOM IDs, named form controls/buttons, one H1 and valid section anchors",
+    "All authored previous/next links preserve original adjacency, including pending lab nodes",
+    "Core body/muted/accent/warning color tokens meet 4.5:1 on paper/surface/soft backgrounds in both themes",
+    "Broad local search responds within the 2-second audit ceiling",
+    "No page exceptions while traversing the complete authored course"
+  ],
+  "localSearchMs": 176,
+  "bytes": {
+    "learn.html": 8411,
+    "content/catalog.js": 2550427,
+    "scripts/learning.js": 34886,
+    "scripts/network-models.js": 12295,
+    "scripts/address-tools.js": 16322,
+    "scripts/protocol-models.js": 8560,
+    "scripts/service-models.js": 9352,
+    "scripts/switching-models.js": 8062,
+    "scripts/routing-models.js": 4118,
+    "scripts/diagnostic-models.js": 10649,
+    "scripts/packet-models.js": 3905,
+    "scripts/cisco-models.js": 6882,
+    "scripts/boot-models.js": 7002,
+    "scripts/storage-models.js": 3781,
+    "scripts/lifecycle-models.js": 6609,
+    "scripts/port-models.js": 4448,
+    "scripts/vlan-control-models.js": 13183,
+    "scripts/aggregation-models.js": 4035,
+    "scripts/stp-evidence.js": 5642,
+    "scripts/mst-models.js": 5652,
+    "scripts/edge-models.js": 4426,
+    "scripts/guard-models.js": 3908,
+    "scripts/root-guard-models.js": 6098,
+    "scripts/loop-guard-models.js": 6478,
+    "scripts/storm-models.js": 8027,
+    "scripts/security-port-models.js": 8563,
+    "scripts/span-models.js": 7308,
+    "scripts/rspan-models.js": 7950,
+    "scripts/erspan-models.js": 9000,
+    "scripts/enterprise-lab-models.js": 11143,
+    "scripts/static-route-models.js": 8469,
+    "scripts/floating-route-models.js": 11018,
+    "scripts/pbr-models.js": 8415,
+    "scripts/ospf-models.js": 9819,
+    "scripts/ospf-area-models.js": 11114,
+    "scripts/ospf-dr-bdr-models.js": 11763,
+    "styles/ospf-dr-bdr.css": 1331,
+    "scripts/ospf-lsa-models.js": 13454,
+    "content/ospf-lsa-evidence.js": 11618,
+    "styles/ospf-lsa.css": 961,
+    "content/ospf-troubleshooting-evidence.js": 80755,
+    "scripts/ospf-troubleshooting.js": 8395,
+    "styles/ospf-troubleshooting.css": 1342,
+    "scripts/eigrp-models.js": 8887,
+    "styles/eigrp.css": 1283,
+    "scripts/eigrp-metric-models.js": 8590,
+    "styles/eigrp-metrics.css": 1233,
+    "styles/eigrp-neighbors.css": 958,
+    "styles/eigrp-topology.css": 313,
+    "scripts/eigrp-topology.js": 9551,
+    "scripts/eigrp-neighbors.js": 9802,
+    "content/eigrp-neighbor-evidence.js": 37673,
+    "styles/learning.css": 27128,
+    "scripts/bgp-attributes-models.js": 11854,
+    "styles/bgp-attributes.css": 1403,
+    "scripts/local-preference-models.js": 9868,
+    "styles/local-preference.css": 655,
+    "scripts/med-models.js": 12639,
+    "styles/med.css": 911,
+    "scripts/as-path-models.js": 8688,
+    "styles/as-path.css": 959,
+    "scripts/communities-models.js": 10988,
+    "styles/communities.css": 566,
+    "content/batch-01.js": 71800,
+    "content/batch-02.js": 57137,
+    "content/batch-03.js": 128672,
+    "content/batch-04.js": 100550,
+    "content/batch-05.js": 231658,
+    "content/batch-06.js": 170199,
+    "content/batch-07.js": 325720,
+    "content/batch-08.js": 283392,
+    "content/batch-09.js": 720594,
+    "content/batch-10.js": 538368,
+    "content/batch-11.js": 435214,
+    "content/batch-12.js": 215699,
+    "content/batch-13.js": 357355,
+    "content/batch-14.js": 305971,
+    "content/batch-15.js": 436611,
+    "content/batch-16.js": 440277,
+    "content/batch-17.js": 430938,
+    "content/batch-18.js": 210827,
+    "content/batch-19.js": 440490,
+    "content/batch-20.js": 389432,
+    "content/batch-21.js": 126975,
+    "content/batch-22.js": 366336,
+    "content/batch-23.js": 413860,
+    "content/batch-24.js": 399664,
+    "content/batch-25.js": 377787,
+    "content/batch-26.js": 461279,
+    "content/batch-27.js": 560834,
+    "content/batch-28.js": 24225
+  }
+}

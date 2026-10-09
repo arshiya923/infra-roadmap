@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-09",
+  "scope": "Primary manually inspected eleven worksheet/integrated lesson images; after full regression, six changed images re-inspected and the other five matched their manually reviewed hashes",
+  "sha256": {
+    "eigrp-desktop.png": "39bdad87ded736330d33a708eee3d0434861fe43a89a4e4d08da25e3aa4fb820",
+    "eigrp-light-mobile.png": "37154ff94c895292de8094f36915d555bd795dd702ed85318780fe999584ee16",
+    "eigrp-dark-mobile.png": "23626d711e8ecc1a78272c35f77556e5dd3bead56a77223b63fd8497ce2e7cea",
+    "eigrp-table-start.png": "4bf832f7f0d65593100d1fe440d55a1a74b8fabcbdf725a6481c8c9d4a418034",
+    "eigrp-table-end.png": "841451474ea351cb6ec3c308c9c608940d42df6ff3f6cb05158d27a15f77dad8",
+    "eigrp-lesson-flow.png": "d76d4638c9758da32b9e8c92a4f966c51bc6a8ef4a3788312fb5b8f2922f1e48",
+    "eigrp-lesson-lab.png": "60df7872574159a582be77c8d6949003081a996a92418e2fc0280e3fcf7d2d96",
+    "eigrp-lesson-example-light.png": "0a44f36b54bedcd4427f6561aca46d1f43662c8d92cbd39f521e7b27fa8aff62",
+    "eigrp-lesson-example-dark.png": "05fba88eed345d4d9f597e0e9a8bf842496cfb29fd5cc51b6608e4143844c384",
+    "eigrp-lesson-lab-start.png": "6cb7a293a2092256050574e97c65292071932b03129cbfd86a2f1eacf8bbb1fc",
+    "eigrp-lesson-lab-end.png": "9a20d2e3cd23e4c8373e568561c2648e744acfce0440958a821710d31cc87f60"
+  }
+}

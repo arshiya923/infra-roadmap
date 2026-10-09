@@ -1,0 +1,1 @@
+document.getElementById('bb-preview').innerHTML=window.BgpModel.html('bgp');window.BgpModel.mount('bgp');document.getElementById('bb-theme').addEventListener('click',()=>{document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark';});

@@ -1,0 +1,5 @@
+udhcpc: started, v1.36.1
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
+udhcpc: broadcasting select for 192.0.2.10, server 192.0.2.1
+udhcpc: lease of 192.0.2.10 obtained from 192.0.2.1, lease time 3600

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-04",
+  "result": "PASS",
+  "checks": [
+    "skip link remains keyboard accessible and hidden outside focus",
+    "unopened network content is searchable without loading the bundle",
+    "eleven lesson contracts, sources, steppers, assessments and four viewport widths",
+    "cross-batch previous/next and accepted OSI successor",
+    "journey preserves endpoint fields and changes link addresses/TTL only at router",
+    "journey keyboard, reset, static alternative and accessible SVG",
+    "journey desktop and mobile screenshots",
+    "MTU exact fit, too large, tunnel and IPv6 budgets",
+    "bandwidth, RTT and one-way delay stay independent",
+    "invalid and fractional-byte inputs hide stale results; reset restores defaults",
+    "calculator screenshots in desktop dark and mobile layouts",
+    "quiz answer matching, written feedback and learning reset",
+    "command clipboard preserves exact authored loopback example",
+    "study progress stays compatible with original roadmap",
+    "route changes reset independent widget state",
+    "network lessons and calculator work directly from disk",
+    "no page, console or HTTP errors"
+  ],
+  "errors": [],
+  "viewports": [
+    1440,
+    768,
+    390,
+    320
+  ]
+}

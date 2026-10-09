@@ -1,0 +1,230 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "reviewer": "Primary assistant",
+  "scope": "Primary inspection of ten authored/generated lessons, 100 exams and 30 quick checks, three contact sheets of 30 captures and final desktop/mobile topology captures.",
+  "topics": [
+    {
+      "id": "s7-g5-t0",
+      "sha256": "d131073cec48498a1db11867ebf774b958d7a7625fa94c67b579a6e40e32f679",
+      "note": "ACI plane separation and scoped inter-EPG policy predicate reviewed.",
+      "questions": {
+        "s7-g5-t0-Q1": "345950bb08518623251beb874d60ab03cb6f64c7d90b29e762f6e7cf3c10c456",
+        "s7-g5-t0-Q2": "bd253f48c3c426cff128167e2cb866c3a8189dc15fe6c82499aac22091bd6f23",
+        "s7-g5-t0-Q3": "f985c25096e75cc3394c5b458927ef275a1aebac88cbaf8c8eb69816611d9661",
+        "s7-g5-t0-Q4": "2d92d8f0bba1af3c8ceb210a6af75868be0b96338e55aab7eea632ee84a0ca44",
+        "s7-g5-t0-Q5": "39bf57073538895d00d1b2d923561da43b99ee2579ba91bc7b9ab8c72bf8a6dc",
+        "s7-g5-t0-Q6": "5a306908e9ed15395a34cd6d9a5034d88d09f923272965ab467070b12090cb76",
+        "s7-g5-t0-Q7": "faedb47d9984a6a63b560342ea66e429425124933dab7477683d422a7f42af54",
+        "s7-g5-t0-Q8": "9750ad38ceb397dbbec0c947001d76a3308462c6b58b6be4207a68c6e9cfd611",
+        "s7-g5-t0-Q9": "6079e6275c847a0e06b24ffcdbee62b7fd79c87e99c1503f27f52d02f7d82583",
+        "s7-g5-t0-Q10": "1cebafb0f58e289c6c18781364decf432b67937680d9b23c3abc3e04eac7e9bf",
+        "s7-g5-t0-QC1": "da798177909c833187cdb0fe01c1073e161466ab07955c8d450b726247ae11be",
+        "s7-g5-t0-QC2": "52a5c0f309fa14ac57cdc7b89762837f0e2cf1ca219d5608cf13f5bbf69a91ad",
+        "s7-g5-t0-QC3": "3c623c7173fd63ba6ccc34fb714226404b712ba00635887d486f2ce8778267ae"
+      }
+    },
+    {
+      "id": "s7-g5-t1",
+      "sha256": "2260b93dd065e65ab2704eaf249e357d2c5beadfaf86257bee66ca12a7009c41",
+      "note": "APIC management availability is distinct from deployed forwarding state.",
+      "questions": {
+        "s7-g5-t1-Q1": "1f5ea0acc4d9a72a87e5023fb70ce52899757f234d8bb9c44aa735854af86837",
+        "s7-g5-t1-Q2": "6955e4eadf20b395ff80c42403a983c06bbe3436c47a7846baf3193300db74c9",
+        "s7-g5-t1-Q3": "4801efbeb52b8eee57aa54868d4e53751f464132cf3d994b4617d7d8396ee2b1",
+        "s7-g5-t1-Q4": "b5dc32fcb26407bb71afa4874b95eff87b210f77c4c47f2f426fd408adbcfe71",
+        "s7-g5-t1-Q5": "6e07a55913b84a676fc7d26639035a80f46a7b0b377d5541f8ecd73b7ef0650e",
+        "s7-g5-t1-Q6": "f187d55333b96b96abd52d00dbd334c4d85882fa883ec1ff3ba7897018e5580d",
+        "s7-g5-t1-Q7": "6bcea92e977fa32cd3e193c91dd92ada71d60335d57963d659f3b2b83b6cc402",
+        "s7-g5-t1-Q8": "6eb9d22fe64e623d4e6aacc389ef86a773066379869926e1359f0e564ddb5e67",
+        "s7-g5-t1-Q9": "88c10f5893ce7f2d5a8d9f25f509bd43c3aa3d36ba78e2732dc68f05c64e1e65",
+        "s7-g5-t1-Q10": "594c58fd4ab8b20d94eb004feb2864a1fd333c8e7488377297b6c338bff908d4",
+        "s7-g5-t1-QC1": "b0f4752614a74d91a97df8f3d3b27f7b4745e44ee5186edf6c30b08dd3cbe402",
+        "s7-g5-t1-QC2": "0ce91cc31e4e5c9b8c9f849095fcda50ebf5b5f32d0f346a1c32e12cabe4ea04",
+        "s7-g5-t1-QC3": "208f409407e9a5d1ec127a7ce62655f7a404833ae6a4f7de9fa7d3a3c963bd04"
+      }
+    },
+    {
+      "id": "s7-g5-t2",
+      "sha256": "e6bc997b57c7c022504bde1c52cdb66827e7e74177eb380c04fd33aa0e46b8a4",
+      "note": "Spine transit role and forwarding boundaries reviewed.",
+      "questions": {
+        "s7-g5-t2-Q1": "8852c6a96d9043828aaa0bbf9c746dc8b815858543a83bf2a70046bce9dec58b",
+        "s7-g5-t2-Q2": "3cc4efa8ac1167be69d0018184eb6d2403833f05f42bcd81454971047d8530e5",
+        "s7-g5-t2-Q3": "4b771270ac4a991515d00597bf3168bdca58aac859e46c741cde74b95cab8447",
+        "s7-g5-t2-Q4": "3c268f7ffe76876be504c0266c22f1824dcf50f10463e0c817a97405eba8ecbb",
+        "s7-g5-t2-Q5": "b0a2063f90ef35ffdb46307cd7dbc06240ea8dbb9116ebdebb49377046ccedb4",
+        "s7-g5-t2-Q6": "d67de26898e5c95829b4e29fb34267e80d5f7ac452c44c3c837f5468297f18c1",
+        "s7-g5-t2-Q7": "8e5965b879874c90f9e65336d3f3ea03c51392fde60edb65fcfe3dfcf351ce86",
+        "s7-g5-t2-Q8": "021a23ac401c43368a148c6bedf5bbd0f680148d642e2e55a799514e53b51fdb",
+        "s7-g5-t2-Q9": "4b24b507caec3f7693f9502147fca173bbe92fad6151f7e90d53e90b7ddfa2eb",
+        "s7-g5-t2-Q10": "04bad471668f0fe31b1b36090362a4141b84210f527f82aff7d40d19f4bf88bb",
+        "s7-g5-t2-QC1": "bec9cfcf4cbc02f4214836b88b5ed97c203693318814ec59064ef232f94c565e",
+        "s7-g5-t2-QC2": "db69514e1c2e8a64db3a2f450862074a85fe17dfd35add4ca4e8988f2c6b09ff",
+        "s7-g5-t2-QC3": "ea9488039a9bec62466a681532081615d7e3bed5344ae36f237c00df59003b8a"
+      }
+    },
+    {
+      "id": "s7-g5-t3",
+      "sha256": "39b7d9fe86eb4039825d44ef23debc298155c675f9418c8e29988ff5abe68e54",
+      "note": "Leaf endpoint attachment and policy enforcement boundaries reviewed.",
+      "questions": {
+        "s7-g5-t3-Q1": "6a62d309b92f9d01967a06a442f3ed161125c503e988a05c03e4fa5c32836954",
+        "s7-g5-t3-Q2": "e85e37413bd1597bcde4ab5d77072ad1a0a8d848f716480b018d61c84eb87499",
+        "s7-g5-t3-Q3": "4f596d53b0c7f8a59a921ca16076aa10a2d33a5b23a2f944308a396e55968a12",
+        "s7-g5-t3-Q4": "2f462ac1c0474fd0fdc4cff3c5ae6c16ec1be90414d3919ca9d129ecedbe32fb",
+        "s7-g5-t3-Q5": "6967296d412bb6b12a25e77e91f4d79430400fbad2041ff445bda9e3c9b25d71",
+        "s7-g5-t3-Q6": "98f59d3bfa97c935fd05d67bdefb45c3ee988a1a45bd99a4db9b0317532a67b8",
+        "s7-g5-t3-Q7": "fcd24e6730a16d6fff70909fa5c231c6071d8dd8c9c6ac953c978578412dd75c",
+        "s7-g5-t3-Q8": "9fa015b8a29a42717eae87e132613284b461eb4c669f9d72878e665da1cad5e9",
+        "s7-g5-t3-Q9": "92fcef597dca79b5c730acaec930a7866456e7b5d28cf744d792c757d0a81f7f",
+        "s7-g5-t3-Q10": "26da08bc0e28835294c99f7b63c321c4cbe8346e73b5d115ff9881d7c18ec5c3",
+        "s7-g5-t3-QC1": "ce0a5de27813a923fc277397a9831c1a52bb3e4b000e7643f8c5b08c1580586f",
+        "s7-g5-t3-QC2": "36eb625ef3264d446ff7a372a942839d79f07b5e70a86a05f1c3017b94301d23",
+        "s7-g5-t3-QC3": "a356123b381c1c702fa7bc4c1d53669fc7d85dce7de81b3e1c6c6714f2a96c2d"
+      }
+    },
+    {
+      "id": "s7-g5-t4",
+      "sha256": "df1ab722d26ebc9c17bd4fbfb7cd6bcb16d2c0c67dfc2c735d0bd7d14b5255d5",
+      "note": "EPG grouping is distinct from subnet and bridge-domain scope.",
+      "questions": {
+        "s7-g5-t4-Q1": "9de31c3eb2e31768e52d9250bfb609eee2b6b161f9e17d28aab75aaf25183528",
+        "s7-g5-t4-Q2": "82b76140daa22fcbf8f948751e63af667130ffc25b8a9464e9a025caa33655fd",
+        "s7-g5-t4-Q3": "8382d7d77d74097d2318ecdc6f5588b33b85bf3c8399fbc6098adceb26157d49",
+        "s7-g5-t4-Q4": "f50bc52598a5b40e529a7ac8a148bc3f912391acc2b199e3fca782d5599583f8",
+        "s7-g5-t4-Q5": "fb57165889d69b2464edc186540a57824318b6d5b4945bdf3f7ea86dbceaaa24",
+        "s7-g5-t4-Q6": "b58962efae9de76ea715e73aea415eeb6adffee85b341043204f8aecf6f1e45e",
+        "s7-g5-t4-Q7": "190c1749f02ad9d58b95e1dc3bdf583bdb3fd0ad91f770420069e33fd9e012c0",
+        "s7-g5-t4-Q8": "2e9806ce680cae1abb973c6e3714168775c4a88f406e0774ecb6dfa6e707a1ad",
+        "s7-g5-t4-Q9": "6c40c33091737d414c0844a432e639987cafe605215afc75f006b557f80a7e79",
+        "s7-g5-t4-Q10": "b3733323b896bfdf6343ff3f653fb9840e912517439bb6b5e0e2cf6e03304d29",
+        "s7-g5-t4-QC1": "624a8f8712c85cfba732234e43b6d63ea68c0d1e8dcdd2282a7c7a52fca78a09",
+        "s7-g5-t4-QC2": "a46e68bb683033a672abdea4b5c6add92f2f49cd27e038381ef88241b6b38a3f",
+        "s7-g5-t4-QC3": "25ec32494e143d71f94d2c8c9f569eaf8512fe0733104bbebeba5de65134861a"
+      }
+    },
+    {
+      "id": "s7-g5-t5",
+      "sha256": "601a7f5f2ad82cc993a7de1e408fe92c0feff725da4b664f9c64dd31518db961",
+      "note": "BD forwarding/subnet scope and unknown-unicast behavior reviewed.",
+      "questions": {
+        "s7-g5-t5-Q1": "0baba7d2f1975c51abdc4984c4f3fe61bd2f3c4a951ef42e88baa97630d1935c",
+        "s7-g5-t5-Q2": "9710d4b7db1ab939139bf10152ffa9a00072c563090c2402c6e37b4115a26fdd",
+        "s7-g5-t5-Q3": "4d45993e6918563179add31559d8919394606fa0e5e3f50b43fc796a5613fc1a",
+        "s7-g5-t5-Q4": "4783164adc98e88df68fd8f3a32a7a09f796a03c5f49878c39a399ec53720b02",
+        "s7-g5-t5-Q5": "4bb8d163388e9cb8d37b463a39a1f1eb46ec003abeb0d79f5375435a1316b977",
+        "s7-g5-t5-Q6": "9d363e25978031891a46d2adce356402b357c34b6a85cd1e0b51709a90685937",
+        "s7-g5-t5-Q7": "0c71c4b5f1ad47436560995dbbd3d2c9f4fe33a32c240c72cb78161baa4af409",
+        "s7-g5-t5-Q8": "99f9356144047db455ef44eb72b2b6b35bf40d05323d8ef3f033fc9a74ecb8ca",
+        "s7-g5-t5-Q9": "eaec2a3c9b7a882c9f72d04096662f32b7fdecadfbd8b79cdcc1d3a4271a7997",
+        "s7-g5-t5-Q10": "6bc3f0d0f14a340da07dca96faa0a96df0bbe8f23b0eb7b8f957d27899b95593",
+        "s7-g5-t5-QC1": "7c569ac05ee672c4860a0752e5988a5d6e1b19c642b409bdae673d1d10c044d1",
+        "s7-g5-t5-QC2": "3377471b19f90866e5772ac3c30f202f56aa1a37a0f934234c15550d2a6dafa7",
+        "s7-g5-t5-QC3": "44523d63d0134c1a68ff24805b3b795c6a7703308fb61bd55b4b53b231dfa940"
+      }
+    },
+    {
+      "id": "s7-g5-t6",
+      "sha256": "4a285e71b3d4ef60285294735c3b1d544c224e6fd077b17eb895f0f49f9714f9",
+      "note": "Contract provider/consumer/filter scope; no stateful firewall claim.",
+      "questions": {
+        "s7-g5-t6-Q1": "47dff748745c543fb07efd911f7b6f0b6312077872216a88a2265a0dcd1f3a8c",
+        "s7-g5-t6-Q2": "6cc88d4415e9ae5b193208ee4fda2bd5752907524aa3828f9b0d017052444642",
+        "s7-g5-t6-Q3": "46f31da15e68367679b3369af7c84b396c5394380e7eb9df43c224c07d5c488f",
+        "s7-g5-t6-Q4": "4c067f0f1dd42776b8bff420a4461f21d6de43fd8eab796e81214d320d4b313c",
+        "s7-g5-t6-Q5": "2f77550f1d1b3995968f8b24199ed6896c1e8aaa92ecb9f91538e1966a265852",
+        "s7-g5-t6-Q6": "3f8fe0f3afe0c5fb50a369b77dbdcbf5efc5fad5635554d2c85bdb8b5eaf784a",
+        "s7-g5-t6-Q7": "311a91b2d89ba88b6729f2f21b93fc9aedfb441736dff893a0b1a7f42f9ece3d",
+        "s7-g5-t6-Q8": "206425840e6aa998b8fc2c17c976944bb2643fa868554c0c7e2ba4e2e01b83dc",
+        "s7-g5-t6-Q9": "9b5a38b3d875c8ec2c3cce9027cea5d4d465283b8700cd35a43cb0d6197cdaaf",
+        "s7-g5-t6-Q10": "8b574a59a030b4cf93e88cb4f9785fc966d6427c4012cce211859baf7a1e1dd1",
+        "s7-g5-t6-QC1": "5bd17682798a424d052b253596986708f442f1f86f2a776908a304810d55b147",
+        "s7-g5-t6-QC2": "fb9c0e8caecfed502339aef23c43c71286a5a6b46094a0cbfc51a8a1169a03c3",
+        "s7-g5-t6-QC3": "89acfcb7f93cd851a48c76c939c998cc151afa30cb72d67c761476c772244dd2"
+      }
+    },
+    {
+      "id": "s7-g5-t7",
+      "sha256": "2a4aaad9dff0a1665b920cc4ce6ac7905cd20dbdcefb7c9a52ac5ffb046cdaa8",
+      "note": "Application Profile logical organization is distinct from forwarding.",
+      "questions": {
+        "s7-g5-t7-Q1": "44acd1eda0550c95ceea400042a742c04edb68a88181896cce50fc4f51ff8835",
+        "s7-g5-t7-Q2": "2fab6992cd3112db5f85e1ced7e56186a8d82c6167a89b6a28fda6e4346edb3a",
+        "s7-g5-t7-Q3": "1afae0df060a282cbc54364810ccca4d4218bdf2da121fee6fcc39ba758a3593",
+        "s7-g5-t7-Q4": "c50c65d39452a7c07ae1fbcced4ea5f07ab11d541a5cd87ee6cadef243c55c87",
+        "s7-g5-t7-Q5": "19eff88c3ae9e55f8a113dd2edca637de7ffcc42821d536b7faabdd672a1d442",
+        "s7-g5-t7-Q6": "354ba07630d3ce1a610eb4c2ff1e77675f8871f34af468464f3ce844988b9e8c",
+        "s7-g5-t7-Q7": "fe507a19be6f6469877e96ea21556294538069e53ddbf11b24058bd874c1381a",
+        "s7-g5-t7-Q8": "be57916be33f8497ddf4094cff2d853e84b6c426f8ca3a5a285ecf86589e01e7",
+        "s7-g5-t7-Q9": "c9fe32f970443368a3c3d703bf86913ad98c1b7ce4f06a52f4db9554d716f75a",
+        "s7-g5-t7-Q10": "c3211d7bd204755c4af0527abb28a3c24ae2d08cf7b28844cd5946f67d26b043",
+        "s7-g5-t7-QC1": "7978cf4e21cef5d34fd7c73a43bb0b21aca77cb4e6fc2f94db36a0d5f9d3a5d9",
+        "s7-g5-t7-QC2": "301f584f32f4bf7fa0cab9570c9584b75064fe021853337578776df4bc62325c",
+        "s7-g5-t7-QC3": "08930ae96264e68d0951c0a9f96d375f13d6d178fdd05c11457ffba527875908"
+      }
+    },
+    {
+      "id": "s7-g5-t8",
+      "sha256": "1c8d20fd5f7ea0abff83aa7edfaa4ee06247427098ae1a43b295be66f68a007b",
+      "note": "Tenant administration is distinct from automatic traffic isolation.",
+      "questions": {
+        "s7-g5-t8-Q1": "a5d98f9e645bbd16862ea7c46bcabe92d44b3e5ab26c6a7ee76445a07fbc0e1d",
+        "s7-g5-t8-Q2": "81ffca6f6248cafa344d48674b2e75bd6ddeb7c5aa91221f314359d4a132b405",
+        "s7-g5-t8-Q3": "abceba04fb3592696ac2dc00c128b5e0413fe2b063d17bc48b4108e17a1d53f3",
+        "s7-g5-t8-Q4": "27b32386331ce55545e6348f181b3a86a8bd94c05647c4981ecdd1ec7ec84062",
+        "s7-g5-t8-Q5": "bb243ea684f224852b74ac950052edf0286384646c0518f443cf57cd855c3901",
+        "s7-g5-t8-Q6": "9313054f05337ddce780184ac027ae370c677e5865a9ea7ad0c5ff4cf115215e",
+        "s7-g5-t8-Q7": "9d1fb4aa1cd06558efb00522dc212f5270dae87bc59f7582e269409698e1509b",
+        "s7-g5-t8-Q8": "bc7df2ae5f6b8e85c2c17e3d6b7fc705dd53c26572dacfdaa4e5c89707aaff51",
+        "s7-g5-t8-Q9": "12c0ce1a56ad69af9eff1d4c2b82c87545e57afe65f08065da053d4ea151e8cc",
+        "s7-g5-t8-Q10": "489edea02b34cb98e62d92fc08430962675763c275d2b3066efc8c1096ae33a4",
+        "s7-g5-t8-QC1": "be99d5b747dcb6d08d3ee7afbfb942ea699e8c409daacfe849dfe7dd82833114",
+        "s7-g5-t8-QC2": "2d68431419174eb044e3740c252e2814b4e42061f0bac1ff3edfe70b1833d6d5",
+        "s7-g5-t8-QC3": "4539cf770b403e41abc5e4de1506c2e75ba5649e2a6bbf7dd5701c1e06e07fab"
+      }
+    },
+    {
+      "id": "lab-7",
+      "sha256": "557a7c4491fc2bd028db32500c450e126c84300fd90de196aab2146f845283d6",
+      "note": "Offline reference schedule, eight links, endpoint attachments, separate ACI policy, exact restoration and explicit unexecuted hardware boundaries reviewed.",
+      "questions": {
+        "lab-7-Q1": "6ed570038c2cc32f266caab3c039b454ae0884c75d12467317cf5d2832183052",
+        "lab-7-Q2": "5ac3afc5b23dcf1ac58c50516e141fada77be07b040ce0fe8c7f3ed6562eb8cb",
+        "lab-7-Q3": "9d24df9ac3ff0cec05512e3c5e18fadd3a85997a55a0c0d079f9029486157331",
+        "lab-7-Q4": "234bfe17610d43f0122e7d3262fba9fa3a26fce9023114f7dccc2f45c08871f8",
+        "lab-7-Q5": "731614836651d2d6177e8230347cdd389c269da6d763e02c51011d1dc3b033b9",
+        "lab-7-Q6": "a5a11b7419c3da88a472fe369f9574f0b90ae7082cfbac4ddc11db9f8b2e3ee4",
+        "lab-7-Q7": "29ceb93cbdf1e7ffbf0e6a0034b0596de744f2032c3a41a7ae36eea949809d71",
+        "lab-7-Q8": "b9b6e85ff9d0a1a3acf628ebfc07f509f5716ccc743d59f412cb7e9c87813486",
+        "lab-7-Q9": "682feeb257e0e8a8cccc927e62154bc7eb4e7f70644e24fcb173b6e84afe619d",
+        "lab-7-Q10": "adb61b924782829ae9d01afca868091f488ada1ea47809eb89387ec474e7a372",
+        "lab-7-QC1": "2c826b64b5bee1483899449d15d5fc3e0c5eb5377ce383375b7f7bc8e0842a23",
+        "lab-7-QC2": "5536a039fe034b914577b281b04c46334d11942ec6d7ab8fcd61abcc9cab5848",
+        "lab-7-QC3": "35c57ae54a1d1317bd00237528010e31c737268235e9da8ab6194da10aebe5a0"
+      }
+    }
+  ],
+  "visual": {
+    "captures": 30,
+    "contactSheets": 3,
+    "additionalCaptures": 3,
+    "findings": [
+      "Final desktop topology fits the reader.",
+      "Dashed attachment links avoid passing through node labels.",
+      "Dark 320px topology provides keyboard-accessible horizontal scrolling; both ends inspected."
+    ]
+  },
+  "resolved": [
+    "Detailed topology and endpoint mapping included in workbook.",
+    "Actual downloadable Python runner independently compared byte-for-byte.",
+    "APIC outage does not automatically invalidate deployed policy in the declared model."
+  ],
+  "limits": [
+    "Cisco/APIC commands and hardware forwarding remain guided and unexecuted.",
+    "Offline fabric validates synthetic intent and owned-file recovery; no traffic, BGP sessions, firewall HA, storage I/O or throughput is measured.",
+    "ACI model covers only the stated inter-EPG predicate and excludes exceptions and statefulness.",
+    "Written answers are self-assessed, not automatically scored.",
+    "Responsive/keyboard/contrast checks are not a full WCAG certification."
+  ]
+}

@@ -1,0 +1,1220 @@
+{
+  "exitCode": 0,
+  "records": {
+    "BASELINE_NEIGHBORS_R1": {
+      "command": "show ip eigrp neighbors",
+      "output": "\nEIGRP neighbors for AS(100)\n\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \n                                           (sec)           (ms)        Cnt    Num   \n0   203.0.113.2       transit              12     0        0      2    0      2\n"
+    },
+    "BASELINE_INTERFACES_R1": {
+      "command": "show ip eigrp interfaces detail",
+      "output": "\nEIGRP interfaces for AS(100)\n\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \n   Hello interval is  0  sec \n   Next xmit serial <none> \n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \n   Authentication mode is  not set \n   Use multicast \ntransit          100000     10         1      0 / 0         0       0              0            0       5        15       \n   Hello interval is  0  sec \n   Next xmit serial <none> \n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \n   Authentication mode is  not set \n   Use multicast \n"
+    },
+    "BASELINE_TOPOLOGY_R1": {
+      "command": "show ip eigrp topology all-links",
+      "output": "\nEIGRP Topology Table for AS(100)/ID(1.1.1.1)\n\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\n       r - reply Status, s - sia Status\n\nP  192.0.2.0/24, 1 successors, FD is 28160, serno: 0 \n       via Connected, lan\nP  198.51.100.0/24, 1 successors, FD is 30720, serno: 0 \n       via 203.0.113.2 (30720/28160), transit\nP  203.0.113.0/30, 2 successors, FD is 28160, serno: 0 \n       via Connected, transit\n       via Connected, transit\n"
+    },
+    "BASELINE_CONFIG_R1": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09e-175459-r1\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter eigrp 100\n eigrp router-id 1.1.1.1\n network 203.0.113.0/30\n network 192.0.2.0/24\nexit\n!\nend\n"
+    },
+    "BASELINE_RIB_R1": {
+      "192.0.2.0/24": [
+        {
+          "prefix": "192.0.2.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 7,
+          "uptime": "00:00:03",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 2,
+              "interfaceName": "lan",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "198.51.100.0/24": [
+        {
+          "prefix": "198.51.100.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "selected": true,
+          "destSelected": true,
+          "distance": 90,
+          "metric": 30720,
+          "installed": true,
+          "table": 254,
+          "internalStatus": 16,
+          "internalFlags": 8,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 18,
+          "installedNexthopGroupId": 18,
+          "uptime": "00:00:01",
+          "nexthops": [
+            {
+              "flags": 3,
+              "fib": true,
+              "ip": "203.0.113.2",
+              "afi": "ipv4",
+              "interfaceIndex": 4,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "203.0.113.0/30": [
+        {
+          "prefix": "203.0.113.0/30",
+          "prefixLen": 30,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 2,
+          "internalNextHopActiveNum": 2,
+          "nexthopGroupId": 11,
+          "uptime": "00:00:03",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 4,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            },
+            {
+              "flags": 17,
+              "duplicate": true,
+              "directlyConnected": true,
+              "interfaceIndex": 4,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "BASELINE_KERNEL_R1": [
+      {
+        "dst": "192.0.2.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "192.0.2.1",
+        "flags": []
+      },
+      {
+        "dst": "198.51.100.0/24",
+        "nhid": 18,
+        "gateway": "203.0.113.2",
+        "dev": "transit",
+        "protocol": "eigrp",
+        "metric": 20,
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.1",
+        "flags": []
+      }
+    ],
+    "BASELINE_NEIGHBORS_R2": {
+      "command": "show ip eigrp neighbors",
+      "output": "\nEIGRP neighbors for AS(100)\n\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \n                                           (sec)           (ms)        Cnt    Num   \n0   203.0.113.1       transit              11     0        0      2    0      2\n"
+    },
+    "BASELINE_INTERFACES_R2": {
+      "command": "show ip eigrp interfaces detail",
+      "output": "\nEIGRP interfaces for AS(100)\n\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \n   Hello interval is  0  sec \n   Next xmit serial <none> \n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \n   Authentication mode is  not set \n   Use multicast \ntransit          100000     10         1      0 / 0         0       0              0            0       5        15       \n   Hello interval is  0  sec \n   Next xmit serial <none> \n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \n   Authentication mode is  not set \n   Use multicast \n"
+    },
+    "BASELINE_TOPOLOGY_R2": {
+      "command": "show ip eigrp topology all-links",
+      "output": "\nEIGRP Topology Table for AS(100)/ID(2.2.2.2)\n\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\n       r - reply Status, s - sia Status\n\nP  192.0.2.0/24, 1 successors, FD is 30720, serno: 0 \n       via 203.0.113.1 (30720/28160), transit\nP  198.51.100.0/24, 1 successors, FD is 28160, serno: 0 \n       via Connected, lan\nP  203.0.113.0/30, 1 successors, FD is 28160, serno: 0 \n       via Connected, transit\n"
+    },
+    "BASELINE_CONFIG_R2": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09e-175459-r2\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter eigrp 100\n eigrp router-id 2.2.2.2\n network 203.0.113.0/30\n network 198.51.100.0/24\nexit\n!\nend\n"
+    },
+    "BASELINE_RIB_R2": {
+      "192.0.2.0/24": [
+        {
+          "prefix": "192.0.2.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "selected": true,
+          "destSelected": true,
+          "distance": 90,
+          "metric": 30720,
+          "installed": true,
+          "table": 254,
+          "internalStatus": 16,
+          "internalFlags": 8,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 14,
+          "installedNexthopGroupId": 14,
+          "uptime": "00:00:02",
+          "nexthops": [
+            {
+              "flags": 3,
+              "fib": true,
+              "ip": "203.0.113.1",
+              "afi": "ipv4",
+              "interfaceIndex": 3,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "198.51.100.0/24": [
+        {
+          "prefix": "198.51.100.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 7,
+          "uptime": "00:00:04",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 4,
+              "interfaceName": "lan",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "203.0.113.0/30": [
+        {
+          "prefix": "203.0.113.0/30",
+          "prefixLen": 30,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 8,
+          "uptime": "00:00:04",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 3,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "BASELINE_KERNEL_R2": [
+      {
+        "dst": "192.0.2.0/24",
+        "nhid": 14,
+        "gateway": "203.0.113.1",
+        "dev": "transit",
+        "protocol": "eigrp",
+        "metric": 20,
+        "flags": []
+      },
+      {
+        "dst": "198.51.100.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "198.51.100.1",
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.2",
+        "flags": []
+      }
+    ],
+    "BASELINE_PROBE_CLIENT": {
+      "target": "198.51.100.20",
+      "exitCode": 0,
+      "output": "PING 198.51.100.20 (198.51.100.20) 56(84) bytes of data.\n64 bytes from 198.51.100.20: icmp_seq=1 ttl=62 time=0.077 ms\n\n--- 198.51.100.20 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.077/0.077/0.077/0.000 ms\n"
+    },
+    "BASELINE_PROBE_SERVER": {
+      "target": "192.0.2.10",
+      "exitCode": 0,
+      "output": "PING 192.0.2.10 (192.0.2.10) 56(84) bytes of data.\n64 bytes from 192.0.2.10: icmp_seq=1 ttl=62 time=0.072 ms\n\n--- 192.0.2.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.072/0.072/0.072/0.000 ms\n"
+    },
+    "PACKETS": [
+      [
+        "203.0.113.2",
+        "224.0.0.10",
+        "88",
+        "5",
+        "100",
+        "0",
+        "0"
+      ],
+      [
+        "203.0.113.1",
+        "224.0.0.10",
+        "88",
+        "5",
+        "100",
+        "0",
+        "0"
+      ],
+      [
+        "203.0.113.2",
+        "224.0.0.10",
+        "88",
+        "5",
+        "100",
+        "0",
+        "0"
+      ],
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "88",
+        "1",
+        "100",
+        "1",
+        "0"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "88",
+        "1",
+        "100",
+        "1",
+        "0"
+      ],
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "88",
+        "1",
+        "100",
+        "1",
+        "1"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "88",
+        "1",
+        "100",
+        "1",
+        "1"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "88",
+        "1",
+        "100",
+        "2",
+        "1"
+      ],
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "88",
+        "1",
+        "100",
+        "2",
+        "2"
+      ],
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "88",
+        "5",
+        "100",
+        "0",
+        "2"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "88",
+        "5",
+        "100",
+        "0",
+        "2"
+      ],
+      [
+        "203.0.113.1",
+        "224.0.0.10",
+        "88",
+        "5",
+        "100",
+        "0",
+        "0"
+      ],
+      [
+        "203.0.113.2",
+        "224.0.0.10",
+        "88",
+        "5",
+        "100",
+        "0",
+        "0"
+      ]
+    ],
+    "FAULT_NEIGHBORS_R1": {
+      "command": "show ip eigrp neighbors",
+      "output": "\nEIGRP neighbors for AS(100)\n\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \n                                           (sec)           (ms)        Cnt    Num   \n"
+    },
+    "FAULT_INTERFACES_R1": {
+      "command": "show ip eigrp interfaces detail",
+      "output": "\nEIGRP interfaces for AS(100)\n\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \n   Hello interval is  0  sec \n   Next xmit serial <none> \n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \n   Authentication mode is  not set \n   Use multicast \n"
+    },
+    "FAULT_TOPOLOGY_R1": {
+      "command": "show ip eigrp topology all-links",
+      "output": "\nEIGRP Topology Table for AS(100)/ID(1.1.1.1)\n\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\n       r - reply Status, s - sia Status\n\nP  192.0.2.0/24, 1 successors, FD is 28160, serno: 0 \n       via Connected, lan\nP  198.51.100.0/24, 1 successors, FD is 30720, serno: 0 \n       via 33.0.0.0 (30720/28160), transit\n"
+    },
+    "FAULT_CONFIG_R1": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09e-175459-r1\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter eigrp 100\n eigrp router-id 1.1.1.1\n network 203.0.113.0/30\n network 192.0.2.0/24\nexit\n!\nend\n"
+    },
+    "FAULT_RIB_R1": {
+      "192.0.2.0/24": [
+        {
+          "prefix": "192.0.2.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 7,
+          "uptime": "00:00:10",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 2,
+              "interfaceName": "lan",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "198.51.100.0/24": [
+        {
+          "prefix": "198.51.100.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 30720,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 0,
+          "nexthopGroupId": 23,
+          "uptime": "00:00:02",
+          "nexthops": [
+            {
+              "flags": 0,
+              "ip": "203.0.113.2",
+              "afi": "ipv4",
+              "interfaceIndex": 4,
+              "interfaceName": "transit",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "FAULT_KERNEL_R1": [
+      {
+        "dst": "192.0.2.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "192.0.2.1",
+        "flags": []
+      }
+    ],
+    "FAULT_NEIGHBORS_R2": {
+      "command": "show ip eigrp neighbors",
+      "output": "\nEIGRP neighbors for AS(100)\n\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \n                                           (sec)           (ms)        Cnt    Num   \n"
+    },
+    "FAULT_INTERFACES_R2": {
+      "command": "show ip eigrp interfaces detail",
+      "output": "\nEIGRP interfaces for AS(100)\n\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \n   Hello interval is  0  sec \n   Next xmit serial <none> \n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \n   Authentication mode is  not set \n   Use multicast \n"
+    },
+    "FAULT_TOPOLOGY_R2": {
+      "command": "show ip eigrp topology all-links",
+      "output": "\nEIGRP Topology Table for AS(100)/ID(2.2.2.2)\n\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\n       r - reply Status, s - sia Status\n\nP  192.0.2.0/24, 1 successors, FD is 30720, serno: 0 \n       via 0.0.0.0 (30720/28160), transit\nP  198.51.100.0/24, 1 successors, FD is 28160, serno: 0 \n       via Connected, lan\n"
+    },
+    "FAULT_CONFIG_R2": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09e-175459-r2\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter eigrp 100\n eigrp router-id 2.2.2.2\n network 203.0.113.0/30\n network 198.51.100.0/24\nexit\n!\nend\n"
+    },
+    "FAULT_RIB_R2": {
+      "192.0.2.0/24": [
+        {
+          "prefix": "192.0.2.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 30720,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 0,
+          "nexthopGroupId": 15,
+          "uptime": "00:00:02",
+          "nexthops": [
+            {
+              "flags": 0,
+              "ip": "203.0.113.1",
+              "afi": "ipv4",
+              "interfaceIndex": 3,
+              "interfaceName": "transit",
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "198.51.100.0/24": [
+        {
+          "prefix": "198.51.100.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 7,
+          "uptime": "00:00:10",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 4,
+              "interfaceName": "lan",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "FAULT_KERNEL_R2": [
+      {
+        "dst": "198.51.100.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "198.51.100.1",
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.2",
+        "flags": [
+          "linkdown"
+        ]
+      }
+    ],
+    "FAULT_TRANSIT_LINK": [
+      {
+        "ifindex": 4,
+        "link_index": 3,
+        "ifname": "transit",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "DOWN",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "4e:02:c4:92:17:29",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 1
+      }
+    ],
+    "FAULT_PROBE_CLIENT": {
+      "target": "198.51.100.20",
+      "exitCode": 1,
+      "output": "PING 198.51.100.20 (198.51.100.20) 56(84) bytes of data.\nFrom 192.0.2.1 icmp_seq=1 Destination Net Unreachable\n\n--- 198.51.100.20 ping statistics ---\n1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms\n\n"
+    },
+    "FAULT_PROBE_SERVER": {
+      "target": "192.0.2.10",
+      "exitCode": 1,
+      "output": "PING 192.0.2.10 (192.0.2.10) 56(84) bytes of data.\nFrom 198.51.100.1 icmp_seq=1 Destination Net Unreachable\n\n--- 192.0.2.10 ping statistics ---\n1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms\n\n"
+    },
+    "FAULT_PROBE_CLIENT_GATEWAY": {
+      "target": "192.0.2.1",
+      "exitCode": 0,
+      "output": "PING 192.0.2.1 (192.0.2.1) 56(84) bytes of data.\n64 bytes from 192.0.2.1: icmp_seq=1 ttl=64 time=1.68 ms\n\n--- 192.0.2.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.676/1.676/1.676/0.000 ms\n"
+    },
+    "FAULT_PROBE_SERVER_GATEWAY": {
+      "target": "198.51.100.1",
+      "exitCode": 0,
+      "output": "PING 198.51.100.1 (198.51.100.1) 56(84) bytes of data.\n64 bytes from 198.51.100.1: icmp_seq=1 ttl=64 time=0.236 ms\n\n--- 198.51.100.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.236/0.236/0.236/0.000 ms\n"
+    },
+    "LINK_RESTORED_NEIGHBORS_R1": {
+      "command": "show ip eigrp neighbors",
+      "output": "\nEIGRP neighbors for AS(100)\n\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \n                                           (sec)           (ms)        Cnt    Num   \n"
+    },
+    "LINK_RESTORED_INTERFACES_R1": {
+      "command": "show ip eigrp interfaces detail",
+      "output": "\nEIGRP interfaces for AS(100)\n\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \n   Hello interval is  0  sec \n   Next xmit serial <none> \n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \n   Authentication mode is  not set \n   Use multicast \n"
+    },
+    "LINK_RESTORED_TOPOLOGY_R1": {
+      "command": "show ip eigrp topology all-links",
+      "output": "\nEIGRP Topology Table for AS(100)/ID(1.1.1.1)\n\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\n       r - reply Status, s - sia Status\n\nP  192.0.2.0/24, 1 successors, FD is 28160, serno: 0 \n       via Connected, lan\nP  198.51.100.0/24, 1 successors, FD is 30720, serno: 0 \n       via 48.0.0.0 (30720/28160), transit\nP  203.0.113.0/30, 1 successors, FD is 28160, serno: 0 \n       via Connected, transit\n"
+    },
+    "LINK_RESTORED_CONFIG_R1": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09e-175459-r1\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter eigrp 100\n eigrp router-id 1.1.1.1\n network 203.0.113.0/30\n network 192.0.2.0/24\nexit\n!\nend\n"
+    },
+    "LINK_RESTORED_RIB_R1": {
+      "192.0.2.0/24": [
+        {
+          "prefix": "192.0.2.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 7,
+          "uptime": "00:00:12",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 2,
+              "interfaceName": "lan",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "198.51.100.0/24": [
+        {
+          "prefix": "198.51.100.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 30720,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 0,
+          "nexthopGroupId": 23,
+          "uptime": "00:00:04",
+          "nexthops": [
+            {
+              "flags": 0,
+              "ip": "203.0.113.2",
+              "afi": "ipv4",
+              "interfaceIndex": 4,
+              "interfaceName": "transit",
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "203.0.113.0/30": [
+        {
+          "prefix": "203.0.113.0/30",
+          "prefixLen": 30,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 26,
+          "uptime": "00:00:01",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 4,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "LINK_RESTORED_KERNEL_R1": [
+      {
+        "dst": "192.0.2.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "192.0.2.1",
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.1",
+        "flags": []
+      }
+    ],
+    "LINK_RESTORED_NEIGHBORS_R2": {
+      "command": "show ip eigrp neighbors",
+      "output": "\nEIGRP neighbors for AS(100)\n\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \n                                           (sec)           (ms)        Cnt    Num   \n"
+    },
+    "LINK_RESTORED_INTERFACES_R2": {
+      "command": "show ip eigrp interfaces detail",
+      "output": "\nEIGRP interfaces for AS(100)\n\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \n   Hello interval is  0  sec \n   Next xmit serial <none> \n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \n   Authentication mode is  not set \n   Use multicast \n"
+    },
+    "LINK_RESTORED_TOPOLOGY_R2": {
+      "command": "show ip eigrp topology all-links",
+      "output": "\nEIGRP Topology Table for AS(100)/ID(2.2.2.2)\n\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\n       r - reply Status, s - sia Status\n\nP  192.0.2.0/24, 1 successors, FD is 30720, serno: 0 \n       via 203.0.113.1 (30720/28160), transit\nP  198.51.100.0/24, 1 successors, FD is 28160, serno: 0 \n       via Connected, lan\nP  203.0.113.0/30, 1 successors, FD is 28160, serno: 0 \n       via Connected, transit\n"
+    },
+    "LINK_RESTORED_CONFIG_R2": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09e-175459-r2\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter eigrp 100\n eigrp router-id 2.2.2.2\n network 203.0.113.0/30\n network 198.51.100.0/24\nexit\n!\nend\n"
+    },
+    "LINK_RESTORED_RIB_R2": {
+      "192.0.2.0/24": [
+        {
+          "prefix": "192.0.2.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 30720,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 0,
+          "nexthopGroupId": 15,
+          "uptime": "00:00:04",
+          "nexthops": [
+            {
+              "flags": 0,
+              "ip": "203.0.113.1",
+              "afi": "ipv4",
+              "interfaceIndex": 3,
+              "interfaceName": "transit",
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "198.51.100.0/24": [
+        {
+          "prefix": "198.51.100.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 7,
+          "uptime": "00:00:12",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 4,
+              "interfaceName": "lan",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "203.0.113.0/30": [
+        {
+          "prefix": "203.0.113.0/30",
+          "prefixLen": 30,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 19,
+          "uptime": "00:00:01",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 3,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "LINK_RESTORED_KERNEL_R2": [
+      {
+        "dst": "198.51.100.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "198.51.100.1",
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.2",
+        "flags": []
+      }
+    ],
+    "RECOVERED_NEIGHBORS_R1": {
+      "command": "show ip eigrp neighbors",
+      "output": "\nEIGRP neighbors for AS(100)\n\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \n                                           (sec)           (ms)        Cnt    Num   \n0   203.0.113.2       transit              14     0        0      2    0      2\n"
+    },
+    "RECOVERED_INTERFACES_R1": {
+      "command": "show ip eigrp interfaces detail",
+      "output": "\nEIGRP interfaces for AS(100)\n\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \n   Hello interval is  0  sec \n   Next xmit serial <none> \n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \n   Authentication mode is  not set \n   Use multicast \ntransit          100000     10         1      0 / 0         0       0              0            0       5        15       \n   Hello interval is  0  sec \n   Next xmit serial <none> \n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \n   Authentication mode is  not set \n   Use multicast \n"
+    },
+    "RECOVERED_TOPOLOGY_R1": {
+      "command": "show ip eigrp topology all-links",
+      "output": "\nEIGRP Topology Table for AS(100)/ID(1.1.1.1)\n\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\n       r - reply Status, s - sia Status\n\nP  192.0.2.0/24, 1 successors, FD is 28160, serno: 0 \n       via Connected, lan\nP  198.51.100.0/24, 1 successors, FD is 30720, serno: 0 \n       via 203.0.113.2 (30720/28160), transit\nP  203.0.113.0/30, 1 successors, FD is 28160, serno: 0 \n       via Connected, transit\n"
+    },
+    "RECOVERED_CONFIG_R1": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09e-175459-r1\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter eigrp 100\n eigrp router-id 1.1.1.1\n network 203.0.113.0/30\n network 192.0.2.0/24\nexit\n!\nend\n"
+    },
+    "RECOVERED_RIB_R1": {
+      "192.0.2.0/24": [
+        {
+          "prefix": "192.0.2.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 32,
+          "uptime": "00:00:01",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 2,
+              "interfaceName": "lan",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "198.51.100.0/24": [
+        {
+          "prefix": "198.51.100.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "selected": true,
+          "destSelected": true,
+          "distance": 90,
+          "metric": 30720,
+          "installed": true,
+          "table": 254,
+          "internalStatus": 16,
+          "internalFlags": 8,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 35,
+          "installedNexthopGroupId": 35,
+          "uptime": "00:00:01",
+          "nexthops": [
+            {
+              "flags": 3,
+              "fib": true,
+              "ip": "203.0.113.2",
+              "afi": "ipv4",
+              "interfaceIndex": 4,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "203.0.113.0/30": [
+        {
+          "prefix": "203.0.113.0/30",
+          "prefixLen": 30,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 33,
+          "uptime": "00:00:01",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 4,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "RECOVERED_KERNEL_R1": [
+      {
+        "dst": "192.0.2.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "192.0.2.1",
+        "flags": []
+      },
+      {
+        "dst": "198.51.100.0/24",
+        "nhid": 35,
+        "gateway": "203.0.113.2",
+        "dev": "transit",
+        "protocol": "eigrp",
+        "metric": 20,
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.1",
+        "flags": []
+      }
+    ],
+    "RECOVERED_NEIGHBORS_R2": {
+      "command": "show ip eigrp neighbors",
+      "output": "\nEIGRP neighbors for AS(100)\n\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \n                                           (sec)           (ms)        Cnt    Num   \n0   203.0.113.1       transit              12     0        0      2    0      2\n"
+    },
+    "RECOVERED_INTERFACES_R2": {
+      "command": "show ip eigrp interfaces detail",
+      "output": "\nEIGRP interfaces for AS(100)\n\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \n   Hello interval is  0  sec \n   Next xmit serial <none> \n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \n   Authentication mode is  not set \n   Use multicast \ntransit          100000     10         1      0 / 0         0       0              0            0       5        15       \n   Hello interval is  0  sec \n   Next xmit serial <none> \n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \n   Authentication mode is  not set \n   Use multicast \n"
+    },
+    "RECOVERED_TOPOLOGY_R2": {
+      "command": "show ip eigrp topology all-links",
+      "output": "\nEIGRP Topology Table for AS(100)/ID(2.2.2.2)\n\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\n       r - reply Status, s - sia Status\n\nP  192.0.2.0/24, 1 successors, FD is 30720, serno: 0 \n       via 203.0.113.1 (30720/28160), transit\nP  198.51.100.0/24, 1 successors, FD is 28160, serno: 0 \n       via Connected, lan\nP  203.0.113.0/30, 1 successors, FD is 28160, serno: 0 \n       via Connected, transit\n"
+    },
+    "RECOVERED_CONFIG_R2": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09e-175459-r2\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter eigrp 100\n eigrp router-id 2.2.2.2\n network 203.0.113.0/30\n network 198.51.100.0/24\nexit\n!\nend\n"
+    },
+    "RECOVERED_RIB_R2": {
+      "192.0.2.0/24": [
+        {
+          "prefix": "192.0.2.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "selected": true,
+          "destSelected": true,
+          "distance": 90,
+          "metric": 30720,
+          "installed": true,
+          "table": 254,
+          "internalStatus": 16,
+          "internalFlags": 8,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 27,
+          "installedNexthopGroupId": 27,
+          "uptime": "00:00:03",
+          "nexthops": [
+            {
+              "flags": 3,
+              "fib": true,
+              "ip": "203.0.113.1",
+              "afi": "ipv4",
+              "interfaceIndex": 3,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "198.51.100.0/24": [
+        {
+          "prefix": "198.51.100.0/24",
+          "prefixLen": 24,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 25,
+          "uptime": "00:00:03",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 4,
+              "interfaceName": "lan",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "203.0.113.0/30": [
+        {
+          "prefix": "203.0.113.0/30",
+          "prefixLen": 30,
+          "protocol": "eigrp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "distance": 90,
+          "metric": 28160,
+          "table": 254,
+          "internalStatus": 0,
+          "internalFlags": 0,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 26,
+          "uptime": "00:00:03",
+          "nexthops": [
+            {
+              "flags": 1,
+              "directlyConnected": true,
+              "interfaceIndex": 3,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "RECOVERED_KERNEL_R2": [
+      {
+        "dst": "192.0.2.0/24",
+        "nhid": 27,
+        "gateway": "203.0.113.1",
+        "dev": "transit",
+        "protocol": "eigrp",
+        "metric": 20,
+        "flags": []
+      },
+      {
+        "dst": "198.51.100.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "198.51.100.1",
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.2",
+        "flags": []
+      }
+    ],
+    "RECOVERED_PROBE_CLIENT": {
+      "target": "198.51.100.20",
+      "exitCode": 0,
+      "output": "PING 198.51.100.20 (198.51.100.20) 56(84) bytes of data.\n64 bytes from 198.51.100.20: icmp_seq=1 ttl=62 time=0.076 ms\n\n--- 198.51.100.20 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.076/0.076/0.076/0.000 ms\n"
+    },
+    "RECOVERED_PROBE_SERVER": {
+      "target": "192.0.2.10",
+      "exitCode": 0,
+      "output": "PING 192.0.2.10 (192.0.2.10) 56(84) bytes of data.\n64 bytes from 192.0.2.10: icmp_seq=1 ttl=62 time=0.065 ms\n\n--- 192.0.2.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.065/0.065/0.065/0.000 ms\n"
+    }
+  },
+  "output": [
+    "eigrpd version 8.4.4",
+    "BASELINE_NEIGHBORS_R1 {\"command\":\"show ip eigrp neighbors\",\"output\":\"\\nEIGRP neighbors for AS(100)\\n\\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \\n                                           (sec)           (ms)        Cnt    Num   \\n0   203.0.113.2       transit              12     0        0      2    0      2\\n\"}",
+    "BASELINE_INTERFACES_R1 {\"command\":\"show ip eigrp interfaces detail\",\"output\":\"\\nEIGRP interfaces for AS(100)\\n\\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \\nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \\n   Hello interval is  0  sec \\n   Next xmit serial <none> \\n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \\n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \\n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \\n   Authentication mode is  not set \\n   Use multicast \\ntransit          100000     10         1      0 / 0         0       0              0            0       5        15       \\n   Hello interval is  0  sec \\n   Next xmit serial <none> \\n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \\n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \\n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \\n   Authentication mode is  not set \\n   Use multicast \\n\"}",
+    "BASELINE_TOPOLOGY_R1 {\"command\":\"show ip eigrp topology all-links\",\"output\":\"\\nEIGRP Topology Table for AS(100)/ID(1.1.1.1)\\n\\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\\n       r - reply Status, s - sia Status\\n\\nP  192.0.2.0/24, 1 successors, FD is 28160, serno: 0 \\n       via Connected, lan\\nP  198.51.100.0/24, 1 successors, FD is 30720, serno: 0 \\n       via 203.0.113.2 (30720/28160), transit\\nP  203.0.113.0/30, 2 successors, FD is 28160, serno: 0 \\n       via Connected, transit\\n       via Connected, transit\\n\"}",
+    "BASELINE_CONFIG_R1 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09e-175459-r1\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter eigrp 100\\n eigrp router-id 1.1.1.1\\n network 203.0.113.0/30\\n network 192.0.2.0/24\\nexit\\n!\\nend\\n\"}",
+    "BASELINE_RIB_R1 {\"192.0.2.0/24\":[{\"prefix\":\"192.0.2.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":7,\"uptime\":\"00:00:03\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":2,\"interfaceName\":\"lan\",\"active\":true,\"weight\":1}]}],\"198.51.100.0/24\":[{\"prefix\":\"198.51.100.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"selected\":true,\"destSelected\":true,\"distance\":90,\"metric\":30720,\"installed\":true,\"table\":254,\"internalStatus\":16,\"internalFlags\":8,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":18,\"installedNexthopGroupId\":18,\"uptime\":\"00:00:01\",\"nexthops\":[{\"flags\":3,\"fib\":true,\"ip\":\"203.0.113.2\",\"afi\":\"ipv4\",\"interfaceIndex\":4,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}],\"203.0.113.0/30\":[{\"prefix\":\"203.0.113.0/30\",\"prefixLen\":30,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":2,\"internalNextHopActiveNum\":2,\"nexthopGroupId\":11,\"uptime\":\"00:00:03\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":4,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1},{\"flags\":17,\"duplicate\":true,\"directlyConnected\":true,\"interfaceIndex\":4,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}]}",
+    "BASELINE_KERNEL_R1 [{\"dst\":\"192.0.2.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"192.0.2.1\",\"flags\":[]},{\"dst\":\"198.51.100.0/24\",\"nhid\":18,\"gateway\":\"203.0.113.2\",\"dev\":\"transit\",\"protocol\":\"eigrp\",\"metric\":20,\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.1\",\"flags\":[]}]",
+    "BASELINE_NEIGHBORS_R2 {\"command\":\"show ip eigrp neighbors\",\"output\":\"\\nEIGRP neighbors for AS(100)\\n\\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \\n                                           (sec)           (ms)        Cnt    Num   \\n0   203.0.113.1       transit              11     0        0      2    0      2\\n\"}",
+    "BASELINE_INTERFACES_R2 {\"command\":\"show ip eigrp interfaces detail\",\"output\":\"\\nEIGRP interfaces for AS(100)\\n\\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \\nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \\n   Hello interval is  0  sec \\n   Next xmit serial <none> \\n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \\n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \\n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \\n   Authentication mode is  not set \\n   Use multicast \\ntransit          100000     10         1      0 / 0         0       0              0            0       5        15       \\n   Hello interval is  0  sec \\n   Next xmit serial <none> \\n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \\n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \\n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \\n   Authentication mode is  not set \\n   Use multicast \\n\"}",
+    "BASELINE_TOPOLOGY_R2 {\"command\":\"show ip eigrp topology all-links\",\"output\":\"\\nEIGRP Topology Table for AS(100)/ID(2.2.2.2)\\n\\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\\n       r - reply Status, s - sia Status\\n\\nP  192.0.2.0/24, 1 successors, FD is 30720, serno: 0 \\n       via 203.0.113.1 (30720/28160), transit\\nP  198.51.100.0/24, 1 successors, FD is 28160, serno: 0 \\n       via Connected, lan\\nP  203.0.113.0/30, 1 successors, FD is 28160, serno: 0 \\n       via Connected, transit\\n\"}",
+    "BASELINE_CONFIG_R2 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09e-175459-r2\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter eigrp 100\\n eigrp router-id 2.2.2.2\\n network 203.0.113.0/30\\n network 198.51.100.0/24\\nexit\\n!\\nend\\n\"}",
+    "BASELINE_RIB_R2 {\"192.0.2.0/24\":[{\"prefix\":\"192.0.2.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"selected\":true,\"destSelected\":true,\"distance\":90,\"metric\":30720,\"installed\":true,\"table\":254,\"internalStatus\":16,\"internalFlags\":8,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":14,\"installedNexthopGroupId\":14,\"uptime\":\"00:00:02\",\"nexthops\":[{\"flags\":3,\"fib\":true,\"ip\":\"203.0.113.1\",\"afi\":\"ipv4\",\"interfaceIndex\":3,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}],\"198.51.100.0/24\":[{\"prefix\":\"198.51.100.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":7,\"uptime\":\"00:00:04\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":4,\"interfaceName\":\"lan\",\"active\":true,\"weight\":1}]}],\"203.0.113.0/30\":[{\"prefix\":\"203.0.113.0/30\",\"prefixLen\":30,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":8,\"uptime\":\"00:00:04\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":3,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}]}",
+    "BASELINE_KERNEL_R2 [{\"dst\":\"192.0.2.0/24\",\"nhid\":14,\"gateway\":\"203.0.113.1\",\"dev\":\"transit\",\"protocol\":\"eigrp\",\"metric\":20,\"flags\":[]},{\"dst\":\"198.51.100.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"198.51.100.1\",\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.2\",\"flags\":[]}]",
+    "BASELINE_PROBE_CLIENT {\"target\":\"198.51.100.20\",\"exitCode\":0,\"output\":\"PING 198.51.100.20 (198.51.100.20) 56(84) bytes of data.\\n64 bytes from 198.51.100.20: icmp_seq=1 ttl=62 time=0.077 ms\\n\\n--- 198.51.100.20 ping statistics ---\\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\\nrtt min/avg/max/mdev = 0.077/0.077/0.077/0.000 ms\\n\"}",
+    "BASELINE_PROBE_SERVER {\"target\":\"192.0.2.10\",\"exitCode\":0,\"output\":\"PING 192.0.2.10 (192.0.2.10) 56(84) bytes of data.\\n64 bytes from 192.0.2.10: icmp_seq=1 ttl=62 time=0.072 ms\\n\\n--- 192.0.2.10 ping statistics ---\\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\\nrtt min/avg/max/mdev = 0.072/0.072/0.072/0.000 ms\\n\"}",
+    "PASS baseline: actual EIGRP-learned forwarding works in both directions.",
+    "PACKETS [[\"203.0.113.2\",\"224.0.0.10\",\"88\",\"5\",\"100\",\"0\",\"0\"],[\"203.0.113.1\",\"224.0.0.10\",\"88\",\"5\",\"100\",\"0\",\"0\"],[\"203.0.113.2\",\"224.0.0.10\",\"88\",\"5\",\"100\",\"0\",\"0\"],[\"203.0.113.1\",\"203.0.113.2\",\"88\",\"1\",\"100\",\"1\",\"0\"],[\"203.0.113.2\",\"203.0.113.1\",\"88\",\"1\",\"100\",\"1\",\"0\"],[\"203.0.113.1\",\"203.0.113.2\",\"88\",\"1\",\"100\",\"1\",\"1\"],[\"203.0.113.2\",\"203.0.113.1\",\"88\",\"1\",\"100\",\"1\",\"1\"],[\"203.0.113.2\",\"203.0.113.1\",\"88\",\"1\",\"100\",\"2\",\"1\"],[\"203.0.113.1\",\"203.0.113.2\",\"88\",\"1\",\"100\",\"2\",\"2\"],[\"203.0.113.1\",\"203.0.113.2\",\"88\",\"5\",\"100\",\"0\",\"2\"],[\"203.0.113.2\",\"203.0.113.1\",\"88\",\"5\",\"100\",\"0\",\"2\"],[\"203.0.113.1\",\"224.0.0.10\",\"88\",\"5\",\"100\",\"0\",\"0\"],[\"203.0.113.2\",\"224.0.0.10\",\"88\",\"5\",\"100\",\"0\",\"0\"]]",
+    "FAULT_NEIGHBORS_R1 {\"command\":\"show ip eigrp neighbors\",\"output\":\"\\nEIGRP neighbors for AS(100)\\n\\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \\n                                           (sec)           (ms)        Cnt    Num   \\n\"}",
+    "FAULT_INTERFACES_R1 {\"command\":\"show ip eigrp interfaces detail\",\"output\":\"\\nEIGRP interfaces for AS(100)\\n\\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \\nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \\n   Hello interval is  0  sec \\n   Next xmit serial <none> \\n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \\n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \\n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \\n   Authentication mode is  not set \\n   Use multicast \\n\"}",
+    "FAULT_TOPOLOGY_R1 {\"command\":\"show ip eigrp topology all-links\",\"output\":\"\\nEIGRP Topology Table for AS(100)/ID(1.1.1.1)\\n\\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\\n       r - reply Status, s - sia Status\\n\\nP  192.0.2.0/24, 1 successors, FD is 28160, serno: 0 \\n       via Connected, lan\\nP  198.51.100.0/24, 1 successors, FD is 30720, serno: 0 \\n       via 33.0.0.0 (30720/28160), transit\\n\"}",
+    "FAULT_CONFIG_R1 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09e-175459-r1\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter eigrp 100\\n eigrp router-id 1.1.1.1\\n network 203.0.113.0/30\\n network 192.0.2.0/24\\nexit\\n!\\nend\\n\"}",
+    "FAULT_RIB_R1 {\"192.0.2.0/24\":[{\"prefix\":\"192.0.2.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":7,\"uptime\":\"00:00:10\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":2,\"interfaceName\":\"lan\",\"active\":true,\"weight\":1}]}],\"198.51.100.0/24\":[{\"prefix\":\"198.51.100.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":30720,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":0,\"nexthopGroupId\":23,\"uptime\":\"00:00:02\",\"nexthops\":[{\"flags\":0,\"ip\":\"203.0.113.2\",\"afi\":\"ipv4\",\"interfaceIndex\":4,\"interfaceName\":\"transit\",\"weight\":1}]}]}",
+    "FAULT_KERNEL_R1 [{\"dst\":\"192.0.2.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"192.0.2.1\",\"flags\":[]}]",
+    "FAULT_NEIGHBORS_R2 {\"command\":\"show ip eigrp neighbors\",\"output\":\"\\nEIGRP neighbors for AS(100)\\n\\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \\n                                           (sec)           (ms)        Cnt    Num   \\n\"}",
+    "FAULT_INTERFACES_R2 {\"command\":\"show ip eigrp interfaces detail\",\"output\":\"\\nEIGRP interfaces for AS(100)\\n\\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \\nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \\n   Hello interval is  0  sec \\n   Next xmit serial <none> \\n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \\n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \\n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \\n   Authentication mode is  not set \\n   Use multicast \\n\"}",
+    "FAULT_TOPOLOGY_R2 {\"command\":\"show ip eigrp topology all-links\",\"output\":\"\\nEIGRP Topology Table for AS(100)/ID(2.2.2.2)\\n\\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\\n       r - reply Status, s - sia Status\\n\\nP  192.0.2.0/24, 1 successors, FD is 30720, serno: 0 \\n       via 0.0.0.0 (30720/28160), transit\\nP  198.51.100.0/24, 1 successors, FD is 28160, serno: 0 \\n       via Connected, lan\\n\"}",
+    "FAULT_CONFIG_R2 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09e-175459-r2\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter eigrp 100\\n eigrp router-id 2.2.2.2\\n network 203.0.113.0/30\\n network 198.51.100.0/24\\nexit\\n!\\nend\\n\"}",
+    "FAULT_RIB_R2 {\"192.0.2.0/24\":[{\"prefix\":\"192.0.2.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":30720,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":0,\"nexthopGroupId\":15,\"uptime\":\"00:00:02\",\"nexthops\":[{\"flags\":0,\"ip\":\"203.0.113.1\",\"afi\":\"ipv4\",\"interfaceIndex\":3,\"interfaceName\":\"transit\",\"weight\":1}]}],\"198.51.100.0/24\":[{\"prefix\":\"198.51.100.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":7,\"uptime\":\"00:00:10\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":4,\"interfaceName\":\"lan\",\"active\":true,\"weight\":1}]}]}",
+    "FAULT_KERNEL_R2 [{\"dst\":\"198.51.100.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"198.51.100.1\",\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.2\",\"flags\":[\"linkdown\"]}]",
+    "FAULT_TRANSIT_LINK [{\"ifindex\":4,\"link_index\":3,\"ifname\":\"transit\",\"flags\":[\"BROADCAST\",\"MULTICAST\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"DOWN\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"4e:02:c4:92:17:29\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":1}]",
+    "FAULT_PROBE_CLIENT {\"target\":\"198.51.100.20\",\"exitCode\":1,\"output\":\"PING 198.51.100.20 (198.51.100.20) 56(84) bytes of data.\\nFrom 192.0.2.1 icmp_seq=1 Destination Net Unreachable\\n\\n--- 198.51.100.20 ping statistics ---\\n1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms\\n\\n\"}",
+    "FAULT_PROBE_SERVER {\"target\":\"192.0.2.10\",\"exitCode\":1,\"output\":\"PING 192.0.2.10 (192.0.2.10) 56(84) bytes of data.\\nFrom 198.51.100.1 icmp_seq=1 Destination Net Unreachable\\n\\n--- 192.0.2.10 ping statistics ---\\n1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms\\n\\n\"}",
+    "FAULT_PROBE_CLIENT_GATEWAY {\"target\":\"192.0.2.1\",\"exitCode\":0,\"output\":\"PING 192.0.2.1 (192.0.2.1) 56(84) bytes of data.\\n64 bytes from 192.0.2.1: icmp_seq=1 ttl=64 time=1.68 ms\\n\\n--- 192.0.2.1 ping statistics ---\\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\\nrtt min/avg/max/mdev = 1.676/1.676/1.676/0.000 ms\\n\"}",
+    "FAULT_PROBE_SERVER_GATEWAY {\"target\":\"198.51.100.1\",\"exitCode\":0,\"output\":\"PING 198.51.100.1 (198.51.100.1) 56(84) bytes of data.\\n64 bytes from 198.51.100.1: icmp_seq=1 ttl=64 time=0.236 ms\\n\\n--- 198.51.100.1 ping statistics ---\\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\\nrtt min/avg/max/mdev = 0.236/0.236/0.236/0.000 ms\\n\"}",
+    "PASS transit interruption: owned attachment down withdraws remote EIGRP paths; endpoint traffic fails and local gateways work.",
+    "LINK_RESTORED_NEIGHBORS_R1 {\"command\":\"show ip eigrp neighbors\",\"output\":\"\\nEIGRP neighbors for AS(100)\\n\\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \\n                                           (sec)           (ms)        Cnt    Num   \\n\"}",
+    "LINK_RESTORED_INTERFACES_R1 {\"command\":\"show ip eigrp interfaces detail\",\"output\":\"\\nEIGRP interfaces for AS(100)\\n\\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \\nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \\n   Hello interval is  0  sec \\n   Next xmit serial <none> \\n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \\n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \\n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \\n   Authentication mode is  not set \\n   Use multicast \\n\"}",
+    "LINK_RESTORED_TOPOLOGY_R1 {\"command\":\"show ip eigrp topology all-links\",\"output\":\"\\nEIGRP Topology Table for AS(100)/ID(1.1.1.1)\\n\\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\\n       r - reply Status, s - sia Status\\n\\nP  192.0.2.0/24, 1 successors, FD is 28160, serno: 0 \\n       via Connected, lan\\nP  198.51.100.0/24, 1 successors, FD is 30720, serno: 0 \\n       via 48.0.0.0 (30720/28160), transit\\nP  203.0.113.0/30, 1 successors, FD is 28160, serno: 0 \\n       via Connected, transit\\n\"}",
+    "LINK_RESTORED_CONFIG_R1 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09e-175459-r1\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter eigrp 100\\n eigrp router-id 1.1.1.1\\n network 203.0.113.0/30\\n network 192.0.2.0/24\\nexit\\n!\\nend\\n\"}",
+    "LINK_RESTORED_RIB_R1 {\"192.0.2.0/24\":[{\"prefix\":\"192.0.2.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":7,\"uptime\":\"00:00:12\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":2,\"interfaceName\":\"lan\",\"active\":true,\"weight\":1}]}],\"198.51.100.0/24\":[{\"prefix\":\"198.51.100.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":30720,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":0,\"nexthopGroupId\":23,\"uptime\":\"00:00:04\",\"nexthops\":[{\"flags\":0,\"ip\":\"203.0.113.2\",\"afi\":\"ipv4\",\"interfaceIndex\":4,\"interfaceName\":\"transit\",\"weight\":1}]}],\"203.0.113.0/30\":[{\"prefix\":\"203.0.113.0/30\",\"prefixLen\":30,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":26,\"uptime\":\"00:00:01\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":4,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}]}",
+    "LINK_RESTORED_KERNEL_R1 [{\"dst\":\"192.0.2.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"192.0.2.1\",\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.1\",\"flags\":[]}]",
+    "LINK_RESTORED_NEIGHBORS_R2 {\"command\":\"show ip eigrp neighbors\",\"output\":\"\\nEIGRP neighbors for AS(100)\\n\\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \\n                                           (sec)           (ms)        Cnt    Num   \\n\"}",
+    "LINK_RESTORED_INTERFACES_R2 {\"command\":\"show ip eigrp interfaces detail\",\"output\":\"\\nEIGRP interfaces for AS(100)\\n\\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \\nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \\n   Hello interval is  0  sec \\n   Next xmit serial <none> \\n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \\n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \\n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \\n   Authentication mode is  not set \\n   Use multicast \\n\"}",
+    "LINK_RESTORED_TOPOLOGY_R2 {\"command\":\"show ip eigrp topology all-links\",\"output\":\"\\nEIGRP Topology Table for AS(100)/ID(2.2.2.2)\\n\\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\\n       r - reply Status, s - sia Status\\n\\nP  192.0.2.0/24, 1 successors, FD is 30720, serno: 0 \\n       via 203.0.113.1 (30720/28160), transit\\nP  198.51.100.0/24, 1 successors, FD is 28160, serno: 0 \\n       via Connected, lan\\nP  203.0.113.0/30, 1 successors, FD is 28160, serno: 0 \\n       via Connected, transit\\n\"}",
+    "LINK_RESTORED_CONFIG_R2 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09e-175459-r2\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter eigrp 100\\n eigrp router-id 2.2.2.2\\n network 203.0.113.0/30\\n network 198.51.100.0/24\\nexit\\n!\\nend\\n\"}",
+    "LINK_RESTORED_RIB_R2 {\"192.0.2.0/24\":[{\"prefix\":\"192.0.2.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":30720,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":0,\"nexthopGroupId\":15,\"uptime\":\"00:00:04\",\"nexthops\":[{\"flags\":0,\"ip\":\"203.0.113.1\",\"afi\":\"ipv4\",\"interfaceIndex\":3,\"interfaceName\":\"transit\",\"weight\":1}]}],\"198.51.100.0/24\":[{\"prefix\":\"198.51.100.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":7,\"uptime\":\"00:00:12\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":4,\"interfaceName\":\"lan\",\"active\":true,\"weight\":1}]}],\"203.0.113.0/30\":[{\"prefix\":\"203.0.113.0/30\",\"prefixLen\":30,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":19,\"uptime\":\"00:00:01\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":3,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}]}",
+    "LINK_RESTORED_KERNEL_R2 [{\"dst\":\"198.51.100.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"198.51.100.1\",\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.2\",\"flags\":[]}]",
+    "RECOVERY_ACTION owned link up followed by identity-checked restart of both owned eigrpd children with unchanged configuration",
+    "RECOVERED_NEIGHBORS_R1 {\"command\":\"show ip eigrp neighbors\",\"output\":\"\\nEIGRP neighbors for AS(100)\\n\\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \\n                                           (sec)           (ms)        Cnt    Num   \\n0   203.0.113.2       transit              14     0        0      2    0      2\\n\"}",
+    "RECOVERED_INTERFACES_R1 {\"command\":\"show ip eigrp interfaces detail\",\"output\":\"\\nEIGRP interfaces for AS(100)\\n\\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \\nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \\n   Hello interval is  0  sec \\n   Next xmit serial <none> \\n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \\n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \\n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \\n   Authentication mode is  not set \\n   Use multicast \\ntransit          100000     10         1      0 / 0         0       0              0            0       5        15       \\n   Hello interval is  0  sec \\n   Next xmit serial <none> \\n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \\n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \\n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \\n   Authentication mode is  not set \\n   Use multicast \\n\"}",
+    "RECOVERED_TOPOLOGY_R1 {\"command\":\"show ip eigrp topology all-links\",\"output\":\"\\nEIGRP Topology Table for AS(100)/ID(1.1.1.1)\\n\\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\\n       r - reply Status, s - sia Status\\n\\nP  192.0.2.0/24, 1 successors, FD is 28160, serno: 0 \\n       via Connected, lan\\nP  198.51.100.0/24, 1 successors, FD is 30720, serno: 0 \\n       via 203.0.113.2 (30720/28160), transit\\nP  203.0.113.0/30, 1 successors, FD is 28160, serno: 0 \\n       via Connected, transit\\n\"}",
+    "RECOVERED_CONFIG_R1 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09e-175459-r1\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter eigrp 100\\n eigrp router-id 1.1.1.1\\n network 203.0.113.0/30\\n network 192.0.2.0/24\\nexit\\n!\\nend\\n\"}",
+    "RECOVERED_RIB_R1 {\"192.0.2.0/24\":[{\"prefix\":\"192.0.2.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":32,\"uptime\":\"00:00:01\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":2,\"interfaceName\":\"lan\",\"active\":true,\"weight\":1}]}],\"198.51.100.0/24\":[{\"prefix\":\"198.51.100.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"selected\":true,\"destSelected\":true,\"distance\":90,\"metric\":30720,\"installed\":true,\"table\":254,\"internalStatus\":16,\"internalFlags\":8,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":35,\"installedNexthopGroupId\":35,\"uptime\":\"00:00:01\",\"nexthops\":[{\"flags\":3,\"fib\":true,\"ip\":\"203.0.113.2\",\"afi\":\"ipv4\",\"interfaceIndex\":4,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}],\"203.0.113.0/30\":[{\"prefix\":\"203.0.113.0/30\",\"prefixLen\":30,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":33,\"uptime\":\"00:00:01\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":4,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}]}",
+    "RECOVERED_KERNEL_R1 [{\"dst\":\"192.0.2.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"192.0.2.1\",\"flags\":[]},{\"dst\":\"198.51.100.0/24\",\"nhid\":35,\"gateway\":\"203.0.113.2\",\"dev\":\"transit\",\"protocol\":\"eigrp\",\"metric\":20,\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.1\",\"flags\":[]}]",
+    "RECOVERED_NEIGHBORS_R2 {\"command\":\"show ip eigrp neighbors\",\"output\":\"\\nEIGRP neighbors for AS(100)\\n\\nH   Address           Interface            Hold   Uptime   SRTT   RTO   Q     Seq  \\n                                           (sec)           (ms)        Cnt    Num   \\n0   203.0.113.1       transit              12     0        0      2    0      2\\n\"}",
+    "RECOVERED_INTERFACES_R2 {\"command\":\"show ip eigrp interfaces detail\",\"output\":\"\\nEIGRP interfaces for AS(100)\\n\\nInterface        Bandwidth  Delay      Peers  Xmit Queue   Mean    Pacing Time    Multicast    Pending  Hello    Holdtime\\n                                              Un/Reliable  SRTT    Un/Reliable    Flow Timer   Routes  \\nlan              100000     10         0      0 / 0         0       0              0            0       5        15       \\n   Hello interval is  0  sec \\n   Next xmit serial <none> \\n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \\n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \\n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \\n   Authentication mode is  not set \\n   Use multicast \\ntransit          100000     10         1      0 / 0         0       0              0            0       5        15       \\n   Hello interval is  0  sec \\n   Next xmit serial <none> \\n   Un/reliable mcasts:  0 / 0 Un/reliable ucasts:  0 / 0 \\n   Mcast exceptions:  0   CR packets:  0   ACKs suppressed:  0 \\n   Retransmissions sent:  0 Out-of-sequence rcvd:  0 \\n   Authentication mode is  not set \\n   Use multicast \\n\"}",
+    "RECOVERED_TOPOLOGY_R2 {\"command\":\"show ip eigrp topology all-links\",\"output\":\"\\nEIGRP Topology Table for AS(100)/ID(2.2.2.2)\\n\\nCodes: P - Passive, A - Active, U - Update, Q - Query, R - Reply\\n       r - reply Status, s - sia Status\\n\\nP  192.0.2.0/24, 1 successors, FD is 30720, serno: 0 \\n       via 203.0.113.1 (30720/28160), transit\\nP  198.51.100.0/24, 1 successors, FD is 28160, serno: 0 \\n       via Connected, lan\\nP  203.0.113.0/30, 1 successors, FD is 28160, serno: 0 \\n       via Connected, transit\\n\"}",
+    "RECOVERED_CONFIG_R2 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09e-175459-r2\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter eigrp 100\\n eigrp router-id 2.2.2.2\\n network 203.0.113.0/30\\n network 198.51.100.0/24\\nexit\\n!\\nend\\n\"}",
+    "RECOVERED_RIB_R2 {\"192.0.2.0/24\":[{\"prefix\":\"192.0.2.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"selected\":true,\"destSelected\":true,\"distance\":90,\"metric\":30720,\"installed\":true,\"table\":254,\"internalStatus\":16,\"internalFlags\":8,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":27,\"installedNexthopGroupId\":27,\"uptime\":\"00:00:03\",\"nexthops\":[{\"flags\":3,\"fib\":true,\"ip\":\"203.0.113.1\",\"afi\":\"ipv4\",\"interfaceIndex\":3,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}],\"198.51.100.0/24\":[{\"prefix\":\"198.51.100.0/24\",\"prefixLen\":24,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":25,\"uptime\":\"00:00:03\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":4,\"interfaceName\":\"lan\",\"active\":true,\"weight\":1}]}],\"203.0.113.0/30\":[{\"prefix\":\"203.0.113.0/30\",\"prefixLen\":30,\"protocol\":\"eigrp\",\"vrfId\":0,\"vrfName\":\"default\",\"distance\":90,\"metric\":28160,\"table\":254,\"internalStatus\":0,\"internalFlags\":0,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":26,\"uptime\":\"00:00:03\",\"nexthops\":[{\"flags\":1,\"directlyConnected\":true,\"interfaceIndex\":3,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}]}",
+    "RECOVERED_KERNEL_R2 [{\"dst\":\"192.0.2.0/24\",\"nhid\":27,\"gateway\":\"203.0.113.1\",\"dev\":\"transit\",\"protocol\":\"eigrp\",\"metric\":20,\"flags\":[]},{\"dst\":\"198.51.100.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"198.51.100.1\",\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.2\",\"flags\":[]}]",
+    "RECOVERED_PROBE_CLIENT {\"target\":\"198.51.100.20\",\"exitCode\":0,\"output\":\"PING 198.51.100.20 (198.51.100.20) 56(84) bytes of data.\\n64 bytes from 198.51.100.20: icmp_seq=1 ttl=62 time=0.076 ms\\n\\n--- 198.51.100.20 ping statistics ---\\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\\nrtt min/avg/max/mdev = 0.076/0.076/0.076/0.000 ms\\n\"}",
+    "RECOVERED_PROBE_SERVER {\"target\":\"192.0.2.10\",\"exitCode\":0,\"output\":\"PING 192.0.2.10 (192.0.2.10) 56(84) bytes of data.\\n64 bytes from 192.0.2.10: icmp_seq=1 ttl=62 time=0.065 ms\\n\\n--- 192.0.2.10 ping statistics ---\\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\\nrtt min/avg/max/mdev = 0.065/0.065/0.065/0.000 ms\\n\"}",
+    "PASS recovery: owned link restoration plus explicit owned-daemon reinitialization recovers peers, routes and endpoint probes.",
+    "PASS cleanup: owned processes/namespaces/runtime paths removed."
+  ],
+  "error": "",
+  "scope": "Raw trial awaiting independent assertions; not a passing verification report."
+}

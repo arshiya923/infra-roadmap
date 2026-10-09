@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "presets": 32,
+  "independentCases": 309,
+  "narrativeWords": {
+    "s3-g9-t0": 2016,
+    "s3-g9-t3": 2006,
+    "s3-g9-t4": 1997,
+    "s3-g9-t5": 2058
+  },
+  "scope": "Local ideal aggregate/bucket/FIFO eligibility/nonpreemptive scheduling contracts only; no Linux target, packet or application execution.",
+  "mountedTests": "Stub DOM immediate validation, invalid scenario persists through edits, inert text, reset and structural keyboard region; primary browser acceptance remains separate."
+}

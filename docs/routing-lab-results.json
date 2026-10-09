@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-04",
+  "result": "PASS",
+  "environment": "Ubuntu-24.04 / WSL2, root namespace capability",
+  "checks": [
+    "Default invocation is inert help",
+    "Both directions of IPv4 and IPv6 routing",
+    "Missing IPv4 return route breaks IPv4 while IPv6 remains working",
+    "Restored return route recovers all four paths",
+    "Normal cleanup leaves no owned namespaces",
+    "Host link inventory, IPv4/IPv6 routes and forwarding settings unchanged",
+    "In-memory early-failure injection cleans all created namespaces"
+  ],
+  "output": [
+    "PASS baseline: both hosts exchange IPv4 and IPv6 traffic through the isolated router.",
+    "PASS injected fault: missing IPv4 return route breaks the exchange while IPv6 remains working.",
+    "PASS recovery: the restored IPv4 return route recovers both directions; IPv6 still works.",
+    "PASS cleanup: all owned routing namespaces removed."
+  ],
+  "limitations": "Virtual routed namespaces/shared kernel only; no physical router, dynamic routing, SLAAC/RA service or DAD conflict experiment, Internet or throughput test. Raw host network inventory not retained."
+}

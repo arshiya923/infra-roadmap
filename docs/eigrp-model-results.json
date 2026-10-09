@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "combinations": 34816,
+  "cases": 9,
+  "checks": [
+    "Independent available-path sorting checks strict reported-distance feasibility and supplied-total selection across exhaustive bounds/declarations",
+    "Lost successor uses feasible B despite cheaper equal-RD C; historical FD remains 100 with current total 140",
+    "Equality needs computation; no advertisement is separate; tied candidates are not multipath installation",
+    "RIB, forwarding and endpoint return declarations remain independent",
+    "Strict integer/boolean/fixed-ID/shape validation and safe boundary rejection",
+    "Fresh scenario/catalog/result objects, kind guards and no full-FSM or actual packet claims"
+  ],
+  "scope": "Authored supplied-distance snapshot under known completed historical FD and ordinary compatible internal peers. No metric computation, diffusing FSM, timers, query/reply/SIA simulation, variance, RIB policy engine or real service proof."
+}

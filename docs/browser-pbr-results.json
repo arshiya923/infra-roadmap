@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "Ten sections, ten exams, three quick checks and explicit draft status independent of accepted progress",
+    "Eleven packet/attachment/local/fragment/health/route cases",
+    "ACL denial skips a match; terminal map denial stops; independent eight gates and four packet fixtures keep selected action separate from health/RIB",
+    "Keyboard reset restores all declarations and terminal successors never appear evaluated",
+    "Four widths, both themes and named keyboard-scrolling trace/lab endpoints",
+    "Four normal/zoomed mobile steps, timed play/pause/reset and reduced-motion static explanation",
+    "Quiz feedback and original next OSPF opens as an honest draft",
+    "Direct-file worksheet without page/resource errors"
+  ],
+  "errors": [],
+  "scope": "Fixed Catalyst 9300 17.15 IPv4 packet/sequence declarations and assumed prepared adjacent next hops. No actual Cisco parser, packet, unavailable-next-hop algorithm, RIB change, health detection or hardware path."
+}

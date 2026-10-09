@@ -1,0 +1,12 @@
+#asp-tool fieldset{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin:1rem 0;padding:1rem}
+#asp-tool fieldset label{display:flex;flex-direction:column;gap:.4rem;min-width:0}
+#asp-tool input[type=text]{width:100%;box-sizing:border-box;font:inherit;padding:.5rem;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:.35rem}
+#asp-tool input[type=checkbox]{align-self:flex-start}
+#asp-tool .en-scroll{max-width:100%;overflow:auto}
+#asp-tool table{min-width:880px;width:100%;border-collapse:collapse}
+#asp-tool th,#asp-tool td{padding:.65rem;text-align:left;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+#asp-tool th{white-space:nowrap}
+#asp-tool [hidden]{display:none!important}
+#asp-error{color:var(--amber)}
+#asp-tool :focus-visible{outline:3px solid var(--accent,#4686ef);outline-offset:3px}
+@media(max-width:480px){#asp-tool fieldset{grid-template-columns:1fr;padding:.75rem}}

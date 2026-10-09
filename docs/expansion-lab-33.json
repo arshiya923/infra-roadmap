@@ -1,0 +1,61 @@
+{
+  "batch": "33",
+  "result": "PASS",
+  "evidence": {
+    "access": {
+      "baseline": "allow",
+      "fault": "explicit-deny",
+      "recovery": "allow",
+      "unrelated": "implicit-deny",
+      "scope": "Exact-pair authorization teaching model; no AWS IAM evaluation, wildcards, roles, resource policies, conditions or organizational policies."
+    },
+    "capacity": {
+      "baseline": {
+        "survivingCapacity": "180",
+        "demand": "100",
+        "fits": true
+      },
+      "fault": {
+        "survivingCapacity": "60",
+        "demand": "100",
+        "fits": false
+      },
+      "recovery": {
+        "survivingCapacity": "120",
+        "demand": "100",
+        "fits": true
+      },
+      "scope": "Supplied equal-domain aggregate capacity only. No placement, quorum, storage replication, quota or cloud failover execution."
+    },
+    "cost": {
+      "baseline": {
+        "compute": "109.50",
+        "storage": "10.00",
+        "egress": "4.00",
+        "total": "123.50",
+        "remaining": "26.50",
+        "withinBudget": true
+      },
+      "fault": {
+        "compute": "219.00",
+        "storage": "10.00",
+        "egress": "4.00",
+        "total": "233.00",
+        "remaining": "-83.00",
+        "withinBudget": false
+      },
+      "recovery": {
+        "compute": "109.50",
+        "storage": "10.00",
+        "egress": "4.00",
+        "total": "123.50",
+        "remaining": "26.50",
+        "withinBudget": true
+      },
+      "planChanged": true,
+      "restoredExact": true,
+      "cleanupVerified": true,
+      "scope": "Fictional currency units and rates, not provider prices. Actual local plan-file restoration; no Terraform or cloud API execution and no billing stop mechanism."
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-09",
+  "status": "REVIEW_COMPLETE_BATCH_ACCEPTED",
+  "scope": "All twenty-one technical/prose/lab and manual diagram reviews complete; original acceptance matrix and accepted-state verification recorded",
+  "reviewedTechnicalAndLabIds": [
+    "s2-g0-t0",
+    "s2-g0-t1",
+    "s2-g0-t2",
+    "s2-g0-t3",
+    "s2-g1-t0",
+    "s2-g1-t1",
+    "s2-g1-t2",
+    "s2-g1-t3",
+    "s2-g1-t4",
+    "s2-g1-t5",
+    "s2-g1-t6",
+    "s2-g1-t7",
+    "s2-g2-t0",
+    "s2-g2-t1",
+    "s2-g2-t2",
+    "s2-g2-t3",
+    "s2-g2-t4",
+    "s2-g2-t5",
+    "s2-g3-t0",
+    "s2-g3-t1",
+    "s2-g3-t2"
+  ],
+  "findings": [
+    {
+      "topicId": "s2-g0-t1",
+      "issue": "The teaching model incorrectly treated privileged EXEC exit as a move to user EXEC.",
+      "resolution": "Configuration exit moves up a level; EXEC exit gives an explicit session-ending notice while retaining the browser exercise. Disable changes privileged to user EXEC. Lesson and lab now explain this boundary.",
+      "source": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/fundamentals/command/cf_command_ref/D_through_E.html",
+      "verification": "Regression assertion failed before the fix and passed after it; CLI model now checks 28 command steps. Focused browser navigation also checks exit, disable and enable.",
+      "evidence": [
+        "docs/cisco-models-results.json",
+        "docs/browser-results-batch-07.json"
+      ]
+    },
+    {
+      "topicId": "s2-g1-t1",
+      "issue": "Bootstrap help was labelled as a generic router ROMMON command despite its cited switch bootloader context.",
+      "resolution": "Help is scoped to the supporting Catalyst 9000 switch: bootloader. Router ROMMON and virtual GRUB require their own supported command reference.",
+      "source": "https://www.cisco.com/c/en/us/support/docs/switches/catalyst-9300-series-switches/216944-troubleshoot-bootloader-rommon-and-pas.html",
+      "verification": "Lesson contracts and focused boot browser suite run after correction. Command remains guided and unexecuted on Cisco."
+    },
+    {
+      "topicId": "shared-reader",
+      "issue": "At 320 pixels, advancing the flow caption could leave the highlighted diagram step outside the scroll viewport.",
+      "resolution": "Step changes and zoom keep the active step within the diagram viewport without scrolling the outer document.",
+      "verification": "Bounding-box assertion failed before the fix; forwards/backwards keyboard checks now pass in both zoom states across all twenty-one Batch 07 routes plus CPU. Initial expanded run hit the test subprocess buffer limit; explicit 8 MiB bound fixed the harness and the fresh full run passed.",
+      "evidence": [
+        "docs/browser-flow-visibility-results.json",
+        "docs/screenshots/batch-07/batch-07-flow-mobile.png"
+      ]
+    },
+    {
+      "topicId": "s2-g1-t5",
+      "issue": "Optional local file exercise implied that an independently valid comparison should always mismatch.",
+      "resolution": "The exercise now distinguishes match 0, mismatch 1 and invalid/access failure 2; deliberate same-length mutation remains in the isolated --run fixture.",
+      "verification": "Inspected the actual CLI and streaming implementation; Windows fixture checks and focused storage browser suite passed. No Cisco software validated."
+    },
+    {
+      "topicId": "s2-g1-t7",
+      "issue": "Recovery plan exercise lacked a worked failure scope, service criterion and objective comparison; recovery-point terminology needed clarification.",
+      "resolution": "Added a scoped configuration-state recovery timeline and service probe criterion. The 09:56 snapshot precedes 10:00 failure by four minutes; 10:18 service recovery is eighteen minutes. Five-minute RPO is met in the authored case and fifteen-minute RTO is missed by three minutes. Application data is separate.",
+      "source": "https://www.ibm.com/think/topics/disaster-recovery",
+      "verification": "Timeline arithmetic independently calculated; focused lifecycle browser checks passed. Mobile rendered example inspected. This is a tabletop, not a measured device restoration."
+    },
+    {
+      "topicId": "switching-guided-commands",
+      "issue": "Shared command wrapper and base helper both appended guided/not-executed scope, repeating it on every switching command.",
+      "resolution": "Wrapper now supplies only its exact Catalyst 9300 17.15 lab context; the base helper appends scope once.",
+      "verification": "Serialized all Batch 07 command platforms and checked scope occurrence; content/browser suites pass."
+    },
+    {
+      "topicId": "s2-g2-t2",
+      "issue": "Tagging explanation omitted the actual single-tag field layout and a concrete field interpretation.",
+      "resolution": "Added four-byte field order, TPID/TCI/PCP/DEI/VID glossary and a worked 0x8100/0xA00A example. PCP 5, DEI 0 and VID 10 are distinct. Historical CFI and current policy scope remain explicit.",
+      "sources": [
+        "https://www.cisco.com/c/en/us/support/docs/lan-switching/8021q/17056-741-4.html",
+        "https://www.cisco.com/c/en/us/support/docs/cloud-systems-management/application-policy-infrastructure-controller-apic/215015-qos-in-cisco-aci-within-a-pod.html"
+      ],
+      "verification": "Independent mask arithmetic yields 5/0/10 and 32 bits total. New comparison table and mobile example visually inspected; forwarding model remains unchanged."
+    },
+    {
+      "topicId": "s2-g3-t1",
+      "issue": "Read-only inspection examples lacked a complete guided two-peer configuration sequence.",
+      "resolution": "Added isolated Catalyst 9300 17.15 active/passive preparation with both members shut, consistent logical/member trunk intent, separate activation only after both peers and cabling are checked, service verification and prior-state rollback.",
+      "source": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-15/configuration_guide/lyr2/b_1715_lyr2_9300_cg/configuring_etherchannels.html",
+      "verification": "Command contexts and prerequisites reviewed against the guide. Rendered mobile command card inspected; long code lines use the existing horizontal scroll. No Cisco parser or actual configuration execution."
+    }
+  ],
+  "reviewConclusions": [
+    "IOS XE platform/feature boundaries remain explicit; virtual router access does not prove physical switch support or transit health.",
+    "Running/startup copy direction, startup-to-running merge residue and unsaved change loss agree with the bounded model and cited configuration guides.",
+    "Register interpretation remains selected router fields only; Catalyst 9000 equivalents and C8000V GRUB are separate contexts.",
+    "Boot policy, artifact availability, configuration load and actual service readiness remain distinct. Read-only bootstrap commands are exact-context guided examples.",
+    "Filesystem prefix/type/flags, aliases, working directory and member views agree with the cited Catalyst 9300 17.15 guide. Transport entries are not local disks.",
+    "Synthetic storage inventory and protected categories agree with implementation: 3200 minus 2301 equals 899 MB; 1100 MB peak leaves 201 MB deficit; eligible 400 MB yields 1299 MB and 199 MB headroom.",
+    "Local SHA-512 CLI reads regular files in bounded binary chunks; expected-value trust, metadata-stability limits and 0/1/2 outcomes are explicit. Vendor integrity/signature checks remain separate guided instructions.",
+    "Install mode manifest/package dependencies and bundle reference remain distinct from copied input, running mode and actual successful boot. March 2026 lifecycle notice is scoped; no universal install introduction date is claimed.",
+    "Backup scope includes external retention, usable retrieval, independent access, merge/replacement semantics and original service verification. SCP server prerequisites are not treated as an incidental backup configuration recipe.",
+    "VLAN identity and IP subnet remain distinct; the real isolated Linux exercise uses matching IP prefixes without cross-domain delivery. Its missing trunk membership fault preserves link UP and is repaired without changing addresses.",
+    "Access/trunk eligibility matches the 4608-state selected-frame model, which assumes known destination, active VLANs and forwarding. Native reclassification is a segmentation defect; real PVID/STP inconsistency can block forwarding and is explicitly outside the model.",
+    "DTP fixed/dynamic/suppression/domain assumptions agree with the cited 17.15 trunk guide and 72-state role table. Local fixed trunk intent does not establish peer agreement.",
+    "VTP legacy introduced-revision risk remains separate from VTP 3 primary authority. Transparent/off forwarding and version-specific persistence are scoped; database consistency does not establish data carriage.",
+    "Voice data/tagged-voice cases retain endpoint-specific discovery/QoS/security scope. LLDP-MED profile-order and power-negotiation restrictions are not reduced to a universal commissioning recipe. Registration and media need separate probes.",
+    "EtherChannel cases distinguish nominal capacity, one-member flow assignment, actual member evidence, one-member remainder, explicit LACP minimum-two policy and missing VLAN carriage. A logical bundle UP does not prove the service path.",
+    "LACP active/passive pairing and compatible-member/partner prerequisites agree with the cited 17.15 guide and independent 128-state table; eligible means checked assumptions only, with actual exchange, keys, selection/mux, timers and collecting/distributing excluded.",
+    "PAgP desirable/auto and ordinary responsive-peer initiation are separate from DTP trunk roles and LACP. Silent/non-silent special cases remain outside the checker. Actual flags, neighbor identity, logical trunk path and service are required in the guided lab. Last nine quick-check answers and explanations reviewed."
+  ],
+  "manualRendering": "All twenty-one flow diagrams and all twenty-one lab paths visually inspected across this and preceding review checkpoints. Long VTP, voice, EtherChannel and PAgP paths inspected at their scrolling ends; boot path inspected from its start. Representative narrow light/dark controls, trunk tag table/decoder, recovery worked example, PAgP worked example and new LACP command layout inspected. Flow visibility regression now covers every Batch 07 route at 320 pixels in both zoom states. Horizontal scrolling retains long lab paths and code lines.",
+  "remainingReview": [],
+  "limits": "Acceptance covers the taught and verified scopes. No actual Cisco parser, firmware, boot/install/recovery, aggregation/control protocols, physical phone/QoS, vendor hash, throughput or convergence. Browser eligibility and synthetic observations do not prove real service. Physical execution is not required where the original specification permits an appropriate guided/model/tabletop lab. Automated accessible-name/contrast checks are not full WCAG certification.",
+  "executionEvidenceForStorageReview": [
+    "tests/content.cjs",
+    "tests/lifecycle-models.cjs",
+    "tests/image-audit.py",
+    "tests/browser-storage.cjs",
+    "tests/browser-lifecycle.cjs"
+  ],
+  "verificationScope": "Fresh accepted-state full 21-suite runner PASS, including all Batch 07 animation/static/connection routes. Source/prose/manual review remains separate evidence.",
+  "switchingExecutionEvidence": [
+    "docs/port-models-results.json",
+    "docs/vlan-control-models-results.json",
+    "docs/vlan-lab-results.json",
+    "docs/browser-ports-results.json",
+    "docs/browser-vlan-control-results.json"
+  ],
+  "acceptanceEvidence": "docs/acceptance-batch-07.json"
+}

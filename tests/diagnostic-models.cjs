@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');const {pingSummary,scenario}=require('../scripts/diagnostic-models.js');
+assert.deepEqual(pingSummary([2,3,4,3]),{sent:4,received:4,missing:0,missingPercent:0,min:2,mean:3,max:4});
+assert.deepEqual(pingSummary([2,null,6,null]),{sent:4,received:2,missing:2,missingPercent:50,min:2,mean:4,max:6});
+assert.deepEqual(pingSummary([null,null]),{sent:2,received:0,missing:2,missingPercent:100,min:null,mean:null,max:null});
+assert.deepEqual(pingSummary([0]),{sent:1,received:1,missing:0,missingPercent:0,min:0,mean:0,max:0});
+assert.equal(pingSummary([0.5,1.5]).mean,1);assert.equal(pingSummary(Array(1000).fill(1e6)).mean,1e6);
+const invalid=[[],[NaN],[Infinity],[-1],['2'],[undefined],[1e6+1],Array(1001).fill(0),null,'1'];for(const x of invalid)assert.throws(()=>pingSummary(x),RangeError);
+for(const kind of ['ping-evidence','trace-evidence'])for(const key of kind==='ping-evidence'?['complete','partial','silent','application']:['silent','slow','unfinished','multipath']){const c=scenario(kind,key);assert(c.claim&&c.next);c.claim='mutated';assert.notEqual(scenario(kind,key).claim,'mutated');}
+assert.throws(()=>scenario('bad','silent'),RangeError);assert.throws(()=>scenario('trace-evidence','__proto__'),RangeError);
+const fixture=JSON.parse(fs.readFileSync(path.join(__dirname,'../docs/dns-lab-results.json'),'utf8'));assert.equal(fixture.result,'PASS');for(const key of ['answer','nodata','nxdomain','servfail','timeout']){const shown=scenario('dns-evidence',key),observed=fixture.observed.cases.find(c=>c.case===key&&c.client==='dig');assert.equal(shown.status,observed.status);assert.equal(shown.exit,observed.exitCode);shown.status='mutated';assert.notEqual(scenario('dns-evidence',key).status,'mutated');}
+const result={date:'2026-10-04',result:'PASS',numericCases:6,invalidSamples:invalid.length,caseContracts:13,notes:'Independent fixed expectations; null replies excluded from timing; synthetic case copies independent; five DNS cases match executed fixture status/exit evidence; no live trace inference engine.'};fs.writeFileSync(path.join(__dirname,'../docs/diagnostic-models-results.json'),JSON.stringify(result,null,2)+'\n');console.log(result);

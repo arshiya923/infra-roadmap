@@ -1,0 +1,291 @@
+{
+  "result": "PASS",
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant, direct authoring and review; no GapCode",
+  "scope": "Teaching, 21 synthetic incident cases, 273 self-assessed questions, reader behavior and actual local-file recovery only",
+  "batchSHA256": "20d7003aa0cb23afdc926387033dc38331a5da07738f7c2ad76831e57428d5cd",
+  "labSHA256": "26d0f46aad47fcd692a955c224899cfa0851e1fa375a11419a84e11038acfad5",
+  "topicReview": [
+    {
+      "id": "trouble-0",
+      "boundary": "Physical carrier before logical reachability",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-1",
+      "boundary": "Counter deltas and direction",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-2",
+      "boundary": "Corrupt reception versus congestion",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-3",
+      "boundary": "Legacy Ethernet negotiation agreement",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-4",
+      "boundary": "VLAN membership across every hop",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-5",
+      "boundary": "Intentional blocking versus topology instability",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-6",
+      "boundary": "Configured members versus operational bundle",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-7",
+      "boundary": "Forward and return lookup in the correct table",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-8",
+      "boundary": "Neighbor, database, RIB and data plane",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-9",
+      "boundary": "Session health versus route policy",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-10",
+      "boundary": "DHCP exchange across the relay",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-11",
+      "boundary": "Resolver answer, authority and negative cache",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-12",
+      "boundary": "Translation tuples and reverse state",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-13",
+      "boundary": "Ordered ACL matching at an applied boundary",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-14",
+      "boundary": "Stateful session lifecycle",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-15",
+      "boundary": "Association, authentication, addressing and service",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-16",
+      "boundary": "Hardware evidence versus guest symptom",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-17",
+      "boundary": "Array state, member identity and recoverability",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-18",
+      "boundary": "Initiator to target through independent fabrics",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-19",
+      "boundary": "Guest, VMkernel, management and storage scope",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    },
+    {
+      "id": "trouble-20",
+      "boundary": "Timeline, common dependencies and recovery order",
+      "result": "PASS",
+      "checked": [
+        "technical distinction and competing hypothesis",
+        "bounded test and repair",
+        "recovery and rollback",
+        "10 exam answers and 3 quick checks",
+        "4-step flow and static alternative",
+        "platform/synthetic limits"
+      ]
+    }
+  ],
+  "originalMethodSteps": 8,
+  "sources": "See troubleshooting-source-checks.json and validation-batch-27.md for direct-client access limits",
+  "evidence": [
+    "browser-troubleshooting-mastery-results.json",
+    "troubleshooting-lab-results.json",
+    "quality-audit-latest.json",
+    "validation-batch-27.md"
+  ]
+}

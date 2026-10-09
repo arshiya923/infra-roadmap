@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "28 fresh regression commands, expanded actual single-area lab and all 102 authored routes",
+    "16 actual protocol/route/forwarding/raw-probe/isolation checks with four interrupted cleanup boundaries",
+    "Three source hashes and exact raw fields corroborated across ten separate actual troubleshooting views",
+    "Seven evidence checks and six preview-browser checks; all fifty focus comparisons scoped to known interventions",
+    "Nine current screenshots manually inspected; keyboard-scrolling workflow, observations and raw records, both mobile themes",
+    "102 lessons/1020 exams/306 quick checks, seven reviewed drafts/95 accepted nodes, existing question/command-review counts unchanged",
+    "Full troubleshooting lesson still pending and next; thirteen remaining topics and full-batch gates remain pending",
+    "Immutable source hash and local evidence links preserved"
+  ],
+  "screenshots": [
+    "triage-desktop.png",
+    "triage-light-mobile.png",
+    "triage-dark-mobile.png",
+    "triage-workflow-start.png",
+    "triage-workflow-end.png",
+    "triage-table-start.png",
+    "triage-table-end.png",
+    "triage-raw-start.png",
+    "triage-raw-end.png"
+  ],
+  "localLinks": [
+    [
+      "docs/ospf-troubleshooting-foundation.md",
+      "ospf-troubleshooting-explorer.html"
+    ],
+    [
+      "docs/ospf-troubleshooting-foundation.md",
+      "../labs/ospf-routing.sh"
+    ],
+    [
+      "docs/ospf-troubleshooting-foundation.md",
+      "../labs/prepare-frr-runtime.sh"
+    ],
+    [
+      "docs/ospf-troubleshooting-foundation.md",
+      "ospf-runtime-foundation.md"
+    ],
+    [
+      "docs/ospf-troubleshooting-foundation.md",
+      "ospf-routing-lab-results.json"
+    ],
+    [
+      "docs/ospf-troubleshooting-foundation.md",
+      "ospf-areas-lab-results.json"
+    ],
+    [
+      "docs/ospf-troubleshooting-foundation.md",
+      "ospf-dr-bdr-lab-results.json"
+    ],
+    [
+      "docs/ospf-troubleshooting-foundation.md",
+      "ospf-routing-lab-results.json"
+    ],
+    [
+      "docs/ospf-troubleshooting-foundation.md",
+      "ospf-troubleshooting-evidence-results.json"
+    ],
+    [
+      "docs/ospf-troubleshooting-foundation.md",
+      "browser-ospf-troubleshooting-results.json"
+    ],
+    [
+      "docs/ospf-troubleshooting-foundation.md",
+      "batch-09-regression-results.json"
+    ],
+    [
+      "docs/ospf-troubleshooting-foundation.md",
+      "ospf-troubleshooting-checkpoint-results.json"
+    ]
+  ],
+  "sourceHash": "ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25",
+  "scope": "Actual troubleshooting groundwork and read-only preview. No lesson completion, live diagnosis, application transaction, zero-loss, MTU/authentication fault execution, hardware or convergence claim. No GapCode.",
+  "weeklyRemainingPercent": 70,
+  "goalStatus": "active"
+}

@@ -1,0 +1,327 @@
+{
+  "result": "PASS",
+  "topics": 20,
+  "checks": [
+    {
+      "id": "hardware-0",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-1",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-2",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-3",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-4",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-5",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-6",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-7",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-8",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-9",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-10",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-11",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-12",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-13",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-14",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-15",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-16",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-17",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-18",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    },
+    {
+      "id": "hardware-19",
+      "result": "PASS",
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "freshFile": true
+    }
+  ],
+  "errors": []
+}

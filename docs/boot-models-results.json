@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "registerWords": 65536,
+  "invalidCases": 11,
+  "scenarioCases": 4,
+  "checks": [
+    "Independent arithmetic field checks for every 16-bit value",
+    "Known 0x2102 versus 0x2142 differs only in selected bit 6",
+    "Strict hex input rejects malformed/out-of-range values",
+    "Other bits remain explicit and unmodeled",
+    "Scenario copies are independent; invalid scenario keys rejected"
+  ],
+  "limits": "Arithmetic selected-field decoder and authored cases only; no full register semantics, console speed, device boot or firmware execution."
+}

@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "scenarios": 12,
+  "independentCases": 288,
+  "scope": "Fixed three-speaker supplied distribution/next-hop context; no actual iBGP/RR execution or best-path/loop history."
+}

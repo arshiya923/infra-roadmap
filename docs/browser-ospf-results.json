@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "OSPF original route is an authored draft with ten sections, ten exams, three quick checks and unchanged editorial count",
+    "Ten authored cases distinguish outgoing cost, both directional paths, equal-cost candidates, graph cuts, prefix withholding, RIB choice and downstream declarations",
+    "Seven independent booleans, all six directed-cost inputs, boundaries/invalid integers, hidden stale output and keyboard reset",
+    "Both actual lab/preparation downloads match reviewed source bytes",
+    "Four viewport widths, both themes, no page overflow and named keyboard-scrolling graph/table/lab endpoints",
+    "Four normal/zoomed mobile mechanism steps, play/pause/reset and reduced-motion static explanation",
+    "Reviewed quiz feedback and original next OSPF Areas opens its authored draft",
+    "Direct-file OSPF reader and explorer without page/resource errors"
+  ],
+  "errors": [],
+  "scope": "Supplied converged directed graph and independent declarations only. Actual FRR protocol/packet/route evidence is separately recorded by ospf-routing-lab.cjs. No browser protocol packets, adjacency state machine, convergence timing, vendor execution or hardware ECMP claim."
+}

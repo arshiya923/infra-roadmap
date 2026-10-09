@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "RSTP draft contracts and independent accepted progress",
+    "Six authored cases, keyboard disclosure, change-hides-answer and reset",
+    "Four widths without document overflow and actual mobile captures",
+    "All mobile flow steps visible, normal and zoomed",
+    "Separate exam response and original authored MST adjacency",
+    "Direct-file evidence explorer works with no page/resource errors"
+  ],
+  "errors": [],
+  "scope": "One RSTP draft and authored observations; no actual protocol/transition/convergence/service measurement"
+}

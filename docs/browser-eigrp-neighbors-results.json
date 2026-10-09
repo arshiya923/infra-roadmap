@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "Original neighbor lesson contains full reader sections, thirteen questions/nine commands and separate editorial status",
+    "All 32 observer/checkpoint/header-filter combinations preserve exact fields/raw records/source hash and intermediate probe gaps",
+    "Evidence-boundary question rejects invented INIT proof and clears prior feedback after context changes",
+    "Unknown identities hide all stale evidence, keyboard reset remains available and dynamic markup stays inert text",
+    "Both integrated lab downloads match reviewed local bytes",
+    "Four widths/both themes avoid page overflow; both data tables/raw records/topology support named keyboard scrolling; eleven current screenshots",
+    "Four-step mechanism works at mobile size, zoom/play/reset and reduced-motion static sequence",
+    "Exam feedback and learner progress remain independent; original metrics/neighbors/pending-topology adjacency preserved",
+    "Standalone HTTP theme/navigation and integrated/standalone direct-file evidence work without page/resource errors"
+  ],
+  "errors": [],
+  "scope": "Integrated original neighbor draft and read-only preserved evidence. 107 authored/95 accepted; no full-batch acceptance, live diagnosis, INIT/hold-expiry/retry-history/Cisco/application/convergence execution."
+}

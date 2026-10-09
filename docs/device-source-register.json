@@ -1,0 +1,152 @@
+{
+  "2960": {
+    "title": "2960-X IOS 15.2(2)E VLANs",
+    "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst2960x/software/15-2_2_e/vlan/configuration_guide/b_vlan_1522e_2960x_cg/b_vlan_152ex_2960-x_cg_chapter_011.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "trunk": {
+    "title": "2960-X IOS 15.2(2)E trunks",
+    "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst2960x/software/15-2_2_e/vlan/configuration_guide/b_vlan_1522e_2960x_cg/b_vlan_152ex_2960-x_cg_chapter_0100.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "multilayer": {
+    "title": "3560-X / 3750-X IOS 15.0(2)SE routing",
+    "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750x_3560x/software/release/15-0_2_se/configuration/guide/3750x_cg/swiprout.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "vlan3750": {
+    "title": "3560-X / 3750-X IOS 15.2(1)E VLANs",
+    "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750x_3560x/software/release/15-2_1_e/configuration/guide/scg3750x/swvlan.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "9200": {
+    "title": "Catalyst 9200 family data sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "9300": {
+    "title": "Catalyst 9300 family data sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9300-series-switches/nb-06-cat9300-ser-data-sheet-cte-en.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "9500": {
+    "title": "C9500 IOS XE 16.10 StackWise Virtual",
+    "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/16-10/configuration_guide/ha/b_1610_ha_9500_cg/configuring_cisco_stackwise_virtual.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "isr": {
+    "title": "ISR 4000 support and release guides",
+    "url": "https://www.cisco.com/c/en/us/support/routers/4000-series-integrated-services-routers-isr/series.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "qfp": {
+    "title": "IOS XE CPU/QFP diagnostic evidence",
+    "url": "https://www.cisco.com/c/en/us/support/docs/technical-details/222469-reporting-problems-effectively-to-tac-se.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "asr": {
+    "title": "ASR 1000 IOS XE data sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "xr": {
+    "title": "ASR 9000 IOS XR 64-bit data sheet",
+    "url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-9000-series-aggregation-services-routers/datasheet-c78-737841.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "asa": {
+    "title": "ASA packet-tracer diagnostic scope",
+    "url": "https://edge.us.cdo.cisco.com/content/docs/c-asa-packet-tracer.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "ftd": {
+    "title": "Threat Defense 7.0 access control",
+    "url": "https://secure.cisco.com/secure-firewall/v7.0/docs/access-control-policy",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "natftd": {
+    "title": "FTD NAT configuration and verification",
+    "url": "https://www.cisco.com/c/en/us/support/docs/security/firepower-management-center/212702-configure-and-verify-nat-on-ftd.pdf",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "aironet": {
+    "title": "Historical autonomous/lightweight conversion scope",
+    "url": "https://www.cisco.com/c/en/us/td/docs/wireless/controller/9800/17-3/config-guide/b_wl_17_3_cg/m_ap_convert-autonomousaps_cg.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "wireless": {
+    "title": "Wireless software compatibility matrix",
+    "url": "https://www.cisco.com/c/en/us/td/docs/wireless/compatibility/matrix/compatibility-matrix.pdf",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "tags": {
+    "title": "Catalyst 9800 configuration model",
+    "url": "https://www.cisco.com/c/en/us/support/docs/wireless/catalyst-9800-series-wireless-controllers/213911-understand-catalyst-9800-wireless-contro.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "aireos": {
+    "title": "Historical AireOS and lightweight AP setup",
+    "url": "https://www.cisco.com/c/en/us/support/docs/wireless/4400-series-wireless-lan-controllers/69719-wlc-lwap-config.pdf",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "n3k": {
+    "title": "Nexus 3000 NX-OS 7.x L2 interfaces",
+    "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus3000/sw/interfaces/7_x/b_Cisco_Nexus_3000_Series_NX-OS_Interfaces_Configuration_Guide_7x/b_Cisco_Nexus_3000_Series_NX-OS_Interfaces_Configuration_Guide_7x_chapter_01.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "n3kl3": {
+    "title": "Nexus 3000 NX-OS 9.3(x) L3 interfaces",
+    "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus3000/sw/interfaces/93x/configuration/guide/b-cisco-nexus-3000-nx-os-interfaces-configuration-guide-93x/b-cisco-nexus-3000-nx-os-interfaces-configuration-guide-93x_chapter_011.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "n5k": {
+    "title": "Nexus 5000 NPIV/FCoE example",
+    "url": "https://www.cisco.com/c/en/us/support/docs/switches/nexus-5000-series-switches/116248-configure-fcoe-00.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "vdc": {
+    "title": "Nexus 7000 VDC overview",
+    "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_device_context/configuration/archive_601/vdc_nx-os_cfg/vdc_overview.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "n7kl2": {
+    "title": "Nexus 7000 Layer 2 context",
+    "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/layer2/configuration/guide/b_Cisco_Nexus_7000_Series_NX-OS_Layer_2_Switching_Configuration_Guide/b_Cisco_Nexus_7000_Series_NX-OS_Layer_2_Switching_Configuration_Guide_chapter_010.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "n9k": {
+    "title": "Nexus 9000 mode-specific release notes",
+    "url": "https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-release-notes-list.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  },
+  "mds": {
+    "title": "MDS 9000 NX-OS 9.x zoning",
+    "url": "https://www.cisco.com/c/en/us/td/docs/dcn/mds9000/sw/9x/configuration/fabric/cisco-mds-9000-nx-os-fabric-configuration-guide-9x/configuring_and_managing_zones.html",
+    "checked": "2026-10-09",
+    "method": "Official Cisco web search result and subsequent link check; applicability limited to stated reference"
+  }
+}

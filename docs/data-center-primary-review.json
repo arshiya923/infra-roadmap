@@ -1,0 +1,271 @@
+{
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant",
+  "result": "PASS",
+  "topics": [
+    {
+      "id": "s6-g0-t0",
+      "result": "PASS",
+      "notes": "Capability/discovery/attachment/service distinctions, shared parents, compatibility and original-operation recovery reviewed; no physical execution inferred.",
+      "sha256": "c5bb3e2d8fad43a16d70cae81d132f1e88de039d8203ccad691761ce3df940a4"
+    },
+    {
+      "id": "s6-g0-t1",
+      "result": "PASS",
+      "notes": "Inclusive U interval, exact existing occupancy and per-surviving-feed allowance reviewed; dimensions, rails, mass and qualified installation remain separate.",
+      "sha256": "c1aea87a1a8738e9268bb420abf991396a40b90ab18df0260f0e039c1f41eef3"
+    },
+    {
+      "id": "s6-g0-t2",
+      "result": "PASS",
+      "notes": "Capability/discovery/attachment/service distinctions, shared parents, compatibility and original-operation recovery reviewed; no physical execution inferred.",
+      "sha256": "95a44dbe6e36fa1a8cc7df6c826e7281d52e5c3a25d69223bb5f2848ce5084eb"
+    },
+    {
+      "id": "s6-g0-t3",
+      "result": "PASS",
+      "notes": "Capability/discovery/attachment/service distinctions, shared parents, compatibility and original-operation recovery reviewed; no physical execution inferred.",
+      "sha256": "8574df44461a40cd7029ba3a5945638c099cf20ee5010d87e061f625926f6274"
+    },
+    {
+      "id": "s6-g0-t4",
+      "result": "PASS",
+      "notes": "Populated channels, negotiated MT/s, 64 useful data bits and decimal units reviewed; platform example not generalized to universal population rules.",
+      "sha256": "10849e7a925862f31c249096c927b037602bde00df5f614b3d6337382000d1dd"
+    },
+    {
+      "id": "s6-g0-t5",
+      "result": "PASS",
+      "notes": "Execution versus page/device locality, policy fallback and weighted-mean limits reviewed; no automatic page migration or application p99 claim.",
+      "sha256": "dc95648cbebc3f2c6a4eb32282ac2e98579c4967d5b41874a446f27d17971637"
+    },
+    {
+      "id": "s6-g0-t6",
+      "result": "PASS",
+      "notes": "Gen3/4/5 negotiated electrical width, 128/130 overhead and independent directions reviewed; payload/shared upstream/Gen6 exclusions retained.",
+      "sha256": "94097c0437cc44a6527d91c18ac9d8465e32a23ba20f4f64c5298eb947a0e9c2"
+    },
+    {
+      "id": "s6-g0-t7",
+      "result": "PASS",
+      "notes": "Capability/discovery/attachment/service distinctions, shared parents, compatibility and original-operation recovery reviewed; no physical execution inferred.",
+      "sha256": "1cd151f1d38b9e0c1fe83bbded44b1a395249077f7bcb2ec35989974704d589b"
+    },
+    {
+      "id": "s6-g0-t8",
+      "result": "PASS",
+      "notes": "Gen3/4/5 negotiated electrical width, 128/130 overhead and independent directions reviewed; payload/shared upstream/Gen6 exclusions retained.",
+      "sha256": "3396cc38b010a6be2597ede3bea2b3a95c7e55218b03bca1ee7f4a97e66c8a65"
+    },
+    {
+      "id": "s6-g1-t0",
+      "result": "PASS",
+      "notes": "Equal common active-member capacity; N-way RAID1 and exact adjacent pair RAID10 masks reviewed; parity/spare/rebuild/backup/integrity kept separate.",
+      "sha256": "ef47789693d3e8cd0ee69bae68adddec1cc529cb404720f5e74049db0e519458"
+    },
+    {
+      "id": "s6-g1-t1",
+      "result": "PASS",
+      "notes": "Equal common active-member capacity; N-way RAID1 and exact adjacent pair RAID10 masks reviewed; parity/spare/rebuild/backup/integrity kept separate.",
+      "sha256": "fc900675d3a3eb816bdbbf1386595333308d887ec5bc53086f59a8f6ce1fbbb8"
+    },
+    {
+      "id": "s6-g1-t2",
+      "result": "PASS",
+      "notes": "Equal common active-member capacity; N-way RAID1 and exact adjacent pair RAID10 masks reviewed; parity/spare/rebuild/backup/integrity kept separate.",
+      "sha256": "5138a0e44a9e01483771da5bd46cb6565523a9bb7e86deeed0a8e273e889fbd1"
+    },
+    {
+      "id": "s6-g1-t3",
+      "result": "PASS",
+      "notes": "Equal common active-member capacity; N-way RAID1 and exact adjacent pair RAID10 masks reviewed; parity/spare/rebuild/backup/integrity kept separate.",
+      "sha256": "7d174bac95c02c8665e6cb71672b26d0f04247604753690fb5ee1763425dfa99"
+    },
+    {
+      "id": "s6-g1-t4",
+      "result": "PASS",
+      "notes": "Equal common active-member capacity; N-way RAID1 and exact adjacent pair RAID10 masks reviewed; parity/spare/rebuild/backup/integrity kept separate.",
+      "sha256": "8525b009437b22ee77b03cf38587faa07a3f4ff89b9fb7042de9cca7f8240296"
+    },
+    {
+      "id": "s6-g1-t5",
+      "result": "PASS",
+      "notes": "Equal common active-member capacity; N-way RAID1 and exact adjacent pair RAID10 masks reviewed; parity/spare/rebuild/backup/integrity kept separate.",
+      "sha256": "c0cdbd85251ab1cfab951852b8b37ed36245cd4d639bd96d42c234400520e396"
+    },
+    {
+      "id": "s6-g1-t6",
+      "result": "PASS",
+      "notes": "Equal common active-member capacity; N-way RAID1 and exact adjacent pair RAID10 masks reviewed; parity/spare/rebuild/backup/integrity kept separate.",
+      "sha256": "ae20b6922e659357a74516009e4579414b0cedfb316000fc510d31198b06c726"
+    },
+    {
+      "id": "s6-g1-t7",
+      "result": "PASS",
+      "notes": "Equal common active-member capacity; N-way RAID1 and exact adjacent pair RAID10 masks reviewed; parity/spare/rebuild/backup/integrity kept separate.",
+      "sha256": "1783838e404dd1efc6042d3c90a2f2b2ebe6a58e6d08180504ac7fe3133d11de"
+    },
+    {
+      "id": "s6-g1-t8",
+      "result": "PASS",
+      "notes": "Equal common active-member capacity; N-way RAID1 and exact adjacent pair RAID10 masks reviewed; parity/spare/rebuild/backup/integrity kept separate.",
+      "sha256": "260f6a5006d0e15982809e8765c76b3ec53f1a7fa5b9a9372aa5615fc70067be"
+    },
+    {
+      "id": "s6-g2-t0",
+      "result": "PASS",
+      "notes": "Capability/discovery/attachment/service distinctions, shared parents, compatibility and original-operation recovery reviewed; no physical execution inferred.",
+      "sha256": "f352fd79a81076cf57c8546614b785ca8afcc6f9da41c06430cefe6c0455225b"
+    },
+    {
+      "id": "s6-g2-t1",
+      "result": "PASS",
+      "notes": "Capability/discovery/attachment/service distinctions, shared parents, compatibility and original-operation recovery reviewed; no physical execution inferred.",
+      "sha256": "5ea22391b1de00d28353ee5a8a9d2e99214e026e83e0cd92d7e8cad57fdf5212"
+    },
+    {
+      "id": "s6-g2-t2",
+      "result": "PASS",
+      "notes": "Capability/discovery/attachment/service distinctions, shared parents, compatibility and original-operation recovery reviewed; no physical execution inferred.",
+      "sha256": "030ad035d58197ffc6f1a1c077d3b2fa8164be18e3016a8f33c0327cdaee0996"
+    },
+    {
+      "id": "s6-g2-t3",
+      "result": "PASS",
+      "notes": "Gen3/4/5 negotiated electrical width, 128/130 overhead and independent directions reviewed; payload/shared upstream/Gen6 exclusions retained.",
+      "sha256": "a400abf6e7f7c13f1469902b35d439f758b45e5e09f4e6e841963c6f00c46ddb"
+    },
+    {
+      "id": "s6-g3-t0",
+      "result": "PASS",
+      "notes": "Port-sum versus measured demand, same-leaf versus inter-leaf, symmetric link-loss and independent path limitations reviewed; no one-flow aggregation or routing simulation.",
+      "sha256": "b5399743f6507e45ed61af308a02ca5cd9399e24f1eb5d7740b87e0f26e0e5f0"
+    },
+    {
+      "id": "s6-g3-t1",
+      "result": "PASS",
+      "notes": "Port-sum versus measured demand, same-leaf versus inter-leaf, symmetric link-loss and independent path limitations reviewed; no one-flow aggregation or routing simulation.",
+      "sha256": "5015d2cbf785aef889cc4e6c6e07bb78df2975196b3212515a0deb78de40f24c"
+    },
+    {
+      "id": "s6-g3-t2",
+      "result": "PASS",
+      "notes": "Port-sum versus measured demand, same-leaf versus inter-leaf, symmetric link-loss and independent path limitations reviewed; no one-flow aggregation or routing simulation.",
+      "sha256": "84dc8d664b2deb1097b53522a1bed822913c7af75222022400e6303f18afade6"
+    },
+    {
+      "id": "s6-g3-t3",
+      "result": "PASS",
+      "notes": "Port-sum versus measured demand, same-leaf versus inter-leaf, symmetric link-loss and independent path limitations reviewed; no one-flow aggregation or routing simulation.",
+      "sha256": "d6e8e992de6cc4565c6dd1550d099cc24f4037b436e4b1ac23f1fb8d57b01c7d"
+    },
+    {
+      "id": "s6-g3-t4",
+      "result": "PASS",
+      "notes": "Port-sum versus measured demand, same-leaf versus inter-leaf, symmetric link-loss and independent path limitations reviewed; no one-flow aggregation or routing simulation.",
+      "sha256": "f98e5c3cfe5ef9cbcd2530093c571593964679afb245ef1540ad1bb992b478dd"
+    },
+    {
+      "id": "s6-g3-t5",
+      "result": "PASS",
+      "notes": "Port-sum versus measured demand, same-leaf versus inter-leaf, symmetric link-loss and independent path limitations reviewed; no one-flow aggregation or routing simulation.",
+      "sha256": "a7080d420eb14e1c91389ecfe98b203d121f80a3348c02d81544a9d9710bff88"
+    },
+    {
+      "id": "s6-g3-t6",
+      "result": "PASS",
+      "notes": "Each path must carry full load at declared allowance and independent parents; AC usable Wh arithmetic not rated battery curve or electrical-code compliance.",
+      "sha256": "5f5348a624edba5ad35da254f9502bd569f75b6f06a542adf37e6480d26ee127"
+    },
+    {
+      "id": "s6-g3-t7",
+      "result": "PASS",
+      "notes": "Named fault, independent survivor capacity, original service/policy, recovery interval/RTO and data age/RPO reviewed separately; supplied observations, not live failover or statistical availability.",
+      "sha256": "80def761f99d64453f9b190e08cea17cbf32111928bb5b5d13b196b2439fc602"
+    },
+    {
+      "id": "s6-g4-t0",
+      "result": "PASS",
+      "notes": "Inclusive U interval, exact existing occupancy and per-surviving-feed allowance reviewed; dimensions, rails, mass and qualified installation remain separate.",
+      "sha256": "e6d78a054284a1eab60b05611216bfc5b73ee7f19f22eeda2efd20c5ddec4149"
+    },
+    {
+      "id": "s6-g4-t1",
+      "result": "PASS",
+      "notes": "Each path must carry full load at declared allowance and independent parents; AC usable Wh arithmetic not rated battery curve or electrical-code compliance.",
+      "sha256": "ca8572cda808e0877b44d66240c83c99b2edf85a89554dc4c5be64d89f0351a6"
+    },
+    {
+      "id": "s6-g4-t2",
+      "result": "PASS",
+      "notes": "Each path must carry full load at declared allowance and independent parents; AC usable Wh arithmetic not rated battery curve or electrical-code compliance.",
+      "sha256": "ebda623b085834e7bba6309fac29c0b84ca1355f0cdfbfc1568716955a0b383a"
+    },
+    {
+      "id": "s6-g4-t3",
+      "result": "PASS",
+      "notes": "Each path must carry full load at declared allowance and independent parents; AC usable Wh arithmetic not rated battery curve or electrical-code compliance.",
+      "sha256": "63e528125e97d7698ad2aedb43117d9e4c573b5a99f2d9e4b0238fc1deecc675"
+    },
+    {
+      "id": "s6-g4-t4",
+      "result": "PASS",
+      "notes": "Steady sensible heat with explicit density/specific heat/flow, K rise and mean exhaust; inlet/humidity/CFD/certification excluded.",
+      "sha256": "078e5198480bda8f646f92b735eb0cf76d1c00e5cb350b0d983f276f101b28ec"
+    },
+    {
+      "id": "s6-g4-t5",
+      "result": "PASS",
+      "notes": "Steady sensible heat with explicit density/specific heat/flow, K rise and mean exhaust; inlet/humidity/CFD/certification excluded.",
+      "sha256": "a6231c5e8f9faa2eba38ec09f789b8a6009ee08b9fc716e5a68133a365e369e8"
+    },
+    {
+      "id": "s6-g4-t6",
+      "result": "PASS",
+      "notes": "Steady sensible heat with explicit density/specific heat/flow, K rise and mean exhaust; inlet/humidity/CFD/certification excluded.",
+      "sha256": "cc29610066e6f66c2bfe92e802decd50ab299dc4839649dd025449843961463f"
+    },
+    {
+      "id": "s6-g4-t7",
+      "result": "PASS",
+      "notes": "Steady sensible heat with explicit density/specific heat/flow, K rise and mean exhaust; inlet/humidity/CFD/certification excluded.",
+      "sha256": "f5262cb7b16dc7440778cb6d5ffcb523cb4970ba186e5c4aa4462c9177fc0273"
+    },
+    {
+      "id": "s6-g4-t8",
+      "result": "PASS",
+      "notes": "Inclusive U interval, exact existing occupancy and per-surviving-feed allowance reviewed; dimensions, rails, mass and qualified installation remain separate.",
+      "sha256": "b13c9cde7001c1598f01e8c90df6186c4bfec1578b3f7e44bff9079e9b9f6291"
+    },
+    {
+      "id": "s6-g5-t0",
+      "result": "PASS",
+      "notes": "Host-OS independence, required standby/upstream power, dedicated/shared coupling, endpoint trust and authorized operation reviewed; no vendor session executed.",
+      "sha256": "6fbc2723c0c5ac931cdae9ed332c2faab4fd30a0e42a1c5a6d9d853e4eef12c6"
+    },
+    {
+      "id": "s6-g5-t1",
+      "result": "PASS",
+      "notes": "Host-OS independence, required standby/upstream power, dedicated/shared coupling, endpoint trust and authorized operation reviewed; no vendor session executed.",
+      "sha256": "31b2c60d6005d2f9d7840091c46c61aff6206b2b042559a678d0b9deeab98883"
+    },
+    {
+      "id": "s6-g5-t2",
+      "result": "PASS",
+      "notes": "Host-OS independence, required standby/upstream power, dedicated/shared coupling, endpoint trust and authorized operation reviewed; no vendor session executed.",
+      "sha256": "12ee3c2359ee6b33ebd8653fe3bd1c04430ca93031250217c8ae9306931f3534"
+    },
+    {
+      "id": "s6-g5-t3",
+      "result": "PASS",
+      "notes": "Host-OS independence, required standby/upstream power, dedicated/shared coupling, endpoint trust and authorized operation reviewed; no vendor session executed.",
+      "sha256": "d5d2cea979a20c0becd27ce07ccc0bf4afce816bcfee763a03ed0a05ebff7ed9"
+    },
+    {
+      "id": "lab-6",
+      "result": "PASS",
+      "notes": "Inclusive U interval, exact existing occupancy and per-surviving-feed allowance reviewed; dimensions, rails, mass and qualified installation remain separate.",
+      "sha256": "e27ad493ed01349052b0dc41c9d5be9c793ec5a1c28cb60cf62d182afc97f4f3"
+    }
+  ]
+}

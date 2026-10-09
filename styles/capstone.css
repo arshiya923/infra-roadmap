@@ -1,0 +1,7 @@
+#capstone-tool fieldset {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:20px;border:1px solid var(--line);margin:24px 0 16px;}
+#capstone-tool fieldset label {display:flex;flex-direction:column;align-items:stretch;gap:6px;min-width:0;margin:0;}
+#capstone-tool fieldset input {width:100%;min-width:0;box-sizing:border-box;}
+#capstone-tool legend {padding:0 6px;max-width:100%;}
+#capstone-tool #capstone-result {padding:16px;border-left:3px solid var(--accent);background:var(--soft);}
+#capstone-tool .flow-controls [aria-pressed="true"] {border-color:var(--accent);background:var(--soft);}
+@media(max-width:600px){#capstone-tool fieldset{grid-template-columns:1fr;padding:12px;}}

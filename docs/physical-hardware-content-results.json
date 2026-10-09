@@ -1,0 +1,187 @@
+{
+  "result": "PASS",
+  "topics": [
+    {
+      "id": "hardware-0",
+      "foundation": "s6-g0-t0",
+      "sha256": "7e8d4cc0b9cfe444403bfc603bd155bbcbaeccc7bbb3b0dfc208e18782855544",
+      "questions": 13
+    },
+    {
+      "id": "hardware-1",
+      "foundation": "s6-g0-t0",
+      "sha256": "cdba827c0053aaca9432dc49b3965518198ee07fbbbd4d4334ffcf342a6c6858",
+      "questions": 13
+    },
+    {
+      "id": "hardware-2",
+      "foundation": "s6-g5-t3",
+      "sha256": "43b34011d9ebbb8866ac67ffef9c69a3e4ef73ee42d9dde01c9a73c8c4e2b31c",
+      "questions": 13
+    },
+    {
+      "id": "hardware-3",
+      "foundation": "s6-g0-t1",
+      "sha256": "065247c14aeafb6bcc6df0cd006e0542cb1219788c04a095cffdb9f5b4ec4917",
+      "questions": 13
+    },
+    {
+      "id": "hardware-4",
+      "foundation": "s6-g0-t2",
+      "sha256": "5883f5af8b49d5e5d0886495dfb6f789a2ce243f929faa1705b6c64dacc83f89",
+      "questions": 13
+    },
+    {
+      "id": "hardware-5",
+      "foundation": "s8-g0-t3",
+      "sha256": "4c005c5a5bbec5329dc473e2f51a33b426651b22218705b5cce902e0bbd4351c",
+      "questions": 13
+    },
+    {
+      "id": "hardware-6",
+      "foundation": "s8-g2-t5",
+      "sha256": "9ff9dde322ed23cba0fe5f829fffc7fa50724b60f78f2d068bc9b46edd66fec9",
+      "questions": 13
+    },
+    {
+      "id": "hardware-7",
+      "foundation": "s8-g2-t4",
+      "sha256": "63ccdf2799648372234fedc4a98c57ae4c8fbc721996c225c76f419684bf0e90",
+      "questions": 13
+    },
+    {
+      "id": "hardware-8",
+      "foundation": "s8-g2-t3",
+      "sha256": "4f88c71b2dd25c78700b7da150a2e50691a8a701807d4bd2f0cd2bc2de474f10",
+      "questions": 13
+    },
+    {
+      "id": "hardware-9",
+      "foundation": "s8-g2-t6",
+      "sha256": "e099131b4e2f887f5f5ef7bcbb3c7aa58f494758d6842545c047c80f3989c442",
+      "questions": 13
+    },
+    {
+      "id": "hardware-10",
+      "foundation": "s8-g2-t7",
+      "sha256": "117355e2cf72fd47e8fcce0fa5ebd8ee3f6b2feb1177687481e1f5c470fcc2de",
+      "questions": 13
+    },
+    {
+      "id": "hardware-11",
+      "foundation": "s8-g2-t8",
+      "sha256": "d776b8d10d3a238727a9044376609adf773f77fd2599297cc8ce0cffe0e207b0",
+      "questions": 13
+    },
+    {
+      "id": "hardware-12",
+      "foundation": "s6-g4-t2",
+      "sha256": "6000a61cbc158978bc2aa4918867e22721da33282421a1ad380ae0bf3df0b93c",
+      "questions": 13
+    },
+    {
+      "id": "hardware-13",
+      "foundation": "s6-g4-t3",
+      "sha256": "00f2fde9f53efed1010e9bf3ddcc183c3962ab38294096ac0a1127dc1e381e7f",
+      "questions": 13
+    },
+    {
+      "id": "hardware-14",
+      "foundation": "s6-g4-t0",
+      "sha256": "f45bacc20a84f064e25f399487195e3e982d4d4f264fd6ede196e9d4fa2db7d8",
+      "questions": 13
+    },
+    {
+      "id": "hardware-15",
+      "foundation": "s6-g4-t4",
+      "sha256": "d4c0b0988a8c99900982b34bfea423bac34b24b6a4eeb4b3e5cbb31deded1407",
+      "questions": 13
+    },
+    {
+      "id": "hardware-16",
+      "foundation": "s6-g5-t0",
+      "sha256": "65b81573211cfa293d56b4cb9b63ac36980f5e99ed6d300473b23e13336ee0f5",
+      "questions": 13
+    },
+    {
+      "id": "hardware-17",
+      "foundation": "s6-g5-t1",
+      "sha256": "a7b0ebdb188f297c80e56e9772fc7655e4194efce46d348ad81b22cb5d703569",
+      "questions": 13
+    },
+    {
+      "id": "hardware-18",
+      "foundation": "s6-g5-t2",
+      "sha256": "c6fb36a7c56767d979df19c48c6a599b463b6758e3a6639228b5cc7843dfd883",
+      "questions": 13
+    },
+    {
+      "id": "hardware-19",
+      "foundation": "s6-g5-t3",
+      "sha256": "486a19f580785869b858ba0c97efb32ef7e90f74e93db1d1d849ce257d17ee84",
+      "questions": 13
+    }
+  ],
+  "commandEvidence": [
+    {
+      "code": "lscpu",
+      "result": "PASS",
+      "scope": "WSL virtual CPU observation; no server identity verification",
+      "output": "Architecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nAddress sizes:                        39 bits physical, 48 bits virtual\nByte Order:                           Little Endian\nCPU(s):                               8\nOn-line CPU(s) list:                  0-7\nVendor ID:                            GenuineIntel\nModel name:                           11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz\nCPU family:                           6\nModel:                                140\nThread(s) per core:                   2\nCore(s) per socket:                   4\nSocket(s):                            1\nStepping:                             1\nBogoMIPS:                             5606.39\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves vnmi avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear flush_l1d arch_capabilities\nVirtualization:                       VT-x\nHypervisor vendor:                    Microsoft\nVirtualization type:                  full\nL1d cache:                            192 KiB (4 instances)\nL1i cache:                            128 KiB (4 instances)\nL2 cache:                             5 MiB (4 instances)\nL3 cache:                             12 MiB (1 instance)\nNUMA node(s):                         1\nNUMA node0 CPU(s):                    0-7\nVulnerability Gather data sampling:   Unknown: Dependent on hypervisor status\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Not affected\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Mitigation; Enhanced IBRS\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\n"
+    },
+    {
+      "code": "sha256sum labs/data-center-workbook.md",
+      "result": "PASS",
+      "scope": "Local workbook digest only",
+      "output": "9acff9ee5f61dbe3f21bb879e7bab43a3886e9a19a9f50ccec69c607fcbf24d7  labs/data-center-workbook.md\n"
+    },
+    {
+      "code": "python labs/storage-evidence.py --topic s8-g0-t3",
+      "result": "PASS",
+      "scope": "Authored foundation scenario, not captured hardware output",
+      "output": "{\r\n  \"evidenceType\": \"AUTHORED SCENARIO \\u2014 not captured target output\",\r\n  \"topic\": \"s8-g0-t3\",\r\n  \"title\": \"SAN\",\r\n  \"mechanism\": [\r\n    \"An initiator reaches a target over an allowed fabric or IP path and establishes the relevant storage session.\",\r\n    \"Array mapping exposes a particular logical unit to that initiator; the host identifies the same unit across paths.\",\r\n    \"A supported filesystem, datastore or application coordinates use of the blocks; independent hosts must not mount an ordinary local filesystem read-write concurrently.\"\r\n  ],\r\n  \"kind\": \"path\",\r\n  \"baseline\": \"Three hosts each have one HBA connection to Fabric A and one to Fabric B, with array target ports on both fabrics.\",\r\n  \"fault\": \"All FC links are up, but a newly installed host sees no assigned LUN.\",\r\n  \"restore\": \"Trace initiator WWPN, fabric login, active zoning, target login, array mapping and host discovery in order; stop at the first mismatch.\",\r\n  \"scope\": \"Declared two-fabric access predicate: a path needs its fabric, zone and mapping; both share one array. This does not emulate FC, sessions, ALUA, timeouts or measured I/O. Other storage abstractions use the incident exercise; the SAN companion demonstrates a separate block-path boundary.\"\r\n}\r\n"
+    },
+    {
+      "code": "python labs/storage-evidence.py --topic s8-g2-t5",
+      "result": "PASS",
+      "scope": "Authored foundation scenario, not captured hardware output",
+      "output": "{\r\n  \"evidenceType\": \"AUTHORED SCENARIO \\u2014 not captured target output\",\r\n  \"topic\": \"s8-g2-t5\",\r\n  \"title\": \"Multipathing\",\r\n  \"mechanism\": [\r\n    \"Host discovery groups paths by stable device identity rather than transient device name.\",\r\n    \"Path states and array access preferences guide selection through the supported multipath implementation.\",\r\n    \"After a path fails, eligible alternatives may carry I/O subject to timeouts, surviving capacity and application tolerance.\"\r\n  ],\r\n  \"kind\": \"path\",\r\n  \"baseline\": \"Four discovered paths to one LUN cross two fabrics and two target ports; one fabric is removed only in the declared model.\",\r\n  \"fault\": \"The displayed path count is four, but every route crosses Fabric A, so its loss removes all access.\",\r\n  \"restore\": \"Map each path end to end, establish a usable independent Fabric B route, then verify bounded I/O and integrity while A is absent and after exact restoration.\",\r\n  \"scope\": \"Declared two-fabric access predicate: a path needs its fabric, zone and mapping; both share one array. This does not emulate FC, sessions, ALUA, timeouts or measured I/O. Other storage abstractions use the incident exercise; the SAN companion demonstrates a separate block-path boundary.\"\r\n}\r\n"
+    },
+    {
+      "code": "python labs/storage-evidence.py --topic s8-g2-t4",
+      "result": "PASS",
+      "scope": "Authored foundation scenario, not captured hardware output",
+      "output": "{\r\n  \"evidenceType\": \"AUTHORED SCENARIO \\u2014 not captured target output\",\r\n  \"topic\": \"s8-g2-t4\",\r\n  \"title\": \"LUN\",\r\n  \"mechanism\": [\r\n    \"The array creates a logical storage object from its backing allocation and protection scheme.\",\r\n    \"Mapping presents that object to selected initiators using a supported LUN addressing policy.\",\r\n    \"Host discovery reads stable device identity and combines paths appropriately before an authorized consumer uses the blocks.\"\r\n  ],\r\n  \"kind\": \"path\",\r\n  \"baseline\": \"Two unrelated arrays both present LUN 5; their device identifiers differ and they must not be treated as one disk.\",\r\n  \"fault\": \"A migration spreadsheet uses only LUN numbers, causing source and destination data to be confused.\",\r\n  \"restore\": \"Record array identity, stable device ID, size, owner and mappings; verify the exact expected volume before any migration or filesystem operation.\",\r\n  \"scope\": \"Declared two-fabric access predicate: a path needs its fabric, zone and mapping; both share one array. This does not emulate FC, sessions, ALUA, timeouts or measured I/O. Other storage abstractions use the incident exercise; the SAN companion demonstrates a separate block-path boundary.\"\r\n}\r\n"
+    },
+    {
+      "code": "python labs/storage-evidence.py --topic s8-g2-t3",
+      "result": "PASS",
+      "scope": "Authored foundation scenario, not captured hardware output",
+      "output": "{\r\n  \"evidenceType\": \"AUTHORED SCENARIO \\u2014 not captured target output\",\r\n  \"topic\": \"s8-g2-t3\",\r\n  \"title\": \"Zoning\",\r\n  \"mechanism\": [\r\n    \"The administrator describes the intended initiator and target members using supported identifiers.\",\r\n    \"A reviewed zone configuration is activated within the correct fabric or VSAN, with fabric-wide effects understood.\",\r\n    \"Array mapping and host discovery then determine which storage objects appear; positive and negative access checks validate the intended boundary.\"\r\n  ],\r\n  \"kind\": \"path\",\r\n  \"baseline\": \"Host h1 initiator A can reach only its intended array targets in Fabric A; Fabric B has a separately reviewed equivalent policy.\",\r\n  \"fault\": \"A correct new zone exists in the configuration database but was omitted from the activated zone set.\",\r\n  \"restore\": \"Compare active membership to the approved baseline, activate only the reviewed change under the platform procedure, then verify h1 access and h2 denial.\",\r\n  \"scope\": \"Declared two-fabric access predicate: a path needs its fabric, zone and mapping; both share one array. This does not emulate FC, sessions, ALUA, timeouts or measured I/O. Other storage abstractions use the incident exercise; the SAN companion demonstrates a separate block-path boundary.\"\r\n}\r\n"
+    },
+    {
+      "code": "python labs/storage-evidence.py --topic s8-g2-t6",
+      "result": "PASS",
+      "scope": "Authored foundation scenario, not captured hardware output",
+      "output": "{\r\n  \"evidenceType\": \"AUTHORED SCENARIO \\u2014 not captured target output\",\r\n  \"topic\": \"s8-g2-t6\",\r\n  \"title\": \"SAN Switch\",\r\n  \"mechanism\": [\r\n    \"Ports establish roles and login relationships with endpoints or inter-switch links.\",\r\n    \"Fabric services and active policy determine reachable port identities within the correct fabric scope.\",\r\n    \"Frames traverse available links subject to errors, credits and congestion; endpoint storage commands provide the final service evidence.\"\r\n  ],\r\n  \"kind\": \"path\",\r\n  \"baseline\": \"Two isolated SAN switches implement Fabrics A and B, each with host and array connections; no ISL joins the two redundancy domains.\",\r\n  \"fault\": \"Both host HBAs were patched to the same switch even though port labels say A and B.\",\r\n  \"restore\": \"Trace actual cable endpoints and fabric identities; restore the intended independent fabric connection and verify both path and I/O evidence.\",\r\n  \"scope\": \"Declared two-fabric access predicate: a path needs its fabric, zone and mapping; both share one array. This does not emulate FC, sessions, ALUA, timeouts or measured I/O. Other storage abstractions use the incident exercise; the SAN companion demonstrates a separate block-path boundary.\"\r\n}\r\n"
+    },
+    {
+      "code": "python labs/storage-evidence.py --topic s8-g2-t7",
+      "result": "PASS",
+      "scope": "Authored foundation scenario, not captured hardware output",
+      "output": "{\r\n  \"evidenceType\": \"AUTHORED SCENARIO \\u2014 not captured target output\",\r\n  \"topic\": \"s8-g2-t7\",\r\n  \"title\": \"Brocade fundamentals\",\r\n  \"mechanism\": [\r\n    \"Collect product, Fabric OS, switch identity and endpoint login evidence before interpreting names.\",\r\n    \"Compare alias and zone definitions with the effective configuration in the intended fabric.\",\r\n    \"Use a reviewed platform-supported activation and rollback procedure; verify host paths and an owned storage transaction after the change.\"\r\n  ],\r\n  \"kind\": \"path\",\r\n  \"baseline\": \"A storage ticket references hostA, but the alias still contains the WWPN from its retired adapter.\",\r\n  \"fault\": \"The operator adds a new zone to the defined database without verifying the effective fabric configuration.\",\r\n  \"restore\": \"Read the installed-release zoning views, reconcile current WWPN ownership and the effective configuration, then retain exact before/after membership and host I/O results.\",\r\n  \"scope\": \"Declared two-fabric access predicate: a path needs its fabric, zone and mapping; both share one array. This does not emulate FC, sessions, ALUA, timeouts or measured I/O. Other storage abstractions use the incident exercise; the SAN companion demonstrates a separate block-path boundary.\"\r\n}\r\n"
+    },
+    {
+      "code": "python labs/storage-evidence.py --topic s8-g2-t8",
+      "result": "PASS",
+      "scope": "Authored foundation scenario, not captured hardware output",
+      "output": "{\r\n  \"evidenceType\": \"AUTHORED SCENARIO \\u2014 not captured target output\",\r\n  \"topic\": \"s8-g2-t8\",\r\n  \"title\": \"Cisco MDS fundamentals\",\r\n  \"mechanism\": [\r\n    \"Identify the switch, software release, physical ports and intended VSAN context.\",\r\n    \"Correlate fabric login and name-service evidence with the active zoneset for that VSAN.\",\r\n    \"Reconcile array presentation and host device paths before accepting useful storage access.\"\r\n  ],\r\n  \"kind\": \"path\",\r\n  \"baseline\": \"The intended initiator is in VSAN 20, while a copied change activated its zone only in VSAN 10.\",\r\n  \"fault\": \"The zone appears in a configuration search, but the active zoneset in the host VSAN excludes it.\",\r\n  \"restore\": \"Use the correct VSAN-scoped active view and compare it with approved members; repair only the intended scope and verify the array map and host transaction.\",\r\n  \"scope\": \"Declared two-fabric access predicate: a path needs its fabric, zone and mapping; both share one array. This does not emulate FC, sessions, ALUA, timeouts or measured I/O. Other storage abstractions use the incident exercise; the SAN companion demonstrates a separate block-path boundary.\"\r\n}\r\n"
+    },
+    {
+      "code": "show zoneset active",
+      "result": "GUIDED_UNEXECUTED",
+      "scope": "Cisco MDS 9.x reference only; no target available"
+    }
+  ],
+  "bundleSha256": "16643c1f0dfac9e0d16075535246c941e6b5f235114727dd4cf9781e6a0f0343"
+}

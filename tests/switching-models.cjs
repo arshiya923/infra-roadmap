@@ -1,0 +1,9 @@
+const assert=require('node:assert/strict'),{spanningTree,macLearning}=require('../scripts/switching-models.js');
+for(const [failure,links,costB,costC] of [['none',['AB','AC'],10,10],['AB',['AC','BC'],20,10],['AC',['AB','BC'],10,20],['BC',['AB','AC'],10,10]]){
+ const t=spanningTree(failure);assert.equal(t.root,'A');assert.deepEqual(t.forwardingLinks,links);assert.equal(t.dist.B,costB);assert.equal(t.dist.C,costC);assert.equal(t.ports.filter(p=>p.role==='Root').length,2);assert.equal(t.ports.filter(p=>p.state==='Down').length,failure==='none'?0:2);
+ const rootEnds=t.ports.filter(p=>p.role==='Root');assert(rootEnds.every(p=>p.node!=='A'&&p.state==='Forwarding'));
+}
+assert.equal(spanningTree().ports.find(p=>p.node==='C'&&p.peer==='B').role,'Alternate');assert.equal(spanningTree('AB').ports.find(p=>p.node==='B'&&p.peer==='C').role,'Root');assert.throws(()=>spanningTree('AD'),RangeError);
+const expected=[{ports:['p2','p3'],table:[['A',10,'p1',0]],learn:'Learn'},{ports:['p1'],table:[['A',10,'p1',0],['B',10,'p2',1]],learn:'Learn'},{ports:['p2'],table:[['A',10,'p1',2],['B',10,'p2',1]],learn:'Refresh'},{ports:['p2'],table:[['A',10,'p3',3],['B',10,'p2',1]],learn:'Move'},{ports:['p2','p3'],table:[['C',10,'p1',304]],learn:'Learn'},{ports:[],table:[['C',10,'p1',304],['D',20,'p4',305]],learn:'Learn'}];
+expected.forEach((e,i)=>{const r=macLearning(i);assert.deepEqual(r.egress,e.ports);assert.deepEqual(r.table.map(x=>[x.mac,x.vlan,x.port,x.seen]),e.table);assert.equal(r.learning,e.learn);assert(!r.egress.includes(r.frame.port));});assert.deepEqual(macLearning(4).expired,['A','B']);assert.match(macLearning(5).reason,/Unknown/);for(const x of [-1,6,0.5,NaN,'1'])assert.throws(()=>macLearning(x),RangeError);const copy=macLearning(0);copy.table[0].port='bad';assert.equal(macLearning(0).table[0].port,'p1');
+console.log('PASS four stable-tree topologies, six complete learning-table snapshots, invalid inputs and replay independence');

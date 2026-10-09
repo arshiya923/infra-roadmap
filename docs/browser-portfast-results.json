@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "PortFast draft retains full contracts and independent accepted progress",
+    "Coverage, attachment, BPDU, carrier and independent carriage results with keyboard reset",
+    "Four widths without document overflow and actual light/dark captures",
+    "Every mobile flow step visible, normal and zoomed",
+    "Separate exam feedback and authored BPDU Guard draft adjacency",
+    "Direct-file checker works without page/resource errors"
+  ],
+  "errors": [],
+  "scope": "One PortFast draft and selected prerequisites only; no actual operational edge/state, BPDU, guard/filter, timer or service execution"
+}

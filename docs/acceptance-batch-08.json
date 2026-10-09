@@ -1,0 +1,823 @@
+{
+  "date": "2026-10-09",
+  "status": "ACCEPTED",
+  "reviewer": "Primary assistant, direct work without GapCode",
+  "originalSpecification": "User pasted Mission: original 22 Topic items and 13 Batch gates parsed from supplied request",
+  "acceptedTopicCount": 13,
+  "overallAcceptedOriginalNodes": 95,
+  "topicCriteria": [
+    {
+      "number": 1,
+      "requirement": "original content inspected",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 2,
+      "requirement": "explanation improved",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 3,
+      "requirement": "technical accuracy reviewed",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 4,
+      "requirement": "terminology defined",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json",
+        "content/batch-08.js:glossary"
+      ]
+    },
+    {
+      "number": 5,
+      "requirement": "mental model provided",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 6,
+      "requirement": "internal mechanism explained",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 7,
+      "requirement": "meaningful diagram added where useful",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json",
+        "docs/screenshots/batch-08",
+        "docs/browser-batch-08-acceptance-results.json"
+      ]
+    },
+    {
+      "number": 8,
+      "requirement": "practical example added",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 9,
+      "requirement": "commands/configuration added where applicable",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json",
+        "docs/commands-results-batch-08.json"
+      ]
+    },
+    {
+      "number": 10,
+      "requirement": "production context included",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 11,
+      "requirement": "failure scenario included",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 12,
+      "requirement": "troubleshooting included",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 13,
+      "requirement": "common mistakes included",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 14,
+      "requirement": "security implications considered",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 15,
+      "requirement": "performance implications considered",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 16,
+      "requirement": "prerequisites/related topics linked",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json",
+        "docs/browser-batch-08-acceptance-results.json"
+      ]
+    },
+    {
+      "number": 17,
+      "requirement": "quick knowledge check included",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 18,
+      "requirement": "hands-on exercise included where appropriate",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json"
+      ]
+    },
+    {
+      "number": 19,
+      "requirement": "10 exam questions included",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json",
+        "docs/exam-review-batch-08.json"
+      ]
+    },
+    {
+      "number": 20,
+      "requirement": "answers/explanations reviewed",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json",
+        "docs/exam-review-batch-08.json"
+      ]
+    },
+    {
+      "number": 21,
+      "requirement": "responsive layout tested",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json",
+        "Focused four-width/both-theme UI reports and manual screenshots"
+      ]
+    },
+    {
+      "number": 22,
+      "requirement": "links/interactions tested",
+      "result": "PASS",
+      "evidence": [
+        "content/batch-08.js",
+        "docs/review-batch-08.json",
+        "docs/research-batch-08.md",
+        "docs/batch-08-regression-results.json",
+        "docs/browser-batch-08-acceptance-results.json",
+        "docs/quality-audit-latest.json"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "topicId": "s2-g4-t0",
+      "title": "STP",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:technicalReview/commandReview/manualRendering/originalContent",
+      "questionReview": "docs/exam-review-batch-08.json:s2-g4-t0",
+      "modelEvidence": "tests/switching-models.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-results-batch-08.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    },
+    {
+      "topicId": "s2-g4-t1",
+      "title": "RSTP",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:rstpReview",
+      "questionReview": "docs/exam-review-batch-08.json:s2-g4-t1",
+      "modelEvidence": "tests/stp-evidence.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-rstp-results.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    },
+    {
+      "topicId": "s2-g4-t2",
+      "title": "MST",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:mstReview",
+      "questionReview": "docs/exam-review-batch-08.json:s2-g4-t2",
+      "modelEvidence": "tests/mst-models.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-mst-results.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    },
+    {
+      "topicId": "s2-g5-t0",
+      "title": "PortFast",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:portfastReview",
+      "questionReview": "docs/exam-review-batch-08.json:s2-g5-t0",
+      "modelEvidence": "tests/edge-models.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-portfast-results.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    },
+    {
+      "topicId": "s2-g5-t1",
+      "title": "BPDU Guard",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:bpduGuardReview",
+      "questionReview": "docs/exam-review-batch-08.json:s2-g5-t1",
+      "modelEvidence": "tests/guard-models.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-bpdu-guard-results.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    },
+    {
+      "topicId": "s2-g5-t2",
+      "title": "Root Guard",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:rootGuardReview",
+      "questionReview": "docs/exam-review-batch-08.json:s2-g5-t2",
+      "modelEvidence": "tests/root-guard-models.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-root-guard-results.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    },
+    {
+      "topicId": "s2-g5-t3",
+      "title": "Loop Guard",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:loopGuardReview",
+      "questionReview": "docs/exam-review-batch-08.json:s2-g5-t3",
+      "modelEvidence": "tests/loop-guard-models.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-loop-guard-results.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    },
+    {
+      "topicId": "s2-g5-t4",
+      "title": "Storm Control",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:stormControlReview",
+      "questionReview": "docs/exam-review-batch-08.json:s2-g5-t4",
+      "modelEvidence": "tests/storm-models.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-storm-control-results.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    },
+    {
+      "topicId": "s2-g5-t5",
+      "title": "Port Security",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:portSecurityReview",
+      "questionReview": "docs/exam-review-batch-08.json:s2-g5-t5",
+      "modelEvidence": "tests/security-port-models.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-port-security-results.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    },
+    {
+      "topicId": "s2-g6-t0",
+      "title": "SPAN",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:spanReview",
+      "questionReview": "docs/exam-review-batch-08.json:s2-g6-t0",
+      "modelEvidence": "tests/span-models.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-span-results.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    },
+    {
+      "topicId": "s2-g6-t1",
+      "title": "RSPAN",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:rspanReview",
+      "questionReview": "docs/exam-review-batch-08.json:s2-g6-t1",
+      "modelEvidence": "tests/rspan-models.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-rspan-results.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    },
+    {
+      "topicId": "s2-g6-t2",
+      "title": "ERSPAN",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:erspanReview",
+      "questionReview": "docs/exam-review-batch-08.json:s2-g6-t2",
+      "modelEvidence": "tests/erspan-models.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-erspan-results.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    },
+    {
+      "topicId": "lab-2",
+      "title": "Cisco Enterprise Networking Lab",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-08.json:integratedLabReview",
+      "questionReview": "docs/exam-review-batch-08.json:lab-2",
+      "modelEvidence": "tests/enterprise-lab-models.cjs",
+      "responsiveInteractiveEvidence": "docs/browser-enterprise-lab-results.json",
+      "scope": "Appropriate authored browser/tabletop/guided lab; vendor execution unperformed. ERSPAN includes independently checked synthetic offline bytes, not network capture."
+    }
+  ],
+  "batchGates": [
+    {
+      "number": 1,
+      "requirement": "Every included roadmap node has been processed.",
+      "result": "PASS",
+      "evidence": [
+        "content/enrichment.json:13 Batch 08 nodeIds"
+      ]
+    },
+    {
+      "number": 2,
+      "requirement": "Every substantial topic satisfies Topic Completion Definition.",
+      "result": "PASS",
+      "evidence": [
+        "docs/acceptance-batch-08.json:topics"
+      ]
+    },
+    {
+      "number": 3,
+      "requirement": "All diagrams render correctly.",
+      "result": "PASS",
+      "evidence": [
+        "Primary per-topic manual diagram review plus focused renders"
+      ]
+    },
+    {
+      "number": 4,
+      "requirement": "Animations function correctly.",
+      "result": "PASS",
+      "evidence": [
+        "docs/browser-batch-08-acceptance-results.json:13 timed/reduced/static routes"
+      ]
+    },
+    {
+      "number": 5,
+      "requirement": "No obvious JavaScript errors exist.",
+      "result": "PASS",
+      "evidence": [
+        "docs/batch-08-regression-results.json",
+        "docs/quality-audit-latest.json"
+      ]
+    },
+    {
+      "number": 6,
+      "requirement": "Navigation works.",
+      "result": "PASS",
+      "evidence": [
+        "Full-route original adjacency and focused navigation checks"
+      ]
+    },
+    {
+      "number": 7,
+      "requirement": "Mobile layout remains usable.",
+      "result": "PASS",
+      "evidence": [
+        "Four-width focused suites and manual narrow screenshots"
+      ]
+    },
+    {
+      "number": 8,
+      "requirement": "Questions have answers and explanations.",
+      "result": "PASS",
+      "evidence": [
+        "docs/exam-review-batch-08.json:130 exams/39 quick checks"
+      ]
+    },
+    {
+      "number": 9,
+      "requirement": "Lab instructions are coherent.",
+      "result": "PASS",
+      "evidence": [
+        "Primary scoped lab/command reviews; no false device execution"
+      ]
+    },
+    {
+      "number": 10,
+      "requirement": "Cross-topic links work.",
+      "result": "PASS",
+      "evidence": [
+        "All 13 connection targets and full-course prerequisite graph"
+      ]
+    },
+    {
+      "number": 11,
+      "requirement": "Progress files are updated.",
+      "result": "PASS",
+      "evidence": [
+        "content/enrichment.json",
+        "ROADMAP_ENRICHMENT_PROGRESS.md",
+        "ROADMAP_BATCH_PLAN.md",
+        "content/catalog.js",
+        "docs/browser-batch-08-acceptance-results.json:95 reviewed count"
+      ]
+    },
+    {
+      "number": 12,
+      "requirement": "The application builds/runs successfully.",
+      "result": "PASS",
+      "evidence": [
+        "No compilation step; HTTP/direct-file reader checks pass"
+      ]
+    },
+    {
+      "number": 13,
+      "requirement": "No unfinished placeholders are incorrectly marked completed.",
+      "result": "PASS",
+      "evidence": [
+        "95 accepted IDs all authored; next Batch 09 outline remains pending"
+      ]
+    }
+  ],
+  "regressionEvidence": "docs/batch-08-regression-results.json",
+  "regressionCommands": 31,
+  "acceptedStateEvidence": "docs/browser-batch-08-acceptance-results.json",
+  "limits": "Acceptance covers taught and verified scopes. No actual Cisco parser/build/control exchange, live link failure, forwarding/capture delivery, recovery timing or throughput. Browser declarations and user-entered probes are not actual measurements. Synthetic ERSPAN decode is actual offline file processing. Appropriate guided/model/tabletop labs satisfy curriculum scope; physical execution is not fabricated. Automated named-control/contrast checks are not full WCAG certification.",
+  "nextBatch": "09",
+  "nextNode": "s3-g0-t0"
+}

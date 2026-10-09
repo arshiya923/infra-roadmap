@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-04",
+  "result": "PASS",
+  "environment": "Ubuntu-24.04 / WSL2, root namespace capability",
+  "checks": [
+    "Default invocation is inert help",
+    "Baseline peers both ways and gateway address from both PCs",
+    "Injected /28 route/probe failure",
+    "Restored /27 recovery on all four paths",
+    "Normal cleanup leaves no owned namespaces",
+    "Host link inventory and IPv4/IPv6 routes unchanged",
+    "In-memory early-failure injection cleans all created namespaces"
+  ],
+  "output": [
+    "TOPOLOGY: PC-A eth0 <-> switch pa; PC-B eth0 <-> switch pb; gateway eth0 <-> switch pg; switch ports share br0.",
+    "SCOPE: isolated virtual Ethernet; no host uplink, NAT, DNS or external forwarding.",
+    "PASS baseline: peers in both directions and gateway address reachable.",
+    "INJECT: PC-B prefix changes from /27 to /28; it has no default route.",
+    "PASS injected fault: PC-B /28 excludes PC-A; route lookup and peer ping fail as expected.",
+    "PASS recovery: restored /27, bidirectional peer and gateway probes succeed.",
+    "PASS cleanup: all four owned namespaces removed."
+  ],
+  "limitations": "Virtual bridge/shared kernel only; no physical switch, cable, Internet routing, DNS or throughput test. Raw host network inventory not retained."
+}

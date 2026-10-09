@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS_WITH_DOCUMENTED_SCOPE",
+  "reviewer": "Primary assistant; direct work without GapCode",
+  "nodeId": "s3-g3-t0",
+  "originalTitle": "BGP fundamentals",
+  "fullOriginalLesson": "PENDING",
+  "technicalReview": [
+    "Explicit exact-prefix import/export kept separate from Established; no global bypass of eBGP policy requirement.",
+    "Neighbor AS/RID/attachment/family context and actual one-AS path/peer next hop separated from session and kernel programming.",
+    "ORIGIN IGP is an attribute; local empty AS path and 0.0.0.0 are literal local sentinels, not a wire gateway or proof of IGP learning.",
+    "Known R2 origin withdrawal leaves observed session/counters and live links while R1 loses prefix; R2 retained opposite prefix still does not establish round-trip service.",
+    "Exact network restoration returns baseline configuration and probes without process or session restart.",
+    "Startup type fields may include multiple PDUs per captured frame; no full bodies/NLRI/attributes, timestamps, complete FSM or later withdrawal-wire proof.",
+    "Vendor guide legacy ASN range not copied as universal four-octet limit; no Cisco, iBGP/RR, full selection contest, RPKI/authentication, IPv6/EVPN/application/hardware/convergence claims."
+  ],
+  "implementationReview": [
+    "Owned namespace/mount runtime uses tracked unique process/path identities and bounded stopped-child cleanup; host forwarding/group/services unchanged.",
+    "Six source-hashed views and twelve independently compared prefix combinations preserve exact phase-specific raw evidence.",
+    "Fixed observer/AS/peer/prefix guards, fresh values, text-only dynamic rendering and stale-result hiding."
+  ],
+  "manualRendering": {
+    "result": "PASS",
+    "reviewed": [
+      "bgp-groundwork-desktop.png",
+      "bgp-groundwork-light-mobile.png",
+      "bgp-groundwork-dark-mobile.png",
+      "bgp-groundwork-table-start.png",
+      "bgp-groundwork-table-end.png"
+    ],
+    "review": "Five individually inspected screenshots; local table scrolling and source-hash wrapping retain readable mobile controls."
+  },
+  "sources": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc4271",
+      "checked": "2026-10-09"
+    },
+    {
+      "url": "https://datatracker.ietf.org/doc/html/rfc8212",
+      "checked": "2026-10-09"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc6793.html",
+      "checked": "2026-10-09"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc4760.html",
+      "checked": "2026-10-09"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7454.html",
+      "checked": "2026-10-09"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc2918.html",
+      "checked": "2026-10-09"
+    },
+    {
+      "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+      "checked": "2026-10-09"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-15/configuration_guide/rtng/b_1715_rtng_9300_cg/configuring_bgp.html",
+      "checked": "2026-10-09"
+    }
+  ],
+  "evidence": [
+    "docs/bgp-routing-lab-results.json",
+    "docs/bgp-evidence-results.json",
+    "docs/browser-bgp-results.json"
+  ],
+  "limits": "Foundation only; no full-topic 22-criterion acceptance, new authored lesson, full questions, integrated reader/flow checks or full Batch 09 acceptance."
+}

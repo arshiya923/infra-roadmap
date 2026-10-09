@@ -1,0 +1,470 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "reviewer": "Primary assistant",
+  "scope": "Primary inspection of authored and generated content, 220 exams and 66 quick checks, source applicability, and six actual screenshot contact sheets. Test acceptance is a separate gate.",
+  "topics": [
+    {
+      "id": "s7-g0-t0",
+      "sha256": "e7cbb5ae024f41496ef9572391256bed31d2aa2841c9edeab9f208fd053bcd4a",
+      "note": "Model/release scope, plane separation, historical family limits, exact baseline and guided commands reviewed.",
+      "questions": {
+        "s7-g0-t0-Q1": "c921981c6c2ce1873f9986655221f9283ecebd5be5e69da35ad988ed23e41a3a",
+        "s7-g0-t0-Q2": "c3d8e1a4cc0f24233decbc3c34a66f95ece98d81879d7e48c00c094be1b0cf31",
+        "s7-g0-t0-Q3": "aaaf7085f9b4dc430855919ef8a00319f4ab0cc8be184c484f1cd75dbe29fda2",
+        "s7-g0-t0-Q4": "eb012162369737ca1b52830351306e414049a0225129546fae9aa96ed18a833d",
+        "s7-g0-t0-Q5": "b8d17e5495c7cc8f0904486de1f10f3f4ca76fbec4608c1e273a7638b4cab622",
+        "s7-g0-t0-Q6": "1fdfaa6459853babf54cf5b38cfa87d0525f77d51da4378684e0d95159195709",
+        "s7-g0-t0-Q7": "12b5d7c2507303b81bc90773925ced6c3ce705e7cfa263961df5a6a662059b43",
+        "s7-g0-t0-Q8": "799a1971d66823ef658d87f3794b06377b438c51368fabd90dc79771195c019b",
+        "s7-g0-t0-Q9": "a86a6846cc6669818b711d31523836d85449caa0314b363afb1f71241e1b268a",
+        "s7-g0-t0-Q10": "797ecd91af49c20f3358fbc3126332d1e7aac6b8e4d8b138f5b2a78d69936bc4",
+        "s7-g0-t0-QC1": "5f5148f0727b390deb1839222cbcdbee38f5526a1a1553d37339ed815ae24052",
+        "s7-g0-t0-QC2": "1efc4b4ecb5138120d264ceca1dfaa9a3c4a4687d7e2211f2fa3df59514dfff5",
+        "s7-g0-t0-QC3": "1217ed6e2ece9f13d9805fd829a119a76a8e3af914f13e102834a1833ddf7780"
+      }
+    },
+    {
+      "id": "s7-g0-t1",
+      "sha256": "43833bd679cbacbc4b2690740947374c1d04ee4b8507a8f1f91ec86ff8764670",
+      "note": "Model/release scope, plane separation, historical family limits, exact baseline and guided commands reviewed.",
+      "questions": {
+        "s7-g0-t1-Q1": "e23d970841547386a968c64be1cca102c8f15a06296ef7d8621019a32faced45",
+        "s7-g0-t1-Q2": "1e3f2d355b5050322c5e7553fdbab1b637df29cc0a88c677e405b68eb45269a3",
+        "s7-g0-t1-Q3": "751a29be7c6edd437aa34d0c45ae5d937d9178c5f4c8401184359e272df78eb5",
+        "s7-g0-t1-Q4": "7bf41471347cb2a4fe349d281bbd50bb5b95ca030ff39cc5c0fa77d635ae5061",
+        "s7-g0-t1-Q5": "7cac76914a8a27eba2c725b49596966a6bdf591ed4e591ee6940cdbb371bda66",
+        "s7-g0-t1-Q6": "74972d3cc76f229c8fc964e5a3982c74db46e2b8f473bea3ba39bc4d4708f2ef",
+        "s7-g0-t1-Q7": "915b431735d0e91baa21fb0a294c5473f32282fb0c57342d46d8999a5436a254",
+        "s7-g0-t1-Q8": "95f21512158e6718c2d6187f57f99fc0813b1a5a7deb7a787bf36c116bdd460f",
+        "s7-g0-t1-Q9": "6d581c8f21e7e4d4712ffc536a4f658c891795ff335c16df118e1be2d6e5aefe",
+        "s7-g0-t1-Q10": "26ac050fc37e0462b8ee3104ce57c2d6f309252121b7551e4776011b2633d829",
+        "s7-g0-t1-QC1": "1bf81597edfb5d39d4d8b7344017c6871ff835ab67d8b9e3010e33131e13b675",
+        "s7-g0-t1-QC2": "59ab5fc8462cdabdc0ad167cdf405937df5f1403c8c446d0ce81d3032c4c7668",
+        "s7-g0-t1-QC3": "864082a4ed92e455649d203d80164c6b5c9276431159553c2b925e64e4f17eff"
+      }
+    },
+    {
+      "id": "s7-g0-t2",
+      "sha256": "3f762eade3339a81986a3c1bd10a5dd30ac6bf5f9002a111e286b81581213453",
+      "note": "Model/release scope, plane separation, historical family limits, exact baseline and guided commands reviewed.",
+      "questions": {
+        "s7-g0-t2-Q1": "fda26a79a016e93386ede45251fdb9acfe6bd4034d075d1cdfde445a2c1fdcc1",
+        "s7-g0-t2-Q2": "55d5b20e44ae8ba35ac0906bfe9f88bdefea586a0969b1c4e43de80732a5a856",
+        "s7-g0-t2-Q3": "039656e07dfe0e9e47c61faa5cae3559ef4e95b7ffd14ef7a7d718045046e395",
+        "s7-g0-t2-Q4": "353d557544d892ec8d373c56f1b971405ff59afc50c692fc2b56eecce579bb83",
+        "s7-g0-t2-Q5": "95c333e10b1a98939d5bfec3e446e170fdab03e74678370f9ceb39f3757a4459",
+        "s7-g0-t2-Q6": "8cc54711463f330cf83ab0506540afa0a7dbb3c388220d9d9111bf72ef2fcfc5",
+        "s7-g0-t2-Q7": "3c7d770db8f9ee416957dfff781f2969a29cde1983859c345c4bf557abedfb64",
+        "s7-g0-t2-Q8": "35a0d75bbfcca124051f19a9c8cad1c1cc7a92904e40836e809f0fb0f9b954f0",
+        "s7-g0-t2-Q9": "71987cdd1a0068da869507f1f13f3b2c0441018c05059af0999dbc91cc1122ee",
+        "s7-g0-t2-Q10": "acd6d375216dc68503d9b61d2a0c7455624dc40f335aa6d03fd1d5cd721de3b5",
+        "s7-g0-t2-QC1": "32c0026b88dca8e7fa1a8c3dafb72d389f8d62d71b102bf2d10b779ba5e7961f",
+        "s7-g0-t2-QC2": "370a83696d225ffdeed42e8b823c70e64ae3b31e16f4590834279bb489dccabf",
+        "s7-g0-t2-QC3": "ac717c1db95b1e6c366f5a18f845534950013b1861ae406f2eb3659a0bd6d643"
+      }
+    },
+    {
+      "id": "s7-g0-t3",
+      "sha256": "848cdc85851b7e31015c930509d185a43510c6445aaf9066465e52692d302663",
+      "note": "Model/release scope, plane separation, historical family limits, exact baseline and guided commands reviewed.",
+      "questions": {
+        "s7-g0-t3-Q1": "762927078e9fb1b6b56ac326ae57df1b815434209e98baf2065d4d1147302385",
+        "s7-g0-t3-Q2": "39b8d4ea22fc4c462ddd93fa92d190a096683413d7d31157ad3bf8ebfdf0ceb2",
+        "s7-g0-t3-Q3": "4394e8503336dfc288f5df62e14cb0006d1710a44e0fc01048c7a3e860f7b0c3",
+        "s7-g0-t3-Q4": "ecd85d692545ad3980e81f07ec1d567db1c48db011adcabf9db69b2e89d2c441",
+        "s7-g0-t3-Q5": "cb57eb7bf19e6c05f57ae4b17867dbe3762a0427a4d302a5b6db6397288aac91",
+        "s7-g0-t3-Q6": "2f3714d040c6d26d86d7e8c121b583637fe0996ecb4c1f80348412ea9da12df0",
+        "s7-g0-t3-Q7": "a402ad1a2adfa016badb2f9927b2ed30c5a11d8564088c15e60dfb7c7f339ade",
+        "s7-g0-t3-Q8": "dd83100ffe8e1dd23070db83dc0cbcc6a95ea8dae2025ba133a47ca0c3f4e43c",
+        "s7-g0-t3-Q9": "9dc8aef20c791657f614c3999b7283ce44a2b8c3ab4a4c4e43d63e71dfb8f43f",
+        "s7-g0-t3-Q10": "ffc4be28b65831619fe9d25df78e8559c605e71024349a6fadfa51fbfb0f778e",
+        "s7-g0-t3-QC1": "69d52e72b61d29c0f01ce5736be8a526158c56df13553da3ac1608e02b5961e6",
+        "s7-g0-t3-QC2": "21326ee23b0ce8d357fbfa30b2cda857476f51a74bd3049c973af820ca58a5a3",
+        "s7-g0-t3-QC3": "88aaab5f3ea5d03021b43a6cdc0c176c1f4a28ec632915ec2c90bb0962d0722e"
+      }
+    },
+    {
+      "id": "s7-g0-t4",
+      "sha256": "80422dd9f2abcd965f05258cbf168570d4c3b3f46b27fbe39eb845772a19cdda",
+      "note": "Model/release scope, plane separation, historical family limits, exact baseline and guided commands reviewed.",
+      "questions": {
+        "s7-g0-t4-Q1": "b7cb7e47a7c87c240a8ef0de4f361008ed6080867a15a8bccb22cb8c9266cbfb",
+        "s7-g0-t4-Q2": "58269b3b6b8966897417293dd84f99bd089f862ac51a526b78669c4daf1f2560",
+        "s7-g0-t4-Q3": "5b082ef3217ca0cf546bf3ebf98c35ea843572ca0aa3a30254449a5c194c026d",
+        "s7-g0-t4-Q4": "bda7df5df80209c57fbae7e9a57efca65943c022e10cac6722a888135eff371c",
+        "s7-g0-t4-Q5": "aa0c51370e85faeed8fc0ede981ec9b41baa535038ea7f45a5e461b6ac82ca40",
+        "s7-g0-t4-Q6": "228ea7dc8018a0325b4fa246f9f22b7ddf4742ae8d1e78d17fda13089d296d58",
+        "s7-g0-t4-Q7": "e724b9618c8b25ea59607c0c7799df549007fc3730134fda8126ec47294b9c72",
+        "s7-g0-t4-Q8": "68b633cbd5fd95dcca0dd8750c31d112865e2317a5ba395225c36788c354e9bd",
+        "s7-g0-t4-Q9": "43cfa142a66f5af589be3e9335435e48efe3ebf58cfd2405e162cc6efb5e7f03",
+        "s7-g0-t4-Q10": "52d51ddbf55a1395e10cb3693db84c68cc4ed27bbf5599d347d2812d5e0c573c",
+        "s7-g0-t4-QC1": "ab7b8d2642dc6781cd665677e0a0f7cec72702ed7a173f1734616dc638fa0f9b",
+        "s7-g0-t4-QC2": "7520c05d66b6b9a4b20af45b4ef10d403f8fd1f4e296f5d8988acccc482b3248",
+        "s7-g0-t4-QC3": "61f2a076be62c17eec6149291e7c62ff6324cb0f5aa9f9afcac70b55d653eb8f"
+      }
+    },
+    {
+      "id": "s7-g0-t5",
+      "sha256": "5e490696a3dee610312b8f20a17feaf97ba54113b2c96186fc81deaffb32e6c6",
+      "note": "Model/release scope, plane separation, historical family limits, exact baseline and guided commands reviewed.",
+      "questions": {
+        "s7-g0-t5-Q1": "7bc8c50b7535af71c8d221ea347c293728d443ee3d6331dcdec946211cb78dcb",
+        "s7-g0-t5-Q2": "01ca0278c6d426868527c126491d570e5d211bf27da941ab4680425fc3fd9e9c",
+        "s7-g0-t5-Q3": "901151c0e0be0cd25757faa5a98988c22a62550167d42b3b1c3e21c225a58920",
+        "s7-g0-t5-Q4": "8f791794ebc15c284525163ec8fca570851fe10c0300da83412840827f3eb898",
+        "s7-g0-t5-Q5": "257cd191d8b43cece8bd6065671ab6bbbd8af8a20b4d4b6136d4bdb507f8d47b",
+        "s7-g0-t5-Q6": "c45d83adab63a5500e841cc502372c319b716eb66aa66e3799f3ea899258ed46",
+        "s7-g0-t5-Q7": "cd41484940d9de29fc6fa55b8defbe32fc1d32c5c3035dcd88db06e2889dd536",
+        "s7-g0-t5-Q8": "318e23deaf8169868328d6c5709053b6bdf677835b8006da0fa10be300bfb129",
+        "s7-g0-t5-Q9": "5328aad7ec24a3324a3f462a27a8f47b32dc7505c5cae20d22bbf15276ee3272",
+        "s7-g0-t5-Q10": "83ead6c1ba1e0425cbc847ddefd99fb6987d8198b2cccb79ec6cf93ad5791169",
+        "s7-g0-t5-QC1": "68600593d8e6c6880b7d0057a1823c2c8f2d6d24c868da2aaea2e8848359c6d9",
+        "s7-g0-t5-QC2": "1f0884a432fa9147a8b838df31a46f31bf9646e4eeafbb15b01664c97742c251",
+        "s7-g0-t5-QC3": "fa83d7990a5ce28b3e9e5f0e25bd1f6debf6c187258a560c35fbf86e85c7e814"
+      }
+    },
+    {
+      "id": "s7-g0-t6",
+      "sha256": "432c36a46841621907ed7130b0e376983201454c46a908025e7dc093975b9f57",
+      "note": "Model/release scope, plane separation, historical family limits, exact baseline and guided commands reviewed.",
+      "questions": {
+        "s7-g0-t6-Q1": "cbe49e9e5a10294345ab19044ed62f4c0cdd6e3411ac317522989702eaad24ee",
+        "s7-g0-t6-Q2": "bc5484ce69ac526fd20ba766cc111c820efb9555fcc079401955074a01839a71",
+        "s7-g0-t6-Q3": "c07bd74218b85fef5da69ac5e848063b23ebcc05784458d6aa8d54a5c7748d4d",
+        "s7-g0-t6-Q4": "d05604fde92f84e2129ec0aae6a8d55952dd2a2b89637518c8b7a1e9e613049a",
+        "s7-g0-t6-Q5": "ef22f216780bdfd60ff14eb300285ae1246524eceebe0288a6366c762589b476",
+        "s7-g0-t6-Q6": "17a2adc792d2c4bd61e770a1df00e454bb8dcdf25be480733f775f1e3175873d",
+        "s7-g0-t6-Q7": "524ffe9d0c5b2681b6a34e1dfca7268783b3f296cc8a793f3ba81d5a9bff7a43",
+        "s7-g0-t6-Q8": "16fcd3b53b5eca0b86eb88f5d7d3341cf3acdeee1c57873a2ee5f2d890efa9a6",
+        "s7-g0-t6-Q9": "4dd303f3450fcb8d4399b810385f7d50e2fd46b5150016295cdbfdc001d52846",
+        "s7-g0-t6-Q10": "4951f9b087ddb557a940b750d4270aa1c4971292e99bad34723a30c15c3fe847",
+        "s7-g0-t6-QC1": "d80f9c903a91c68a08bb3c57b86686a9cc64e956c133997edfaac32ef7996a15",
+        "s7-g0-t6-QC2": "428d75a553775260a787d0cef9c4bc836b4389461d787b2b68c2b63173b2f1f1",
+        "s7-g0-t6-QC3": "03cdd5f7afa7ce2fd8d15225f3dcb09d3aba00c3a429d2e86fe458af1d2ea9bd"
+      }
+    },
+    {
+      "id": "s7-g0-t7",
+      "sha256": "7ccf8a4c3334d05930633d36303f3f3cf655537fe85d0c90bef17456cce3a3e6",
+      "note": "Model/release scope, plane separation, historical family limits, exact baseline and guided commands reviewed.",
+      "questions": {
+        "s7-g0-t7-Q1": "e6ddd90943e2d980b40c5c00e02f9a5b96147d03582f2d1a682987a519d93f23",
+        "s7-g0-t7-Q2": "b18740d16e00c28bcffc8981867dce12730b0c9d242f216ffd369daeb192b380",
+        "s7-g0-t7-Q3": "8f01c52255e68b55b73081408baed7041f20a7883435c53d5e7c26e375cc10d4",
+        "s7-g0-t7-Q4": "9dc477c5f3a8d927560f3d3df664e9c3aac9a2ccf37d0cc810ae3a42e5318769",
+        "s7-g0-t7-Q5": "a614c125315567d3d393b5563bd461a73ce5f0eed3afd4bb0fdc5f4b732b80bc",
+        "s7-g0-t7-Q6": "b914d154f0d590cb501c6072c19b501fc8061ecec763c3002147fbfc7fd3c935",
+        "s7-g0-t7-Q7": "704660857579a13389c6a98039a8a360d3127e356aec6d9add758abd41935a23",
+        "s7-g0-t7-Q8": "b763080e59adfb983a52bd2b8c7382b4af733155bc2bfb2084b5b7585b4357ce",
+        "s7-g0-t7-Q9": "aa3604625ff7099413a84ecf79e19fd1c087a20be3b1f6ad9dfe0eac39f6e73f",
+        "s7-g0-t7-Q10": "8e35ecd004bd4030005f9d7bf451112d99f0aa2d5db025fc2dc481a8d8c3e26e",
+        "s7-g0-t7-QC1": "ac9218de87786e7ce5241766faf43182ca66fc28330cdbd74a4e01a5af52171e",
+        "s7-g0-t7-QC2": "1027d59eee17743847ff397b450000fccab5ae2107e784446329581a73179b0f",
+        "s7-g0-t7-QC3": "cb95a0df26c73d2a5b5ff3938fc84401f79ad38e3fe6615f80f2b6b29d075cee"
+      }
+    },
+    {
+      "id": "s7-g1-t0",
+      "sha256": "d5a262db6ae56608bcd4e50c562b5f76d0461456d0d91af747fb6b348967229b",
+      "note": "Keepalive/data distinction, single-path outcomes, dual-loss indeterminacy and orphan exclusions reviewed.",
+      "questions": {
+        "s7-g1-t0-Q1": "576aa72523faa88fdb34326a33a63afaae679ee1018e8dbde628246f8712c853",
+        "s7-g1-t0-Q2": "f223bf2294c71ccbe3c2e1c93dbd8b9fc31b9cd179fef87f05dfcb6ce1f3e78b",
+        "s7-g1-t0-Q3": "886b18e3fa844a25b113f0b940827b7ae704b46262a736847e0145f49ad57f18",
+        "s7-g1-t0-Q4": "a567d1593f620431de2ab6c7c75c1f43e07d2b7241a574741850f614b4684449",
+        "s7-g1-t0-Q5": "d63dc204fdec7ac0259d2a0c35affdbd1cb1c0065aa6272dbce4ae19f8aa9f18",
+        "s7-g1-t0-Q6": "4370df97f84443dca7b4f95394376a3baca65708fbbe2a783f13c98d8350cc15",
+        "s7-g1-t0-Q7": "db055f5bc8843e34d8177d28cc25ad7968faf0964d4f127f5822bbe9f47459a6",
+        "s7-g1-t0-Q8": "b9d9032b762e6da423f57d2f9196fcbb96b0856a8dfad2eee4a07537db1d5bfb",
+        "s7-g1-t0-Q9": "dcf5b33ed6df5841d9457e557c1dcc8f3de18ea1caea296774ae45737e318cf4",
+        "s7-g1-t0-Q10": "8f3d5d5511dc8ae37d54725572d7de5bc6660c6b0bf55ef1ad34651b5c56d2fa",
+        "s7-g1-t0-QC1": "3242a0fa8665ea3e046d746acf3b576c3b3fc234cf41b760aa141b81049d8d19",
+        "s7-g1-t0-QC2": "4b553654bdb954e5113ab698860d22ff6a545582f6812d3cfd9c99e3ae19eee2",
+        "s7-g1-t0-QC3": "8bc3da8de397c3cc14ae0e9d2af52e325e6873966956d12c60c18925d0b78748"
+      }
+    },
+    {
+      "id": "s7-g1-t1",
+      "sha256": "9fc906ce32836204d50814e181675927f16501fd8996f5d878585b3fb58ae2ca",
+      "note": "Keepalive/data distinction, single-path outcomes, dual-loss indeterminacy and orphan exclusions reviewed.",
+      "questions": {
+        "s7-g1-t1-Q1": "3ccacb6a0a4d1a116577316f7ecc68b8df40fe510e8679bbb981e31cb1270d13",
+        "s7-g1-t1-Q2": "d080ab58312d36cbad53dad2fe78def0c2da2513be798eb6576e6b934b7963a5",
+        "s7-g1-t1-Q3": "0daddf6ef959c579fd376ef269fda8fd91652e81195695014df69f6c985d9d31",
+        "s7-g1-t1-Q4": "535e8333c7f711f4acfe65fa0d9081bc24c118d4cf8d25046838fff6bbea0c5b",
+        "s7-g1-t1-Q5": "5f59475a895c136083407c0ab965edb8370fd7e52995bd51ebab3a8941188634",
+        "s7-g1-t1-Q6": "45d498172a4184bc116c960986e2812be76e262050b8e4bca2a07d60b406e0c5",
+        "s7-g1-t1-Q7": "bb476c73a35dae6aab82c73649475e9c45b5919e413ad868c25d2f2c831cf83b",
+        "s7-g1-t1-Q8": "d3edcbeb9b33b2d07f4e82dee9a385abb6ce5c030a0c7f7b7bd48102beb7175f",
+        "s7-g1-t1-Q9": "70664cd2eb6b923dc679491536410fc8ebaeb4d11f9524cf30e51f7680f8307a",
+        "s7-g1-t1-Q10": "63e67d31691a3aa0cbd8a8967376998b50a73f55deea354b9d5c1184e4790faf",
+        "s7-g1-t1-QC1": "bc63197c031587320691c669d9077ed95ea071b9f40076bdd6505120f1b13848",
+        "s7-g1-t1-QC2": "24ddfb4aa67588a21e3fa3731962285be4cd371348848ecd972d2a0fac396088",
+        "s7-g1-t1-QC3": "8b0c3c84bc962bb1b2ccf84d6ca08b88f998cf7f6a9f1ff609bae89ad3a5447f"
+      }
+    },
+    {
+      "id": "s7-g1-t2",
+      "sha256": "2b90166210f9f8ce0a840e5b404e8fdadc386d1a1d96417e6d9bcd0b53c8962c",
+      "note": "Keepalive/data distinction, single-path outcomes, dual-loss indeterminacy and orphan exclusions reviewed.",
+      "questions": {
+        "s7-g1-t2-Q1": "f4d9afc07836d4266648a3e931e0730533c1b5eb6ed5723818e5565ad3b9e3bb",
+        "s7-g1-t2-Q2": "bcb6bfffd8aa561be94fef738ec770debbac51fd0893848eea1e078ed16b5d30",
+        "s7-g1-t2-Q3": "4f610dfcd9a16eac8ca841657d0e7a369e850f88b4f0ae326f00e3e938c81dea",
+        "s7-g1-t2-Q4": "08280a323931f2cbbe1c33bc719362e1ed777b238e83eebe9d7cc76ba0db7dbd",
+        "s7-g1-t2-Q5": "fde2ebe320f61b7b667c356c8894a1c2e1bb6135bf17a9b0aa15c81231f02e4a",
+        "s7-g1-t2-Q6": "d6b062a2bbbf422f5df0610cd3739c902e395043fdcc99a6692c14e36f1311e9",
+        "s7-g1-t2-Q7": "8af24a4e1d804911dfdd2eb446e928214a8d612f3f7e16f985eccb619af0542b",
+        "s7-g1-t2-Q8": "94fca2a974e505ba48f8ed1b64a52f9070069a292e007c3d8c723e8a00c054bb",
+        "s7-g1-t2-Q9": "a7461eab095ee9ee9baf1db42f5cb545d52d530a9fa787bd5d54f4c240027746",
+        "s7-g1-t2-Q10": "19e6bff290c75434420a555e7ccf84ae1bbcfcd28773f1cc636a617d118d58fc",
+        "s7-g1-t2-QC1": "417832d36b3a745fbb0ed2f7029ce3f4ccc87491ef5784a825f9b06208386b16",
+        "s7-g1-t2-QC2": "fbc8f3cf5dbe8380f2d970f293ed3cdada3afd82d4d31ace7deffe1648a3eb7c",
+        "s7-g1-t2-QC3": "edc447eacd4701c1a78e3d6e70c78fc554ea34e8c45953328e66fab03eeb1d5f"
+      }
+    },
+    {
+      "id": "s7-g1-t3",
+      "sha256": "236626b46794c451a6d5d2c1284874296c9bf51ee08d88b147366cf3b7745b90",
+      "note": "Keepalive/data distinction, single-path outcomes, dual-loss indeterminacy and orphan exclusions reviewed.",
+      "questions": {
+        "s7-g1-t3-Q1": "5fd3d5de832dfff990ec39558c2b6116f97b94a7c20eeb55007e9cc8165c0f4d",
+        "s7-g1-t3-Q2": "84545b6ea069fdc1009bd664a236eeeebed958861a73e30a30866ae5d08bcab1",
+        "s7-g1-t3-Q3": "085023e7a2b609654d59f7bf0fac65baedc4097bd815dd089c7a679912df529d",
+        "s7-g1-t3-Q4": "9892f0e121404139a880e788d1d8cdd7fc91a789a40e5c3dd80460803321ddd5",
+        "s7-g1-t3-Q5": "ad486b1008287f941560a96c77070c1866ea807572cc9f30d3a1ad62097e13ab",
+        "s7-g1-t3-Q6": "5738c272aa84da9cb7735f6cde7d61ca3798998d60cd1677320aa4124e53ac2a",
+        "s7-g1-t3-Q7": "020133712a0768815b4ccae680c3aebb88cc72078d6be5dc344ba75365e2d279",
+        "s7-g1-t3-Q8": "d5af37e6dc735ab94b067dd86afd13b50d64873a640d504ce8ac03f80f95c754",
+        "s7-g1-t3-Q9": "94856048e8bc1acc6956bc8d6d13b7d04d786b360ab9fe0ce23ea436bebffc19",
+        "s7-g1-t3-Q10": "162014146308cdbe8f37f6cbb6fae47a072429eb77bdd217c8fad9c09e06b2f3",
+        "s7-g1-t3-QC1": "f74eb023e49d0e06d7a925ae0e1e4dad498468510ca6582b343db3079de99f2c",
+        "s7-g1-t3-QC2": "455045360372bcb0e37bf8adb617ab8c7098e29eaabb50b1c1e99d1af56ee9cd",
+        "s7-g1-t3-QC3": "822ae6cabd533aa84885b97de71a7134bff8f2d1a72ed9e0a34bbce8adc0cd66"
+      }
+    },
+    {
+      "id": "s7-g2-t0",
+      "sha256": "5bbd97fc48d3b794c5b5e27c3d4b1fed13456798d775d154990f997c5000e1d1",
+      "note": "FabricPath versus VXLAN, FEX parent path versus replacement identity, and DCI service/data recovery reviewed.",
+      "questions": {
+        "s7-g2-t0-Q1": "b19711016fd3b15ffb2713d3e56a9c2c4144488c05789ae29ad6e7cdaa07c0e2",
+        "s7-g2-t0-Q2": "ffc9c61fe81994484a03645406194089674e4a8ee9a466aedf255467830c5f7f",
+        "s7-g2-t0-Q3": "129678e79b49bd289c1f61ac96743b3494ff19345b881dfda357195e16212f50",
+        "s7-g2-t0-Q4": "709ed51de179530a6502b6c38253f20deb0e84d18ff43d72c95fd517ea5021ce",
+        "s7-g2-t0-Q5": "1e4c2e158ff427f51aac35e18d2eb36217ff8c5f951c8d5607a90c5370abbb94",
+        "s7-g2-t0-Q6": "654e322f2b0b5593b8199aebc3537f6be2e77281777e11b35f2f68c1e3dec3c9",
+        "s7-g2-t0-Q7": "8921353b0f12e16ef82e80633cd537fcec2d097b1d6797625788f86c7ceeaf11",
+        "s7-g2-t0-Q8": "a208def33e16714b53475ae1eb8d046f6f3722b3ef86daf6fcd924ce8c7ac701",
+        "s7-g2-t0-Q9": "57730175dd4c1a7e48561f8ad6e3024168089b0d8ba27f2f8c89b15268e5d8c4",
+        "s7-g2-t0-Q10": "dda27f427793524d93228cb9f43877b2345c16c862b98301e40d6cae23558e9a",
+        "s7-g2-t0-QC1": "645261e2ece6c03261dd43b9c59b72e18b0bc11591e2351a579f222dd7e4de7c",
+        "s7-g2-t0-QC2": "17fd017fc8da9bd51e994ac1615147d0aa853494a40b72c0dfb82f16f029886e",
+        "s7-g2-t0-QC3": "f48227c1d5be0725f366937445dbc9812a8fcef16ed02ea78e3d7941792f4f1b"
+      }
+    },
+    {
+      "id": "s7-g2-t1",
+      "sha256": "db8984c8fcf596a1145c5a948027b42bc5e205b437d326bd4d67f01d9d1253e3",
+      "note": "FabricPath versus VXLAN, FEX parent path versus replacement identity, and DCI service/data recovery reviewed.",
+      "questions": {
+        "s7-g2-t1-Q1": "b1ab6b2859e1eff27427a60432323a2e4f90894083c60c7df89f8eda81f7a1e8",
+        "s7-g2-t1-Q2": "9e828c3ae7c352bbbd51d16a9ed835dc497de181821be7979bf84c33b13e6c69",
+        "s7-g2-t1-Q3": "936d8dd68c87f882b57670c1b36ed1fdbe14c8cb380e6d1579c51530949e2376",
+        "s7-g2-t1-Q4": "f17a88cacf57cce666e25560ea990d665081b4d19759018515cd5638674dab78",
+        "s7-g2-t1-Q5": "9003f1ef8138b4c0caf1f9361eb041ee667d7dd9c67a3857c41ed4ee7ce5b925",
+        "s7-g2-t1-Q6": "ede9775992cbfbccd96438b91697b8c8ad3c96c83b818b894bf7e4086aa834b2",
+        "s7-g2-t1-Q7": "73fab6a946da4f9c7ae27d16d7e388c79d0064ce354849738bf5ab2410478979",
+        "s7-g2-t1-Q8": "8a1705f8b50eccb311d0e41058ad484092bd78d391fbc2f31642235e019dd7ee",
+        "s7-g2-t1-Q9": "8d8414d03014de7d4f76d5adf3894f5af0392ed38a2d6832714f185a1be33f8f",
+        "s7-g2-t1-Q10": "9237ffbe78bb2ed5fcfd2f3b66c9d0f8fdd9ca50938ebab6ee983755425a294a",
+        "s7-g2-t1-QC1": "e5828d490200c1f543d0f922c880ae2a3b014f46a2baff61cb50a317f0cedcb7",
+        "s7-g2-t1-QC2": "f68fed648881b1c04d273657c11eb2d3f333b161ca171838ea11316051a13c5f",
+        "s7-g2-t1-QC3": "1c56d232c532563060ab20b8995bf0860868c260be9ed200cb4b323503743305"
+      }
+    },
+    {
+      "id": "s7-g2-t2",
+      "sha256": "c8162cbfcaf2578dd6a18d32eddf62a70e273a3e4b2ad6a9b5560cd8cdc26f10",
+      "note": "FabricPath versus VXLAN, FEX parent path versus replacement identity, and DCI service/data recovery reviewed.",
+      "questions": {
+        "s7-g2-t2-Q1": "d6f2fe80a9ebee19768dead5878feb2ace421094bb99c7e620a7ca4527bd1fe6",
+        "s7-g2-t2-Q2": "a5ec4b9041c16d73347853b4d2d31251e8b8a438eac02ecb1c385d8a903d8df6",
+        "s7-g2-t2-Q3": "32865677dc683fafc4c787a22565fafdf14058cc9163d012eefcd13877c51f2b",
+        "s7-g2-t2-Q4": "017509760568f6c32e83faed5c30912a9661c5b1b5ef3099c28bab6e65ff8088",
+        "s7-g2-t2-Q5": "d6c91b97d515aa1644d42585c7c281b8797a96a70ce6cbe86c44384721ed275b",
+        "s7-g2-t2-Q6": "d5fd5c0c4c7bf76ccd6462c6254d46bf8a848637247069b34210a4d2d14dc552",
+        "s7-g2-t2-Q7": "6c0db8322876f23b1aaeb81bfac2de8080e93b2b75fe9de349bc00aacd4aa2ca",
+        "s7-g2-t2-Q8": "30e2f1ab9a0b9990f803bb7be4450a4c1b5638bca86deec23cb4fc702aec3e04",
+        "s7-g2-t2-Q9": "17a355b4cd371a4ef288242ab92558f2689ac1d66f02d5cb4c5cc8ee680905b0",
+        "s7-g2-t2-Q10": "f7199afb22c3410306fafe278623c420601d483468a7031edbe1f5e642677de2",
+        "s7-g2-t2-QC1": "0e799b565b0f4733acd330b2fb27e780baa6bee220e5a4826c6dfd2dee88676f",
+        "s7-g2-t2-QC2": "a87daebb46dca59baef6dcdf97181ed68653c42a8fbe8032d6d988252b50f55a",
+        "s7-g2-t2-QC3": "311e0319ae36d84a21c2b7dacc62489ab3c9da907984b8b7804c3771e36fd52d"
+      }
+    },
+    {
+      "id": "s7-g2-t3",
+      "sha256": "e42317d86690b5be09701a455234c7921687385b2bb633526e8bd6b988c439a8",
+      "note": "FabricPath versus VXLAN, FEX parent path versus replacement identity, and DCI service/data recovery reviewed.",
+      "questions": {
+        "s7-g2-t3-Q1": "b963e458ebc79374de9180e5565be5623aab5977679b5d1052dc59b3635b2d79",
+        "s7-g2-t3-Q2": "f3e91941e5cfae59adc33ed72eddaf1bac04ee3e0eeb891091540168725f10ab",
+        "s7-g2-t3-Q3": "96a9bac126f37dc1963afd23195e48152a1c6a06196add297e4075018fb846db",
+        "s7-g2-t3-Q4": "19f6f00d43148dd6dbfe41734ca9deddcf4ccf8178481c839de7fefb3c5f0dd4",
+        "s7-g2-t3-Q5": "2598eda7a9c44fea27d4e58eb16d4ca79c6f62a5111523a20fab52836844b4dd",
+        "s7-g2-t3-Q6": "245d65d636c6ed87cc2dc784be5f77ccc3b630a1d0374dd59963acc789df03be",
+        "s7-g2-t3-Q7": "4d6906c0027aec2b0a4d2deec24665e77e6f090b004ad6adf3990bb8062c6198",
+        "s7-g2-t3-Q8": "808155b0efd5ffe1328db146820ddaab8421bd595c5237ff5900d63cd48c2fb3",
+        "s7-g2-t3-Q9": "305a33dd535a101170d30ecf66263257cdce77e4bf7ecf04ecdba45430aa85ac",
+        "s7-g2-t3-Q10": "e604628802f33248cfa23ac582bb0aecc86a39c0961b53481d4d943cddf148fd",
+        "s7-g2-t3-QC1": "9650e7c60d3a324905422ec85971306fae44d871826f17500acb08785b1651ea",
+        "s7-g2-t3-QC2": "a1f5a8045c45daae78d1b56ce9384deff8d986bf0465f4572491d9447ae937f2",
+        "s7-g2-t3-QC3": "570ccdc3e9ada0f2e1ba4302a5f8c000f9dc6fbd9e7b26535b48660b7243dd5f"
+      }
+    },
+    {
+      "id": "s7-g3-t0",
+      "sha256": "6dcd3b29c0fe1e56028c9a689e21dece22fe017d34ffea5c3b6183f3d9c6e9ef",
+      "note": "Outer-IP/FCS arithmetic, VNI mapping versus capacity, and tunnel versus management identity reviewed.",
+      "questions": {
+        "s7-g3-t0-Q1": "e4f86f50561390b16d344894ef4f572de6019dc60fbb7ab68d8e66c283f8dcf3",
+        "s7-g3-t0-Q2": "6d0b22aeb8456a0040eb39675b2f2a11fbeb5af3846d517417535eafbf570958",
+        "s7-g3-t0-Q3": "5263e08e7f226817b7ffe0d5d003ea4d2aba1c9fb98794fa236ae2976ed685b0",
+        "s7-g3-t0-Q4": "3ed3f2e46b61771dd6e1625945b1d0ec39891cdeb7d8e1eca4ed1c209b32f1d4",
+        "s7-g3-t0-Q5": "fac89716cd0f57626481bb02ebd9694419a917c6196c3f950ece5afd8b592b6d",
+        "s7-g3-t0-Q6": "791527d3dc6c80d305c187e949c937a994d291273406bb5af04ffc24e9a86f46",
+        "s7-g3-t0-Q7": "80e97b0446743cccf2269449b56f880e54d916d176e1541b57c9d84f0ffc5df5",
+        "s7-g3-t0-Q8": "0e3cbdc941cda5aded000e15e8d1605826e988d9b872297bf7d998df35284bc4",
+        "s7-g3-t0-Q9": "c7c90b7e521a927c6b6d0842a3a0f5824259b1658de91fa53017c118f8a55c72",
+        "s7-g3-t0-Q10": "324cbf826518788c42b67d14672f1bd368e6740dd34c26da930b8d3b71b20eee",
+        "s7-g3-t0-QC1": "261bf03bcd3b956dc9085f1e58f1ed39782f0e6d562565e7a0ff044f0ca411da",
+        "s7-g3-t0-QC2": "e5c1c0a9ee9eff2b7da551fe205e3e5039bd2c82482b0e2126f69180a0cbae7b",
+        "s7-g3-t0-QC3": "14e2b465eebacff6cde325960f52ebea95fd31216cea5888bbc6ec3add97ede7"
+      }
+    },
+    {
+      "id": "s7-g3-t1",
+      "sha256": "e5e02203910370cec3b12a26d53b64c7c55748d7cd76c01c6f666d608d250752",
+      "note": "Outer-IP/FCS arithmetic, VNI mapping versus capacity, and tunnel versus management identity reviewed.",
+      "questions": {
+        "s7-g3-t1-Q1": "1d572a86552b3acca638a16709d06d24ba9692618d749e4d7232499963417c39",
+        "s7-g3-t1-Q2": "6ef0e5a40b9a72e9e82760049bad28c7c680b6ceaf48c76f3e616d2e50944e2e",
+        "s7-g3-t1-Q3": "d444ad242198cb672fb3e429c6500104df28d7e9eba4d2ae2209032d3fb7a363",
+        "s7-g3-t1-Q4": "ad832c801e3173b09aaabf109cc086a092bb75b867a6dbfdd6592155c9fa45c1",
+        "s7-g3-t1-Q5": "54b1893a6fe285c96b49b8ce3290451f43340e08787f42117e7d7a9fe0d38df2",
+        "s7-g3-t1-Q6": "c8774c29dfbffa1b342e83e1ce799316ed298061655057aa2238c1574ac84b72",
+        "s7-g3-t1-Q7": "281095542c6ddcb20d5ada14ad6c9eea29760f70e382256c94caf4a3a6318105",
+        "s7-g3-t1-Q8": "f29fd16b9b19c00858452611723fdc6e00a2e1cba8138554064f460b6b1b049a",
+        "s7-g3-t1-Q9": "eda7b6b6d4bf1ffd0e7c78cba7baadc48549f2d4ae023bdbc9f47e8836bc735c",
+        "s7-g3-t1-Q10": "ee8aec74e917ae1aee75a69f4bc8c10dc353616f93b8a8c37fa9c199aec57f07",
+        "s7-g3-t1-QC1": "1ed7447f818376148a4f7c5ba4ba38bac577177c0bb233a0a3f910a6a9ec9589",
+        "s7-g3-t1-QC2": "d8d1249c1faa0fc9ac20f556d6dea1af998901fc25788d41252f7899244ad814",
+        "s7-g3-t1-QC3": "f9091d9ed90e70b076b1b74e1b9befd1ffbd2b89cb774a9df28dcb2a99f6351a"
+      }
+    },
+    {
+      "id": "s7-g3-t2",
+      "sha256": "beb25538ba5fed844bccc487f7edbefbe06e18ed7242e23bec67e083d063b85d",
+      "note": "Outer-IP/FCS arithmetic, VNI mapping versus capacity, and tunnel versus management identity reviewed.",
+      "questions": {
+        "s7-g3-t2-Q1": "9ee9734d9a6b294d2af72638272768e32df908407cbdaf0e5d485535c18fe1d7",
+        "s7-g3-t2-Q2": "3584490855a3bf7fdfa70022e2d2e3e605863aa718038c697369c35cfbb17cf4",
+        "s7-g3-t2-Q3": "0548041240049f43ec1cbfa431da1c75d3df93ec94b4da993b7613ca3d7fdbdb",
+        "s7-g3-t2-Q4": "1fdd98be7b94aa9a5cf92e629a3a9cb5cdcf20f8bd802ab3983cbf9f7e81f985",
+        "s7-g3-t2-Q5": "f3923882d31bd222609bebe9b6cd1cba24704e3f44ff968f89ab98c0f57ffdd6",
+        "s7-g3-t2-Q6": "f246a75211b2ba5acad585fa9305f8e868e4837480b96f2ea49b6274a83e4320",
+        "s7-g3-t2-Q7": "5bbf03169cef9c2fc131fe61b092ba2855551218aac7682916086b1aa5e11d2d",
+        "s7-g3-t2-Q8": "62213194c8bfc13ebfba73204dafd389676c82c0105e46cdf94da1c39884c474",
+        "s7-g3-t2-Q9": "a50b8a603f9379d309364adbac32382ccfaba7f6c2207387bacb5ae08a41d785",
+        "s7-g3-t2-Q10": "e9a10951ae0efb8d6b8a86d2cb3eb0a39e5886a66f25074cb5e9e0bd95cfc0c2",
+        "s7-g3-t2-QC1": "c8930502c0ab409d963f8746faf770472fb83282505fb0dd7ec335ea33c26e45",
+        "s7-g3-t2-QC2": "a918926b9f8772f1401ad58f2658bdb34e85c897c85954feb1bb78e5c6222780",
+        "s7-g3-t2-QC3": "4a9d06e98295bcf9bed14ca01b477a3a6119cdad869ff24336b39135deafb338"
+      }
+    },
+    {
+      "id": "s7-g4-t0",
+      "sha256": "88691eeae3cbec754fab6650c0593bba36eab56e084f0230225b452423a12ea7",
+      "note": "RD/RT distinction, type-2/type-3 scope, session/family separation and aggregate capacity limits reviewed.",
+      "questions": {
+        "s7-g4-t0-Q1": "b8d035d1a3d2ef5b4801c4ec5c8d0255f1065d2849ae8be0af63ee34a1c099c5",
+        "s7-g4-t0-Q2": "dd03e2ad5d5b6d373a62abd53670b7a69f471d9e1eac5badec81eb4a582169e8",
+        "s7-g4-t0-Q3": "0bc4068424fc8466a2a4c2aa1b3d77e16355916f8cb9d3011c9901ae3c96776d",
+        "s7-g4-t0-Q4": "3cca1e2af91b10a9029f49b85902b7a93f0307f8b94fa787402ed8e7fe932533",
+        "s7-g4-t0-Q5": "5417c42e3484338577068601c1f47e225a3671b4a2214ee8941ca9d224fcb665",
+        "s7-g4-t0-Q6": "7dbe5ed28dabf393c8cdef7fadd3cb12c50106b8a6304f1deec26bc1fe18aefa",
+        "s7-g4-t0-Q7": "1fff6aaa98a0a358e7c517bfe80d1ba230055081eba8f4cd795d72128810ab73",
+        "s7-g4-t0-Q8": "abea11f6f3db89c49c4a9856d6891aacb4b941a0eac03f6fa5e004854e5da142",
+        "s7-g4-t0-Q9": "479d3a70fdbb20407173c7ffc1e8cd77e01a64f5e7b047b28cb297b28cf287b1",
+        "s7-g4-t0-Q10": "180a11dcf4db94a540eba284bea0f2d197e2fec3b151248775994f63ec65eb65",
+        "s7-g4-t0-QC1": "cc31f471e065d7703f6ec355ab7db638557ef8138832439854a3926075e921b9",
+        "s7-g4-t0-QC2": "c66e26288fcec99c82e32eb1ffdb7bdfd8c6d1ea7947f40ede0262be581a15c6",
+        "s7-g4-t0-QC3": "57109075ce2fac9e83cc6d665761402c26833a2e3f0d5218bdb977a9ebc6111a"
+      }
+    },
+    {
+      "id": "s7-g4-t1",
+      "sha256": "4f88135bbaa870978559459b7dd6a7f1423f7a874f69859da5a611f18c7e861c",
+      "note": "RD/RT distinction, type-2/type-3 scope, session/family separation and aggregate capacity limits reviewed.",
+      "questions": {
+        "s7-g4-t1-Q1": "6481bed70761de137a271a0559c980bb705d01e1f0b7cf385df8da69d5c53179",
+        "s7-g4-t1-Q2": "0eb8fe3ab6c32401e92db93f48a09447c06f63509cdca4fb380a8099d772202c",
+        "s7-g4-t1-Q3": "361bddd424c7d6ad5353f2c3d4d8437c285387ddf2090fc1daf31ded0b4fdcae",
+        "s7-g4-t1-Q4": "88aedde4eceee862c04d0f43fc93cec9ad8dbf1e61a2991d6d961ff695c95317",
+        "s7-g4-t1-Q5": "7704ccc6e7ddc7816bda6c001cad60a8c4a65af222e09b604cacbf666ae9feeb",
+        "s7-g4-t1-Q6": "a0e4172506108490f5a0ef9456725b43cfe295241fe04b6fa3f10abe1e4f619b",
+        "s7-g4-t1-Q7": "df5a8dd5033fcdc832d69c7efe14f9e0d64e88e46688be8892a1ab0619ba9eed",
+        "s7-g4-t1-Q8": "4264f968fbb2c64322b0afb0b65612a5b5b0778b755458f3bf09ee84083c32c0",
+        "s7-g4-t1-Q9": "f72dd0fb316edeaf3edc69f7264f84f9ecf55dadd1baf96598750720faf3cf7b",
+        "s7-g4-t1-Q10": "edfaf756a8542c50e09435692c7e1ed95700b78b32e2eb028313ef13ee48c5a1",
+        "s7-g4-t1-QC1": "26a1d0cf6c7176752232e1fa4b1db9524f1c08a09df94a95ef2974774edd817d",
+        "s7-g4-t1-QC2": "5daf80b18e37903ec74b94fce8fd0a687e3ed5195da1e147c3f1459f54d5155d",
+        "s7-g4-t1-QC3": "2544c9b9aa2abddf44e859de36312dc67fd08a6c2d34d914086a1a0dee43b889"
+      }
+    },
+    {
+      "id": "s7-g4-t2",
+      "sha256": "2280cfdac5cacd7ecd4c3be600e50bfb255f7c19ce507a7538dd624bcc78c1b1",
+      "note": "RD/RT distinction, type-2/type-3 scope, session/family separation and aggregate capacity limits reviewed.",
+      "questions": {
+        "s7-g4-t2-Q1": "147cef5f4e9abb0528547d83208d626e5d3d9ba0bba03d0687933b3963a0bf74",
+        "s7-g4-t2-Q2": "d860fbb66b1dea29a15604bba23b1f86861e242189484091469f24e5ca72cfe8",
+        "s7-g4-t2-Q3": "8bb82fbb8e9c0d09b358cba52e86a36bf94c53964ee7f1945a91f5c050a4410b",
+        "s7-g4-t2-Q4": "0dd0da32c587d281d38c1d6703fdae3367737cc24318f2e802f41ed7830e0451",
+        "s7-g4-t2-Q5": "2ca60c58c2d9de0080c6b8e9a1c45e677a2137d027bfa05e2337dfda1c9f2a40",
+        "s7-g4-t2-Q6": "1b812d26c1bd7dd61e86de5cdd1b2b21fe46ddcffe1b127b90ef3dc3472c684e",
+        "s7-g4-t2-Q7": "993f7c0c7282c66e3e64044e3ec840fa24f13be5f6193320caf35c1c0dc7a539",
+        "s7-g4-t2-Q8": "c79c146fd4792f7a814ff6106536cafda81005a4ce020a30b8ec89b8004a9ef5",
+        "s7-g4-t2-Q9": "63eaa8ea6fb36c344ccfdc9cb6dda37e5ae4180f58f2d0d71f48fcfc64f61955",
+        "s7-g4-t2-Q10": "0b8bfc316ba058bb57be3cf852b0fba998b4434024953a0298c6d22d9be0166f",
+        "s7-g4-t2-QC1": "d581acc110a38ef8c199379ff8225f4a85fc02b74a8580d4768c050554328b61",
+        "s7-g4-t2-QC2": "ce1ca4c45322be2e0c401812d5d28f020e61612e5fdacb331472a57241c4446f",
+        "s7-g4-t2-QC3": "6ad76670956a622e7ee92480ee3966131ad258a37f911b26afc1b40df9b4d9ae"
+      }
+    }
+  ],
+  "visual": {
+    "captures": 66,
+    "contactSheets": 6,
+    "findings": [
+      "Dark inputs needed explicit theme colors; fixed and re-inspected.",
+      "VNI now has a dedicated VLAN/VNI mapping relation.",
+      "Tables intentionally scroll at 320px; start/end access tested.",
+      "Diagram labels now name the topic components; static sequence remains available."
+    ]
+  },
+  "resolved": [
+    "Replaced blanket predecessor prerequisites with topic-specific links.",
+    "Separated guided Cisco command review from actual execution.",
+    "Replaced glossary-like lab paths with actual target/observer paths."
+  ],
+  "limits": [
+    "No Cisco target, hardware forwarding, FCoE login, FEX replacement or mode conversion executed.",
+    "Written questions use explicit model-answer self-assessment, not automatic scoring.",
+    "Models cover declared relations only; no convergence or production performance claim.",
+    "Direct Cisco HTTP fetches returned 403; web source access succeeded as documented.",
+    "Responsive/keyboard/contrast checks are not a full WCAG certification."
+  ]
+}

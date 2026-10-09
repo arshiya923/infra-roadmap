@@ -1,0 +1,599 @@
+{
+  "date": "2026-10-09",
+  "scope": "All 210 exam prompts/answers/explanations in accepted Batch 07 reviewed; 42 revised with original IDs preserved",
+  "status": "QUESTION_REVIEW_COMPLETE_BATCH_ACCEPTED",
+  "reviewedQuestions": 210,
+  "revisedQuestions": 42,
+  "preservedQuestionIds": true,
+  "entries": [
+    {
+      "topicId": "s2-g0-t0",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Command rejection",
+          "question": "An authorized operator pastes a switchport command into a virtual router and receives a rejection. Which contexts should be checked before diagnosing a software defect?",
+          "answer": "Check actual platform/release, parser mode, feature support and command authorization.",
+          "explanation": "A familiar IOS XE prompt does not establish support for physical switchport semantics.",
+          "type": "short-answer",
+          "topicId": "s2-g0-t0",
+          "questionId": "s2-g0-t0-Q04"
+        },
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Control and forwarding",
+          "question": "Management CLI responds normally while a required transit flow drops packets. What two evidence categories should the incident record separate?",
+          "answer": "Control/management responsiveness and actual interface/forwarding/service observations.",
+          "explanation": "Use the failed transaction and relevant counters rather than treating prompt response as transit health.",
+          "type": "short-answer",
+          "topicId": "s2-g0-t0",
+          "questionId": "s2-g0-t0-Q06"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g0-t1",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Navigation and persistence",
+          "question": "After description Practice and end, running shows Practice but startup has no description. What did end accomplish, and what remains a separate decision?",
+          "answer": "It returned to privileged EXEC; saving the intended active state remains separate.",
+          "explanation": "Navigation does not copy running state into the saved snapshot.",
+          "type": "short-answer",
+          "topicId": "s2-g0-t1",
+          "questionId": "s2-g0-t1-Q08"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Exact rollback",
+          "question": "A real lab interface originally had description Uplink-A. After an experiment, what restores that field more accurately than simply no description?",
+          "answer": "Reapply the recorded description Uplink-A and verify active and intended saved state.",
+          "explanation": "Removing the field does not reconstruct a previous custom value.",
+          "type": "short-answer",
+          "topicId": "s2-g0-t1",
+          "questionId": "s2-g0-t1-Q10"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g0-t2",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Configuration versus tables",
+          "question": "The expected route is absent from the forwarding path. Why is show running-config insufficient to establish the learned route state, and what evidence is needed?",
+          "answer": "It reports configuration rather than a complete dynamic route table; inspect applicable operational routing/forwarding state and the failed flow.",
+          "explanation": "Configured protocol intent and installed operational routes are distinct observations.",
+          "type": "short-answer",
+          "topicId": "s2-g0-t2",
+          "questionId": "s2-g0-t2-Q04"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Merge residue",
+          "question": "A startup-to-running merge restores the hostname but leaves a temporary interface description absent from the saved baseline. What explains the residue and what is the scoped repair?",
+          "answer": "Merge retains unrelated active commands; remove that description explicitly in the correct interface context and verify the intended baseline.",
+          "explanation": "A merge is not a universal exact replacement; restore a prior custom description instead when that was the actual baseline.",
+          "type": "short-answer",
+          "topicId": "s2-g0-t2",
+          "questionId": "s2-g0-t2-Q08"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g0-t3",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Copy direction",
+          "question": "Running contains hostname New while startup contains hostname Saved. In the teaching merge, what is the hostname after copy startup-config running-config, and what may remain?",
+          "answer": "The hostname becomes Saved; unrelated extra active commands can remain.",
+          "explanation": "The saved source applies commands into running state without guaranteeing exact replacement.",
+          "type": "short-answer",
+          "topicId": "s2-g0-t3",
+          "questionId": "s2-g0-t3-Q08"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Persistence sequence",
+          "question": "The hostname changed only in running state. Predict the model result after reboot without saving, then after an intentional running-to-startup save and reboot.",
+          "answer": "Without saving the prior saved hostname returns; after the intentional save the new saved hostname returns.",
+          "explanation": "The bounded model reloads its saved snapshot; actual boot and service still require target evidence.",
+          "type": "short-answer",
+          "topicId": "s2-g0-t3",
+          "questionId": "s2-g0-t3-Q09"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g1-t0",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Selected fields",
+          "question": "For 0x2142 in the selected router decoder, what are the boot-field value and startup-ignore bit?",
+          "answer": "Boot field 2; bit 6 is set.",
+          "explanation": "The least significant nibble is 2 and masking with 0x0040 selects bit 6; other bits remain outside the decoder.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t0",
+          "questionId": "s2-g1-t0-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Bit comparison",
+          "question": "Which selected field changes between 0x2142 and 0x2102, and which selected field stays the same?",
+          "answer": "Bit 6 changes; the low four-bit boot field stays 2.",
+          "explanation": "Their XOR is 0x0040, so this comparison does not change the selected boot nibble or describe all platform policy.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t0",
+          "questionId": "s2-g1-t0-Q07"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g1-t1",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Policy versus artifact",
+          "question": "A selected artifact exists but the device stops under intentional manual boot policy. What should be investigated before replacing software?",
+          "answer": "Confirm exact platform boot policy, intended maintenance state and relevant messages.",
+          "explanation": "A policy stop is different evidence from a missing or invalid artifact.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t1",
+          "questionId": "s2-g1-t1-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Recovery checkpoint",
+          "question": "The selected manifest is missing in the inspected member view, while a different image file exists. What is the narrow conclusion and next inspection?",
+          "answer": "The selected manifest is unavailable there; inspect intended member/path, package dependencies and supported boot selection.",
+          "explanation": "Another file does not by itself establish a compatible complete boot path or justify formatting storage.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t1",
+          "questionId": "s2-g1-t1-Q09"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g1-t2",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Service timing",
+          "question": "An authorized observation records SSH usable at 40 seconds and the required application usable at 95 seconds. What timing belongs to each objective and what gap remains to investigate?",
+          "answer": "Management availability is 40 seconds, application availability is 95 seconds, with a 55-second gap between those observations.",
+          "explanation": "These are distinct service criteria; investigate later dependencies rather than calling the earlier prompt full recovery.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t2",
+          "questionId": "s2-g1-t2-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Checkpoint reasoning",
+          "question": "The OS loads but intended saved configuration is ignored. Which checkpoints are proven and which should be checked next?",
+          "answer": "OS loading is proven; inspect startup-selection/ignore policy, intended active configuration and the original service.",
+          "explanation": "An OS banner does not establish that saved intent was applied.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t2",
+          "questionId": "s2-g1-t2-Q07"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g1-t3",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Capacity aliases",
+          "question": "Two observed prefixes are aliases of one filesystem with 899 MB free. What capacity is available, and why is 1,798 MB unsupported?",
+          "answer": "899 MB in that one filesystem; adding the alias counts the same capacity twice.",
+          "explanation": "Inventory names must be mapped to actual storage identity before planning space.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t3",
+          "questionId": "s2-g1-t3-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Path dependency",
+          "question": "An incident reports a missing relative file but omits the working directory and member view. Which missing context prevents a reproducible lookup?",
+          "answer": "The exact target/member, filesystem prefix, working directory or resolved absolute path, time and lookup result.",
+          "explanation": "Relative references and member views can identify different objects.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t3",
+          "questionId": "s2-g1-t3-Q10"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g1-t4",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Peak shortfall",
+          "question": "The fixture has 899 MB free and an authored peak additional requirement of 1,100 MB. What is the initial shortfall, and what headroom follows the eligible 400 MB selection?",
+          "answer": "Initial shortfall 201 MB; hypothetical available space becomes 1,299 MB, leaving 199 MB over the stated requirement.",
+          "explanation": "The arithmetic uses decimal MB and only the reviewed eligible copy; fit is not full installation readiness.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t4",
+          "questionId": "s2-g1-t4-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Protected dependencies",
+          "question": "A running device has active packages, an intended rollback image and an old unclassified file. Which of these can the planner count as safely reclaimable without further evidence?",
+          "answer": "None of them under the stated protection and unknown-dependency rules.",
+          "explanation": "Age and current execution do not establish future-boot, rollback or retention eligibility.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t4",
+          "questionId": "s2-g1-t4-Q09"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g1-t5",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Streaming cost",
+          "question": "A hash checker streams a file in bounded chunks. What happens to memory use and total bytes read as the file grows?",
+          "answer": "Chunk buffering bounds working memory, while the complete comparison still reads every file byte.",
+          "explanation": "Streaming changes resource use, not the need to consume the full content.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t5",
+          "questionId": "s2-g1-t5-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Result classification",
+          "question": "The local audit returns 0, 1 or 2. What distinct outcomes must a wrapper preserve?",
+          "answer": "0 is a digest match, 1 a valid comparison mismatch, and 2 invalid input or access failure.",
+          "explanation": "A failed comparison and a comparison that could not run require different follow-up; none is a Cisco signature or boot result.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t5",
+          "questionId": "s2-g1-t5-Q10"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g1-t6",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Dependency diagnosis",
+          "question": "Install intent references packages.conf, which exists with package A but lacks referenced package B. What is the first unresolved dependency?",
+          "answer": "Completeness of the selected manifest/package set in that storage view.",
+          "explanation": "Do not turn one missing dependency into a claim that every artifact is corrupt or that bundle mode is active.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t6",
+          "questionId": "s2-g1-t6-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Member readiness",
+          "question": "Member 1 has its intended manifest and packages; member 2 has only a staged .bin. What additional evidence is required for intended install-mode startup on member 2?",
+          "answer": "Its supported installed package set, selected manifest/boot reference and actual member-specific state.",
+          "explanation": "A staged input file is not the complete install reference or evidence that every member is ready.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t6",
+          "questionId": "s2-g1-t6-Q09"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g1-t7",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Transfer and retention",
+          "question": "A backup arrives through encrypted transport but its destination is broadly readable. Which control gap remains?",
+          "answer": "Protection of retained artifacts and destination access.",
+          "explanation": "Transport protection does not establish confidentiality or usable authorized recovery after storage.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t7",
+          "questionId": "s2-g1-t7-Q05"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Recovery record",
+          "question": "A scoped restore drill retrieves valid artifacts and restores settings, but the original transaction fails. What should the result record say and what follows?",
+          "answer": "Configuration restoration was observed, service recovery remains failed; locate the demonstrated dependency and repeat the original service probe after repair.",
+          "explanation": "Keep intermediate success separate from the defined recovery objective.",
+          "type": "short-answer",
+          "topicId": "s2-g1-t7",
+          "questionId": "s2-g1-t7-Q07"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g2-t0",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Failure location",
+          "question": "Same-domain traffic worked until VLAN 10 was removed from one Linux trunk endpoint, while carrier stayed UP. Which checkpoint failed and what verifies repair?",
+          "answer": "VLAN-specific trunk membership failed; restore that membership and repeat positive delivery plus cross-domain isolation probes.",
+          "explanation": "A physical UP flag does not establish VLAN carriage, and repair must preserve separation.",
+          "type": "short-answer",
+          "topicId": "s2-g2-t0",
+          "questionId": "s2-g2-t0-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Domain identity",
+          "question": "Two switches display the same VLAN name but use IDs 10 and 20 on the intended path. What should be compared before treating their endpoints as one domain?",
+          "answer": "Actual VLAN IDs, port/trunk membership and forwarding/path context.",
+          "explanation": "A human-readable name is not the on-path classification identifier.",
+          "type": "short-answer",
+          "topicId": "s2-g2-t0",
+          "questionId": "s2-g2-t0-Q08"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g2-t1",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Wrong membership",
+          "question": "An ordinary untagged workstation expected in VLAN 10 enters an actual access port assigned VLAN 20. What is its selected classification and the first evidence to inspect?",
+          "answer": "It is classified in data VLAN 20; confirm the actual connected interface and its operating access membership.",
+          "explanation": "Addressing or a port label does not override ordinary ingress classification.",
+          "type": "short-answer",
+          "topicId": "s2-g2-t1",
+          "questionId": "s2-g2-t1-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Unavailable VLAN",
+          "question": "The intended interface has access VLAN 10 configured, but that VLAN is unavailable. What is the unresolved prerequisite?",
+          "answer": "Operational VLAN availability and applicable port/forwarding state.",
+          "explanation": "The configuration line alone is insufficient; repair must follow exact supported target state.",
+          "type": "short-answer",
+          "topicId": "s2-g2-t1",
+          "questionId": "s2-g2-t1-Q08"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g2-t2",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Allowed-set replacement",
+          "question": "A trunk currently permits 10,20,30. What is the intended set after the bare assignment switchport trunk allowed vlan 10,20, and which prior service could be affected?",
+          "answer": "The configured set becomes 10 and 20; required VLAN 30 carriage may be removed.",
+          "explanation": "Bare assignment replaces the set rather than adding entries, so inspect prior intent before applying it.",
+          "type": "short-answer",
+          "topicId": "s2-g2-t2",
+          "questionId": "s2-g2-t2-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Native reclassification",
+          "question": "In the ordinary untagged-native exercise, S1 sends VLAN 10 untagged and S2 native is 20. What classification and verification warning follow?",
+          "answer": "S2 classifies it in VLAN 20; unintended cross-domain eligibility is a segmentation fault, even if a destination receives it.",
+          "explanation": "The model assumes forwarding ports; real inconsistency handling can block the path and must be inspected separately.",
+          "type": "short-answer",
+          "topicId": "s2-g2-t2",
+          "questionId": "s2-g2-t2-Q10"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g2-t3",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "DTP prerequisites",
+          "question": "Dynamic desirable and dynamic auto are selected, but the established domain contexts mismatch. What does the teaching table resolve, and what stays independent for fixed modes?",
+          "answer": "The selected dynamic endpoints resolve to access; fixed local access/trunk roles remain their configured roles.",
+          "explanation": "This is an established-domain prerequisite model, not domain learning or real packet/timer execution.",
+          "type": "short-answer",
+          "topicId": "s2-g2-t3",
+          "questionId": "s2-g2-t3-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Control function",
+          "question": "A learner needs both usable trunk roles and intended VLAN database distribution. Which distinct mechanisms and observations should the plan separate?",
+          "answer": "DTP role negotiation or explicit supported roles, VTP database participation, and actual VLAN carriage/service evidence.",
+          "explanation": "Trunk role, database state and data forwarding are separate checkpoints.",
+          "type": "short-answer",
+          "topicId": "s2-g2-t3",
+          "questionId": "s2-g2-t3-Q08"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g2-t4",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Pruning versus policy",
+          "question": "A team proposes VTP pruning as the authorization boundary between endpoint groups. What intended function and separate requirement should the review identify?",
+          "answer": "Pruning limits applicable eligible flooded traffic; endpoint/service authorization needs its own routing/access/security policy.",
+          "explanation": "Do not use pruning as a claim that all unauthorized unicast or service access is denied.",
+          "type": "short-answer",
+          "topicId": "s2-g2-t4",
+          "questionId": "s2-g2-t4-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Versioned authority",
+          "question": "A VTP 3 server is synchronized but is secondary for the selected database. What is missing for an intended new database update?",
+          "answer": "Current applicable primary update authority and the supported authorized change procedure.",
+          "explanation": "Server labeling and synchronized receipt do not alone establish update authority; no takeover is performed by the case.",
+          "type": "short-answer",
+          "topicId": "s2-g2-t4",
+          "questionId": "s2-g2-t4-Q10"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g2-t5",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Media versus registration",
+          "question": "The phone registers but audio is one-way. Which path evidence should be collected before declaring VLAN configuration a complete repair?",
+          "answer": "The intended bidirectional media path, applicable policy and actual quality/traffic observations.",
+          "explanation": "Registration and QoS marks do not prove usable media or end-to-end scheduling under load.",
+          "type": "short-answer",
+          "topicId": "s2-g2-t5",
+          "questionId": "s2-g2-t5-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Observed phone framing",
+          "question": "Data VLAN is 10 and intended separate voice VLAN is 20, but the phone has not learned policy and its observed ordinary traffic is untagged. What classification and next evidence apply in the selected case?",
+          "answer": "Ordinary untagged traffic follows data/access VLAN 10; inspect actual supported discovery/provisioning and phone framing.",
+          "explanation": "Configured voice intent does not show that the endpoint applied VLAN 20; priority/alternate framing is outside this exercise.",
+          "type": "short-answer",
+          "topicId": "s2-g2-t5",
+          "questionId": "s2-g2-t5-Q10"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g3-t0",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Traffic concentration",
+          "question": "Both members are bundled but several selected flows share one egress member. What evidence should precede changing distribution policy?",
+          "answer": "Actual hash/distribution policy, relevant traffic inputs and per-member counters over the same interval, plus service/load observations.",
+          "explanation": "Counter skew can reflect assignment rather than a defective cable; the exercise computes no vendor hash.",
+          "type": "short-answer",
+          "topicId": "s2-g3-t0",
+          "questionId": "s2-g3-t0-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Capacity policy",
+          "question": "An explicit LACP minimum-two group loses one of its two members. What happens in the authored case despite the remaining carrier?",
+          "answer": "The logical port-channel becomes inactive because only one active bundled member remains.",
+          "explanation": "The supported threshold intentionally prevents operation below its stated requirement; this is not a universal default.",
+          "type": "short-answer",
+          "topicId": "s2-g3-t0",
+          "questionId": "s2-g3-t0-Q08"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g3-t1",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Mode and path",
+          "question": "Active/passive modes are compatible, but member settings differ and the checker marks them incompatible. Which target observations are needed before fixing or forcing grouping?",
+          "answer": "Both peer/member configuration and operational role/neighbor/member evidence under the exact supported procedure.",
+          "explanation": "Mode eligibility cannot repair inconsistent settings, and static on is not a generic safe workaround.",
+          "type": "short-answer",
+          "topicId": "s2-g3-t1",
+          "questionId": "s2-g3-t1-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Selected capacity",
+          "question": "A group shows two bundled members and one hot-standby. Which members can be counted as current active participation, and what remains separate?",
+          "answer": "The two bundled members; standby is a different role, while payload throughput and service still need measurement.",
+          "explanation": "Configured total member count does not equal current active aggregate capacity.",
+          "type": "short-answer",
+          "topicId": "s2-g3-t1",
+          "questionId": "s2-g3-t1-Q08"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    },
+    {
+      "topicId": "s2-g3-t2",
+      "questionReview": "Reviewed all ten prompts, answers and explanations; revised two for applied reasoning",
+      "replacements": [
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Command context",
+          "question": "A transcript contains switchport mode dynamic desirable but no PAgP member evidence. Which function is represented and which observations establish aggregation separately?",
+          "answer": "The command represents DTP trunk intent; inspect actual PAgP channel-group, neighbor/internal and bundle/member state separately.",
+          "explanation": "The same desirable word belongs to distinct control functions.",
+          "type": "short-answer",
+          "topicId": "s2-g3-t2",
+          "questionId": "s2-g3-t2-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Peer protocol mismatch",
+          "question": "Local PAgP desirable faces a peer supporting LACP only. What supported planning correction should precede another test?",
+          "answer": "Coordinate a mutually supported formation method and compatible intended member topology on both ends.",
+          "explanation": "Changing only LACP active/passive cannot make it negotiate PAgP; do not force static on to conceal the mismatch.",
+          "type": "short-answer",
+          "topicId": "s2-g3-t2",
+          "questionId": "s2-g3-t2-Q09"
+        }
+      ],
+      "remainingReview": "None for Batch 07 acceptance; execution limits documented separately",
+      "technicalLabReview": "Reviewed in docs/review-batch-07.json; technical, lab and manual rendering review complete"
+    }
+  ],
+  "limits": "Human editorial judgment and scoped sources/model evidence, not a psychometric evaluation, certification frequency claim or vendor execution. This record does not accept Batch 07."
+}

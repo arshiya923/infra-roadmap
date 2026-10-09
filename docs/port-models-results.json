@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "cases": 4608,
+  "checks": [
+    "Independent source/wire/receive/destination truth table",
+    "Native mismatch can reclassify into another domain",
+    "Shared native-tag policy preserves selected VLAN",
+    "Invalid inputs rejected"
+  ],
+  "limits": "Ordinary-frame teaching path only; no actual Cisco forwarding, control protocols or native-tag platform execution"
+}

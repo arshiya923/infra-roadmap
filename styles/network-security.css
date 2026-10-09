@@ -1,0 +1,10 @@
+#nsec-tool {min-width:0;overflow-wrap:anywhere}
+#nsec-tool fieldset {margin:1.2rem 0;border:1px solid var(--line);padding:1rem;min-width:0}
+#nsec-tool label {display:block;margin-bottom:.4rem}
+#nsec-tool input:not([type=checkbox]),#nsec-tool select {max-width:100%;width:100%;box-sizing:border-box;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:.55rem}
+#nsec-tool input[type=checkbox] {width:auto}
+#nsec-tool .comparison-scroll {overflow-x:auto;max-width:100%}
+#nsec-tool table {min-width:650px}
+#nsec-error {color:var(--amber)}
+#nsec-tool details {margin-top:1rem}
+#nsec-tool :focus-visible {outline:2px solid var(--accent);outline-offset:3px}

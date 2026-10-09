@@ -1,0 +1,296 @@
+{
+  "result": "PASS",
+  "topics": 17,
+  "checks": [
+    {
+      "id": "device-0",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-1",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-2",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-3",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-4",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-5",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-6",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-7",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-8",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-9",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-10",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-11",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-12",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-13",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-14",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-15",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    },
+    {
+      "id": "device-16",
+      "result": "PASS",
+      "questions": 13,
+      "stages": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true
+    }
+  ],
+  "errors": []
+}

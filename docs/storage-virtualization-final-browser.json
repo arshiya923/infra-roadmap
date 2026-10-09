@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "topics": 47,
+  "accepted": true,
+  "checks": [
+    "Boundary navigation lab-7 → s8-g0-t0",
+    "Boundary navigation s8-g2-t8 → s8-g3-t0",
+    "Boundary navigation s8-g5-t11 → s8-g6-t0",
+    "Boundary navigation lab-8 → s9-g0-t0",
+    "Search finds unloaded NVMe namespace/ANA lesson",
+    "Standalone lab download byte equality",
+    "Named topology region fits desktop and scrolls on mobile",
+    "Narrow numeric result table keyboard scrolling"
+  ],
+  "errors": []
+}

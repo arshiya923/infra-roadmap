@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "Ten sections, ten exams, three quick checks, six candidates and explicitly draft status independent of 95 accepted nodes",
+    "Eight cases and seven independent declarations: exact-prefix preference precedes LPM; discard, default and connected-link conditions",
+    "Malformed and markup inputs hide stale output without injection; keyboard reset restores all fixture declarations",
+    "Both inspectable Linux runner downloads match saved source bytes",
+    "Four widths, light/dark screenshots, keyboard table scroll and both topology/table endpoints",
+    "All four mobile flow steps visible normal and zoomed",
+    "Quiz feedback and original next Floating Static Routes remains explicitly draft",
+    "Direct-file interactive lesson without page/resource errors"
+  ],
+  "errors": [],
+  "scope": "Fixed candidate declarations, installation preference and lookup; no protocol learning, actual recursion, ARP, FIB, traffic or return-path execution. Actual isolated Linux evidence is separate."
+}

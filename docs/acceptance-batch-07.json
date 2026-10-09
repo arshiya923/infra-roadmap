@@ -1,0 +1,1049 @@
+{
+  "date": "2026-10-09",
+  "status": "ACCEPTED",
+  "reviewer": "Primary assistant, direct work without GapCode",
+  "originalSpecification": "User pasted Mission: Topic Completion Definition and Batch Definition of Done",
+  "acceptedTopicCount": 21,
+  "overallAcceptedOriginalNodes": 82,
+  "topicCriteria": [
+    {
+      "number": 1,
+      "requirement": "original content inspected",
+      "evidence": [
+        "content/roadmap-inventory.json",
+        "original/index.html",
+        "docs/research-batch-07.md"
+      ]
+    },
+    {
+      "number": 2,
+      "requirement": "explanation improved",
+      "evidence": [
+        "content/batch-07.js: definition, purpose and structured lesson"
+      ]
+    },
+    {
+      "number": 3,
+      "requirement": "technical accuracy reviewed",
+      "evidence": [
+        "docs/review-batch-07.json",
+        "docs/research-batch-07.md"
+      ]
+    },
+    {
+      "number": 4,
+      "requirement": "terminology defined",
+      "evidence": [
+        "content/batch-07.js: glossary"
+      ]
+    },
+    {
+      "number": 5,
+      "requirement": "mental model provided",
+      "evidence": [
+        "content/batch-07.js: mental"
+      ]
+    },
+    {
+      "number": 6,
+      "requirement": "internal mechanism explained",
+      "evidence": [
+        "content/batch-07.js: components and mechanism"
+      ]
+    },
+    {
+      "number": 7,
+      "requirement": "meaningful diagram added where useful",
+      "evidence": [
+        "content/batch-07.js: flow, comparison and scoped interactive model",
+        "docs/review-batch-07.json: manualRendering"
+      ]
+    },
+    {
+      "number": 8,
+      "requirement": "practical example added",
+      "evidence": [
+        "content/batch-07.js: example"
+      ]
+    },
+    {
+      "number": 9,
+      "requirement": "commands/configuration added where applicable",
+      "evidence": [
+        "content/batch-07.js: commands and configuration",
+        "docs/commands-results-batch-07.json"
+      ]
+    },
+    {
+      "number": 10,
+      "requirement": "production context included",
+      "evidence": [
+        "content/batch-07.js: production"
+      ]
+    },
+    {
+      "number": 11,
+      "requirement": "failure scenario included",
+      "evidence": [
+        "content/batch-07.js: troubleshooting, lab fault and scoped model cases",
+        "docs/review-batch-07.json"
+      ]
+    },
+    {
+      "number": 12,
+      "requirement": "troubleshooting included",
+      "evidence": [
+        "content/batch-07.js: troubleshooting and lab.troubleshooting"
+      ]
+    },
+    {
+      "number": 13,
+      "requirement": "common mistakes included",
+      "evidence": [
+        "content/batch-07.js: mistakes"
+      ]
+    },
+    {
+      "number": 14,
+      "requirement": "security implications considered",
+      "evidence": [
+        "content/batch-07.js: security"
+      ]
+    },
+    {
+      "number": 15,
+      "requirement": "performance implications considered",
+      "evidence": [
+        "content/batch-07.js: performance"
+      ]
+    },
+    {
+      "number": 16,
+      "requirement": "prerequisites/related topics linked",
+      "evidence": [
+        "docs/quality-audit-latest.json",
+        "docs/browser-batch-07-acceptance-results.json"
+      ]
+    },
+    {
+      "number": 17,
+      "requirement": "quick knowledge check included",
+      "evidence": [
+        "content/batch-07.js: three quick checks per topic",
+        "tests/content.cjs"
+      ]
+    },
+    {
+      "number": 18,
+      "requirement": "hands-on exercise included where appropriate",
+      "evidence": [
+        "content/batch-07.js: scoped lab",
+        "docs/review-batch-07.json",
+        "docs/image-audit-results.json",
+        "docs/vlan-lab-results.json"
+      ]
+    },
+    {
+      "number": 19,
+      "requirement": "10 exam questions included",
+      "evidence": [
+        "tests/content.cjs",
+        "docs/exam-review-batch-07.json"
+      ]
+    },
+    {
+      "number": 20,
+      "requirement": "answers/explanations reviewed",
+      "evidence": [
+        "docs/exam-review-batch-07.json",
+        "docs/review-batch-07.json"
+      ]
+    },
+    {
+      "number": 21,
+      "requirement": "responsive layout tested",
+      "evidence": [
+        "docs/batch-07-regression-results.json",
+        "docs/browser-flow-visibility-results.json",
+        "docs/review-batch-07.json: manualRendering"
+      ]
+    },
+    {
+      "number": 22,
+      "requirement": "links/interactions tested",
+      "evidence": [
+        "docs/batch-07-regression-results.json",
+        "docs/browser-batch-07-acceptance-results.json"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "topicId": "s2-g0-t0",
+      "title": "Cisco IOS / IOS XE",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g0-t0-flow.png",
+        "docs/screenshots/batch-07/review/s2-g0-t0-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g0-t1",
+      "title": "Cisco CLI structure",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g0-t1-flow.png",
+        "docs/screenshots/batch-07/review/s2-g0-t1-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g0-t2",
+      "title": "Running configuration",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g0-t2-flow.png",
+        "docs/screenshots/batch-07/review/s2-g0-t2-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g0-t3",
+      "title": "Startup configuration",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g0-t3-flow.png",
+        "docs/screenshots/batch-07/review/s2-g0-t3-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g1-t0",
+      "title": "Configuration register",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g1-t0-flow.png",
+        "docs/screenshots/batch-07/review/s2-g1-t0-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g1-t1",
+      "title": "ROMMON",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g1-t1-flow.png",
+        "docs/screenshots/batch-07/review/s2-g1-t1-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g1-t2",
+      "title": "Boot process",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g1-t2-flow.png",
+        "docs/screenshots/batch-07/review/s2-g1-t2-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g1-t3",
+      "title": "Cisco file systems",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g1-t3-flow.png",
+        "docs/screenshots/batch-07/review/s2-g1-t3-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g1-t4",
+      "title": "Flash management",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g1-t4-flow.png",
+        "docs/screenshots/batch-07/review/s2-g1-t4-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g1-t5",
+      "title": "IOS images",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g1-t5-flow.png",
+        "docs/screenshots/batch-07/review/s2-g1-t5-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g1-t6",
+      "title": "Install Mode vs Bundle Mode",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g1-t6-flow.png",
+        "docs/screenshots/batch-07/review/s2-g1-t6-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g1-t7",
+      "title": "Device backup and recovery",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g1-t7-flow.png",
+        "docs/screenshots/batch-07/review/s2-g1-t7-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g2-t0",
+      "title": "VLAN",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g2-t0-flow.png",
+        "docs/screenshots/batch-07/review/s2-g2-t0-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g2-t1",
+      "title": "Access ports",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g2-t1-flow.png",
+        "docs/screenshots/batch-07/review/s2-g2-t1-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g2-t2",
+      "title": "Trunk ports",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g2-t2-flow.png",
+        "docs/screenshots/batch-07/review/s2-g2-t2-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g2-t3",
+      "title": "DTP",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g2-t3-flow.png",
+        "docs/screenshots/batch-07/review/s2-g2-t3-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g2-t4",
+      "title": "VTP",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g2-t4-flow.png",
+        "docs/screenshots/batch-07/review/s2-g2-t4-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g2-t5",
+      "title": "Voice VLAN",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g2-t5-flow.png",
+        "docs/screenshots/batch-07/review/s2-g2-t5-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g3-t0",
+      "title": "EtherChannel",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g3-t0-flow.png",
+        "docs/screenshots/batch-07/review/s2-g3-t0-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g3-t1",
+      "title": "LACP",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g3-t1-flow.png",
+        "docs/screenshots/batch-07/review/s2-g3-t1-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    },
+    {
+      "topicId": "s2-g3-t2",
+      "title": "PAgP",
+      "result": "PASS",
+      "addressedCriteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "technicalLabReview": "docs/review-batch-07.json",
+      "questionReview": "docs/exam-review-batch-07.json",
+      "manualDiagrams": [
+        "docs/screenshots/batch-07/review/s2-g3-t2-flow.png",
+        "docs/screenshots/batch-07/review/s2-g3-t2-lab-path.png"
+      ],
+      "scope": "Model/tabletop/guided lab, with actual isolated Linux membership exercise for VLAN/access/trunk and real local byte comparison for image auditing. Vendor examples are guided and unexecuted."
+    }
+  ],
+  "batchGates": [
+    {
+      "number": 1,
+      "requirement": "Every included roadmap node processed",
+      "result": "PASS",
+      "evidence": [
+        "All 21 original IDs in topics below; no substitutions"
+      ]
+    },
+    {
+      "number": 2,
+      "requirement": "Every substantial topic satisfies Topic Completion Definition",
+      "result": "PASS",
+      "evidence": [
+        "22 addressed criteria for each topic below; separate reviewed evidence"
+      ]
+    },
+    {
+      "number": 3,
+      "requirement": "All diagrams render correctly",
+      "result": "PASS",
+      "evidence": [
+        "Manual inspection of every flow/lab path; scoped model browser screenshots; docs/review-batch-07.json"
+      ]
+    },
+    {
+      "number": 4,
+      "requirement": "Animations function correctly",
+      "result": "PASS",
+      "evidence": [
+        "docs/browser-batch-07-acceptance-results.json: timed advancement/pause/reset and reduced-motion/static alternatives on all 21 routes"
+      ]
+    },
+    {
+      "number": 5,
+      "requirement": "No obvious JavaScript errors",
+      "result": "PASS",
+      "evidence": [
+        "docs/batch-07-regression-results.json; docs/quality-audit-latest.json"
+      ]
+    },
+    {
+      "number": 6,
+      "requirement": "Navigation works",
+      "result": "PASS",
+      "evidence": [
+        "Focused UI suites and all-route original adjacency checks"
+      ]
+    },
+    {
+      "number": 7,
+      "requirement": "Mobile layout remains usable",
+      "result": "PASS",
+      "evidence": [
+        "Four-width focused suites, 22-route mobile flow checks, manual narrow screenshots"
+      ]
+    },
+    {
+      "number": 8,
+      "requirement": "Questions have answers and explanations",
+      "result": "PASS",
+      "evidence": [
+        "210 exams and 63 quick checks, contract and prose/question review"
+      ]
+    },
+    {
+      "number": 9,
+      "requirement": "Lab instructions coherent",
+      "result": "PASS",
+      "evidence": [
+        "All 21 lab reviews; local hash and real isolated Linux VLAN evidence; guided vendor execution limits retained"
+      ]
+    },
+    {
+      "number": 10,
+      "requirement": "Cross-topic links work",
+      "result": "PASS",
+      "evidence": [
+        "All 21 rendered connection target checks; acyclic authored prerequisite graph; pending related outlines remain honest"
+      ]
+    },
+    {
+      "number": 11,
+      "requirement": "Progress files updated",
+      "result": "PASS",
+      "evidence": [
+        "content/enrichment.json; ROADMAP_ENRICHMENT_PROGRESS.md; ROADMAP_BATCH_PLAN.md; regenerated content/catalog.js; accepted-state UI asserts 82/442"
+      ]
+    },
+    {
+      "number": 12,
+      "requirement": "Application builds/runs successfully",
+      "result": "PASS",
+      "evidence": [
+        "Static app has no compilation step; local HTTP and direct-file browser suites pass; immutable original hash checked"
+      ]
+    },
+    {
+      "number": 13,
+      "requirement": "No unfinished placeholders incorrectly marked completed",
+      "result": "PASS",
+      "evidence": [
+        "82 accepted IDs all authored; STP next route remains honest pending; no Batch 08 unit accepted"
+      ]
+    }
+  ],
+  "regressionEvidence": "docs/batch-07-regression-results.json",
+  "regressionSuites": 21,
+  "limits": "Acceptance covers the taught and verified scopes. No actual Cisco parser, firmware, boot/install/recovery, aggregation/control protocols, physical phone/QoS, vendor hash, throughput or convergence. Browser eligibility and synthetic observations do not prove real service. Physical execution is not required where the original specification permits an appropriate guided/model/tabletop lab. Automated accessible-name/contrast checks are not full WCAG certification.",
+  "nextBatch": "08",
+  "nextNode": "s2-g4-t0"
+}

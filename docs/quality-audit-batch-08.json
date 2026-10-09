@@ -1,0 +1,620 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "lessons": 95,
+  "checks": [
+    "Prerequisite graph is acyclic and all prerequisites are authored",
+    "Per-lesson exams have ten distinct prompts; comparison/flow/port context present",
+    "All authored lessons have substantial structured content (word count used only as a floor, not proof of accuracy)",
+    "Initial reader loads only the selected lesson bundle",
+    "All 95 authored routes: unique DOM IDs, named form controls/buttons, one H1 and valid section anchors",
+    "All authored previous/next links preserve original adjacency, including pending lab nodes",
+    "Core body/muted/accent/warning color tokens meet 4.5:1 on paper/surface/soft backgrounds in both themes",
+    "Broad local search responds within the 2-second audit ceiling",
+    "No page exceptions while traversing the complete authored course"
+  ],
+  "issues": [],
+  "contentWordCounts": [
+    {
+      "id": "s0-g0-t0",
+      "words": 1449
+    },
+    {
+      "id": "s0-g0-t1",
+      "words": 1398
+    },
+    {
+      "id": "s0-g0-t2",
+      "words": 1341
+    },
+    {
+      "id": "s0-g0-t3",
+      "words": 1316
+    },
+    {
+      "id": "s0-g0-t4",
+      "words": 1341
+    },
+    {
+      "id": "s0-g0-t5",
+      "words": 1333
+    },
+    {
+      "id": "s0-g0-t6",
+      "words": 1355
+    },
+    {
+      "id": "s0-g1-t0",
+      "words": 1794
+    },
+    {
+      "id": "s0-g1-t1",
+      "words": 1760
+    },
+    {
+      "id": "s0-g1-t2",
+      "words": 1849
+    },
+    {
+      "id": "s0-g1-t3",
+      "words": 1915
+    },
+    {
+      "id": "s0-g2-t0",
+      "words": 1694
+    },
+    {
+      "id": "s0-g2-t1",
+      "words": 1593
+    },
+    {
+      "id": "s0-g2-t2",
+      "words": 1581
+    },
+    {
+      "id": "s0-g2-t3",
+      "words": 1513
+    },
+    {
+      "id": "s0-g2-t4",
+      "words": 1596
+    },
+    {
+      "id": "s0-g2-t5",
+      "words": 1628
+    },
+    {
+      "id": "s0-g2-t6",
+      "words": 1595
+    },
+    {
+      "id": "s0-g2-t7",
+      "words": 1672
+    },
+    {
+      "id": "s0-g2-t8",
+      "words": 1584
+    },
+    {
+      "id": "s0-g2-t9",
+      "words": 1601
+    },
+    {
+      "id": "s0-g2-t10",
+      "words": 1601
+    },
+    {
+      "id": "s0-g3-t0",
+      "words": 1484
+    },
+    {
+      "id": "s0-g3-t1",
+      "words": 1451
+    },
+    {
+      "id": "s0-g3-t2",
+      "words": 1383
+    },
+    {
+      "id": "s0-g3-t3",
+      "words": 1497
+    },
+    {
+      "id": "s0-g3-t4",
+      "words": 1488
+    },
+    {
+      "id": "s0-g3-t5",
+      "words": 1428
+    },
+    {
+      "id": "s0-g3-t6",
+      "words": 1496
+    },
+    {
+      "id": "s0-g3-t7",
+      "words": 1443
+    },
+    {
+      "id": "lab-0",
+      "words": 1820
+    },
+    {
+      "id": "s1-g0-t0",
+      "words": 1963
+    },
+    {
+      "id": "s1-g0-t1",
+      "words": 1984
+    },
+    {
+      "id": "s1-g1-t0",
+      "words": 1779
+    },
+    {
+      "id": "s1-g1-t1",
+      "words": 1715
+    },
+    {
+      "id": "s1-g1-t2",
+      "words": 1691
+    },
+    {
+      "id": "s1-g2-t0",
+      "words": 1837
+    },
+    {
+      "id": "s1-g2-t1",
+      "words": 1939
+    },
+    {
+      "id": "s1-g2-t2",
+      "words": 1806
+    },
+    {
+      "id": "s1-g2-t3",
+      "words": 1752
+    },
+    {
+      "id": "s1-g3-t0",
+      "words": 1711
+    },
+    {
+      "id": "s1-g3-t1",
+      "words": 1626
+    },
+    {
+      "id": "s1-g3-t2",
+      "words": 1673
+    },
+    {
+      "id": "s1-g3-t3",
+      "words": 1806
+    },
+    {
+      "id": "s1-g3-t4",
+      "words": 1745
+    },
+    {
+      "id": "s1-g4-t0",
+      "words": 1633
+    },
+    {
+      "id": "s1-g4-t1",
+      "words": 1698
+    },
+    {
+      "id": "s1-g4-t2",
+      "words": 1669
+    },
+    {
+      "id": "s1-g4-t3",
+      "words": 1796
+    },
+    {
+      "id": "s1-g5-t0",
+      "words": 1859
+    },
+    {
+      "id": "s1-g5-t1",
+      "words": 1990
+    },
+    {
+      "id": "s1-g5-t2",
+      "words": 1919
+    },
+    {
+      "id": "s1-g5-t3",
+      "words": 1883
+    },
+    {
+      "id": "s1-g5-t4",
+      "words": 1920
+    },
+    {
+      "id": "s1-g5-t5",
+      "words": 1938
+    },
+    {
+      "id": "s1-g5-t6",
+      "words": 1820
+    },
+    {
+      "id": "s1-g5-t7",
+      "words": 1780
+    },
+    {
+      "id": "s1-g5-t8",
+      "words": 1810
+    },
+    {
+      "id": "s1-g5-t9",
+      "words": 1916
+    },
+    {
+      "id": "s1-g5-t10",
+      "words": 1884
+    },
+    {
+      "id": "lab-1",
+      "words": 2306
+    },
+    {
+      "id": "s2-g0-t0",
+      "words": 1930
+    },
+    {
+      "id": "s2-g0-t1",
+      "words": 2076
+    },
+    {
+      "id": "s2-g0-t2",
+      "words": 2051
+    },
+    {
+      "id": "s2-g0-t3",
+      "words": 2025
+    },
+    {
+      "id": "s2-g1-t0",
+      "words": 2005
+    },
+    {
+      "id": "s2-g1-t1",
+      "words": 1951
+    },
+    {
+      "id": "s2-g1-t2",
+      "words": 2002
+    },
+    {
+      "id": "s2-g1-t3",
+      "words": 1878
+    },
+    {
+      "id": "s2-g1-t4",
+      "words": 1800
+    },
+    {
+      "id": "s2-g1-t5",
+      "words": 2019
+    },
+    {
+      "id": "s2-g1-t6",
+      "words": 1862
+    },
+    {
+      "id": "s2-g1-t7",
+      "words": 2224
+    },
+    {
+      "id": "s2-g2-t0",
+      "words": 1959
+    },
+    {
+      "id": "s2-g2-t1",
+      "words": 1887
+    },
+    {
+      "id": "s2-g2-t2",
+      "words": 2390
+    },
+    {
+      "id": "s2-g2-t3",
+      "words": 1949
+    },
+    {
+      "id": "s2-g2-t4",
+      "words": 1909
+    },
+    {
+      "id": "s2-g2-t5",
+      "words": 1979
+    },
+    {
+      "id": "s2-g3-t0",
+      "words": 2135
+    },
+    {
+      "id": "s2-g3-t1",
+      "words": 2497
+    },
+    {
+      "id": "s2-g3-t2",
+      "words": 1941
+    },
+    {
+      "id": "s2-g4-t0",
+      "words": 2521
+    },
+    {
+      "id": "s2-g4-t1",
+      "words": 2540
+    },
+    {
+      "id": "s2-g4-t2",
+      "words": 2553
+    },
+    {
+      "id": "s2-g5-t0",
+      "words": 2563
+    },
+    {
+      "id": "s2-g5-t1",
+      "words": 2490
+    },
+    {
+      "id": "s2-g5-t2",
+      "words": 2519
+    },
+    {
+      "id": "s2-g5-t3",
+      "words": 2646
+    },
+    {
+      "id": "s2-g5-t4",
+      "words": 2639
+    },
+    {
+      "id": "s2-g5-t5",
+      "words": 2834
+    },
+    {
+      "id": "s2-g6-t0",
+      "words": 2999
+    },
+    {
+      "id": "s2-g6-t1",
+      "words": 3229
+    },
+    {
+      "id": "s2-g6-t2",
+      "words": 3454
+    },
+    {
+      "id": "lab-2",
+      "words": 4471
+    }
+  ],
+  "bytes": {
+    "learn.html": 3974,
+    "content/catalog.js": 649369,
+    "scripts/learning.js": 31542,
+    "scripts/network-models.js": 12295,
+    "scripts/address-tools.js": 16322,
+    "scripts/protocol-models.js": 8560,
+    "scripts/service-models.js": 9352,
+    "scripts/switching-models.js": 8062,
+    "scripts/routing-models.js": 4118,
+    "scripts/diagnostic-models.js": 10649,
+    "scripts/packet-models.js": 3905,
+    "scripts/cisco-models.js": 6882,
+    "scripts/boot-models.js": 7002,
+    "scripts/storage-models.js": 3781,
+    "scripts/lifecycle-models.js": 6609,
+    "scripts/port-models.js": 4448,
+    "scripts/vlan-control-models.js": 13183,
+    "scripts/aggregation-models.js": 4035,
+    "scripts/stp-evidence.js": 5642,
+    "scripts/mst-models.js": 5652,
+    "scripts/edge-models.js": 4426,
+    "scripts/guard-models.js": 3908,
+    "scripts/root-guard-models.js": 6098,
+    "scripts/loop-guard-models.js": 6478,
+    "scripts/storm-models.js": 8027,
+    "scripts/security-port-models.js": 8563,
+    "scripts/span-models.js": 7308,
+    "scripts/rspan-models.js": 7950,
+    "scripts/erspan-models.js": 9000,
+    "scripts/enterprise-lab-models.js": 11143,
+    "styles/learning.css": 24187,
+    "content/batch-01.js": 71800,
+    "content/batch-02.js": 57137,
+    "content/batch-03.js": 128672,
+    "content/batch-04.js": 100550,
+    "content/batch-05.js": 231658,
+    "content/batch-06.js": 170199,
+    "content/batch-07.js": 325720,
+    "content/batch-08.js": 283392
+  },
+  "initialResources": [
+    {
+      "name": "/styles/learning.css",
+      "bytes": 24187,
+      "durationMs": 12
+    },
+    {
+      "name": "/content/catalog.js",
+      "bytes": 649369,
+      "durationMs": 17
+    },
+    {
+      "name": "/scripts/address-tools.js",
+      "bytes": 16322,
+      "durationMs": 20
+    },
+    {
+      "name": "/scripts/network-models.js",
+      "bytes": 12295,
+      "durationMs": 19
+    },
+    {
+      "name": "/scripts/protocol-models.js",
+      "bytes": 8560,
+      "durationMs": 20
+    },
+    {
+      "name": "/scripts/service-models.js",
+      "bytes": 9352,
+      "durationMs": 22
+    },
+    {
+      "name": "/scripts/routing-models.js",
+      "bytes": 4118,
+      "durationMs": 23
+    },
+    {
+      "name": "/scripts/switching-models.js",
+      "bytes": 8062,
+      "durationMs": 24
+    },
+    {
+      "name": "/scripts/diagnostic-models.js",
+      "bytes": 10649,
+      "durationMs": 26
+    },
+    {
+      "name": "/scripts/packet-models.js",
+      "bytes": 3905,
+      "durationMs": 26
+    },
+    {
+      "name": "/scripts/boot-models.js",
+      "bytes": 7002,
+      "durationMs": 31
+    },
+    {
+      "name": "/scripts/cisco-models.js",
+      "bytes": 6882,
+      "durationMs": 36
+    },
+    {
+      "name": "/scripts/storage-models.js",
+      "bytes": 3781,
+      "durationMs": 36
+    },
+    {
+      "name": "/scripts/lifecycle-models.js",
+      "bytes": 6609,
+      "durationMs": 40
+    },
+    {
+      "name": "/scripts/port-models.js",
+      "bytes": 4448,
+      "durationMs": 41
+    },
+    {
+      "name": "/scripts/vlan-control-models.js",
+      "bytes": 13183,
+      "durationMs": 41
+    },
+    {
+      "name": "/scripts/aggregation-models.js",
+      "bytes": 4035,
+      "durationMs": 46
+    },
+    {
+      "name": "/scripts/stp-evidence.js",
+      "bytes": 5642,
+      "durationMs": 48
+    },
+    {
+      "name": "/scripts/mst-models.js",
+      "bytes": 5652,
+      "durationMs": 48
+    },
+    {
+      "name": "/scripts/edge-models.js",
+      "bytes": 4426,
+      "durationMs": 49
+    },
+    {
+      "name": "/scripts/guard-models.js",
+      "bytes": 3908,
+      "durationMs": 51
+    },
+    {
+      "name": "/scripts/root-guard-models.js",
+      "bytes": 6098,
+      "durationMs": 53
+    },
+    {
+      "name": "/scripts/storm-models.js",
+      "bytes": 8027,
+      "durationMs": 56
+    },
+    {
+      "name": "/scripts/loop-guard-models.js",
+      "bytes": 6478,
+      "durationMs": 57
+    },
+    {
+      "name": "/scripts/span-models.js",
+      "bytes": 7308,
+      "durationMs": 62
+    },
+    {
+      "name": "/scripts/security-port-models.js",
+      "bytes": 8563,
+      "durationMs": 58
+    },
+    {
+      "name": "/scripts/rspan-models.js",
+      "bytes": 7950,
+      "durationMs": 66
+    },
+    {
+      "name": "/scripts/erspan-models.js",
+      "bytes": 9000,
+      "durationMs": 66
+    },
+    {
+      "name": "/scripts/enterprise-lab-models.js",
+      "bytes": 11143,
+      "durationMs": 67
+    },
+    {
+      "name": "/scripts/learning.js",
+      "bytes": 31542,
+      "durationMs": 70
+    },
+    {
+      "name": "/content/batch-01.js",
+      "bytes": 71800,
+      "durationMs": 6
+    },
+    {
+      "name": "/assets/favicon.svg",
+      "bytes": 260,
+      "durationMs": 5
+    }
+  ],
+  "localSearchMs": 151,
+  "limits": "Local Edge audit, not real-device/network performance certification. Automated accessible-name/contrast/structure checks supplement manual screenshots; they are not a full WCAG audit. Editorial technical review and source scope are documented separately.",
+  "scope": "All 95 authored routes plus primary per-topic Batch 08 accuracy/question/diagram/command review",
+  "editorialChecks": {
+    "originalHashUnchanged": true,
+    "originalIdsPreserved": 442,
+    "acceptedIdsAuthored": 95,
+    "fullCourseExamQuestions": 950,
+    "exactRepeatedExamPrompts": 0,
+    "batch08TopicItems": 22,
+    "batch08Units": 13,
+    "batch08Gates": 13,
+    "commandsGuidedUnexecuted": 60,
+    "commandsOfflineVerified": 2,
+    "sourceConflicts": "Platform/example limits, capability and truncation/QoS differences retain actual-target requirements rather than universal promises.",
+    "bundleReview": "Compact catalog search measured below 2-second ceiling; on-demand selected content bundle retained. Byte inventory recorded; no external application dependency."
+  },
+  "acceptance": "docs/acceptance-batch-08.json"
+}

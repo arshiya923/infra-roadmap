@@ -1,0 +1,12 @@
+#ba-tool .ba-controls{display:grid;grid-template-columns:minmax(12rem,1fr) minmax(15rem,2fr);gap:.65rem 1rem;align-items:center;margin-block:1rem}
+#ba-tool .ba-controls p{grid-column:1/-1;margin:0;font-size:.9rem}
+#ba-tool select,#ba-tool input{width:100%;max-width:100%;min-width:0;font:inherit;color:var(--ink,#182d30);background:var(--surface,#fff);border:1px solid var(--line,#718096);border-radius:.35rem;padding:.65rem}
+#ba-tool .ba-scroll{max-width:100%;overflow-x:auto;margin-block:1rem;border:1px solid var(--line,#718096);border-radius:.35rem}
+#ba-tool .ba-scroll:focus-visible,#ba-tool input:focus-visible,#ba-tool select:focus-visible,#ba-tool button:focus-visible{outline:3px solid var(--accent,#2671ba);outline-offset:3px}
+#ba-tool table{width:100%;min-width:760px;border-collapse:collapse}
+#ba-tool th,#ba-tool td{padding:.65rem .8rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line,#718096)}
+#ba-tool th{font-weight:700}
+#ba-tool p,#ba-tool td{overflow-wrap:anywhere}
+#ba-tool #ba-error{border-inline-start:4px solid var(--accent,#2671ba);padding:.75rem;font-weight:600}
+#ba-tool [hidden]{display:none!important}
+@media(max-width:640px){#ba-tool .ba-controls{grid-template-columns:minmax(0,1fr);gap:.4rem}#ba-tool .ba-controls select,#ba-tool .ba-controls input{margin-bottom:.6rem}}

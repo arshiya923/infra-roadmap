@@ -1,0 +1,7 @@
+.support-page{max-width:950px;margin:0 auto;padding:45px 28px;overflow-wrap:anywhere}
+.skip-link{position:absolute;left:12px;top:-100px;z-index:200;background:var(--surface);padding:10px}.skip-link:focus{top:8px}
+.support-page h1{font-size:clamp(30px,5vw,52px);line-height:1.1}
+.support-item{border-top:1px solid var(--line);padding:20px 0;scroll-margin-top:100px}
+.support-item h3{margin:0 0 10px}.support-item small{color:var(--muted);font-size:11px}
+.support-page .pills{margin:25px 0;display:flex;flex-wrap:wrap;gap:10px}
+@media(max-width:520px){.support-page{padding:28px 20px}.support-page .pills a{max-width:100%}}

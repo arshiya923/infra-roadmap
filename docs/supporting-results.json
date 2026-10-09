@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "items": 84,
+  "collections": 5,
+  "checks": [
+    "Exact original supporting ID coverage",
+    "All local references exist and lesson IDs resolve",
+    "84 learner-facing review entries",
+    "Four widths in both themes",
+    "Keyboard theme control",
+    "Links from roadmap and reader",
+    "Direct-file support",
+    "No page exceptions"
+  ],
+  "limits": "Editorial supporting review, not full certification alignment or physical validation."
+}

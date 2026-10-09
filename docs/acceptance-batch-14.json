@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "reviewer": "Primary assistant",
+  "topics": [
+    {
+      "id": "s5-g4-t0",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "4e9c871b6a37eb353d6f6fbba8583d3445561c89d90bb790262fc5c7d1a0f2ba"
+    },
+    {
+      "id": "s5-g4-t1",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "3500c41383459ad457f0b24747ef09a02d0706ec22890e72c67f9ccd00bdd7e7"
+    },
+    {
+      "id": "s5-g4-t2",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "9a42743926c0d937032d752f46c03ce8570165c4872f0bd24490b99c35812dd7"
+    },
+    {
+      "id": "s5-g4-t3",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "15bc38ea49c30a3616968f42feae4694861c8425c301079a099cde06feb35f23"
+    },
+    {
+      "id": "s5-g4-t4",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "733fd7e3cbd0a4c510f8332680f6de7959ffdbe3d628a4bc880f6bcd0a044c38"
+    },
+    {
+      "id": "s5-g5-t0",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "75b4365220165e2519447f747707ca0aaf044d0331f13f27c3793adbecaf0a84"
+    },
+    {
+      "id": "s5-g5-t1",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "7e400227102bddef6e2a31e2f45f747f1b6a79cf0213e59738df0a9944f3749a"
+    },
+    {
+      "id": "s5-g5-t2",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "64f5e481f0d648cc0eb33afe9c3124383c6af587c4117e043a04c03ffe43a0e3"
+    },
+    {
+      "id": "s5-g5-t3",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "8b68409e04fcd04c58598e3aa9fe33a76359d8a171cbb52b4105f343887026c5"
+    },
+    {
+      "id": "s5-g5-t4",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "7148f431ef62fce50fd413b673da5ed12d0106f325ba697ace7e9a78dbfa480a"
+    },
+    {
+      "id": "s5-g5-t5",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "66c793f88baecbf1ef3486b69475d41b64ea4855ea835fe4535e809ce19c9d5b"
+    },
+    {
+      "id": "s5-g6-t0",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "f0da9111587e8421ff7c277afe95d14e398fc36882ffedd021150b552f3b770b"
+    },
+    {
+      "id": "s5-g6-t1",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "dab15429bafd0bb0379579da348b9f2e2d371c24608e7031f87c6169c78da006"
+    },
+    {
+      "id": "s5-g6-t2",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "7a1b7c8410491db6236e6f5b6859a9835fddd6d602afacb219d58c62d19fbacf"
+    },
+    {
+      "id": "lab-5",
+      "result": "PASS",
+      "exams": 10,
+      "quick": 3,
+      "contentHash": "64cb6f50c25ac8fd9be323174bcf6c4ac05789586a7d50a459397bfe570530fb"
+    }
+  ],
+  "courseAccepted": 198,
+  "evidence": [
+    "docs/network-security-regression-results.json",
+    "docs/network-security-primary-review.json",
+    "docs/network-security-question-review.json",
+    "docs/network-security-visual-review.json",
+    "docs/quality-audit-batch-14.json"
+  ],
+  "limits": [
+    "Worksheets calculate or trace supplied inputs; no device or protocol execution is inferred.",
+    "Target switch/router/ASA/FTD/ISE configuration, VPN negotiation and physical forwarding remain guided/unexecuted.",
+    "Read-only WSL inspection and, when available, owned application loopback evidence retain separate scopes.",
+    "No production deployment, hardware capacity, vendor parser certification or full WCAG certification is claimed."
+  ]
+}

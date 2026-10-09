@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-09",
+  "batch": "29",
+  "status": "accepted",
+  "scope": "Dependency and SLO cases are offline calculations. The change case actually rejects and restores an owned temporary JSON file. No live service availability or production recovery is claimed.",
+  "primaryReview": "Reviewed lesson text, 39 questions, commands and source scope; inspected the mobile dark evidence desk. Arithmetic includes exact budget equality, overspend, zero traffic rejection, invalid targets and a separate recovery window. Dependency cycles and unknown nodes are rejected. The broader final visual review also covers desktop screenshots.",
+  "sources": [
+    "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "https://sre.google/sre-book/service-level-objectives/",
+    "https://sre.google/sre-book/managing-incidents/"
+  ],
+  "hashes": {
+    "content/batch-29.js": "6f4fb919e923719c834ec390642dac342706c2c6cf4fa01f51107131fd05e78c",
+    "docs/browser-expansion-29.json": "96f8da0273894b9ce9a931bbddce6f2ad5d14fd6827f3994b23ec7febb2309eb",
+    "docs/expansion-lab-29.json": "854e295917dda3fd12716023343b7028f3c272481bd300a7efe7823a667bdbc8",
+    "scripts/expansion.js": "a1eaed8af5dd10c212f31c1d4c9182f01ed8ae73c7f94ad7c265547f2201b045"
+  },
+  "finalReverification": "docs/expansion-final-verification.json"
+}

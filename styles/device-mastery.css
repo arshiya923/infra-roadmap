@@ -1,0 +1,9 @@
+#dm-tool{overflow-wrap:anywhere}
+#dm-tool>label{display:block;font-weight:600;margin:20px 0 8px}
+#dm-tool textarea{display:block;width:100%;min-height:100px;box-sizing:border-box;padding:12px;background:var(--paper);color:var(--ink);border:1px solid var(--line);font:inherit;margin-bottom:12px}
+#dm-tool fieldset{min-width:0;margin:20px 0;padding:16px;border:1px solid var(--line)}
+#dm-tool fieldset p{display:grid;grid-template-columns:minmax(0,1fr) minmax(150px,220px);align-items:center;gap:12px}
+#dm-tool select{font:inherit;max-width:100%;min-height:44px;padding:8px;background:var(--paper);color:var(--ink);border:1px solid var(--line)}
+#dm-tool button{min-height:44px}
+#dm-tool :is(button,select,textarea):focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(max-width:600px){#dm-tool fieldset p{grid-template-columns:1fr;gap:6px}#dm-tool select{width:100%}}

@@ -1,0 +1,154 @@
+{
+  "id": "s3-g4-t1",
+  "batch": "09",
+  "title": "MED",
+  "subtitle": "Check whether a two-path comparison reaches MED before preferring the lower value.",
+  "level": "Intermediate → Advanced",
+  "minutes": 70,
+  "interactive": "med",
+  "definition": "MULTI_EXIT_DISC (MED) is an optional non-transitive BGP attribute carrying a four-octet unsigned metric. It can express a neighboring AS's preference among entry or exit points. Lower is preferred when the comparison reaches MED and the routes are comparable. The browser is a deliberately bounded worksheet for two supplied IPv4-unicast candidates covering exactly 198.51.100.0/24. It checks admission and next-hop resolution, equality of three supplied earlier dimensions, the ordinary neighboring-AS comparison scope and effective MED. It does not implement all BGP bestpath stages, choose among different prefix lengths or measure traffic.",
+  "purpose": "Use this lesson to answer a precise question: did MED actually distinguish these two otherwise comparable candidates at this observer? Start with the receiving router's post-policy attributes and selection context. An advertising AS may use different MED values at two connections to suggest where its neighbor should send traffic toward it, but the receiver's policy and earlier decisions can override that suggestion. An inbound traffic objective needs cooperation and actual observation; setting a low MED does not guarantee that another AS honors it or that every remote sender uses that link.",
+  "mental": "Give a receiving AS two destination cards for one exact prefix. First discard cards that cannot be used. Then ask whether the earlier comparison dimensions tie and whether the two neighboring AS labels permit this MED comparison. Only then compare the MED numbers. A blank number has a documented target-specific interpretation, not an invitation to guess. If the numbers tie or comparison is skipped, leave the decision unfinished until the real later stages are inspected. Put system installation and the actual forward/reply exchange on separate sheets.",
+  "components": [
+    "One observer and one prefix: the fixed worksheet is IPv4 unicast in a declared destination table, with exactly two supplied candidates for 198.51.100.0/24. It never compares a /24 against a /25 or selects a packet's longest matching prefix.",
+    "Usable candidate gates: admitted represents supplied import and ordinary route eligibility checks; resolved represents supplied NEXT_HOP resolution. Neither gate performs a live policy evaluation, AS-loop analysis, ARP lookup or underlay recursion.",
+    "Earlier dimensions: supplied LOCAL_PREF, ordinary AS_SEQUENCE length and ORIGIN must be equal for the MED-only contest. Weight and local-origination differences are held equal or excluded, as are specialized bestpath policy knobs. Unequal supplied dimensions produce an explicit scope boundary without a fabricated earlier-stage winner.",
+    "Neighboring AS declaration: for the nonempty ordinary AS_SEQUENCE used here, each candidate supplies its leftmost ASN. That ASN can describe an external neighbor from which an iBGP-distributed route was learned; it is not automatically the local iBGP session peer's AS. Empty paths, AS_SET and confederations are excluded. The numeric input admits 1..4294967294 and excludes the reserved last four-octet ASN; it does not verify assignment or authorize operational ASN use.",
+    "Metric presence and value: null means MED absent; numeric zero means an explicit MED attribute of zero. The pinned FRR 8.4.4 source uses effective zero by default and 4294967295 with explicit missing-as-worst. An explicit maximum value ties that effective maximum; the worksheet does not invent an infinity beyond the unsigned range.",
+    "Independent outcomes: a known BGP candidate choice can be displaced by another system route source. Even a system-selected route needs forwarding, neighbor, policy and return/service evidence. The worksheet supplies readiness declarations only and does not transmit packets."
+  ],
+  "mechanism": [
+    "Record the receiving observer, AFI/SAFI, table/VRF and exact prefix. Capture both candidate records after the applicable input policy, including MED presence rather than just a display column that might render absent values as zero. Keep the advertising direction and intended traffic direction explicit. RFC 4271 permits eBGP-received MED distribution via iBGP within the receiving AS; that received neighboring-AS MED must not be propagated to other neighboring ASes. Deliberate local attribute policy is separate.",
+    "Check the declared admission and resolution gates before a MED contest. With no usable candidate, report no BGP choice in this fixture. With exactly one usable candidate, report that sole choice without claiming its lower MED beat the unusable route. Admission and resolution are required even when the unusable candidate's metric is attractive.",
+    "For two usable candidates, compare the supplied earlier dimensions for equality. If LOCAL_PREF, AS_SEQUENCE length or ORIGIN differs, stop this worksheet at the boundary. Real FRR has additional earlier stages and policy context; use the actual observer's decision evidence to identify a winner rather than borrowing a MED answer from this narrow tool.",
+    "Check neighboring-AS scope. Under the default ordinary case, different declared leftmost ASNs skip MED. Selecting explicit always-compare permits the numeric contest across those ASNs. Values set by different administrators may have different meanings, so this option needs reviewed policy rather than an assumption that all providers use a common quality scale.",
+    "Obtain each effective MED under the selected pinned target mode. Compare only if the gates above allow it. A lower effective value distinguishes the two candidates; equal effective values leave later bestpath stages unresolved. The model never supplies router ID, peer address or an arbitrary alphabetical winner to break the tie.",
+    "Distinguish always-compare-med from deterministic-med. FRR documents deterministic-med as arranging local route evaluation by neighboring AS; it does not mean compare all neighboring ASes. This two-candidate worksheet does not execute deterministic-MED processing, reconstruct three-or-more-path ordering or establish network convergence. A local deterministic decision is not a general proof that multiple speakers cannot oscillate.",
+    "Read the BGP choice separately from the system route table and forwarding context. In the tool, the system-select declaration applies only after a choice is known. When later or earlier unmodeled stages are needed, installation and exchange prerequisite agreement remain undetermined rather than being shown as failed or successful measurements.",
+    "Finish with actual original-service and return evidence if operating a real prepared lab. Configuration and a route-table best marker explain parts of the control decision; they do not prove packet delivery, bandwidth, symmetric routing or an upstream's inbound behavior. This lesson's tabletop has no actual routing lab execution or performance evidence."
+  ],
+  "flow": [
+    ["Scope and admit", "One observer, one exact IPv4-unicast prefix and two admitted/resolvable declarations."],
+    ["Reach the MED gate", "Earlier dimensions must tie; default comparison needs the same ordinary neighboring AS."],
+    ["Compare effective values", "Lower wins this contest; ties or skipped comparison require stages outside the model."],
+    ["Verify separate outcomes", "Inspect system route and forwarding/return evidence independently of the BGP choice."]
+  ],
+  "comparison": [
+    ["MED / LOCAL_PREF", "Neighbor's handoff suggestion / local AS preference", "A lower MED is insufficient when earlier selection differs."],
+    ["Same neighbor / different neighbors", "Default comparable group / default skipped MED", "Leftmost ordinary AS_SEQUENCE ASN is the scoped neighboring-AS declaration."],
+    ["Always compare / deterministic MED", "Broader comparison scope / local evaluation arrangement", "The two options solve different selection questions."],
+    ["Absent / explicit zero", "No received attribute / present attribute value 0", "Default effective values may tie while attribute presence differs."],
+    ["BGP choice / system installation", "Protocol candidate selection / routing-source selection", "Another system source can displace the BGP choice."],
+    ["Lower metric / better service", "Policy comparison / observed transaction", "MED is not latency, bandwidth or a delivery guarantee."]
+  ],
+  "example": "A and B advertise the same 198.51.100.0/24 to the receiving AS through two handoffs. Their declared leftmost ASN is 65002, LOCAL_PREF is 100, ordinary sequence length is 2 and ORIGIN is IGP. Both are admitted and resolvable; A MED 100 beats B MED 200 in the scoped contest. Change B's neighboring ASN to 65003: default comparison stops at different-neighbor and no later-stage winner is invented. Enable always-compare and the same numbers again distinguish A. Reset, then make A unresolved: B becomes the sole usable candidate even though its MED is larger. Finally leave A selected and turn return readiness off; the BGP answer remains A while declared exchange prerequisites fail. These are authored tabletop states, not captured UPDATEs or measured traffic.",
+  "ports": "MED is an attribute within BGP's existing control exchange over TCP 179; it adds no application port and is not carried as a per-packet forwarding instruction. This worksheet does not open a socket. Original-service evidence must identify its own transport, source/destination, family and table.",
+  "commands": [
+    {
+      "code": "show bgp ipv4 unicast summary json",
+      "platform": "Prepared FRR 8.4 CLI · default table · guided read-only, not executed",
+      "explanation": "Record observer, local/peer AS identities and IPv4-unicast session context before interpreting candidate attributes.",
+      "expected": "A session summary identifies the control scope. Established alone does not show which MED was received, which path is usable or which route forwards traffic. If the target uses a VRF, use its reviewed supported VRF scope; this example is default-table only."
+    },
+    {
+      "code": "show bgp ipv4 unicast json",
+      "platform": "Prepared FRR 8.4 CLI · default table · guided read-only, not executed",
+      "explanation": "Inspect both actual candidate records for the exact owned test prefix and compare post-policy path, LOCAL_PREF, ORIGIN, metric presence/value and selected/valid metadata.",
+      "expected": "Retain the actual output and isolate 198.51.100.0/24 for analysis. Two displayed paths do not automatically mean two eligible comparable paths. JSON fields and presence must be read from the target output; the worksheet does not parse or reproduce this output."
+    },
+    {
+      "code": "show running-config",
+      "platform": "Prepared FRR 8.4 CLI · guided read-only, not executed",
+      "explanation": "Review exact BGP instance, neighbor/family policy attachments and whether always-compare-med, deterministic-med or bestpath med missing-as-worst is configured.",
+      "expected": "Record the target release and effective owned configuration. The three knobs have distinct meaning. Inspect referenced policy objects for attribute changes; configuration intent is separate from a settled post-policy route observation. Preserve output according to the lab's access rules."
+    },
+    {
+      "code": "show ip route 198.51.100.0/24",
+      "platform": "Prepared FRR 8.4 Zebra CLI · default table · guided read-only, not executed",
+      "explanation": "Compare the actual system routing record for the exact test prefix with the BGP candidate choice.",
+      "expected": "Record source selection and next-hop/installation metadata in the actual table. A system routing view alone does not prove hardware programming or the original exchange. Forwarding and return/service observations remain separate; no probe or device change is executed by this page."
+    }
+  ],
+  "configuration": "This lesson is a read-only tabletop and supplies no configuration recipe. For an independently prepared isolated FRR 8.4 lab, the owner must map the observer, two peer handoffs, AFI/SAFI, exact prefix ownership, import/export attachments, next-hop dependencies and baseline attributes before inspection. The mode shown as missing-as-worst is the pinned FRR 8.4.4 command bgp bestpath med missing-as-worst in router-BGP configuration, source-checked but not run here. The always-compare option changes comparison scope; deterministic-med is separate. Do not toggle a live global BGP knob to reproduce a checkbox. A separately authorized policy experiment needs its own exact old attachments/values, re-evaluation method, independent management, traffic baseline and rollback review.",
+  "production": "Document who sets each metric, which prefixes and handoffs it covers, and whether the receiving AS agrees to use it. Interpret attributes after local policy, keeping default comparison scope explicit. Changing comparison scope across independently administered neighbors can change path choices well beyond one demonstration prefix. A sender's preference can influence its neighbor's ingress behavior, but independent local preference, origin/path selection, filters and topology constrain that influence. The toy observer has no route history, reflector topology or scale evidence; review full production behavior and convergence separately.",
+  "troubleshooting": [
+    ["Lower MED is not selected", "First check exact-prefix/table scope, admission, next-hop resolution and earlier selection evidence. Then check neighboring-AS scope and effective metric handling before considering later stages."],
+    ["Different peers but same MED group", "Compare each path's leftmost ordinary neighboring AS, not the physical connection name or local iBGP peer AS. Confirm excluded path forms before applying the shortcut."],
+    ["Metric appears as zero", "Determine whether the MED attribute is present or absent and confirm effective target mode. The pinned default can give an absent attribute effective zero; display appearance alone cannot prove presence."],
+    ["Equal effective MED", "Preserve both candidates and inspect later bestpath context. Do not label A preferred simply because it occupies the first row."],
+    ["BGP best differs from installed route", "Inspect the destination table's other route sources, system selection and actual forwarding state. Keep the protocol decision distinct from a successful service."],
+    ["Inbound traffic ignores the suggestion", "Review the receiving neighbor's agreed policy and actual observations. A sender controls its advertisement, not every independent AS's decision."],
+    ["More paths or oscillation suspected", "Stop extending the two-candidate answer. Collect the full candidate set, update history and topology; deterministic-MED and network convergence require a separate review."]
+  ],
+  "security": "MED does not authenticate a path or prove prefix ownership. Admission and permitted propagation remain explicit boundary decisions, with session, origin-validation and administrative protections reviewed in their own scope. Accepting a neighbor's metric is a policy choice; broad changes to path preference can move traffic to an unintended handoff even when sessions remain up. The tabletop has no access to peers or devices.",
+  "performance": "A MED number is not a measurement of throughput, delay or packet loss. The comparison performs fixed two-candidate arithmetic; it does not benchmark route processing, FIB programming, convergence, failover loss or multipath distribution. FRR's guide describes a processing cost for deterministic-med with many candidates, but this worksheet executes neither that algorithm nor a scale test. Use measured workload and actual candidate/topology scope for capacity conclusions.",
+  "mistakes": [
+    "Comparing MED before verifying eligibility and earlier dimensions.",
+    "Comparing different neighboring ASes by default.",
+    "Using the local iBGP session ASN as the external neighboring-AS label.",
+    "Treating always-compare-med and deterministic-med as the same option.",
+    "Assuming an absent MED is always least preferred.",
+    "Picking an arbitrary winner on equal effective MED.",
+    "Calling a lower metric an inbound-control or service guarantee.",
+    "Extending a two-path worksheet to three-or-more-path ordering or convergence."
+  ],
+  "prerequisites": ["s3-g3-t0", "s3-g3-t1", "s3-g3-t2", "s3-g3-t3", "s3-g4-t0"],
+  "related": ["s3-g4-t2", "s3-g4-t3"],
+  "artifacts": [],
+  "lab": {
+    "objective": "Explain whether two supplied candidates reach MED, distinguish missing-attribute handling and keep route choice separate from installation and traffic.",
+    "requirements": "A browser for the authored tabletop; no daemon, credentials, root privilege or network access required. Optional read-only target inspection requires a separately prepared authorized isolated FRR 8.4 observer and its actual table/peer/prefix mapping.",
+    "topologyKind": "shared",
+    "topology": ["Neighbor AS65002 handoff A → receiving observer", "Neighbor AS65002 handoff B → receiving observer", "Two candidates / IPv4-unicast 198.51.100.0/24", "BGP decision → separate system source → original forward and return context"],
+    "steps": [
+      "Load same-as and record the two candidate attributes and usable declarations. Predict A from effective 100 versus 200 and explain the tied earlier dimensions.",
+      "Load different-as, then always-compare. Explain the comparison gate change without claiming providers' metric scales are inherently comparable.",
+      "Load equal-med, local-pref-boundary, path-boundary and origin-boundary. Leave the winner undetermined when this scope cannot resolve it.",
+      "Load a-unresolved, b-rejected and none-usable. Distinguish sole candidate choice and no choice from a MED victory.",
+      "Load missing-default, missing-worst, missing-max-tie and both-missing. Compare presence with effective value and verify that explicit maximum can tie absent-as-worst.",
+      "Load system-other and return-missing. Explain which layer changes while the BGP comparison stays the same.",
+      "Enter an invalid ASN or out-of-range MED, confirm outcome hiding, then reset. Use keyboard focus to inspect the locally scrollable table on a narrow screen.",
+      "If separately prepared, run only the four read-only observer commands in the exact default-table context and write which real records support each candidate declaration. Record uncertain dimensions instead of filling them from the toy baseline."
+    ],
+    "verification": "For each authored state, write eligibility, earlier equality, neighboring-AS scope, effective MED, comparison status, candidate choice and separate installation/exchange declarations. The model test suite checks independent expected outcomes and strict invalid inputs. Actual browser rendering, live FRR parser acceptance, UPDATE propagation, forwarding and packet service require separately reported evidence; no actual lab claim is made by this lesson.",
+    "troubleshooting": "Identify the first applicable scope or prerequisite boundary. A hidden result after invalid input protects against displaying stale conclusions; reset restores declared baseline. A real observer with additional earlier differences or nonordinary paths is outside the fixture.",
+    "challenge": "A is an iBGP-distributed path originally learned through AS65002, while B is eBGP-learned through AS65002; both earlier dimensions tie and are usable. Why may their MED comparison still be scoped to the same neighbor? What additional real stages and installation/service evidence would be needed if their MED values tie?",
+    "cleanup": "Reset only the local worksheet. The supplied commands change no router state and create no namespaces, daemons or routes. Close optional read-only sessions according to lab ownership; any separately authorized configuration experiment must restore its own exact baseline and original service evidence."
+  },
+  "glossary": {
+    "MED": "Unsigned optional non-transitive MULTI_EXIT_DISC metric used at its applicable comparison stage.",
+    "Neighboring AS": "The declared leftmost ASN of the nonempty ordinary AS_SEQUENCE in this fixture.",
+    "Effective MED": "The comparison value after the selected target-specific absent-attribute interpretation.",
+    "Always compare MED": "Explicit comparison across different neighboring AS declarations.",
+    "Deterministic MED": "FRR local evaluation arrangement by neighboring AS; outside this two-candidate arithmetic model.",
+    "Earlier-stage boundary": "A supplied earlier dimension differs; the MED-only worksheet stops without a winner.",
+    "System installation": "Separate routing-source selection after a BGP choice, represented here by a declaration.",
+    "Tabletop evidence": "Authored input and calculated outcome, not live routing or measured traffic."
+  },
+  "exams": [
+    {"testedConcept":"Comparable lower MED","question":"Two usable same-prefix candidates have tied earlier dimensions and the same ordinary neighboring AS. A MED is 100; B MED is 200. Which outcome does this contest provide?","answer":"A is preferred at MED.","explanation":"The comparison gates hold and A has the lower effective value.","difficulty":"Beginner","type":"multiple-choice","options":["B because a larger number is preferred.","A is preferred at MED.","Both are rejected.","A because it appears first in the table."]},
+    {"testedConcept":"Default comparison scope","question":"Both candidates are usable and earlier dimensions tie, but their leftmost ordinary ASNs differ. Always-compare is off. What does the worksheet report?","answer":"MED skipped; later stages are needed.","explanation":"The default scoped comparison needs the same neighboring AS.","difficulty":"Intermediate","type":"multiple-choice","options":["The lower MED always wins.","The shorter interface name wins.","MED skipped; later stages are needed.","Both candidates become unusable."]},
+    {"testedConcept":"Earlier-stage boundary","question":"A and B have different supplied LOCAL_PREF values. Can this MED-only worksheet identify the final winner from their MED values?","answer":"No; it reports an earlier-stage scope boundary.","explanation":"It requires equality at supplied earlier dimensions and does not compute an earlier-stage winner.","difficulty":"Intermediate","type":"multiple-choice","options":["Yes, the lower MED overrides LOCAL_PREF.","No; it reports an earlier-stage scope boundary.","Yes, B always wins.","No, BGP ignores LOCAL_PREF."]},
+    {"testedConcept":"Eligibility before metric","question":"A has MED 0 but its NEXT_HOP does not resolve. B is admitted, resolved and has MED 200. What is the fixture's outcome?","answer":"B is sole usable; no MED contest occurs.","explanation":"An unusable route is excluded before the comparison.","difficulty":"Intermediate","type":"multiple-choice","options":["A wins because zero is lowest.","Neither can be used because metrics differ.","B is sole usable; no MED contest occurs.","A installs but B forwards."]},
+    {"testedConcept":"Ties","question":"Comparable candidates have equal effective MED. Which answer is valid in this scope?","answer":"The worksheet leaves later bestpath stages unresolved.","explanation":"Equal MED supplies no arbitrary winner.","difficulty":"Intermediate","type":"multiple-choice","options":["Candidate A wins by row order.","The worksheet leaves later bestpath stages unresolved.","Both original traffic directions are proven.","Always-compare makes A win."]},
+    {"testedConcept":"Default absent attribute","question":"In the pinned FRR 8.4.4 default mode, A has no MED attribute and B has explicit MED 50; all comparison gates hold. What effective value is used for A?","answer":"0.","explanation":"The pinned source returns zero for absent MED unless missing-as-worst is set.","difficulty":"Intermediate","type":"multiple-choice","options":["50.","Infinity outside the integer range.","0.","It cannot have a usable route."]},
+    {"testedConcept":"Unsigned maximum edge case","question":"In the pinned missing-as-worst mode, A's MED is absent and B's MED is explicitly 4294967295. All comparison gates hold. What happens at MED?","answer":"The effective values tie.","explanation":"FRR 8.4.4 maps absent-as-worst to UINT32_MAX, equal to this explicit maximum.","difficulty":"Advanced","type":"multiple-choice","options":["B always wins because it is present.","A always wins because it is absent.","The effective values tie.","The maximum numeric input is invalid."]},
+    {"testedConcept":"Different option meanings","question":"Which statement correctly distinguishes the two documented options?","answer":"Always-compare broadens comparison scope; deterministic-med arranges local evaluation by neighbor AS.","explanation":"Deterministic local evaluation is distinct from comparing across different neighboring ASes.","difficulty":"Advanced","type":"multiple-choice","options":["Both options guarantee network convergence.","Always-compare broadens comparison scope; deterministic-med arranges local evaluation by neighbor AS.","Deterministic-med proves forwarding throughput.","Always-compare makes all earlier attributes irrelevant."]},
+    {"testedConcept":"External influence boundary","question":"An AS advertises a lower MED on its preferred handoff. What can it conclude without observing the receiving policy and traffic?","answer":"It has expressed a preference, with no guaranteed inbound traffic result.","explanation":"The receiving AS's admission and selection policy remain independent.","difficulty":"Advanced","type":"multiple-choice","options":["Every remote source must use that handoff.","The metric measures the handoff's bandwidth.","It has expressed a preference, with no guaranteed inbound traffic result.","The received MED must be propagated unchanged to every adjacent AS."]},
+    {"testedConcept":"Selection versus service","question":"The fixture chooses A, system-select is true and return-ready is false. Which conclusion is supported?","answer":"A remains the BGP choice, while declared exchange prerequisites do not agree.","explanation":"Return readiness does not rerank BGP, and the fixture has not sent traffic.","difficulty":"Advanced","type":"multiple-choice","options":["B becomes the BGP winner.","A remains the BGP choice, while declared exchange prerequisites do not agree.","An actual packet capture proved loss.","MED automatically repairs the return path."]}
+  ],
+  "quick": [
+    {"testedConcept":"Comparison gates","question":"Name the prerequisites for this two-candidate MED-only comparison.","answer":"Both candidates admitted and resolvable, supplied earlier dimensions equal, and same ordinary neighboring AS or explicit always-compare.","explanation":"The fixture excludes additional earlier differences and specialized path forms.","difficulty":"Intermediate","type":"short-answer"},
+    {"testedConcept":"Neighboring-AS identity","question":"For a nonempty ordinary AS_SEQUENCE in this fixture, which ASN defines the MED neighbor group?","answer":"Its declared leftmost ASN.","explanation":"It is not automatically the local iBGP peer's AS.","difficulty":"Intermediate","type":"short-answer"},
+    {"testedConcept":"Evidence limit","question":"The tabletop chooses A and all installation/service declarations agree. Which actual traffic measurement did it perform?","answer":"None.","explanation":"It calculated supplied declarations; real route, forwarding and service evidence is separate.","difficulty":"Advanced","type":"short-answer"}
+  ],
+  "sources": [
+    {"title":"RFC 4271 §§5.1.4 and 9.1.2.2: MED propagation and same-neighbor comparison","url":"https://www.rfc-editor.org/rfc/rfc4271.html#section-5.1.4","checked":"2026-10-09"},
+    {"title":"FRR stable 8.4 BGP: Route Selection and Multi-Exit Discriminator","url":"https://docs.frrouting.org/en/stable-8.4/bgp.html#multi-exit-discriminator","checked":"2026-10-09"},
+    {"title":"FRR 8.4.4 bgp_route.c: bgp_med_value and comparison implementation","url":"https://github.com/FRRouting/frr/blob/frr-8.4.4/bgpd/bgp_route.c","checked":"2026-10-09"},
+    {"title":"FRR 8.4.4 bgp_vty.c: exact bestpath med missing-as-worst command","url":"https://github.com/FRRouting/frr/blob/frr-8.4.4/bgpd/bgp_vty.c","checked":"2026-10-09"},
+    {"title":"FRR 8.4.4 bgp_attr.h: BGP_MED_MAX equals UINT32_MAX","url":"https://github.com/FRRouting/frr/blob/frr-8.4.4/bgpd/bgp_attr.h","checked":"2026-10-09"},
+    {"title":"FRR stable 8.4 Zebra: system route show commands","url":"https://docs.frrouting.org/en/stable-8.4/zebra.html","checked":"2026-10-09"},
+    {"title":"RFC 7300: last four-octet ASN 4294967295 is reserved","url":"https://www.rfc-editor.org/rfc/rfc7300.html","checked":"2026-10-09"}
+  ]
+}

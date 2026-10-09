@@ -1,0 +1,1 @@
+document.getElementById('et-preview').innerHTML=window.EigrpTopology.html('eigrp-topology');window.EigrpTopology.mount('eigrp-topology');document.getElementById('et-theme').addEventListener('click',()=>{document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark';});

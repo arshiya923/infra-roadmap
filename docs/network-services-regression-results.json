@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "results": [
+    {
+      "command": [
+        "node",
+        "--check",
+        "scripts/network-services-models.js"
+      ],
+      "exit": 0,
+      "seconds": 0.05,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "scripts/learning.js"
+      ],
+      "exit": 0,
+      "seconds": 0.06,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/content.cjs"
+      ],
+      "exit": 0,
+      "seconds": 0.16,
+      "stdout": "{\n  \"result\": \"PASS\",\n  \"originalNodes\": 442,\n  \"groups\": 69,\n  \"lessons\": 165,\n  \"examQuestions\": 1650,\n  \"quickChecks\": 495,\n  \"labs\": 165,\n  \"sourceHash\": \"ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25\",\n  \"batches\": 33\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/network-services-models.cjs"
+      ],
+      "exit": 0,
+      "seconds": 0.06,
+      "stdout": "{\"date\":\"2026-10-09\",\"result\":\"PASS\",\"topics\":30,\"checks\":741,\"scope\":\"All supplied declaration combinations; independently derived arithmetic/transition examples and invalid boundaries. Not executed service protocols.\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/commands-network-services.cjs"
+      ],
+      "exit": 0,
+      "seconds": 0.53,
+      "stdout": "PASS: 30 guided blocks classified; 4 local read-only inspections\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-24.04",
+        "--",
+        "python3",
+        "/mnt/c/Users/Arshiya/Desktop/Infta Roadmap/tests/network-services-fixtures.py"
+      ],
+      "exit": 0,
+      "seconds": 1.62,
+      "stdout": "{\"date\": \"2026-10-09\", \"result\": \"PASS\", \"checks\": [\"HTTPS local fixture: trusted owned certificate, correct hostname and expected HTTP body\", \"HTTPS validation rejects wrong hostname with verification enabled\", \"HTTPS validation rejects untrusted root with verification enabled\", \"HTTPS owned listener closed; temporary certificate/key removed without changing host trust\", \"Actual loopback UDP marker receipt and owned file retention; PRI164 decodes facility20/severity4\", \"No-data interval is timeout, not an observed numeric zero or delivery success\", \"Owned UDP collector and temporary retention file cleaned\"], \"scope\": \"Actual loopback TLS hostname/trust/HTTP-body and scripted UDP marker transport/retention. Self-signed owned fixture is not public PKI, full Syslog daemon, SNMP, NTP, AAA, production or physical-network validation.\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-network-services.cjs"
+      ],
+      "exit": 0,
+      "seconds": 274.22,
+      "stdout": "PASS 30 Network Services routes\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser.cjs"
+      ],
+      "exit": 0,
+      "seconds": 8.77,
+      "stdout": "PASS original roadmap preserves all runtime node and group IDs\nPASS original dialog links to correct lesson and preserves learner storage\nPASS all seven lesson routes render complete components\nPASS stepper next/previous/play/pause/reset and diagram zoom\nPASS exam answers hidden until response; correct/wrong feedback and modes\nPASS quick check is separate from exam\nPASS clipboard copies exact command\nPASS anchors preserve lesson route\nPASS full-content search finds commands and glossary concepts\nPASS RAID known failure patterns and reset\nPASS RAID exhaustive four-drive failure masks\nPASS RAID blocks show copies, parity and missing members\nPASS pending and malformed routes are honest and recoverable\nPASS light/dark persistence\nPASS desktop/tablet/mobile layouts and screenshots\nPASS keyboard flow controls and reduced-motion behavior\nPASS file URL works without HTTP or external dependencies\nPASS no JavaScript errors or missing assets\nPASS 18 browser checks\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/quality-audit.cjs"
+      ],
+      "exit": 0,
+      "seconds": 38.42,
+      "stdout": "{\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"Prerequisite graph is acyclic and all prerequisites are authored\",\n    \"Per-lesson exams have ten distinct prompts; comparison/flow/port context present\",\n    \"All authored lessons have substantial structured content (word count used only as a floor, not proof of accuracy)\",\n    \"Initial reader loads only the selected lesson bundle\",\n    \"All 165 authored routes: unique DOM IDs, named form controls/buttons, one H1 and valid section anchors\",\n    \"All authored previous/next links preserve original adjacency, including pending lab nodes\",\n    \"Core body/muted/accent/warning color tokens meet 4.5:1 on paper/surface/soft backgrounds in both themes\",\n    \"Broad local search responds within the 2-second audit ceiling\",\n    \"No page exceptions while traversing the complete authored course\"\n  ],\n  \"localSearchMs\": 151,\n  \"bytes\": {\n    \"learn.html\": 7348,\n    \"content/catalog.js\": 1143626,\n    \"scripts/learning.js\": 34186,\n    \"scripts/network-models.js\": 12295,\n    \"scripts/address-tools.js\": 16322,\n    \"scripts/protocol-models.js\": 8560,\n    \"scripts/service-models.js\": 9352,\n    \"scripts/switching-models.js\": 8062,\n    \"scripts/routing-models.js\": 4118,\n    \"scripts/diagnostic-models.js\": 10649,\n    \"scripts/packet-models.js\": 3905,\n    \"scripts/cisco-models.js\": 6882,\n    \"scripts/boot-models.js\": 7002,\n    \"scripts/storage-models.js\": 3781,\n    \"scripts/lifecycle-models.js\": 6609,\n    \"scripts/port-models.js\": 4448,\n    \"scripts/vlan-control-models.js\": 13183,\n    \"scripts/aggregation-models.js\": 4035,\n    \"scripts/stp-evidence.js\": 5642,\n    \"scripts/mst-models.js\": 5652,\n    \"scripts/edge-models.js\": 4426,\n    \"scripts/guard-models.js\": 3908,\n    \"scripts/root-guard-models.js\": 6098,\n    \"scripts/loop-guard-models.js\": 6478,\n    \"scripts/storm-models.js\": 8027,\n    \"scripts/security-port-models.js\": 8563,\n    \"scripts/span-models.js\": 7308,\n    \"scripts/rspan-models.js\": 7950,\n    \"scripts/erspan-models.js\": 9000,\n    \"scripts/enterprise-lab-models.js\": 11143,\n    \"scripts/static-route-models.js\": 8469,\n    \"scripts/floating-route-models.js\": 11018,\n    \"scripts/pbr-models.js\": 8415,\n    \"scripts/ospf-models.js\": 9819,\n    \"scripts/ospf-area-models.js\": 11114,\n    \"scripts/ospf-dr-bdr-models.js\": 11763,\n    \"styles/ospf-dr-bdr.css\": 1331,\n    \"scripts/ospf-lsa-models.js\": 13454,\n    \"content/ospf-lsa-evidence.js\": 11618,\n    \"styles/ospf-lsa.css\": 961,\n    \"content/ospf-troubleshooting-evidence.js\": 80755,\n    \"scripts/ospf-troubleshooting.js\": 8395,\n    \"styles/ospf-troubleshooting.css\": 1342,\n    \"scripts/eigrp-models.js\": 8887,\n    \"styles/eigrp.css\": 1283,\n    \"scripts/eigrp-metric-models.js\": 8590,\n    \"styles/eigrp-metrics.css\": 1233,\n    \"styles/eigrp-neighbors.css\": 958,\n    \"styles/eigrp-topology.css\": 313,\n    \"scripts/eigrp-topology.js\": 9551,\n    \"scripts/eigrp-neighbors.js\": 9802,\n    \"content/eigrp-neighbor-evidence.js\": 37673,\n    \"styles/learning.css\": 27128,\n    \"scripts/bgp-attributes-models.js\": 11854,\n    \"styles/bgp-attributes.css\": 1403,\n    \"scripts/local-preference-models.js\": 9868,\n    \"styles/local-preference.css\": 655,\n    \"scripts/med-models.js\": 12639,\n    \"styles/med.css\": 911,\n    \"scripts/as-path-models.js\": 8688,\n    \"styles/as-path.css\": 959,\n    \"scripts/communities-models.js\": 10988,\n    \"styles/communities.css\": 566,\n    \"content/batch-01.js\": 71800,\n    \"content/batch-02.js\": 57137,\n    \"content/batch-03.js\": 128672,\n    \"content/batch-04.js\": 100550,\n    \"content/batch-05.js\": 231658,\n    \"content/batch-06.js\": 170199,\n    \"content/batch-07.js\": 325720,\n    \"content/batch-08.js\": 283392,\n    \"content/batch-09.js\": 720594,\n    \"content/batch-10.js\": 538368,\n    \"content/batch-11.js\": 435214,\n    \"content/batch-12.js\": 215699\n  }\n}\n",
+      "stderr": ""
+    }
+  ]
+}

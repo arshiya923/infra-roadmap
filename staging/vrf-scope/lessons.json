@@ -1,0 +1,791 @@
+[
+  {
+    "id": "s3-g6-t0",
+    "batch": "10",
+    "title": "VRF",
+    "subtitle": "Choose the routing context before interpreting the destination address.",
+    "level": "Intermediate → Production",
+    "minutes": 75,
+    "interactive": "vrf",
+    "definition": "A Virtual Routing and Forwarding context gives a device a distinct routing and forwarding domain with its own interface and route ownership. The same IPv4 prefix can exist in BLUE and RED while naming different destinations and next hops. The address alone is insufficient: ingress attachment or an explicitly scoped locally originated operation identifies the context before the destination lookup. This lesson uses three declared contexts, BLUE, RED and default, with two fixed exact-prefix queries. It is a routing-context worksheet, not a universal Linux, Cisco, VPN or policy-routing engine.",
+    "purpose": "Use a VRF to keep tenant, service or operational route ownership explicit on shared infrastructure. Start every observation with device, table/VRF, interface, family, source and destination. A route visible in BLUE is not automatically available in RED, and a query run without its intended scope can find a different route for the same numeric address. Shared infrastructure and route separation do not replace authentication, encryption, firewall policy or an owned service boundary. Controlled shared-service access requires deliberate route and policy design, including return paths.",
+    "mental": "Imagine three separate address books on one desk. BLUE and RED both list 10.10.0.42, but each entry belongs to a different book and a different gateway owner. The attachment tells you which book applies; the destination tells you which entry to read within it. A blank page in BLUE does not authorize you to open RED. A documented shared-service exception can add one entry to RED, but the imported entry still needs a usable next hop, selected source and a return design. A wrong attachment may select the wrong book on a real router; the worksheet flags that disagreement without enforcing security.",
+    "components": [
+      "Contexts and ownership: BLUE, RED and default each have an independent 10.10.0.0/24 candidate, declared next hop and selected-source gate. BLUE and RED endpoints can each use numeric gateway 10.10.0.1 because the gateway owner and attachment differ; this is not one shared neighbor identity.",
+      "Ingress and local queries: blue-lan expects BLUE, red-lan expects RED and default-port expects default. The declared actual L3 binding selects the diagnostic table. The intended endpoint context and gateway owner must agree for the worksheet to apply an intended-exchange lookup.",
+      "Routes and recursion: a candidate must exist in the selected context, its next hop must resolve there, and its source must be selected for declared installation. Resolution is not ARP success, packet delivery or proof that a numeric next hop in another VRF can be reused.",
+      "Explicit chosen-prefix sharing: BLUE owns service 203.0.113.0/24. The fixture can declare only that candidate imported into RED. Permission depends on the source candidate existing and is separate from RED next-hop resolution and source selection. It never imports BLUE's overlapping tenant /24 or installs a reverse route automatically.",
+      "Platform mapping: Linux VRF devices plus l3mdev/routing-policy rules associate traffic with tables in a network namespace. FRR 8.4 normally maps that Linux VRF backend, while Zebra -n selects a network-namespace backend. Cisco interface/VRF command semantics are target-specific; a name shared across products does not make their mechanisms interchangeable.",
+      "Rule and default boundaries: the worksheet's no-fallback behavior is a declared policy. Real Linux rule processing can continue to another table on a miss without an appropriate terminal route. Inspect rules and the selected table's default before claiming isolation. The routing context named default and an IPv4 0.0.0.0/0 route are different concepts.",
+      "Original service: selected-source, forward-ready, return-ready and policy/NAT-ready declarations describe different dependencies. Route separation does not configure a listener, authentication, firewall or address translation, and all-green declarations are not measured traffic."
+    ],
+    "mechanism": [
+      "Fix the observer and context before reading addresses. Record the original endpoint's tenant, attached interface and owned gateway, then the actual routing-context binding. A destination shared numerically across VRFs is expected in this fixture; the question is which ownership domain the original exchange belongs to.",
+      "Check attachment availability and agreement. A declared RED binding does not become BLUE because the endpoint was intended to be BLUE. The tool reports the bound context and blocks its intended-exchange calculation on disagreement. Real equipment may forward into the incorrectly assigned context; this diagnostic flag is not an ACL or security enforcement function.",
+      "Perform only the fixed query within the agreed context. The overlapping query 10.10.0.42 maps to a supplied exact 10.10.0.0/24 candidate. The service query maps to 203.0.113.0/24. No longest-prefix, default-route or policy-routing algorithm is computed; a native candidate absent in BLUE stays absent despite matching prefixes in RED or default.",
+      "For shared service, inspect the explicit BLUE-to-RED declaration and original source candidate. A permitted candidate can exist in RED without target next-hop resolution or selected installation. The worksheet's independent RED import gates explain this sequence but do not implement FRR import vrf, VPN RIB processing, route-target policy or any vendor leak syntax.",
+      "Keep the selected source distinct from candidate visibility. A candidate can be present and resolvable yet displaced by another source. That competitor is outside the fixed inventory; the model only shows no installation of this declared candidate, not that the entire real table has no usable route.",
+      "Inspect the actual Linux boundary if using a prepared Linux lab. Record VRF-device table IDs, enslaved interfaces, routing-policy rules, appropriate terminal/default routes and a scoped route-get result. Higher-priority rules and missing terminal routes can change lookup behavior outside this model. Do not transplant table identifiers from the worksheet to the host.",
+      "If observing FRR, identify Zebra's backend first. In the ordinary backend, a VRF maps to a Linux table in the same namespace; in the namespace backend, namespace ownership changes the meaning of route-table views. A show command omitting VRF scope can inspect default rather than the intended tenant. No backend switch or namespace creation is performed here.",
+      "Verify the actual original exchange and its reply separately when operating an authorized prepared target. Correlate installed source, neighbor and forwarding state with policy/NAT, host/service and both direction scopes. Preserve evidence before any separately authorized change and restore exact owned attachments and dependencies afterward. This page provides only read-only observer examples."
+    ],
+    "flow": [
+      [
+        "Identify attachment and owner",
+        "Record intended endpoint, actual binding, gateway and routing context."
+      ],
+      [
+        "Query that context",
+        "Use the fixed destination only within the agreed table; no borrowed table on a miss."
+      ],
+      [
+        "Admit and install the candidate",
+        "Explicit sharing, target resolution and selected-source declarations are distinct."
+      ],
+      [
+        "Verify the exchange",
+        "Inspect original policy/forward/return evidence; a routing table is not a service test."
+      ]
+    ],
+    "comparison": [
+      [
+        "VRF context / destination prefix",
+        "Which table / which entry inside it",
+        "Overlapping prefixes cannot identify the correct tenant by themselves."
+      ],
+      [
+        "Default context / default route",
+        "An independent routing domain / least-specific prefix",
+        "A named context is not automatic fallback on a lookup miss."
+      ],
+      [
+        "Linux VRF / network namespace",
+        "Layer 3 table/rule scope / broader network-object scope",
+        "FRR backend selection changes the operational mapping."
+      ],
+      [
+        "Route import / next-hop resolution",
+        "Candidate introduction / target usability",
+        "A permitted import need not install or forward."
+      ],
+      [
+        "Candidate displaced / empty real table",
+        "This source not selected / no alternatives",
+        "The worksheet does not compute the competing source."
+      ],
+      [
+        "Route separation / security",
+        "Routing ownership / enforced access and protection",
+        "Authentication, encryption and service policy remain independent."
+      ]
+    ],
+    "example": "Load overlap-blue: 10.10.0.42 uses the declared BLUE /24 via BLUE next hop 192.0.2.2. Load overlap-red: the same address uses RED's independent /24 via 192.0.2.6. Load missing-route: removing BLUE's candidate does not borrow the existing RED/default rows. For service 203.0.113.42 in RED, leak-denied has no candidate; leak-permitted introduces BLUE's service candidate; leak-unresolved shows why RED target resolution still matters. Finally return-missing keeps declared BLUE installation while exchange prerequisites fail. These are authored states, not packets or actual imported routes.",
+    "ports": "A VRF is a routing context and has no new TCP or UDP service port. Protocol sessions and management/application sockets have their own context and transport. Linux applications can require explicit VRF binding; a local default-context lookup or listener cannot be assumed to represent tenant forwarding. The worksheet opens no socket and tests no listener.",
+    "commands": [
+      {
+        "code": "ip -d link show type vrf\nip link show master BLUE\nip link show master RED",
+        "platform": "Prepared Linux kernel 6.6 / iproute2 6.6.0 VRF-device lab · guided read-only, not executed",
+        "explanation": "Record actual VRF device/table identifiers and interface membership before interpreting an overlapping destination.",
+        "expected": "BLUE and RED must already be owned VRF-device names in this observer namespace. The -d view exposes table IDs. This is not a command for an unprepared host or proof of FRR namespace-backend mapping."
+      },
+      {
+        "code": "ip rule show\nip route show vrf BLUE\nip route show vrf RED",
+        "platform": "Prepared Linux kernel 6.6 / iproute2 6.6.0 VRF-device lab · guided read-only, not executed",
+        "explanation": "Inspect routing-policy/l3mdev rule context and the actual route/default boundaries in each named table.",
+        "expected": "Retain rule priorities and each selected table's intended terminal/default behavior. A table miss can continue to another applicable rule; do not claim universal no-fallback from a VRF name. No rule or default route is added by these commands."
+      },
+      {
+        "code": "ip route get 10.10.0.42 vrf BLUE\nip route get 10.10.0.42 vrf RED",
+        "platform": "Prepared Linux kernel 6.6 / iproute2 6.6.0 VRF-device lab · guided read-only, not executed",
+        "explanation": "Compare two explicitly scoped local diagnostic lookups of the same numeric destination.",
+        "expected": "Record table, selected source and egress from the actual output. A local route-get result is a lookup diagnostic, not a forwarded original-packet trace or service measurement; rules, source and ingress context need their own actual evidence."
+      },
+      {
+        "code": "show ip route vrf BLUE\nshow ip route vrf RED\nshow ip nht vrf BLUE\nshow ip nht vrf RED",
+        "platform": "Prepared FRR stable 8.4 Zebra CLI · guided read-only, not executed",
+        "explanation": "Compare each VRF's candidate/source/installation and target next-hop tracking context after identifying the configured backend.",
+        "expected": "Scope names must match actual FRR VRFs. In the ordinary backend route views map to associated Linux tables; with Zebra -n they map to network-namespace routing context. Candidate/next-hop metadata is independent of FIB, neighbor and original traffic proof."
+      }
+    ],
+    "configuration": "The browser supplies declarations and configures nothing. An optional prepared Linux observer must already own BLUE/RED devices, associated tables, enslaved Layer 3 attachments and reviewed l3mdev/routing-policy and terminal/default behavior. Names and IDs must be discovered from its actual state. An optional FRR observer requires a documented Zebra backend, actual namespace/table mapping and existing route ownership; Zebra's VRF configuration stanza is not a universal command to create the underlying Linux object. This page never changes a master binding, backend, rule, route, socket sysctl or namespace. Any separately authorized change must record and restore addresses, dependent routes, source/rule context and exact prior ownership; interface rebinding can affect those dependencies on the target.",
+    "production": "Make every route observation and incident record context-complete: observer, family, VRF/table, interface, source/destination, gateway owner and original service. Shared services need a precise prefix/direction contract and return design. Overlapping tenant addresses can make shared access ambiguous; route import alone does not solve identity, NAT, firewall, application or return requirements. Distinguish configuration intent from the effective Linux policy rules, FRR routing source and actual dataplane. Default-table reachability observed from management is not proof a tenant can reach the same destination.",
+    "troubleshooting": [
+      [
+        "Same IP reaches the wrong endpoint",
+        "Compare actual ingress/interface binding and intended tenant before changing the route. Numeric address equality does not validate ownership."
+      ],
+      [
+        "BLUE route missing but RED route present",
+        "Inspect BLUE candidates and dependencies. The fixture never searches RED/default as a substitute; separately inspect actual Linux RPDB continuation and terminal routes."
+      ],
+      [
+        "Imported service present but not installed",
+        "Check source prefix existence, deliberate import scope, target next-hop resolution and selected source. Presence alone does not establish forwarding."
+      ],
+      [
+        "Local command succeeds, tenant fails",
+        "Record the command's socket/table/source scope and original ingress path. A default management operation may query a different context."
+      ],
+      [
+        "VRF names map unexpectedly",
+        "Identify Linux table IDs and namespace ownership plus FRR backend; a shared name is not evidence the same table was queried."
+      ],
+      [
+        "Route installed, application fails",
+        "Inspect neighbor/FIB, original policy/NAT, host/service and return context. A missing reply dependency does not delete the forward route."
+      ],
+      [
+        "Isolation claim unsupported",
+        "Inspect route sharing, rule priorities, terminal/default behavior, socket policy and real access controls; do not infer authentication or encryption from separate tables."
+      ]
+    ],
+    "security": "Routing separation reduces accidental route mixing when attachments and policy are correct, but it is not cryptographic isolation or authorization. Misbound interfaces, deliberate sharing, higher-priority Linux rules, socket settings and service policy can cross intended boundaries. Preserve management independence and exact ownership during any separate change. The diagnostic readiness gates in this worksheet do not enforce an ACL on real packets.",
+    "performance": "VRFs share physical interfaces, processing and platform forwarding resources. Separate tables do not create extra bandwidth or remove common failure domains. Table count, routes, recursion, neighbor state and platform offload consume different resources; limits depend on release and hardware. The fixed six-row inventory calculates declarations and provides no throughput, scale, FIB programming or convergence measurements.",
+    "mistakes": [
+      "Looking up the destination before identifying routing context.",
+      "Treating matching BLUE and RED IPs as one shared route or gateway.",
+      "Calling the default routing context an automatic fallback.",
+      "Equating a Linux VRF device with a network namespace.",
+      "Treating a permitted import as usable installed forwarding.",
+      "Assuming route distinguisher or route target labels alone forward packets.",
+      "Calling declared agreement a measured service or security test."
+    ],
+    "prerequisites": [
+      "s1-g4-t0",
+      "s1-g4-t1",
+      "s1-g4-t2",
+      "s3-g0-t0"
+    ],
+    "related": [
+      "s3-g6-t1",
+      "s3-g5-t1"
+    ],
+    "artifacts": [],
+    "lab": {
+      "objective": "Trace a fixed destination through declared attachment ownership, one selected routing context and independent candidate/installation/service prerequisites.",
+      "requirements": "Browser tabletop requires no device or privilege. Optional read-only Linux/FRR observation requires the exact prepared owned contexts and supported versions printed with the commands; no live setup is supplied.",
+      "topologyKind": "shared",
+      "topology": [
+        "BLUE endpoint10.10.0.42 / owned gateway 10.10.0.1 / blue-lan",
+        "RED independent endpoint10.10.0.42 / owned gateway 10.10.0.1 / red-lan",
+        "BLUE next hop192.0.2.2 · RED next hop192.0.2.6 · default next hop192.0.2.10",
+        "BLUE service 203.0.113.0/24 → explicit chosen-prefix RED candidate declaration"
+      ],
+      "steps": [
+        "Compare overlap-blue and overlap-red. Write context, exact prefix, gateway owner and distinct target next hop before reading readiness.",
+        "Select wrong-attachment and wrong-binding. Record the bound table and explain why the intended endpoint disagreement cannot be repaired by matching IP addresses.",
+        "Select missing-route and default-separate. Explain the fixture's no-borrow policy, then distinguish real Linux rule continuation and terminal defaults.",
+        "Compare leak-denied, leak-permitted, leak-unresolved, leak-source-absent and leak-displaced; identify which explicit gate changes.",
+        "Select return-missing, source-displaced and policy-missing; separate installation from original exchange declarations.",
+        "Use keyboard controls, inspect the named locally scrollable table and reset. Enter an unlisted declaration through a test context and confirm stale results remain hidden.",
+        "If separately prepared, collect only the four scoped read-only command groups and explain which actual observations support or contradict each declaration. Do not fill unknown target data from the tabletop baseline."
+      ],
+      "verification": "Record expected table before each destination query, source/candidate ownership, target next-hop resolution, selected-source installation and independent original policy/forward/return prerequisites. Independently authored model tests verify declared outcomes and strict invalid-input hiding; live target, browser layout, FIB and service evidence must be separately reported.",
+      "troubleshooting": "Start with observer and attachment ownership, then candidate/target resolution/source gates. A diagnostic mismatch is not real-router enforcement. Stop at unknown target context rather than silently querying default.",
+      "challenge": "BLUE and RED both own 10.10.0.0/24 and gateway 10.10.0.1. Why can a default-context lookup never identify the intended tenant by destination alone? Then explain why importing only BLUE's service prefix into RED neither imports BLUE's tenant prefix nor supplies the reply path.",
+      "cleanup": "Reset only restores local declarations. Read-only commands add no device, route, rule or namespace. Close optional observer sessions according to ownership. Separately authorized configuration changes require their own exact prior-state restoration and original-service evidence."
+    },
+    "glossary": {
+      "VRF": "A distinct routing and forwarding context with explicit route/interface ownership.",
+      "Ingress binding": "Declared association of an incoming Layer 3 attachment with its routing context.",
+      "Overlapping prefix": "Same numeric prefix in separate contexts with independent ownership.",
+      "l3mdev": "Linux Layer 3 master-device rule context directing lookups to associated tables.",
+      "RPDB": "Linux routing-policy database whose rules can direct table lookups.",
+      "Terminal route": "A deliberate route action that terminates applicable lookup rather than leaving a table on a miss.",
+      "Route import declaration": "The worksheet's explicit chosen-prefix candidate introduction, not an implemented leak engine.",
+      "Gateway owner": "The routing/attachment context in which the endpoint's gateway identity exists."
+    },
+    "exams": [
+      {
+        "testedConcept": "Context before address",
+        "question": "BLUE and RED both contain 10.10.0.0/24. What should be identified before a destination lookup?",
+        "answer": "The actual ingress or explicitly scoped local routing context.",
+        "explanation": "The destination can name different owners in separate tables.",
+        "difficulty": "Beginner",
+        "type": "multiple-choice",
+        "options": [
+          "The actual ingress or explicitly scoped local routing context.",
+          "Search every VRF for the most specific matching prefix.",
+          "Use the numeric gateway address to infer the tenant.",
+          "Use only the default table because the router is shared."
+        ]
+      },
+      {
+        "testedConcept": "Independent matching prefix",
+        "question": "BLUE's overlapping candidate is absent while RED's matching candidate remains. What does this fixture do for an agreed BLUE query?",
+        "answer": "Reports no BLUE candidate without borrowing RED.",
+        "explanation": "The model's no-fallback table policy is explicit.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Uses RED because the destination prefix matches.",
+          "Reports no BLUE candidate without borrowing RED.",
+          "Continues into default automatically on every missing BLUE route.",
+          "Imports BLUE and RED tenant prefixes whenever service-leak permission is enabled."
+        ]
+      },
+      {
+        "testedConcept": "Gateway ownership",
+        "question": "Both tenants use gateway 10.10.0.1. Does the equal numeric address prove a shared gateway identity?",
+        "answer": "No; gateway context and attachment ownership still differ.",
+        "explanation": "An address is interpreted in its ownership context.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; identical gateway IPs automatically share one ARP entry.",
+          "Yes; a shared physical router forces both gateway addresses to use one identity.",
+          "No; gateway context and attachment ownership still differ.",
+          "No; gateway IP addresses must be globally unique across every VRF."
+        ]
+      },
+      {
+        "testedConcept": "Permitted candidate",
+        "question": "A BLUE service prefix is explicitly permitted into RED, but its RED target next hop is unresolved. What is supported?",
+        "answer": "The candidate can exist without declared installation.",
+        "explanation": "Import permission and target usability are different gates.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The permit automatically copies BLUE next-hop resolution into RED.",
+          "The imported route is installed because import permission replaces target usability.",
+          "The service prefix must be rejected because no route can be shared across VRFs.",
+          "The candidate can exist without declared installation."
+        ]
+      },
+      {
+        "testedConcept": "Source displacement",
+        "question": "A candidate exists and resolves in BLUE, but blueSelected is false. What does the tool claim?",
+        "answer": "This declared source is not installed; the competitor is outside scope.",
+        "explanation": "It does not compute every other real routing source.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "This declared source is not installed; the competitor is outside scope.",
+          "The entire real BLUE table necessarily has no usable alternatives.",
+          "Candidate visibility proves installation despite the selected-source declaration.",
+          "The candidate becomes selected in default whenever it is displaced in BLUE."
+        ]
+      },
+      {
+        "testedConcept": "Linux boundary",
+        "question": "Which statement correctly describes the worksheet's no-fallback result and real Linux behavior?",
+        "answer": "No fallback is declared here; actual rule and terminal-route design must be inspected.",
+        "explanation": "Linux policy rules can continue beyond a table miss.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "The VRF device name alone blocks table fallback under any rule set.",
+          "No fallback is declared here; actual rule and terminal-route design must be inspected.",
+          "Linux VRF devices create namespace boundaries, so routing-policy rules are irrelevant.",
+          "The l3mdev rule always outranks every separately configured policy rule."
+        ]
+      },
+      {
+        "testedConcept": "Backend distinction",
+        "question": "In FRR 8.4, what does Zebra -n select?",
+        "answer": "The Linux network-namespace VRF backend.",
+        "explanation": "The ordinary backend instead maps Linux VRF devices/tables.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "A new table ID in the same namespace, without selecting a namespace backend.",
+          "A separate routing daemon process required for every VRF.",
+          "The Linux network-namespace VRF backend.",
+          "Automatic terminal default routes for all tenant tables."
+        ]
+      },
+      {
+        "testedConcept": "Default meaning",
+        "question": "Is the context named default identical to an IPv4 0.0.0.0/0 route?",
+        "answer": "No; one names a routing context and the other a prefix.",
+        "explanation": "A context can have or lack its own default route.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; the default context always contains an installed default route.",
+          "Yes; one default route is shared by all named contexts.",
+          "No; the default context can contain only a default route and no specific prefixes.",
+          "No; one names a routing context and the other a prefix."
+        ]
+      },
+      {
+        "testedConcept": "Wrong attachment",
+        "question": "An intended BLUE endpoint has a known attachment declared bound to RED. Does the destination IP correct the binding?",
+        "answer": "No; the tool reports the bound RED context and intended-owner disagreement.",
+        "explanation": "A real misbinding can steer traffic incorrectly; the tool's flag is diagnostic.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "No; the tool reports the bound RED context and intended-owner disagreement.",
+          "Yes; the overlapping destination prefix identifies the intended BLUE context.",
+          "Yes; the equal gateway IP overrides the actual RED interface binding.",
+          "Both tables are queried because the same prefix exists in BLUE and RED."
+        ]
+      },
+      {
+        "testedConcept": "Service evidence",
+        "question": "All declarations agree in the VRF worksheet. What actual measurement has it performed?",
+        "answer": "None; it reports supplied prerequisite agreement.",
+        "explanation": "No packet, FIB or authentication test runs.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Installed hardware forwarding was verified because source-selected is true.",
+          "None; it reports supplied prerequisite agreement.",
+          "A round trip was observed because return-ready is true.",
+          "The original application succeeded because a route exists in the named context."
+        ]
+      }
+    ],
+    "quick": [
+      {
+        "testedConcept": "Lookup scope",
+        "question": "Which comes first here: attachment/context agreement or destination query?",
+        "answer": "Attachment/context agreement.",
+        "explanation": "The route is interpreted within the selected context.",
+        "difficulty": "Beginner",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Explicit sharing gates",
+        "question": "What remains after permission introduces a RED service candidate?",
+        "answer": "Target next-hop resolution, selected-source installation and original policy/forward/return requirements.",
+        "explanation": "Permission does not manufacture these dependencies.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Security limit",
+        "question": "Does separate route ownership prove authentication or encryption?",
+        "answer": "No.",
+        "explanation": "Security controls and measurements remain independent.",
+        "difficulty": "Advanced",
+        "type": "short-answer"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Linux kernel 6.6 VRF device, l3mdev rules and scoped inspection",
+        "url": "https://www.kernel.org/doc/html/v6.6/networking/vrf.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "iproute2 6.6.0 ip-rule manual: read-only rule show",
+        "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/ip-rule.8",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable 8.4 Zebra VRF backends, table-miss warning and show commands",
+        "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html#virtual-routing-and-forwarding",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable 8.4 BGP VRF route leaking: explicit configured mechanism outside worksheet",
+        "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html#vrf-route-leaking",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "id": "s3-g6-t1",
+    "batch": "10",
+    "title": "VRF-Lite",
+    "subtitle": "Share a physical trunk while keeping logical attachment and route ownership explicit.",
+    "level": "Intermediate → Production",
+    "minutes": 75,
+    "interactive": "vrf-lite",
+    "definition": "VRF-Lite uses separate routing contexts and Layer 3 interface ownership without requiring an MPLS transport for the local design. Logical attachments can carry distinct tenants over a shared physical link. In this tabletop, BLUE VLAN10 and RED VLAN20 travel on one declared trunk but terminate in separate logical Layer 3 attachments and routing tables. The terms blue-dot10 and red-dot20 are abstract worksheet labels; an actual supported router might use subinterfaces, while the cited Catalyst guide uses VLAN SVIs/routed interfaces. They are not interchangeable provisioning commands.",
+    "purpose": "Use this lesson to connect Layer 2 attachment classification with Layer 3 context ownership. A cable, trunk or physical router can be shared while BLUE and RED still have separate route and gateway identities. Successful trunk carriage does not populate a VRF, select an installed route or supply the original return path. Conversely, separate routes can remain present while a shared trunk failure prevents either tenant's original ingress exchange. Verify both sides' VLAN intent and logical interface binding before interpreting the same overlapping destination address.",
+    "mental": "Think of one cable carrying two separately labeled parcels. Label10 goes to BLUE's desk and label20 to RED's desk; each desk reads its own address book. The shared conveyor does not merge those books. If the parcel reaches the wrong desk, its numeric destination cannot infer the intended tenant. If the conveyor stops, the books can remain intact while deliveries fail. A shared-service entry is a deliberate exception in the receiving book and still needs a usable onward action and reply instructions.",
+    "components": [
+      "Fixed transport and attachments: one declared physical trunk carries BLUE VLAN10 and RED VLAN20. blue-dot10 expects BLUE and packetVlan10; red-dot20 expects RED and packetVlan20. The separate default-port is untagged, represented by fixture value0; zero is an untagged sentinel, not an IEEE VLAN identifier or the trunk's automatic native VLAN.",
+      "Endpoint and gateway ownership: BLUE and RED can each use 10.10.0.0/24 and gateway 10.10.0.1 with distinct ownership. The attachment, incoming VLAN, actual VRF binding, intended endpoint and gateway context must agree for intended-exchange readiness.",
+      "Table inventory: BLUE, RED and default have independent overlapping-prefix candidates and native target next-hop/source gates. BLUE's next hop is192.0.2.2, RED's192.0.2.6 and default's192.0.2.10. Shared physical transport does not share these routing decisions automatically.",
+      "Explicit service exception: only BLUE service 203.0.113.0/24 can be declared introduced into RED. Source presence, permission, RED next-hop resolution and selected source remain distinct. It is not a BGP/VPN/MPLS leak implementation or a route-target authorization system.",
+      "Target-specific mechanisms: a Cisco Catalyst IOS XE17.17 lab can use supported SVIs and Layer 3 VRF bindings; a router subinterface design needs its own platform support and interface mapping. Linux VRF devices/l3mdev rules and FRR namespace backends implement different operational scope. Commands identify their exact target and do not build either design.",
+      "Rule/default context: declared no-fallback applies to this worksheet. Linux policy rules can continue beyond a missing VRF-table match without an appropriate terminal route. Default-port is an explicit third attachment, not where invalid VLANs or unknown VRF names are silently sent.",
+      "Service dependencies: trunk carriage and routing are distinct from endpoint access controls, NAT, neighbor state, application identity and original return design. VRF-Lite does not encrypt the shared link or authenticate a tenant label."
+    ],
+    "mechanism": [
+      "Map physical and logical ownership on both ends. Record the one shared trunk, BLUE VLAN10, RED VLAN20 and the actual supported Layer 3 attachments that terminate them. A switchport trunk is Layer 2 transport; the cited Catalyst VRF binding applies to a Layer 3 interface such as an SVI. A router's subinterface is a separate supported design, not inferred from the switch CLI.",
+      "Verify the declared trunk and attachment are available. The trunkReady flag is a supplied selected-tenant carriage prerequisite, not a link protocol or STP/VLAN simulator. Disabling it leaves route inventory declarations visible but blocks the original tenant ingress calculation. The separately attached default-port is outside this shared tenant trunk.",
+      "Compare incoming VLAN with the fixed logical attachment and intended endpoint. VLAN20 at blue-dot10 is a diagnostic disagreement. Real native-VLAN, access/trunk, allowed/active/STP and subinterface encapsulation behavior needs actual platform inspection; the model does not parse frames, remap VLANs or fall invalid input into default.",
+      "Choose context from the declared Layer 3 binding before reading the destination. A known BLUE attachment bound to RED reports RED as the bound context and an ownership mismatch; matching10.10.0.42 cannot repair the intended endpoint. This tool's mismatch result is readiness analysis, not an automatically deployed packet filter.",
+      "Query the fixed exact prefix in the agreed context. BLUE and RED overlapping routes have independent native next hops and selected sources. If BLUE's candidate disappears, RED/default rows are not borrowed in this declared policy. An actual Linux analogy requires reviewing higher-priority rules and terminal/default behavior rather than assuming identical Cisco and Linux lookup semantics.",
+      "Introduce shared service only through the explicit chosen-prefix declaration. When BLUE service exists and leakPermit is true, RED may have a candidate but still requires RED target resolution and selected installation. The local design does not require MPLS; the cited Cisco guide also discusses an optional provider MPLS backbone, which is a separate transport architecture outside this tabletop.",
+      "Keep labels and forwarding mechanisms separate. RD/RT may identify VPN routes or express import/export policy in an actual supported VPN control plane; their presence alone does not provide the intended Layer 2 attachment, target next hop, dataplane path or authorization. The worksheet has no RD, RT, BGP or MPLS label processing.",
+      "Inspect original traffic policy and reply scope independently after route readiness. Shared cable or shared box failures can affect both tenants; a per-tenant route or return failure may affect one. Retain actual scoped neighbor/forwarding and original-service evidence in any separately authorized target exercise. No physical link, VLAN, route or namespace is changed by this page."
+    ],
+    "flow": [
+      [
+        "Map the shared transport",
+        "Record trunk, each VLAN and the supported logical Layer 3 attachment."
+      ],
+      [
+        "Agree on context ownership",
+        "Check incoming VLAN, actual binding, intended endpoint and gateway."
+      ],
+      [
+        "Select the per-context route",
+        "Native/imported candidate, target next hop and source selection remain separate."
+      ],
+      [
+        "Verify original service",
+        "Inspect policy/NAT and both directions; shared infrastructure is not a merged RIB."
+      ]
+    ],
+    "comparison": [
+      [
+        "Trunk / VRF",
+        "Layer 2 carriage / Layer 3 routing context",
+        "A trunk can carry two VLANs whose L3 interfaces use separate VRFs."
+      ],
+      [
+        "SVI / router subinterface",
+        "Switch VLAN Layer 3 attachment / tagged router attachment",
+        "Use target-supported mapping; worksheet labels are not universal CLI objects."
+      ],
+      [
+        "Shared cable / shared table",
+        "Physical resource / route ownership",
+        "One cable does not automatically combine BLUE and RED RIBs."
+      ],
+      [
+        "VRF-Lite / provider MPLS VPN",
+        "Local contexts without required MPLS / separate labeled transport architecture",
+        "An optional provider backbone does not make MPLS a prerequisite of this tabletop."
+      ],
+      [
+        "Packet VLAN / tenant authorization",
+        "Carriage/classification label / access decision",
+        "A VLAN identifier does not authenticate the sender."
+      ],
+      [
+        "Untagged sentinel0 / native VLAN",
+        "Worksheet default-port marker / configured trunk behavior",
+        "Invalid tenant VLANs do not automatically become the default context."
+      ],
+      [
+        "RD or RT / packet delivery",
+        "VPN control identity/policy / realized dataplane and service",
+        "No label alone supplies forwarding, permission or return routing."
+      ]
+    ],
+    "example": "BLUE10.10.0.42 and RED10.10.0.42 traverse the same declared trunk under VLAN10 and 20. The first uses BLUE's candidate via192.0.2.2; the second RED's via192.0.2.6. Set packetVlan20 on blue-dot10: intended attachment agreement fails without changing route inventory. Set trunkReady false: original tenant ingress becomes unavailable although declared BLUE/RED routes remain present. Reset, select RED service with leakPermit true and leakResolved false: the import candidate exists but cannot be installed under its target resolution declaration. Finally turn returnReady off on a working BLUE state; the route remains declared installed while original exchange prerequisites fail. No frame, label or packet was sent.",
+    "ports": "VRF-Lite introduces no new TCP/UDP service port and requires no MPLS transport in this fixed local design. VLAN tags classify Layer 2 carriage rather than an application port. Actual management and application sessions keep their own source, table, transport and security scope. The worksheet tests no listener, ARP exchange or routing session.",
+    "commands": [
+      {
+        "code": "show interfaces GigabitEthernet1/0/2 trunk\nshow vrf definition interfaces",
+        "platform": "Prepared Catalyst9600 IOS XE17.17.x switch lab · guided read-only, not executed",
+        "explanation": "Correlate a reviewed example physical trunk with actual logical Layer 3 VRF ownership on the switch.",
+        "expected": "GigabitEthernet1/0/2 is a replaceable owned example interface that must exist on the prepared target. Record allowed/active/forwarding VLAN context and actual SVI/routed-interface bindings. This is not router-subinterface syntax and does not configure a switchport or attach a VRF."
+      },
+      {
+        "code": "show ip route vrf BLUE\nshow ip route vrf RED",
+        "platform": "Prepared Catalyst9600 IOS XE17.17.x switch lab · guided read-only, not executed",
+        "explanation": "Compare the independent exact-prefix/source/next-hop records in the two existing tenant VRFs.",
+        "expected": "Record BLUE/RED ownership even when the numeric prefixes overlap. A missing route in one context is not evidence that the other table is a substitute. Routing output alone does not prove hardware programming or original service."
+      },
+      {
+        "code": "show ip arp vrf BLUE\nshow ip arp vrf RED",
+        "platform": "Prepared Catalyst9600 IOS XE17.17.x switch lab · guided read-only, not executed",
+        "explanation": "Inspect actual IPv4 neighbor identity in each existing VRF independently of matching numeric gateway addresses.",
+        "expected": "Record context, neighbor MAC/interface and state where supplied. ARP evidence differs from route recursion and does not establish the far-side reply/application path. No static ARP entry or probe is created."
+      },
+      {
+        "code": "ip rule show\nip route show vrf BLUE\nip route show vrf RED\nip route get 10.10.0.42 vrf BLUE",
+        "platform": "Separate prepared Linux kernel6.6 / iproute2 6.6.0 VRF-device analogy · guided read-only, not executed",
+        "explanation": "Inspect the Linux rule/default and explicitly scoped lookup boundary when comparing implementations.",
+        "expected": "These are Linux commands on a separately prepared observer, not commands for the Cisco switch. BLUE/RED must be actual VRF-device names in that namespace. Inspect applicable rule priorities and terminal/default actions; Linux can continue beyond a table miss. A route-get is diagnostic and sends no original-service probe."
+      }
+    ],
+    "configuration": "No trunk, VLAN, SVI, subinterface or VRF is provisioned here. The optional Cisco observer must already have reviewed VLAN10/20 carriage and supported Layer 3 tenant attachments, exact BLUE/RED route ownership and independent management. The one-interface trunk command is an owned example requiring actual port mapping; Catalyst SVI/routed-interface VRF syntax does not establish support for a router subinterface design. A separate Linux comparison requires its own VRF devices, table IDs, rules and terminal/default routes; a FRR -n namespace backend is a different mapping. Any separately authorized change needs recorded VLAN/native/allowed and endpoint intent, actual addresses/routes/policy, exact prior bindings and rollback. No persistent host or switch change is a consequence of a checkbox.",
+    "production": "Maintain an attachment contract across both ends: physical path, VLAN, tag/native assumptions, logical L3 interface, VRF, endpoint/gateway identity, route scope and original reply path. A shared trunk is a common failure and capacity domain even while RIBs are separate. Shared services and overlapping addressing need deliberate direction, identity/NAT and policy review; importing a route does not remove that ambiguity automatically. Keep local VRF-Lite operations separate from any optional provider MPLS/VPN control plane. Target platform support and release, rather than generic terminology, determine which interface and show/configuration forms are valid.",
+    "troubleshooting": [
+      [
+        "Both tenants fail together",
+        "Inspect shared trunk availability and actual allowed/active/forwarding VLANs before erasing per-VRF routes. Route inventory can remain intact while ingress carriage fails."
+      ],
+      [
+        "One tenant fails",
+        "Compare that VLAN's logical attachment and VRF binding, native route/next hop/source and original return scope. Shared physical link state alone cannot close the incident."
+      ],
+      [
+        "Same IP reaches another tenant",
+        "Trace ingress classification and Layer 3 binding. A numeric destination does not correct a VLAN or VRF misattachment."
+      ],
+      [
+        "VLAN exists but VRF route absent",
+        "Distinguish Layer 2 carriage from supported Layer 3 attachment/addressing and per-context route ownership. A trunk's VLAN list is not a VRF routing table."
+      ],
+      [
+        "Service import unresolved",
+        "Keep source existence, explicit candidate permission and RED target next-hop/source gates separate. RD/RT labels are not a packet-forwarding or authorization test."
+      ],
+      [
+        "Linux comparison falls through",
+        "Inspect actual RPDB priorities and terminal/default route behavior; no-fallback in this worksheet is declared, not a universal Linux guarantee."
+      ],
+      [
+        "Installed route but failed application",
+        "Inspect scoped neighbor/FIB, policy/NAT, endpoint and original return/service evidence; readiness declarations are not traffic measurements."
+      ]
+    ],
+    "security": "VRF-Lite and VLAN separation are routing/attachment controls, not cryptographic protection. A wrong port, native/tag interpretation, logical binding, route exception or service policy can violate intent. Review authorization and explicit access controls for the actual tenant relationship. The model blocks its intended-exchange calculation on mismatch but installs no ACL and makes no claim that a real misbound packet would be dropped.",
+    "performance": "BLUE and RED share the trunk's physical capacity and failure domain. Separate routing tables can share hardware forwarding resources, processing, buffers and neighbor capacity. The cited Catalyst guide describes shared forwarding resources; support and limits depend on release/hardware. This six-row inventory performs no throughput, QoS, scale, hardware-offload, label or convergence test, and cannot infer a production capacity target from boolean agreement.",
+    "mistakes": [
+      "Treating one physical cable as one routing table.",
+      "Assuming VLAN membership automatically assigns the correct Layer 3 VRF.",
+      "Copying switch SVI commands into a router subinterface design.",
+      "Using matching tenant gateway IPs as proof of shared identity.",
+      "Treating untagged sentinel0 as a real VLAN or automatic native fallback.",
+      "Assuming MPLS is required for local VRF-Lite.",
+      "Calling route targets, route distinguishers or VLAN labels authentication.",
+      "Reporting all-green declarations as a packet or FIB measurement."
+    ],
+    "prerequisites": [
+      "s3-g6-t0",
+      "s1-g3-t1",
+      "s3-g0-t0"
+    ],
+    "related": [
+      "s3-g5-t1"
+    ],
+    "artifacts": [],
+    "lab": {
+      "objective": "Connect declared trunk/VLAN attachment ownership to one routing context, while separating route and original-service dependencies.",
+      "requirements": "Browser tabletop requires no device. Optional read-only Cisco observer requires supported Catalyst9600 IOS XE17.17.x and actual owned trunk/VRF mapping; optional Linux analogy is a separately prepared6.6 VRF-device observer. No setup or live provision is supplied.",
+      "topologyKind": "shared",
+      "topology": [
+        "One shared physical trunk: BLUE VLAN10 | RED VLAN20",
+        "BLUE logical attachment / independent 10.10.0.0/24 and gateway 10.10.0.1",
+        "RED logical attachment / independent 10.10.0.0/24 and gateway 10.10.0.1",
+        "Separate default-port; explicit BLUE service 203.0.113.0/24 candidate may be permitted into RED"
+      ],
+      "steps": [
+        "Compare overlap-blue and overlap-red. Draw the common cable and separate logical L3 attachments/tables, recording each owned gateway and next hop.",
+        "Select vlan-mismatch, wrong-binding and wrong-attachment. Explain the declared bound context and why the intended exchange is blocked diagnostically rather than repaired by the address.",
+        "Select trunk-absent and attachment-absent. Confirm route inventory remains separate while original tenant ingress prerequisites fail.",
+        "Compare missing-route and default-separate. State the no-borrow fixture policy and separately explain actual Linux rule/default caveats.",
+        "Compare leak-denied, leak-permitted, leak-unresolved, leak-source-absent and leak-displaced. Identify the exact candidate/resolution/source gate at each stage.",
+        "Select source-displaced, return-missing and policy-missing; keep route readiness distinct from original service.",
+        "Use keyboard reset and the named local scroll region. Confirm invalid scenario or unknown context hides the outcome through subsequent control changes.",
+        "Optionally collect only the scoped read-only Cisco groups and separate Linux analogy in their prepared targets. Retain actual port/VRF/version mapping and uncertain facts; no tabletop result is a measured frame or packet test."
+      ],
+      "verification": "Write trunk/VLAN availability and classification, actual attachment binding, intended endpoint/gateway agreement, selected table and native/imported route prerequisites. Then state original policy/forward/return requirements independently. Model tests verify declarations; browser layout, real CLI parser, frame carriage, forwarding and service need separately reported observation.",
+      "troubleshooting": "Locate the first disagreement in transport, classification or routing ownership before route candidate and service checks. A worksheet diagnostic is not deployed security enforcement and is not proof of a target's drop behavior.",
+      "challenge": "Why can the shared trunk fail both tenants while both VRF route tables stay populated? Then explain why a permitted RED shared-service candidate with unresolved target next hop cannot be rescued merely by BLUE having the same numeric next hop resolved.",
+      "cleanup": "Reset changes only local inputs. Read-only observer commands create no VLANs, routes, rules or namespaces. Close optional sessions per lab ownership. A separately authorized configuration experiment must restore exact physical/logical bindings and prior route/policy/service context using its own reviewed rollback."
+    },
+    "glossary": {
+      "VRF-Lite": "Local separate routing contexts without a required MPLS transport in this design.",
+      "Trunk": "Shared Layer 2 link carrying multiple declared VLANs.",
+      "Logical L3 attachment": "Supported SVI/routed interface or platform-specific subinterface that supplies a routing-context binding.",
+      "VLAN mismatch": "Disagreement between declared incoming tag, fixed attachment and intended endpoint.",
+      "SVI": "A switch virtual Layer 3 interface associated with a VLAN on a supported switch.",
+      "Subinterface": "A supported logical router interface; its encapsulation and VRF binding are platform-specific.",
+      "Shared failure domain": "A physical dependency that can affect several otherwise separate contexts.",
+      "Untagged sentinel": "Fixture value0 for separate default-port, not an on-wire VLAN number or native-VLAN simulator."
+    },
+    "exams": [
+      {
+        "testedConcept": "Physical versus logical",
+        "question": "BLUE VLAN10 and RED VLAN20 share one physical trunk. What happens to their routing tables in this design?",
+        "answer": "They remain separate through their Layer 3 attachment bindings.",
+        "explanation": "Physical sharing does not automatically merge route ownership.",
+        "difficulty": "Beginner",
+        "type": "multiple-choice",
+        "options": [
+          "They remain separate through their Layer 3 attachment bindings.",
+          "They merge because the cable and physical router are shared.",
+          "The router compares BLUE and RED matching routes in one combined best-route contest.",
+          "The overlapping prefix is rejected because all VRFs must use unique addresses."
+        ]
+      },
+      {
+        "testedConcept": "VLAN mismatch",
+        "question": "packetVlan20 is declared at blue-dot10 for a BLUE endpoint. What does this worksheet report?",
+        "answer": "A VLAN/attachment disagreement without applying the intended-exchange lookup.",
+        "explanation": "The diagnostic does not infer intended tenant from the destination.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The destination automatically corrects VLAN20 to the intended BLUE VLAN10.",
+          "A VLAN/attachment disagreement without applying the intended-exchange lookup.",
+          "The mismatched tag is treated as untagged and sent into default.",
+          "The destination address alone selects BLUE regardless of the attachment and tag."
+        ]
+      },
+      {
+        "testedConcept": "Shared transport fault",
+        "question": "trunkReady is false while BLUE/RED route declarations remain present. Which conclusion is supported?",
+        "answer": "Tenant ingress prerequisites fail while route inventory may remain populated.",
+        "explanation": "Shared carriage and per-context route inventory are different layers.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Both routing tables necessarily disappear when the trunk becomes unavailable.",
+          "The intended endpoint can use the other tenant VLAN as an automatic ingress backup.",
+          "Tenant ingress prerequisites fail while route inventory may remain populated.",
+          "Separate VRFs protect each tenant from failure of the shared physical trunk."
+        ]
+      },
+      {
+        "testedConcept": "Local MPLS requirement",
+        "question": "Does this fixed local VRF-Lite design require an MPLS transport?",
+        "answer": "No; separate local contexts and attachments are sufficient for its scope.",
+        "explanation": "An optional provider MPLS backbone is a different architecture.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; every local VRF packet must carry an MPLS label.",
+          "Yes; local routing contexts require provider MP-BGP peering before any route lookup.",
+          "Yes; an RD must be serialized in each local packet to distinguish BLUE from RED.",
+          "No; separate local contexts and attachments are sufficient for its scope."
+        ]
+      },
+      {
+        "testedConcept": "Platform attachment form",
+        "question": "Can a Catalyst SVI example prove that the same provisioning syntax supports a router subinterface?",
+        "answer": "No; use each target's supported attachment and syntax.",
+        "explanation": "The worksheet labels are abstract and commands specify their target.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "No; use each target's supported attachment and syntax.",
+          "Yes; all Layer 3 logical interfaces share the same provisioning syntax.",
+          "Yes; an SVI VLAN binding supplies identical encapsulation commands on a router subinterface.",
+          "Yes; the VRF name determines attachment syntax independently of platform and interface type."
+        ]
+      },
+      {
+        "testedConcept": "Explicit import usability",
+        "question": "RED has a permitted BLUE service candidate, but leakResolved is false. What can the model establish?",
+        "answer": "Candidate presence without target-resolved installation.",
+        "explanation": "A source next hop resolved in BLUE does not satisfy the separate target RED declaration.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "BLUE resolution of the same numeric next hop automatically satisfies RED resolution.",
+          "Candidate presence without target-resolved installation.",
+          "The imported prefix is installed because candidate presence means selected source.",
+          "RED receives an automatic reverse route as soon as BLUE service import is permitted."
+        ]
+      },
+      {
+        "testedConcept": "RD/RT limit",
+        "question": "Do an RD or RT value alone provide packet delivery or tenant authorization?",
+        "answer": "No; actual attachment, control/data-plane and policy requirements remain.",
+        "explanation": "Control identity or import policy labels are not an entire forwarding/security system.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "The RD creates the required dataplane path even when attachment binding is missing.",
+          "An RT value authenticates the tenant independently of access policy.",
+          "No; actual attachment, control/data-plane and policy requirements remain.",
+          "Matching RT values guarantee a usable next hop and original return path."
+        ]
+      },
+      {
+        "testedConcept": "Untagged sentinel",
+        "question": "What does packetVlan0 mean in this fixture?",
+        "answer": "Untagged separate default-port, not an IEEE VLAN ID or automatic trunk fallback.",
+        "explanation": "The worksheet deliberately excludes native-VLAN processing.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "A real VLAN assigned to every untagged frame by this worksheet.",
+          "The shared trunk native VLAN, inferred without reading target configuration.",
+          "Permission to put unknown tenant VLANs into the default routing context.",
+          "Untagged separate default-port, not an IEEE VLAN ID or automatic trunk fallback."
+        ]
+      },
+      {
+        "testedConcept": "Implementation comparison",
+        "question": "How should the separate Linux analogy's table-miss behavior be assessed?",
+        "answer": "Inspect actual rule priorities and terminal/default routes rather than assume the fixture's no-fallback policy.",
+        "explanation": "Linux RPDB behavior is target-specific and outside the declared algorithm.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Inspect actual rule priorities and terminal/default routes rather than assume the fixture's no-fallback policy.",
+          "Assume a named Linux VRF can never continue to a later routing-policy rule.",
+          "Treat the Cisco table behavior and FRR Linux backend as identical implementations.",
+          "Use a local route-get result as proof of the original forwarded exchange."
+        ]
+      },
+      {
+        "testedConcept": "Independent return",
+        "question": "BLUE route prerequisites agree but returnReady is false. What changes?",
+        "answer": "Original exchange prerequisites fail while the declared route installation remains.",
+        "explanation": "The reply declaration does not remove the forward candidate.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "RED becomes the route source when the BLUE reply path is absent.",
+          "Original exchange prerequisites fail while the declared route installation remains.",
+          "A selected forward route guarantees a working original reply path.",
+          "The shared trunk automatically supplies the reply route because forward readiness is true."
+        ]
+      }
+    ],
+    "quick": [
+      {
+        "testedConcept": "Separate ownership",
+        "question": "Does sharing a trunk combine BLUE and RED route tables?",
+        "answer": "No.",
+        "explanation": "Logical Layer 3 bindings preserve distinct context ownership.",
+        "difficulty": "Beginner",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Attachment agreement",
+        "question": "Which declarations establish intended tenant ingress readiness?",
+        "answer": "Available trunk/attachment and agreement among VLAN, logical attachment, actual VRF binding, intended endpoint and gateway owner.",
+        "explanation": "The destination IP does not repair a mismatch.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Evidence limit",
+        "question": "All VRF-Lite declarations agree. What actual frame or service observation did the tool make?",
+        "answer": "None.",
+        "explanation": "The tabletop evaluates supplied prerequisites only.",
+        "difficulty": "Advanced",
+        "type": "short-answer"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cisco Catalyst9600 IOS XE17.17.x VRF-Lite: ingress context, overlapping routes and read-only VRF/ARP views",
+        "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/rtng/b_1717_rtng_9600_cg/configuring_vrf_lite.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco Catalyst9600 IOS XE17.17.x VLAN trunk inspection and native/tag context",
+        "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/vlan/b_1717_vlan_9600_cg/configuring_vlan_trunks.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Linux kernel6.6 VRF device and explicitly scoped inspection",
+        "url": "https://www.kernel.org/doc/html/v6.6/networking/vrf.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "iproute2 6.6.0 ip-rule manual: read-only show",
+        "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/ip-rule.8",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 Zebra backend and rule/default caveats",
+        "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html#virtual-routing-and-forwarding",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 BGP explicit VRF route leaking, outside model",
+        "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html#vrf-route-leaking",
+        "checked": "2026-10-09"
+      }
+    ]
+  }
+]

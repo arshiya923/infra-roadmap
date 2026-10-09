@@ -1,0 +1,97 @@
+{
+  "platform": "Ubuntu-24.04 WSL ordinary user",
+  "result": "PASS",
+  "observations": [
+    {
+      "command": [
+        "id"
+      ],
+      "exitCode": 0,
+      "outputPresent": true,
+      "rawOutputRetained": false
+    },
+    {
+      "command": [
+        "dpkg-query",
+        "-W",
+        "python3"
+      ],
+      "exitCode": 0,
+      "outputPresent": true,
+      "rawOutputRetained": false
+    },
+    {
+      "command": [
+        "systemctl",
+        "--no-pager",
+        "--failed"
+      ],
+      "exitCode": 0,
+      "outputPresent": true,
+      "rawOutputRetained": false
+    },
+    {
+      "command": [
+        "systemctl",
+        "list-timers",
+        "--all",
+        "--no-pager"
+      ],
+      "exitCode": 0,
+      "outputPresent": true,
+      "rawOutputRetained": false
+    },
+    {
+      "command": [
+        "journalctl",
+        "-b",
+        "-n",
+        "5",
+        "--no-pager"
+      ],
+      "exitCode": 0,
+      "outputPresent": true,
+      "rawOutputRetained": false
+    },
+    {
+      "command": [
+        "findmnt",
+        "-T",
+        "/tmp"
+      ],
+      "exitCode": 0,
+      "outputPresent": true,
+      "rawOutputRetained": false
+    },
+    {
+      "command": [
+        "df",
+        "-h",
+        "/tmp"
+      ],
+      "exitCode": 0,
+      "outputPresent": true,
+      "rawOutputRetained": false
+    },
+    {
+      "command": [
+        "df",
+        "-i",
+        "/tmp"
+      ],
+      "exitCode": 0,
+      "outputPresent": true,
+      "rawOutputRetained": false
+    },
+    {
+      "command": [
+        "cat",
+        "/proc/pressure/io"
+      ],
+      "exitCode": 0,
+      "outputPresent": true,
+      "rawOutputRetained": false
+    }
+  ],
+  "scope": "Exact read-only lesson commands; output intentionally not retained to avoid disclosing host logs/account details. Not service health, stress or target administration validation."
+}

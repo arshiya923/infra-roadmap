@@ -1,0 +1,168 @@
+{
+  "reviewedDate": "2026-10-09",
+  "method": "Primary assistant web retrieval of official documentation; no vendor execution inferred",
+  "sources": [
+    {
+      "key": "python",
+      "title": "Python 3.12 tutorial and standard library",
+      "url": "https://docs.python.org/3.12/tutorial/",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "ip",
+      "title": "Python 3.12 ipaddress",
+      "url": "https://docs.python.org/3.12/library/ipaddress.html",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "yaml",
+      "title": "YAML 1.2.2 specification",
+      "url": "https://yaml.org/spec/1.2.2/",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "http",
+      "title": "RFC 9110 HTTP semantics",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "ssh",
+      "title": "RFC 4253 SSH transport",
+      "url": "https://www.rfc-editor.org/rfc/rfc4253.html",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "snmp",
+      "title": "RFC 3414 SNMPv3 USM",
+      "url": "https://www.rfc-editor.org/rfc/rfc3414.html",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "netconf",
+      "title": "RFC 6241 NETCONF",
+      "url": "https://www.rfc-editor.org/rfc/rfc6241.html",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "restconf",
+      "title": "RFC 8040 RESTCONF",
+      "url": "https://www.rfc-editor.org/rfc/rfc8040.html",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "yang",
+      "title": "RFC 7950 YANG 1.1",
+      "url": "https://www.rfc-editor.org/rfc/rfc7950.html",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "cisco",
+      "title": "Cisco IOS XE 17 release-specific configuration guides",
+      "url": "https://www.cisco.com/c/en/us/support/ios-nx-os-software/ios-xe-17/products-installation-and-configuration-guides-list.html",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "netmiko",
+      "title": "Netmiko project documentation",
+      "url": "https://ktbyers.github.io/netmiko/",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "paramiko",
+      "title": "Paramiko SSHClient contract",
+      "url": "https://docs.paramiko.org/en/stable/api/client.html",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "napalm",
+      "title": "NAPALM NetworkDriver contract; verify installed driver support",
+      "url": "https://napalm.readthedocs.io/en/latest/base.html",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "requests",
+      "title": "Requests client behavior",
+      "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "ansible",
+      "title": "Ansible network automation guide",
+      "url": "https://docs.ansible.com/projects/ansible/latest/network/getting_started/index.html",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "ciscoans",
+      "title": "cisco.ios interfaces resource module; reviewed collection 11.5.1 page",
+      "url": "https://docs.ansible.com/projects/ansible/latest/collections/cisco/ios/ios_interfaces_module.html",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "jinja",
+      "title": "Jinja 3.1 API and StrictUndefined",
+      "url": "https://jinja.palletsprojects.com/en/stable/api/",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "git",
+      "title": "Pro Git 2nd edition",
+      "url": "https://git-scm.com/book/en/v2",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "github",
+      "title": "GitHub Actions secure use",
+      "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "gitlab",
+      "title": "GitLab protected environments",
+      "url": "https://docs.gitlab.com/ci/environments/protected_environments/",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "terraform",
+      "title": "Terraform workflow and providers",
+      "url": "https://developer.hashicorp.com/terraform/intro",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "tfstate",
+      "title": "Terraform state and operational mapping",
+      "url": "https://developer.hashicorp.com/terraform/language/state",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "netbox",
+      "title": "NetBox documentation and intended role",
+      "url": "https://netboxlabs.com/docs/netbox/",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "sre",
+      "title": "Google SRE monitoring distributed systems",
+      "url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "nist",
+      "title": "NIST SP 800-34 Rev 1 contingency planning",
+      "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "otel",
+      "title": "OpenTelemetry signal concepts",
+      "url": "https://opentelemetry.io/docs/concepts/signals/",
+      "status": "content retrieved via web tool"
+    },
+    {
+      "key": "planes",
+      "title": "Cisco IOS XE hardening: management, control and data planes",
+      "url": "https://sec.cloudapps.cisco.com/security/center/resources/IOS_XE_hardening",
+      "status": "content retrieved via web tool"
+    }
+  ]
+}

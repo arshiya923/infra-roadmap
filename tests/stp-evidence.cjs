@@ -1,0 +1,6 @@
+const assert=require('node:assert/strict'),{evidence,html}=require('../scripts/stp-evidence.js');
+for(const [id,expected] of [['agreed',/not a measured service/],['shared',/assumption is absent/],['legacy',/alone does not prove/],['edge',/does not alone establish guard/],['loss',/do not identify the fault/],['service',/7 seconds.*2 seconds/]]){const c=evidence(id);assert.equal(c.observations.length,3);assert.match(c.conclusion,expected);assert(c.next.length>30&&c.missing.length>30);}
+assert.match(evidence('service').next,/five seconds/);assert.match(evidence('edge').observations.join(' '),/not configured/);assert.match(evidence('legacy').observations.join(' '),/no successful rapid agreement/);
+for(const id of ['bad','__proto__','constructor',null,undefined])assert.throws(()=>evidence(id),RangeError);
+const copy=evidence('agreed');copy.observations[0]='changed';copy.title='changed';assert.notEqual(evidence('agreed').observations[0],'changed');assert.notEqual(evidence('agreed').title,'changed');assert.equal(html('other'),'');assert.match(html('rstp-evidence'),/aria-controls="rapid-answer"/);
+console.log('PASS six scoped evidence cases, independent service arithmetic, invalid IDs and copy independence');

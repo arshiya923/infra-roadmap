@@ -1,0 +1,8 @@
+#qc-tool fieldset,#qm-tool fieldset{border:1px solid var(--line);padding:1rem;margin:1rem 0}
+#qc-tool input[type=number],#qm-tool input[type=number]{display:block;width:100%;min-width:0;max-width:18rem;border:1px solid var(--line);padding:.6rem;border-radius:.3rem;background:var(--surface);color:var(--ink);font:inherit;box-sizing:border-box}
+#qc-tool table,#qm-tool table{min-width:780px}
+#qc-tool table th:first-child,#qc-tool table td:first-child{white-space:nowrap}
+#qc-tool p,#qm-tool p,#qc-tool label,#qm-tool label{overflow-wrap:anywhere}
+#qm-tool fieldset label,#qc-tool fieldset label{display:block;margin:.8rem 0 .4rem}
+#qm-tool input[type=checkbox]{margin-right:.55rem}
+#qc-tool input:focus-visible,#qc-tool select:focus-visible,#qc-tool #qc-reset:focus-visible,#qc-tool .en-scroll[role=region]:focus-visible,#qm-tool input:focus-visible,#qm-tool select:focus-visible,#qm-tool #qm-reset:focus-visible,#qm-tool .en-scroll[role=region]:focus-visible{outline:3px solid var(--accent);outline-offset:3px}

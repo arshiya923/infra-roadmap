@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "environment": [
+    "ip utility, iproute2-6.1.0, libbpf 1.3.0",
+    "6.6.87.2-microsoft-standard-WSL2"
+  ],
+  "checks": [
+    "Default help inert",
+    "Actual two-router IPv4 static forwarding in both directions",
+    "Installed forward/return lookups retained as JSON",
+    "Linux unresolved gateway rejected without replacing the working path",
+    "More-specific /32 discard coexists with /24 and blocks exchange; exact removal recovers",
+    "Missing R2 return route breaks remote exchange while client gateway/R1 lookup remain available",
+    "Exact return route repair restores both directions",
+    "Normal and in-memory early-failure cleanup preserve host link/routes/forwarding and pre-existing namespaces",
+    "Unchanged IPv4/IPv6 companion re-executed; IPv4 return fault preserves IPv6"
+  ],
+  "output": [
+    "PASS baseline: both IPv4 directions cross two isolated routers with explicit static next hops.",
+    "FORWARD_BASELINE [{\"dst\":\"198.51.100.20\",\"from\":\"192.0.2.10\",\"gateway\":\"203.0.113.2\",\"dev\":\"transit\",\"flags\":[],\"cache\":[],\"iif\":\"left\"}]",
+    "RETURN_BASELINE [{\"dst\":\"192.0.2.10\",\"from\":\"198.51.100.20\",\"gateway\":\"203.0.113.1\",\"dev\":\"transit\",\"flags\":[],\"cache\":[],\"iif\":\"right\"}]",
+    "PASS gateway validation: Linux rejected the unresolved supplied gateway; the original static path still works.",
+    "DISCARD_TABLE [{\"dst\":\"192.0.2.0/24\",\"dev\":\"left\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"192.0.2.1\",\"flags\":[]},{\"dst\":\"198.51.100.0/24\",\"gateway\":\"203.0.113.2\",\"dev\":\"transit\",\"flags\":[]},{\"type\":\"blackhole\",\"dst\":\"198.51.100.20\",\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.1\",\"flags\":[]}]",
+    "PASS prefix discard: the /32 blackhole overrides the installed /24; exact owned removal restores the exchange.",
+    "FORWARD_DURING_RETURN_FAULT [{\"dst\":\"198.51.100.20\",\"from\":\"192.0.2.10\",\"gateway\":\"203.0.113.2\",\"dev\":\"transit\",\"flags\":[],\"cache\":[],\"iif\":\"left\"}]",
+    "PASS return fault: remote exchange fails while the client gateway and R1 forward lookup remain available.",
+    "PASS recovery: the exact owned return route restores both IPv4 directions.",
+    "PASS cleanup: four owned namespaces removed; no persistent route or service created."
+  ],
+  "companionOutput": [
+    "PASS baseline: both hosts exchange IPv4 and IPv6 traffic through the isolated router.",
+    "PASS injected fault: missing IPv4 return route breaks the exchange while IPv6 remains working.",
+    "PASS recovery: the restored IPv4 return route recovers both directions; IPv6 still works.",
+    "PASS cleanup: all owned routing namespaces removed."
+  ],
+  "scope": "Actual Linux virtual namespaces/shared WSL kernel only. No Cisco parser/AD/RIB simulation, dynamic protocol, Internet, measured throughput/convergence or retained packet capture. Probe failure does not by itself prove packet arrival."
+}

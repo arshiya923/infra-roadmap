@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "21 actual regression commands, fresh namespace labs and all 101 authored routes",
+    "19469 declaration-oracle histories; four actual interface/neighbor/current-network-LSA phase comparisons",
+    "Nine integrated browser checks and twelve manually inspected current screenshots",
+    "101 lessons/1010 exams/303 quick checks; six topic reviews and fourteen nodes remaining",
+    "Exact reviewed questions/answers/explanations/distractors and all 59 classified command references match source",
+    "95 accepted nodes unchanged; thirteen full-batch gates pending; LSA basics next authoring",
+    "Full-pair arithmetic independently enumerated for n=2 through 10",
+    "Local evidence links/source hash preserved; owned temporary author/review helpers removed"
+  ],
+  "screenshots": [
+    "dr-bdr-dark-mobile.png",
+    "dr-bdr-desktop.png",
+    "dr-bdr-flow.png",
+    "dr-bdr-history-end.png",
+    "dr-bdr-history-start.png",
+    "dr-bdr-lab-end.png",
+    "dr-bdr-lab-start.png",
+    "dr-bdr-light-mobile.png",
+    "dr-bdr-pairs-end.png",
+    "dr-bdr-pairs-start.png",
+    "dr-bdr-topology-end.png",
+    "dr-bdr-topology-start.png"
+  ],
+  "localLinks": [
+    [
+      "docs/ospf-dr-bdr-explorer-foundation.md",
+      "ospf-dr-bdr-explorer.html"
+    ],
+    [
+      "docs/ospf-dr-bdr-explorer-foundation.md",
+      "ospf-dr-bdr-runtime-foundation.md"
+    ],
+    [
+      "docs/ospf-dr-bdr-explorer-foundation.md",
+      "ospf-dr-bdr-model-results.json"
+    ],
+    [
+      "docs/ospf-dr-bdr-explorer-foundation.md",
+      "browser-ospf-dr-bdr-results.json"
+    ],
+    [
+      "docs/ospf-dr-bdr-explorer-foundation.md",
+      "validation.md"
+    ],
+    [
+      "docs/ospf-dr-bdr-runtime-foundation.md",
+      "ospf-dr-bdr-explorer.html"
+    ],
+    [
+      "docs/ospf-dr-bdr-runtime-foundation.md",
+      "ospf-dr-bdr-explorer-foundation.md"
+    ],
+    [
+      "docs/ospf-dr-bdr-runtime-foundation.md",
+      "ospf-dr-bdr-passive-trial.json"
+    ],
+    [
+      "docs/ospf-dr-bdr-runtime-foundation.md",
+      "ospf-runtime-foundation.md"
+    ],
+    [
+      "docs/ospf-dr-bdr-runtime-foundation.md",
+      "ospf-dr-bdr-lab-results.json"
+    ],
+    [
+      "docs/ospf-dr-bdr-explorer.html",
+      "../assets/favicon.svg"
+    ],
+    [
+      "docs/ospf-dr-bdr-explorer.html",
+      "../styles/learning.css"
+    ],
+    [
+      "docs/ospf-dr-bdr-explorer.html",
+      "../styles/ospf-dr-bdr.css"
+    ],
+    [
+      "docs/ospf-dr-bdr-explorer.html",
+      "../learn.html#lesson=s3-g1-t1"
+    ],
+    [
+      "docs/ospf-dr-bdr-explorer.html",
+      "../learn.html#lesson=s3-g1-t2"
+    ],
+    [
+      "docs/ospf-dr-bdr-explorer.html",
+      "ospf-dr-bdr-runtime-foundation.md"
+    ],
+    [
+      "docs/ospf-dr-bdr-explorer.html",
+      "ospf-dr-bdr-lab-results.json"
+    ],
+    [
+      "docs/ospf-dr-bdr-explorer.html",
+      "../labs/ospf-dr-bdr.sh"
+    ]
+  ],
+  "sourceHash": "ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25",
+  "nextAuthoringNode": "s3-g1-t3",
+  "weeklyAllowanceRemainingPercent": 72,
+  "scope": "Six-topic Batch 09 draft checkpoint, not full batch acceptance. Guided Cisco remains unexecuted."
+}

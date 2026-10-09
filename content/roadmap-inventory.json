@@ -1,0 +1,6500 @@
+{
+  "schemaVersion": 1,
+  "source": "original/index.html",
+  "sha256": "ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25",
+  "nodes": [
+    {
+      "id": "s0-g0-t0",
+      "name": "CPU",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[0].topics[0]",
+      "stage": 0,
+      "groupId": "g-0-0"
+    },
+    {
+      "id": "s0-g0-t1",
+      "name": "RAM",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[0].topics[1]",
+      "stage": 0,
+      "groupId": "g-0-0"
+    },
+    {
+      "id": "s0-g0-t2",
+      "name": "Storage",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[0].topics[2]",
+      "stage": 0,
+      "groupId": "g-0-0"
+    },
+    {
+      "id": "s0-g0-t3",
+      "name": "PCIe",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[0].topics[3]",
+      "stage": 0,
+      "groupId": "g-0-0"
+    },
+    {
+      "id": "s0-g0-t4",
+      "name": "NICs",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[0].topics[4]",
+      "stage": 0,
+      "groupId": "g-0-0"
+    },
+    {
+      "id": "s0-g0-t5",
+      "name": "RAID",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[0].topics[5]",
+      "stage": 0,
+      "groupId": "g-0-0"
+    },
+    {
+      "id": "s0-g0-t6",
+      "name": "Server architecture",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[0].topics[6]",
+      "stage": 0,
+      "groupId": "g-0-0"
+    },
+    {
+      "id": "s0-g1-t0",
+      "name": "Windows",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[1].topics[0]",
+      "stage": 0,
+      "groupId": "g-0-1"
+    },
+    {
+      "id": "s0-g1-t1",
+      "name": "Windows Server",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[1].topics[1]",
+      "stage": 0,
+      "groupId": "g-0-1"
+    },
+    {
+      "id": "s0-g1-t2",
+      "name": "Linux fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[1].topics[2]",
+      "stage": 0,
+      "groupId": "g-0-1"
+    },
+    {
+      "id": "s0-g1-t3",
+      "name": "CLI fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[1].topics[3]",
+      "stage": 0,
+      "groupId": "g-0-1"
+    },
+    {
+      "id": "s0-g2-t0",
+      "name": "LAN",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[2].topics[0]",
+      "stage": 0,
+      "groupId": "g-0-2"
+    },
+    {
+      "id": "s0-g2-t1",
+      "name": "WAN",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[2].topics[1]",
+      "stage": 0,
+      "groupId": "g-0-2"
+    },
+    {
+      "id": "s0-g2-t2",
+      "name": "WLAN",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[2].topics[2]",
+      "stage": 0,
+      "groupId": "g-0-2"
+    },
+    {
+      "id": "s0-g2-t3",
+      "name": "Ethernet",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[2].topics[3]",
+      "stage": 0,
+      "groupId": "g-0-2"
+    },
+    {
+      "id": "s0-g2-t4",
+      "name": "MAC addresses",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[2].topics[4]",
+      "stage": 0,
+      "groupId": "g-0-2"
+    },
+    {
+      "id": "s0-g2-t5",
+      "name": "Frames",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[2].topics[5]",
+      "stage": 0,
+      "groupId": "g-0-2"
+    },
+    {
+      "id": "s0-g2-t6",
+      "name": "Packets",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[2].topics[6]",
+      "stage": 0,
+      "groupId": "g-0-2"
+    },
+    {
+      "id": "s0-g2-t7",
+      "name": "MTU",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[2].topics[7]",
+      "stage": 0,
+      "groupId": "g-0-2"
+    },
+    {
+      "id": "s0-g2-t8",
+      "name": "Bandwidth",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[2].topics[8]",
+      "stage": 0,
+      "groupId": "g-0-2"
+    },
+    {
+      "id": "s0-g2-t9",
+      "name": "Latency",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[2].topics[9]",
+      "stage": 0,
+      "groupId": "g-0-2"
+    },
+    {
+      "id": "s0-g2-t10",
+      "name": "Duplex",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[2].topics[10]",
+      "stage": 0,
+      "groupId": "g-0-2"
+    },
+    {
+      "id": "s0-g3-t0",
+      "name": "Binary",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[3].topics[0]",
+      "stage": 0,
+      "groupId": "g-0-3"
+    },
+    {
+      "id": "s0-g3-t1",
+      "name": "Decimal",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[3].topics[1]",
+      "stage": 0,
+      "groupId": "g-0-3"
+    },
+    {
+      "id": "s0-g3-t2",
+      "name": "Hexadecimal",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[3].topics[2]",
+      "stage": 0,
+      "groupId": "g-0-3"
+    },
+    {
+      "id": "s0-g3-t3",
+      "name": "IPv4",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[3].topics[3]",
+      "stage": 0,
+      "groupId": "g-0-3"
+    },
+    {
+      "id": "s0-g3-t4",
+      "name": "IPv6",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[3].topics[4]",
+      "stage": 0,
+      "groupId": "g-0-3"
+    },
+    {
+      "id": "s0-g3-t5",
+      "name": "CIDR",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[3].topics[5]",
+      "stage": 0,
+      "groupId": "g-0-3"
+    },
+    {
+      "id": "s0-g3-t6",
+      "name": "VLSM",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[3].topics[6]",
+      "stage": 0,
+      "groupId": "g-0-3"
+    },
+    {
+      "id": "s0-g3-t7",
+      "name": "subnet calculation",
+      "kind": "topic",
+      "source": "DATA.stages[0].groups[3].topics[7]",
+      "stage": 0,
+      "groupId": "g-0-3"
+    },
+    {
+      "id": "lab-0",
+      "name": "IT & Infrastructure Foundation Lab",
+      "kind": "lab",
+      "source": "DATA.stages[0].lab",
+      "stage": 0
+    },
+    {
+      "id": "s1-g0-t0",
+      "name": "OSI Model",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[0].topics[0]",
+      "stage": 1,
+      "groupId": "g-1-0"
+    },
+    {
+      "id": "s1-g0-t1",
+      "name": "TCP/IP Model",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[0].topics[1]",
+      "stage": 1,
+      "groupId": "g-1-0"
+    },
+    {
+      "id": "s1-g1-t0",
+      "name": "Ethernet",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[1].topics[0]",
+      "stage": 1,
+      "groupId": "g-1-1"
+    },
+    {
+      "id": "s1-g1-t1",
+      "name": "ARP",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[1].topics[1]",
+      "stage": 1,
+      "groupId": "g-1-1"
+    },
+    {
+      "id": "s1-g1-t2",
+      "name": "ICMP",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[1].topics[2]",
+      "stage": 1,
+      "groupId": "g-1-1"
+    },
+    {
+      "id": "s1-g2-t0",
+      "name": "TCP vs UDP",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[2].topics[0]",
+      "stage": 1,
+      "groupId": "g-1-2"
+    },
+    {
+      "id": "s1-g2-t1",
+      "name": "DNS",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[2].topics[1]",
+      "stage": 1,
+      "groupId": "g-1-2"
+    },
+    {
+      "id": "s1-g2-t2",
+      "name": "DHCP",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[2].topics[2]",
+      "stage": 1,
+      "groupId": "g-1-2"
+    },
+    {
+      "id": "s1-g2-t3",
+      "name": "NAT / PAT",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[2].topics[3]",
+      "stage": 1,
+      "groupId": "g-1-2"
+    },
+    {
+      "id": "s1-g3-t0",
+      "name": "VLAN",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[3].topics[0]",
+      "stage": 1,
+      "groupId": "g-1-3"
+    },
+    {
+      "id": "s1-g3-t1",
+      "name": "802.1Q",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[3].topics[1]",
+      "stage": 1,
+      "groupId": "g-1-3"
+    },
+    {
+      "id": "s1-g3-t2",
+      "name": "Trunking",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[3].topics[2]",
+      "stage": 1,
+      "groupId": "g-1-3"
+    },
+    {
+      "id": "s1-g3-t3",
+      "name": "STP concepts",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[3].topics[3]",
+      "stage": 1,
+      "groupId": "g-1-3"
+    },
+    {
+      "id": "s1-g3-t4",
+      "name": "MAC address tables",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[3].topics[4]",
+      "stage": 1,
+      "groupId": "g-1-3"
+    },
+    {
+      "id": "s1-g4-t0",
+      "name": "Routing tables",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[4].topics[0]",
+      "stage": 1,
+      "groupId": "g-1-4"
+    },
+    {
+      "id": "s1-g4-t1",
+      "name": "Default gateways",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[4].topics[1]",
+      "stage": 1,
+      "groupId": "g-1-4"
+    },
+    {
+      "id": "s1-g4-t2",
+      "name": "Static routes",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[4].topics[2]",
+      "stage": 1,
+      "groupId": "g-1-4"
+    },
+    {
+      "id": "s1-g4-t3",
+      "name": "IPv6 fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[4].topics[3]",
+      "stage": 1,
+      "groupId": "g-1-4"
+    },
+    {
+      "id": "s1-g5-t0",
+      "name": "ping",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[5].topics[0]",
+      "stage": 1,
+      "groupId": "g-1-5"
+    },
+    {
+      "id": "s1-g5-t1",
+      "name": "traceroute",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[5].topics[1]",
+      "stage": 1,
+      "groupId": "g-1-5"
+    },
+    {
+      "id": "s1-g5-t2",
+      "name": "nslookup",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[5].topics[2]",
+      "stage": 1,
+      "groupId": "g-1-5"
+    },
+    {
+      "id": "s1-g5-t3",
+      "name": "dig",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[5].topics[3]",
+      "stage": 1,
+      "groupId": "g-1-5"
+    },
+    {
+      "id": "s1-g5-t4",
+      "name": "ipconfig",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[5].topics[4]",
+      "stage": 1,
+      "groupId": "g-1-5"
+    },
+    {
+      "id": "s1-g5-t5",
+      "name": "ip",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[5].topics[5]",
+      "stage": 1,
+      "groupId": "g-1-5"
+    },
+    {
+      "id": "s1-g5-t6",
+      "name": "arp",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[5].topics[6]",
+      "stage": 1,
+      "groupId": "g-1-5"
+    },
+    {
+      "id": "s1-g5-t7",
+      "name": "netstat",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[5].topics[7]",
+      "stage": 1,
+      "groupId": "g-1-5"
+    },
+    {
+      "id": "s1-g5-t8",
+      "name": "ss",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[5].topics[8]",
+      "stage": 1,
+      "groupId": "g-1-5"
+    },
+    {
+      "id": "s1-g5-t9",
+      "name": "tcpdump",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[5].topics[9]",
+      "stage": 1,
+      "groupId": "g-1-5"
+    },
+    {
+      "id": "s1-g5-t10",
+      "name": "Wireshark",
+      "kind": "topic",
+      "source": "DATA.stages[1].groups[5].topics[10]",
+      "stage": 1,
+      "groupId": "g-1-5"
+    },
+    {
+      "id": "lab-1",
+      "name": "Networking Fundamentals Lab",
+      "kind": "lab",
+      "source": "DATA.stages[1].lab",
+      "stage": 1
+    },
+    {
+      "id": "s2-g0-t0",
+      "name": "Cisco IOS / IOS XE",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[0].topics[0]",
+      "stage": 2,
+      "groupId": "g-2-0"
+    },
+    {
+      "id": "s2-g0-t1",
+      "name": "Cisco CLI structure",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[0].topics[1]",
+      "stage": 2,
+      "groupId": "g-2-0"
+    },
+    {
+      "id": "s2-g0-t2",
+      "name": "Running configuration",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[0].topics[2]",
+      "stage": 2,
+      "groupId": "g-2-0"
+    },
+    {
+      "id": "s2-g0-t3",
+      "name": "Startup configuration",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[0].topics[3]",
+      "stage": 2,
+      "groupId": "g-2-0"
+    },
+    {
+      "id": "s2-g1-t0",
+      "name": "Configuration register",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[1].topics[0]",
+      "stage": 2,
+      "groupId": "g-2-1"
+    },
+    {
+      "id": "s2-g1-t1",
+      "name": "ROMMON",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[1].topics[1]",
+      "stage": 2,
+      "groupId": "g-2-1"
+    },
+    {
+      "id": "s2-g1-t2",
+      "name": "Boot process",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[1].topics[2]",
+      "stage": 2,
+      "groupId": "g-2-1"
+    },
+    {
+      "id": "s2-g1-t3",
+      "name": "Cisco file systems",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[1].topics[3]",
+      "stage": 2,
+      "groupId": "g-2-1"
+    },
+    {
+      "id": "s2-g1-t4",
+      "name": "Flash management",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[1].topics[4]",
+      "stage": 2,
+      "groupId": "g-2-1"
+    },
+    {
+      "id": "s2-g1-t5",
+      "name": "IOS images",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[1].topics[5]",
+      "stage": 2,
+      "groupId": "g-2-1"
+    },
+    {
+      "id": "s2-g1-t6",
+      "name": "Install Mode vs Bundle Mode",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[1].topics[6]",
+      "stage": 2,
+      "groupId": "g-2-1"
+    },
+    {
+      "id": "s2-g1-t7",
+      "name": "Device backup and recovery",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[1].topics[7]",
+      "stage": 2,
+      "groupId": "g-2-1"
+    },
+    {
+      "id": "s2-g2-t0",
+      "name": "VLAN",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[2].topics[0]",
+      "stage": 2,
+      "groupId": "g-2-2"
+    },
+    {
+      "id": "s2-g2-t1",
+      "name": "Access ports",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[2].topics[1]",
+      "stage": 2,
+      "groupId": "g-2-2"
+    },
+    {
+      "id": "s2-g2-t2",
+      "name": "Trunk ports",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[2].topics[2]",
+      "stage": 2,
+      "groupId": "g-2-2"
+    },
+    {
+      "id": "s2-g2-t3",
+      "name": "DTP",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[2].topics[3]",
+      "stage": 2,
+      "groupId": "g-2-2"
+    },
+    {
+      "id": "s2-g2-t4",
+      "name": "VTP",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[2].topics[4]",
+      "stage": 2,
+      "groupId": "g-2-2"
+    },
+    {
+      "id": "s2-g2-t5",
+      "name": "Voice VLAN",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[2].topics[5]",
+      "stage": 2,
+      "groupId": "g-2-2"
+    },
+    {
+      "id": "s2-g3-t0",
+      "name": "EtherChannel",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[3].topics[0]",
+      "stage": 2,
+      "groupId": "g-2-3"
+    },
+    {
+      "id": "s2-g3-t1",
+      "name": "LACP",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[3].topics[1]",
+      "stage": 2,
+      "groupId": "g-2-3"
+    },
+    {
+      "id": "s2-g3-t2",
+      "name": "PAgP",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[3].topics[2]",
+      "stage": 2,
+      "groupId": "g-2-3"
+    },
+    {
+      "id": "s2-g4-t0",
+      "name": "STP",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[4].topics[0]",
+      "stage": 2,
+      "groupId": "g-2-4"
+    },
+    {
+      "id": "s2-g4-t1",
+      "name": "RSTP",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[4].topics[1]",
+      "stage": 2,
+      "groupId": "g-2-4"
+    },
+    {
+      "id": "s2-g4-t2",
+      "name": "MST",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[4].topics[2]",
+      "stage": 2,
+      "groupId": "g-2-4"
+    },
+    {
+      "id": "s2-g5-t0",
+      "name": "PortFast",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[5].topics[0]",
+      "stage": 2,
+      "groupId": "g-2-5"
+    },
+    {
+      "id": "s2-g5-t1",
+      "name": "BPDU Guard",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[5].topics[1]",
+      "stage": 2,
+      "groupId": "g-2-5"
+    },
+    {
+      "id": "s2-g5-t2",
+      "name": "Root Guard",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[5].topics[2]",
+      "stage": 2,
+      "groupId": "g-2-5"
+    },
+    {
+      "id": "s2-g5-t3",
+      "name": "Loop Guard",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[5].topics[3]",
+      "stage": 2,
+      "groupId": "g-2-5"
+    },
+    {
+      "id": "s2-g5-t4",
+      "name": "Storm Control",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[5].topics[4]",
+      "stage": 2,
+      "groupId": "g-2-5"
+    },
+    {
+      "id": "s2-g5-t5",
+      "name": "Port Security",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[5].topics[5]",
+      "stage": 2,
+      "groupId": "g-2-5"
+    },
+    {
+      "id": "s2-g6-t0",
+      "name": "SPAN",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[6].topics[0]",
+      "stage": 2,
+      "groupId": "g-2-6"
+    },
+    {
+      "id": "s2-g6-t1",
+      "name": "RSPAN",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[6].topics[1]",
+      "stage": 2,
+      "groupId": "g-2-6"
+    },
+    {
+      "id": "s2-g6-t2",
+      "name": "ERSPAN",
+      "kind": "topic",
+      "source": "DATA.stages[2].groups[6].topics[2]",
+      "stage": 2,
+      "groupId": "g-2-6"
+    },
+    {
+      "id": "lab-2",
+      "name": "Cisco Enterprise Networking Lab",
+      "kind": "lab",
+      "source": "DATA.stages[2].lab",
+      "stage": 2
+    },
+    {
+      "id": "s3-g0-t0",
+      "name": "Static Routing",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[0].topics[0]",
+      "stage": 3,
+      "groupId": "g-3-0"
+    },
+    {
+      "id": "s3-g0-t1",
+      "name": "Floating Static Routes",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[0].topics[1]",
+      "stage": 3,
+      "groupId": "g-3-0"
+    },
+    {
+      "id": "s3-g0-t2",
+      "name": "Policy-Based Routing",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[0].topics[2]",
+      "stage": 3,
+      "groupId": "g-3-0"
+    },
+    {
+      "id": "s3-g1-t0",
+      "name": "OSPF",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[1].topics[0]",
+      "stage": 3,
+      "groupId": "g-3-1"
+    },
+    {
+      "id": "s3-g1-t1",
+      "name": "OSPF Areas",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[1].topics[1]",
+      "stage": 3,
+      "groupId": "g-3-1"
+    },
+    {
+      "id": "s3-g1-t2",
+      "name": "OSPF DR / BDR",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[1].topics[2]",
+      "stage": 3,
+      "groupId": "g-3-1"
+    },
+    {
+      "id": "s3-g1-t3",
+      "name": "OSPF LSA basics",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[1].topics[3]",
+      "stage": 3,
+      "groupId": "g-3-1"
+    },
+    {
+      "id": "s3-g1-t4",
+      "name": "OSPF troubleshooting",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[1].topics[4]",
+      "stage": 3,
+      "groupId": "g-3-1"
+    },
+    {
+      "id": "s3-g2-t0",
+      "name": "EIGRP",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[2].topics[0]",
+      "stage": 3,
+      "groupId": "g-3-2"
+    },
+    {
+      "id": "s3-g2-t1",
+      "name": "EIGRP metrics",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[2].topics[1]",
+      "stage": 3,
+      "groupId": "g-3-2"
+    },
+    {
+      "id": "s3-g2-t2",
+      "name": "EIGRP neighbors",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[2].topics[2]",
+      "stage": 3,
+      "groupId": "g-3-2"
+    },
+    {
+      "id": "s3-g2-t3",
+      "name": "EIGRP topology",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[2].topics[3]",
+      "stage": 3,
+      "groupId": "g-3-2"
+    },
+    {
+      "id": "s3-g3-t0",
+      "name": "BGP fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[3].topics[0]",
+      "stage": 3,
+      "groupId": "g-3-3"
+    },
+    {
+      "id": "s3-g3-t1",
+      "name": "eBGP",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[3].topics[1]",
+      "stage": 3,
+      "groupId": "g-3-3"
+    },
+    {
+      "id": "s3-g3-t2",
+      "name": "iBGP",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[3].topics[2]",
+      "stage": 3,
+      "groupId": "g-3-3"
+    },
+    {
+      "id": "s3-g3-t3",
+      "name": "BGP attributes",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[3].topics[3]",
+      "stage": 3,
+      "groupId": "g-3-3"
+    },
+    {
+      "id": "s3-g4-t0",
+      "name": "Local Preference",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[4].topics[0]",
+      "stage": 3,
+      "groupId": "g-3-4"
+    },
+    {
+      "id": "s3-g4-t1",
+      "name": "MED",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[4].topics[1]",
+      "stage": 3,
+      "groupId": "g-3-4"
+    },
+    {
+      "id": "s3-g4-t2",
+      "name": "AS Path",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[4].topics[2]",
+      "stage": 3,
+      "groupId": "g-3-4"
+    },
+    {
+      "id": "s3-g4-t3",
+      "name": "Communities",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[4].topics[3]",
+      "stage": 3,
+      "groupId": "g-3-4"
+    },
+    {
+      "id": "s3-g5-t0",
+      "name": "Route filtering",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[5].topics[0]",
+      "stage": 3,
+      "groupId": "g-3-5"
+    },
+    {
+      "id": "s3-g5-t1",
+      "name": "Route redistribution",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[5].topics[1]",
+      "stage": 3,
+      "groupId": "g-3-5"
+    },
+    {
+      "id": "s3-g5-t2",
+      "name": "Route maps",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[5].topics[2]",
+      "stage": 3,
+      "groupId": "g-3-5"
+    },
+    {
+      "id": "s3-g5-t3",
+      "name": "Prefix lists",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[5].topics[3]",
+      "stage": 3,
+      "groupId": "g-3-5"
+    },
+    {
+      "id": "s3-g5-t4",
+      "name": "Access lists",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[5].topics[4]",
+      "stage": 3,
+      "groupId": "g-3-5"
+    },
+    {
+      "id": "s3-g6-t0",
+      "name": "VRF",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[6].topics[0]",
+      "stage": 3,
+      "groupId": "g-3-6"
+    },
+    {
+      "id": "s3-g6-t1",
+      "name": "VRF-Lite",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[6].topics[1]",
+      "stage": 3,
+      "groupId": "g-3-6"
+    },
+    {
+      "id": "s3-g7-t0",
+      "name": "HSRP",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[7].topics[0]",
+      "stage": 3,
+      "groupId": "g-3-7"
+    },
+    {
+      "id": "s3-g7-t1",
+      "name": "VRRP",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[7].topics[1]",
+      "stage": 3,
+      "groupId": "g-3-7"
+    },
+    {
+      "id": "s3-g7-t2",
+      "name": "GLBP",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[7].topics[2]",
+      "stage": 3,
+      "groupId": "g-3-7"
+    },
+    {
+      "id": "s3-g8-t0",
+      "name": "Multicast fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[8].topics[0]",
+      "stage": 3,
+      "groupId": "g-3-8"
+    },
+    {
+      "id": "s3-g8-t1",
+      "name": "PIM",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[8].topics[1]",
+      "stage": 3,
+      "groupId": "g-3-8"
+    },
+    {
+      "id": "s3-g8-t2",
+      "name": "IGMP",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[8].topics[2]",
+      "stage": 3,
+      "groupId": "g-3-8"
+    },
+    {
+      "id": "s3-g9-t0",
+      "name": "QoS fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[9].topics[0]",
+      "stage": 3,
+      "groupId": "g-3-9"
+    },
+    {
+      "id": "s3-g9-t1",
+      "name": "Classification",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[9].topics[1]",
+      "stage": 3,
+      "groupId": "g-3-9"
+    },
+    {
+      "id": "s3-g9-t2",
+      "name": "Marking",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[9].topics[2]",
+      "stage": 3,
+      "groupId": "g-3-9"
+    },
+    {
+      "id": "s3-g9-t3",
+      "name": "Policing",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[9].topics[3]",
+      "stage": 3,
+      "groupId": "g-3-9"
+    },
+    {
+      "id": "s3-g9-t4",
+      "name": "Shaping",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[9].topics[4]",
+      "stage": 3,
+      "groupId": "g-3-9"
+    },
+    {
+      "id": "s3-g9-t5",
+      "name": "Queuing",
+      "kind": "topic",
+      "source": "DATA.stages[3].groups[9].topics[5]",
+      "stage": 3,
+      "groupId": "g-3-9"
+    },
+    {
+      "id": "lab-3",
+      "name": "Advanced Routing & Switching Lab",
+      "kind": "lab",
+      "source": "DATA.stages[3].lab",
+      "stage": 3
+    },
+    {
+      "id": "s4-g0-t0",
+      "name": "DHCP Server",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[0].topics[0]",
+      "stage": 4,
+      "groupId": "g-4-0"
+    },
+    {
+      "id": "s4-g0-t1",
+      "name": "DHCP Relay",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[0].topics[1]",
+      "stage": 4,
+      "groupId": "g-4-0"
+    },
+    {
+      "id": "s4-g0-t2",
+      "name": "DNS architecture",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[0].topics[2]",
+      "stage": 4,
+      "groupId": "g-4-0"
+    },
+    {
+      "id": "s4-g0-t3",
+      "name": "NTP",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[0].topics[3]",
+      "stage": 4,
+      "groupId": "g-4-0"
+    },
+    {
+      "id": "s4-g1-t0",
+      "name": "SNMP",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[1].topics[0]",
+      "stage": 4,
+      "groupId": "g-4-1"
+    },
+    {
+      "id": "s4-g1-t1",
+      "name": "Syslog",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[1].topics[1]",
+      "stage": 4,
+      "groupId": "g-4-1"
+    },
+    {
+      "id": "s4-g2-t0",
+      "name": "AAA",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[2].topics[0]",
+      "stage": 4,
+      "groupId": "g-4-2"
+    },
+    {
+      "id": "s4-g2-t1",
+      "name": "RADIUS",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[2].topics[1]",
+      "stage": 4,
+      "groupId": "g-4-2"
+    },
+    {
+      "id": "s4-g2-t2",
+      "name": "TACACS+",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[2].topics[2]",
+      "stage": 4,
+      "groupId": "g-4-2"
+    },
+    {
+      "id": "s4-g3-t0",
+      "name": "NetFlow",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[3].topics[0]",
+      "stage": 4,
+      "groupId": "g-4-3"
+    },
+    {
+      "id": "s4-g3-t1",
+      "name": "Flexible NetFlow",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[3].topics[1]",
+      "stage": 4,
+      "groupId": "g-4-3"
+    },
+    {
+      "id": "s4-g3-t2",
+      "name": "IP SLA",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[3].topics[2]",
+      "stage": 4,
+      "groupId": "g-4-3"
+    },
+    {
+      "id": "s4-g3-t3",
+      "name": "Object Tracking",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[3].topics[3]",
+      "stage": 4,
+      "groupId": "g-4-3"
+    },
+    {
+      "id": "s4-g4-t0",
+      "name": "Cisco Discovery Protocol",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[4].topics[0]",
+      "stage": 4,
+      "groupId": "g-4-4"
+    },
+    {
+      "id": "s4-g4-t1",
+      "name": "LLDP",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[4].topics[1]",
+      "stage": 4,
+      "groupId": "g-4-4"
+    },
+    {
+      "id": "s4-g4-t2",
+      "name": "SSH",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[4].topics[2]",
+      "stage": 4,
+      "groupId": "g-4-4"
+    },
+    {
+      "id": "s4-g4-t3",
+      "name": "SFTP",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[4].topics[3]",
+      "stage": 4,
+      "groupId": "g-4-4"
+    },
+    {
+      "id": "s4-g4-t4",
+      "name": "TFTP",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[4].topics[4]",
+      "stage": 4,
+      "groupId": "g-4-4"
+    },
+    {
+      "id": "s4-g4-t5",
+      "name": "FTP",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[4].topics[5]",
+      "stage": 4,
+      "groupId": "g-4-4"
+    },
+    {
+      "id": "s4-g4-t6",
+      "name": "HTTP / HTTPS",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[4].topics[6]",
+      "stage": 4,
+      "groupId": "g-4-4"
+    },
+    {
+      "id": "s4-g5-t0",
+      "name": "PKI fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[5].topics[0]",
+      "stage": 4,
+      "groupId": "g-4-5"
+    },
+    {
+      "id": "s4-g5-t1",
+      "name": "Certificates",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[5].topics[1]",
+      "stage": 4,
+      "groupId": "g-4-5"
+    },
+    {
+      "id": "s4-g5-t2",
+      "name": "802.1X fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[5].topics[2]",
+      "stage": 4,
+      "groupId": "g-4-5"
+    },
+    {
+      "id": "s4-g5-t3",
+      "name": "Network monitoring fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[5].topics[3]",
+      "stage": 4,
+      "groupId": "g-4-5"
+    },
+    {
+      "id": "s4-g6-t0",
+      "name": "PRTG",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[6].topics[0]",
+      "stage": 4,
+      "groupId": "g-4-6"
+    },
+    {
+      "id": "s4-g6-t1",
+      "name": "Zabbix",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[6].topics[1]",
+      "stage": 4,
+      "groupId": "g-4-6"
+    },
+    {
+      "id": "s4-g6-t2",
+      "name": "LibreNMS",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[6].topics[2]",
+      "stage": 4,
+      "groupId": "g-4-6"
+    },
+    {
+      "id": "s4-g6-t3",
+      "name": "Grafana",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[6].topics[3]",
+      "stage": 4,
+      "groupId": "g-4-6"
+    },
+    {
+      "id": "s4-g6-t4",
+      "name": "Prometheus",
+      "kind": "topic",
+      "source": "DATA.stages[4].groups[6].topics[4]",
+      "stage": 4,
+      "groupId": "g-4-6"
+    },
+    {
+      "id": "lab-4",
+      "name": "Network Services Lab",
+      "kind": "lab",
+      "source": "DATA.stages[4].lab",
+      "stage": 4
+    },
+    {
+      "id": "s5-g0-t0",
+      "name": "Security Fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[0].topics[0]",
+      "stage": 5,
+      "groupId": "g-5-0"
+    },
+    {
+      "id": "s5-g0-t1",
+      "name": "CIA Triad",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[0].topics[1]",
+      "stage": 5,
+      "groupId": "g-5-0"
+    },
+    {
+      "id": "s5-g0-t2",
+      "name": "Attack surfaces",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[0].topics[2]",
+      "stage": 5,
+      "groupId": "g-5-0"
+    },
+    {
+      "id": "s5-g0-t3",
+      "name": "Segmentation",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[0].topics[3]",
+      "stage": 5,
+      "groupId": "g-5-0"
+    },
+    {
+      "id": "s5-g0-t4",
+      "name": "Defense in depth",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[0].topics[4]",
+      "stage": 5,
+      "groupId": "g-5-0"
+    },
+    {
+      "id": "s5-g1-t0",
+      "name": "ACL",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[1].topics[0]",
+      "stage": 5,
+      "groupId": "g-5-1"
+    },
+    {
+      "id": "s5-g1-t1",
+      "name": "Standard ACL",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[1].topics[1]",
+      "stage": 5,
+      "groupId": "g-5-1"
+    },
+    {
+      "id": "s5-g1-t2",
+      "name": "Extended ACL",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[1].topics[2]",
+      "stage": 5,
+      "groupId": "g-5-1"
+    },
+    {
+      "id": "s5-g1-t3",
+      "name": "Named ACL",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[1].topics[3]",
+      "stage": 5,
+      "groupId": "g-5-1"
+    },
+    {
+      "id": "s5-g2-t0",
+      "name": "Dynamic ARP Inspection",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[2].topics[0]",
+      "stage": 5,
+      "groupId": "g-5-2"
+    },
+    {
+      "id": "s5-g2-t1",
+      "name": "DHCP Snooping",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[2].topics[1]",
+      "stage": 5,
+      "groupId": "g-5-2"
+    },
+    {
+      "id": "s5-g2-t2",
+      "name": "IP Source Guard",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[2].topics[2]",
+      "stage": 5,
+      "groupId": "g-5-2"
+    },
+    {
+      "id": "s5-g2-t3",
+      "name": "Private VLAN",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[2].topics[3]",
+      "stage": 5,
+      "groupId": "g-5-2"
+    },
+    {
+      "id": "s5-g2-t4",
+      "name": "802.1X",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[2].topics[4]",
+      "stage": 5,
+      "groupId": "g-5-2"
+    },
+    {
+      "id": "s5-g2-t5",
+      "name": "AAA",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[2].topics[5]",
+      "stage": 5,
+      "groupId": "g-5-2"
+    },
+    {
+      "id": "s5-g2-t6",
+      "name": "Port Security",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[2].topics[6]",
+      "stage": 5,
+      "groupId": "g-5-2"
+    },
+    {
+      "id": "s5-g3-t0",
+      "name": "Control Plane Protection",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[3].topics[0]",
+      "stage": 5,
+      "groupId": "g-5-3"
+    },
+    {
+      "id": "s5-g3-t1",
+      "name": "CoPP",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[3].topics[1]",
+      "stage": 5,
+      "groupId": "g-5-3"
+    },
+    {
+      "id": "s5-g4-t0",
+      "name": "VPN concepts",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[4].topics[0]",
+      "stage": 5,
+      "groupId": "g-5-4"
+    },
+    {
+      "id": "s5-g4-t1",
+      "name": "IPsec",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[4].topics[1]",
+      "stage": 5,
+      "groupId": "g-5-4"
+    },
+    {
+      "id": "s5-g4-t2",
+      "name": "IKE",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[4].topics[2]",
+      "stage": 5,
+      "groupId": "g-5-4"
+    },
+    {
+      "id": "s5-g4-t3",
+      "name": "Site-to-Site VPN",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[4].topics[3]",
+      "stage": 5,
+      "groupId": "g-5-4"
+    },
+    {
+      "id": "s5-g4-t4",
+      "name": "Remote Access VPN",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[4].topics[4]",
+      "stage": 5,
+      "groupId": "g-5-4"
+    },
+    {
+      "id": "s5-g5-t0",
+      "name": "Firewall fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[5].topics[0]",
+      "stage": 5,
+      "groupId": "g-5-5"
+    },
+    {
+      "id": "s5-g5-t1",
+      "name": "Zone Based Firewall",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[5].topics[1]",
+      "stage": 5,
+      "groupId": "g-5-5"
+    },
+    {
+      "id": "s5-g5-t2",
+      "name": "Cisco ASA fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[5].topics[2]",
+      "stage": 5,
+      "groupId": "g-5-5"
+    },
+    {
+      "id": "s5-g5-t3",
+      "name": "Cisco Firepower concepts",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[5].topics[3]",
+      "stage": 5,
+      "groupId": "g-5-5"
+    },
+    {
+      "id": "s5-g5-t4",
+      "name": "IDS / IPS",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[5].topics[4]",
+      "stage": 5,
+      "groupId": "g-5-5"
+    },
+    {
+      "id": "s5-g5-t5",
+      "name": "WAF concepts",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[5].topics[5]",
+      "stage": 5,
+      "groupId": "g-5-5"
+    },
+    {
+      "id": "s5-g6-t0",
+      "name": "Zero Trust overview",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[6].topics[0]",
+      "stage": 5,
+      "groupId": "g-5-6"
+    },
+    {
+      "id": "s5-g6-t1",
+      "name": "Network Access Control",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[6].topics[1]",
+      "stage": 5,
+      "groupId": "g-5-6"
+    },
+    {
+      "id": "s5-g6-t2",
+      "name": "Cisco ISE concepts",
+      "kind": "topic",
+      "source": "DATA.stages[5].groups[6].topics[2]",
+      "stage": 5,
+      "groupId": "g-5-6"
+    },
+    {
+      "id": "lab-5",
+      "name": "Network Security Lab",
+      "kind": "lab",
+      "source": "DATA.stages[5].lab",
+      "stage": 5
+    },
+    {
+      "id": "s6-g0-t0",
+      "name": "Server Hardware",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[0].topics[0]",
+      "stage": 6,
+      "groupId": "g-6-0"
+    },
+    {
+      "id": "s6-g0-t1",
+      "name": "Rack Servers",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[0].topics[1]",
+      "stage": 6,
+      "groupId": "g-6-0"
+    },
+    {
+      "id": "s6-g0-t2",
+      "name": "Blade Servers",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[0].topics[2]",
+      "stage": 6,
+      "groupId": "g-6-0"
+    },
+    {
+      "id": "s6-g0-t3",
+      "name": "CPU architecture",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[0].topics[3]",
+      "stage": 6,
+      "groupId": "g-6-0"
+    },
+    {
+      "id": "s6-g0-t4",
+      "name": "Memory channels",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[0].topics[4]",
+      "stage": 6,
+      "groupId": "g-6-0"
+    },
+    {
+      "id": "s6-g0-t5",
+      "name": "NUMA",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[0].topics[5]",
+      "stage": 6,
+      "groupId": "g-6-0"
+    },
+    {
+      "id": "s6-g0-t6",
+      "name": "NIC",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[0].topics[6]",
+      "stage": 6,
+      "groupId": "g-6-0"
+    },
+    {
+      "id": "s6-g0-t7",
+      "name": "HBA",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[0].topics[7]",
+      "stage": 6,
+      "groupId": "g-6-0"
+    },
+    {
+      "id": "s6-g0-t8",
+      "name": "PCIe",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[0].topics[8]",
+      "stage": 6,
+      "groupId": "g-6-0"
+    },
+    {
+      "id": "s6-g1-t0",
+      "name": "RAID",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[1].topics[0]",
+      "stage": 6,
+      "groupId": "g-6-1"
+    },
+    {
+      "id": "s6-g1-t1",
+      "name": "Hardware RAID",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[1].topics[1]",
+      "stage": 6,
+      "groupId": "g-6-1"
+    },
+    {
+      "id": "s6-g1-t2",
+      "name": "Software RAID",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[1].topics[2]",
+      "stage": 6,
+      "groupId": "g-6-1"
+    },
+    {
+      "id": "s6-g1-t3",
+      "name": "RAID 0",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[1].topics[3]",
+      "stage": 6,
+      "groupId": "g-6-1"
+    },
+    {
+      "id": "s6-g1-t4",
+      "name": "RAID 1",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[1].topics[4]",
+      "stage": 6,
+      "groupId": "g-6-1"
+    },
+    {
+      "id": "s6-g1-t5",
+      "name": "RAID 5",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[1].topics[5]",
+      "stage": 6,
+      "groupId": "g-6-1"
+    },
+    {
+      "id": "s6-g1-t6",
+      "name": "RAID 6",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[1].topics[6]",
+      "stage": 6,
+      "groupId": "g-6-1"
+    },
+    {
+      "id": "s6-g1-t7",
+      "name": "RAID 10",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[1].topics[7]",
+      "stage": 6,
+      "groupId": "g-6-1"
+    },
+    {
+      "id": "s6-g1-t8",
+      "name": "Hot Spare",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[1].topics[8]",
+      "stage": 6,
+      "groupId": "g-6-1"
+    },
+    {
+      "id": "s6-g2-t0",
+      "name": "Disk Backplane",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[2].topics[0]",
+      "stage": 6,
+      "groupId": "g-6-2"
+    },
+    {
+      "id": "s6-g2-t1",
+      "name": "SAS",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[2].topics[1]",
+      "stage": 6,
+      "groupId": "g-6-2"
+    },
+    {
+      "id": "s6-g2-t2",
+      "name": "SATA",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[2].topics[2]",
+      "stage": 6,
+      "groupId": "g-6-2"
+    },
+    {
+      "id": "s6-g2-t3",
+      "name": "NVMe",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[2].topics[3]",
+      "stage": 6,
+      "groupId": "g-6-2"
+    },
+    {
+      "id": "s6-g3-t0",
+      "name": "Top of Rack",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[3].topics[0]",
+      "stage": 6,
+      "groupId": "g-6-3"
+    },
+    {
+      "id": "s6-g3-t1",
+      "name": "End of Row",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[3].topics[1]",
+      "stage": 6,
+      "groupId": "g-6-3"
+    },
+    {
+      "id": "s6-g3-t2",
+      "name": "Leaf-Spine",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[3].topics[2]",
+      "stage": 6,
+      "groupId": "g-6-3"
+    },
+    {
+      "id": "s6-g3-t3",
+      "name": "East-West Traffic",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[3].topics[3]",
+      "stage": 6,
+      "groupId": "g-6-3"
+    },
+    {
+      "id": "s6-g3-t4",
+      "name": "North-South Traffic",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[3].topics[4]",
+      "stage": 6,
+      "groupId": "g-6-3"
+    },
+    {
+      "id": "s6-g3-t5",
+      "name": "Oversubscription",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[3].topics[5]",
+      "stage": 6,
+      "groupId": "g-6-3"
+    },
+    {
+      "id": "s6-g3-t6",
+      "name": "Redundancy",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[3].topics[6]",
+      "stage": 6,
+      "groupId": "g-6-3"
+    },
+    {
+      "id": "s6-g3-t7",
+      "name": "High Availability",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[3].topics[7]",
+      "stage": 6,
+      "groupId": "g-6-3"
+    },
+    {
+      "id": "s6-g4-t0",
+      "name": "Rack design",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[4].topics[0]",
+      "stage": 6,
+      "groupId": "g-6-4"
+    },
+    {
+      "id": "s6-g4-t1",
+      "name": "Power distribution",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[4].topics[1]",
+      "stage": 6,
+      "groupId": "g-6-4"
+    },
+    {
+      "id": "s6-g4-t2",
+      "name": "UPS",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[4].topics[2]",
+      "stage": 6,
+      "groupId": "g-6-4"
+    },
+    {
+      "id": "s6-g4-t3",
+      "name": "PDU",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[4].topics[3]",
+      "stage": 6,
+      "groupId": "g-6-4"
+    },
+    {
+      "id": "s6-g4-t4",
+      "name": "Cooling",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[4].topics[4]",
+      "stage": 6,
+      "groupId": "g-6-4"
+    },
+    {
+      "id": "s6-g4-t5",
+      "name": "Airflow",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[4].topics[5]",
+      "stage": 6,
+      "groupId": "g-6-4"
+    },
+    {
+      "id": "s6-g4-t6",
+      "name": "Hot aisle",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[4].topics[6]",
+      "stage": 6,
+      "groupId": "g-6-4"
+    },
+    {
+      "id": "s6-g4-t7",
+      "name": "Cold aisle",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[4].topics[7]",
+      "stage": 6,
+      "groupId": "g-6-4"
+    },
+    {
+      "id": "s6-g4-t8",
+      "name": "Cable management",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[4].topics[8]",
+      "stage": 6,
+      "groupId": "g-6-4"
+    },
+    {
+      "id": "s6-g5-t0",
+      "name": "Out-of-band management",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[5].topics[0]",
+      "stage": 6,
+      "groupId": "g-6-5"
+    },
+    {
+      "id": "s6-g5-t1",
+      "name": "iLO",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[5].topics[1]",
+      "stage": 6,
+      "groupId": "g-6-5"
+    },
+    {
+      "id": "s6-g5-t2",
+      "name": "iDRAC",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[5].topics[2]",
+      "stage": 6,
+      "groupId": "g-6-5"
+    },
+    {
+      "id": "s6-g5-t3",
+      "name": "CIMC",
+      "kind": "topic",
+      "source": "DATA.stages[6].groups[5].topics[3]",
+      "stage": 6,
+      "groupId": "g-6-5"
+    },
+    {
+      "id": "lab-6",
+      "name": "Data Center Foundations Lab",
+      "kind": "lab",
+      "source": "DATA.stages[6].lab",
+      "stage": 6
+    },
+    {
+      "id": "s7-g0-t0",
+      "name": "Cisco Nexus",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[0].topics[0]",
+      "stage": 7,
+      "groupId": "g-7-0"
+    },
+    {
+      "id": "s7-g0-t1",
+      "name": "NX-OS",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[0].topics[1]",
+      "stage": 7,
+      "groupId": "g-7-0"
+    },
+    {
+      "id": "s7-g0-t2",
+      "name": "Nexus CLI",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[0].topics[2]",
+      "stage": 7,
+      "groupId": "g-7-0"
+    },
+    {
+      "id": "s7-g0-t3",
+      "name": "Nexus architecture",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[0].topics[3]",
+      "stage": 7,
+      "groupId": "g-7-0"
+    },
+    {
+      "id": "s7-g0-t4",
+      "name": "Nexus 3000",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[0].topics[4]",
+      "stage": 7,
+      "groupId": "g-7-0"
+    },
+    {
+      "id": "s7-g0-t5",
+      "name": "Nexus 5000",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[0].topics[5]",
+      "stage": 7,
+      "groupId": "g-7-0"
+    },
+    {
+      "id": "s7-g0-t6",
+      "name": "Nexus 7000",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[0].topics[6]",
+      "stage": 7,
+      "groupId": "g-7-0"
+    },
+    {
+      "id": "s7-g0-t7",
+      "name": "Nexus 9000",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[0].topics[7]",
+      "stage": 7,
+      "groupId": "g-7-0"
+    },
+    {
+      "id": "s7-g1-t0",
+      "name": "vPC",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[1].topics[0]",
+      "stage": 7,
+      "groupId": "g-7-1"
+    },
+    {
+      "id": "s7-g1-t1",
+      "name": "vPC Peer Link",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[1].topics[1]",
+      "stage": 7,
+      "groupId": "g-7-1"
+    },
+    {
+      "id": "s7-g1-t2",
+      "name": "Keepalive",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[1].topics[2]",
+      "stage": 7,
+      "groupId": "g-7-1"
+    },
+    {
+      "id": "s7-g1-t3",
+      "name": "Orphan ports",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[1].topics[3]",
+      "stage": 7,
+      "groupId": "g-7-1"
+    },
+    {
+      "id": "s7-g2-t0",
+      "name": "FabricPath concepts",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[2].topics[0]",
+      "stage": 7,
+      "groupId": "g-7-2"
+    },
+    {
+      "id": "s7-g2-t1",
+      "name": "FEX",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[2].topics[1]",
+      "stage": 7,
+      "groupId": "g-7-2"
+    },
+    {
+      "id": "s7-g2-t2",
+      "name": "Cisco Fabric Extender",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[2].topics[2]",
+      "stage": 7,
+      "groupId": "g-7-2"
+    },
+    {
+      "id": "s7-g2-t3",
+      "name": "Data Center Interconnect",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[2].topics[3]",
+      "stage": 7,
+      "groupId": "g-7-2"
+    },
+    {
+      "id": "s7-g3-t0",
+      "name": "VXLAN",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[3].topics[0]",
+      "stage": 7,
+      "groupId": "g-7-3"
+    },
+    {
+      "id": "s7-g3-t1",
+      "name": "VXLAN VNI",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[3].topics[1]",
+      "stage": 7,
+      "groupId": "g-7-3"
+    },
+    {
+      "id": "s7-g3-t2",
+      "name": "VTEP",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[3].topics[2]",
+      "stage": 7,
+      "groupId": "g-7-3"
+    },
+    {
+      "id": "s7-g4-t0",
+      "name": "EVPN",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[4].topics[0]",
+      "stage": 7,
+      "groupId": "g-7-4"
+    },
+    {
+      "id": "s7-g4-t1",
+      "name": "MP-BGP EVPN",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[4].topics[1]",
+      "stage": 7,
+      "groupId": "g-7-4"
+    },
+    {
+      "id": "s7-g4-t2",
+      "name": "Leaf-Spine Architecture",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[4].topics[2]",
+      "stage": 7,
+      "groupId": "g-7-4"
+    },
+    {
+      "id": "s7-g5-t0",
+      "name": "Cisco ACI fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[5].topics[0]",
+      "stage": 7,
+      "groupId": "g-7-5"
+    },
+    {
+      "id": "s7-g5-t1",
+      "name": "APIC",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[5].topics[1]",
+      "stage": 7,
+      "groupId": "g-7-5"
+    },
+    {
+      "id": "s7-g5-t2",
+      "name": "Spine",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[5].topics[2]",
+      "stage": 7,
+      "groupId": "g-7-5"
+    },
+    {
+      "id": "s7-g5-t3",
+      "name": "Leaf",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[5].topics[3]",
+      "stage": 7,
+      "groupId": "g-7-5"
+    },
+    {
+      "id": "s7-g5-t4",
+      "name": "Endpoint Groups",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[5].topics[4]",
+      "stage": 7,
+      "groupId": "g-7-5"
+    },
+    {
+      "id": "s7-g5-t5",
+      "name": "Bridge Domains",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[5].topics[5]",
+      "stage": 7,
+      "groupId": "g-7-5"
+    },
+    {
+      "id": "s7-g5-t6",
+      "name": "Contracts",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[5].topics[6]",
+      "stage": 7,
+      "groupId": "g-7-5"
+    },
+    {
+      "id": "s7-g5-t7",
+      "name": "Application Profiles",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[5].topics[7]",
+      "stage": 7,
+      "groupId": "g-7-5"
+    },
+    {
+      "id": "s7-g5-t8",
+      "name": "Tenants",
+      "kind": "topic",
+      "source": "DATA.stages[7].groups[5].topics[8]",
+      "stage": 7,
+      "groupId": "g-7-5"
+    },
+    {
+      "id": "lab-7",
+      "name": "Cisco Data Center Lab",
+      "kind": "lab",
+      "source": "DATA.stages[7].lab",
+      "stage": 7
+    },
+    {
+      "id": "s8-g0-t0",
+      "name": "Storage Fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[0].topics[0]",
+      "stage": 8,
+      "groupId": "g-8-0"
+    },
+    {
+      "id": "s8-g0-t1",
+      "name": "DAS",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[0].topics[1]",
+      "stage": 8,
+      "groupId": "g-8-0"
+    },
+    {
+      "id": "s8-g0-t2",
+      "name": "NAS",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[0].topics[2]",
+      "stage": 8,
+      "groupId": "g-8-0"
+    },
+    {
+      "id": "s8-g0-t3",
+      "name": "SAN",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[0].topics[3]",
+      "stage": 8,
+      "groupId": "g-8-0"
+    },
+    {
+      "id": "s8-g0-t4",
+      "name": "Block Storage",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[0].topics[4]",
+      "stage": 8,
+      "groupId": "g-8-0"
+    },
+    {
+      "id": "s8-g0-t5",
+      "name": "File Storage",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[0].topics[5]",
+      "stage": 8,
+      "groupId": "g-8-0"
+    },
+    {
+      "id": "s8-g0-t6",
+      "name": "Object Storage",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[0].topics[6]",
+      "stage": 8,
+      "groupId": "g-8-0"
+    },
+    {
+      "id": "s8-g1-t0",
+      "name": "NFS",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[1].topics[0]",
+      "stage": 8,
+      "groupId": "g-8-1"
+    },
+    {
+      "id": "s8-g1-t1",
+      "name": "SMB",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[1].topics[1]",
+      "stage": 8,
+      "groupId": "g-8-1"
+    },
+    {
+      "id": "s8-g1-t2",
+      "name": "iSCSI",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[1].topics[2]",
+      "stage": 8,
+      "groupId": "g-8-1"
+    },
+    {
+      "id": "s8-g1-t3",
+      "name": "Fibre Channel",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[1].topics[3]",
+      "stage": 8,
+      "groupId": "g-8-1"
+    },
+    {
+      "id": "s8-g1-t4",
+      "name": "FCoE",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[1].topics[4]",
+      "stage": 8,
+      "groupId": "g-8-1"
+    },
+    {
+      "id": "s8-g1-t5",
+      "name": "NVMe-oF",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[1].topics[5]",
+      "stage": 8,
+      "groupId": "g-8-1"
+    },
+    {
+      "id": "s8-g2-t0",
+      "name": "HBA",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[2].topics[0]",
+      "stage": 8,
+      "groupId": "g-8-2"
+    },
+    {
+      "id": "s8-g2-t1",
+      "name": "WWN",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[2].topics[1]",
+      "stage": 8,
+      "groupId": "g-8-2"
+    },
+    {
+      "id": "s8-g2-t2",
+      "name": "WWPN",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[2].topics[2]",
+      "stage": 8,
+      "groupId": "g-8-2"
+    },
+    {
+      "id": "s8-g2-t3",
+      "name": "Zoning",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[2].topics[3]",
+      "stage": 8,
+      "groupId": "g-8-2"
+    },
+    {
+      "id": "s8-g2-t4",
+      "name": "LUN",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[2].topics[4]",
+      "stage": 8,
+      "groupId": "g-8-2"
+    },
+    {
+      "id": "s8-g2-t5",
+      "name": "Multipathing",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[2].topics[5]",
+      "stage": 8,
+      "groupId": "g-8-2"
+    },
+    {
+      "id": "s8-g2-t6",
+      "name": "SAN Switch",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[2].topics[6]",
+      "stage": 8,
+      "groupId": "g-8-2"
+    },
+    {
+      "id": "s8-g2-t7",
+      "name": "Brocade fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[2].topics[7]",
+      "stage": 8,
+      "groupId": "g-8-2"
+    },
+    {
+      "id": "s8-g2-t8",
+      "name": "Cisco MDS fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[2].topics[8]",
+      "stage": 8,
+      "groupId": "g-8-2"
+    },
+    {
+      "id": "s8-g3-t0",
+      "name": "Storage arrays",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[3].topics[0]",
+      "stage": 8,
+      "groupId": "g-8-3"
+    },
+    {
+      "id": "s8-g3-t1",
+      "name": "HPE MSA",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[3].topics[1]",
+      "stage": 8,
+      "groupId": "g-8-3"
+    },
+    {
+      "id": "s8-g3-t2",
+      "name": "Dell EMC concepts",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[3].topics[2]",
+      "stage": 8,
+      "groupId": "g-8-3"
+    },
+    {
+      "id": "s8-g3-t3",
+      "name": "NetApp concepts",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[3].topics[3]",
+      "stage": 8,
+      "groupId": "g-8-3"
+    },
+    {
+      "id": "s8-g4-t0",
+      "name": "Hypervisor",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[4].topics[0]",
+      "stage": 8,
+      "groupId": "g-8-4"
+    },
+    {
+      "id": "s8-g4-t1",
+      "name": "Type 1 Hypervisor",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[4].topics[1]",
+      "stage": 8,
+      "groupId": "g-8-4"
+    },
+    {
+      "id": "s8-g4-t2",
+      "name": "Type 2 Hypervisor",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[4].topics[2]",
+      "stage": 8,
+      "groupId": "g-8-4"
+    },
+    {
+      "id": "s8-g5-t0",
+      "name": "VMware ESXi",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[5].topics[0]",
+      "stage": 8,
+      "groupId": "g-8-5"
+    },
+    {
+      "id": "s8-g5-t1",
+      "name": "vCenter",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[5].topics[1]",
+      "stage": 8,
+      "groupId": "g-8-5"
+    },
+    {
+      "id": "s8-g5-t2",
+      "name": "Datastore",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[5].topics[2]",
+      "stage": 8,
+      "groupId": "g-8-5"
+    },
+    {
+      "id": "s8-g5-t3",
+      "name": "vSwitch",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[5].topics[3]",
+      "stage": 8,
+      "groupId": "g-8-5"
+    },
+    {
+      "id": "s8-g5-t4",
+      "name": "Distributed Switch",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[5].topics[4]",
+      "stage": 8,
+      "groupId": "g-8-5"
+    },
+    {
+      "id": "s8-g5-t5",
+      "name": "VMkernel",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[5].topics[5]",
+      "stage": 8,
+      "groupId": "g-8-5"
+    },
+    {
+      "id": "s8-g5-t6",
+      "name": "vMotion",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[5].topics[6]",
+      "stage": 8,
+      "groupId": "g-8-5"
+    },
+    {
+      "id": "s8-g5-t7",
+      "name": "HA",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[5].topics[7]",
+      "stage": 8,
+      "groupId": "g-8-5"
+    },
+    {
+      "id": "s8-g5-t8",
+      "name": "DRS",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[5].topics[8]",
+      "stage": 8,
+      "groupId": "g-8-5"
+    },
+    {
+      "id": "s8-g5-t9",
+      "name": "Snapshots",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[5].topics[9]",
+      "stage": 8,
+      "groupId": "g-8-5"
+    },
+    {
+      "id": "s8-g5-t10",
+      "name": "Templates",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[5].topics[10]",
+      "stage": 8,
+      "groupId": "g-8-5"
+    },
+    {
+      "id": "s8-g5-t11",
+      "name": "Clusters",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[5].topics[11]",
+      "stage": 8,
+      "groupId": "g-8-5"
+    },
+    {
+      "id": "s8-g6-t0",
+      "name": "Microsoft Hyper-V",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[6].topics[0]",
+      "stage": 8,
+      "groupId": "g-8-6"
+    },
+    {
+      "id": "s8-g6-t1",
+      "name": "KVM",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[6].topics[1]",
+      "stage": 8,
+      "groupId": "g-8-6"
+    },
+    {
+      "id": "s8-g6-t2",
+      "name": "Containers fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[6].topics[2]",
+      "stage": 8,
+      "groupId": "g-8-6"
+    },
+    {
+      "id": "s8-g6-t3",
+      "name": "Docker basics",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[6].topics[3]",
+      "stage": 8,
+      "groupId": "g-8-6"
+    },
+    {
+      "id": "s8-g6-t4",
+      "name": "Kubernetes overview",
+      "kind": "topic",
+      "source": "DATA.stages[8].groups[6].topics[4]",
+      "stage": 8,
+      "groupId": "g-8-6"
+    },
+    {
+      "id": "lab-8",
+      "name": "Storage & Virtualization Lab",
+      "kind": "lab",
+      "source": "DATA.stages[8].lab",
+      "stage": 8
+    },
+    {
+      "id": "s9-g0-t0",
+      "name": "Python Fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[0].topics[0]",
+      "stage": 9,
+      "groupId": "g-9-0"
+    },
+    {
+      "id": "s9-g0-t1",
+      "name": "Python for Network Engineers",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[0].topics[1]",
+      "stage": 9,
+      "groupId": "g-9-0"
+    },
+    {
+      "id": "s9-g0-t2",
+      "name": "Data types",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[0].topics[2]",
+      "stage": 9,
+      "groupId": "g-9-0"
+    },
+    {
+      "id": "s9-g0-t3",
+      "name": "Loops",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[0].topics[3]",
+      "stage": 9,
+      "groupId": "g-9-0"
+    },
+    {
+      "id": "s9-g0-t4",
+      "name": "Functions",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[0].topics[4]",
+      "stage": 9,
+      "groupId": "g-9-0"
+    },
+    {
+      "id": "s9-g0-t5",
+      "name": "Files",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[0].topics[5]",
+      "stage": 9,
+      "groupId": "g-9-0"
+    },
+    {
+      "id": "s9-g0-t6",
+      "name": "JSON",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[0].topics[6]",
+      "stage": 9,
+      "groupId": "g-9-0"
+    },
+    {
+      "id": "s9-g0-t7",
+      "name": "YAML",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[0].topics[7]",
+      "stage": 9,
+      "groupId": "g-9-0"
+    },
+    {
+      "id": "s9-g0-t8",
+      "name": "Regex",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[0].topics[8]",
+      "stage": 9,
+      "groupId": "g-9-0"
+    },
+    {
+      "id": "s9-g1-t0",
+      "name": "APIs",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[1].topics[0]",
+      "stage": 9,
+      "groupId": "g-9-1"
+    },
+    {
+      "id": "s9-g1-t1",
+      "name": "REST APIs",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[1].topics[1]",
+      "stage": 9,
+      "groupId": "g-9-1"
+    },
+    {
+      "id": "s9-g1-t2",
+      "name": "HTTP methods",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[1].topics[2]",
+      "stage": 9,
+      "groupId": "g-9-1"
+    },
+    {
+      "id": "s9-g1-t3",
+      "name": "Authentication",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[1].topics[3]",
+      "stage": 9,
+      "groupId": "g-9-1"
+    },
+    {
+      "id": "s9-g1-t4",
+      "name": "Cisco APIs",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[1].topics[4]",
+      "stage": 9,
+      "groupId": "g-9-1"
+    },
+    {
+      "id": "s9-g1-t5",
+      "name": "NETCONF",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[1].topics[5]",
+      "stage": 9,
+      "groupId": "g-9-1"
+    },
+    {
+      "id": "s9-g1-t6",
+      "name": "RESTCONF",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[1].topics[6]",
+      "stage": 9,
+      "groupId": "g-9-1"
+    },
+    {
+      "id": "s9-g1-t7",
+      "name": "YANG",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[1].topics[7]",
+      "stage": 9,
+      "groupId": "g-9-1"
+    },
+    {
+      "id": "s9-g1-t8",
+      "name": "SNMP automation",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[1].topics[8]",
+      "stage": 9,
+      "groupId": "g-9-1"
+    },
+    {
+      "id": "s9-g1-t9",
+      "name": "SSH automation",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[1].topics[9]",
+      "stage": 9,
+      "groupId": "g-9-1"
+    },
+    {
+      "id": "s9-g2-t0",
+      "name": "Netmiko",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[2].topics[0]",
+      "stage": 9,
+      "groupId": "g-9-2"
+    },
+    {
+      "id": "s9-g2-t1",
+      "name": "Paramiko",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[2].topics[1]",
+      "stage": 9,
+      "groupId": "g-9-2"
+    },
+    {
+      "id": "s9-g2-t2",
+      "name": "NAPALM",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[2].topics[2]",
+      "stage": 9,
+      "groupId": "g-9-2"
+    },
+    {
+      "id": "s9-g2-t3",
+      "name": "Requests",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[2].topics[3]",
+      "stage": 9,
+      "groupId": "g-9-2"
+    },
+    {
+      "id": "s9-g3-t0",
+      "name": "Ansible",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[3].topics[0]",
+      "stage": 9,
+      "groupId": "g-9-3"
+    },
+    {
+      "id": "s9-g3-t1",
+      "name": "Ansible Inventory",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[3].topics[1]",
+      "stage": 9,
+      "groupId": "g-9-3"
+    },
+    {
+      "id": "s9-g3-t2",
+      "name": "Ansible Playbooks",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[3].topics[2]",
+      "stage": 9,
+      "groupId": "g-9-3"
+    },
+    {
+      "id": "s9-g3-t3",
+      "name": "Cisco Ansible modules",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[3].topics[3]",
+      "stage": 9,
+      "groupId": "g-9-3"
+    },
+    {
+      "id": "s9-g3-t4",
+      "name": "Templates",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[3].topics[4]",
+      "stage": 9,
+      "groupId": "g-9-3"
+    },
+    {
+      "id": "s9-g3-t5",
+      "name": "Jinja2",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[3].topics[5]",
+      "stage": 9,
+      "groupId": "g-9-3"
+    },
+    {
+      "id": "s9-g4-t0",
+      "name": "Git",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[4].topics[0]",
+      "stage": 9,
+      "groupId": "g-9-4"
+    },
+    {
+      "id": "s9-g4-t1",
+      "name": "GitHub / GitLab",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[4].topics[1]",
+      "stage": 9,
+      "groupId": "g-9-4"
+    },
+    {
+      "id": "s9-g4-t2",
+      "name": "Version control",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[4].topics[2]",
+      "stage": 9,
+      "groupId": "g-9-4"
+    },
+    {
+      "id": "s9-g4-t3",
+      "name": "Infrastructure as Code",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[4].topics[3]",
+      "stage": 9,
+      "groupId": "g-9-4"
+    },
+    {
+      "id": "s9-g4-t4",
+      "name": "Terraform fundamentals",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[4].topics[4]",
+      "stage": 9,
+      "groupId": "g-9-4"
+    },
+    {
+      "id": "s9-g5-t0",
+      "name": "Infrastructure documentation",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[5].topics[0]",
+      "stage": 9,
+      "groupId": "g-9-5"
+    },
+    {
+      "id": "s9-g5-t1",
+      "name": "Network diagrams",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[5].topics[1]",
+      "stage": 9,
+      "groupId": "g-9-5"
+    },
+    {
+      "id": "s9-g5-t2",
+      "name": "IP Address Management",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[5].topics[2]",
+      "stage": 9,
+      "groupId": "g-9-5"
+    },
+    {
+      "id": "s9-g5-t3",
+      "name": "NetBox",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[5].topics[3]",
+      "stage": 9,
+      "groupId": "g-9-5"
+    },
+    {
+      "id": "s9-g5-t4",
+      "name": "Configuration management",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[5].topics[4]",
+      "stage": 9,
+      "groupId": "g-9-5"
+    },
+    {
+      "id": "s9-g5-t5",
+      "name": "Source of truth",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[5].topics[5]",
+      "stage": 9,
+      "groupId": "g-9-5"
+    },
+    {
+      "id": "s9-g5-t6",
+      "name": "CI/CD concepts",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[5].topics[6]",
+      "stage": 9,
+      "groupId": "g-9-5"
+    },
+    {
+      "id": "s9-g6-t0",
+      "name": "High Availability",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[6].topics[0]",
+      "stage": 9,
+      "groupId": "g-9-6"
+    },
+    {
+      "id": "s9-g6-t1",
+      "name": "Disaster Recovery",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[6].topics[1]",
+      "stage": 9,
+      "groupId": "g-9-6"
+    },
+    {
+      "id": "s9-g6-t2",
+      "name": "Business Continuity",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[6].topics[2]",
+      "stage": 9,
+      "groupId": "g-9-6"
+    },
+    {
+      "id": "s9-g6-t3",
+      "name": "RTO",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[6].topics[3]",
+      "stage": 9,
+      "groupId": "g-9-6"
+    },
+    {
+      "id": "s9-g6-t4",
+      "name": "RPO",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[6].topics[4]",
+      "stage": 9,
+      "groupId": "g-9-6"
+    },
+    {
+      "id": "s9-g6-t5",
+      "name": "Redundant Data Centers",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[6].topics[5]",
+      "stage": 9,
+      "groupId": "g-9-6"
+    },
+    {
+      "id": "s9-g6-t6",
+      "name": "Active/Active",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[6].topics[6]",
+      "stage": 9,
+      "groupId": "g-9-6"
+    },
+    {
+      "id": "s9-g6-t7",
+      "name": "Active/Passive",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[6].topics[7]",
+      "stage": 9,
+      "groupId": "g-9-6"
+    },
+    {
+      "id": "s9-g6-t8",
+      "name": "Load Balancing",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[6].topics[8]",
+      "stage": 9,
+      "groupId": "g-9-6"
+    },
+    {
+      "id": "s9-g7-t0",
+      "name": "Network segmentation",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[7].topics[0]",
+      "stage": 9,
+      "groupId": "g-9-7"
+    },
+    {
+      "id": "s9-g7-t1",
+      "name": "Management Plane",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[7].topics[1]",
+      "stage": 9,
+      "groupId": "g-9-7"
+    },
+    {
+      "id": "s9-g7-t2",
+      "name": "Control Plane",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[7].topics[2]",
+      "stage": 9,
+      "groupId": "g-9-7"
+    },
+    {
+      "id": "s9-g7-t3",
+      "name": "Data Plane",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[7].topics[3]",
+      "stage": 9,
+      "groupId": "g-9-7"
+    },
+    {
+      "id": "s9-g8-t0",
+      "name": "Observability",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[8].topics[0]",
+      "stage": 9,
+      "groupId": "g-9-8"
+    },
+    {
+      "id": "s9-g8-t1",
+      "name": "Monitoring",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[8].topics[1]",
+      "stage": 9,
+      "groupId": "g-9-8"
+    },
+    {
+      "id": "s9-g8-t2",
+      "name": "Logging",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[8].topics[2]",
+      "stage": 9,
+      "groupId": "g-9-8"
+    },
+    {
+      "id": "s9-g8-t3",
+      "name": "Metrics",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[8].topics[3]",
+      "stage": 9,
+      "groupId": "g-9-8"
+    },
+    {
+      "id": "s9-g8-t4",
+      "name": "Tracing",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[8].topics[4]",
+      "stage": 9,
+      "groupId": "g-9-8"
+    },
+    {
+      "id": "s9-g8-t5",
+      "name": "Capacity Planning",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[8].topics[5]",
+      "stage": 9,
+      "groupId": "g-9-8"
+    },
+    {
+      "id": "s9-g8-t6",
+      "name": "Infrastructure Lifecycle Management",
+      "kind": "topic",
+      "source": "DATA.stages[9].groups[8].topics[6]",
+      "stage": 9,
+      "groupId": "g-9-8"
+    },
+    {
+      "id": "lab-9",
+      "name": "Architecture design rehearsal",
+      "kind": "lab",
+      "source": "DATA.stages[9].lab",
+      "stage": 9
+    },
+    {
+      "id": "device-0",
+      "name": "Catalyst 2960 / 2960X",
+      "kind": "device",
+      "source": "DATA.devices[0]"
+    },
+    {
+      "id": "device-1",
+      "name": "Catalyst 3560 / 3750",
+      "kind": "device",
+      "source": "DATA.devices[1]"
+    },
+    {
+      "id": "device-2",
+      "name": "Catalyst 9200",
+      "kind": "device",
+      "source": "DATA.devices[2]"
+    },
+    {
+      "id": "device-3",
+      "name": "Catalyst 9300",
+      "kind": "device",
+      "source": "DATA.devices[3]"
+    },
+    {
+      "id": "device-4",
+      "name": "Catalyst 9500",
+      "kind": "device",
+      "source": "DATA.devices[4]"
+    },
+    {
+      "id": "device-5",
+      "name": "Cisco ISR 4000",
+      "kind": "device",
+      "source": "DATA.devices[5]"
+    },
+    {
+      "id": "device-6",
+      "name": "Cisco ASR",
+      "kind": "device",
+      "source": "DATA.devices[6]"
+    },
+    {
+      "id": "device-7",
+      "name": "Cisco ASA",
+      "kind": "device",
+      "source": "DATA.devices[7]"
+    },
+    {
+      "id": "device-8",
+      "name": "Cisco Firepower",
+      "kind": "device",
+      "source": "DATA.devices[8]"
+    },
+    {
+      "id": "device-9",
+      "name": "Cisco Aironet",
+      "kind": "device",
+      "source": "DATA.devices[9]"
+    },
+    {
+      "id": "device-10",
+      "name": "Cisco Catalyst Wireless",
+      "kind": "device",
+      "source": "DATA.devices[10]"
+    },
+    {
+      "id": "device-11",
+      "name": "Cisco Wireless LAN Controller",
+      "kind": "device",
+      "source": "DATA.devices[11]"
+    },
+    {
+      "id": "device-12",
+      "name": "Cisco Nexus 3000",
+      "kind": "device",
+      "source": "DATA.devices[12]"
+    },
+    {
+      "id": "device-13",
+      "name": "Cisco Nexus 5000",
+      "kind": "device",
+      "source": "DATA.devices[13]"
+    },
+    {
+      "id": "device-14",
+      "name": "Cisco Nexus 7000",
+      "kind": "device",
+      "source": "DATA.devices[14]"
+    },
+    {
+      "id": "device-15",
+      "name": "Cisco Nexus 9000",
+      "kind": "device",
+      "source": "DATA.devices[15]"
+    },
+    {
+      "id": "device-16",
+      "name": "Cisco MDS SAN switches",
+      "kind": "device",
+      "source": "DATA.devices[16]"
+    },
+    {
+      "id": "hardware-0",
+      "name": "HPE ProLiant",
+      "kind": "hardware",
+      "source": "DATA.hardware[0]"
+    },
+    {
+      "id": "hardware-1",
+      "name": "Dell PowerEdge",
+      "kind": "hardware",
+      "source": "DATA.hardware[1]"
+    },
+    {
+      "id": "hardware-2",
+      "name": "Cisco UCS",
+      "kind": "hardware",
+      "source": "DATA.hardware[2]"
+    },
+    {
+      "id": "hardware-3",
+      "name": "Rack Servers",
+      "kind": "hardware",
+      "source": "DATA.hardware[3]"
+    },
+    {
+      "id": "hardware-4",
+      "name": "Blade Servers",
+      "kind": "hardware",
+      "source": "DATA.hardware[4]"
+    },
+    {
+      "id": "hardware-5",
+      "name": "Storage Arrays",
+      "kind": "hardware",
+      "source": "DATA.hardware[5]"
+    },
+    {
+      "id": "hardware-6",
+      "name": "HPE MSA",
+      "kind": "hardware",
+      "source": "DATA.hardware[6]"
+    },
+    {
+      "id": "hardware-7",
+      "name": "Dell EMC",
+      "kind": "hardware",
+      "source": "DATA.hardware[7]"
+    },
+    {
+      "id": "hardware-8",
+      "name": "NetApp",
+      "kind": "hardware",
+      "source": "DATA.hardware[8]"
+    },
+    {
+      "id": "hardware-9",
+      "name": "SAN Switches",
+      "kind": "hardware",
+      "source": "DATA.hardware[9]"
+    },
+    {
+      "id": "hardware-10",
+      "name": "Brocade",
+      "kind": "hardware",
+      "source": "DATA.hardware[10]"
+    },
+    {
+      "id": "hardware-11",
+      "name": "Cisco MDS",
+      "kind": "hardware",
+      "source": "DATA.hardware[11]"
+    },
+    {
+      "id": "hardware-12",
+      "name": "UPS",
+      "kind": "hardware",
+      "source": "DATA.hardware[12]"
+    },
+    {
+      "id": "hardware-13",
+      "name": "PDU",
+      "kind": "hardware",
+      "source": "DATA.hardware[13]"
+    },
+    {
+      "id": "hardware-14",
+      "name": "Rack Management",
+      "kind": "hardware",
+      "source": "DATA.hardware[14]"
+    },
+    {
+      "id": "hardware-15",
+      "name": "Environmental Monitoring",
+      "kind": "hardware",
+      "source": "DATA.hardware[15]"
+    },
+    {
+      "id": "hardware-16",
+      "name": "Out-of-Band Management",
+      "kind": "hardware",
+      "source": "DATA.hardware[16]"
+    },
+    {
+      "id": "hardware-17",
+      "name": "iLO",
+      "kind": "hardware",
+      "source": "DATA.hardware[17]"
+    },
+    {
+      "id": "hardware-18",
+      "name": "iDRAC",
+      "kind": "hardware",
+      "source": "DATA.hardware[18]"
+    },
+    {
+      "id": "hardware-19",
+      "name": "CIMC",
+      "kind": "hardware",
+      "source": "DATA.hardware[19]"
+    },
+    {
+      "id": "trouble-0",
+      "name": "Layer 1 troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[0]"
+    },
+    {
+      "id": "trouble-1",
+      "name": "Interface errors",
+      "kind": "trouble",
+      "source": "DATA.trouble[1]"
+    },
+    {
+      "id": "trouble-2",
+      "name": "CRC errors",
+      "kind": "trouble",
+      "source": "DATA.trouble[2]"
+    },
+    {
+      "id": "trouble-3",
+      "name": "Duplex mismatch",
+      "kind": "trouble",
+      "source": "DATA.trouble[3]"
+    },
+    {
+      "id": "trouble-4",
+      "name": "VLAN troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[4]"
+    },
+    {
+      "id": "trouble-5",
+      "name": "STP troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[5]"
+    },
+    {
+      "id": "trouble-6",
+      "name": "EtherChannel troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[6]"
+    },
+    {
+      "id": "trouble-7",
+      "name": "Routing troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[7]"
+    },
+    {
+      "id": "trouble-8",
+      "name": "OSPF troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[8]"
+    },
+    {
+      "id": "trouble-9",
+      "name": "BGP troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[9]"
+    },
+    {
+      "id": "trouble-10",
+      "name": "DHCP troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[10]"
+    },
+    {
+      "id": "trouble-11",
+      "name": "DNS troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[11]"
+    },
+    {
+      "id": "trouble-12",
+      "name": "NAT troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[12]"
+    },
+    {
+      "id": "trouble-13",
+      "name": "ACL troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[13]"
+    },
+    {
+      "id": "trouble-14",
+      "name": "Firewall troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[14]"
+    },
+    {
+      "id": "trouble-15",
+      "name": "Wireless troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[15]"
+    },
+    {
+      "id": "trouble-16",
+      "name": "Server hardware troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[16]"
+    },
+    {
+      "id": "trouble-17",
+      "name": "RAID troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[17]"
+    },
+    {
+      "id": "trouble-18",
+      "name": "SAN troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[18]"
+    },
+    {
+      "id": "trouble-19",
+      "name": "VMware troubleshooting",
+      "kind": "trouble",
+      "source": "DATA.trouble[19]"
+    },
+    {
+      "id": "trouble-20",
+      "name": "Data center outage analysis",
+      "kind": "trouble",
+      "source": "DATA.trouble[20]"
+    },
+    {
+      "id": "capstone-final",
+      "name": "Enterprise Data Center Architecture Capstone",
+      "kind": "capstone",
+      "source": "HTML #capstone"
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-0-0",
+      "name": "Computer Hardware",
+      "stage": 0,
+      "children": [
+        "s0-g0-t0",
+        "s0-g0-t1",
+        "s0-g0-t2",
+        "s0-g0-t3",
+        "s0-g0-t4",
+        "s0-g0-t5",
+        "s0-g0-t6"
+      ]
+    },
+    {
+      "id": "g-0-1",
+      "name": "Operating Systems",
+      "stage": 0,
+      "children": [
+        "s0-g1-t0",
+        "s0-g1-t1",
+        "s0-g1-t2",
+        "s0-g1-t3"
+      ]
+    },
+    {
+      "id": "g-0-2",
+      "name": "Networking Basics",
+      "stage": 0,
+      "children": [
+        "s0-g2-t0",
+        "s0-g2-t1",
+        "s0-g2-t2",
+        "s0-g2-t3",
+        "s0-g2-t4",
+        "s0-g2-t5",
+        "s0-g2-t6",
+        "s0-g2-t7",
+        "s0-g2-t8",
+        "s0-g2-t9",
+        "s0-g2-t10"
+      ]
+    },
+    {
+      "id": "g-0-3",
+      "name": "Binary & Subnetting",
+      "stage": 0,
+      "children": [
+        "s0-g3-t0",
+        "s0-g3-t1",
+        "s0-g3-t2",
+        "s0-g3-t3",
+        "s0-g3-t4",
+        "s0-g3-t5",
+        "s0-g3-t6",
+        "s0-g3-t7"
+      ]
+    },
+    {
+      "id": "g-1-0",
+      "name": "Network models",
+      "stage": 1,
+      "children": [
+        "s1-g0-t0",
+        "s1-g0-t1"
+      ]
+    },
+    {
+      "id": "g-1-1",
+      "name": "Ethernet & resolution",
+      "stage": 1,
+      "children": [
+        "s1-g1-t0",
+        "s1-g1-t1",
+        "s1-g1-t2"
+      ]
+    },
+    {
+      "id": "g-1-2",
+      "name": "Transport & services",
+      "stage": 1,
+      "children": [
+        "s1-g2-t0",
+        "s1-g2-t1",
+        "s1-g2-t2",
+        "s1-g2-t3"
+      ]
+    },
+    {
+      "id": "g-1-3",
+      "name": "Layer 2 fundamentals",
+      "stage": 1,
+      "children": [
+        "s1-g3-t0",
+        "s1-g3-t1",
+        "s1-g3-t2",
+        "s1-g3-t3",
+        "s1-g3-t4"
+      ]
+    },
+    {
+      "id": "g-1-4",
+      "name": "Routing fundamentals",
+      "stage": 1,
+      "children": [
+        "s1-g4-t0",
+        "s1-g4-t1",
+        "s1-g4-t2",
+        "s1-g4-t3"
+      ]
+    },
+    {
+      "id": "g-1-5",
+      "name": "Diagnostic tools",
+      "stage": 1,
+      "children": [
+        "s1-g5-t0",
+        "s1-g5-t1",
+        "s1-g5-t2",
+        "s1-g5-t3",
+        "s1-g5-t4",
+        "s1-g5-t5",
+        "s1-g5-t6",
+        "s1-g5-t7",
+        "s1-g5-t8",
+        "s1-g5-t9",
+        "s1-g5-t10"
+      ]
+    },
+    {
+      "id": "g-2-0",
+      "name": "IOS & configuration",
+      "stage": 2,
+      "children": [
+        "s2-g0-t0",
+        "s2-g0-t1",
+        "s2-g0-t2",
+        "s2-g0-t3"
+      ]
+    },
+    {
+      "id": "g-2-1",
+      "name": "Boot & recovery",
+      "stage": 2,
+      "children": [
+        "s2-g1-t0",
+        "s2-g1-t1",
+        "s2-g1-t2",
+        "s2-g1-t3",
+        "s2-g1-t4",
+        "s2-g1-t5",
+        "s2-g1-t6",
+        "s2-g1-t7"
+      ]
+    },
+    {
+      "id": "g-2-2",
+      "name": "Switching & VLANs",
+      "stage": 2,
+      "children": [
+        "s2-g2-t0",
+        "s2-g2-t1",
+        "s2-g2-t2",
+        "s2-g2-t3",
+        "s2-g2-t4",
+        "s2-g2-t5"
+      ]
+    },
+    {
+      "id": "g-2-3",
+      "name": "Link aggregation",
+      "stage": 2,
+      "children": [
+        "s2-g3-t0",
+        "s2-g3-t1",
+        "s2-g3-t2"
+      ]
+    },
+    {
+      "id": "g-2-4",
+      "name": "Spanning tree",
+      "stage": 2,
+      "children": [
+        "s2-g4-t0",
+        "s2-g4-t1",
+        "s2-g4-t2"
+      ]
+    },
+    {
+      "id": "g-2-5",
+      "name": "Edge protection",
+      "stage": 2,
+      "children": [
+        "s2-g5-t0",
+        "s2-g5-t1",
+        "s2-g5-t2",
+        "s2-g5-t3",
+        "s2-g5-t4",
+        "s2-g5-t5"
+      ]
+    },
+    {
+      "id": "g-2-6",
+      "name": "Traffic mirroring",
+      "stage": 2,
+      "children": [
+        "s2-g6-t0",
+        "s2-g6-t1",
+        "s2-g6-t2"
+      ]
+    },
+    {
+      "id": "g-3-0",
+      "name": "Routing policy",
+      "stage": 3,
+      "children": [
+        "s3-g0-t0",
+        "s3-g0-t1",
+        "s3-g0-t2"
+      ]
+    },
+    {
+      "id": "g-3-1",
+      "name": "OSPF",
+      "stage": 3,
+      "children": [
+        "s3-g1-t0",
+        "s3-g1-t1",
+        "s3-g1-t2",
+        "s3-g1-t3",
+        "s3-g1-t4"
+      ]
+    },
+    {
+      "id": "g-3-2",
+      "name": "EIGRP",
+      "stage": 3,
+      "children": [
+        "s3-g2-t0",
+        "s3-g2-t1",
+        "s3-g2-t2",
+        "s3-g2-t3"
+      ]
+    },
+    {
+      "id": "g-3-3",
+      "name": "BGP",
+      "stage": 3,
+      "children": [
+        "s3-g3-t0",
+        "s3-g3-t1",
+        "s3-g3-t2",
+        "s3-g3-t3"
+      ]
+    },
+    {
+      "id": "g-3-4",
+      "name": "BGP policy",
+      "stage": 3,
+      "children": [
+        "s3-g4-t0",
+        "s3-g4-t1",
+        "s3-g4-t2",
+        "s3-g4-t3"
+      ]
+    },
+    {
+      "id": "g-3-5",
+      "name": "Route control",
+      "stage": 3,
+      "children": [
+        "s3-g5-t0",
+        "s3-g5-t1",
+        "s3-g5-t2",
+        "s3-g5-t3",
+        "s3-g5-t4"
+      ]
+    },
+    {
+      "id": "g-3-6",
+      "name": "VRF segmentation",
+      "stage": 3,
+      "children": [
+        "s3-g6-t0",
+        "s3-g6-t1"
+      ]
+    },
+    {
+      "id": "g-3-7",
+      "name": "Gateway redundancy",
+      "stage": 3,
+      "children": [
+        "s3-g7-t0",
+        "s3-g7-t1",
+        "s3-g7-t2"
+      ]
+    },
+    {
+      "id": "g-3-8",
+      "name": "Multicast",
+      "stage": 3,
+      "children": [
+        "s3-g8-t0",
+        "s3-g8-t1",
+        "s3-g8-t2"
+      ]
+    },
+    {
+      "id": "g-3-9",
+      "name": "Quality of service",
+      "stage": 3,
+      "children": [
+        "s3-g9-t0",
+        "s3-g9-t1",
+        "s3-g9-t2",
+        "s3-g9-t3",
+        "s3-g9-t4",
+        "s3-g9-t5"
+      ]
+    },
+    {
+      "id": "g-4-0",
+      "name": "Address & time services",
+      "stage": 4,
+      "children": [
+        "s4-g0-t0",
+        "s4-g0-t1",
+        "s4-g0-t2",
+        "s4-g0-t3"
+      ]
+    },
+    {
+      "id": "g-4-1",
+      "name": "Observability protocols",
+      "stage": 4,
+      "children": [
+        "s4-g1-t0",
+        "s4-g1-t1"
+      ]
+    },
+    {
+      "id": "g-4-2",
+      "name": "Identity & AAA",
+      "stage": 4,
+      "children": [
+        "s4-g2-t0",
+        "s4-g2-t1",
+        "s4-g2-t2"
+      ]
+    },
+    {
+      "id": "g-4-3",
+      "name": "Traffic & availability",
+      "stage": 4,
+      "children": [
+        "s4-g3-t0",
+        "s4-g3-t1",
+        "s4-g3-t2",
+        "s4-g3-t3"
+      ]
+    },
+    {
+      "id": "g-4-4",
+      "name": "Discovery & file transfer",
+      "stage": 4,
+      "children": [
+        "s4-g4-t0",
+        "s4-g4-t1",
+        "s4-g4-t2",
+        "s4-g4-t3",
+        "s4-g4-t4",
+        "s4-g4-t5",
+        "s4-g4-t6"
+      ]
+    },
+    {
+      "id": "g-4-5",
+      "name": "Trust & access",
+      "stage": 4,
+      "children": [
+        "s4-g5-t0",
+        "s4-g5-t1",
+        "s4-g5-t2",
+        "s4-g5-t3"
+      ]
+    },
+    {
+      "id": "g-4-6",
+      "name": "Monitoring platforms",
+      "stage": 4,
+      "children": [
+        "s4-g6-t0",
+        "s4-g6-t1",
+        "s4-g6-t2",
+        "s4-g6-t3",
+        "s4-g6-t4"
+      ]
+    },
+    {
+      "id": "g-5-0",
+      "name": "Security principles",
+      "stage": 5,
+      "children": [
+        "s5-g0-t0",
+        "s5-g0-t1",
+        "s5-g0-t2",
+        "s5-g0-t3",
+        "s5-g0-t4"
+      ]
+    },
+    {
+      "id": "g-5-1",
+      "name": "Access control lists",
+      "stage": 5,
+      "children": [
+        "s5-g1-t0",
+        "s5-g1-t1",
+        "s5-g1-t2",
+        "s5-g1-t3"
+      ]
+    },
+    {
+      "id": "g-5-2",
+      "name": "Layer 2 security",
+      "stage": 5,
+      "children": [
+        "s5-g2-t0",
+        "s5-g2-t1",
+        "s5-g2-t2",
+        "s5-g2-t3",
+        "s5-g2-t4",
+        "s5-g2-t5",
+        "s5-g2-t6"
+      ]
+    },
+    {
+      "id": "g-5-3",
+      "name": "Control plane defense",
+      "stage": 5,
+      "children": [
+        "s5-g3-t0",
+        "s5-g3-t1"
+      ]
+    },
+    {
+      "id": "g-5-4",
+      "name": "VPN & cryptography",
+      "stage": 5,
+      "children": [
+        "s5-g4-t0",
+        "s5-g4-t1",
+        "s5-g4-t2",
+        "s5-g4-t3",
+        "s5-g4-t4"
+      ]
+    },
+    {
+      "id": "g-5-5",
+      "name": "Firewalls & inspection",
+      "stage": 5,
+      "children": [
+        "s5-g5-t0",
+        "s5-g5-t1",
+        "s5-g5-t2",
+        "s5-g5-t3",
+        "s5-g5-t4",
+        "s5-g5-t5"
+      ]
+    },
+    {
+      "id": "g-5-6",
+      "name": "Identity & Zero Trust",
+      "stage": 5,
+      "children": [
+        "s5-g6-t0",
+        "s5-g6-t1",
+        "s5-g6-t2"
+      ]
+    },
+    {
+      "id": "g-6-0",
+      "name": "Server architecture",
+      "stage": 6,
+      "children": [
+        "s6-g0-t0",
+        "s6-g0-t1",
+        "s6-g0-t2",
+        "s6-g0-t3",
+        "s6-g0-t4",
+        "s6-g0-t5",
+        "s6-g0-t6",
+        "s6-g0-t7",
+        "s6-g0-t8"
+      ]
+    },
+    {
+      "id": "g-6-1",
+      "name": "RAID & resilience",
+      "stage": 6,
+      "children": [
+        "s6-g1-t0",
+        "s6-g1-t1",
+        "s6-g1-t2",
+        "s6-g1-t3",
+        "s6-g1-t4",
+        "s6-g1-t5",
+        "s6-g1-t6",
+        "s6-g1-t7",
+        "s6-g1-t8"
+      ]
+    },
+    {
+      "id": "g-6-2",
+      "name": "Disk media",
+      "stage": 6,
+      "children": [
+        "s6-g2-t0",
+        "s6-g2-t1",
+        "s6-g2-t2",
+        "s6-g2-t3"
+      ]
+    },
+    {
+      "id": "g-6-3",
+      "name": "Fabric fundamentals",
+      "stage": 6,
+      "children": [
+        "s6-g3-t0",
+        "s6-g3-t1",
+        "s6-g3-t2",
+        "s6-g3-t3",
+        "s6-g3-t4",
+        "s6-g3-t5",
+        "s6-g3-t6",
+        "s6-g3-t7"
+      ]
+    },
+    {
+      "id": "g-6-4",
+      "name": "Facility design",
+      "stage": 6,
+      "children": [
+        "s6-g4-t0",
+        "s6-g4-t1",
+        "s6-g4-t2",
+        "s6-g4-t3",
+        "s6-g4-t4",
+        "s6-g4-t5",
+        "s6-g4-t6",
+        "s6-g4-t7",
+        "s6-g4-t8"
+      ]
+    },
+    {
+      "id": "g-6-5",
+      "name": "Out-of-band management",
+      "stage": 6,
+      "children": [
+        "s6-g5-t0",
+        "s6-g5-t1",
+        "s6-g5-t2",
+        "s6-g5-t3"
+      ]
+    },
+    {
+      "id": "g-7-0",
+      "name": "Nexus & NX-OS",
+      "stage": 7,
+      "children": [
+        "s7-g0-t0",
+        "s7-g0-t1",
+        "s7-g0-t2",
+        "s7-g0-t3",
+        "s7-g0-t4",
+        "s7-g0-t5",
+        "s7-g0-t6",
+        "s7-g0-t7"
+      ]
+    },
+    {
+      "id": "g-7-1",
+      "name": "Virtual port channels",
+      "stage": 7,
+      "children": [
+        "s7-g1-t0",
+        "s7-g1-t1",
+        "s7-g1-t2",
+        "s7-g1-t3"
+      ]
+    },
+    {
+      "id": "g-7-2",
+      "name": "Classic fabric technologies",
+      "stage": 7,
+      "children": [
+        "s7-g2-t0",
+        "s7-g2-t1",
+        "s7-g2-t2",
+        "s7-g2-t3"
+      ]
+    },
+    {
+      "id": "g-7-3",
+      "name": "VXLAN overlays",
+      "stage": 7,
+      "children": [
+        "s7-g3-t0",
+        "s7-g3-t1",
+        "s7-g3-t2"
+      ]
+    },
+    {
+      "id": "g-7-4",
+      "name": "EVPN control plane",
+      "stage": 7,
+      "children": [
+        "s7-g4-t0",
+        "s7-g4-t1",
+        "s7-g4-t2"
+      ]
+    },
+    {
+      "id": "g-7-5",
+      "name": "Application Centric Infrastructure",
+      "stage": 7,
+      "children": [
+        "s7-g5-t0",
+        "s7-g5-t1",
+        "s7-g5-t2",
+        "s7-g5-t3",
+        "s7-g5-t4",
+        "s7-g5-t5",
+        "s7-g5-t6",
+        "s7-g5-t7",
+        "s7-g5-t8"
+      ]
+    },
+    {
+      "id": "g-8-0",
+      "name": "Storage models",
+      "stage": 8,
+      "children": [
+        "s8-g0-t0",
+        "s8-g0-t1",
+        "s8-g0-t2",
+        "s8-g0-t3",
+        "s8-g0-t4",
+        "s8-g0-t5",
+        "s8-g0-t6"
+      ]
+    },
+    {
+      "id": "g-8-1",
+      "name": "Storage protocols",
+      "stage": 8,
+      "children": [
+        "s8-g1-t0",
+        "s8-g1-t1",
+        "s8-g1-t2",
+        "s8-g1-t3",
+        "s8-g1-t4",
+        "s8-g1-t5"
+      ]
+    },
+    {
+      "id": "g-8-2",
+      "name": "SAN fundamentals",
+      "stage": 8,
+      "children": [
+        "s8-g2-t0",
+        "s8-g2-t1",
+        "s8-g2-t2",
+        "s8-g2-t3",
+        "s8-g2-t4",
+        "s8-g2-t5",
+        "s8-g2-t6",
+        "s8-g2-t7",
+        "s8-g2-t8"
+      ]
+    },
+    {
+      "id": "g-8-3",
+      "name": "Storage arrays",
+      "stage": 8,
+      "children": [
+        "s8-g3-t0",
+        "s8-g3-t1",
+        "s8-g3-t2",
+        "s8-g3-t3"
+      ]
+    },
+    {
+      "id": "g-8-4",
+      "name": "Hypervisors",
+      "stage": 8,
+      "children": [
+        "s8-g4-t0",
+        "s8-g4-t1",
+        "s8-g4-t2"
+      ]
+    },
+    {
+      "id": "g-8-5",
+      "name": "VMware operations",
+      "stage": 8,
+      "children": [
+        "s8-g5-t0",
+        "s8-g5-t1",
+        "s8-g5-t2",
+        "s8-g5-t3",
+        "s8-g5-t4",
+        "s8-g5-t5",
+        "s8-g5-t6",
+        "s8-g5-t7",
+        "s8-g5-t8",
+        "s8-g5-t9",
+        "s8-g5-t10",
+        "s8-g5-t11"
+      ]
+    },
+    {
+      "id": "g-8-6",
+      "name": "Alternative platforms",
+      "stage": 8,
+      "children": [
+        "s8-g6-t0",
+        "s8-g6-t1",
+        "s8-g6-t2",
+        "s8-g6-t3",
+        "s8-g6-t4"
+      ]
+    },
+    {
+      "id": "g-9-0",
+      "name": "Python & data",
+      "stage": 9,
+      "children": [
+        "s9-g0-t0",
+        "s9-g0-t1",
+        "s9-g0-t2",
+        "s9-g0-t3",
+        "s9-g0-t4",
+        "s9-g0-t5",
+        "s9-g0-t6",
+        "s9-g0-t7",
+        "s9-g0-t8"
+      ]
+    },
+    {
+      "id": "g-9-1",
+      "name": "APIs & models",
+      "stage": 9,
+      "children": [
+        "s9-g1-t0",
+        "s9-g1-t1",
+        "s9-g1-t2",
+        "s9-g1-t3",
+        "s9-g1-t4",
+        "s9-g1-t5",
+        "s9-g1-t6",
+        "s9-g1-t7",
+        "s9-g1-t8",
+        "s9-g1-t9"
+      ]
+    },
+    {
+      "id": "g-9-2",
+      "name": "Python libraries",
+      "stage": 9,
+      "children": [
+        "s9-g2-t0",
+        "s9-g2-t1",
+        "s9-g2-t2",
+        "s9-g2-t3"
+      ]
+    },
+    {
+      "id": "g-9-3",
+      "name": "Ansible & templates",
+      "stage": 9,
+      "children": [
+        "s9-g3-t0",
+        "s9-g3-t1",
+        "s9-g3-t2",
+        "s9-g3-t3",
+        "s9-g3-t4",
+        "s9-g3-t5"
+      ]
+    },
+    {
+      "id": "g-9-4",
+      "name": "Version control & IaC",
+      "stage": 9,
+      "children": [
+        "s9-g4-t0",
+        "s9-g4-t1",
+        "s9-g4-t2",
+        "s9-g4-t3",
+        "s9-g4-t4"
+      ]
+    },
+    {
+      "id": "g-9-5",
+      "name": "Documentation & source of truth",
+      "stage": 9,
+      "children": [
+        "s9-g5-t0",
+        "s9-g5-t1",
+        "s9-g5-t2",
+        "s9-g5-t3",
+        "s9-g5-t4",
+        "s9-g5-t5",
+        "s9-g5-t6"
+      ]
+    },
+    {
+      "id": "g-9-6",
+      "name": "Resilience architecture",
+      "stage": 9,
+      "children": [
+        "s9-g6-t0",
+        "s9-g6-t1",
+        "s9-g6-t2",
+        "s9-g6-t3",
+        "s9-g6-t4",
+        "s9-g6-t5",
+        "s9-g6-t6",
+        "s9-g6-t7",
+        "s9-g6-t8"
+      ]
+    },
+    {
+      "id": "g-9-7",
+      "name": "Infrastructure planes",
+      "stage": 9,
+      "children": [
+        "s9-g7-t0",
+        "s9-g7-t1",
+        "s9-g7-t2",
+        "s9-g7-t3"
+      ]
+    },
+    {
+      "id": "g-9-8",
+      "name": "Observability & lifecycle",
+      "stage": 9,
+      "children": [
+        "s9-g8-t0",
+        "s9-g8-t1",
+        "s9-g8-t2",
+        "s9-g8-t3",
+        "s9-g8-t4",
+        "s9-g8-t5",
+        "s9-g8-t6"
+      ]
+    }
+  ],
+  "supportingMaterial": [
+    {
+      "id": "support-certs",
+      "source": "const certs",
+      "originalExpression": "[['Cisco CCNA','Stages 1–3 · packet fundamentals, access switching and basic services'],['Cisco CCNP Enterprise','Stages 3–6, 10 · routing, enterprise operation, security and automation'],['Cisco CCNP Data Center','Stages 7–10 · compute, fabric, storage and automation'],['Cisco CCIE Enterprise Infrastructure','Stages 3–6, 10 · integrated design and troubleshooting depth'],['Cisco CCIE Data Center','Stages 7–10 · integrated data center design and troubleshooting'],['VMware certifications','Stage 9 · virtualization and workload operations'],['Linux certifications','Stages 1, 5, 10 · systems, services and scripting'],['Ansible / Red Hat Automation','Stage 10 · repeatable, version-controlled operations']]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables",
+      "source": "const deliverables",
+      "originalExpression": "['Logical network diagram','Physical network diagram','IP addressing plan','VLAN plan','Routing design','Firewall policy','Data center rack design','Server design','Storage design','HA design','Monitoring design','Backup strategy','DR plan','Automation strategy','Documentation']",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-method",
+      "source": "const method",
+      "originalExpression": "['Define the problem','Gather evidence','Identify the affected layer','Build hypotheses','Test safely','Apply corrective action','Validate','Document root cause']",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment",
+      "source": "HTML #lab-environment",
+      "originalHTML": "<section class=\"supplement\" id=\"lab-environment\"><div class=\"eyebrow\">Build a safe place to practice</div><h2>Recommended Infrastructure Lab</h2><p>Equivalent hardware and software are welcome. Physical hardware is not mandatory. Use legally obtained images and licenses, isolated networks and disposable test workloads.</p><div class=\"lab-grid\"><div class=\"info-card\"><span class=\"badge\">01 / Beginner</span><h3 style=\"margin-top:12px\">Learn packet behavior</h3><ul><li>Cisco Packet Tracer</li><li>GNS3 or EVE-NG</li><li>Wireshark</li><li>Linux VM</li><li>Windows Server VM</li></ul><p style=\"margin:12px 0 0\">Start with a small topology; capture traffic and keep a lab notebook.</p></div><div class=\"info-card\"><span class=\"badge\">02 / Intermediate</span><h3 style=\"margin-top:12px\">Operate an enterprise lab</h3><ul><li>Cisco IOSv / IOSvL2</li><li>CSR1000v / Catalyst 8000V</li><li>NX-OSv</li><li>FortiGate VM or equivalent firewall</li><li>Windows Server / Ubuntu Server</li><li>VMware ESXi or equivalent hypervisor</li></ul><p style=\"margin:12px 0 0\">Check platform support and host resources before installing virtual appliances.</p></div><div class=\"info-card\"><span class=\"badge\">03 / Advanced physical</span><h3 style=\"margin-top:12px\">Test real dependencies</h3><ul><li>Catalyst 2960X / 9200</li><li>Cisco ISR4331</li><li>Nexus 3K / 5K / 9K</li><li>Access point + wireless controller</li><li>HPE DL380 Gen9 / Gen10</li><li>SAN storage + Brocade or Cisco SAN switch</li><li>UPS + managed PDU</li></ul><p style=\"margin:12px 0 0\">Use equivalent platforms where practical; size power, memory and storage first.</p></div></div></section>",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone",
+      "source": "HTML #capstone",
+      "originalHTML": "<section class=\"architecture\" id=\"capstone\"><div class=\"eyebrow\">Final project / design • validate • defend</div><h2>Enterprise Data Center Architecture Capstone</h2><p>Design an enterprise environment that can survive a failed link, device, power path or site. Explain every dependency, test your recovery assumptions, and make the design reproducible.</p>\n<figure><svg viewBox=\"0 0 720 600\" role=\"img\" aria-labelledby=\"arch-title arch-desc\"><title id=\"arch-title\">Redundant enterprise data center reference architecture</title><desc id=\"arch-desc\">Internet connects to dual ISPs, dual edge routers, HA firewalls and a core pair. Two spines connect to four leaves. Leaves connect servers, VMware and dual SAN fabrics. Independent management, campus distribution and access, backup, automation and disaster recovery connect as parallel services. This is a conceptual architecture, not an implementation wiring plan.</desc>\n<g><path d=\"M360 43V62H220V86M360 62H500V86M220 120V146M500 120V146M220 180V209M500 180V209M220 243V272H360M500 243V272H360M360 272V295M280 329V350H220V376M440 329V350H500V376M220 410V430H125V456M220 430H280V456M500 410V430H440V456M500 430H595V456M125 490V516H260V540M280 490V516H460V540M440 490V516H260M595 490V516H460M360 312H650V168M70 312H280M70 312V490M650 168V536\"/><path d=\"M220 410L280 456M220 410L440 456M220 410L595 456M500 410L125 456M500 410L280 456M500 410L440 456\" style=\"stroke:#4e688666\"/></g>\n<g><rect x=\"300\" y=\"10\" width=\"120\" height=\"33\" rx=\"6\"/><text x=\"360\" y=\"31\" text-anchor=\"middle\">Internet</text><rect x=\"160\" y=\"86\" width=\"120\" height=\"34\" rx=\"6\"/><text x=\"220\" y=\"107\" text-anchor=\"middle\">ISP A</text><rect x=\"440\" y=\"86\" width=\"120\" height=\"34\" rx=\"6\"/><text x=\"500\" y=\"107\" text-anchor=\"middle\">ISP B</text><rect x=\"160\" y=\"146\" width=\"120\" height=\"34\" rx=\"6\"/><text x=\"220\" y=\"167\" text-anchor=\"middle\">Edge router A</text><rect x=\"440\" y=\"146\" width=\"120\" height=\"34\" rx=\"6\"/><text x=\"500\" y=\"167\" text-anchor=\"middle\">Edge router B</text><rect x=\"160\" y=\"209\" width=\"120\" height=\"34\" rx=\"6\"/><text x=\"220\" y=\"230\" text-anchor=\"middle\">Firewall A</text><rect x=\"440\" y=\"209\" width=\"120\" height=\"34\" rx=\"6\"/><text x=\"500\" y=\"230\" text-anchor=\"middle\">Firewall B</text><path d=\"M280 225H440\" style=\"stroke-dasharray:4 4\"/><text x=\"360\" y=\"219\" text-anchor=\"middle\" style=\"font-size:10px;fill:#a7bed4\">HA / state sync</text><rect x=\"280\" y=\"295\" width=\"160\" height=\"34\" rx=\"6\"/><text x=\"360\" y=\"316\" text-anchor=\"middle\">Redundant core pair</text><rect x=\"160\" y=\"376\" width=\"120\" height=\"34\" rx=\"6\"/><text x=\"220\" y=\"397\" text-anchor=\"middle\">Spine 1</text><rect x=\"440\" y=\"376\" width=\"120\" height=\"34\" rx=\"6\"/><text x=\"500\" y=\"397\" text-anchor=\"middle\">Spine 2</text><rect x=\"80\" y=\"456\" width=\"90\" height=\"34\" rx=\"6\"/><text x=\"125\" y=\"477\" text-anchor=\"middle\">Leaf 1</text><rect x=\"235\" y=\"456\" width=\"90\" height=\"34\" rx=\"6\"/><text x=\"280\" y=\"477\" text-anchor=\"middle\">Leaf 2</text><rect x=\"395\" y=\"456\" width=\"90\" height=\"34\" rx=\"6\"/><text x=\"440\" y=\"477\" text-anchor=\"middle\">Leaf 3</text><rect x=\"550\" y=\"456\" width=\"90\" height=\"34\" rx=\"6\"/><text x=\"595\" y=\"477\" text-anchor=\"middle\">Leaf 4</text><rect x=\"175\" y=\"540\" width=\"170\" height=\"40\" rx=\"6\"/><text x=\"260\" y=\"557\" text-anchor=\"middle\">Server farm / VMware</text><text x=\"260\" y=\"571\" text-anchor=\"middle\" style=\"font-size:7px;fill:#aac0d6\">dual NIC attachment · vPC where supported</text><rect x=\"375\" y=\"540\" width=\"170\" height=\"40\" rx=\"6\"/><text x=\"460\" y=\"557\" text-anchor=\"middle\">SAN A + SAN B</text><text x=\"460\" y=\"571\" text-anchor=\"middle\" style=\"font-size:9px;fill:#aac0d6\">host HBAs → FC fabrics → storage</text></g>\n<g class=\"aux\"><rect x=\"10\" y=\"265\" width=\"140\" height=\"42\" rx=\"6\"/><text x=\"80\" y=\"283\" text-anchor=\"middle\">Distribution / access</text><text x=\"80\" y=\"298\" text-anchor=\"middle\" style=\"font-size:9px\">campus + wireless</text><rect x=\"10\" y=\"330\" width=\"130\" height=\"71\" rx=\"6\"/><text x=\"75\" y=\"350\" text-anchor=\"middle\">Management / OOB</text><text x=\"75\" y=\"369\" text-anchor=\"middle\" style=\"font-size:10px\">AAA · DNS · DHCP · NTP</text><text x=\"75\" y=\"387\" text-anchor=\"middle\" style=\"font-size:10px\">Monitoring · Syslog</text><rect x=\"10\" y=\"490\" width=\"130\" height=\"55\" rx=\"6\"/><text x=\"75\" y=\"511\" text-anchor=\"middle\">Automation server</text><text x=\"75\" y=\"530\" text-anchor=\"middle\" style=\"font-size:10px\">NetBox · Ansible · Git</text><rect x=\"590\" y=\"128\" width=\"120\" height=\"60\" rx=\"6\"/><text x=\"650\" y=\"149\" text-anchor=\"middle\">Backup / recovery</text><text x=\"650\" y=\"168\" text-anchor=\"middle\" style=\"font-size:10px\">independent copies</text><rect x=\"590\" y=\"530\" width=\"120\" height=\"50\" rx=\"6\"/><text x=\"650\" y=\"549\" text-anchor=\"middle\">DR site</text><text x=\"650\" y=\"566\" text-anchor=\"middle\" style=\"font-size:10px\">tested RTO / RPO</text></g></svg><figcaption>Logical reference only. EVPN controls a VXLAN overlay over the routed leaf-spine underlay. ACI is an alternative fabric operating model. Fibre Channel storage uses separate SAN paths from host HBAs; the storage attachment above represents workload dependency.</figcaption></figure><h3>Your engineering deliverables</h3><div class=\"deliverables\" id=\"deliverables\"></div><div id=\"capstone-node\"></div><p style=\"font-size:11px;margin:18px 0 0\">Career milestones are examples of skill progression. Job titles vary between organizations; completion is neither a job guarantee nor proof of production experience.</p></section>",
+      "status": "not-enriched"
+    }
+  ],
+  "supportingNodes": [
+    {
+      "id": "support-certs-0",
+      "parentId": "support-certs",
+      "name": "Cisco CCNA",
+      "original": [
+        "Cisco CCNA",
+        "Stages 1–3 · packet fundamentals, access switching and basic services"
+      ],
+      "source": "const certs[0]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-certs-1",
+      "parentId": "support-certs",
+      "name": "Cisco CCNP Enterprise",
+      "original": [
+        "Cisco CCNP Enterprise",
+        "Stages 3–6, 10 · routing, enterprise operation, security and automation"
+      ],
+      "source": "const certs[1]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-certs-2",
+      "parentId": "support-certs",
+      "name": "Cisco CCNP Data Center",
+      "original": [
+        "Cisco CCNP Data Center",
+        "Stages 7–10 · compute, fabric, storage and automation"
+      ],
+      "source": "const certs[2]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-certs-3",
+      "parentId": "support-certs",
+      "name": "Cisco CCIE Enterprise Infrastructure",
+      "original": [
+        "Cisco CCIE Enterprise Infrastructure",
+        "Stages 3–6, 10 · integrated design and troubleshooting depth"
+      ],
+      "source": "const certs[3]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-certs-4",
+      "parentId": "support-certs",
+      "name": "Cisco CCIE Data Center",
+      "original": [
+        "Cisco CCIE Data Center",
+        "Stages 7–10 · integrated data center design and troubleshooting"
+      ],
+      "source": "const certs[4]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-certs-5",
+      "parentId": "support-certs",
+      "name": "VMware certifications",
+      "original": [
+        "VMware certifications",
+        "Stage 9 · virtualization and workload operations"
+      ],
+      "source": "const certs[5]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-certs-6",
+      "parentId": "support-certs",
+      "name": "Linux certifications",
+      "original": [
+        "Linux certifications",
+        "Stages 1, 5, 10 · systems, services and scripting"
+      ],
+      "source": "const certs[6]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-certs-7",
+      "parentId": "support-certs",
+      "name": "Ansible / Red Hat Automation",
+      "original": [
+        "Ansible / Red Hat Automation",
+        "Stage 10 · repeatable, version-controlled operations"
+      ],
+      "source": "const certs[7]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-0",
+      "parentId": "support-deliverables",
+      "name": "Logical network diagram",
+      "original": "Logical network diagram",
+      "source": "const deliverables[0]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-1",
+      "parentId": "support-deliverables",
+      "name": "Physical network diagram",
+      "original": "Physical network diagram",
+      "source": "const deliverables[1]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-2",
+      "parentId": "support-deliverables",
+      "name": "IP addressing plan",
+      "original": "IP addressing plan",
+      "source": "const deliverables[2]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-3",
+      "parentId": "support-deliverables",
+      "name": "VLAN plan",
+      "original": "VLAN plan",
+      "source": "const deliverables[3]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-4",
+      "parentId": "support-deliverables",
+      "name": "Routing design",
+      "original": "Routing design",
+      "source": "const deliverables[4]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-5",
+      "parentId": "support-deliverables",
+      "name": "Firewall policy",
+      "original": "Firewall policy",
+      "source": "const deliverables[5]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-6",
+      "parentId": "support-deliverables",
+      "name": "Data center rack design",
+      "original": "Data center rack design",
+      "source": "const deliverables[6]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-7",
+      "parentId": "support-deliverables",
+      "name": "Server design",
+      "original": "Server design",
+      "source": "const deliverables[7]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-8",
+      "parentId": "support-deliverables",
+      "name": "Storage design",
+      "original": "Storage design",
+      "source": "const deliverables[8]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-9",
+      "parentId": "support-deliverables",
+      "name": "HA design",
+      "original": "HA design",
+      "source": "const deliverables[9]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-10",
+      "parentId": "support-deliverables",
+      "name": "Monitoring design",
+      "original": "Monitoring design",
+      "source": "const deliverables[10]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-11",
+      "parentId": "support-deliverables",
+      "name": "Backup strategy",
+      "original": "Backup strategy",
+      "source": "const deliverables[11]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-12",
+      "parentId": "support-deliverables",
+      "name": "DR plan",
+      "original": "DR plan",
+      "source": "const deliverables[12]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-13",
+      "parentId": "support-deliverables",
+      "name": "Automation strategy",
+      "original": "Automation strategy",
+      "source": "const deliverables[13]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-deliverables-14",
+      "parentId": "support-deliverables",
+      "name": "Documentation",
+      "original": "Documentation",
+      "source": "const deliverables[14]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-method-0",
+      "parentId": "support-method",
+      "name": "Define the problem",
+      "original": "Define the problem",
+      "source": "const method[0]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-method-1",
+      "parentId": "support-method",
+      "name": "Gather evidence",
+      "original": "Gather evidence",
+      "source": "const method[1]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-method-2",
+      "parentId": "support-method",
+      "name": "Identify the affected layer",
+      "original": "Identify the affected layer",
+      "source": "const method[2]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-method-3",
+      "parentId": "support-method",
+      "name": "Build hypotheses",
+      "original": "Build hypotheses",
+      "source": "const method[3]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-method-4",
+      "parentId": "support-method",
+      "name": "Test safely",
+      "original": "Test safely",
+      "source": "const method[4]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-method-5",
+      "parentId": "support-method",
+      "name": "Apply corrective action",
+      "original": "Apply corrective action",
+      "source": "const method[5]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-method-6",
+      "parentId": "support-method",
+      "name": "Validate",
+      "original": "Validate",
+      "source": "const method[6]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-method-7",
+      "parentId": "support-method",
+      "name": "Document root cause",
+      "original": "Document root cause",
+      "source": "const method[7]",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-0",
+      "parentId": "support-lab-environment",
+      "name": "Learn packet behavior",
+      "kind": "h3",
+      "source": "support-lab-environment h3 occurrence 0",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-1",
+      "parentId": "support-lab-environment",
+      "name": "Cisco Packet Tracer",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 1",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-2",
+      "parentId": "support-lab-environment",
+      "name": "GNS3 or EVE-NG",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 2",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-3",
+      "parentId": "support-lab-environment",
+      "name": "Wireshark",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 3",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-4",
+      "parentId": "support-lab-environment",
+      "name": "Linux VM",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 4",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-5",
+      "parentId": "support-lab-environment",
+      "name": "Windows Server VM",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 5",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-6",
+      "parentId": "support-lab-environment",
+      "name": "Operate an enterprise lab",
+      "kind": "h3",
+      "source": "support-lab-environment h3 occurrence 6",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-7",
+      "parentId": "support-lab-environment",
+      "name": "Cisco IOSv / IOSvL2",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 7",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-8",
+      "parentId": "support-lab-environment",
+      "name": "CSR1000v / Catalyst 8000V",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 8",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-9",
+      "parentId": "support-lab-environment",
+      "name": "NX-OSv",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 9",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-10",
+      "parentId": "support-lab-environment",
+      "name": "FortiGate VM or equivalent firewall",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 10",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-11",
+      "parentId": "support-lab-environment",
+      "name": "Windows Server / Ubuntu Server",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 11",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-12",
+      "parentId": "support-lab-environment",
+      "name": "VMware ESXi or equivalent hypervisor",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 12",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-13",
+      "parentId": "support-lab-environment",
+      "name": "Test real dependencies",
+      "kind": "h3",
+      "source": "support-lab-environment h3 occurrence 13",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-14",
+      "parentId": "support-lab-environment",
+      "name": "Catalyst 2960X / 9200",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 14",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-15",
+      "parentId": "support-lab-environment",
+      "name": "Cisco ISR4331",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 15",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-16",
+      "parentId": "support-lab-environment",
+      "name": "Nexus 3K / 5K / 9K",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 16",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-17",
+      "parentId": "support-lab-environment",
+      "name": "Access point + wireless controller",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 17",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-18",
+      "parentId": "support-lab-environment",
+      "name": "HPE DL380 Gen9 / Gen10",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 18",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-19",
+      "parentId": "support-lab-environment",
+      "name": "SAN storage + Brocade or Cisco SAN switch",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 19",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-lab-environment-20",
+      "parentId": "support-lab-environment",
+      "name": "UPS + managed PDU",
+      "kind": "li",
+      "source": "support-lab-environment li occurrence 20",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-0",
+      "parentId": "support-capstone",
+      "name": "Internet",
+      "kind": "text",
+      "source": "support-capstone text occurrence 0",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-1",
+      "parentId": "support-capstone",
+      "name": "ISP A",
+      "kind": "text",
+      "source": "support-capstone text occurrence 1",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-2",
+      "parentId": "support-capstone",
+      "name": "ISP B",
+      "kind": "text",
+      "source": "support-capstone text occurrence 2",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-3",
+      "parentId": "support-capstone",
+      "name": "Edge router A",
+      "kind": "text",
+      "source": "support-capstone text occurrence 3",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-4",
+      "parentId": "support-capstone",
+      "name": "Edge router B",
+      "kind": "text",
+      "source": "support-capstone text occurrence 4",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-5",
+      "parentId": "support-capstone",
+      "name": "Firewall A",
+      "kind": "text",
+      "source": "support-capstone text occurrence 5",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-6",
+      "parentId": "support-capstone",
+      "name": "Firewall B",
+      "kind": "text",
+      "source": "support-capstone text occurrence 6",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-7",
+      "parentId": "support-capstone",
+      "name": "HA / state sync",
+      "kind": "text",
+      "source": "support-capstone text occurrence 7",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-8",
+      "parentId": "support-capstone",
+      "name": "Redundant core pair",
+      "kind": "text",
+      "source": "support-capstone text occurrence 8",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-9",
+      "parentId": "support-capstone",
+      "name": "Spine 1",
+      "kind": "text",
+      "source": "support-capstone text occurrence 9",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-10",
+      "parentId": "support-capstone",
+      "name": "Spine 2",
+      "kind": "text",
+      "source": "support-capstone text occurrence 10",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-11",
+      "parentId": "support-capstone",
+      "name": "Leaf 1",
+      "kind": "text",
+      "source": "support-capstone text occurrence 11",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-12",
+      "parentId": "support-capstone",
+      "name": "Leaf 2",
+      "kind": "text",
+      "source": "support-capstone text occurrence 12",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-13",
+      "parentId": "support-capstone",
+      "name": "Leaf 3",
+      "kind": "text",
+      "source": "support-capstone text occurrence 13",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-14",
+      "parentId": "support-capstone",
+      "name": "Leaf 4",
+      "kind": "text",
+      "source": "support-capstone text occurrence 14",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-15",
+      "parentId": "support-capstone",
+      "name": "Server farm / VMware",
+      "kind": "text",
+      "source": "support-capstone text occurrence 15",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-16",
+      "parentId": "support-capstone",
+      "name": "dual NIC attachment · vPC where supported",
+      "kind": "text",
+      "source": "support-capstone text occurrence 16",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-17",
+      "parentId": "support-capstone",
+      "name": "SAN A + SAN B",
+      "kind": "text",
+      "source": "support-capstone text occurrence 17",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-18",
+      "parentId": "support-capstone",
+      "name": "host HBAs → FC fabrics → storage",
+      "kind": "text",
+      "source": "support-capstone text occurrence 18",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-19",
+      "parentId": "support-capstone",
+      "name": "Distribution / access",
+      "kind": "text",
+      "source": "support-capstone text occurrence 19",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-20",
+      "parentId": "support-capstone",
+      "name": "campus + wireless",
+      "kind": "text",
+      "source": "support-capstone text occurrence 20",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-21",
+      "parentId": "support-capstone",
+      "name": "Management / OOB",
+      "kind": "text",
+      "source": "support-capstone text occurrence 21",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-22",
+      "parentId": "support-capstone",
+      "name": "AAA · DNS · DHCP · NTP",
+      "kind": "text",
+      "source": "support-capstone text occurrence 22",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-23",
+      "parentId": "support-capstone",
+      "name": "Monitoring · Syslog",
+      "kind": "text",
+      "source": "support-capstone text occurrence 23",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-24",
+      "parentId": "support-capstone",
+      "name": "Automation server",
+      "kind": "text",
+      "source": "support-capstone text occurrence 24",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-25",
+      "parentId": "support-capstone",
+      "name": "NetBox · Ansible · Git",
+      "kind": "text",
+      "source": "support-capstone text occurrence 25",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-26",
+      "parentId": "support-capstone",
+      "name": "Backup / recovery",
+      "kind": "text",
+      "source": "support-capstone text occurrence 26",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-27",
+      "parentId": "support-capstone",
+      "name": "independent copies",
+      "kind": "text",
+      "source": "support-capstone text occurrence 27",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-28",
+      "parentId": "support-capstone",
+      "name": "DR site",
+      "kind": "text",
+      "source": "support-capstone text occurrence 28",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-29",
+      "parentId": "support-capstone",
+      "name": "tested RTO / RPO",
+      "kind": "text",
+      "source": "support-capstone text occurrence 29",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-30",
+      "parentId": "support-capstone",
+      "name": "Logical reference only. EVPN controls a VXLAN overlay over the routed leaf-spine underlay. ACI is an alternative fabric operating model. Fibre Channel storage uses separate SAN paths from host HBAs; the storage attachment above represents workload dependency.",
+      "kind": "figcaption",
+      "source": "support-capstone figcaption occurrence 30",
+      "status": "not-enriched"
+    },
+    {
+      "id": "support-capstone-31",
+      "parentId": "support-capstone",
+      "name": "Your engineering deliverables",
+      "kind": "h3",
+      "source": "support-capstone h3 occurrence 31",
+      "status": "not-enriched"
+    }
+  ],
+  "originalData": {
+    "stages": [
+      {
+        "title": "IT & Infrastructure Foundation",
+        "nav": "Foundation",
+        "domain": "Networking",
+        "why": "Physical components, operating systems and addressing determine what a network can carry and how it fails.",
+        "lab": "Build a small LAN with two PCs and a managed switch. Assign addresses, verify gateway reachability, and document the cable and port map.",
+        "groups": [
+          {
+            "name": "Computer Hardware",
+            "topics": [
+              "CPU",
+              "RAM",
+              "Storage",
+              "PCIe",
+              "NICs",
+              "RAID",
+              "Server architecture"
+            ]
+          },
+          {
+            "name": "Operating Systems",
+            "topics": [
+              "Windows",
+              "Windows Server",
+              "Linux fundamentals",
+              "CLI fundamentals"
+            ]
+          },
+          {
+            "name": "Networking Basics",
+            "topics": [
+              "LAN",
+              "WAN",
+              "WLAN",
+              "Ethernet",
+              "MAC addresses",
+              "Frames",
+              "Packets",
+              "MTU",
+              "Bandwidth",
+              "Latency",
+              "Duplex"
+            ]
+          },
+          {
+            "name": "Binary & Subnetting",
+            "topics": [
+              "Binary",
+              "Decimal",
+              "Hexadecimal",
+              "IPv4",
+              "IPv6",
+              "CIDR",
+              "VLSM",
+              "subnet calculation"
+            ]
+          }
+        ],
+        "milestone": "IT / Network Technician"
+      },
+      {
+        "title": "Networking Fundamentals",
+        "nav": "Networking Fundamentals",
+        "domain": "Networking",
+        "why": "Packet-level understanding lets you distinguish transport failures from application and addressing problems.",
+        "lab": "Capture ARP, DHCP, DNS, a TCP handshake and ICMP. Annotate packet fields, timings, and the path from client to gateway.",
+        "groups": [
+          {
+            "name": "Network models",
+            "topics": [
+              "OSI Model",
+              "TCP/IP Model"
+            ]
+          },
+          {
+            "name": "Ethernet & resolution",
+            "topics": [
+              "Ethernet",
+              "ARP",
+              "ICMP"
+            ]
+          },
+          {
+            "name": "Transport & services",
+            "topics": [
+              "TCP vs UDP",
+              "DNS",
+              "DHCP",
+              "NAT / PAT"
+            ]
+          },
+          {
+            "name": "Layer 2 fundamentals",
+            "topics": [
+              "VLAN",
+              "802.1Q",
+              "Trunking",
+              "STP concepts",
+              "MAC address tables"
+            ]
+          },
+          {
+            "name": "Routing fundamentals",
+            "topics": [
+              "Routing tables",
+              "Default gateways",
+              "Static routes",
+              "IPv6 fundamentals"
+            ]
+          },
+          {
+            "name": "Diagnostic tools",
+            "topics": [
+              "ping",
+              "traceroute",
+              "nslookup",
+              "dig",
+              "ipconfig",
+              "ip",
+              "arp",
+              "netstat",
+              "ss",
+              "tcpdump",
+              "Wireshark"
+            ]
+          }
+        ],
+        "milestone": "Network Administrator"
+      },
+      {
+        "title": "Cisco Enterprise Networking",
+        "nav": "Cisco Enterprise Networking",
+        "domain": "Cisco Switching",
+        "why": "Predictable Cisco configuration, resilient switching and recoverable boot processes underpin reliable enterprise operations.",
+        "lab": "Build three Cisco switches with redundant links. Configure VLANs, trunks, LACP EtherChannel, an STP root, PortFast and BPDU Guard. Test a link failure.",
+        "groups": [
+          {
+            "name": "IOS & configuration",
+            "topics": [
+              "Cisco IOS / IOS XE",
+              "Cisco CLI structure",
+              "Running configuration",
+              "Startup configuration"
+            ]
+          },
+          {
+            "name": "Boot & recovery",
+            "topics": [
+              "Configuration register",
+              "ROMMON",
+              "Boot process",
+              "Cisco file systems",
+              "Flash management",
+              "IOS images",
+              "Install Mode vs Bundle Mode",
+              "Device backup and recovery"
+            ]
+          },
+          {
+            "name": "Switching & VLANs",
+            "topics": [
+              "VLAN",
+              "Access ports",
+              "Trunk ports",
+              "DTP",
+              "VTP",
+              "Voice VLAN"
+            ]
+          },
+          {
+            "name": "Link aggregation",
+            "topics": [
+              "EtherChannel",
+              "LACP",
+              "PAgP"
+            ]
+          },
+          {
+            "name": "Spanning tree",
+            "topics": [
+              "STP",
+              "RSTP",
+              "MST"
+            ]
+          },
+          {
+            "name": "Edge protection",
+            "topics": [
+              "PortFast",
+              "BPDU Guard",
+              "Root Guard",
+              "Loop Guard",
+              "Storm Control",
+              "Port Security"
+            ]
+          },
+          {
+            "name": "Traffic mirroring",
+            "topics": [
+              "SPAN",
+              "RSPAN",
+              "ERSPAN"
+            ]
+          }
+        ],
+        "milestone": "Network Engineer"
+      },
+      {
+        "title": "Advanced Routing & Switching",
+        "nav": "Advanced Routing & Switching",
+        "domain": "Routing",
+        "why": "Routing policy, convergence and segmentation determine which path traffic takes during normal operation and failure.",
+        "lab": "Build two distribution switches and two routers. Configure HSRP, OSPF, BGP, VLAN segmentation and route filtering. Record convergence after a failure.",
+        "groups": [
+          {
+            "name": "Routing policy",
+            "topics": [
+              "Static Routing",
+              "Floating Static Routes",
+              "Policy-Based Routing"
+            ]
+          },
+          {
+            "name": "OSPF",
+            "topics": [
+              "OSPF",
+              "OSPF Areas",
+              "OSPF DR / BDR",
+              "OSPF LSA basics",
+              "OSPF troubleshooting"
+            ]
+          },
+          {
+            "name": "EIGRP",
+            "topics": [
+              "EIGRP",
+              "EIGRP metrics",
+              "EIGRP neighbors",
+              "EIGRP topology"
+            ]
+          },
+          {
+            "name": "BGP",
+            "topics": [
+              "BGP fundamentals",
+              "eBGP",
+              "iBGP",
+              "BGP attributes"
+            ]
+          },
+          {
+            "name": "BGP policy",
+            "topics": [
+              "Local Preference",
+              "MED",
+              "AS Path",
+              "Communities"
+            ]
+          },
+          {
+            "name": "Route control",
+            "topics": [
+              "Route filtering",
+              "Route redistribution",
+              "Route maps",
+              "Prefix lists",
+              "Access lists"
+            ]
+          },
+          {
+            "name": "VRF segmentation",
+            "topics": [
+              "VRF",
+              "VRF-Lite"
+            ]
+          },
+          {
+            "name": "Gateway redundancy",
+            "topics": [
+              "HSRP",
+              "VRRP",
+              "GLBP"
+            ]
+          },
+          {
+            "name": "Multicast",
+            "topics": [
+              "Multicast fundamentals",
+              "PIM",
+              "IGMP"
+            ]
+          },
+          {
+            "name": "Quality of service",
+            "topics": [
+              "QoS fundamentals",
+              "Classification",
+              "Marking",
+              "Policing",
+              "Shaping",
+              "Queuing"
+            ]
+          }
+        ],
+        "milestone": "Senior Network Engineer"
+      },
+      {
+        "title": "Network Services",
+        "nav": "Network Services",
+        "domain": "Networking",
+        "why": "Time, identity, naming and telemetry make infrastructure manageable, auditable and observable.",
+        "lab": "Centralize NTP, Syslog, SNMP and AAA. Verify timestamps, log delivery, polling, administrator authentication and a local recovery account.",
+        "groups": [
+          {
+            "name": "Address & time services",
+            "topics": [
+              "DHCP Server",
+              "DHCP Relay",
+              "DNS architecture",
+              "NTP"
+            ]
+          },
+          {
+            "name": "Observability protocols",
+            "topics": [
+              "SNMP",
+              "Syslog"
+            ]
+          },
+          {
+            "name": "Identity & AAA",
+            "topics": [
+              "AAA",
+              "RADIUS",
+              "TACACS+"
+            ]
+          },
+          {
+            "name": "Traffic & availability",
+            "topics": [
+              "NetFlow",
+              "Flexible NetFlow",
+              "IP SLA",
+              "Object Tracking"
+            ]
+          },
+          {
+            "name": "Discovery & file transfer",
+            "topics": [
+              "Cisco Discovery Protocol",
+              "LLDP",
+              "SSH",
+              "SFTP",
+              "TFTP",
+              "FTP",
+              "HTTP / HTTPS"
+            ]
+          },
+          {
+            "name": "Trust & access",
+            "topics": [
+              "PKI fundamentals",
+              "Certificates",
+              "802.1X fundamentals",
+              "Network monitoring fundamentals"
+            ]
+          },
+          {
+            "name": "Monitoring platforms",
+            "topics": [
+              "PRTG",
+              "Zabbix",
+              "LibreNMS",
+              "Grafana",
+              "Prometheus"
+            ]
+          }
+        ],
+        "milestone": null
+      },
+      {
+        "title": "Network Security",
+        "nav": "Network Security",
+        "domain": "Security",
+        "why": "Explicit trust boundaries and verified controls reduce unauthorized access while preserving required business flows.",
+        "lab": "Design Internet, DMZ, Users, Servers, Management, Guest and Backup zones. Write explicit firewall and ACL rules; test allowed and denied flows.",
+        "groups": [
+          {
+            "name": "Security principles",
+            "topics": [
+              "Security Fundamentals",
+              "CIA Triad",
+              "Attack surfaces",
+              "Segmentation",
+              "Defense in depth"
+            ]
+          },
+          {
+            "name": "Access control lists",
+            "topics": [
+              "ACL",
+              "Standard ACL",
+              "Extended ACL",
+              "Named ACL"
+            ]
+          },
+          {
+            "name": "Layer 2 security",
+            "topics": [
+              "Dynamic ARP Inspection",
+              "DHCP Snooping",
+              "IP Source Guard",
+              "Private VLAN",
+              "802.1X",
+              "AAA",
+              "Port Security"
+            ]
+          },
+          {
+            "name": "Control plane defense",
+            "topics": [
+              "Control Plane Protection",
+              "CoPP"
+            ]
+          },
+          {
+            "name": "VPN & cryptography",
+            "topics": [
+              "VPN concepts",
+              "IPsec",
+              "IKE",
+              "Site-to-Site VPN",
+              "Remote Access VPN"
+            ]
+          },
+          {
+            "name": "Firewalls & inspection",
+            "topics": [
+              "Firewall fundamentals",
+              "Zone Based Firewall",
+              "Cisco ASA fundamentals",
+              "Cisco Firepower concepts",
+              "IDS / IPS",
+              "WAF concepts"
+            ]
+          },
+          {
+            "name": "Identity & Zero Trust",
+            "topics": [
+              "Zero Trust overview",
+              "Network Access Control",
+              "Cisco ISE concepts"
+            ]
+          }
+        ],
+        "milestone": null
+      },
+      {
+        "title": "Data Center Foundations",
+        "nav": "Data Center Foundations",
+        "domain": "Servers",
+        "why": "Power, cooling, server architecture and physical redundancy constrain every logical data center design.",
+        "lab": "Design a 3-rack data center. Produce rack elevations, dual power paths, cooling and cabling plans, a capacity worksheet and an out-of-band network.",
+        "groups": [
+          {
+            "name": "Server architecture",
+            "topics": [
+              "Server Hardware",
+              "Rack Servers",
+              "Blade Servers",
+              "CPU architecture",
+              "Memory channels",
+              "NUMA",
+              "NIC",
+              "HBA",
+              "PCIe"
+            ]
+          },
+          {
+            "name": "RAID & resilience",
+            "topics": [
+              "RAID",
+              "Hardware RAID",
+              "Software RAID",
+              "RAID 0",
+              "RAID 1",
+              "RAID 5",
+              "RAID 6",
+              "RAID 10",
+              "Hot Spare"
+            ]
+          },
+          {
+            "name": "Disk media",
+            "topics": [
+              "Disk Backplane",
+              "SAS",
+              "SATA",
+              "NVMe"
+            ]
+          },
+          {
+            "name": "Fabric fundamentals",
+            "topics": [
+              "Top of Rack",
+              "End of Row",
+              "Leaf-Spine",
+              "East-West Traffic",
+              "North-South Traffic",
+              "Oversubscription",
+              "Redundancy",
+              "High Availability"
+            ]
+          },
+          {
+            "name": "Facility design",
+            "topics": [
+              "Rack design",
+              "Power distribution",
+              "UPS",
+              "PDU",
+              "Cooling",
+              "Airflow",
+              "Hot aisle",
+              "Cold aisle",
+              "Cable management"
+            ]
+          },
+          {
+            "name": "Out-of-band management",
+            "topics": [
+              "Out-of-band management",
+              "iLO",
+              "iDRAC",
+              "CIMC"
+            ]
+          }
+        ],
+        "milestone": "Data Center Engineer"
+      },
+      {
+        "title": "Cisco Data Center",
+        "nav": "Cisco Data Center",
+        "domain": "Data Center",
+        "why": "Fabric underlays, overlays and endpoint policy enable scalable east-west networking and resilient server attachment.",
+        "lab": "Model 2 spines and 4 leaves with servers, storage and firewalls. Explain VXLAN encapsulation, MP-BGP EVPN routes and vPC attachment; compare an ACI policy design.",
+        "groups": [
+          {
+            "name": "Nexus & NX-OS",
+            "topics": [
+              "Cisco Nexus",
+              "NX-OS",
+              "Nexus CLI",
+              "Nexus architecture",
+              "Nexus 3000",
+              "Nexus 5000",
+              "Nexus 7000",
+              "Nexus 9000"
+            ]
+          },
+          {
+            "name": "Virtual port channels",
+            "topics": [
+              "vPC",
+              "vPC Peer Link",
+              "Keepalive",
+              "Orphan ports"
+            ]
+          },
+          {
+            "name": "Classic fabric technologies",
+            "topics": [
+              "FabricPath concepts",
+              "FEX",
+              "Cisco Fabric Extender",
+              "Data Center Interconnect"
+            ]
+          },
+          {
+            "name": "VXLAN overlays",
+            "topics": [
+              "VXLAN",
+              "VXLAN VNI",
+              "VTEP"
+            ]
+          },
+          {
+            "name": "EVPN control plane",
+            "topics": [
+              "EVPN",
+              "MP-BGP EVPN",
+              "Leaf-Spine Architecture"
+            ]
+          },
+          {
+            "name": "Application Centric Infrastructure",
+            "topics": [
+              "Cisco ACI fundamentals",
+              "APIC",
+              "Spine",
+              "Leaf",
+              "Endpoint Groups",
+              "Bridge Domains",
+              "Contracts",
+              "Application Profiles",
+              "Tenants"
+            ]
+          }
+        ],
+        "milestone": "Infrastructure Engineer"
+      },
+      {
+        "title": "Storage & Virtualization",
+        "nav": "Virtualization & Storage",
+        "domain": "Storage",
+        "why": "Storage paths and hypervisor behavior determine workload availability, recovery and performance.",
+        "lab": "Design SAN storage, 2 SAN switches, 3 virtualization hosts, redundant network switches and shared storage. Validate path failover and VM recovery.",
+        "groups": [
+          {
+            "name": "Storage models",
+            "topics": [
+              "Storage Fundamentals",
+              "DAS",
+              "NAS",
+              "SAN",
+              "Block Storage",
+              "File Storage",
+              "Object Storage"
+            ]
+          },
+          {
+            "name": "Storage protocols",
+            "topics": [
+              "NFS",
+              "SMB",
+              "iSCSI",
+              "Fibre Channel",
+              "FCoE",
+              "NVMe-oF"
+            ]
+          },
+          {
+            "name": "SAN fundamentals",
+            "topics": [
+              "HBA",
+              "WWN",
+              "WWPN",
+              "Zoning",
+              "LUN",
+              "Multipathing",
+              "SAN Switch",
+              "Brocade fundamentals",
+              "Cisco MDS fundamentals"
+            ]
+          },
+          {
+            "name": "Storage arrays",
+            "topics": [
+              "Storage arrays",
+              "HPE MSA",
+              "Dell EMC concepts",
+              "NetApp concepts"
+            ]
+          },
+          {
+            "name": "Hypervisors",
+            "topics": [
+              "Hypervisor",
+              "Type 1 Hypervisor",
+              "Type 2 Hypervisor"
+            ]
+          },
+          {
+            "name": "VMware operations",
+            "topics": [
+              "VMware ESXi",
+              "vCenter",
+              "Datastore",
+              "vSwitch",
+              "Distributed Switch",
+              "VMkernel",
+              "vMotion",
+              "HA",
+              "DRS",
+              "Snapshots",
+              "Templates",
+              "Clusters"
+            ]
+          },
+          {
+            "name": "Alternative platforms",
+            "topics": [
+              "Microsoft Hyper-V",
+              "KVM",
+              "Containers fundamentals",
+              "Docker basics",
+              "Kubernetes overview"
+            ]
+          }
+        ],
+        "milestone": "Senior Infrastructure Engineer"
+      },
+      {
+        "title": "Automation & Infrastructure Architecture",
+        "nav": "Automation & Architecture",
+        "domain": "Automation",
+        "why": "Repeatable changes, documented intent and tested recovery turn individual configurations into an operable architecture.",
+        "lab": "Design and document the complete enterprise capstone. Use version-controlled automation, validation and rollback to reproduce the infrastructure.",
+        "groups": [
+          {
+            "name": "Python & data",
+            "topics": [
+              "Python Fundamentals",
+              "Python for Network Engineers",
+              "Data types",
+              "Loops",
+              "Functions",
+              "Files",
+              "JSON",
+              "YAML",
+              "Regex"
+            ]
+          },
+          {
+            "name": "APIs & models",
+            "topics": [
+              "APIs",
+              "REST APIs",
+              "HTTP methods",
+              "Authentication",
+              "Cisco APIs",
+              "NETCONF",
+              "RESTCONF",
+              "YANG",
+              "SNMP automation",
+              "SSH automation"
+            ]
+          },
+          {
+            "name": "Python libraries",
+            "topics": [
+              "Netmiko",
+              "Paramiko",
+              "NAPALM",
+              "Requests"
+            ]
+          },
+          {
+            "name": "Ansible & templates",
+            "topics": [
+              "Ansible",
+              "Ansible Inventory",
+              "Ansible Playbooks",
+              "Cisco Ansible modules",
+              "Templates",
+              "Jinja2"
+            ]
+          },
+          {
+            "name": "Version control & IaC",
+            "topics": [
+              "Git",
+              "GitHub / GitLab",
+              "Version control",
+              "Infrastructure as Code",
+              "Terraform fundamentals"
+            ]
+          },
+          {
+            "name": "Documentation & source of truth",
+            "topics": [
+              "Infrastructure documentation",
+              "Network diagrams",
+              "IP Address Management",
+              "NetBox",
+              "Configuration management",
+              "Source of truth",
+              "CI/CD concepts"
+            ]
+          },
+          {
+            "name": "Resilience architecture",
+            "topics": [
+              "High Availability",
+              "Disaster Recovery",
+              "Business Continuity",
+              "RTO",
+              "RPO",
+              "Redundant Data Centers",
+              "Active/Active",
+              "Active/Passive",
+              "Load Balancing"
+            ]
+          },
+          {
+            "name": "Infrastructure planes",
+            "topics": [
+              "Network segmentation",
+              "Management Plane",
+              "Control Plane",
+              "Data Plane"
+            ]
+          },
+          {
+            "name": "Observability & lifecycle",
+            "topics": [
+              "Observability",
+              "Monitoring",
+              "Logging",
+              "Metrics",
+              "Tracing",
+              "Capacity Planning",
+              "Infrastructure Lifecycle Management"
+            ]
+          }
+        ],
+        "milestone": "Infrastructure Architect"
+      }
+    ],
+    "briefs": {
+      "OSPF": {
+        "why": "OSPF is a link-state interior routing protocol used to build resilient enterprise routed networks.",
+        "concepts": [
+          "Neighbor establishment and router ID",
+          "Areas and the Area 0 backbone",
+          "DR/BDR election on multi-access networks",
+          "Cost, LSAs and SPF",
+          "Summarization at area boundaries",
+          "Adjacency and route troubleshooting"
+        ],
+        "lab": "Build 4 routers with Area 0 and Area 10. Change interface cost, break an adjacency and compare the LSDB to the routing table.",
+        "commands": [
+          "show ip ospf neighbor",
+          "show ip ospf database",
+          "show ip route ospf",
+          "show ip protocols",
+          "debug ip ospf adj"
+        ],
+        "requires": [
+          "IPv4",
+          "Static routes"
+        ],
+        "next": "Route redistribution"
+      },
+      "BGP": {
+        "why": "BGP exchanges reachability using policy, allowing independent networks and EVPN fabrics to control route selection.",
+        "concepts": [
+          "eBGP versus iBGP and next-hop reachability",
+          "AS Path, Local Preference and MED",
+          "Communities and prefix filtering",
+          "Session establishment and route advertisement"
+        ],
+        "lab": "Connect two autonomous systems, advertise only approved prefixes and change Local Preference. Confirm path selection and failover.",
+        "commands": [
+          "show ip bgp summary",
+          "show ip bgp",
+          "show ip route bgp"
+        ],
+        "requires": [
+          "OSPF"
+        ],
+        "next": "Route filtering"
+      },
+      "VLAN": {
+        "why": "VLANs separate Layer 2 broadcast domains. Inter-VLAN traffic needs routing and an explicit policy.",
+        "concepts": [
+          "Access versus trunk membership",
+          "802.1Q tags and native VLAN",
+          "Allowed VLAN list",
+          "SVIs and inter-VLAN routing"
+        ],
+        "lab": "Create user and server VLANs on two switches. Verify isolation, trunk carriage and gateway reachability.",
+        "commands": [
+          "show vlan brief",
+          "show interfaces trunk",
+          "show interfaces switchport"
+        ],
+        "requires": [
+          "Ethernet"
+        ],
+        "next": "Trunking"
+      },
+      "RAID": {
+        "why": "RAID trades usable capacity, failure tolerance and performance. RAID does not replace independent backups.",
+        "concepts": [
+          "Striping, mirroring and parity",
+          "RAID 0/1/5/6/10 failure tolerance",
+          "Write penalty and rebuild risk",
+          "Hot spares and controller health"
+        ],
+        "lab": "Model usable capacity and failures for each level. Use disposable virtual disks to test rebuild and recovery.",
+        "requires": [
+          "Storage"
+        ],
+        "next": "Hot Spare"
+      },
+      "vPC": {
+        "why": "vPC lets a downstream device form a port channel to two Nexus peers while maintaining a loop-free attachment design.",
+        "concepts": [
+          "Peer link versus peer keepalive",
+          "Consistency parameters",
+          "Orphan ports",
+          "Failure behavior and dual-active risks"
+        ],
+        "lab": "Model two peers and a dual-attached server. Test peer-link and keepalive failures separately and document forwarding behavior.",
+        "commands": [
+          "show vpc brief",
+          "show vpc consistency-parameters global",
+          "show port-channel summary"
+        ],
+        "requires": [
+          "LACP"
+        ],
+        "next": "VXLAN"
+      },
+      "VXLAN": {
+        "why": "VXLAN encapsulates Layer 2 traffic over a routed IP underlay to scale logical segments beyond a single VLAN fabric.",
+        "concepts": [
+          "VTEPs and VNIs",
+          "Underlay reachability and MTU",
+          "Overlay endpoint learning",
+          "EVPN route distribution"
+        ],
+        "lab": "Build two VTEPs with a routed underlay. Verify a tenant segment and inspect encapsulation and MTU behavior.",
+        "commands": [
+          "show nve peers",
+          "show nve vni",
+          "show bgp l2vpn evpn summary"
+        ],
+        "requires": [
+          "BGP fundamentals"
+        ],
+        "next": "EVPN"
+      },
+      "Ansible": {
+        "why": "Ansible expresses repeatable tasks and desired configuration, reducing manual changes and configuration drift.",
+        "concepts": [
+          "Inventory and connection plugins",
+          "Playbooks, modules and variables",
+          "Jinja2 templates",
+          "Idempotence, check mode and secrets handling"
+        ],
+        "lab": "Back up three lab devices, render a reviewed configuration and apply a reversible change. Run it twice and inspect drift.",
+        "requires": [
+          "SSH",
+          "YAML",
+          "Git"
+        ],
+        "next": "Source of truth"
+      },
+      "SAN": {
+        "why": "A SAN supplies block storage over dedicated or logically isolated paths. Availability depends on fabric and host path design.",
+        "concepts": [
+          "LUN mapping versus zoning",
+          "WWPN identification",
+          "Independent fabrics A and B",
+          "Multipathing and failover"
+        ],
+        "lab": "Diagram dual fabrics and host paths. Test a path failure using disposable workloads and confirm multipath state.",
+        "requires": [
+          "Storage"
+        ],
+        "next": "Multipathing"
+      },
+      "VMware ESXi": {
+        "why": "ESXi runs virtual workloads directly on a host; management, storage and workload networks need a coherent availability design.",
+        "concepts": [
+          "VMkernel networking",
+          "Datastores and virtual switching",
+          "Management access",
+          "Host compatibility and resource allocation"
+        ],
+        "lab": "Use a supported evaluation or equivalent hypervisor to build a disposable host with separated management and storage networks.",
+        "requires": [
+          "Hypervisor"
+        ],
+        "next": "vCenter"
+      },
+      "Enterprise Data Center Architecture Capstone": {
+        "why": "Bring all domains together in a defensible design that survives failures and can be operated, recovered and automated.",
+        "concepts": [
+          "Dual ISPs and edge routers; HA firewalls",
+          "Core, distribution and access layers",
+          "2 spines / 4 leaves, server farm and VMware cluster",
+          "Dual SAN fabrics, shared storage and independent backup",
+          "Management, AAA, DNS, DHCP, NTP, Syslog and monitoring",
+          "Automation server, NetBox, Ansible, Git and a DR site"
+        ],
+        "lab": "Design and document the complete enterprise capstone. Use version-controlled automation, validation and rollback to reproduce the infrastructure."
+      },
+      "CPU": {
+        "why": "CPU architecture sets compute capacity and workload compatibility. Frequency alone does not describe throughput.",
+        "concepts": [
+          "Cores and threads",
+          "Instruction sets and virtualization extensions",
+          "Cache hierarchy",
+          "Sockets, thermal limits and NUMA"
+        ],
+        "lab": "Inventory a lab host CPU and its virtualization capabilities. Compare a single-thread and multi-thread workload while observing utilization."
+      },
+      "RAM": {
+        "why": "Memory capacity, speed and layout affect server stability and workload performance.",
+        "concepts": [
+          "ECC versus non-ECC",
+          "DIMM types and platform compatibility",
+          "Memory channels and population rules",
+          "Capacity, paging and hardware health"
+        ],
+        "lab": "Read a server memory inventory and its population guide. Diagram channels and diagnose memory pressure in a disposable VM."
+      },
+      "Storage": {
+        "why": "Storage latency, throughput and durability constrain operating systems and application workloads.",
+        "concepts": [
+          "HDD versus SSD",
+          "Capacity versus IOPS and latency",
+          "Block devices, partitions and filesystems",
+          "Redundancy versus independent backup"
+        ],
+        "lab": "Attach a disposable virtual disk, partition it and mount a filesystem. Measure a small test workload and restore a deleted test file from backup."
+      },
+      "PCIe": {
+        "why": "PCIe lanes and slot wiring constrain NIC, HBA and storage expansion bandwidth.",
+        "concepts": [
+          "Link generation and lane width",
+          "Physical slot versus electrical width",
+          "CPU lane allocation",
+          "Device placement and platform compatibility"
+        ],
+        "lab": "Draw the PCIe layout of a lab server from its platform guide; map each NIC and HBA to a slot and CPU."
+      },
+      "NICs": {
+        "why": "A network interface joins a host to the network and exposes useful evidence of physical and link faults.",
+        "concepts": [
+          "Link speed and negotiation",
+          "Drivers, firmware and offloads",
+          "MAC address and interface counters",
+          "Teaming and redundant paths"
+        ],
+        "lab": "Inventory a host NIC, observe counters, disconnect a lab cable and verify link state and recovery."
+      },
+      "Windows": {
+        "why": "Windows client administration provides the endpoint perspective for enterprise network diagnosis.",
+        "concepts": [
+          "Network interface settings",
+          "Services and event logs",
+          "Permissions and firewall rules",
+          "PowerShell and command-line diagnostics"
+        ],
+        "lab": "Use a lab client to inspect addressing, DNS resolution, routing and local firewall behavior."
+      },
+      "Windows Server": {
+        "why": "Windows Server supplies common enterprise identity, addressing and naming services.",
+        "concepts": [
+          "Server roles and administration",
+          "AD DS and DNS integration",
+          "DHCP and time dependencies",
+          "Event logs, updates and recovery"
+        ],
+        "lab": "Build an isolated evaluation VM. Install DNS and DHCP roles, validate a client lease and collect event logs."
+      },
+      "Linux fundamentals": {
+        "why": "Linux underpins many infrastructure services, monitoring platforms and automation tools.",
+        "concepts": [
+          "Filesystem and permissions",
+          "Processes and services",
+          "Package management",
+          "Networking and system logs"
+        ],
+        "lab": "Build a Linux VM; manage a service, inspect routes and sockets, and troubleshoot a deliberately stopped service."
+      },
+      "CLI fundamentals": {
+        "why": "CLI fluency makes investigation and repeated administrative tasks precise and reproducible.",
+        "concepts": [
+          "Command help and syntax",
+          "Pipes and redirection",
+          "Exit status and privileges",
+          "Safe change logging"
+        ],
+        "lab": "Inspect addresses and routes, redirect output to a log, and explain each command and its result."
+      },
+      "IPv4": {
+        "why": "IPv4 addressing identifies interfaces and defines local subnet boundaries used in forwarding decisions.",
+        "concepts": [
+          "Address and subnet mask",
+          "Network and broadcast addresses",
+          "Private ranges and default gateways",
+          "Subnet membership and routing"
+        ],
+        "lab": "Assign two subnets to a small routed lab. Verify local versus routed traffic with packet captures."
+      },
+      "IPv6": {
+        "why": "IPv6 adds a large address space and a distinct discovery model that infrastructure engineers must operate.",
+        "concepts": [
+          "Global, link-local and multicast addresses",
+          "Neighbor Discovery and ICMPv6",
+          "SLAAC and DHCPv6 roles",
+          "Prefix length and dual-stack routing"
+        ],
+        "lab": "Build two dual-stack networks, inspect neighbor discovery and verify IPv6 gateway and DNS reachability."
+      },
+      "CIDR": {
+        "why": "CIDR represents address blocks compactly and supports efficient allocation and summarization.",
+        "concepts": [
+          "Prefix length and address count",
+          "Network boundaries",
+          "Aggregation and longest-prefix match",
+          "Allocation overlap detection"
+        ],
+        "lab": "Allocate a /24 into differently sized subnets, check overlaps and explain the routing summary."
+      },
+      "STP": {
+        "why": "Spanning Tree prevents Layer 2 loops while retaining redundant physical paths.",
+        "concepts": [
+          "Bridge ID and root election",
+          "Port roles and states",
+          "Path cost and convergence",
+          "PortFast and BPDU protection"
+        ],
+        "lab": "Build a three-switch triangle, select the root and fail an uplink. Confirm port-role changes and recovery using counters and captures."
+      },
+      "LACP": {
+        "why": "LACP negotiates link aggregation so multiple compatible links can behave as one logical interface.",
+        "concepts": [
+          "Active and passive negotiation",
+          "Member consistency",
+          "Hashing and bandwidth limits",
+          "Member failure and port-channel state"
+        ],
+        "lab": "Bundle two lab links, verify the channel and remove one member. Test traffic and document why one flow does not use the aggregate bandwidth."
+      },
+      "DNS": {
+        "why": "DNS translates names into service endpoints; naming failures often resemble connectivity failures.",
+        "concepts": [
+          "Recursive versus authoritative service",
+          "A, AAAA, CNAME and PTR records",
+          "Caching, TTL and negative answers",
+          "UDP and TCP transport"
+        ],
+        "lab": "Build a local zone, query it with dig or nslookup and compare a missing record with an unreachable resolver."
+      },
+      "DHCP": {
+        "why": "DHCP gives clients addressing information and service options through a stateful lease process.",
+        "concepts": [
+          "Discover, Offer, Request, Acknowledge",
+          "Lease renewal and rebinding",
+          "Scopes, exclusions and options",
+          "Relay across subnet boundaries"
+        ],
+        "lab": "Capture a full lease exchange. Exhaust a small test scope, diagnose the failure and restore lease availability."
+      },
+      "NAT / PAT": {
+        "why": "Address translation maps address realms and conserves public addresses through port translation.",
+        "concepts": [
+          "Static versus dynamic translation",
+          "PAT port mappings",
+          "Inside and outside roles",
+          "State, return path and troubleshooting"
+        ],
+        "lab": "Configure translation in an isolated routed lab. Inspect mappings and test an intentionally missing return route."
+      },
+      "SNMP": {
+        "why": "SNMP exposes device metrics and events for operational monitoring.",
+        "concepts": [
+          "Managers, agents, MIBs and OIDs",
+          "Polling versus traps",
+          "SNMPv3 authentication and privacy",
+          "Counter rates and access controls"
+        ],
+        "lab": "Use SNMPv3 to read lab interface counters. Generate a link event and validate monitoring timestamps."
+      },
+      "IP SLA": {
+        "why": "IP SLA actively measures service reachability or performance and can feed object tracking.",
+        "concepts": [
+          "Probe types and source selection",
+          "Frequency, timeout and thresholds",
+          "Object tracking dependencies",
+          "Avoiding flapping and false positives"
+        ],
+        "lab": "Configure a lab reachability probe and tracked route. Fail the path, measure detection time and verify recovery."
+      },
+      "DHCP Snooping": {
+        "why": "DHCP snooping builds a client binding table and blocks untrusted DHCP server messages.",
+        "concepts": [
+          "Trusted versus untrusted interfaces",
+          "Binding table and VLAN scope",
+          "Rate limits",
+          "Dependencies of DAI and IP Source Guard"
+        ],
+        "lab": "Introduce a rogue DHCP server in a lab VLAN, verify it is blocked and inspect the legitimate bindings."
+      },
+      "IPsec": {
+        "why": "IPsec secures IP traffic using authenticated security associations and encryption where configured.",
+        "concepts": [
+          "IKE negotiation and authentication",
+          "Traffic selectors",
+          "ESP and security associations",
+          "Routing, NAT traversal and MTU"
+        ],
+        "lab": "Build a lab site-to-site VPN. Check negotiation, verify protected traffic and diagnose mismatched selectors."
+      },
+      "Firewall fundamentals": {
+        "why": "A firewall enforces policy between security boundaries using traffic context and, commonly, connection state.",
+        "concepts": [
+          "Zones and least-privilege policy",
+          "Stateful inspection",
+          "NAT and routing interaction",
+          "Logging, rule order and change validation"
+        ],
+        "lab": "Build users, servers and DMZ zones. Permit required flows, test denied flows and save the matching policy logs."
+      },
+      "EVPN": {
+        "why": "EVPN distributes endpoint and reachability information using BGP for overlay fabrics.",
+        "concepts": [
+          "MP-BGP address family",
+          "MAC/IP routes and IP prefixes",
+          "Route distinguishers and route targets",
+          "VTEP reachability and tenant isolation"
+        ],
+        "lab": "Use a two-leaf fabric to inspect MAC/IP advertisements and demonstrate tenant isolation and a withdrawn route."
+      },
+      "vMotion": {
+        "why": "vMotion moves a running VM between hosts and depends on compatible compute, storage and network paths.",
+        "concepts": [
+          "CPU compatibility",
+          "VMkernel reachability and bandwidth",
+          "Shared-storage versus storage migration",
+          "Migration observability and failure modes"
+        ],
+        "lab": "Migrate a disposable VM between compatible lab hosts while observing workload reachability and migration traffic."
+      },
+      "Snapshots": {
+        "why": "Snapshots record a point-in-time disk state for short-term rollback and have operational limits.",
+        "concepts": [
+          "Snapshot chains and delta growth",
+          "Consistency and quiescing",
+          "Consolidation and capacity impact",
+          "Snapshots versus backups"
+        ],
+        "lab": "Take a snapshot of a disposable VM, change a test file, revert and consolidate. Document why independent backups are still required."
+      },
+      "Python Fundamentals": {
+        "why": "Python helps turn repeated investigation and configuration tasks into clear, testable programs.",
+        "concepts": [
+          "Data types and collections",
+          "Conditions and loops",
+          "Functions and exceptions",
+          "Files and structured data"
+        ],
+        "lab": "Read a local device inventory, validate IP addresses and generate a structured report with explicit error handling."
+      },
+      "NETCONF": {
+        "why": "NETCONF exchanges structured configuration and operational data using a model-aware protocol.",
+        "concepts": [
+          "Capabilities and datastores",
+          "RPC operations",
+          "YANG models",
+          "Validation, locks and transaction behavior"
+        ],
+        "lab": "Query capabilities on a supported lab device, retrieve configuration and test a reversible edit with validation."
+      },
+      "RESTCONF": {
+        "why": "RESTCONF provides HTTP access to YANG-modeled configuration and operational data.",
+        "concepts": [
+          "Resource paths and HTTP methods",
+          "Authentication and TLS",
+          "JSON or XML representations",
+          "Status codes and safe updates"
+        ],
+        "lab": "Read a modeled interface from a supported lab device, apply a reversible change and verify the response and resulting state."
+      },
+      "Git": {
+        "why": "Git records configuration and automation changes with reviewable history.",
+        "concepts": [
+          "Repository, working tree and commits",
+          "Branches and merges",
+          "Diffs and rollback",
+          "Secrets exclusion"
+        ],
+        "lab": "Commit a sanitized lab configuration and playbook, review a branch change and restore an earlier version."
+      },
+      "NetBox": {
+        "why": "NetBox can act as a source of truth for inventory, addressing and desired infrastructure intent.",
+        "concepts": [
+          "Devices, interfaces and links",
+          "IPAM and prefixes",
+          "Data ownership and validation",
+          "API-driven automation integration"
+        ],
+        "lab": "Model a small lab inventory and address plan. Read the API and render configuration from reviewed intent."
+      },
+      "RTO": {
+        "why": "Recovery Time Objective is the target time to restore a service after disruption.",
+        "concepts": [
+          "Business impact and recovery priorities",
+          "Dependency ordering",
+          "Detection and restoration time",
+          "Measured recovery versus stated target"
+        ],
+        "lab": "Time a disposable service recovery, include dependencies and compare the measured result to the documented target."
+      },
+      "RPO": {
+        "why": "Recovery Point Objective describes the acceptable data-loss window after a disruption.",
+        "concepts": [
+          "Data criticality",
+          "Backup or replication frequency",
+          "Consistency and recovery points",
+          "Restore validation"
+        ],
+        "lab": "Restore disposable application data from backup and quantify the missing interval against the target RPO."
+      }
+    },
+    "devices": [
+      [
+        "Catalyst 2960 / 2960X",
+        "Access switching",
+        "Campus edge, user and voice access",
+        "VLANs, trunks, STP, LACP, port security",
+        "IOS",
+        "Build two VLANs and a resilient uplink."
+      ],
+      [
+        "Catalyst 3560 / 3750",
+        "Multilayer campus switching",
+        "Access and small distribution networks",
+        "SVIs, routed ports, gateway redundancy; stacking on supported platforms",
+        "IOS",
+        "Route between VLANs and test redundant gateways."
+      ],
+      [
+        "Catalyst 9200",
+        "Campus access",
+        "Enterprise wired edge",
+        "IOS XE, supported stacking, 802.1X, resilient uplinks",
+        "IOS XE",
+        "Document install-mode boot, backup configuration and test an access policy."
+      ],
+      [
+        "Catalyst 9300",
+        "Enterprise access and aggregation",
+        "High-density campus access",
+        "Stacking, Layer 3 features, telemetry and policy",
+        "IOS XE",
+        "Test LACP uplink loss and central AAA."
+      ],
+      [
+        "Catalyst 9500",
+        "Campus core / distribution",
+        "Enterprise core networks",
+        "High-speed routing, supported redundancy, VRFs and telemetry",
+        "IOS XE",
+        "Design redundant core routing and route-policy boundaries."
+      ],
+      [
+        "Cisco ISR 4000",
+        "Branch routing",
+        "WAN edge and branch services",
+        "Routing, NAT, IPsec and supported zone-based firewall",
+        "IOS XE",
+        "Configure dual-path routing and a site-to-site VPN."
+      ],
+      [
+        "Cisco ASR",
+        "WAN / service aggregation",
+        "Internet edge and large WANs",
+        "Routing scale, BGP and platform-specific services",
+        "IOS XE or IOS XR, depending on family",
+        "Build a filtered dual-ISP BGP design."
+      ],
+      [
+        "Cisco ASA",
+        "Security gateway",
+        "Enterprise perimeter and remote access",
+        "Stateful firewall, NAT and VPN",
+        "ASA software",
+        "Define zones and validate a NAT/VPN policy."
+      ],
+      [
+        "Cisco Firepower",
+        "Threat-aware security",
+        "Enterprise perimeter and segmentation",
+        "Application policy, inspection and intrusion prevention",
+        "Secure Firewall Threat Defense; management varies",
+        "Build an allowed-flow policy and review events."
+      ],
+      [
+        "Cisco Aironet",
+        "Wireless access",
+        "Existing campus wireless deployments",
+        "CAPWAP, RF channels, security and supported controller modes",
+        "AP software; platform-specific",
+        "Validate controller discovery, join and client authentication."
+      ],
+      [
+        "Cisco Catalyst Wireless",
+        "Wireless access",
+        "Enterprise campus WLAN",
+        "RF design, client roaming and supported policy features",
+        "Platform-dependent AP software",
+        "Measure channel contention and test roaming."
+      ],
+      [
+        "Cisco Wireless LAN Controller",
+        "Wireless control",
+        "Centralized enterprise WLAN",
+        "AP join, WLAN policy, AAA and mobility",
+        "AireOS or IOS XE, depending on family",
+        "Build a WLAN with separated guest and corporate access."
+      ],
+      [
+        "Cisco Nexus 3000",
+        "Data center switching",
+        "Top-of-rack and low-latency fabrics",
+        "NX-OS, vPC and model-dependent overlay features",
+        "NX-OS",
+        "Build a routed underlay and verify an MTU budget."
+      ],
+      [
+        "Cisco Nexus 5000",
+        "Data center aggregation / access",
+        "Existing server and converged networks",
+        "vPC, FEX and supported converged storage",
+        "NX-OS",
+        "Model dual-attached servers and FEX dependencies."
+      ],
+      [
+        "Cisco Nexus 7000",
+        "Modular data center switching",
+        "Existing large core / aggregation networks",
+        "VDCs and modular resilience; features depend on model",
+        "NX-OS",
+        "Document logical isolation and redundant paths."
+      ],
+      [
+        "Cisco Nexus 9000",
+        "Data center fabric",
+        "Leaf-spine and policy-driven fabrics",
+        "NX-OS VXLAN/EVPN or supported ACI mode",
+        "NX-OS or ACI mode",
+        "Compare EVPN fabric configuration with ACI policy intent."
+      ],
+      [
+        "Cisco MDS SAN switches",
+        "Fibre Channel switching",
+        "Dedicated storage fabrics",
+        "VSANs, zoning, fabric services and FC diagnostics",
+        "NX-OS",
+        "Design independent A/B fabrics with single-initiator zones."
+      ]
+    ],
+    "hardware": [
+      "HPE ProLiant",
+      "Dell PowerEdge",
+      "Cisco UCS",
+      "Rack Servers",
+      "Blade Servers",
+      "Storage Arrays",
+      "HPE MSA",
+      "Dell EMC",
+      "NetApp",
+      "SAN Switches",
+      "Brocade",
+      "Cisco MDS",
+      "UPS",
+      "PDU",
+      "Rack Management",
+      "Environmental Monitoring",
+      "Out-of-Band Management",
+      "iLO",
+      "iDRAC",
+      "CIMC"
+    ],
+    "trouble": [
+      "Layer 1 troubleshooting",
+      "Interface errors",
+      "CRC errors",
+      "Duplex mismatch",
+      "VLAN troubleshooting",
+      "STP troubleshooting",
+      "EtherChannel troubleshooting",
+      "Routing troubleshooting",
+      "OSPF troubleshooting",
+      "BGP troubleshooting",
+      "DHCP troubleshooting",
+      "DNS troubleshooting",
+      "NAT troubleshooting",
+      "ACL troubleshooting",
+      "Firewall troubleshooting",
+      "Wireless troubleshooting",
+      "Server hardware troubleshooting",
+      "RAID troubleshooting",
+      "SAN troubleshooting",
+      "VMware troubleshooting",
+      "Data center outage analysis"
+    ]
+  }
+}

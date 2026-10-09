@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "Twelve declared cases preserve exact per-observer candidate/resolution/selection and unchanged AS path.",
+    "Independent return gate, invalid-context hiding after further input changes and keyboard reset preserve boundaries.",
+    "Four widths/both themes and named keyboard table scrolling pass."
+  ],
+  "errors": [],
+  "scope": "Standalone declared iBGP distribution worksheet only; full lesson pending. No actual iBGP/RR/traffic execution."
+}

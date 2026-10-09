@@ -1,0 +1,1002 @@
+{
+  "result": "PASS",
+  "checks": 24619,
+  "scope": "4096 synthetic topology combinations; actual local file writes/corruption/restore and five interrupted cleanup runs; no real VM, SAN, container or network execution.",
+  "scriptSHA256": "6a9aacb143156aaa469a3c0ad4499d2ae7b0516bc29fb3f12f710867b666a42c",
+  "runs": [
+    {
+      "result": "PASS",
+      "scope": "Topology/VM placement is simulated. File writes, corruption detection, restore and cleanup are actual local execution. No independent physical backup or hypervisor recovery is proven.",
+      "events": [
+        {
+          "phase": "baseline",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricA/cA",
+              "h1/fabricA/cB",
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricA/cA",
+              "h2/fabricA/cB",
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricA/cA",
+              "h3/fabricA/cB",
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "path-fault",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "host-fault",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [],
+            "h2": [
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h2",
+              "vm2": "h3",
+              "vm3": "h2",
+              "vm4": "h3",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h2": 90,
+              "h3": 90
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "all-paths-down",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [],
+            "h2": [],
+            "h3": []
+          },
+          "placement": {
+            "assigned": {},
+            "pending": [
+              "vm1",
+              "vm2",
+              "vm3",
+              "vm4",
+              "vm5",
+              "vm6"
+            ],
+            "usedGiB": {},
+            "complete": false
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "mapping-denial",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [],
+            "h2": [],
+            "h3": []
+          },
+          "placement": {
+            "assigned": {},
+            "pending": [
+              "vm1",
+              "vm2",
+              "vm3",
+              "vm4",
+              "vm5",
+              "vm6"
+            ],
+            "usedGiB": {},
+            "complete": false
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "guest-network-loss",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricA/cA",
+              "h1/fabricA/cB",
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricA/cA",
+              "h2/fabricA/cB",
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricA/cA",
+              "h3/fabricA/cB",
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {},
+            "pending": [
+              "vm1",
+              "vm2",
+              "vm3",
+              "vm4",
+              "vm5",
+              "vm6"
+            ],
+            "usedGiB": {},
+            "complete": false
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "corruption",
+          "scope": "ACTUAL OWNED FILE OPERATION",
+          "detected": true,
+          "expectedSHA256": "7f6183309fd9d767a7c100ece410c51379042b99783c8aef1cb3604aab2fd614",
+          "observedSHA256": "a7828ef62094a3bcf59d2f5bdad09dfe18ff5ddbe3a6ad8a4db06efe2264843d"
+        },
+        {
+          "phase": "restored",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricA/cA",
+              "h1/fabricA/cB",
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricA/cA",
+              "h2/fabricA/cB",
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricA/cA",
+              "h3/fabricA/cB",
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        }
+      ],
+      "planRestored": true,
+      "dataRestored": true,
+      "baselineSHA256": "57aaa2a74aec0696cd37ca7f9cbe0e17e648426b998e8d08ff8e9821656f911a",
+      "dataSHA256": "7f6183309fd9d767a7c100ece410c51379042b99783c8aef1cb3604aab2fd614",
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-storage-lab-0oc0img2",
+      "cleaned": true
+    },
+    {
+      "result": "INTERRUPTED",
+      "scope": "Topology/VM placement is simulated. File writes, corruption detection, restore and cleanup are actual local execution. No independent physical backup or hypervisor recovery is proven.",
+      "events": [
+        {
+          "phase": "baseline",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricA/cA",
+              "h1/fabricA/cB",
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricA/cA",
+              "h2/fabricA/cB",
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricA/cA",
+              "h3/fabricA/cB",
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        }
+      ],
+      "interruptedAt": "baseline",
+      "planRestored": true,
+      "dataRestored": true,
+      "baselineSHA256": "57aaa2a74aec0696cd37ca7f9cbe0e17e648426b998e8d08ff8e9821656f911a",
+      "dataSHA256": "7f6183309fd9d767a7c100ece410c51379042b99783c8aef1cb3604aab2fd614",
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-storage-lab-f_0a7q6m",
+      "cleaned": true
+    },
+    {
+      "result": "INTERRUPTED",
+      "scope": "Topology/VM placement is simulated. File writes, corruption detection, restore and cleanup are actual local execution. No independent physical backup or hypervisor recovery is proven.",
+      "events": [
+        {
+          "phase": "baseline",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricA/cA",
+              "h1/fabricA/cB",
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricA/cA",
+              "h2/fabricA/cB",
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricA/cA",
+              "h3/fabricA/cB",
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "path-fault",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        }
+      ],
+      "interruptedAt": "path-fault",
+      "planRestored": true,
+      "dataRestored": true,
+      "baselineSHA256": "57aaa2a74aec0696cd37ca7f9cbe0e17e648426b998e8d08ff8e9821656f911a",
+      "dataSHA256": "7f6183309fd9d767a7c100ece410c51379042b99783c8aef1cb3604aab2fd614",
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-storage-lab-cbqyatsa",
+      "cleaned": true
+    },
+    {
+      "result": "INTERRUPTED",
+      "scope": "Topology/VM placement is simulated. File writes, corruption detection, restore and cleanup are actual local execution. No independent physical backup or hypervisor recovery is proven.",
+      "events": [
+        {
+          "phase": "baseline",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricA/cA",
+              "h1/fabricA/cB",
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricA/cA",
+              "h2/fabricA/cB",
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricA/cA",
+              "h3/fabricA/cB",
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "path-fault",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "host-fault",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [],
+            "h2": [
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h2",
+              "vm2": "h3",
+              "vm3": "h2",
+              "vm4": "h3",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h2": 90,
+              "h3": 90
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        }
+      ],
+      "interruptedAt": "host-fault",
+      "planRestored": true,
+      "dataRestored": true,
+      "baselineSHA256": "57aaa2a74aec0696cd37ca7f9cbe0e17e648426b998e8d08ff8e9821656f911a",
+      "dataSHA256": "7f6183309fd9d767a7c100ece410c51379042b99783c8aef1cb3604aab2fd614",
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-storage-lab-qw2jrepp",
+      "cleaned": true
+    },
+    {
+      "result": "INTERRUPTED",
+      "scope": "Topology/VM placement is simulated. File writes, corruption detection, restore and cleanup are actual local execution. No independent physical backup or hypervisor recovery is proven.",
+      "events": [
+        {
+          "phase": "baseline",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricA/cA",
+              "h1/fabricA/cB",
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricA/cA",
+              "h2/fabricA/cB",
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricA/cA",
+              "h3/fabricA/cB",
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "path-fault",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "host-fault",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [],
+            "h2": [
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h2",
+              "vm2": "h3",
+              "vm3": "h2",
+              "vm4": "h3",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h2": 90,
+              "h3": 90
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "all-paths-down",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [],
+            "h2": [],
+            "h3": []
+          },
+          "placement": {
+            "assigned": {},
+            "pending": [
+              "vm1",
+              "vm2",
+              "vm3",
+              "vm4",
+              "vm5",
+              "vm6"
+            ],
+            "usedGiB": {},
+            "complete": false
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "mapping-denial",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [],
+            "h2": [],
+            "h3": []
+          },
+          "placement": {
+            "assigned": {},
+            "pending": [
+              "vm1",
+              "vm2",
+              "vm3",
+              "vm4",
+              "vm5",
+              "vm6"
+            ],
+            "usedGiB": {},
+            "complete": false
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "guest-network-loss",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricA/cA",
+              "h1/fabricA/cB",
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricA/cA",
+              "h2/fabricA/cB",
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricA/cA",
+              "h3/fabricA/cB",
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {},
+            "pending": [
+              "vm1",
+              "vm2",
+              "vm3",
+              "vm4",
+              "vm5",
+              "vm6"
+            ],
+            "usedGiB": {},
+            "complete": false
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "corruption",
+          "scope": "ACTUAL OWNED FILE OPERATION",
+          "detected": true,
+          "expectedSHA256": "7f6183309fd9d767a7c100ece410c51379042b99783c8aef1cb3604aab2fd614",
+          "observedSHA256": "a7828ef62094a3bcf59d2f5bdad09dfe18ff5ddbe3a6ad8a4db06efe2264843d"
+        }
+      ],
+      "interruptedAt": "corruption",
+      "planRestored": true,
+      "dataRestored": true,
+      "baselineSHA256": "57aaa2a74aec0696cd37ca7f9cbe0e17e648426b998e8d08ff8e9821656f911a",
+      "dataSHA256": "7f6183309fd9d767a7c100ece410c51379042b99783c8aef1cb3604aab2fd614",
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-storage-lab-wmxpvn5v",
+      "cleaned": true
+    },
+    {
+      "result": "INTERRUPTED",
+      "scope": "Topology/VM placement is simulated. File writes, corruption detection, restore and cleanup are actual local execution. No independent physical backup or hypervisor recovery is proven.",
+      "events": [
+        {
+          "phase": "baseline",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricA/cA",
+              "h1/fabricA/cB",
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricA/cA",
+              "h2/fabricA/cB",
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricA/cA",
+              "h3/fabricA/cB",
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "path-fault",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "host-fault",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [],
+            "h2": [
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h2",
+              "vm2": "h3",
+              "vm3": "h2",
+              "vm4": "h3",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h2": 90,
+              "h3": 90
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "all-paths-down",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [],
+            "h2": [],
+            "h3": []
+          },
+          "placement": {
+            "assigned": {},
+            "pending": [
+              "vm1",
+              "vm2",
+              "vm3",
+              "vm4",
+              "vm5",
+              "vm6"
+            ],
+            "usedGiB": {},
+            "complete": false
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "mapping-denial",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [],
+            "h2": [],
+            "h3": []
+          },
+          "placement": {
+            "assigned": {},
+            "pending": [
+              "vm1",
+              "vm2",
+              "vm3",
+              "vm4",
+              "vm5",
+              "vm6"
+            ],
+            "usedGiB": {},
+            "complete": false
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "guest-network-loss",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricA/cA",
+              "h1/fabricA/cB",
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricA/cA",
+              "h2/fabricA/cB",
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricA/cA",
+              "h3/fabricA/cB",
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {},
+            "pending": [
+              "vm1",
+              "vm2",
+              "vm3",
+              "vm4",
+              "vm5",
+              "vm6"
+            ],
+            "usedGiB": {},
+            "complete": false
+          },
+          "unauthorizedHostPaths": []
+        },
+        {
+          "phase": "corruption",
+          "scope": "ACTUAL OWNED FILE OPERATION",
+          "detected": true,
+          "expectedSHA256": "7f6183309fd9d767a7c100ece410c51379042b99783c8aef1cb3604aab2fd614",
+          "observedSHA256": "a7828ef62094a3bcf59d2f5bdad09dfe18ff5ddbe3a6ad8a4db06efe2264843d"
+        },
+        {
+          "phase": "restored",
+          "scope": "SYNTHETIC TOPOLOGY AND MEMORY-ONLY PLACEMENT",
+          "paths": {
+            "h1": [
+              "h1/fabricA/cA",
+              "h1/fabricA/cB",
+              "h1/fabricB/cA",
+              "h1/fabricB/cB"
+            ],
+            "h2": [
+              "h2/fabricA/cA",
+              "h2/fabricA/cB",
+              "h2/fabricB/cA",
+              "h2/fabricB/cB"
+            ],
+            "h3": [
+              "h3/fabricA/cA",
+              "h3/fabricA/cB",
+              "h3/fabricB/cA",
+              "h3/fabricB/cB"
+            ]
+          },
+          "placement": {
+            "assigned": {
+              "vm1": "h1",
+              "vm2": "h2",
+              "vm3": "h3",
+              "vm4": "h1",
+              "vm5": "h2",
+              "vm6": "h3"
+            },
+            "pending": [],
+            "usedGiB": {
+              "h1": 60,
+              "h2": 60,
+              "h3": 60
+            },
+            "complete": true
+          },
+          "unauthorizedHostPaths": []
+        }
+      ],
+      "interruptedAt": "restored",
+      "planRestored": true,
+      "dataRestored": true,
+      "baselineSHA256": "57aaa2a74aec0696cd37ca7f9cbe0e17e648426b998e8d08ff8e9821656f911a",
+      "dataSHA256": "7f6183309fd9d767a7c100ece410c51379042b99783c8aef1cb3604aab2fd614",
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-storage-lab-g9gmtgxq",
+      "cleaned": true
+    }
+  ]
+}

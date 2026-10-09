@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "reviewer": "Primary assistant",
+  "topics": 44,
+  "captures": 132,
+  "scope": "Personally inspected all eleven current sheets: 44 desktop worksheets, 44 mechanism flows and 44 narrow dark layouts. Horizontal table start/end tested separately. No full WCAG certification.",
+  "sha256": {
+    "docs/screenshots/data-center/review/01-contact.png": "4a03d645d658c241ddbaea2da69bcbabf2eb242c324bc5b1c8bb734d6af08f28",
+    "docs/screenshots/data-center/review/02-contact.png": "158af4cb6e88bba13ac5b382252da937f16f20d45673ce935f8a0a34ba1936ce",
+    "docs/screenshots/data-center/review/03-contact.png": "d94cee09f62271652de322251f5fd597cd1aba77d70dbdd93a18ad92cd376346",
+    "docs/screenshots/data-center/review/04-contact.png": "4490f2c852da3103d9e8e05d7ea7e2fd21e40363fef69a68d7e156e297fb1de2",
+    "docs/screenshots/data-center/review/05-contact.png": "c53bb5d06b9fb170d978013273dba053685f42e91368d1dd9d7499d034f38a1f",
+    "docs/screenshots/data-center/review/06-contact.png": "4d4597e99f48c79bcb85dc9f5964e30069580be8ca2df176acbcf1a6b2082953",
+    "docs/screenshots/data-center/review/07-contact.png": "0a951bf6fa316a23a452231e2d7e048fb7cb49c1110461deb8f2a631c6ae9541",
+    "docs/screenshots/data-center/review/08-contact.png": "14562db6bc5d7c681c708f2e0b57b2e319ad1987026400d479f03dc921e2fe79",
+    "docs/screenshots/data-center/review/09-contact.png": "f8288ca9fb7376cc9f0ceb3bed56667617fbb06b26a1edef67149744120483ee",
+    "docs/screenshots/data-center/review/10-contact.png": "435323e90558f34508f105d1674075bca45b8af7d9eecb6e2a103bfa6c1dc7f9",
+    "docs/screenshots/data-center/review/11-contact.png": "180cf760d3eebdd6cf949dc6fd59a237387bd1c15534370f33e72cb6cca68b6c"
+  }
+}

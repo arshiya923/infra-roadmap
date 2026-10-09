@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-04",
+  "result": "PASS",
+  "checks": [
+    "search unopened Batch 02 without loading its bundle",
+    "all four lessons, metadata, mobile widths and assessments",
+    "next/previous cross batch and authored successor",
+    "permission class selection, symbolic/octal output and reset",
+    "directory creation requires write and search",
+    "exhaustive 512 modes × 3 identities × 3 operations × 2 object types",
+    "permission keyboard controls and mobile rendering",
+    "new quiz feedback, short answers and learning reset",
+    "platform labels and Bash clipboard content (OS newline normalization)",
+    "study progress shared with original roadmap",
+    "mobile and dark lesson screenshots",
+    "Batch 02 works on file URLs",
+    "no page or console errors"
+  ],
+  "errors": [],
+  "permissionCases": 9216
+}

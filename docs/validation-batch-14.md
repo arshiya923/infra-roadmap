@@ -1,0 +1,23 @@
+# Network Security acceptance — 2026-10-09
+
+Batches 13 and 14 complete all 33 original Network Security units, including the integrated lab. They add 330 original exam questions and 99 quick checks. The course now has 198 accepted lessons, 1,980 exams and 594 quick checks; 244 original units remain. The next editorial step is Batch 15, Data Center Foundations, `s6-g0-t0`.
+
+The primary assistant personally authored/reviewed the mechanisms, sources, lab boundaries and all 429 assessments. Nine inspected contact sheets contain 99 actual desktop worksheet, mechanism-flow and 320-pixel dark-layout views. Thirty-three additional table-end captures and browser assertions verify horizontal start/end access. The browser run checks all 33 routes, four supplied cases per route, all question feedback paths, incorrect multiple-choice feedback, keyboard/reset, invalid/stale results, clipboard copy, exact workbook download, HTTP/direct-file loading, search, reduced-motion behavior, both themes at 1440/768/390/320 pixels and learner/editorial independence.
+
+All nine fresh regression commands pass. The model suite contains 70,093 independent checks, including every octet/noncontiguous wildcard pair and bounded cross-products for tuple, binding/mode, role, authentication/fallback, count, rate-envelope, inspection and resource-policy decisions. The seven-zone suite separately compares all supplied source/destination/transport/service/direction/state/owned-rule combinations against an independent requirement table. The broader audit visits all 198 authored routes, verifies authored/acyclic prerequisites, named controls, unique IDs, anchors, original adjacency, theme contrast tokens, lazy batch loading and local search.
+
+The integrated lab preserves Internet, DMZ, Users, Servers, Management, Guest and Backup. Explicit documented initiation rules default to deny. A response declaration can admit only the matching reverse of an allowed forward rule; new reverse initiation is evaluated separately. DNS, time and logging dependencies are deliberately outside this small classroom matrix and must be added as explicit scoped requirements for any real design.
+
+Two exact read-only WSL commands were executed (`ss -lnt` and the workbook hash). Vendor observation/configuration references remain guided/unexecuted. The separately owned actual loopback HTTP application fixture passes 13 request-level checks for allowed use, prohibited management, missing/wrong identity, unknown/encoded/query resource rejection, one owned policy fault, exact restore and independent recovery. Three injected interruptions verify restoration in memory, stopped thread and closed owned listener. It uses disposable credentials held only in memory, redacted events and harmless content; it changes no host firewall, routes, existing accounts or services.
+
+The fixture is plain HTTP on 127.0.0.1 and is not a production authentication system or encrypted transport example. It does not deploy network zones, IPsec/IKE, EAP/RADIUS, AAA, WAF, ASA, FTD or ISE. Browser worksheets calculate or trace supplied inputs: they do not query live devices, negotiate protocols, create actual state tables, scan attack content, predict CoPP drops/CPU load or certify hardware throughput. Target parser support, physical switching, VPN negotiation and vendor integration remain external guided exercises. Automated accessibility checks and visual inspection do not constitute full WCAG certification. Those limits are part of acceptance.
+
+Reproduce with the existing localhost preview at 127.0.0.1:8765:
+
+```powershell
+python tools/regression-network-security.py
+```
+
+The runner uses the installed Node/Playwright runtime and headless Microsoft Edge, WSL Ubuntu-24.04 for read-only observations, and Python's standard library for owned loopback fixtures. It installs no dependencies. The optional downloadable fixture defaults to help; execute only its owned rehearsal with `python labs/network-security-loopback.py --run`.
+
+Evidence: [regression](network-security-regression-results.json), [models](network-security-model-results.json), [browser](browser-network-security-results.json), [actual fixture](network-security-fixture-results.json), [command scope](commands-network-security-results.json), [primary review](network-security-primary-review.json), [question review](network-security-question-review.json), [visual review](network-security-visual-review.json), [full audit](quality-audit-batch-14.json), [source applicability](research-network-security.md), [Batch 13 acceptance](acceptance-batch-13.json), [Batch 14 acceptance](acceptance-batch-14.json), [workbook](../labs/network-security-workbook.md).

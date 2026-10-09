@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "topics": 33,
+  "results": [
+    {
+      "command": "ss -lnt",
+      "result": "EXECUTED_READ_ONLY_PASS",
+      "stdout": "State  Recv-Q Send-Q  Local Address:Port  Peer Address:PortProcess\nLISTEN 0      4096        127.0.0.1:5433       0.0.0.0:*          \nLISTEN 0      4096    127.0.0.53%lo:53         0.0.0.0:*          \nLISTEN 0      1000   10.255.255.254:53         0.0.0.0:*          \nLISTEN 0      4096        127.0.0.1:27017      0.0.0.0:*          \nLISTEN 0      4096       127.0.0.54:53         0.0.0.0:*          \nLISTEN 0      511         127.0.0.1:8080       0.0.0.0:*          \nLISTEN 0      4096        127.0.0.1:8000       0.0.0.0:*          \nLISTEN 0      4096                *:5432             *:*          \n"
+    },
+    {
+      "command": "sha256sum labs/network-security-workbook.md",
+      "result": "EXECUTED_READ_ONLY_PASS",
+      "stdout": "ad3a0466ebdabae2159937d25a12bbb3deda8d25a5b7678650d3430ab142aaee  labs/network-security-workbook.md\n"
+    },
+    {
+      "command": "show ip access-lists\nshow ip interface",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show ip arp inspection\nshow ip dhcp snooping binding",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show ip dhcp snooping\nshow ip dhcp snooping binding",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show ip source binding\nshow ip verify source",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show vlan private-vlan\nshow interfaces switchport",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show authentication sessions",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show aaa servers",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show port-security\nshow port-security interface GigabitEthernet1/0/1",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show policy-map control-plane",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show crypto ikev2 sa\nshow crypto ipsec sa",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show crypto ipsec sa",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show crypto ikev2 sa\nshow crypto ipsec sa\nshow ip route",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show crypto ikev2 sa",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show ip access-lists",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show zone-pair security\nshow policy-map type inspect zone-pair session",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show access-list\nshow conn\nshow xlate",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    },
+    {
+      "command": "show version",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No supported target device is attached; platform parser and runtime semantics remain external."
+    }
+  ],
+  "scope": "Only the explicit read-only WSL allowlist executes. Vendor show references are structurally reviewed, not target-validated."
+}

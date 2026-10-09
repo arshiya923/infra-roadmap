@@ -1,0 +1,375 @@
+{
+  "id": "s3-g4-t3",
+  "batch": "09",
+  "title": "BGP Communities",
+  "subtitle": "Read route tags as sets, apply a documented local contract, and inspect export boundaries separately.",
+  "level": "Intermediate → Advanced",
+  "minutes": 40,
+  "definition": "BGP communities attach policy labels to routes. Standard communities are four-octet values, commonly written ASN:value with two unsigned 16-bit components. Large communities are twelve-octet values written GlobalAdmin:Local1:Local2 with three unsigned 32-bit components. Both attributes are optional transitive. Their sets express labels; an ordinary label receives its action from a documented operator policy.",
+  "purpose": "Group routes for consistent import and export policy without assigning a universal meaning to an arbitrary number. Distinguish the local matching contract from standard well-known export restrictions, then inspect actual received and advertised attributes on the intended peer and address family.",
+  "mental": "Think of a route carrying a set of labels. A local rule checks for one exact label and applies its documented action. A separate export check respects well-known boundaries and local permission. Reordering the same set changes no membership; losing a label can remove its matching action.",
+  "components": [
+    "The standard ASN:value notation uses two 16-bit components. An ASN greater than 65535 cannot be placed in the first component; large communities provide a 32-bit global-administrator field.",
+    "A large tag contains three 32-bit components. Its global-administrator field normally provides administrative scope, but accepting a numeric value here does not validate ASN assignment or route ownership. RFC 8092 recommends against using reserved ASNs 0, 65535 and 4294967295 as Global Administrator values.",
+    "This worksheet compares canonical decimal sets: leading zeros normalize, duplicates collapse and order has no meaning. It accepts at most 32 supplied entries across both families before deduplication; this is a teaching input limit, not a BGP protocol maximum.",
+    "The illustrative local contract maps standard 65001:200 or large 4200000001:200:0 to declared LOCAL_PREF 200 instead of 100 only when that exact family policy is enabled and the route is admitted. These tags and values have no universal preference meaning.",
+    "RFC 1997 reserves standard value blocks 0x00000000 through 0x0000FFFF and 0xFFFF0000 through 0xFFFFFFFF; the defined well-known communities occupy values in the latter block. NO_EXPORT (65535:65281), NO_ADVERTISE (65535:65282) and NO_EXPORT_SUBCONFED (65535:65283) impose distinct export boundaries. The worksheet invents no large-community equivalents and does not authorize reserved-tag use.",
+    "Local export permission and the target session declaration remain separate gates. No supplied tag proves route eligibility, best-path selection, installation or delivery.",
+    "Numeric width is separate from allocation guidance: RFC 1997 reserves standard values 0x00000000 through 0x0000FFFF and 0xFFFF0000 through 0xFFFFFFFF, with defined well-known values in the latter block. RFC 8092 discourages reserved ASNs 0, 65535 and 4294967295 as Global Administrator, while explicitly forbidding treating a large attribute as malformed solely for an unallocated or reserved administrator. The numeric-boundary preset decodes component widths and does not recommend or authorize production labels."
+  ],
+  "mechanism": [
+    "Identify the exact route, peer, VRF and AFI/SAFI. Record standard and large sets independently, including any import stripping or rewriting.",
+    "Validate each component against its family width and normalize valid decimal values. The model rejects malformed syntax, coercions and more than 32 supplied entries rather than silently dropping them.",
+    "Select the documented local contract. Exact canonical membership changes the declared preference only if policy is enabled and admission is true; a neighboring value or the other tag family cannot match it.",
+    "Evaluate the target boundary: NO_ADVERTISE blocks every other BGP speaker; NO_EXPORT blocks outside the confederation, including ordinary external peers of a standalone AS; NO_EXPORT_SUBCONFED blocks eBGP peers even inside the same confederation.",
+    "Combine those restrictions with declared admission, export permission and target session readiness. The resulting worksheet permission describes supplied gates, not an observed advertisement or complete BGP export pipeline.",
+    "Inspect real accepted and advertised route attributes separately on the prepared target. Preserve evidence before considering a target-specific policy change."
+  ],
+  "flow": [
+    [
+      "Read the sets",
+      "Validate standard and large component widths, then canonicalize and deduplicate."
+    ],
+    [
+      "Match the local contract",
+      "Apply the declared preference action only for an enabled, admitted exact tag match."
+    ],
+    [
+      "Check the export boundary",
+      "Interpret the three standard well-known restrictions against the selected target."
+    ],
+    [
+      "Inspect actual evidence",
+      "Compare declared export/session gates with real peer and route observations; assess forwarding separately."
+    ]
+  ],
+  "comparison": [
+    [
+      "Standard / large",
+      "Two 16-bit components / three 32-bit components",
+      "An ASN value above 65535 does not fit the standard first component."
+    ],
+    [
+      "Ordinary label / well-known restriction",
+      "Local operator contract / specified standard export boundary",
+      "An arbitrary tag does not universally raise preference."
+    ],
+    [
+      "Exact membership / set equality",
+      "One tag is present / the whole set is equal",
+      "This worksheet checks membership, not equality of all tags."
+    ],
+    [
+      "NO_EXPORT / NO_EXPORT_SUBCONFED",
+      "Outside-confederation restriction / all eBGP targets including confederation members",
+      "Keep the confederation boundary explicit."
+    ],
+    [
+      "NO_ADVERTISE / NO_EXPORT",
+      "Every other BGP speaker / outside the confederation",
+      "NO_ADVERTISE also prevents iBGP advertisement."
+    ],
+    [
+      "Declared export permission / observed UPDATE",
+      "Supplied gate result / actual target evidence",
+      "The worksheet sends no BGP messages."
+    ]
+  ],
+  "example": "An admitted route carries standard 65001:200, and this operator's enabled exact rule sets declared LOCAL_PREF to 200. Adding 65001:100 or reversing their order does not remove that match. Disabling the rule or stripping 65001:200 leaves the worksheet baseline 100. If the same route also carries NO_EXPORT, an iBGP target passes that restriction while an external target outside the confederation fails it. An independent export deny still blocks the iBGP declaration. No example decides whether the route wins best-path selection or forwards packets.",
+  "commands": [
+    {
+      "code": "vtysh -c 'show bgp ipv4 unicast summary'",
+      "explanation": "Inspect peer state and IPv4-unicast context on the named FRR instance.",
+      "expected": "GUIDED, NOT EXECUTED: record actual peer state and AFI/SAFI. An established peer alone does not establish tag matching or export.",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here"
+    },
+    {
+      "code": "vtysh -c 'show bgp ipv4 unicast 198.51.100.0/24'",
+      "explanation": "Inspect BGP paths and displayed standard/large communities for the exact demonstration prefix.",
+      "expected": "GUIDED, NOT EXECUTED: record actual tags, path attributes and selection markers. Missing tags require investigation of receipt, propagation and policy; no output is invented.",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here"
+    },
+    {
+      "code": "vtysh -c 'show bgp ipv4 unicast neighbors PEER routes'",
+      "explanation": "Inspect routes accepted from the observed inbound peer after policy; substitute its address for PEER.",
+      "expected": "GUIDED, NOT EXECUTED: compare accepted tags with the documented local matching contract. Accepted routes do not expose all rejected pre-policy input.",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here"
+    },
+    {
+      "code": "vtysh -c 'show bgp ipv4 unicast neighbors PEER advertised-routes'",
+      "explanation": "Inspect routes advertised to the chosen target peer after outbound policy; substitute its observed address for PEER.",
+      "expected": "GUIDED, NOT EXECUTED: record actual exact-prefix presence and attributes in the target context. This control-plane view does not prove remote installation or application delivery.",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here"
+    }
+  ],
+  "configuration": "For a prepared isolated FRR stable 8.4 target, document an inbound route-map using a standard community-list or large-community-list to match the owned tag and prefix, with an intended set local-preference action. Distinguish ordinary member matching from a list's exact-match semantics; the worksheet requires one exact numeric tag to be present, not equality of the whole set. Review rule order, permit/deny behavior, peer attachment, address family and any tag deletion or replacement. Inspect actual accepted tags and outbound policy. No device configuration or refresh is executed by this lesson; all four commands are show-only guidance.",
+  "ports": "BGP commonly exchanges UPDATEs over TCP port 179. Community tags are path attributes, not ports. This local worksheet opens no connection.",
+  "production": "Maintain an operator community dictionary naming each tag's owner, scope, permitted source and action. Validate the exact receiving peer and route context, enforce boundary filters for customer-controlled tags, and observe both inbound acceptance and intended outbound advertisement. Track where tags are preserved, rewritten or removed.",
+  "troubleshooting": [
+    [
+      "Symptom",
+      "A tagged route receives an unexpected local action or appears at an unintended export target."
+    ],
+    [
+      "Hypotheses",
+      "The tag is absent, malformed, in the wrong family, nonmatching, stripped, or associated with a disabled/unattached policy; export boundaries or independent permits differ from intent."
+    ],
+    [
+      "Test",
+      "Read exact-prefix attributes and accepted peer routes, then inspect advertised routes to the named target."
+    ],
+    [
+      "Observation",
+      "Record actual canonical tag values, local policy attachment, admission, target boundary and export evidence. Avoid assuming configuration proves the rule was exercised."
+    ],
+    [
+      "Conclusion / next test",
+      "Separate local matching from well-known restrictions and local export permission. Investigate the first layer whose actual evidence differs from the contract."
+    ],
+    [
+      "Fix and verify",
+      "Through target change control, adjust only the owned matching or filtering rule, then repeat inbound and outbound observations and an independent original traffic test."
+    ]
+  ],
+  "security": "Communities supplied by an untrusted neighbor can request privileged routing actions. Restrict which peer and prefix may invoke each local contract, filter unauthorized labels, and protect documented export boundaries. Treat community dictionaries and route outputs as sensitive topology information. A syntactically valid tag proves neither authorization nor ASN ownership.",
+  "performance": "Tags can influence a policy action that changes routing, but no tag number measures throughput or latency. Inspect resulting selection and actual traffic performance separately; this worksheet evaluates only supplied sets and declarations.",
+  "mistakes": [
+    "Giving standard 65001:200 or large 4200000001:200:0 a universal LOCAL_PREF meaning.",
+    "Putting a four-byte ASN in the 16-bit standard first component.",
+    "Treating community order or duplicates as additional policy weight.",
+    "Confusing exact tag membership with whole-set exact matching.",
+    "Treating NO_EXPORT as a ban on iBGP, or ignoring the stricter NO_EXPORT_SUBCONFED confederation behavior.",
+    "Inventing large well-known communities by copying standard numeric values.",
+    "Assuming a preserved tag proves route admission, full best path, export, installation or service.",
+    "Describing the worksheet's 32-entry limit as a BGP protocol limit."
+  ],
+  "interactive": "communities",
+  "lab": {
+    "objective": "Evaluate canonical standard and large sets against one declared exact local contract, then distinguish well-known restrictions from independent export gates.",
+    "requirements": "Browser-local tabletop exercise using supplied declarations only. Optional FRR stable 8.4 observations require a prepared authorized target and known peer, VRF and AFI/SAFI. Guided commands were not executed.",
+    "topology": [
+      "Supplied route → one local community set",
+      "One selected standard or large local contract",
+      "Target: iBGP, same-confederation eBGP or outside-confederation eBGP",
+      "Independent admission, export permission and session declarations"
+    ],
+    "steps": [
+      "Load exact-standard and exact-large. Record the exact selected tag, matching result and declared 100-to-200 contract action.",
+      "Load disabled-policy, nonmatching-standard, nonmatching-large, wrong-family and not-admitted. Explain why tag presence alone cannot apply the contract.",
+      "Compare duplicates with order-permuted. Record the same canonical standard set and unchanged matching result. Load numeric-boundaries only to decode component widths; 0:0 and maximum values are not recommended or allocated production policy labels. Distinguish valid syntax from assigned/authorized values and observe reserved-value guidance.",
+      "Compare noexport-ibgp, noexport-confed and noexport-external. Identify the confederation boundary rather than assuming all external peers have the same scope.",
+      "Load noadvertise, subconfed and subconfed-ibgp. Explain each stricter restriction in relation to the target. Then test export-denied and session-down independently.",
+      "Load stripped and identify the removed exact trigger. Enter a malformed tag or out-of-range component and observe that the result hides until input is valid. Use keyboard reset to restore the baseline.",
+      "On a prepared FRR 8.4 target only, run the four read-only guided commands in the confirmed context. Record actual accepted and advertised tags; label absent target evidence explicitly."
+    ],
+    "verification": "Report canonical sets, selected exact contract, match and application separately from target restriction and export/session declarations. Name the inputs behind each worksheet conclusion. Provide actual target output for any live-router claim; no eligibility, complete best path or traffic result is inferred here.",
+    "troubleshooting": "If a local action is missing, check exact family, normalized membership, policy enablement and admission. If export is blocked, identify the applicable well-known restriction and each independent gate. If a guided command fails, preserve the exact error and target version without inventing output.",
+    "challenge": "Can the same NO_EXPORT route pass a same-confederation eBGP declaration yet fail outside the confederation? What changes if NO_EXPORT_SUBCONFED is added? Why can a stripped ordinary trigger remove a local action without changing route ownership?",
+    "cleanup": "Reset affects only local worksheet controls. No router policy, BGP session, route, packet exchange or learner progress is changed. Guided commands are read-only.",
+    "topologyKind": "shared"
+  },
+  "quick": [
+    {
+      "testedConcept": "Local contract",
+      "question": "Does standard 65001:200 universally set LOCAL_PREF to 200?",
+      "answer": "No; an enabled documented local policy assigns the action.",
+      "explanation": "The numeric label does not define a universal preference action.",
+      "difficulty": "Beginner",
+      "type": "short-answer"
+    },
+    {
+      "testedConcept": "Component width",
+      "question": "Can ASN 4200000001 fit in the first component of standard ASN:value notation?",
+      "answer": "No; each standard component is unsigned 16-bit.",
+      "explanation": "Large communities provide three unsigned 32-bit components.",
+      "difficulty": "Intermediate",
+      "type": "short-answer"
+    },
+    {
+      "testedConcept": "Export boundary",
+      "question": "Which modeled well-known standard community blocks every other BGP speaker, including iBGP?",
+      "answer": "NO_ADVERTISE (65535:65282).",
+      "explanation": "NO_EXPORT instead names the outside-confederation boundary.",
+      "difficulty": "Intermediate",
+      "type": "short-answer"
+    }
+  ],
+  "exams": [
+    {
+      "testedConcept": "Exact local contract",
+      "question": "An admitted route has 65001:200 and the worksheet's standard contract is enabled. What does it declare?",
+      "answer": "LOCAL_PREF 200 under this local contract",
+      "explanation": "All three contract conditions hold: admission, enabled policy and exact canonical membership.",
+      "difficulty": "Beginner",
+      "type": "multiple-choice",
+      "options": [
+        "LOCAL_PREF 200 under this local contract",
+        "A universal BGP preference of 200",
+        "A guaranteed installed route",
+        "An observed packet path"
+      ]
+    },
+    {
+      "testedConcept": "Disabled policy",
+      "question": "The exact trigger is present but local policy is disabled. What preference does this worksheet declare?",
+      "answer": "The baseline 100",
+      "explanation": "An ordinary tag has no automatic local action when the declared contract is disabled.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "The baseline 100",
+        "200 because the number is encoded in the tag",
+        "Zero because the route is withdrawn",
+        "A full best-path winner"
+      ]
+    },
+    {
+      "testedConcept": "Standard width",
+      "question": "Which standard tag is outside this worksheet's valid 16-bit component range?",
+      "answer": "4200000001:200",
+      "explanation": "A standard first component cannot exceed 65535; a large global administrator has a different width.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "4200000001:200",
+        "65001:200",
+        "0:0",
+        "65535:65535"
+      ]
+    },
+    {
+      "testedConcept": "Large width",
+      "question": "What is the component range for a large community?",
+      "answer": "0 through 4294967295 for each of three components",
+      "explanation": "Each component is an unsigned 32-bit value; valid numeric syntax does not verify assignment.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "0 through 4294967295 for each of three components",
+        "0 through 65535 for each of two components",
+        "Any signed number",
+        "Only assigned ASN values for all fields"
+      ]
+    },
+    {
+      "testedConcept": "Set semantics",
+      "question": "How does repeating and reordering the same valid tags affect exact membership in this worksheet?",
+      "answer": "It does not change membership after canonical deduplication",
+      "explanation": "The worksheet treats the labels as a set rather than a sequence or score.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "It does not change membership after canonical deduplication",
+        "It doubles the preference action",
+        "The first label always wins",
+        "Duplicates cause an automatic export"
+      ]
+    },
+    {
+      "testedConcept": "NO_EXPORT boundary",
+      "question": "A route carries NO_EXPORT. Which modeled target is blocked by that restriction?",
+      "answer": "eBGP outside the confederation",
+      "explanation": "The restriction names the confederation boundary; a standalone AS is treated as its own boundary.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "eBGP outside the confederation",
+        "Every iBGP target",
+        "Only an unavailable session",
+        "No target"
+      ]
+    },
+    {
+      "testedConcept": "NO_ADVERTISE",
+      "question": "Which target can a route carrying NO_ADVERTISE pass under the modeled restriction?",
+      "answer": "None of the three other-speaker targets",
+      "explanation": "The restriction covers other BGP speakers, including iBGP.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "None of the three other-speaker targets",
+        "Every iBGP target",
+        "Every same-confederation eBGP target",
+        "Only an outside-confederation target"
+      ]
+    },
+    {
+      "testedConcept": "Confederation restriction",
+      "question": "NO_EXPORT_SUBCONFED is present and the target is eBGP inside the same confederation. What does the worksheet report?",
+      "answer": "That well-known restriction blocks the target",
+      "explanation": "It covers external peers including peers in other confederation member ASes.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "That well-known restriction blocks the target",
+        "The confederation target bypasses every restriction",
+        "The community becomes a large community",
+        "A packet test succeeded"
+      ]
+    },
+    {
+      "testedConcept": "Independent export gate",
+      "question": "The route is admitted, no modeled restriction applies and the session is declared ready, but exportPermit is false. What is the result?",
+      "answer": "Declared export gates do not permit advertisement",
+      "explanation": "An independent local export deny remains effective even when a tag restriction is absent.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "Declared export gates do not permit advertisement",
+        "The tag automatically overrides the deny",
+        "The router necessarily withdraws the route",
+        "The preference becomes a throughput metric"
+      ]
+    },
+    {
+      "testedConcept": "Missing tag and evidence",
+      "question": "The local triggering tag has been stripped. What can this worksheet conclude?",
+      "answer": "The exact local action does not apply; live forwarding remains unmeasured",
+      "explanation": "Missing membership removes this modeled action and establishes no installation or traffic outcome.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "The exact local action does not apply; live forwarding remains unmeasured",
+        "The route is necessarily rejected by every router",
+        "All well-known restrictions disappear from every network",
+        "The original application succeeded"
+      ]
+    }
+  ],
+  "glossary": {
+    "Standard community": "Four-octet BGP label commonly written using two unsigned 16-bit components.",
+    "Large community": "Twelve-octet BGP label with three unsigned 32-bit components.",
+    "Exact membership": "Presence of one canonical tag in the selected family set, independent of other labels.",
+    "Local contract": "An operator's documented mapping from a permitted exact label to a local policy action.",
+    "Confederation boundary": "Boundary relevant to NO_EXPORT; distinct from a member AS's eBGP boundary.",
+    "Declared export gates": "Supplied admission, permission, session and restriction inputs, without an observed UPDATE."
+  },
+  "prerequisites": [
+    "s3-g3-t0",
+    "s3-g3-t1",
+    "s3-g3-t2",
+    "s3-g3-t3",
+    "s3-g4-t0"
+  ],
+  "related": [
+    "s3-g4-t1",
+    "s3-g4-t2"
+  ],
+  "sources": [
+    {
+      "title": "RFC 1997: standard community attribute and well-known export boundaries",
+      "url": "https://www.rfc-editor.org/rfc/rfc1997",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "RFC 8092: large community structure and canonical set semantics",
+      "url": "https://www.rfc-editor.org/rfc/rfc8092",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "FRRouting stable 8.4: community policy and BGP show commands",
+      "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+      "checked": "2026-10-09"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "Ten scenarios preserve exact ordered gates and independent declared exchange outcome.",
+    "Independent return gate leaves admission intact; first failed gate stops trace; invalid case hides stale output and keyboard reset restores baseline.",
+    "Four widths and both themes avoid page overflow; named table supports keyboard scrolling."
+  ],
+  "errors": [],
+  "scope": "Standalone eBGP declared worksheet only; full original lesson remains pending. No live eBGP/forwarding/service observation."
+}

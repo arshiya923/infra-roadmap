@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-09",
+  "batch": "32",
+  "status": "accepted",
+  "scope": "Actual cached-image non-root container marker fault/recovery with network disabled, no host mounts, bounded resources and verified removal; actual Compose syntax validation only. Kubernetes selectors/readiness are a limited offline model. Snapshot restoration is an actual local JSON operation with explicit acknowledged loss. No cluster API, deployment, upgrade, RBAC or volume operations were executed.",
+  "primaryReview": "Reviewed all lessons and 39 questions, container command authority/cleanup and model exclusions. Inspected mobile dark evidence desk. An initial 320px check reported overflow; direct inspection measured 320px and the complete rerun passed with diagnostic geometry. The final regression will repeat all viewport checks. Actual container output, image ID, Compose validation, selector sets and acknowledged order-3 loss are recorded.",
+  "sources": [
+    "https://docs.docker.com/engine/security/",
+    "https://docs.docker.com/compose/how-tos/startup-order/",
+    "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/",
+    "https://kubernetes.io/docs/concepts/services-networking/service/",
+    "https://kubernetes.io/docs/concepts/storage/persistent-volumes/",
+    "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+    "https://kubernetes.io/docs/concepts/workloads/pods/probes/",
+    "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/",
+    "https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/"
+  ],
+  "hashes": {
+    "content/batch-32.js": "a0f902f84c37011caf82de2dbb91a301e1542530a2258f312636c90e927d350d",
+    "docs/browser-expansion-32.json": "83b8f8d6c1ec671679ba73e36365ed354230f3bde74350576ebdb8e906c3ac5f",
+    "docs/expansion-lab-32.json": "94c6c9f93a8001136e6845a57d89aba40443b9e4385acac77a703976f8370baa",
+    "scripts/expansion.js": "a1eaed8af5dd10c212f31c1d4c9182f01ed8ae73c7f94ad7c265547f2201b045"
+  },
+  "finalReverification": "docs/expansion-final-verification.json"
+}

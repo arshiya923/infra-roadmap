@@ -1,0 +1,364 @@
+{
+  "result": "PASS",
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant; no GapCode or delegated work",
+  "bundleSha256": "f7f381167e33c102447091a03263a51931af917698d67a7dd62f8d7e699f519f",
+  "implementationHashes": {
+    "scripts/device-mastery.js": "629f0d396020269e6327cb8687f3b27bdcb11012ea37d806b05bfd57ce8920c7",
+    "styles/device-mastery.css": "ee588895371b08a094bdb44ab264a381c59aed71482f314db8647bd25a43205e",
+    "labs/device-preflight.py": "5c7b116a100b8cf6325b1a4f5f72c05f02350dfc931a0b152289b510e554e60b"
+  },
+  "topics": [
+    {
+      "id": "device-0",
+      "sha256": "161120504fb716b361ad30077c6033493e5e1c78652ce2ea3b7caf781d591f9f",
+      "questions": {
+        "device-0-Q1": "f8c880a945173127dbe51cb06db85b5889fb93660fc153d402bf6bac13fda3ce",
+        "device-0-Q2": "e1a33ae94e51263a15fd0124574364814762cec84f52a829b74ca7cddd045a84",
+        "device-0-Q3": "f2267df01e78f9ba168eda8189920c84d540e399c2efdee17801cdabe27d042f",
+        "device-0-Q4": "437f1991a3108d8792af33918fb51bd412b6fc48625145264b717ebfaf3f393d",
+        "device-0-Q5": "0a261878dd6c98c30a82ea0d6adbb9b8c5bb3536e7b2080cc46d97153d4cde63",
+        "device-0-Q6": "eeaec00dcfb419e15d9226278a62ddd0bf45f8245d96b6f990a014aaac7a3055",
+        "device-0-Q7": "22198c2250071e7d881e028b511698e005b2c345f1a97c93463616d686dad9b8",
+        "device-0-Q8": "2ae6a1ae84fad9be53b360c8dc0821355617960608be9a5d81c7a85c8be0cd98",
+        "device-0-Q9": "dc372d871d9880ef1abc6ab7a24d808a7a2f928b22d2b301b3d8f17fcab60c9b",
+        "device-0-Q10": "3418a52c122799a4464ea1ad85bff17f090e14275540f4b8269cc373274ece4d",
+        "device-0-QC1": "74bed65d24c6a4e563968ba1c63a4e708f2ea555dbfad645ddb04e591674afff",
+        "device-0-QC2": "011537beb8115ee5071df63c9d55136b04823461e2b8d02db29be8359e448d43",
+        "device-0-QC3": "495919f5a14d5ac637585f96afa2d9c560a491bacbb3110482c6ff524ef8da66"
+      },
+      "note": "Management SVI is separated from transit routing; VLAN-only failure preserves management control."
+    },
+    {
+      "id": "device-1",
+      "sha256": "2d474dc25add071087cbf484f631370f200e2ab5bc9cfeb799325f60a5434cd4",
+      "questions": {
+        "device-1-Q1": "4f157aa087fc26b42eb752ff96fd1a3486f6c7387cb1991cee953039baab5819",
+        "device-1-Q2": "f39c834dfb69ca56b890017f29f3bac1bfabc85869ecfe2da01a1e715ebbf219",
+        "device-1-Q3": "83590408e877b9f83c0ebf2b0c252b139c0ecb76f07df65c9f32187e5be63499",
+        "device-1-Q4": "fee9bf67f68e25919aa37205c745c9ca8963ced2c1df5d5195038df56309bcf6",
+        "device-1-Q5": "a694cc6b06362b8716167be7406b854d2263c367d9115fb7961f217692824a1c",
+        "device-1-Q6": "3cf115291033d5aeb54e340f88db3b1a07c7d8ac9c52021ec6c16f05f3bba770",
+        "device-1-Q7": "d1436e4bc047fcab7a8075eef9fd6237ea0c20086fef8b4ce7711b69cddc493a",
+        "device-1-Q8": "dfe44a3a59bd4fe2c5340f6234f6db5371762175bfa8230b1172497fa9924d57",
+        "device-1-Q9": "5205cc8800f9c5a8374e98cf13a91cffda02866a5a23beb06b48f1a9f8d54ea2",
+        "device-1-Q10": "1b23836e5dec9918f7b3a0a59970985d35d8e94625b5f19bca133f55de3cd3ae",
+        "device-1-QC1": "15fc40753e8adcaa9a88d1612b87577ace39d3da12cf5f33e2197efb9f400912",
+        "device-1-QC2": "4b4fa06ea51a6cc11aac21437d682cfc4968fff1165ffc30a34b1c9294a481c3",
+        "device-1-QC3": "bf4070e1c6703b277ce33df40b1bcc3206f96974b13a6cc8cf0c5874e6f63f09"
+      },
+      "note": "Original and X-series scope is explicit; routing setting, SVI and SDM are distinct."
+    },
+    {
+      "id": "device-2",
+      "sha256": "5759e636db784cb668dd123046189169c0550fb7539cf3f6269624ea9c4789c0",
+      "questions": {
+        "device-2-Q1": "4b724cf1e17ed42aee292571b7e52edd8c51b76ea438d9f5435afa2c5d5d16b3",
+        "device-2-Q2": "1a2f0e14ca879a73c03e63fac430477aa71bd41d9e2168bdd1cf76eae3d1a977",
+        "device-2-Q3": "8091454071397850947c2a0c1d799dcf918e2e465844eb60724db8e6e3055acb",
+        "device-2-Q4": "6c5a1f9bc1969f1763325e2bb7f64973d73bddc3ee63938f4a22aa933d1cae69",
+        "device-2-Q5": "45ce7c1965b9984e04fbb0826b3cb89aedb854f1e336298648b629b2339e45d2",
+        "device-2-Q6": "490fd21473381533ef13b064df34d066608cb7e936aac85b8bb2d8e8b9cd0c2f",
+        "device-2-Q7": "31a95898e616d0da2181d7f11ede713970760095b1a5833c3899f2e11656cf86",
+        "device-2-Q8": "e54af5f8dbd5930ec0ad95fe44b574dee9e426df30b69d53c912528dfef7d403",
+        "device-2-Q9": "23f3948ee3e5a7463fafe0a6d278a71f70a5207c1ff70b1db6e22c67e012b256",
+        "device-2-Q10": "224c62e4a0da419d2fa3acc93a242ea1586d689f80db5cebdc074a3d1b57c19d",
+        "device-2-QC1": "288c28f241a0a4a7ade9faf73103be16bd781785aac8fe71812c94207c612bf2",
+        "device-2-QC2": "d036affabac6baa35a12090bb9b5c4505c107fcf9b2b89c336da78d7594729f6",
+        "device-2-QC3": "58f8cc381603f995e7f868d9bccfbe80608c61ae14c491925238cd7420a09afc"
+      },
+      "note": "PID/software/accessory compatibility precedes member readiness; no universal stack promise."
+    },
+    {
+      "id": "device-3",
+      "sha256": "09969d97a121c9c4e102075383358f29b0198774373d637ce165389e580193e9",
+      "questions": {
+        "device-3-Q1": "0f5434797b5c236155afbed184ef1831dd2ab57ccb36b9b2fa11e7a4df753ab7",
+        "device-3-Q2": "0534bc3f338c45906674ba4cc951062671e4382e85e871feeb085f79e619f03e",
+        "device-3-Q3": "b276b1b362c8a32b36a0abea37bb05cb8260e8907d470c304e185cb1924d9ae3",
+        "device-3-Q4": "1749c64d670732ffdf7e52cc6d40a8e0ff16d74a3b9bd9cf1c8f312e4612b47c",
+        "device-3-Q5": "8a556914145decc1c8d9537c3c13d52895b744e54763b962e4c3691861c175bf",
+        "device-3-Q6": "61bfb8dfdf59fb696fc51a919d5bedc395a4176cdb66f56c4d4f2cafcec5ef8a",
+        "device-3-Q7": "ef0d38892431e46e747a6eb74e03ed2cb6f31ef243dfa992151daafbc5d53fea",
+        "device-3-Q8": "17488da38d899e8c958dc60775ad4365a207a2d8c9a7adad6a1ef97c5f22d964",
+        "device-3-Q9": "79c39f5465aac271434e7df058605a784bc659c0c337f5901aea636986a4ff87",
+        "device-3-Q10": "c76c200caf9deaa6b9c48a94a06c0ddac179a389e8e5404ae0edbcb6fc31f6f5",
+        "device-3-QC1": "26f0c280cdf12f1d66a8e601c8ee3ce3d21a22b9b2688cfd01d3e1b10c6b996b",
+        "device-3-QC2": "1556fdf821412588d5f53614e5c13a7fbcff5f67a57fd2166dd1c56f50288a13",
+        "device-3-QC3": "c63b6eb610beea0bc35d37b7a24967e998cfd8c844c9908e6290567100728e4d"
+      },
+      "note": "90 W versus 80 W is supplied arithmetic; data stack and shared power remain separate."
+    },
+    {
+      "id": "device-4",
+      "sha256": "8570c6366dfe1c496d05e84dd67595437e255d773c0c43e9a9f0bdce72a0a6a5",
+      "questions": {
+        "device-4-Q1": "4c92b294280f1fa91b933a04c76876a8f268c23ed6673342b7f500abcf3b41fc",
+        "device-4-Q2": "06a4ae35a18799752afcb63857cc93df26d621e0c8786d787f104bdc5e52e3f7",
+        "device-4-Q3": "1f7c7f481a0f6dd26574b65c339b07997d80db1bd59049af9873f3e39e276bdd",
+        "device-4-Q4": "6711d8943d6203fcd1163da3f32f5c441cc4c8510eae99f07acfbc0327b9f422",
+        "device-4-Q5": "bbfe1e9973576ff624c3cf8c9cc335b1f329301e28bf1b20f7c854f3094c18fa",
+        "device-4-Q6": "87775ff63d528fa00b3975cae410b81c947256cdf113a797b2048e61d59795c3",
+        "device-4-Q7": "1dd9f244dc8730f57b2f7bc461da08a1d3ffae752963b4876cc3216cec2ce9a1",
+        "device-4-Q8": "0cad9f1e437b3db67c55afc086af24607b7ace597305edd9dca6413b64ad33fd",
+        "device-4-Q9": "f85a7da187fd798f43fd227bce5e4ed1e4866c7dafda3d56fe981c178461a594",
+        "device-4-Q10": "a6cbb07ed5e2fdb7c8164cb5485cda0c5753e37ea69e43fe28fe09cd3ec3cb33",
+        "device-4-QC1": "a803dcafda29f40d2c5de61758508da7aa1e73d9a300c7c0defc5a63a6ac1e5c",
+        "device-4-QC2": "77c47fec6c647f1845021c1fec1d4392b8652df760bcbd578a737b0babc51b39",
+        "device-4-QC3": "5fae84fd2ec1798971c50006411242022b9d69b4a3b8331bc93d8d3b9c54f2a8"
+      },
+      "note": "Historical StackWise Virtual scope; independent detection and bounded single-fault drill."
+    },
+    {
+      "id": "device-5",
+      "sha256": "6ade5e72c2cb0e58ff92f10d839239f38bec69eafd71c01dc2ee5a9e51c5ef1c",
+      "questions": {
+        "device-5-Q1": "2e96ccfc80c9a247fd61fa15b1a180af61e8f688515e75ce9a3331edfbd564df",
+        "device-5-Q2": "8e11f55ccb1dd85ee52bf3c1f01deaf0f1406a31dc22b49059c839c503485a81",
+        "device-5-Q3": "181c2c502f991531d3dc1488a11c121ca575aef56376149d32bd5f05789d17fd",
+        "device-5-Q4": "87df8c9563403d4ec5f63dda3ac4cc82e255f5f1b042cdc9af6a133cf5c5cd48",
+        "device-5-Q5": "d9f0c38cd7c375865f7bc63a568ef5358511c5ee2ee45255a45dc09c32622d78",
+        "device-5-Q6": "a3709f0e129fbcb4d3e3530d333cccc81414719db110c4d25c51e36339e34fdc",
+        "device-5-Q7": "7535baa2424f64308a43eb87c2a75782e334ec1f58fa73781460fa296b975606",
+        "device-5-Q8": "1d0910e661cd15bc979e28819dafd883b384654365631b52555b214810b1c479",
+        "device-5-Q9": "c27cf43361be6932d8f4e60b0434238f5bb64ecfc763744cc4172bf3500d7a74",
+        "device-5-Q10": "d3e1a84b82ad4d9fd9f638962eb81ea776dd9539bc18813503b0b4a0a2a99de4",
+        "device-5-QC1": "de2ea7949b71a44575c67ec2e5bd9a47ac7029538c482f0eb4f57a88fd29de23",
+        "device-5-QC2": "d287904544ad5c17623bf119b8620b4b678a27f6329471518cf2e9b1f4d8fb52",
+        "device-5-QC3": "c96d12f9764ac0585220566354c02b1c1e1c5e83e4a814a854cd7f0957233d64"
+      },
+      "note": "Management CPU is not QFP headroom; time-aligned counters and service profile are required."
+    },
+    {
+      "id": "device-6",
+      "sha256": "6bce6d1c79e8120af7c9504b01e7e05967314270b75dce80c51d2d7b083bcf41",
+      "questions": {
+        "device-6-Q1": "bb60d87022be24de0632765e13c0517ea15b19252e730ae19e655dc5499ff195",
+        "device-6-Q2": "89b31af9148f124e3d3bac04591a5cbae0e6ac3ff1426b085d8c3bb17bd52569",
+        "device-6-Q3": "e4b0ef9e191401bb99a78b0b6fa57362e9b68a658b71eb6b21f64ca2522361c9",
+        "device-6-Q4": "0c8a4b09813f8e5e40c7848208c4399e32f752c22e64359c8eb215f45bcad9d3",
+        "device-6-Q5": "6770b075c90f51083b06891093f633eabb86ae5ebe8b37020bc43f667e15b2fa",
+        "device-6-Q6": "8b0be832b4ed8e97bfae20c8e97de31cc598489a4d3db79256521231e6e7c991",
+        "device-6-Q7": "214ed00b2621594394db93b61121c503451cdceb32fe0f101e7cb5147eb49ddd",
+        "device-6-Q8": "7b2ce5f2b2371cdb7b4bc3bb060f28f87262cf74bf55a27705e1c2838d3365ea",
+        "device-6-Q9": "58ec112273323c148c31efc364dcace443f7932d43f6fe53ee605338ae35bf1d",
+        "device-6-Q10": "cdd4f062aaae8f794ab6087f4a17836a9fa6eaee6fe392b41b64373362f995a9",
+        "device-6-QC1": "d5af801c4bddf0ee96289636fa8c1018d830895a4b445ba10727aa075c12e88c",
+        "device-6-QC2": "01ad7e396582a0bbd70887da44dd15d8335f437162059b549c5a1b5d44ded3aa",
+        "device-6-QC3": "c53249cbf5acb65d1733988ea9272e78c79afe531704035ea0e3d009e8935b58"
+      },
+      "note": "ASR IOS XE versus IOS XR is explicitly separated; mismatched runbook rejected before writes."
+    },
+    {
+      "id": "device-7",
+      "sha256": "cb58a8b3c29a4cd1aeaab14c112b2f0a854e949dcb5eb889d7ed40fb5a602ad1",
+      "questions": {
+        "device-7-Q1": "9e1997eda482dc09b8fb3eab8f33f8ff93a4980de8d9cb4cf36270861ca424dd",
+        "device-7-Q2": "4374601b8e928547b5b48cae2265a82dbd30bb9e510dbf9e7758c15b753a915f",
+        "device-7-Q3": "4416e257da65cb8870ae55d78366aa2d5053771ad34f934d455f1b2741a213d5",
+        "device-7-Q4": "5bca4beecc35b9dcd6d5d7bf7be9481dcbf1a0f50593512857c380c5c2305749",
+        "device-7-Q5": "5675a903e3d2d326b7af69e5c12ad0ccadd1259af3e287eccf7a6c8fa1316d47",
+        "device-7-Q6": "f8904edeb6a21a94599eee0276563d576cc981e6e04a5c2ab0bffd7f086c3135",
+        "device-7-Q7": "df8b220eaef3e3d65bd2e2fdfb1c8efb372a4bd19a5b191f982013bcec5a3732",
+        "device-7-Q8": "2be371e42b7dd99ff124995d3214bcde56e365b8e9670d28c3e5fca1c7ba626a",
+        "device-7-Q9": "130f21e0a02aa0291a6e0417cb27b4cf420e728d19c52f0733a75a8fec058a19",
+        "device-7-Q10": "e6a0f6d61bbe529a7cd9c828757ec97e8f6d0139a7cce5f1aa47a3ca12ddf237",
+        "device-7-QC1": "1c9e8d3ec6c724aafefc8a7da0526429401714fa2ff849f2c3aab4eb35e89892",
+        "device-7-QC2": "4ec439acc181134e3d9c6b5e20246c4675971caad7641656d0e49030f6a070e7",
+        "device-7-QC3": "b0aa3107f22f300d31640e7be31cc419bd7a1f874836f0e04a2796db8f20fb44"
+      },
+      "note": "NAT is not permission; packet-tracer is synthetic; denied-flow control retained."
+    },
+    {
+      "id": "device-8",
+      "sha256": "fdc84744c55ba0522ef4c76f8c21db5347f684329db9b7fa69a933c8648fde85",
+      "questions": {
+        "device-8-Q1": "077fe4f53526371fd2906c5c442ec22452aec082bc807b5fe93544a0fe8370aa",
+        "device-8-Q2": "4d1e975dedd699925da4ab6962c3fce35388f5ba30bb23cc14dfcfceea8d20ba",
+        "device-8-Q3": "d3e146b61576a0c9d89bb9eff6cfecaeceb301bee665ae55661354fb9f297d0d",
+        "device-8-Q4": "12ee96bf3f15ef26457febe83647ad05da82e216f584bee0282e736347b998b8",
+        "device-8-Q5": "39a6518d5e2f19c3562bc881a66d4d3a6632f67b31b733331918016f0bb5975f",
+        "device-8-Q6": "06c512dd6119de74411a4e99dbc162e885c8f7ca44f7477778c0648c91797a8d",
+        "device-8-Q7": "2d81896cc3083c443f027604c8b056ada27e5f1e793e80081db502e9cf368a52",
+        "device-8-Q8": "c6f10b9861c811c3fc5fb1a55fc3efdddc1f9d291975939ac7a4a1fcde817d2b",
+        "device-8-Q9": "16cc2e4ea76d2a285a89458b4171a6825600b15d3363f906576c8aa040e312f6",
+        "device-8-Q10": "dc18e5899556478712cb5cada03af52c6772befe12beb3c6e466a9c642ce1f1c",
+        "device-8-QC1": "c24d74d7fc53c0e52a8c51efcd4d56cc5d18be37d43ba9fe07e808e3ac570a4d",
+        "device-8-QC2": "0e397c61b8111cde00e04b94b46390ce63bb47793563043c6f6a904782a3a6a5",
+        "device-8-QC3": "70c740408b6acc26625ad6347c4914fb5714800645e0d0c06f90f9db22b937fa"
+      },
+      "note": "Saved policy, deployment revision and fresh traffic are separate stages."
+    },
+    {
+      "id": "device-9",
+      "sha256": "221e08630d13039a064856479eaf74595122345a44cc026341b9d2673e3381f9",
+      "questions": {
+        "device-9-Q1": "ef6ebf5b71de1ea59bbf4803645328b60ea18758540e47cbad82cf7624a4e0ec",
+        "device-9-Q2": "e7a51a7356e57d370e4046b097dc75e63821197381afe7c3f89552eefb260ef0",
+        "device-9-Q3": "222dca0464ddaef545d5f822d376109960d893cc6d352f8e249979a029b4bf1b",
+        "device-9-Q4": "c7bb67d29d8b3c5d694c33ac6b7259f680bc8741b52e38fba6e16df63f95e3f5",
+        "device-9-Q5": "d832cb8a6634141affe59663713b1bcd739e6704453a13be6d27cbb59b61d08d",
+        "device-9-Q6": "298f01cb488b791914d2b999776e91f16626557955bd69186a78585c5fae619c",
+        "device-9-Q7": "77c8c7c98983045e0193c3b81d748b20aec07b951c1b7e821f84b118b70027ce",
+        "device-9-Q8": "af5350d283c3b7c9b877fe3b65b82123c4a89625ec28df8528e88d509badb39d",
+        "device-9-Q9": "9781d7a5f0d9eebfce4f0111325b8010c11b22b3bb9d90751bdf91bf934138f1",
+        "device-9-Q10": "bf5e7bb90256a2093ee99344c01c3b981e2106e7777d660583153288a1d31438",
+        "device-9-QC1": "8e1ae6561146cb9aa8943903437a0802ebb7265df9e26b98138c4d27785af1a7",
+        "device-9-QC2": "964f9a4e249c8f64c761c56bfdd951ba02a55d06b59abcfdbb6e1907a01aedf9",
+        "device-9-QC3": "e8ea14c24ddbb115243d59f02ab53b14b1cd5379752be4be4e2289b2c6398f21"
+      },
+      "note": "Autonomous/lightweight ownership and exact compatibility are distinguished."
+    },
+    {
+      "id": "device-10",
+      "sha256": "d02a5144711ea62e4aa6ddfd3c5a4c48955f660b98d83da0363094f19f52f611",
+      "questions": {
+        "device-10-Q1": "9a6ece442bf4e51ebced62e14c4657c609b24d40993e1e795878edc532732f0d",
+        "device-10-Q2": "993d0f6372d2bdad7ba30eba7ffe030658453e38afd08b3fe4bd9b7974e4eafc",
+        "device-10-Q3": "469954d5e693af54cac1db76b4ede7221f0960ab7de16eae0d8545304d189b7d",
+        "device-10-Q4": "71494bdb7327ab1c0884e7fda1aa8f4f67108b24c42646a498cca18e877ed110",
+        "device-10-Q5": "e73138cfcb151e55bacc7f4ee5c518bef9aeba33d89ab92ddcaacd7e9534fb53",
+        "device-10-Q6": "ed8e3bd27559e65599a8a2323dce7da1a75314c2e14c13d06898f664fc9a3d76",
+        "device-10-Q7": "b5b07c187c34293fca642d4729a6e71c735f10f08ac044809cadd980a09ef21a",
+        "device-10-Q8": "61fb20c6b4515c8c8aeef39a91f588284b14c62ae90c5ad882f6fb817aefb6fc",
+        "device-10-Q9": "d54b5834e3b415e09e2a2023f792ea1907f1f5809bf12f9568722abd5ab6e09a",
+        "device-10-Q10": "c86a10586b14d0931e5338f65e97733d4676418287d08c59e0d357a32b2188b8",
+        "device-10-QC1": "cb5cbc6c8378128121a3568c818ff595945aef00d228413ee918cd81e31e047b",
+        "device-10-QC2": "c04d3bb429c84378911acfc72b16387cc527fb84e4f71633d980515802b2bfba",
+        "device-10-QC3": "8ebb731e8d3f2e3b191d46e005e503910073f02e019e0465cabd5048f2059e93"
+      },
+      "note": "Policy/RF/site tags are distinct; missing WLAN mapping is a policy-tag case."
+    },
+    {
+      "id": "device-11",
+      "sha256": "7dfb34db5f178821abb7dca97c37f0a144a79918841b66475ac4c280ef37373e",
+      "questions": {
+        "device-11-Q1": "b2985053ba1a5071828c352a0c2ea1b8507abd14fa293aeff1d22f1e99562027",
+        "device-11-Q2": "d924136777f7f95bb984270ed7337da6f458e7a3bfba256aed603b4e384b54d6",
+        "device-11-Q3": "e5e3821ec533134e3bdc6b07d35d622d904eb180fe964f5277e39e34bef50adf",
+        "device-11-Q4": "ad7cf7f5274efe9b2dbe37e0c15d90f9312c1ea97e159db6dd394ed8f5cf0e66",
+        "device-11-Q5": "12e6739184dfb27b12e12de61d980786e534340e796417dfb3334d5b3c081cc1",
+        "device-11-Q6": "e85f83860cde37049018f2d9efce7b207dbfc10e585349c89dbf91ed9d3590be",
+        "device-11-Q7": "5a42e6231356325da4942ecf1fb8d95980ba0e5af1da7e278a8b55dbde069406",
+        "device-11-Q8": "6be1f7dc1ec70590f443a3daf3b3bdf58074e0dc66331ab9981871b10e4268d7",
+        "device-11-Q9": "6e0a13de9eb1694721aa00f25b558c5348cab62b8c309bdd9fe7963e98f7d949",
+        "device-11-Q10": "86ecfb851a9d42c27557cfeecfd7f0cf69099d9b5ae49383a18652598beb0ad5",
+        "device-11-QC1": "d6aef17e25fc681e00c97d96ae23084959d011d81b635a7d8e40ff6e359253ca",
+        "device-11-QC2": "a04ebefe8dfb164211d626bcb56d42671e2ebac68a9bf91375b91106f1b02ddf",
+        "device-11-QC3": "c08a9f80f147a2e578102c33857509bedf14a33f8f3203c0b801607572893b98"
+      },
+      "note": "Central switching is declared before locating the client VLAN fault."
+    },
+    {
+      "id": "device-12",
+      "sha256": "04d893072563c510ea1ba985692f46ce72f892e8f18acf594e1f7f536e5a7b0f",
+      "questions": {
+        "device-12-Q1": "aafd14576e2de3db0f4d1c3cd008a4f3f530837010a2c923bd5233875c6b3c41",
+        "device-12-Q2": "1536acfceb8f8560c851450c333b59f162de0836d1a409ef18f2dcd8ca0df363",
+        "device-12-Q3": "66d7876089be8bbb1ed033b436d92e537c51e229a04c511cc16fd5a37f95bcd7",
+        "device-12-Q4": "4847b01e41b4391447ed60e6a9b660dceafd606a1321bed45caa20da823870b3",
+        "device-12-Q5": "7c7a88764a36a609c574362b5828181630cc4f4062c93ae7cc5facf5634c9a40",
+        "device-12-Q6": "2044843491ec12904d45a60a84ff078929e091b4a3bdb18dba9afa33de8d3f02",
+        "device-12-Q7": "f78dfbad4a0fa953550dffa1f992cf64053b09dd3e9fbcfd860c600355f38063",
+        "device-12-Q8": "95a8cb04255ede88e7d2e3c247b3ccd7085358c0908944d3d4140a552d33b74c",
+        "device-12-Q9": "f07b4db999f7ef0015c8c335c1b04aabce7f32883c8ece6e3920e2dfaa4f17f4",
+        "device-12-Q10": "929a58224b4bbc1d58005bdf48cdc01786d238a10f17bbf4a913ef443108a233",
+        "device-12-QC1": "fed17bef7cd0c308eada7d6e3ede8ecf020ecc892503d2a0eade7e7e541dc06b",
+        "device-12-QC2": "5d04db97ad0c284e690cc48e4632507bbe47d24dbc50787c8d8b36b8d7bb45af",
+        "device-12-QC3": "1b0ecdd1a8b5336edf432f945bce93e638e8999712278f68b913da06930c1548"
+      },
+      "note": "Breakout is port-specific; planned conversion is disruptive and guided."
+    },
+    {
+      "id": "device-13",
+      "sha256": "1bcd322597459cd9eaebdeee593070e2d24a50105785b669fe04eeea0f7181eb",
+      "questions": {
+        "device-13-Q1": "efd624e253907059c312d9f64886bd7618ead692580e5be7ba94403f64a5d561",
+        "device-13-Q2": "9a2619ee7813d8f626065b66d35e9af04fe55c3d75b48ddc70ff76b957e5f522",
+        "device-13-Q3": "0d02e8ba41d1b4ca7b589c913a62fa3cd6a6bef25a7c3bed6f0790e233f47e64",
+        "device-13-Q4": "91e5e847a500bbd58b53f12d9aafd1f9e97a4b86acaa9c982c7192b4946df034",
+        "device-13-Q5": "e5cb6fb909f8bf8d84561795bf030e614ddba474eec3c3144bf0f4395ef28a65",
+        "device-13-Q6": "bc5f11c5a2a9e0b13701a471049e5312df1319e4c2b78aff8924d3b482c9b5c4",
+        "device-13-Q7": "fd20a8395efc3c0eb062d4e71d307f51702be0e65c0ddd0dd769543bfd6fc0bd",
+        "device-13-Q8": "a514e428edb718fd392084bff4d4358c35a23fbe5a0f25c92411d6b1f59a43f1",
+        "device-13-Q9": "d5378921d0c93c257ab89fdcb9e6c989eb86871dcca7c7e0dade90f2c2808a58",
+        "device-13-Q10": "323596d9a1568eb4d7e38a0f71e802817f59033ae255c37c95d9079f132b67c0",
+        "device-13-QC1": "4b098200e83043b461f5357a66ce503bbc1d7109a15bba28764252e23bbbaa6f",
+        "device-13-QC2": "1850087d814775fa1dcccd5ec9effd1c905978d0dfacfd2941abbf4c829ed165",
+        "device-13-QC3": "75ebdb91b3bc43151a7a99ac348e0413f3c3bd58f3455f6857cf45cda51f653c"
+      },
+      "note": "FEX parent, vFC login and storage I/O are different boundaries."
+    },
+    {
+      "id": "device-14",
+      "sha256": "e7290a2c187f7d6e6f083d6b713d7efc5294a317b4c322dc0dd01c9085bf06f7",
+      "questions": {
+        "device-14-Q1": "f91d056c8b4cba8d4e00d06a9e6d73df3819fe1d7c331a5e51e1fa5841a6c2ad",
+        "device-14-Q2": "93ffc76c2a6aaca715e5f135429b3d88fa17ad1c10fab7d3523191114aac9beb",
+        "device-14-Q3": "29a499941d49cd8946b779f3535282572d12925b06d5d38e060dee8a5de4a06c",
+        "device-14-Q4": "8176aaed6b0d9b6caa61c0cdd61696c73fa1420d00f3e524f9c54379c6552f55",
+        "device-14-Q5": "a48a5c74b8f13b67805868b2ca6393fb229f9e2039e00bc7b921e592827f181c",
+        "device-14-Q6": "8be627ef81b9f588966be3daf180b0800d240a2340cbec1addd785965841a500",
+        "device-14-Q7": "fc66bd91c60cd908b86f4ed7feffe5b0dcff2823e306122e203a5bebc8d6ca6f",
+        "device-14-Q8": "faa037ed1ca550a246a3a6fa8043705a82d320ef27f3fbbd750f30d890252da7",
+        "device-14-Q9": "99d3d92352c208ff2388e7ed4a5008ac94d8d60ecf76e9085fb65b9a315cc17e",
+        "device-14-Q10": "ff0e6326e6af945ad614ec1d17fc63fef2d35601c041851f73f060b3369db56d",
+        "device-14-QC1": "d675d13c273fe4861c8e906d09e20d9f7d646d4697c81ccd74de26120a8573e6",
+        "device-14-QC2": "6e62225c7b5ad11a33c1e4a29769634a30839553b4d442f26e7cd48c4cc5d962",
+        "device-14-QC3": "7b27a92751ff097ddb6b7f27c7f6ea99b8879a43565780a7f86b12469e3cdd99"
+      },
+      "note": "VDC resource ownership does not imply physical fault independence."
+    },
+    {
+      "id": "device-15",
+      "sha256": "c9342a6cdd326db1c8a49cae9a343a72e4b40e4a927a43f1b91a73c68fec1cb1",
+      "questions": {
+        "device-15-Q1": "6ca503da3341bdcee8edec286925c30d2cacf778be04f8652443a636f27157d0",
+        "device-15-Q2": "fb7ca8ec3eda283454ad8dcddfe1a6b064c7c2a0a8f1fc2133141a0cc983921c",
+        "device-15-Q3": "c5b673cd32d13e49d92a98560bd68912ba438716847e237ecf8b37434495154c",
+        "device-15-Q4": "568becf442dbd443322c7458181dfab64c01ede0ec02448b96d6f7ff0418ab2f",
+        "device-15-Q5": "6358abcafc7de774f0143f5916770a310dfdd7a08350e95d71e04e91d9aa9e2b",
+        "device-15-Q6": "9667291a2baccdc5a64b125555c0bb066b0919e39a5fe3f9a9a6b1d721f8b4c5",
+        "device-15-Q7": "df95a43a938b7e802c17d9a97e1d6f1f71b4aafd3e030a7b271eb9ac27eb178e",
+        "device-15-Q8": "6e9609a696105128fa761246405f87af4c6eaf35afb227e8b0d6cf4bf4e0fbfd",
+        "device-15-Q9": "b8632b3a575bfa2aeee8ef205bbb7167b6c985cfe62071af1218b62e61979d2e",
+        "device-15-Q10": "78f56c940a8a79d5dd0c7a0c12832e2e4f31a4cd61dc0302249d388a818eb739",
+        "device-15-QC1": "9ff2c9deb8921b687c7601229ad1c6d897161bae490ab25164b5070de2b01bf9",
+        "device-15-QC2": "22cfe66dd71bd4d641860e5de8eb6b8a1fe382aa30ccf3e24fb7471632ff8498",
+        "device-15-QC3": "df75001edccacdcd02a740103e41d7ffdd7833f95a117694bbd6452563e6a922"
+      },
+      "note": "NX-OS/ACI authority is explicit; endpoint discovery does not grant inter-EPG permission."
+    },
+    {
+      "id": "device-16",
+      "sha256": "cea54fcbb44813cd46f2a937b61720674edc77fd0d185a5edc8bc7cae21366cd",
+      "questions": {
+        "device-16-Q1": "ebc2b4bdf1fb8e7bc2ba477c1b4a56133a71167e7ca0db2c84e14b8f4112c801",
+        "device-16-Q2": "ea08b4e4ecc31766140bc4c0e2c7bac1fdbec621efee3e14878717e813c15dd1",
+        "device-16-Q3": "b75eabe5e8a1d2d67856eb0d80b0c5a65077b744a26ee18dcba1b2d07fc00892",
+        "device-16-Q4": "370611bd5edb59c477151f02543ad48a5b2a6a6a7b94f9def54de3359bfcab17",
+        "device-16-Q5": "eae8a980aa755726ae906d09ec2bf19efc5ddee05ce4bf809006b4f5f00f766f",
+        "device-16-Q6": "ba049cf360de869799e09d21bf4cb555ceeaedf04be889cc0ded8272386a1c02",
+        "device-16-Q7": "04e3e67d44acab5571414559d888f5577992ed1b751fcd4d65f531c3919eaf3f",
+        "device-16-Q8": "c59d3c1fbc21bd64d0488529cb3801ef5122d6e9b62896b18bef9eacbde794e4",
+        "device-16-Q9": "5b1241b5db08d400b202e983dca07d18996e89c3a9947b7194c0ad9b301221ce",
+        "device-16-Q10": "632016faae29fac64ea27628e524de5040cffa60a28f066f24646daf9edea8d4",
+        "device-16-QC1": "481de8fd53aa7504f8e09f3f4e1868dee557b2f90ef39ab310cd34363a3257fa",
+        "device-16-QC2": "6c01a1a099522a222e238ba82c71d9ff46033755a963679c661238e984f21572",
+        "device-16-QC3": "602804c7e5aa5f40c7c83a760eacceebc88846259998b56afa7d45abcb180d7a"
+      },
+      "note": "Full versus active zoneset, masking and independent fabrics are distinct."
+    }
+  ],
+  "visualSheets": [
+    "docs/screenshots/devices/review-1.jpg",
+    "docs/screenshots/devices/review-2.jpg",
+    "docs/screenshots/devices/review-3.jpg",
+    "docs/screenshots/devices/review-4.jpg",
+    "docs/screenshots/devices/review-5.jpg",
+    "docs/screenshots/devices/review-6.jpg"
+  ],
+  "visualReview": "All six final contact sheets inspected: 17 desktop worksheets, 17 mobile worksheets and 17 mechanism diagrams. First-pass control alignment and generic labels were corrected; final labels, wrapping and controls were reviewed. Full-size desktop and 320px mobile device-0 renders also inspected.",
+  "assessmentReview": "170 original exams and 51 quick checks reviewed for lesson alignment, explicit self-assessment and model answers; all feedback paths exercised by browser tests.",
+  "limits": "Authored cases and declared predicates; no Cisco target execution or physical measurements."
+}

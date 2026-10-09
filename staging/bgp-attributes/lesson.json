@@ -1,0 +1,409 @@
+{
+  "id": "s3-g3-t3",
+  "batch": "09",
+  "title": "BGP attributes",
+  "subtitle": "Read each attribute's class, FLAGS byte and propagation scope before interpreting policy.",
+  "level": "Intermediate → Advanced",
+  "minutes": 70,
+  "interactive": "bgp-attributes",
+  "definition": "BGP path attributes describe a route's origin, AS-level path, next-hop context and policy information. Their wire type and FLAGS octet answer different questions: the type identifies the defined attribute, while flags identify broad handling and length-field properties. A local routing display can also contain implementation values such as Weight that are not wire attributes. This lesson classifies attributes and decodes one supplied byte; it does not rank complete candidate paths or parse UPDATE messages.",
+  "purpose": "Use attribute literacy to distinguish what a peer actually advertised, what local policy changed and what a router merely displays locally. A route can carry sensible labels while its next hop remains unresolved or its export policy rejects it. Accurate classification helps inspect such evidence without assuming every familiar preference appears on the wire or every transitive attribute is sent unchanged to every peer. The following policy topics apply these ideas to prefix lists, route maps, communities and redistribution.",
+  "mental": "Read a route card's label and handling instructions separately. The label says ORIGIN, MED or COMMUNITY; the handling byte says well-known or optional, optional transitive or nontransitive, partial information and length-field width. Mandatory versus discretionary is written in the attribute specification, not encoded as another FLAGS bit. Keep the recipient's policy and forwarding evidence on separate cards. This analogy does not validate attribute contents, legal UPDATE structure or actual delivery.",
+  "components": [
+    "Well-known mandatory: type 1 ORIGIN, type 2 AS_PATH and type 3 NEXT_HOP in the scoped base IPv4-unicast model. ORIGIN's IGP/EGP/INCOMPLETE values classify entry into BGP, not the protocol currently supplying an update. Multiprotocol NLRI uses additional attributes and changes NEXT_HOP presence context; this page does not generalize the base list to every family.",
+    "Well-known discretionary: type 5 LOCAL_PREF and type 6 ATOMIC_AGGREGATE. All well-known attributes must be recognized, but discretion/presence follows each specification. LOCAL_PREF expresses internal preference, is required in applicable internal reachability updates and is ordinarily not advertised to external peers. Its discretionary class does not mean it may be omitted in every context. ATOMIC_AGGREGATE signals aggregation context rather than identifying every contributing AS.",
+    "Optional nontransitive: type 4 MULTI_EXIT_DISC (MED), type 9 ORIGINATOR_ID and type 10 CLUSTER_LIST. MED conveys a neighboring-AS exit hint with specific comparison and propagation scope. The latter two support route-reflection loop protection, as introduced in iBGP; this byte worksheet does not execute that loop history.",
+    "Optional transitive: type 7 AGGREGATOR, type 8 COMMUNITIES and type 32 LARGE_COMMUNITIES. AGGREGATOR identifies aggregation origin context. Standard community values occupy four octets; large community values occupy twelve and display as three unsigned decimal fields. Their operational labels need a policy agreement; this classification does not match or rewrite them.",
+    "FLAGS octet: 0x80 Optional, 0x40 Transitive, 0x20 Partial and 0x10 Extended Length. A well-known attribute requires Transitive set, and Partial must be zero for well-known or optional nontransitive attributes. The low four bits must be zero when sent and must be ignored when received; display a nonzero value without inventing a receive-side reset.",
+    "Local display values: Weight is a local implementation preference, not a BGP path attribute transmitted in an UPDATE. Administrative distance, system-route markers and forwarding state also answer separate questions. A peer cannot receive a Weight wire type merely because the local CLI has a Weight column."
+  ],
+  "mechanism": [
+    "Scope the observer, peer, address family, table/VRF and exact prefix. Preserve whether a record is a BGP route display, configuration, peer advertisement or decoded capture; these sources are not interchangeable. The model supplies one declared type and numeric FLAGS value rather than extracting them from a packet.",
+    "Read the attribute type and its defined classification. Compare ORIGIN with LOCAL_PREF: both normally have Optional zero and Transitive one, yet one is mandatory and the other discretionary. There is no flag bit that determines the distinction. Required presence and peer propagation must be checked against the actual attribute and family rules.",
+    "Decompose the FLAGS byte with masks. Decimal 208 is hexadecimal 0xD0 and binary 11010000: Optional and Transitive are one, Partial is zero, Extended Length is one and reserved bits are zero. The length field therefore occupies two octets. This says nothing about the actual attribute value length or negotiated maximum BGP message size.",
+    "Compare defined Optional/Transitive bits with the declared known type and report discrepancies without pretending to parse a complete UPDATE. RFC 7606 revises error handling: specified flag conflicts generally use treat-as-withdraw unless that attribute mandates different handling. Other errors can require attribute discard, family disable or session reset. A numeric byte cannot select all these outcomes.",
+    "For the explicit hypothetical unrecognized type, read its optional class. RFC 4271 recommends accepting paths carrying unrecognized optional transitive attributes; when an accepted path is passed onward, retain the attribute and set Partial. An unrecognized optional nontransitive attribute is quietly ignored and not propagated. Neither statement bypasses route policy or complete validation, and ignoring an attribute does not itself reject its entire route.",
+    "Keep AS_PATH segment guidance current. RFC 9774 deprecates AS_SET and AS_CONFED_SET: absent explicit operator configuration otherwise, speakers must not advertise them and must treat received updates containing them as withdrawn. Ordered AS_SEQUENCE remains distinct. This lesson names the change but does not construct segments, validate AS4_PATH or simulate a transition policy.",
+    "Return to actual observations before changing policy. Compare received route context with locally assigned preference and intended export, then inspect next-hop resolution, installed route and the original exchange independently. Classification is evidence interpretation, not an installation or traffic test."
+  ],
+  "flow": [
+    [
+      "Declare the attribute",
+      "Match type, observer and address-family scope to its specification."
+    ],
+    [
+      "Decode the FLAGS octet",
+      "Read Optional, Transitive, Partial, Extended Length and reserved bits."
+    ],
+    [
+      "Check class and handling",
+      "Compare known-type bits; keep unknown optional handling conditional."
+    ],
+    [
+      "Corroborate the route",
+      "Separate local display, policy, next-hop resolution and original exchange."
+    ]
+  ],
+  "comparison": [
+    [
+      "Mandatory / discretionary",
+      "Specification presence classes",
+      "Both use well-known flags; the byte cannot distinguish them."
+    ],
+    [
+      "Optional transitive / nontransitive",
+      "Handling of optional information",
+      "An unrecognized optional transitive attribute can travel with an accepted path; an unrecognized optional nontransitive attribute is ignored. Recognized optional attributes still follow their defined rules."
+    ],
+    [
+      "LOCAL_PREF / Weight",
+      "Internal-AS wire attribute / local preference",
+      "Weight is not transmitted as a BGP path attribute."
+    ],
+    [
+      "LOCAL_PREF / MED",
+      "Internal preference / neighboring-AS exit hint",
+      "Their comparison and propagation rules differ; do not derive a full best path here."
+    ],
+    [
+      "COMMUNITIES / LARGE_COMMUNITIES",
+      "Four-octet / twelve-octet values",
+      "Both are optional transitive; matching policy and value validation follow separately."
+    ],
+    [
+      "Extended Length / extended messages",
+      "Attribute length-field width / message capability",
+      "Setting 0x10 does not negotiate RFC 8654."
+    ],
+    [
+      "ATOMIC_AGGREGATE / AGGREGATOR",
+      "Aggregation signal / aggregation origin context",
+      "They are separate types with different classifications."
+    ]
+  ],
+  "example": "Select Large communities with FLAGS 208. Record type 32, optional transitive, zero Partial and a two-octet attribute length field. Change only FLAGS to 224: Partial is now one and length field width is one octet, even though the declared type remains unchanged. Select MED with conflicting Transitive bit to see that a plausible optional-transitive byte can disagree with the known type. Then compare ORIGIN and LOCAL_PREF at FLAGS 64: the byte is identical while their defined mandatory/discretionary classes differ. Finally select the reserved-bit community case; distinguish sender nonconformance from the mandated receiver behavior. These are supplied declarations, with no capture or router execution.",
+  "ports": "Attributes travel inside BGP UPDATE control messages over the BGP TCP connection, commonly using service port 179. Attribute Type Code is not a TCP port or IP protocol number. The worksheet opens no connection.",
+  "commands": [
+    {
+      "code": "show bgp ipv4 unicast json",
+      "platform": "Prepared isolated FRR 8.4 IPv4-unicast context · guided, not executed",
+      "explanation": "Preserve the selected observer's BGP route records and displayed path attributes.",
+      "expected": "GUIDED, NOT EXECUTED: compare ORIGIN, AS_PATH, NEXT_HOP and any preference/community fields present in actual output. Displayed Weight is local; ordinary route JSON need not expose raw wire FLAGS or unfiltered input history."
+    },
+    {
+      "code": "show bgp ipv4 unicast neighbors 203.0.113.2 routes\nshow bgp ipv4 unicast neighbors 203.0.113.2 advertised-routes",
+      "platform": "Separately prepared FRR 8.4 observer with mapped documentation peer · guided, not executed",
+      "explanation": "Compare accepted routes from the mapped peer with routes permitted and advertised toward that peer.",
+      "expected": "GUIDED, NOT EXECUTED: verify peer/family/table and command support on the owned target. These views answer different directions and policy stages; they do not by themselves prove raw byte encoding or original traffic. Replace the example peer only with the recorded owned peer."
+    },
+    {
+      "code": "show running-config\nshow ip route bgp json",
+      "platform": "Prepared isolated FRR 8.4 context · guided, not executed",
+      "explanation": "Read attribute-setting intent separately from installed BGP source context.",
+      "expected": "GUIDED, NOT EXECUTED: preserve configuration privately and compare applicable policy with actual route observations. A configured preference is not proof of received wire contents, and a route-table marker is not a measured service result."
+    },
+    {
+      "code": "ip -j route get 203.0.113.2",
+      "platform": "Prepared owned Linux router namespace and applicable table · guided, not executed",
+      "explanation": "Inspect a lookup toward the supplied external-next-hop example in the observer's actual routing context.",
+      "expected": "GUIDED, NOT EXECUTED: record table, destination, egress and gateway from actual output. This read-only lookup cannot validate a BGP attribute value, live neighbor state, hardware forwarding or the original endpoint exchange. A host-table result is not router-namespace evidence."
+    }
+  ],
+  "configuration": "This tabletop worksheet has no router configuration, peer clear, attribute rewrite, packet injection or persistent service. Optional target inspection requires an already prepared isolated observer with known peer/family/table scope and supported FRR syntax. Preserve exact prior intent and sensitive configuration before any separately authorized policy experiment. Do not copy the example type/flags into a crafted UPDATE to a live peer.",
+  "production": "Document each attribute's producer, intended receiver, policy meaning and propagation scope. Compare vendor display conventions with supported wire behavior and the applicable family/extension specification. For a preference or community policy change, test actual import/export effects and affected prefix ownership in a separate isolated exercise before review. A classification table cannot accept a route leak, best-path result or failover design.",
+  "troubleshooting": [
+    [
+      "Flags do not reveal mandatory status",
+      "Read the declared type's specification; ORIGIN and LOCAL_PREF can share the same byte."
+    ],
+    [
+      "MED has Transitive set",
+      "Compare type and Optional/Transitive rules. Preserve actual UPDATE context and the release's RFC 7606 handling; do not claim every conflict resets the session."
+    ],
+    [
+      "Reserved low bits are nonzero",
+      "Record sender nonconformance while retaining the requirement to ignore those bits on reception."
+    ],
+    [
+      "Weight absent at another speaker",
+      "Weight is local. Inspect LOCAL_PREF or actual exported attributes rather than expecting a Weight wire type."
+    ],
+    [
+      "Community present, policy outcome absent",
+      "Verify the intended matching policy and observation direction; a label alone does not execute an action."
+    ],
+    [
+      "Attribute looks valid, route unusable",
+      "Continue to next-hop resolution, route eligibility, selected installation and independent return/service evidence."
+    ],
+    [
+      "Input rejected",
+      "Choose a listed declared type and enter decimal integer FLAGS from 0 to 255. Invalid scenario identity keeps results hidden even after editing FLAGS; Reset restores a valid declaration."
+    ]
+  ],
+  "security": "Community values and other received policy labels are not authenticated instructions or proof of route ownership. RFC 8092 explicitly warns that intermediate speakers can add, remove or alter large community values. Bound which peers may influence local preference or export behavior and preserve configuration privately. This model uses inert text output and makes no networking or policy changes; it does not test session security or origin/path validation.",
+  "performance": "A small FLAGS field controls encoding and handling, not bandwidth or convergence. AS_PATH length is an AS-level property; LOCAL_PREF, MED and Weight are preferences with implementation/context rules. Large community sets and updates can affect control-plane work, but this worksheet has no table scale, parser cost, CPU, convergence or throughput measurement.",
+  "mistakes": [
+    "Looking for a mandatory/discretionary FLAGS bit.",
+    "Calling Weight a vendor-specific wire attribute.",
+    "Assuming well-known means LOCAL_PREF crosses ordinary eBGP boundaries.",
+    "Equating Extended Length with extended BGP message negotiation.",
+    "Rejecting an entire route solely because an unknown optional nontransitive attribute is ignored.",
+    "Claiming all malformed attributes force a session reset.",
+    "Treating nonzero reserved received bits as a reset trigger.",
+    "Teaching AS_SET as the current default aggregation design despite RFC 9774.",
+    "Calling displayed attributes proof of forwarding or of raw FLAGS bytes."
+  ],
+  "prerequisites": [
+    "s3-g3-t0",
+    "s3-g3-t1",
+    "s3-g3-t2"
+  ],
+  "related": [
+    "s3-g4-t0",
+    "s3-g4-t1",
+    "s3-g4-t2",
+    "s3-g4-t3"
+  ],
+  "lab": {
+    "objective": "Classify declared BGP attributes, decode one numeric FLAGS octet and identify where specification, policy and actual route evidence are still needed.",
+    "requirements": "Browser only for the tabletop exercise. Optional read-only commands need a separately prepared supported isolated FRR/Linux observer; this page does not provision or execute it.",
+    "topologyKind": "shared",
+    "topology": [
+      "Declared type → defined attribute class",
+      "FLAGS octet → top four bits and reserved nibble",
+      "Known-type comparison → bounded diagnostics",
+      "Actual route/policy/forwarding evidence → separate investigation"
+    ],
+    "steps": [
+      "Compare ORIGIN and LOCAL_PREF at decimal 64 and explain why their FLAGS classes agree while required presence differs.",
+      "Compare MED, ORIGINATOR_ID and CLUSTER_LIST at decimal 128 with AGGREGATOR and COMMUNITIES at decimal 192.",
+      "Select large communities at decimal 208, identify each bit and distinguish attribute length-field width from message capability.",
+      "Compare hypothetical unrecognized transitive, partial transitive and nontransitive scenarios; state conditional forwarding behavior without inferring full route acceptance.",
+      "Read MED flag conflict, forbidden ORIGIN Partial and reserved-bit examples as three separate diagnostics.",
+      "Enter 0, 255, a fraction, an empty value and an out-of-range value. Valid byte decoding is distinct from known-type consistency; invalid input hides prior output.",
+      "Keyboard-focus and horizontally scroll both named tables, then Reset to ORIGIN 64. Optional target investigation uses only the guided read-only commands with independently recorded scope."
+    ],
+    "verification": "The companion model tests check the declared class matrix, all 256 flag bytes for each supported type, boundary/rejection cases, preset independence and mounted invalid-context/reset behavior. These tests exercise a deterministic worksheet contract. No BGP session, malformed UPDATE, packet capture, router policy or original service is executed by this topic.",
+    "troubleshooting": "First separate an invalid form from a valid numeric byte that conflicts with its declared type. Then separate reserved-bit sender rules from receiver behavior. Read the scope note before interpreting any classification as whole-message or live-protocol evidence.",
+    "challenge": "Explain why FLAGS 64 fits both ORIGIN and LOCAL_PREF, why FLAGS 192 conflicts with MED, and why FLAGS 193 does not justify a receive-side session reset. Identify the additional evidence needed to prove what was actually sent to a peer.",
+    "cleanup": "Reset restores the supplied ORIGIN declaration. The worksheet owns no actual routers, namespaces, daemons, captures or policies. Any separately authorized target exercise must reconcile its own exact prior baseline and ownership."
+  },
+  "glossary": {
+    "Attribute Type Code": "Wire identifier selecting a path attribute's defined semantics.",
+    "FLAGS": "One octet describing optional/transitive/partial and length-field properties plus reserved bits.",
+    "Well-known mandatory": "Recognized base attribute with specified mandatory presence in its applicable reachability context.",
+    "Well-known discretionary": "Recognized attribute whose presence follows its specific rules rather than a separate flag bit.",
+    "Optional transitive": "Optional information with defined propagation behavior, including unrecognized-attribute handling.",
+    "Optional nontransitive": "Optional information that an unrecognizing recipient ignores rather than propagates.",
+    "Partial": "Flag describing partial optional transitive information; not packet fragmentation.",
+    "Extended Length": "Flag selecting two rather than one octet for Attribute Length.",
+    "Weight": "Local implementation preference absent from BGP wire path attributes.",
+    "Treat-as-withdraw": "RFC 7606 handling that treats affected reachability as withdrawn, subject to complete error context."
+  },
+  "exams": [
+    {
+      "testedConcept": "Mandatory distinction",
+      "question": "ORIGIN and LOCAL_PREF both have FLAGS 64 (0x40). What distinguishes their mandatory/discretionary classification?",
+      "answer": "Their attribute specifications, not another FLAGS bit.",
+      "explanation": "Optional zero and Transitive one identify well-known handling only.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "Their attribute specifications, not another FLAGS bit.",
+        "The Partial bit selects mandatory status.",
+        "The lowest reserved bit marks discretionary attributes.",
+        "The lower numeric type is always mandatory."
+      ]
+    },
+    {
+      "testedConcept": "Numeric decoding",
+      "question": "What does FLAGS 208 (0xD0) declare?",
+      "answer": "Optional transitive, Partial zero, two-octet attribute length field.",
+      "explanation": "208 sets masks 128, 64 and 16 while leaving 32 and the low nibble clear.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "Well-known mandatory with one-octet length.",
+        "Optional nontransitive with Partial one.",
+        "Optional transitive, Partial zero, two-octet attribute length field.",
+        "A negotiated 65535-octet BGP message limit."
+      ]
+    },
+    {
+      "testedConcept": "Known-type conflict",
+      "question": "A declared MED has FLAGS 192 (0xC0). Which bounded diagnosis is justified?",
+      "answer": "Its Transitive bit conflicts with MED's defined optional nontransitive class.",
+      "explanation": "The byte is numerically valid but known-type consistency fails; complete UPDATE handling needs actual context.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "MED is well-known discretionary.",
+        "Its Transitive bit conflicts with MED's defined optional nontransitive class.",
+        "Every peer must immediately reset its TCP connection.",
+        "The byte proves MED is preferred over LOCAL_PREF."
+      ]
+    },
+    {
+      "testedConcept": "Partial constraint",
+      "question": "ORIGIN is supplied with FLAGS 96 (0x60). Which bit violates the scoped rule?",
+      "answer": "Partial is set even though the attribute is well-known.",
+      "explanation": "Partial must be zero for well-known and optional nontransitive attributes.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "Transitive is set, which ORIGIN forbids.",
+        "Extended Length is set, which every mandatory attribute forbids.",
+        "Optional is set, making ORIGIN unknown.",
+        "Partial is set even though the attribute is well-known."
+      ]
+    },
+    {
+      "testedConcept": "Unknown transitive handling",
+      "question": "An accepted path carries an unrecognized optional transitive attribute and is passed onward. What does RFC 4271 require for that attribute?",
+      "answer": "Pass it with the path and set Partial to one.",
+      "explanation": "The condition matters: this does not override policy or validate a complete UPDATE.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "Pass it with the path and set Partial to one.",
+        "Remove it and preserve only the NLRI.",
+        "Convert its type to LOCAL_PREF.",
+        "Reset every session because it is unrecognized."
+      ]
+    },
+    {
+      "testedConcept": "Unknown nontransitive handling",
+      "question": "What does ignoring an unrecognized optional nontransitive attribute imply by itself?",
+      "answer": "The attribute is not propagated; this alone does not reject the entire route.",
+      "explanation": "Attribute handling and route admission are different questions.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "The whole route must always be withdrawn.",
+        "The attribute is not propagated; this alone does not reject the entire route.",
+        "The attribute becomes mandatory at the next AS.",
+        "Every received optional attribute is malformed."
+      ]
+    },
+    {
+      "testedConcept": "Local versus wire",
+      "question": "A local FRR route display includes Weight. Which description is correct?",
+      "answer": "Weight is a local implementation preference, not a BGP wire path attribute.",
+      "explanation": "Do not expect a Weight Type Code in a peer UPDATE.",
+      "difficulty": "Beginner",
+      "type": "multiple-choice",
+      "options": [
+        "Weight is the standard type 5 wire attribute.",
+        "Weight is the sum of IP router hops.",
+        "Weight is a local implementation preference, not a BGP wire path attribute.",
+        "Weight is encoded in the reserved FLAGS bits."
+      ]
+    },
+    {
+      "testedConcept": "Reserved receive rule",
+      "question": "COMMUNITIES has FLAGS 193 (0xC1), including a nonzero reserved bit. What conclusion follows from that bit alone?",
+      "answer": "The sender violates zero-on-send; the receiver must ignore the reserved bits.",
+      "explanation": "The worksheet must not infer malformed handling or session reset solely from the reserved nibble.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "The community value has been authenticated.",
+        "Partial must be forced to zero and the route rejected.",
+        "The receiver must reset the session.",
+        "The sender violates zero-on-send; the receiver must ignore the reserved bits."
+      ]
+    },
+    {
+      "testedConcept": "Current AS_SET guidance",
+      "question": "Under RFC 9774, absent explicit operator configuration otherwise, how are AS_SET and AS_CONFED_SET handled?",
+      "answer": "Do not advertise them; treat received updates containing them as withdrawn.",
+      "explanation": "RFC 9774 deprecates those segment types and preserves an explicit transition exception.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "Do not advertise them; treat received updates containing them as withdrawn.",
+        "Always create an AS_SET for every aggregate.",
+        "Replace all AS_SEQUENCE segments with AS_SET.",
+        "Accept them only when the Extended Length bit is zero."
+      ]
+    },
+    {
+      "testedConcept": "Community classes",
+      "question": "Which comparison of standard and large communities is accurate?",
+      "answer": "Both are optional transitive; individual values occupy four and twelve octets respectively.",
+      "explanation": "Their value formats differ while both need policy meaning and separate value validation.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "Standard communities are mandatory and large communities nontransitive.",
+        "Both are optional transitive; individual values occupy four and twelve octets respectively.",
+        "Both are local-only display values like Weight.",
+        "Large communities use twelve bits while standard communities use four bits."
+      ]
+    }
+  ],
+  "quick": [
+    {
+      "testedConcept": "Presence classification",
+      "question": "Can the FLAGS byte alone distinguish well-known mandatory from discretionary?",
+      "answer": "No; read the attribute specification.",
+      "explanation": "Both share Optional zero and Transitive one.",
+      "difficulty": "Beginner",
+      "type": "short-answer"
+    },
+    {
+      "testedConcept": "Length scope",
+      "question": "What does the Extended Length bit change?",
+      "answer": "Attribute Length field width from one octet to two.",
+      "explanation": "It does not negotiate extended BGP messages or prove an attribute's actual length.",
+      "difficulty": "Intermediate",
+      "type": "short-answer"
+    },
+    {
+      "testedConcept": "Evidence boundary",
+      "question": "Does a matching known type and FLAGS byte prove that an original endpoint exchange works?",
+      "answer": "No; route, next-hop, forwarding and return/service evidence are separate.",
+      "explanation": "The deterministic byte worksheet sends no updates or packets.",
+      "difficulty": "Advanced",
+      "type": "short-answer"
+    }
+  ],
+  "sources": [
+    {
+      "title": "RFC 4271 sections 4.3 and 5: flags, attribute classes and conditional unrecognized handling",
+      "url": "https://www.rfc-editor.org/rfc/rfc4271",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "RFC 7606: revised UPDATE error handling and flag conflicts",
+      "url": "https://www.rfc-editor.org/rfc/rfc7606",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "RFC 9774: deprecation of AS_SET and AS_CONFED_SET",
+      "url": "https://www.rfc-editor.org/rfc/rfc9774",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "RFC 1997: standard COMMUNITIES attribute",
+      "url": "https://www.rfc-editor.org/rfc/rfc1997",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "RFC 8092: type 32, large community format and trust limits",
+      "url": "https://www.rfc-editor.org/rfc/rfc8092",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "RFC 4456 section 8: ORIGINATOR_ID and CLUSTER_LIST types and classes",
+      "url": "https://www.rfc-editor.org/rfc/rfc4456",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "FRR stable 8.4: local Weight, attribute context and route inspection syntax",
+      "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+      "checked": "2026-10-09"
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "date": "2026-10-08",
+  "result": "PASS",
+  "lessons": 61,
+  "checks": [
+    "Prerequisite graph is acyclic and all prerequisites are authored",
+    "Per-lesson exams have ten distinct prompts; comparison/flow/port context present",
+    "All authored lessons have substantial structured content (word count used only as a floor, not proof of accuracy)",
+    "Initial reader loads only the selected lesson bundle",
+    "All 61 authored routes: unique DOM IDs, named form controls/buttons, one H1 and valid section anchors",
+    "All authored previous/next links preserve original adjacency, including pending lab nodes",
+    "Core body/muted/accent/warning color tokens meet 4.5:1 on paper/surface/soft backgrounds in both themes",
+    "Broad local search responds within the 2-second audit ceiling",
+    "No page exceptions while traversing the complete authored course"
+  ],
+  "issues": [],
+  "contentWordCounts": [
+    {
+      "id": "s0-g0-t0",
+      "words": 1449
+    },
+    {
+      "id": "s0-g0-t1",
+      "words": 1398
+    },
+    {
+      "id": "s0-g0-t2",
+      "words": 1341
+    },
+    {
+      "id": "s0-g0-t3",
+      "words": 1316
+    },
+    {
+      "id": "s0-g0-t4",
+      "words": 1341
+    },
+    {
+      "id": "s0-g0-t5",
+      "words": 1333
+    },
+    {
+      "id": "s0-g0-t6",
+      "words": 1355
+    },
+    {
+      "id": "s0-g1-t0",
+      "words": 1794
+    },
+    {
+      "id": "s0-g1-t1",
+      "words": 1760
+    },
+    {
+      "id": "s0-g1-t2",
+      "words": 1849
+    },
+    {
+      "id": "s0-g1-t3",
+      "words": 1915
+    },
+    {
+      "id": "s0-g2-t0",
+      "words": 1694
+    },
+    {
+      "id": "s0-g2-t1",
+      "words": 1593
+    },
+    {
+      "id": "s0-g2-t2",
+      "words": 1581
+    },
+    {
+      "id": "s0-g2-t3",
+      "words": 1513
+    },
+    {
+      "id": "s0-g2-t4",
+      "words": 1596
+    },
+    {
+      "id": "s0-g2-t5",
+      "words": 1628
+    },
+    {
+      "id": "s0-g2-t6",
+      "words": 1595
+    },
+    {
+      "id": "s0-g2-t7",
+      "words": 1672
+    },
+    {
+      "id": "s0-g2-t8",
+      "words": 1584
+    },
+    {
+      "id": "s0-g2-t9",
+      "words": 1601
+    },
+    {
+      "id": "s0-g2-t10",
+      "words": 1601
+    },
+    {
+      "id": "s0-g3-t0",
+      "words": 1484
+    },
+    {
+      "id": "s0-g3-t1",
+      "words": 1451
+    },
+    {
+      "id": "s0-g3-t2",
+      "words": 1383
+    },
+    {
+      "id": "s0-g3-t3",
+      "words": 1497
+    },
+    {
+      "id": "s0-g3-t4",
+      "words": 1488
+    },
+    {
+      "id": "s0-g3-t5",
+      "words": 1428
+    },
+    {
+      "id": "s0-g3-t6",
+      "words": 1496
+    },
+    {
+      "id": "s0-g3-t7",
+      "words": 1443
+    },
+    {
+      "id": "lab-0",
+      "words": 1820
+    },
+    {
+      "id": "s1-g0-t0",
+      "words": 1963
+    },
+    {
+      "id": "s1-g0-t1",
+      "words": 1984
+    },
+    {
+      "id": "s1-g1-t0",
+      "words": 1779
+    },
+    {
+      "id": "s1-g1-t1",
+      "words": 1715
+    },
+    {
+      "id": "s1-g1-t2",
+      "words": 1691
+    },
+    {
+      "id": "s1-g2-t0",
+      "words": 1837
+    },
+    {
+      "id": "s1-g2-t1",
+      "words": 1939
+    },
+    {
+      "id": "s1-g2-t2",
+      "words": 1806
+    },
+    {
+      "id": "s1-g2-t3",
+      "words": 1752
+    },
+    {
+      "id": "s1-g3-t0",
+      "words": 1711
+    },
+    {
+      "id": "s1-g3-t1",
+      "words": 1626
+    },
+    {
+      "id": "s1-g3-t2",
+      "words": 1673
+    },
+    {
+      "id": "s1-g3-t3",
+      "words": 1806
+    },
+    {
+      "id": "s1-g3-t4",
+      "words": 1745
+    },
+    {
+      "id": "s1-g4-t0",
+      "words": 1633
+    },
+    {
+      "id": "s1-g4-t1",
+      "words": 1698
+    },
+    {
+      "id": "s1-g4-t2",
+      "words": 1669
+    },
+    {
+      "id": "s1-g4-t3",
+      "words": 1796
+    },
+    {
+      "id": "s1-g5-t0",
+      "words": 1859
+    },
+    {
+      "id": "s1-g5-t1",
+      "words": 1990
+    },
+    {
+      "id": "s1-g5-t2",
+      "words": 1919
+    },
+    {
+      "id": "s1-g5-t3",
+      "words": 1883
+    },
+    {
+      "id": "s1-g5-t4",
+      "words": 1920
+    },
+    {
+      "id": "s1-g5-t5",
+      "words": 1938
+    },
+    {
+      "id": "s1-g5-t6",
+      "words": 1820
+    },
+    {
+      "id": "s1-g5-t7",
+      "words": 1780
+    },
+    {
+      "id": "s1-g5-t8",
+      "words": 1810
+    },
+    {
+      "id": "s1-g5-t9",
+      "words": 1916
+    },
+    {
+      "id": "s1-g5-t10",
+      "words": 1884
+    },
+    {
+      "id": "lab-1",
+      "words": 2306
+    }
+  ],
+  "bytes": {
+    "learn.html": 2863,
+    "content/catalog.js": 426121,
+    "scripts/learning.js": 29582,
+    "scripts/network-models.js": 12295,
+    "scripts/address-tools.js": 16322,
+    "scripts/protocol-models.js": 8560,
+    "scripts/service-models.js": 9352,
+    "scripts/switching-models.js": 8062,
+    "scripts/routing-models.js": 4118,
+    "scripts/diagnostic-models.js": 10649,
+    "scripts/packet-models.js": 3905,
+    "styles/learning.css": 21825,
+    "content/batch-01.js": 71800,
+    "content/batch-02.js": 57137,
+    "content/batch-03.js": 128672,
+    "content/batch-04.js": 100550,
+    "content/batch-05.js": 231658,
+    "content/batch-06.js": 170199
+  },
+  "initialResources": [
+    {
+      "name": "/styles/learning.css",
+      "bytes": 21825,
+      "durationMs": 19
+    },
+    {
+      "name": "/content/catalog.js",
+      "bytes": 426121,
+      "durationMs": 32
+    },
+    {
+      "name": "/scripts/network-models.js",
+      "bytes": 12295,
+      "durationMs": 20
+    },
+    {
+      "name": "/scripts/address-tools.js",
+      "bytes": 16322,
+      "durationMs": 22
+    },
+    {
+      "name": "/scripts/protocol-models.js",
+      "bytes": 8560,
+      "durationMs": 23
+    },
+    {
+      "name": "/scripts/switching-models.js",
+      "bytes": 8062,
+      "durationMs": 26
+    },
+    {
+      "name": "/scripts/service-models.js",
+      "bytes": 9352,
+      "durationMs": 28
+    },
+    {
+      "name": "/scripts/routing-models.js",
+      "bytes": 4118,
+      "durationMs": 30
+    },
+    {
+      "name": "/scripts/diagnostic-models.js",
+      "bytes": 10649,
+      "durationMs": 36
+    },
+    {
+      "name": "/scripts/packet-models.js",
+      "bytes": 3905,
+      "durationMs": 43
+    },
+    {
+      "name": "/scripts/learning.js",
+      "bytes": 29582,
+      "durationMs": 43
+    },
+    {
+      "name": "/content/batch-01.js",
+      "bytes": 71800,
+      "durationMs": 16
+    },
+    {
+      "name": "/assets/favicon.svg",
+      "bytes": 260,
+      "durationMs": 7
+    }
+  ],
+  "localSearchMs": 165,
+  "limits": "Local Edge audit, not real-device/network performance certification. Automated accessible-name/contrast/structure checks supplement manual screenshots; they are not a full WCAG audit. Editorial technical review and source scope are documented separately."
+}

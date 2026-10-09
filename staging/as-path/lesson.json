@@ -1,0 +1,418 @@
+{
+  "id": "s3-g4-t2",
+  "batch": "09",
+  "title": "AS Path",
+  "subtitle": "Read ordinary AS sequences without mistaking policy length for physical distance.",
+  "level": "Intermediate → Advanced",
+  "minutes": 75,
+  "interactive": "as-path",
+  "definition": "AS_PATH records AS-level routing information carried with a BGP route. In an ordinary AS_SEQUENCE, entries are ordered ASN occurrences; repeated entries remain part of the sequence. An external advertisement normally adds the advertising AS, while ordinary internal propagation does not add an ASN for every internal router. This lesson compares two supplied nonempty ordinary AS_SEQUENCE candidates for the same IPv4 unicast prefix, 198.51.100.0/24. It checks ordinary local-AS loop exclusion and independently declared policy admission and NEXT_HOP resolution before a bounded length comparison. The worksheet is not a general AS_PATH decoder or full BGP implementation.",
+  "purpose": "Use the path attribute to explain AS-level loop rejection, count sequence length and recognize deliberate prepending. Read it alongside earlier local preference and later selection criteria. A short path may be ineligible or less preferred by earlier policy; a chosen BGP route can also lose system source selection or lack the original forward and return prerequisites. The worksheet exposes these boundaries without claiming actual device convergence or traffic success.",
+  "mental": "Treat each candidate as a destination card with an ordered row of ASN stamps. An ordinary local-AS stamp already on the card blocks acceptance in this scope. Count every stamp, including repeated stamps, only after admission and next-hop checks. If earlier policy is equal, fewer sequence stamps can decide this selection stage. The stamps are not a map of individual routers, a stopwatch or authenticated evidence of every network actually traversed. Installation and the reply journey require separate pages.",
+  "components": [
+    "Scope: both candidates cover exactly 198.51.100.0/24 in one declared IPv4 unicast table. No longest-prefix comparison occurs.",
+    "AS_SEQUENCE: a nonempty ordered sequence of decimal ASN strings, with every occurrence counted. Prepending repeats increase length rather than creating distinct new AS identities.",
+    "Ordinary loop guard: a candidate containing the local ASN is excluded before comparison. allowas-in, alternate local-AS behavior and confederation semantics are outside this worksheet.",
+    "Eligibility: supplied policy admission and independently supplied NEXT_HOP resolution are required. A short rejected or unresolved route cannot defeat an eligible route.",
+    "Earlier selection boundary: weight and local origination are held equal. Equal LOCAL_PREF is required for comparing two eligible sequences; unequal values produce an explicit boundary, not a fabricated length winner.",
+    "Outcome layers: bounded BGP choice, system source selection, original forward declaration and independent original return declaration. Equal lengths leave later BGP stages unresolved."
+  ],
+  "mechanism": [
+    "Fix speaker, local ASN, family, exact prefix, routing table and observation point. The worksheet supplies two candidates and does not reconstruct peer UPDATE history. Its default paths are A: 65002 65003 and B: 65004 65005 65003, with local AS 65001.",
+    "Parse only ordinary nonempty sequences. Tokens and local ASN must be strings of decimal digits in 1 through 4294967294, excluding reserved 65535; 4294967295 is also reserved and outside the range. Surrounding spaces are trimmed and space-separated tokens are accepted, with a teaching cap of 64 tokens. Dotted ASN notation, braces, commas, exponent syntax, negatives and numeric coercion are rejected. This is syntax/range validation, not ASN assignment or authorization validation.",
+    "Check whether either supplied sequence contains the ordinary local ASN. Exclude that candidate before selecting, even if its sequence is shortest. RFC4271 places ordinary AS-loop handling in route selection; acceptance exceptions require separate deliberate configuration and are not simulated here.",
+    "Apply the supplied policy and NEXT_HOP resolution declarations independently. An eligible candidate must pass all three checks. If neither remains, there is no choice. If only one remains, identify it as the sole eligible candidate rather than crediting its length.",
+    "For two eligible candidates, compare the declared LOCAL_PREF only to determine whether this lesson reaches the length stage. FRR8.4 documents weight, local preference and local route checks before AS path length. The worksheet holds weight and local origination equal. Unequal LOCAL_PREF stops this comparison and supplies no computed overall winner; the Local Preference lesson handles that policy stage.",
+    "With equal earlier policy, prefer the shorter ordinary sequence at this stage. A repeated prepend such as 65002 65002 65002 65003 has length four. It does not have length two merely because it contains two distinct ASN values. Equal lengths leave later stages unresolved; the worksheet does not invent a router-ID tie-break, ECMP or a complete best path.",
+    "Interpret four-byte ASNs as a single decimal token each. RFC6793 describes four-octet support, AS_TRANS 23456 and AS4_PATH transition information between old and new speakers. The worksheet accepts 23456 as a range-valid token without treating it as proof of a normal assigned AS, and never reconstructs legacy AS_PATH plus AS4_PATH. Real evidence must preserve encoding and capability context.",
+    "Keep set and confederation semantics separate. RFC9774 deprecates AS_SET and AS_CONFED_SET; this lesson rejects set notation rather than extending an ordinary sequence count to it. It also excludes AS_CONFED_SEQUENCE and all confederation behavior. Do not generalize this teaching parser to every path segment in historical device output.",
+    "Apply independent system selection only after a computed bounded BGP choice. Then inspect actual FIB/adjacency, forwarding and the original opposite direction separately. A shorter sequence does not measure latency, bandwidth, individual IP router hops or authenticated provenance. Browser declarations are not packets or a repair certificate.",
+    "Preserve actual prefix attributes and owned peer/table context before considering a change. In a separately prepared isolated target, investigate one demonstrated failure and restore exact prior policy and attachments after verification. The guided commands here are read-only references and were not executed on a BGP target."
+  ],
+  "flow": [
+    [
+      "Fix prefix and ordinary sequence scope",
+      "Record local ASN, family, table and supplied candidates."
+    ],
+    [
+      "Exclude unusable candidates",
+      "Check ordinary own-AS loop, policy admission and NEXT_HOP resolution."
+    ],
+    [
+      "Reach the length stage deliberately",
+      "Require equal earlier policy; count every sequence occurrence and leave ties unresolved."
+    ],
+    [
+      "Verify installation and original exchange",
+      "Inspect system source, actual forwarding and independent return evidence."
+    ]
+  ],
+  "comparison": [
+    [
+      "Sequence length / distinct AS count",
+      "Occurrences / unique identities",
+      "Repeated prepends count repeatedly."
+    ],
+    [
+      "AS-level path / IP router hops",
+      "Control attribute / physical forwarding observations",
+      "Internal routers are not individual sequence entries."
+    ],
+    [
+      "Earlier policy / AS length",
+      "Selection boundary / later comparison stage",
+      "A shorter sequence does not override unequal LOCAL_PREF."
+    ],
+    [
+      "Own-AS exclusion / shortest sequence",
+      "Eligibility check / preference stage",
+      "Looped candidates are removed first."
+    ],
+    [
+      "BGP choice / system installation",
+      "Protocol decision / cross-source decision",
+      "A competing system source may displace the BGP candidate."
+    ],
+    [
+      "AS_PATH / authenticated provenance",
+      "Advertised path information / separately secured evidence",
+      "The attribute alone is not cryptographic proof."
+    ]
+  ],
+  "example": "With equal LOCAL_PREF and eligible defaults, A length two reaches the shorter-sequence choice against B length three. Choose Shortest A contains own ASN: A is excluded and B is the sole eligible candidate. Choose repeated prepends: A has four occurrences and B has three. Unequal LOCAL_PREF reports an earlier-policy boundary, and equal lengths report unresolved later stages. Finally remove system selection or return readiness while retaining the same path comparison to expose distinct outcome layers.",
+  "ports": "AS_PATH is a BGP attribute exchanged over the BGP control connection, conventionally TCP179, not a new data-plane service port. The worksheet creates no TCP socket or live peer and supports only its fixed IPv4 unicast candidate scope.",
+  "commands": [
+    {
+      "code": "show bgp ipv4 unicast json",
+      "platform": "Prepared FRR8.4 speaker; guided not executed",
+      "explanation": "Preserve exact prefix candidate attributes, next hops, validity and selected BGP indicators in the appropriate table.",
+      "expected": "Read the 198.51.100.0/24 candidates and their paths; table output is not proof of complete unfiltered Adj-RIB-In history or packet forwarding."
+    },
+    {
+      "code": "show bgp ipv4 unicast summary json\nshow bgp neighbors json",
+      "platform": "Prepared FRR8.4 speaker; guided not executed",
+      "explanation": "Establish observer, local/remote ASN, family and capability context before interpreting decimal or transition path information.",
+      "expected": "Peer/control information supports scope; Established alone does not prove destination eligibility, installation or original service."
+    },
+    {
+      "code": "show bgp as-path-access-list json\nshow running-config",
+      "platform": "Prepared FRR8.4 speaker; guided not executed",
+      "explanation": "Inspect actual path filtering, earlier policy and any configured exceptions before explaining a loop or length observation.",
+      "expected": "Review relevant owned policy and preserve sensitive configuration securely. No prepend, clear, save, reload or policy mutation is executed."
+    },
+    {
+      "code": "show ip route 198.51.100.0/24",
+      "platform": "Prepared FRR8.4 system route context; guided not executed",
+      "explanation": "Compare BGP path information with exact-prefix system route selection and competing sources in the actual family/table context.",
+      "expected": "A system routing observation must be supplemented by actual FIB/adjacency and original forward/return service evidence; this command does not measure the exchange."
+    }
+  ],
+  "configuration": "The controls are declarations only. Any optional isolated prepend exercise needs separately prepared FRR8.4 peers, reviewed prefix ownership, baseline policy and management access. Record exact route-map attachments and paths, review release-specific syntax, change one exclusively owned advertisement policy and preserve receiving-side earlier policy. Restore the precise original attachment and sequence behavior before deleting exclusive unused objects. This lesson performs no device configuration or router process execution.",
+  "production": "Use prepend policy with a clear external traffic objective and independent observations at intended receivers. A remote AS can apply higher-priority policy and ignore the intended length influence. ASN range validity does not establish an allocation or business relationship. Validate path filtering, relevant capabilities, route visibility and selection before relying on the attribute, and measure the original traffic separately. Avoid changing path policy merely because a sequence looks long.",
+  "troubleshooting": [
+    [
+      "Shortest route is not selected",
+      "Check admission, ordinary own-AS exclusion, NEXT_HOP resolution and earlier policy before counting length."
+    ],
+    [
+      "Prepending seems ineffective",
+      "Read receiving-side earlier policy and actual observed path; repeating ASNs does not override LOCAL_PREF."
+    ],
+    [
+      "Repeated ASNs counted once",
+      "Count every ordinary AS_SEQUENCE occurrence; distinct identity counting answers a different question."
+    ],
+    [
+      "Equal lengths show no winner",
+      "Inspect later actual BGP criteria; the worksheet intentionally leaves them unresolved."
+    ],
+    [
+      "Four-byte output looks inconsistent",
+      "Preserve capabilities and AS_PATH/AS4_PATH context; do not flatten AS_TRANS into assumed real provenance."
+    ],
+    [
+      "Selected BGP path does not carry service",
+      "Compare actual system/FIB/adjacency plus original source/destination return and service evidence."
+    ]
+  ],
+  "security": "AS_PATH alone is advertised information, not authenticated path provenance. Transport/session protections and route-origin validation answer separate questions and do not automatically authenticate every sequence occurrence. Treat filtering, reserved identifiers, ASN assignment, authorized prefix import and change ownership as distinct operational evidence. No authentication, RPKI or path validation protocol is simulated.",
+  "performance": "Sequence length expresses an AS-level selection input, not delay, bandwidth, load or IP hop count. A path with more AS occurrences can be faster than a shorter one; repeated prepends are policy inflation rather than measured physical distance. The worksheet has no convergence timers, UPDATE workload, hardware programming, throughput or measured latency model.",
+  "mistakes": [
+    "Counting unique ASNs instead of occurrences.",
+    "Selecting a shortest own-AS-looped or unresolved candidate.",
+    "Treating shorter length as an override for earlier policy.",
+    "Reading ASN strings as IP router hops or latency.",
+    "Treating an AS_TRANS token as authenticated assigned-AS evidence.",
+    "Applying sequence counting to rejected set/confederation syntax.",
+    "Calling supplied forwarding declarations measured service."
+  ],
+  "prerequisites": [
+    "s3-g3-t0",
+    "s3-g3-t1",
+    "s3-g3-t2",
+    "s3-g3-t3",
+    "s3-g4-t0"
+  ],
+  "related": [
+    "s3-g4-t1",
+    "s3-g4-t3"
+  ],
+  "lab": {
+    "objective": "Separate ordinary AS-loop and eligibility checks from equal-policy sequence comparison, system installation and original exchange prerequisites.",
+    "requirements": "Browser only. Guided real commands require a separately prepared owned FRR8.4 speaker and known family/table/peer context; none was executed for this lesson.",
+    "topologyKind": "shared",
+    "topology": [
+      "Local AS 65001 receives candidate A and candidate B",
+      "Both candidates: IPv4 unicast 198.51.100.0/24",
+      "Independent supplied policy and NEXT_HOP resolution per candidate",
+      "Bounded BGP choice → system selection → original forward and return declarations"
+    ],
+    "steps": [
+      "Compare shorter A, shorter B and equal lengths with equal earlier policy.",
+      "Compare one own-AS loop, both loops, policy rejection, missing resolution and no eligible candidates.",
+      "Count every repeated ASN in the prepending scenario; compare four-byte decimal ASNs.",
+      "Select unequal LOCAL_PREF and explain why the length stage supplies no winner.",
+      "Displace the system route and remove only return readiness in separate scenarios.",
+      "Enter malformed/reserved/out-of-range/over-cap tokens, observe hidden stale output, then reset using the keyboard.",
+      "For an optional prepared target, collect the four read-only command groups in exact scope and separately inspect forwarding and return evidence. Preserve precise baseline before any separately authorized mutation."
+    ],
+    "verification": "Independent model tests check ordinary loop/eligibility combinations, occurrence lengths, strict inputs, transition-token scope and invalid/reset UI behavior. Separate integrated browser checks verify rendering and keyboard interaction. The guided commands are target observation procedures; no actual FRR, UPDATE or packet execution is claimed by this worksheet.",
+    "troubleshooting": "An invalid scenario must keep output hidden through field changes until a valid scenario or reset is chosen. Diagnose exclusion, earlier-policy boundary and equal-length later-stage boundary independently.",
+    "challenge": "Make A one token containing the local ASN and B three valid tokens. Explain why B survives without a shortest-path competition. Then remove the loop but make LOCAL_PREF unequal and explain why the worksheet cannot supply a length-stage winner.",
+    "cleanup": "Reset restores the default declarations. The worksheet owns no daemons, namespace or device objects and changes no learner progress. Any separately authorized isolated policy experiment must restore exact original attachments, verify baseline paths and original service, then delete only exclusively owned unused resources."
+  },
+  "glossary": {
+    "AS_SEQUENCE": "Ordered ASN occurrences in the scoped path segment.",
+    "Prepending": "Adding ASN occurrences to an advertised path, often to influence later length selection.",
+    "Own-AS loop": "The ordinary local ASN already appears in the received path.",
+    "AS_TRANS": "Reserved transition identifier 23456 described by RFC6793; not assignment proof.",
+    "AS4_PATH": "Transition attribute used with legacy four-octet interoperability; not reconstructed here.",
+    "Eligibility": "Supplied policy admission, resolution and ordinary loop exclusion all pass."
+  },
+  "exams": [
+    {
+      "testedConcept": "Occurrence counting",
+      "question": "What is the length of ordinary AS_SEQUENCE 65002 65002 65003?",
+      "answer": "Three occurrences.",
+      "explanation": "Repeated ASN entries each contribute to ordinary sequence length.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "Two distinct ASNs.",
+        "Three occurrences.",
+        "One network hop.",
+        "Unknown because repeats never count."
+      ],
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-Q01"
+    },
+    {
+      "testedConcept": "Ordinary loop exclusion",
+      "question": "Local AS is 65001. A has path 65001; B has path 65002 65003 65004. Both are admitted and resolved. What does this scope choose?",
+      "answer": "B as the only eligible candidate.",
+      "explanation": "A is excluded before length selection due to the ordinary own-AS check.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "A because one is shorter than three.",
+        "Both because policy admits both.",
+        "B as the only eligible candidate.",
+        "Neither because long paths are invalid."
+      ],
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-Q02"
+    },
+    {
+      "testedConcept": "Earlier policy boundary",
+      "question": "Two eligible candidates have unequal LOCAL_PREF. What does this length worksheet report?",
+      "answer": "An earlier-policy boundary with no computed length-stage winner.",
+      "explanation": "Its bounded task does not compute the LOCAL_PREF winner or reach length comparison.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "Always choose the shorter sequence.",
+        "An earlier-policy boundary with no computed length-stage winner.",
+        "Always choose the lowest ASN.",
+        "An AS-loop error."
+      ],
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-Q03"
+    },
+    {
+      "testedConcept": "Equal length boundary",
+      "question": "Two eligible candidates have equal earlier policy and equal sequence lengths. What follows in this worksheet?",
+      "answer": "Later selection stages remain unresolved.",
+      "explanation": "The model has no full tie-breaking or ECMP computation.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "Candidate A automatically wins.",
+        "Both are guaranteed installed.",
+        "The smallest ASN wins.",
+        "Later selection stages remain unresolved."
+      ],
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-Q04"
+    },
+    {
+      "testedConcept": "Resolution",
+      "question": "Shorter A has unresolved NEXT_HOP; longer B is eligible. Which result is justified?",
+      "answer": "B is the sole eligible candidate.",
+      "explanation": "Length cannot make an unresolved candidate usable.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "A wins on length.",
+        "B is the sole eligible candidate.",
+        "A becomes resolved automatically.",
+        "Both prove service success."
+      ],
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-Q05"
+    },
+    {
+      "testedConcept": "Performance distinction",
+      "question": "What does a shorter ordinary AS_SEQUENCE prove about latency?",
+      "answer": "No measured latency result.",
+      "explanation": "AS occurrences are a routing selection input, not delay measurements.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "Guaranteed lower latency.",
+        "Exactly that many IP router hops.",
+        "No measured latency result.",
+        "Guaranteed higher bandwidth."
+      ],
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-Q06"
+    },
+    {
+      "testedConcept": "Four-byte notation",
+      "question": "How many scoped sequence entries does decimal ASN 4200000001 contribute?",
+      "answer": "One occurrence.",
+      "explanation": "A four-byte decimal ASN is a single ASN token.",
+      "difficulty": "Intermediate",
+      "type": "multiple-choice",
+      "options": [
+        "Four occurrences.",
+        "One occurrence.",
+        "Zero because only two-byte ASNs exist.",
+        "A number of entries equal to its digits."
+      ],
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-Q07"
+    },
+    {
+      "testedConcept": "Transition scope",
+      "question": "What does this worksheet do with AS4_PATH transition information?",
+      "answer": "Source-describe it without reconstructing transition paths.",
+      "explanation": "RFC6793 provides transition semantics; the model only reads supplied ordinary sequences.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "Automatically reconstruct every legacy path.",
+        "Treat AS_TRANS as authenticated provenance.",
+        "Source-describe it without reconstructing transition paths.",
+        "Reject every ASN above 65535."
+      ],
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-Q08"
+    },
+    {
+      "testedConcept": "System selection",
+      "question": "A computed BGP choice exists but systemSelected is false. What remains true?",
+      "answer": "The bounded BGP choice can remain while system installation is false.",
+      "explanation": "Protocol choice and cross-source system choice are separate layers.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "The bounded BGP choice can remain while system installation is false.",
+        "AS_PATH must be empty.",
+        "All peer sessions necessarily failed.",
+        "Return readiness creates installation."
+      ],
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-Q09"
+    },
+    {
+      "testedConcept": "Provenance",
+      "question": "Does an AS_PATH string alone authenticate the actual traversed path?",
+      "answer": "No; authentication and authorization need separate evidence.",
+      "explanation": "The advertised attribute alone is not cryptographic path validation.",
+      "difficulty": "Advanced",
+      "type": "multiple-choice",
+      "options": [
+        "Yes, by counting length.",
+        "Yes, whenever NEXT_HOP resolves.",
+        "Yes, for four-byte ASNs only.",
+        "No; authentication and authorization need separate evidence."
+      ],
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-Q10"
+    }
+  ],
+  "quick": [
+    {
+      "testedConcept": "Prepending",
+      "question": "Does repeating the same ASN increase ordinary sequence length?",
+      "answer": "Yes, every occurrence counts.",
+      "explanation": "Distinct ASN count is a different measure.",
+      "difficulty": "Beginner",
+      "type": "short-answer",
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-QC1"
+    },
+    {
+      "testedConcept": "Assignment scope",
+      "question": "Does passing the decimal ASN parser prove an actual authorized ASN assignment?",
+      "answer": "No.",
+      "explanation": "Range and notation validation are separate from allocation and policy authorization.",
+      "difficulty": "Intermediate",
+      "type": "short-answer",
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-QC2"
+    },
+    {
+      "testedConcept": "Return scope",
+      "question": "Does a selected shorter BGP sequence create the original return path?",
+      "answer": "No; return requires independent evidence.",
+      "explanation": "Control-plane comparison does not verify the original exchange.",
+      "difficulty": "Advanced",
+      "type": "short-answer",
+      "topicId": "s3-g4-t2",
+      "questionId": "s3-g4-t2-QC3"
+    }
+  ],
+  "sources": [
+    {
+      "title": "RFC4271 sections 5.1.2 and 9.1.2: AS_PATH, loop and resolution checks, sequence tie breaking",
+      "url": "https://www.rfc-editor.org/rfc/rfc4271.html",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "RFC6793: four-octet ASNs, AS_TRANS and AS4_PATH transition handling",
+      "url": "https://www.rfc-editor.org/rfc/rfc6793.html",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "RFC9774: deprecation of AS_SET and AS_CONFED_SET",
+      "url": "https://www.rfc-editor.org/rfc/rfc9774.html",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "RFC7300: reserved last two-octet and four-octet ASNs",
+      "url": "https://datatracker.ietf.org/doc/html/rfc7300",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "FRR stable8.4: selection order, AS path policy and read-only display commands",
+      "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "FRR stable8.4 Zebra: exact-prefix system route display",
+      "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+      "checked": "2026-10-09"
+    }
+  ]
+}

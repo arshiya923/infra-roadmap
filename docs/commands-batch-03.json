@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-04",
+  "results": [
+    {
+      "code": "ip -br address\nip route show",
+      "result": "PASS",
+      "outputRetained": false,
+      "note": "Read-only WSL network context; route get is a local lookup, not a probe."
+    },
+    {
+      "code": "ip neigh show",
+      "result": "PASS",
+      "outputRetained": false,
+      "note": "Read-only WSL network context; route get is a local lookup, not a probe."
+    },
+    {
+      "code": "ip route show\nip route get 198.51.100.20",
+      "result": "PASS",
+      "outputRetained": false,
+      "note": "Read-only WSL network context; route get is a local lookup, not a probe."
+    },
+    {
+      "code": "ip -s link show",
+      "result": "PASS",
+      "outputRetained": false,
+      "note": "Read-only WSL network context; route get is a local lookup, not a probe."
+    },
+    {
+      "code": "netsh wlan show interfaces",
+      "result": "PASS",
+      "note": "Host WLAN inventory only; no RF capacity/roaming test.",
+      "outputRetained": false
+    },
+    {
+      "code": "ip -br link\nip -s link show",
+      "result": "PASS",
+      "outputRetained": false,
+      "note": "Read-only WSL network context; route get is a local lookup, not a probe."
+    },
+    {
+      "code": "ethtool eth0",
+      "result": "LIMITED",
+      "note": "WSL virtual interface only; no physical link-partner, duplex or cable validation.",
+      "outputRetained": false
+    },
+    {
+      "code": "ip -br link\nip neigh show",
+      "result": "PASS",
+      "outputRetained": false,
+      "note": "Read-only WSL network context; route get is a local lookup, not a probe."
+    },
+    {
+      "code": "Get-NetAdapter | Select-Object Name, Status, MacAddress, LinkSpeed",
+      "result": "PASS",
+      "outputRetained": false
+    },
+    {
+      "code": "ip -d link show\nip -s link show",
+      "result": "PASS",
+      "outputRetained": false,
+      "note": "Read-only WSL network context; route get is a local lookup, not a probe."
+    },
+    {
+      "code": "ethtool -k eth0",
+      "result": "LIMITED",
+      "note": "WSL virtual interface only; no physical link-partner, duplex or cable validation.",
+      "outputRetained": false
+    },
+    {
+      "code": "ip route get 198.51.100.20",
+      "result": "PASS",
+      "outputRetained": false,
+      "note": "Read-only WSL network context; route get is a local lookup, not a probe."
+    },
+    {
+      "code": "ping -c 3 127.0.0.1",
+      "result": "PASS",
+      "outputRetained": false,
+      "note": "Bounded local ICMP only; not a physical-path or WAN test."
+    },
+    {
+      "code": "ip link show",
+      "result": "PASS",
+      "outputRetained": false,
+      "note": "Read-only WSL network context; route get is a local lookup, not a probe."
+    },
+    {
+      "code": "ping -4 -c 3 -M do -s 1472 127.0.0.1",
+      "result": "PASS",
+      "outputRetained": false,
+      "note": "Bounded local ICMP only; not a physical-path or WAN test."
+    },
+    {
+      "code": "Get-NetAdapter | Select-Object Name, Status, LinkSpeed",
+      "result": "PASS",
+      "outputRetained": false
+    },
+    {
+      "code": "ping -c 5 127.0.0.1",
+      "result": "PASS",
+      "outputRetained": false,
+      "note": "Bounded local ICMP only; not a physical-path or WAN test."
+    },
+    {
+      "name": "Physical network failure labs",
+      "result": "TABLETOP",
+      "note": "No switch/router/AP/physical Linux NIC supplied; VLAN, RF, cable, tunnel and duplex failure records are explicitly synthetic. No network configuration changed."
+    }
+  ]
+}

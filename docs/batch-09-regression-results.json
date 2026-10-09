@@ -1,0 +1,587 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "tests/content.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "{\n  \"result\": \"PASS\",\n  \"originalNodes\": 442,\n  \"groups\": 69,\n  \"lessons\": 115,\n  \"examQuestions\": 1150,\n  \"quickChecks\": 345,\n  \"labs\": 115,\n  \"sourceHash\": \"ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25\",\n  \"batches\": 33\n}",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/static-route-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 1536 independently expected declaration/address-boundary cases, eight scenarios, installation versus LPM, strict input and copy isolation",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/floating-route-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 2048 independent eligibility/distance/health cases, ten scenarios, equal-AD scope, AD 255 exclusion, strict validation and copy isolation",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/pbr-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 2048 independent packet/origin/attachment/sequence/health cases, eleven scenarios, ACL versus route-map deny, strict declarations and result isolation",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 1536 independent directed-path/boolean combinations, ten cases, cost boundaries and strict/fresh inputs",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-area-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 3072 independent Areas graph cases and eleven authored scenarios",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-dr-bdr-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 19469 independent DR/BDR event histories; actual phase corroboration",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/routing-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "{\n  date: '2026-10-04',\n  result: 'PASS',\n  reference: 'Python standard-library ipaddress, independent prefix matching',\n  vectors: 1546,\n  invalidInputs: 15,\n  checks: [\n    'All addresses in three sample /24s plus external boundaries, default on/off',\n    'Prefix length precedes metric; equal-prefix lower metric wins',\n    'Blackhole is terminal; connected action distinct',\n    'Invalid inputs rejected; results cannot mutate subsequent lookup'\n  ],\n  limitations: 'Fixed eligible IPv4 table; no policy routing, route installation, ECMP or neighbor resolution'\n}",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/static-routing-lab.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 9 actual isolated Linux routing and cleanup checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-routing-lab.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 16 actual OSPF, packet and isolation checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-areas-lab.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 12 actual multi-area OSPF and isolation checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-dr-bdr-lab.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 12 actual DR-BDR election, forwarding, capture and isolation checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/eigrp-routing-lab.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 12 actual EIGRP/probe/packet/isolation checks; five interrupted cleanup paths",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/bgp-routing-lab.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 11 actual BGP categories; five interrupted cleanup boundaries",
+      "error": null
+    },
+    {
+      "command": [
+        "python",
+        "tools/build-bgp-evidence.py"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "Built six source-hashed BGP observer/checkpoint views",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/bgp-evidence.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 5 BGP evidence categories / 12 combinations",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/eigrp-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 34816 supplied-distance/declaration combinations, nine cases and strict/fresh boundaries",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/eigrp-metric-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 19600 independent metric combinations and nine cases",
+      "error": null
+    },
+    {
+      "command": [
+        "python",
+        "tools/build-eigrp-neighbor-evidence.py"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "Built eight source-hashed EIGRP neighbor views and separate startup headers",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/eigrp-neighbor-evidence.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 5 neighbor evidence categories / 32 combinations",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/eigrp-topology.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 5 topology categories / 24 combinations",
+      "error": null
+    },
+    {
+      "command": [
+        "python",
+        "tools/build-ospf-lsa-evidence.py"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "Built seven preserved actual OSPF LSA header views from two passing experiments",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-lsa-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 279936 independent LSA header comparisons and eighteen authored cases",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-lsa-evidence.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 33 actual LSA headers in seven separately scoped views",
+      "error": null
+    },
+    {
+      "command": [
+        "python",
+        "tools/build-ospf-troubleshooting-evidence.py"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "Built 10 separate actual troubleshooting views",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-troubleshooting-evidence.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 7 troubleshooting evidence checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-static-routing.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8 Static Routing browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-floating-routes.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8 Floating Static Routes browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-pbr.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8 Policy-Based Routing browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ospf.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8 OSPF browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ospf-areas.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 9 OSPF Areas browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ospf-dr-bdr.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 9 DR/BDR lesson browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ospf-lsa.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 9 LSA lesson browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ospf-troubleshooting.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 9 troubleshooting lesson browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-eigrp.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 EIGRP preview browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-eigrp-lesson.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 7 integrated EIGRP lesson browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-eigrp-metrics.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8 EIGRP metrics browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-eigrp-neighbors.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 9 EIGRP neighbor browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-eigrp-topology.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8 EIGRP topology browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-bgp.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 BGP foundation browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-bgp-lesson.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 5 BGP lesson browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-enterprise-lab.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 integrated lab browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS original roadmap preserves all runtime node and group IDs\nPASS original dialog links to correct lesson and preserves learner storage\nPASS all seven lesson routes render complete components\nPASS stepper next/previous/play/pause/reset and diagram zoom\nPASS exam answers hidden until response; correct/wrong feedback and modes\nPASS quick check is separate from exam\nPASS clipboard copies exact command\nPASS anchors preserve lesson route\nPASS full-content search finds commands and glossary concepts\nPASS RAID known failure patterns and reset\nPASS RAID exhaustive four-drive failure masks\nPASS RAID blocks show copies, parity and missing members\nPASS pending and malformed routes are honest and recoverable\nPASS light/dark persistence\nPASS desktop/tablet/mobile layouts and screenshots\nPASS keyboard flow controls and reduced-motion behavior\nPASS file URL works without HTTP or external dependencies\nPASS no JavaScript errors or missing assets\nPASS 18 browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/quality-audit.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "{\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"Prerequisite graph is acyclic and all prerequisites are authored\",\n    \"Per-lesson exams have ten distinct prompts; comparison/flow/port context present\",\n    \"All authored lessons have substantial structured content (word count used only as a floor, not proof of accuracy)\",\n    \"Initial reader loads only the selected lesson bundle\",\n    \"All 115 authored routes: unique DOM IDs, named form controls/buttons, one H1 and valid section anchors\",\n    \"All authored previous/next links preserve original adjacency, including pending lab nodes\",\n    \"Core body/muted/accent/warning color tokens meet 4.5:1 on paper/surface/soft backgrounds in both themes\",\n    \"Broad local search responds within the 2-second audit ceiling\",\n    \"No page exceptions while traversing the complete authored course\"\n  ],\n  \"localSearchMs\": 161,\n  \"bytes\": {\n    \"learn.html\": 6301,\n    \"content/catalog.js\": 851035,\n    \"scripts/learning.js\": 33458,\n    \"scripts/network-models.js\": 12295,\n    \"scripts/address-tools.js\": 16322,\n    \"scripts/protocol-models.js\": 8560,\n    \"scripts/service-models.js\": 9352,\n    \"scripts/switching-models.js\": 8062,\n    \"scripts/routing-models.js\": 4118,\n    \"scripts/diagnostic-models.js\": 10649,\n    \"scripts/packet-models.js\": 3905,\n    \"scripts/cisco-models.js\": 6882,\n    \"scripts/boot-models.js\": 7002,\n    \"scripts/storage-models.js\": 3781,\n    \"scripts/lifecycle-models.js\": 6609,\n    \"scripts/port-models.js\": 4448,\n    \"scripts/vlan-control-models.js\": 13183,\n    \"scripts/aggregation-models.js\": 4035,\n    \"scripts/stp-evidence.js\": 5642,\n    \"scripts/mst-models.js\": 5652,\n    \"scripts/edge-models.js\": 4426,\n    \"scripts/guard-models.js\": 3908,\n    \"scripts/root-guard-models.js\": 6098,\n    \"scripts/loop-guard-models.js\": 6478,\n    \"scripts/storm-models.js\": 8027,\n    \"scripts/security-port-models.js\": 8563,\n    \"scripts/span-models.js\": 7308,\n    \"scripts/rspan-models.js\": 7950,\n    \"scripts/erspan-models.js\": 9000,\n    \"scripts/enterprise-lab-models.js\": 11143,\n    \"scripts/static-route-models.js\": 8469,\n    \"scripts/floating-route-models.js\": 11018,\n    \"scripts/pbr-models.js\": 8415,\n    \"scripts/ospf-models.js\": 9819,\n    \"scripts/ospf-area-models.js\": 11114,\n    \"scripts/ospf-dr-bdr-models.js\": 11763,\n    \"styles/ospf-dr-bdr.css\": 1331,\n    \"scripts/ospf-lsa-models.js\": 13454,\n    \"content/ospf-lsa-evidence.js\": 11618,\n    \"styles/ospf-lsa.css\": 961,\n    \"content/ospf-troubleshooting-evidence.js\": 80755,\n    \"scripts/ospf-troubleshooting.js\": 8395,\n    \"styles/ospf-troubleshooting.css\": 1342,\n    \"scripts/eigrp-models.js\": 8887,\n    \"styles/eigrp.css\": 1283,\n    \"scripts/eigrp-metric-models.js\": 8590,\n    \"styles/eigrp-metrics.css\": 1233,\n    \"styles/eigrp-neighbors.css\": 958,\n    \"styles/eigrp-topology.css\": 313,\n    \"scripts/eigrp-topology.js\": 9551,\n    \"scripts/eigrp-neighbors.js\": 9802,\n    \"content/eigrp-neighbor-evidence.js\": 37673,\n    \"styles/learning.css\": 27128,\n    \"scripts/bgp-attributes-models.js\": 11854,\n    \"styles/bgp-attributes.css\": 1403,\n    \"scripts/local-preference-models.js\": 9868,\n    \"styles/local-preference.css\": 655,\n    \"scripts/med-models.js\": 12639,\n    \"styles/med.css\": 911,\n    \"scripts/as-path-models.js\": 8688,\n    \"styles/as-path.css\": 959,\n    \"scripts/communities-models.js\": 10988,\n    \"styles/communities.css\": 566,\n    \"content/batch-01.js\": 71800,\n    \"content/batch-02.js\": 57137,\n    \"content/batch-03.js\": 128672,\n    \"content/batch-04.js\": 100550,\n    \"content/batch-05.js\": 231658,\n    \"content/batch-06.js\": 170199,\n    \"content/batch-07.js\": 325720,\n    \"content/batch-08.js\": 283392,\n    \"content/batch-09.js\": 720594\n  }\n}",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ebgp-policy-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS ten independent scenarios and 512 prerequisite masks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ebgp-policy.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 3 eBGP groundwork browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ebgp-lesson.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 4 integrated eBGP browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ibgp-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS12 scenarios,256 role/session cases and32 resolution cases",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ibgp.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS3 iBGP groundwork browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ibgp-lesson.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS4 integrated iBGP browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "staging/bgp-attributes/model.test.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS: 17 presets, 3072 independent type/byte cases, rejection boundaries and mounted invalid-context/reset tests.",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "staging/local-preference/model.test.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS: 11 presets, independent outcome oracle, strict schemas/ranges, eligibility, ties, independent system/exchange gates, fresh presets, and UI contract.",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "staging/med/model.test.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "MED independent assertions: 315 passed; 19 presets, 24 authored outcome cases, 16 admission/resolution combinations, strict invalid-input and fake-DOM contracts. No actual FRR or browser-layout execution.",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "staging/as-path/model.test.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "✔ independent preset outcome table (3.8538ms)\n✔ all 64 independent loop, policy and resolution combinations (0.649ms)\n✔ length sweep counts occurrences independently (80.0573ms)\n✔ earlier policy never fabricates a length-stage winner (0.4627ms)\n✔ strict input rejects unsupported syntax, coercion and reserved ASNs (1.4081ms)\n✔ system, forwarding and return gates are independent (0.2211ms)\n✔ lesson schema counts and answers (0.3392ms)\n✔ browser export and static accessible UI contract (1.555ms)\n✔ mount clears stale rows and unknown scenario remains hidden after edits; reset works (2.452ms)\nℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 101.3705",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "staging/communities/model.test.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS: 19 preset oracles; 3072 independent target/gate/family/membership cases; strict range, syntax, coercion, sparse array and 32-entry checks; exact lesson schema; DOM error persistence/reset and text rendering contract.",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/bgp-policy-primary.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8064 independent primary BGP policy cases",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-bgp-policy-series.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 5 BGP policy lesson browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/content.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "{\n  \"result\": \"PASS\",\n  \"originalNodes\": 442,\n  \"groups\": 69,\n  \"lessons\": 115,\n  \"examQuestions\": 1150,\n  \"quickChecks\": 345,\n  \"labs\": 115,\n  \"sourceHash\": \"ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25\",\n  \"batches\": 33\n}",
+      "error": null
+    }
+  ],
+  "scope": "Twenty authored Batch09 routing drafts;115 authored lessons total and95 accepted originals until primary batch acceptance. Actual isolated Linux/FRR companions remain separate from browser declarations and guided Cisco/FRR inspection. BGP attribute flags, Local Preference, conditional two-path MED, ordinary AS_SEQUENCE and community-set policy are bounded deterministic exercises, not full bestpath, malformed UPDATE execution, iBGP/RR execution or actual policy/multipath/hardware/application/convergence proof."
+}

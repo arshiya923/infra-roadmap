@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "batch": "17",
+  "topics": 22,
+  "checks": [
+    {
+      "id": "s7-g0-t0",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g0-t1",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g0-t2",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g0-t3",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g0-t4",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g0-t5",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g0-t6",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g0-t7",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g1-t0",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g1-t1",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g1-t2",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g1-t3",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g2-t0",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g2-t1",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g2-t2",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g2-t3",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g3-t0",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g3-t1",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g3-t2",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g4-t0",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g4-t1",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    },
+    {
+      "id": "s7-g4-t2",
+      "questions": 13,
+      "commandExecution": "Guided and unexecuted on Cisco targets",
+      "result": "PASS"
+    }
+  ],
+  "scope": "Structure, question identifiers/answers, incident continuity, artifact paths and command classification only. No vendor parser or device execution."
+}

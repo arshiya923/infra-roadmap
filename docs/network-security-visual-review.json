@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "reviewer": "Primary assistant",
+  "topics": 33,
+  "captures": 99,
+  "scope": "Personally inspected all nine current contact sheets: desktop worksheets, mechanism flows and 320-pixel dark layouts. Tables intentionally scroll; start/end and keyboard access separately verified in browser tests. No full WCAG certification.",
+  "sha256": {
+    "docs/screenshots/network-security/review/01-contact.png": "3c3b972bc0108142cd293f0aabe794d727a1cea572c12699d9808ef1606f80b6",
+    "docs/screenshots/network-security/review/02-contact.png": "c1f0f982d818c7e761ab1cb6ed67bad02cb49144cae4e4d1c5453de42fe2ce0c",
+    "docs/screenshots/network-security/review/03-contact.png": "0fa7f121e4dbd7771b603f54505b7cbbef2a3d66ccc8b4cdc78ce39fb37fed75",
+    "docs/screenshots/network-security/review/04-contact.png": "57e9c043e91c3ffaa1884edc46b603eb02027bf117ae537287b2797db18eddbf",
+    "docs/screenshots/network-security/review/05-contact.png": "8d2f105d8a140cd4591683df6a3a8e903cf68ad4980a2494c59808d6352e96c1",
+    "docs/screenshots/network-security/review/06-contact.png": "de9eafb8841e4adea10ad7ef67856b2be86976443187b3592b6c57e7de5b786e",
+    "docs/screenshots/network-security/review/07-contact.png": "94776ac5f715dde2d4cbffb553287613febeedd291d5fe00e4fe6cb6452678e3",
+    "docs/screenshots/network-security/review/08-contact.png": "004586be03ba3b4a076fc71c5e20ce06df454daf22035bedddd50dbbe3112267",
+    "docs/screenshots/network-security/review/09-contact.png": "e6d9c1a381207e6d10af4dc8d79702208eda323274fce6bfc12830529eaf26c0"
+  }
+}

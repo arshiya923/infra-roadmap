@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "tests/content.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "{\n  \"result\": \"PASS\",\n  \"originalNodes\": 442,\n  \"groups\": 69,\n  \"lessons\": 135,\n  \"examQuestions\": 1350,\n  \"quickChecks\": 405,\n  \"labs\": 135,\n  \"sourceHash\": \"ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25\",\n  \"batches\": 33\n}\n",
+      "error": "",
+      "seconds": 0.22
+    },
+    {
+      "command": [
+        "node",
+        "staging/route-control/model.test.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "✔ route-filtering independent gates and retained local choice (10.5127ms)\n✔ redistribution independent preparation, tag and metric outcomes (2.9227ms)\n✔ route-map deny action differs from referenced-list denial (0.9486ms)\n✔ prefix-list independent boundaries, default-only/all and order (2.0172ms)\n✔ packet ACL expected cases and ordered explicit denial (0.979ms)\n✔ noncontiguous wildcard uses bit equality across all third octets (8.7629ms)\n✔ strict prefix/address/number/enum/boolean schemas reject coercion and malformed declarations (2.0214ms)\n✔ policy permit, system/forward/return gates remain separate (1.0559ms)\n✔ lesson schema, substantial narrative and exact distinct assessment answers (6.8382ms)\n✔ browser export, accessible hooks, invalid scenario persistence and immediate malformed input hiding (9.6165ms)\nℹ tests 10\nℹ suites 0\nℹ pass 10\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 59.8494\n",
+      "error": "",
+      "seconds": 0.19
+    },
+    {
+      "command": [
+        "node",
+        "staging/vrf-scope/model.test.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "VRF scope independent assertions: 607 passed; 18 VRF presets, 20 VRF-Lite presets, explicit leak truth cases, strict invalid-input and fake-DOM contracts; two full-schema lessons with 20 MCQs/6 quick checks. No live FRR/Linux/Cisco or browser-layout execution.\n",
+      "error": "",
+      "seconds": 0.16
+    },
+    {
+      "command": [
+        "node",
+        "staging/gateway-redundancy/model.test.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS: 36 scenarios and 687 independent cases, strict validation, mounted invalid-context/reset and lesson structure.\n",
+      "error": "",
+      "seconds": 0.12
+    },
+    {
+      "command": [
+        "node",
+        "staging/multicast/model.test.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS: 40 fixed preset oracles; 221184 independent ingress/TTL/OIL/context cases; 16384 settled filter/union cases; 3 schema/narrative/link checks; strict invalid input; mounted stale-output hiding and reset.\n",
+      "error": "",
+      "seconds": 1.64
+    },
+    {
+      "command": [
+        "node",
+        "staging/qos-labels/model.test.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS: 11 classification presets and 12 marking presets, 131072 TCP/UDP port cases, all DSCP×ECN combinations for all marking policies/classes, strict adversarial validation, schema/MCQ checks, hidden-invalid and keyboard reset behavior.\n",
+      "error": "",
+      "seconds": 0.55
+    },
+    {
+      "command": [
+        "node",
+        "staging/qos-service/model.test.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS: 32 presets; 309 independent cases; strict input and mounted reset checks; four lesson structures and narrative minimums.\n",
+      "error": "",
+      "seconds": 0.16
+    },
+    {
+      "command": [
+        "node",
+        "staging/advanced-lab/model.test.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "✔ independent preset first-failure and outcome oracles (3.8279ms)\n✔ all8192 independent boolean masks preserve raw and cumulative gates (57.0593ms)\n✔ strict gateway/VLAN enums and supplied role boundaries (0.412ms)\n✔ strict declarations reject extra/missing/malformed/no-coercion inputs (1.737ms)\n✔ full lesson schema and original exercise boundaries (3.1088ms)\n✔ workbook retains ownership, original timed probes and exact unsaved rollback scope (0.4977ms)\n✔ browser export/accessibility and unknown context persists across edits until reset (3.6442ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 78.9528\n",
+      "error": "",
+      "seconds": 0.2
+    },
+    {
+      "command": [
+        "node",
+        "tests/batch-10-primary.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS 8706 independent primary expectations for route control, VRF and gateway redundancy\n",
+      "error": "",
+      "seconds": 0.22
+    },
+    {
+      "command": [
+        "node",
+        "tests/batch-10-service-primary.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS 11802 primary service/multicast/lab cases\n",
+      "error": "",
+      "seconds": 0.25
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-batch-10.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS 20 Batch10 integrated lesson routes\n",
+      "error": "",
+      "seconds": 350.3
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-batch-10-acceptance.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS all 20 animation/static/connection routes\n",
+      "error": "",
+      "seconds": 12.92
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS original roadmap preserves all runtime node and group IDs\nPASS original dialog links to correct lesson and preserves learner storage\nPASS all seven lesson routes render complete components\nPASS stepper next/previous/play/pause/reset and diagram zoom\nPASS exam answers hidden until response; correct/wrong feedback and modes\nPASS quick check is separate from exam\nPASS clipboard copies exact command\nPASS anchors preserve lesson route\nPASS full-content search finds commands and glossary concepts\nPASS RAID known failure patterns and reset\nPASS RAID exhaustive four-drive failure masks\nPASS RAID blocks show copies, parity and missing members\nPASS pending and malformed routes are honest and recoverable\nPASS light/dark persistence\nPASS desktop/tablet/mobile layouts and screenshots\nPASS keyboard flow controls and reduced-motion behavior\nPASS file URL works without HTTP or external dependencies\nPASS no JavaScript errors or missing assets\nPASS 18 browser checks\n",
+      "error": "",
+      "seconds": 14.36
+    },
+    {
+      "command": [
+        "node",
+        "tests/quality-audit.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "{\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"Prerequisite graph is acyclic and all prerequisites are authored\",\n    \"Per-lesson exams have ten distinct prompts; comparison/flow/port context present\",\n    \"All authored lessons have substantial structured content (word count used only as a floor, not proof of accuracy)\",\n    \"Initial reader loads only the selected lesson bundle\",\n    \"All 135 authored routes: unique DOM IDs, named form controls/buttons, one H1 and valid section anchors\",\n    \"All authored previous/next links preserve original adjacency, including pending lab nodes\",\n    \"Core body/muted/accent/warning color tokens meet 4.5:1 on paper/surface/soft backgrounds in both themes\",\n    \"Broad local search responds within the 2-second audit ceiling\",\n    \"No page exceptions while traversing the complete authored course\"\n  ],\n  \"localSearchMs\": 192,\n  \"bytes\": {\n    \"learn.html\": 7151,\n    \"content/catalog.js\": 991315,\n    \"scripts/learning.js\": 34098,\n    \"scripts/network-models.js\": 12295,\n    \"scripts/address-tools.js\": 16322,\n    \"scripts/protocol-models.js\": 8560,\n    \"scripts/service-models.js\": 9352,\n    \"scripts/switching-models.js\": 8062,\n    \"scripts/routing-models.js\": 4118,\n    \"scripts/diagnostic-models.js\": 10649,\n    \"scripts/packet-models.js\": 3905,\n    \"scripts/cisco-models.js\": 6882,\n    \"scripts/boot-models.js\": 7002,\n    \"scripts/storage-models.js\": 3781,\n    \"scripts/lifecycle-models.js\": 6609,\n    \"scripts/port-models.js\": 4448,\n    \"scripts/vlan-control-models.js\": 13183,\n    \"scripts/aggregation-models.js\": 4035,\n    \"scripts/stp-evidence.js\": 5642,\n    \"scripts/mst-models.js\": 5652,\n    \"scripts/edge-models.js\": 4426,\n    \"scripts/guard-models.js\": 3908,\n    \"scripts/root-guard-models.js\": 6098,\n    \"scripts/loop-guard-models.js\": 6478,\n    \"scripts/storm-models.js\": 8027,\n    \"scripts/security-port-models.js\": 8563,\n    \"scripts/span-models.js\": 7308,\n    \"scripts/rspan-models.js\": 7950,\n    \"scripts/erspan-models.js\": 9000,\n    \"scripts/enterprise-lab-models.js\": 11143,\n    \"scripts/static-route-models.js\": 8469,\n    \"scripts/floating-route-models.js\": 11018,\n    \"scripts/pbr-models.js\": 8415,\n    \"scripts/ospf-models.js\": 9819,\n    \"scripts/ospf-area-models.js\": 11114,\n    \"scripts/ospf-dr-bdr-models.js\": 11763,\n    \"styles/ospf-dr-bdr.css\": 1331,\n    \"scripts/ospf-lsa-models.js\": 13454,\n    \"content/ospf-lsa-evidence.js\": 11618,\n    \"styles/ospf-lsa.css\": 961,\n    \"content/ospf-troubleshooting-evidence.js\": 80755,\n    \"scripts/ospf-troubleshooting.js\": 8395,\n    \"styles/ospf-troubleshooting.css\": 1342,\n    \"scripts/eigrp-models.js\": 8887,\n    \"styles/eigrp.css\": 1283,\n    \"scripts/eigrp-metric-models.js\": 8590,\n    \"styles/eigrp-metrics.css\": 1233,\n    \"styles/eigrp-neighbors.css\": 958,\n    \"styles/eigrp-topology.css\": 313,\n    \"scripts/eigrp-topology.js\": 9551,\n    \"scripts/eigrp-neighbors.js\": 9802,\n    \"content/eigrp-neighbor-evidence.js\": 37673,\n    \"styles/learning.css\": 27128,\n    \"scripts/bgp-attributes-models.js\": 11854,\n    \"styles/bgp-attributes.css\": 1403,\n    \"scripts/local-preference-models.js\": 9868,\n    \"styles/local-preference.css\": 655,\n    \"scripts/med-models.js\": 12639,\n    \"styles/med.css\": 911,\n    \"scripts/as-path-models.js\": 8688,\n    \"styles/as-path.css\": 959,\n    \"scripts/communities-models.js\": 10988,\n    \"styles/communities.css\": 566,\n    \"content/batch-01.js\": 71800,\n    \"content/batch-02.js\": 57137,\n    \"content/batch-03.js\": 128672,\n    \"content/batch-04.js\": 100550,\n    \"content/batch-05.js\": 231658,\n    \"content/batch-06.js\": 170199,\n    \"content/batch-07.js\": 325720,\n    \"content/batch-08.js\": 283392,\n    \"content/batch-09.js\": 720594,\n    \"content/batch-10.js\": 538368\n  }\n}\n",
+      "error": "",
+      "seconds": 117.25
+    }
+  ],
+  "scope": "Existing content, independent declared-state models and real browser UI checks. Guided target-device commands and physical protocol/service behavior remain unexecuted."
+}

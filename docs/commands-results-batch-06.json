@@ -1,0 +1,246 @@
+{
+  "date": "2026-10-08",
+  "scope": "Eleven accepted diagnostic topics; Windows and Ubuntu-24.04 WSL; four integrated lab commands verified separately in network-fundamentals-results.json",
+  "results": [
+    {
+      "command": "ping -4 -n -c 3 -W 1 -w 5 127.0.0.1",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Bounded loopback only; no remote path evidence"
+    },
+    {
+      "command": "ping -6 -n -c 3 -W 1 -w 5 ::1",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Bounded loopback only; no remote path evidence"
+    },
+    {
+      "command": "ping.exe /4 /n 3 /w 1000 127.0.0.1",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Bounded loopback only; no remote path evidence"
+    },
+    {
+      "command": "ping.exe /6 /n 3 /w 1000 ::1",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Bounded loopback only; no remote path evidence"
+    },
+    {
+      "command": "tracert.exe /4 /d /h 3 /w 500 127.0.0.1",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Bounded loopback only; no remote path evidence"
+    },
+    {
+      "command": "tracert.exe /6 /d /h 3 /w 500 ::1",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Bounded loopback only; no remote path evidence"
+    },
+    {
+      "command": "traceroute --help",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Usage/version only"
+    },
+    {
+      "command": "traceroute -4 -n -m 3 -q 1 -w 1 127.0.0.1",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Bounded loopback only; no remote path evidence"
+    },
+    {
+      "command": "nslookup -version",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Usage/version only"
+    },
+    {
+      "command": "python3 labs/dns-loopback.py --run",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Bounded loopback only; no remote path evidence"
+    },
+    {
+      "command": "dig -v",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Usage/version only"
+    },
+    {
+      "command": "ipconfig.exe",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ipconfig.exe /all",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ipconfig.exe /displaydns",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ipconfig.exe /?",
+      "result": "PASS",
+      "exitCode": 1,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ip -j link show dev lo",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ip -j address show dev lo",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ip -4 route get 127.0.0.1",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ip -6 route get ::1",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ip -4 rule show",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ip -4 neigh show dev lo",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "arp.exe -a",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ip -4 neigh show",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ip -6 neigh show",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "netstat.exe -ano -p tcp",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "netstat.exe -ano -p udp",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "python labs/socket-inspection.py --run",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Bounded loopback only; no remote path evidence"
+    },
+    {
+      "command": "ss -ltn",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ss -lun",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ss -tan",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "ss -ltnp",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Read-only local configuration; raw inventory not retained"
+    },
+    {
+      "command": "python3 labs/socket-inspection.py --run",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Bounded loopback only; no remote path evidence"
+    },
+    {
+      "command": "tcpdump --version",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Offline generated fixture or tool version; no live capture"
+    },
+    {
+      "command": "tcpdump -nn -r labs/packet-fixture.pcap",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Offline generated fixture or tool version; no live capture"
+    },
+    {
+      "command": "tcpdump -nn -r labs/packet-fixture.pcap \"tcp port 443\"",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Offline generated fixture or tool version; no live capture"
+    },
+    {
+      "command": "tcpdump -nn -r labs/packet-fixture.pcap \"udp port 53\"",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Offline generated fixture or tool version; no live capture"
+    },
+    {
+      "command": "tshark --version",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Offline generated fixture or tool version; no live capture"
+    },
+    {
+      "command": "tshark -n -r labs/packet-fixture.pcap -Y \"tcp.flags.syn == 1\" -T fields -e frame.number",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Offline generated fixture or tool version; no live capture"
+    },
+    {
+      "command": "tshark -n -r labs/packet-fixture.pcap -Y \"frame.cap_len < frame.len\" -T fields -e frame.number -e frame.cap_len -e frame.len",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Offline generated fixture or tool version; no live capture"
+    },
+    {
+      "command": "tshark -n -r labs/packet-fixture.pcap -Y \"dns.flags.response == 1\" -T fields -e frame.number -e dns.a",
+      "result": "PASS",
+      "exitCode": 0,
+      "scope": "Offline generated fixture or tool version; no live capture"
+    }
+  ]
+}

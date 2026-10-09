@@ -1,0 +1,80 @@
+{
+  "batch": "29",
+  "result": "PASS",
+  "evidence": {
+    "dependencies": {
+      "baseline": {
+        "available": true,
+        "blocked": [],
+        "required": [
+          "app",
+          "checkout",
+          "database",
+          "dns",
+          "time",
+          "tls"
+        ]
+      },
+      "fault": {
+        "available": false,
+        "blocked": [
+          "database"
+        ],
+        "required": [
+          "app",
+          "checkout",
+          "database",
+          "dns",
+          "time",
+          "tls"
+        ]
+      },
+      "recovery": {
+        "available": true,
+        "blocked": [],
+        "required": [
+          "app",
+          "checkout",
+          "database",
+          "dns",
+          "time",
+          "tls"
+        ]
+      },
+      "temporaryDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-expansion-prrevt_l",
+      "cleanupVerified": true
+    },
+    "objectives": {
+      "baseline": {
+        "sli": "99.95",
+        "allowedBad": "10.000",
+        "remaining": "5.000",
+        "meets": true
+      },
+      "fault": {
+        "sli": "99.8",
+        "allowedBad": "10.000",
+        "remaining": "-10.000",
+        "meets": false
+      },
+      "recovery": {
+        "sli": "99.92",
+        "allowedBad": "10.000",
+        "remaining": "2.000",
+        "meets": true
+      },
+      "scope": "Three independent supplied windows. Recovery does not erase bad requests from an earlier window.",
+      "temporaryDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-expansion-2_j1fyyg",
+      "cleanupVerified": true
+    },
+    "change": {
+      "candidateRejected": true,
+      "faultDiffers": true,
+      "restoredExact": true,
+      "sha256": "5904629c8d47474872b9ff63bbdf0425204f6f808bfd85f54e5069f01e98fe8d",
+      "scope": "Actual local file validation/restoration; no running service or production deployment.",
+      "temporaryDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-expansion-8cf4trxv",
+      "cleanupVerified": true
+    }
+  }
+}

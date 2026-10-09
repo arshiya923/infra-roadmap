@@ -1,0 +1,30 @@
+{
+  "batch": "28",
+  "nodeIds": [
+    "capstone-final"
+  ],
+  "status": "accepted",
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant",
+  "gapcodeUsed": false,
+  "deliverables": 15,
+  "examQuestions": 10,
+  "quickChecks": 3,
+  "modelChecks": 763,
+  "actualLocalRuns": 5,
+  "evidence": [
+    "docs/capstone-results.json",
+    "docs/browser-capstone-results.json",
+    "docs/quality-audit-batch-28.json",
+    "docs/validation-batch-28.md",
+    "docs/research-capstone.md"
+  ],
+  "scope": "Educational design, supplied arithmetic and actual owned SQLite recovery; enterprise deployment and target failover remain guided/unexecuted.",
+  "sha256": {
+    "content/batch-28.js": "90e83f1ca7a625af6c563cfccea28c77d1f8f91685c135071d04ce03c077c43c",
+    "labs/capstone-workbook.md": "d374805f64c49fa8f29c8548c32e70feaee4d46b621fe03b343d63b41eb80ba9",
+    "labs/capstone-recovery.py": "47676cf4de3b52f4ffa687c2b1e61bcfff085de12969493aa6570df72d6b64b6",
+    "scripts/capstone.js": "789e882a7fd5280cef81adbdf84ab0c25739494d72d4b4fe2185cd8889bc865a",
+    "styles/capstone.css": "4e0e3ddc819cf8cd920c5d3050be17e0247a8de9f0d33dc85048ffd1dc10fbfc"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "25 fresh regression commands with zero exits, actual isolated labs and all 102 authored routes",
+    "279936 independent header comparisons; nine integrated browser checks; raw-field/source-hash evidence verification",
+    "102 lessons, 1020 exams, 306 quick checks; seven reviewed drafts, thirteen topics remaining",
+    "All exact 91 reviewed questions and 67 classified command blocks match source",
+    "95 accepted nodes unchanged; thirteen full-batch gates pending; OSPF troubleshooting next",
+    "Twelve manually inspected screenshots, preserved immutable source hash and resolved local links",
+    "Owned temporary author/review/documentation helpers absent"
+  ],
+  "screenshots": [
+    "lsa-desktop.png",
+    "lsa-flow.png",
+    "lsa-light-mobile.png",
+    "lsa-dark-mobile.png",
+    "lsa-header-start.png",
+    "lsa-header-end.png",
+    "lsa-trace-start.png",
+    "lsa-trace-end.png",
+    "lsa-evidence-start.png",
+    "lsa-evidence-end.png",
+    "lsa-lab-start.png",
+    "lsa-lab-end.png"
+  ],
+  "localLinks": [
+    [
+      "docs/ospf-lsa-foundation.md",
+      "../learn.html#lesson=s3-g1-t3"
+    ],
+    [
+      "docs/ospf-lsa-foundation.md",
+      "ospf-areas-lab-results.json"
+    ],
+    [
+      "docs/ospf-lsa-foundation.md",
+      "ospf-dr-bdr-lab-results.json"
+    ],
+    [
+      "docs/ospf-lsa-foundation.md",
+      "ospf-lsa-evidence-results.json"
+    ],
+    [
+      "docs/ospf-lsa-foundation.md",
+      "ospf-areas-runtime-foundation.md"
+    ],
+    [
+      "docs/ospf-lsa-foundation.md",
+      "ospf-dr-bdr-runtime-foundation.md"
+    ],
+    [
+      "docs/ospf-lsa-foundation.md",
+      "ospf-lsa-model-results.json"
+    ],
+    [
+      "docs/ospf-lsa-foundation.md",
+      "browser-ospf-lsa-results.json"
+    ],
+    [
+      "docs/ospf-lsa-foundation.md",
+      "batch-09-regression-results.json"
+    ],
+    [
+      "docs/ospf-lsa-foundation.md",
+      "review-batch-09.json"
+    ],
+    [
+      "docs/ospf-lsa-foundation.md",
+      "exam-review-batch-09.json"
+    ],
+    [
+      "docs/ospf-lsa-foundation.md",
+      "commands-results-batch-09.json"
+    ],
+    [
+      "docs/ospf-lsa-foundation.md",
+      "ospf-lsa-checkpoint-results.json"
+    ]
+  ],
+  "sourceHash": "ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25",
+  "weeklyRemainingPercent": 70,
+  "scope": "LSA basics reviewed draft; full Batch 09 remains pending. No GapCode, checksum validation, new external/MaxAge experiment or service inference."
+}

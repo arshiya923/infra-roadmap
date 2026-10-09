@@ -1,0 +1,4251 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS_PRIMARY_REVIEW",
+  "examCount": 200,
+  "quickCount": 60,
+  "courseExamPromptsChecked": 1350,
+  "identicalCourseExamPrompts": [],
+  "review": "Primary checked answers, explanations, distractors and declared scope. No certification alignment claimed.",
+  "topics": [
+    {
+      "topicId": "s3-g5-t0",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Inbound scope",
+          "question": "Does denying this imported candidate prove the BGP session failed?",
+          "answer": "No; session state is independent.",
+          "explanation": "Import admission applies to one candidate; it does not change the independent session declaration.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "No; session state is independent.",
+            "Yes; every import denial closes TCP.",
+            "Only if the prefix is a /24.",
+            "Yes; route policy and session state are identical."
+          ],
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Export scope",
+          "question": "What can remain when exportPermit is false?",
+          "answer": "The local BGP choice.",
+          "explanation": "Export policy suppresses the advertisement while the eligible selected local BGP candidate can remain.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The export advertisement remains guaranteed.",
+            "The local BGP choice.",
+            "Every local source route must disappear.",
+            "NEXT_HOP resolution becomes automatic."
+          ],
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Eligibility",
+          "question": "What must an admitted candidate still satisfy?",
+          "answer": "Usable NEXT_HOP and applicable selection prerequisites.",
+          "explanation": "Import is one gate; unresolved NEXT_HOP or failed selection still prevents the supplied choice.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Only a short AS_PATH.",
+            "Only a live peer socket.",
+            "Usable NEXT_HOP and applicable selection prerequisites.",
+            "Nothing; admission proves installation."
+          ],
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Source scope",
+          "question": "Does import denial automatically delete every source for the prefix?",
+          "answer": "No; other route sources require separate inspection.",
+          "explanation": "The worksheet supplies one imported source; connected, static and other candidates require independent evidence.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; policy removes connected and static routes too.",
+            "Yes; all sources share one imported record.",
+            "Only a more-specific route survives by definition.",
+            "No; other route sources require separate inspection."
+          ],
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Attachment",
+          "question": "Does an unattached permit list govern the supplied peer?",
+          "answer": "No; the actual attachment matters.",
+          "explanation": "The consuming peer/family attachment activates policy; an object definition alone does not.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "No; the actual attachment matters.",
+            "Yes; every configured list affects every neighbor.",
+            "Yes; names activate policies globally.",
+            "Only the sequence number activates it."
+          ],
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Policy direction",
+          "question": "Which gate controls advertisement toward the peer?",
+          "answer": "The independent export gate.",
+          "explanation": "Export policy controls the supplied outgoing advertisement, separate from import and packet forwarding.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "The local system source distance.",
+            "The independent export gate.",
+            "The original reply packet.",
+            "The unrelated inbound packet ACL."
+          ],
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "System source",
+          "question": "Can system displacement coexist with a local BGP choice?",
+          "answer": "Yes, in this scoped default advertisement design.",
+          "explanation": "This scope keeps protocol choice and system source selection separate and excludes extra advertisement-suppression features.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "No; system displacement always suppresses all BGP advertisements.",
+            "No; BGP and system source are the same gate.",
+            "Yes, in this scoped default advertisement design.",
+            "Only when return traffic is measured."
+          ],
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Packet distinction",
+          "question": "Is route filtering the same decision as a packet ACL?",
+          "answer": "No; routing information and packets have different contexts.",
+          "explanation": "Route filtering evaluates routing information; the packet ACL lesson evaluates declared packet headers.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; both decisions inspect the same fields universally.",
+            "Yes; a routing prefix is always a packet source.",
+            "Only TCP route filtering is a packet ACL.",
+            "No; routing information and packets have different contexts."
+          ],
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Observation",
+          "question": "What supports remote advertisement visibility?",
+          "answer": "Evidence at the intended receiving observer.",
+          "explanation": "A receiver observation can establish the intended advertisement visibility; a sender configuration alone cannot.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Evidence at the intended receiving observer.",
+            "Only local configured intent.",
+            "Only a local Established summary.",
+            "Only system route distance."
+          ],
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Return",
+          "question": "Does admitted and selected BGP information prove the reply works?",
+          "answer": "No; original return evidence is independent.",
+          "explanation": "BGP choice supplies no opposite-direction route, packet-policy or service evidence.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; selected BGP information creates reply routes.",
+            "No; original return evidence is independent.",
+            "Yes; admission implies application success.",
+            "Only a default route makes return automatic."
+          ],
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "question": "Import denial with Established still declared: what fails?",
+          "answer": "This imported candidate, while the independent session declaration can remain Established.",
+          "explanation": "The filter applies to the supplied route rather than the TCP relationship.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "question": "What remains when only exportPermit becomes false?",
+          "answer": "The eligible selected local BGP candidate can remain; this outgoing advertisement is denied.",
+          "explanation": "Outgoing policy is a separate boundary from local choice.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "question": "Why is a postpolicy BGP view not a complete unfiltered received-route history?",
+          "answer": "It reflects its declared observer/store and policy scope, not every original UPDATE or rejected candidate.",
+          "explanation": "Name the actual view before interpreting absent information.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t0",
+          "questionId": "s3-g5-t0-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g5-t1",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Source eligibility",
+          "question": "Which starting source state does this worksheet require?",
+          "answer": "A selected source-RIB route.",
+          "explanation": "The starting declaration is source-RIB selection, not merely configured or protocol-visible intent.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "A selected source-RIB route.",
+            "A configured line regardless of installation.",
+            "Any visible source protocol alternative.",
+            "A successful source-interface ping only."
+          ],
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Prefix boundary",
+          "question": "Does the admitted /24 automatically admit a contained /25?",
+          "answer": "No; the filter is exact-prefix.",
+          "explanation": "The owned admission filter compares exact 198.51.100.0/24; a /25 is a different route.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; containment is sufficient for the exact filter.",
+            "No; the filter is exact-prefix.",
+            "Yes; more-specifics inherit exact admission.",
+            "Only a /32 is automatically admitted."
+          ],
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Family boundary",
+          "question": "Does target family ipv6 pass this IPv4 admission?",
+          "answer": "No.",
+          "explanation": "The target family gate requires ipv4 and does not translate the supplied route into another AF.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; the family name is decorative.",
+            "Yes; IPv4 automatically becomes IPv6.",
+            "No.",
+            "Only if the source tag is 100."
+          ],
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Seed scope",
+          "question": "What happens if seedPresent is false?",
+          "answer": "The scoped target preparation is blocked.",
+          "explanation": "Explicit seed presence is a requirement of this worksheet, independent of possible real protocol defaults.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The source numeric metric is copied automatically.",
+            "The model invents the target default seed.",
+            "The candidate is admitted without metric context.",
+            "The scoped target preparation is blocked."
+          ],
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Metric semantics",
+          "question": "Can source and target metrics be converted by comparing their numbers?",
+          "answer": "No; their protocol semantics differ.",
+          "explanation": "A metric number has meaning inside its protocol; equal integers do not establish an equivalent target metric.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "No; their protocol semantics differ.",
+            "Yes; lower numbers always describe a better route across protocols.",
+            "Yes; all metrics measure bandwidth.",
+            "Only matching integer sizes are needed."
+          ],
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Feedback guard",
+          "question": "Which supplied source tag is blocked?",
+          "answer": "Tag 100.",
+          "explanation": "The fixed feedback guard rejects sourceTag100 before preparing the target candidate.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Every nonzero tag.",
+            "Tag 100.",
+            "Tag 200 only.",
+            "An unmarked source only."
+          ],
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Target label",
+          "question": "Which tag is placed on an admitted target candidate?",
+          "answer": "Tag 100.",
+          "explanation": "Every admitted target candidate receives the supplied administrative tag 100.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "The source metric as a tag.",
+            "No tag because translation erases labels.",
+            "Tag 100.",
+            "The current source tag unchanged in every case."
+          ],
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Trust",
+          "question": "Does tag 100 authenticate original provenance?",
+          "answer": "No; it is a declared policy label.",
+          "explanation": "Tags can be changed or lost at boundaries and are not cryptographic origin proof.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; tags are cryptographic signatures.",
+            "Yes; tag 100 proves allocation ownership.",
+            "Only when its number is below 256.",
+            "No; it is a declared policy label."
+          ],
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Target choice",
+          "question": "Does admission guarantee target/system selection?",
+          "answer": "No; those gates are independent.",
+          "explanation": "Target candidate preparation precedes independent target and system selection gates.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "No; those gates are independent.",
+            "Yes; preparation forces target installation.",
+            "Only source metric comparison determines selection.",
+            "Return readiness forces target selection."
+          ],
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Execution",
+          "question": "Does the worksheet generate actual external LSAs?",
+          "answer": "No; it evaluates supplied declarations.",
+          "explanation": "No daemon runs and no protocol advertisement is emitted by the worksheet.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; changing the browser starts OSPF.",
+            "No; it evaluates supplied declarations.",
+            "Yes; tag assignment emits a live LSA.",
+            "Only the baseline runs a daemon."
+          ],
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "question": "Why does a configured but unselected source route fail this boundary?",
+          "answer": "The worksheet starts from a selected source-RIB route.",
+          "explanation": "Configuration and protocol visibility are weaker than the required selection declaration.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "question": "Why is an equal source and target metric number not a conversion rule?",
+          "answer": "Each metric has protocol-specific meaning; the target requires its own seed design.",
+          "explanation": "Identical integers do not make different protocol metrics equivalent.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "question": "What is the exact scope of rejecting source tag 100?",
+          "answer": "It blocks this identified feedback marker, without proving universal loop prevention.",
+          "explanation": "Tags can be rewritten or lost at other boundaries.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t1",
+          "questionId": "s3-g5-t1-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g5-t2",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Referenced deny",
+          "question": "What does a prefix-list deny mean for this entry match?",
+          "answer": "The route-map entry does not match.",
+          "explanation": "A referenced prefix-list permit is match true; list deny or no match is match false for this entry.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The route-map entry does not match.",
+            "The route-map immediately denies the route.",
+            "The route-map automatically permits the route.",
+            "The set action runs before any match."
+          ],
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Explicit deny",
+          "question": "When does a route-map deny entry reject the route?",
+          "answer": "When its matching conditions succeed.",
+          "explanation": "The entry action deny applies only after its condition recognizes the candidate.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Whenever its referenced list contains any deny.",
+            "When its matching conditions succeed.",
+            "Before any matching condition is checked.",
+            "Only when no later permit exists."
+          ],
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Ordering",
+          "question": "Which fixed sequence is evaluated first?",
+          "answer": "Sequence 10.",
+          "explanation": "The fixed ordinary entry order is ascending sequence 10, then 20, with default exit behavior.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Sequence 20 because it permits.",
+            "The lowest route prefix length first.",
+            "Sequence 10.",
+            "All entries are evaluated simultaneously."
+          ],
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Set operation",
+          "question": "What does a matching scoped permit set?",
+          "answer": "LOCAL_PREF 200.",
+          "explanation": "The permitted fixed entry supplies LOCAL_PREF 200; it does not set system source distance or measure performance.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "A new source address.",
+            "A measured latency value200.",
+            "A system distance200 in all protocols.",
+            "LOCAL_PREF 200."
+          ],
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Implicit result",
+          "question": "What happens when no fixed route-map entry matches?",
+          "answer": "Implicit deny.",
+          "explanation": "With no matching entry, the nonempty fixed route map reaches its implicit final deny.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Implicit deny.",
+            "Automatic permit.",
+            "The last entry action regardless of match.",
+            "A random earlier permit."
+          ],
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Prefix boundary",
+          "question": "Does the bounded permit entry admit /29?",
+          "answer": "No; its maximum length is 28.",
+          "explanation": "The bounded permit uses ge 25 le 28; a /29 fails the maximum length even when contained.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; containment alone overrides length.",
+            "No; its maximum length is 28.",
+            "Yes; every more-specific child is admitted.",
+            "Only if the route-map action is deny."
+          ],
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "List-deny case",
+          "question": "What follows a nonmatching deny entry in list-deny rules?",
+          "answer": "Evaluation continues to sequence 20.",
+          "explanation": "In list-deny rules, sequence 10 nonmatch allows sequence 20 evaluation; its permit-all list recognizes the route.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Immediate route denial.",
+            "Immediate set LOCAL_PREF without permit.",
+            "Evaluation continues to sequence 20.",
+            "The entire map is skipped."
+          ],
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Unsupported control flow",
+          "question": "Does this model execute call or goto?",
+          "answer": "No; only default fixed entry exits are modeled.",
+          "explanation": "Only simple list matches and normal exits are implemented; call, continue and goto are excluded.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; every FRR control-flow extension is implemented.",
+            "Only recursive call is automatic.",
+            "Goto is inferred from sequence gaps.",
+            "No; only default fixed entry exits are modeled."
+          ],
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Attachment",
+          "question": "What must be identified before interpreting a route map?",
+          "answer": "Its actual consuming feature and attachment.",
+          "explanation": "Feature and attachment determine how policy is consumed; a shared name alone does not prove equivalent behavior.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Its actual consuming feature and attachment.",
+            "Only the policy object name.",
+            "Only the prefix length.",
+            "Only the entry count."
+          ],
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Service distinction",
+          "question": "Does a permitted set operation prove the original service works?",
+          "answer": "No; forwarding and return need separate evidence.",
+          "explanation": "Attribute setting is a control-policy result, separate from system selection and original exchange evidence.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; LOCAL_PREF 200 authenticates service.",
+            "No; forwarding and return need separate evidence.",
+            "Yes; a set action creates the reply path.",
+            "Only when the matching entry is sequence 20."
+          ],
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "question": "A referenced prefix-list denies the route: does that route-map entry match?",
+          "answer": "No; this fixed prefix-list match condition returns nonmatch.",
+          "explanation": "The model continues to another entry rather than applying the entry action.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "question": "A matching route-map deny precedes a later permit: which acts?",
+          "answer": "The matching deny rejects the route in this simple default-exit ruleset.",
+          "explanation": "Later entries are not consulted after that match.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "question": "Does set LOCAL_PREF200 make a nonmatching entry match?",
+          "answer": "No; the match condition is independent of its set action.",
+          "explanation": "Actions apply only under the consuming feature and matched entry semantics.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t2",
+          "questionId": "s3-g5-t2-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g5-t3",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Exact matching",
+          "question": "Does bare 198.51.100.0/24 permit its /25 child?",
+          "answer": "No; the route length must match exactly.",
+          "explanation": "Without ge/le, candidate length must equal the entry base length, so /25 does not match bare /24.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "No; the route length must match exactly.",
+            "Yes; all contained more-specifics inherit permit.",
+            "Yes; a /25 is shorter in address count.",
+            "Only if it is the upper half."
+          ],
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Lower boundary",
+          "question": "Does ge 25 le 28 admit a contained /25?",
+          "answer": "Yes.",
+          "explanation": "The lower bound is inclusive: a contained aligned /25 meets ge 25.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "No; ge 25 excludes 25.",
+            "Yes.",
+            "Only /28 matches.",
+            "Only exact /24 matches."
+          ],
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Upper boundary",
+          "question": "Does ge 25 le 28 admit a contained /28?",
+          "answer": "Yes.",
+          "explanation": "The upper bound is inclusive: a contained aligned /28 meets le 28.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "No; le 28 excludes 28.",
+            "Only /25 matches.",
+            "Yes.",
+            "Every /29 also matches."
+          ],
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Beyond boundary",
+          "question": "Does ge 25 le 28 admit a contained /29?",
+          "answer": "No.",
+          "explanation": "Length 29 exceeds le 28 even though the address block is contained.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; it remains contained.",
+            "Yes; le 28 means at least 28.",
+            "Only if its address is aligned.",
+            "No."
+          ],
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Containment",
+          "question": "Does a neighboring /25 pass just because its length is 25?",
+          "answer": "No; address containment must also pass.",
+          "explanation": "Containment and length are both required; neighboring 198.51.101.0/25 is outside the base block.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "No; address containment must also pass.",
+            "Yes; the length test is the only test.",
+            "Yes; neighboring blocks are equivalent.",
+            "Only its LOCAL_PREF matters."
+          ],
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Default-only",
+          "question": "What does bare permit 0.0.0.0/0 match?",
+          "answer": "Only the default route.",
+          "explanation": "A bare /0 entry has exact length 0 and recognizes only the default route.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Every IPv4 route prefix.",
+            "Only the default route.",
+            "Every non-default route only.",
+            "Every /32 host route only."
+          ],
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "All lengths",
+          "question": "What does permit 0.0.0.0/0 le 32 match in this scope?",
+          "answer": "All aligned IPv4 route prefixes.",
+          "explanation": "Base /0 contains IPv4 space and le 32 permits candidate lengths 0 through 32.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Only the default route.",
+            "Only prefixes exactly /32.",
+            "All aligned IPv4 route prefixes.",
+            "Only non-default prefixes."
+          ],
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Ordered deny",
+          "question": "Can a later permit rescue an earlier matching deny?",
+          "answer": "No; first match stops processing.",
+          "explanation": "Processing stops at the first matching entry; a later permit is not examined after matching deny.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; permit overrides deny independently of order.",
+            "Yes; the last matching entry wins.",
+            "Only a default permit rescues it.",
+            "No; first match stops processing."
+          ],
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Alignment",
+          "question": "Is 198.51.100.1/24 a valid worksheet route prefix?",
+          "answer": "No; it has host bits set.",
+          "explanation": "A /24 base must have zero host bits; .1 is a host address inside that network, not its canonical base.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "No; it has host bits set.",
+            "Yes; host bits are ignored automatically here.",
+            "Yes; every dotted address with /24 is canonical.",
+            "Only if the list has a ge condition."
+          ],
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Implicit result",
+          "question": "What happens if no fixed list entry matches?",
+          "answer": "Implicit deny.",
+          "explanation": "No match in the fixed nonempty prefix list yields implicit deny, not a cached prior result.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Implicit permit.",
+            "Implicit deny.",
+            "Reuse the previous matching result.",
+            "Select the shortest listed prefix."
+          ],
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "question": "Does bare 198.51.100.0/24 match 198.51.100.128/25?",
+          "answer": "No; without length qualifiers the route must have the exact /24 length.",
+          "explanation": "Containment alone does not satisfy an exact entry.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "question": "Which child lengths pass ge 25 le 28 under the /24 base?",
+          "answer": "Contained aligned children /25 through /28 inclusive.",
+          "explanation": "Both containment and inclusive lower/upper length bounds must agree.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "question": "How does bare 0/0 differ from 0/0 le 32?",
+          "answer": "Bare 0/0 matches only the default; le 32 admits every aligned IPv4 route prefix.",
+          "explanation": "Adding the upper qualifier changes specificity scope.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t3",
+          "questionId": "s3-g5-t3-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g5-t4",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Standard scope",
+          "question": "What does the standard packet ruleset test?",
+          "answer": "Packet source address only.",
+          "explanation": "The fixed standard packet list ignores destination, protocol and ports when deciding its source match.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Packet source address only.",
+            "Destination address only.",
+            "TCP destination port only.",
+            "Every IP and transport field."
+          ],
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Extended scope",
+          "question": "Which fields must the scoped extended permit match?",
+          "answer": "Source, destination, TCP and destination port 443.",
+          "explanation": "The extended permit is a conjunction of its supplied source block, exact destination, TCP and destination port 443.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Only source address.",
+            "Source, destination, TCP and destination port 443.",
+            "Only destination port regardless of protocol.",
+            "Only an earlier Established declaration."
+          ],
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Order",
+          "question": "Which rule decides the 192.0.2.66 TCP 443 packet first?",
+          "answer": "Sequence 10 explicit deny.",
+          "explanation": "The host-specific deny matches before the broader source-block permit is considered.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Sequence 20 broad permit.",
+            "The implicit rule before explicit entries.",
+            "Sequence 10 explicit deny.",
+            "Both explicit entries simultaneously."
+          ],
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Wildcard zero",
+          "question": "What does a zero wildcard bit mean?",
+          "answer": "Compare the corresponding address bit.",
+          "explanation": "Zero wildcard bits are checked for equality against the corresponding base address bits.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Ignore the corresponding bit.",
+            "Require that bit to be zero in the packet.",
+            "Compare only if all mask bits are zero.",
+            "Compare the corresponding address bit."
+          ],
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Wildcard one",
+          "question": "What does a one wildcard bit mean?",
+          "answer": "Ignore the corresponding address bit.",
+          "explanation": "One wildcard bits remove those address bits from the equality test.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Ignore the corresponding address bit.",
+            "Require that bit to be one in the packet.",
+            "Compare the corresponding bit.",
+            "Deny any address containing that bit."
+          ],
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Noncontiguous masks",
+          "question": "Are noncontiguous wildcard bits valid in this context?",
+          "answer": "Yes; matching uses exact bit masks.",
+          "explanation": "Cisco-style wildcard masks specify ignored bits and need not have contiguous ones.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "No; wildcards must be contiguous subnet masks.",
+            "Yes; matching uses exact bit masks.",
+            "Only for IPv6.",
+            "Only when every bit is ignored."
+          ],
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Even third octet",
+          "question": "Does 10.1.254.77 match base 10.1.2.0 wildcard 0.0.254.255?",
+          "answer": "Yes.",
+          "explanation": "Wildcard 0.0.254.255 preserves the third-octet low bit;254 is even and the last octet is ignored.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "No; the third octet must equal2 exactly.",
+            "No; the last octet must be zero.",
+            "Yes.",
+            "Only TCP 443 can make the wildcard match."
+          ],
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Odd third octet",
+          "question": "Does 10.1.3.77 match that noncontiguous rule?",
+          "answer": "No.",
+          "explanation": "The low bit of third octet3 is one, while base third octet2 has a zero low bit, so it fails.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; all third-octet bits are ignored.",
+            "Yes;3 is adjacent to 2.",
+            "Only a standard list forces a match.",
+            "No."
+          ],
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Different consumer",
+          "question": "Are route-ACL source/destination semantics modeled here?",
+          "answer": "No; this scope is IPv4 packets.",
+          "explanation": "Route-policy and other ACL consumers can assign different meanings to address fields; only packet headers are modeled.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "No; this scope is IPv4 packets.",
+            "Yes; all ACL consumers interpret fields identically.",
+            "Yes; routes are treated as ICMP packets.",
+            "Only source semantics are universal."
+          ],
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Reply",
+          "question": "Does a forward packet permit prove its reply succeeds?",
+          "answer": "No; return policy and reachability need separate evidence.",
+          "explanation": "The stateless forward permit creates neither a remote return route nor reverse ACL permission or service state.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; packet permit creates the remote reply route.",
+            "No; return policy and reachability need separate evidence.",
+            "Yes; TCP 443 implies established state.",
+            "Only the broader permit guarantees return."
+          ],
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "question": "Why does wildcard 0.0.254.255 match an even third octet?",
+          "answer": "Its third-octet least significant bit is significant while the other third-octet bits are ignored.",
+          "explanation": "Wildcard bit zero requires equality; the base third octet2 has low bit zero.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "question": "Does the fixed standard ACL inspect TCP destination port 443?",
+          "answer": "No; it tests packet source only.",
+          "explanation": "Extended rules can include transport fields, but this standard list does not.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "question": "Does a TCP443 packet permit create a return session?",
+          "answer": "No; this ACL is stateless and return/forwarding prerequisites are separate.",
+          "explanation": "A single allowed header decision proves no complete application exchange.",
+          "type": "short-answer",
+          "difficulty": "Intermediate",
+          "testedConcept": "Topic-specific boundary",
+          "topicId": "s3-g5-t4",
+          "questionId": "s3-g5-t4-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g6-t0",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Context before address",
+          "question": "BLUE and RED both contain 10.10.0.0/24. What should be identified before a destination lookup?",
+          "answer": "The actual ingress or explicitly scoped local routing context.",
+          "explanation": "The destination can name different owners in separate tables.",
+          "difficulty": "Beginner",
+          "type": "multiple-choice",
+          "options": [
+            "The actual ingress or explicitly scoped local routing context.",
+            "Search every VRF for the most specific matching prefix.",
+            "Use the numeric gateway address to infer the tenant.",
+            "Use only the default table because the router is shared."
+          ],
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Independent matching prefix",
+          "question": "BLUE's overlapping candidate is absent while RED's matching candidate remains. What does this fixture do for an agreed BLUE query?",
+          "answer": "Reports no BLUE candidate without borrowing RED.",
+          "explanation": "The model's no-fallback table policy is explicit.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Uses RED because the destination prefix matches.",
+            "Reports no BLUE candidate without borrowing RED.",
+            "Continues into default automatically on every missing BLUE route.",
+            "Imports BLUE and RED tenant prefixes whenever service-leak permission is enabled."
+          ],
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Gateway ownership",
+          "question": "Both tenants use gateway 10.10.0.1. Does the equal numeric address prove a shared gateway identity?",
+          "answer": "No; gateway context and attachment ownership still differ.",
+          "explanation": "An address is interpreted in its ownership context.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; identical gateway IPs automatically share one ARP entry.",
+            "Yes; a shared physical router forces both gateway addresses to use one identity.",
+            "No; gateway context and attachment ownership still differ.",
+            "No; gateway IP addresses must be globally unique across every VRF."
+          ],
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Permitted candidate",
+          "question": "A BLUE service prefix is explicitly permitted into RED, but its RED target next hop is unresolved. What is supported?",
+          "answer": "The candidate can exist without declared installation.",
+          "explanation": "Import permission and target usability are different gates.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The permit automatically copies BLUE next-hop resolution into RED.",
+            "The imported route is installed because import permission replaces target usability.",
+            "The service prefix must be rejected because no route can be shared across VRFs.",
+            "The candidate can exist without declared installation."
+          ],
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Source displacement",
+          "question": "A candidate exists and resolves in BLUE, but blueSelected is false. What does the tool claim?",
+          "answer": "This declared source is not installed; the competitor is outside scope.",
+          "explanation": "It does not compute every other real routing source.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "This declared source is not installed; the competitor is outside scope.",
+            "The entire real BLUE table necessarily has no usable alternatives.",
+            "Candidate visibility proves installation despite the selected-source declaration.",
+            "The candidate becomes selected in default whenever it is displaced in BLUE."
+          ],
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Linux boundary",
+          "question": "Which statement correctly describes the worksheet's no-fallback result and real Linux behavior?",
+          "answer": "No fallback is declared here; actual rule and terminal-route design must be inspected.",
+          "explanation": "Linux policy rules can continue beyond a table miss.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "The VRF device name alone blocks table fallback under any rule set.",
+            "No fallback is declared here; actual rule and terminal-route design must be inspected.",
+            "Linux VRF devices create namespace boundaries, so routing-policy rules are irrelevant.",
+            "The l3mdev rule always outranks every separately configured policy rule."
+          ],
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Backend distinction",
+          "question": "In FRR 8.4, what does Zebra -n select?",
+          "answer": "The Linux network-namespace VRF backend.",
+          "explanation": "The ordinary backend instead maps Linux VRF devices/tables.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "A new table ID in the same namespace, without selecting a namespace backend.",
+            "A separate routing daemon process required for every VRF.",
+            "The Linux network-namespace VRF backend.",
+            "Automatic terminal default routes for all tenant tables."
+          ],
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Default meaning",
+          "question": "Is the context named default identical to an IPv4 0.0.0.0/0 route?",
+          "answer": "No; one names a routing context and the other a prefix.",
+          "explanation": "A context can have or lack its own default route.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; the default context always contains an installed default route.",
+            "Yes; one default route is shared by all named contexts.",
+            "No; the default context can contain only a default route and no specific prefixes.",
+            "No; one names a routing context and the other a prefix."
+          ],
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Wrong attachment",
+          "question": "An intended BLUE endpoint has a known attachment declared bound to RED. Does the destination IP correct the binding?",
+          "answer": "No; the tool reports the bound RED context and intended-owner disagreement.",
+          "explanation": "A real misbinding can steer traffic incorrectly; the tool's flag is diagnostic.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "No; the tool reports the bound RED context and intended-owner disagreement.",
+            "Yes; the overlapping destination prefix identifies the intended BLUE context.",
+            "Yes; the equal gateway IP overrides the actual RED interface binding.",
+            "Both tables are queried because the same prefix exists in BLUE and RED."
+          ],
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Service evidence",
+          "question": "All declarations agree in the VRF worksheet. What actual measurement has it performed?",
+          "answer": "None; it reports supplied prerequisite agreement.",
+          "explanation": "No packet, FIB or authentication test runs.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Installed hardware forwarding was verified because source-selected is true.",
+            "None; it reports supplied prerequisite agreement.",
+            "A round trip was observed because return-ready is true.",
+            "The original application succeeded because a route exists in the named context."
+          ],
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Lookup scope",
+          "question": "Which comes first here: attachment/context agreement or destination query?",
+          "answer": "Attachment/context agreement.",
+          "explanation": "The route is interpreted within the selected context.",
+          "difficulty": "Beginner",
+          "type": "short-answer",
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Explicit sharing gates",
+          "question": "What remains after permission introduces a RED service candidate?",
+          "answer": "Target next-hop resolution, selected-source installation and original policy/forward/return requirements.",
+          "explanation": "Permission does not manufacture these dependencies.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Security limit",
+          "question": "Does separate route ownership prove authentication or encryption?",
+          "answer": "No.",
+          "explanation": "Security controls and measurements remain independent.",
+          "difficulty": "Advanced",
+          "type": "short-answer",
+          "topicId": "s3-g6-t0",
+          "questionId": "s3-g6-t0-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g6-t1",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Physical versus logical",
+          "question": "BLUE VLAN10 and RED VLAN20 share one physical trunk. What happens to their routing tables in this design?",
+          "answer": "They remain separate through their Layer 3 attachment bindings.",
+          "explanation": "Physical sharing does not automatically merge route ownership.",
+          "difficulty": "Beginner",
+          "type": "multiple-choice",
+          "options": [
+            "They remain separate through their Layer 3 attachment bindings.",
+            "They merge because the cable and physical router are shared.",
+            "The router compares BLUE and RED matching routes in one combined best-route contest.",
+            "The overlapping prefix is rejected because all VRFs must use unique addresses."
+          ],
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "VLAN mismatch",
+          "question": "packetVlan20 is declared at blue-dot10 for a BLUE endpoint. What does this worksheet report?",
+          "answer": "A VLAN/attachment disagreement without applying the intended-exchange lookup.",
+          "explanation": "The diagnostic does not infer intended tenant from the destination.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The destination automatically corrects VLAN20 to the intended BLUE VLAN10.",
+            "A VLAN/attachment disagreement without applying the intended-exchange lookup.",
+            "The mismatched tag is treated as untagged and sent into default.",
+            "The destination address alone selects BLUE regardless of the attachment and tag."
+          ],
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Shared transport fault",
+          "question": "trunkReady is false while BLUE/RED route declarations remain present. Which conclusion is supported?",
+          "answer": "Tenant ingress prerequisites fail while route inventory may remain populated.",
+          "explanation": "Shared carriage and per-context route inventory are different layers.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Both routing tables necessarily disappear when the trunk becomes unavailable.",
+            "The intended endpoint can use the other tenant VLAN as an automatic ingress backup.",
+            "Tenant ingress prerequisites fail while route inventory may remain populated.",
+            "Separate VRFs protect each tenant from failure of the shared physical trunk."
+          ],
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Local MPLS requirement",
+          "question": "Does this fixed local VRF-Lite design require an MPLS transport?",
+          "answer": "No; separate local contexts and attachments are sufficient for its scope.",
+          "explanation": "An optional provider MPLS backbone is a different architecture.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; every local VRF packet must carry an MPLS label.",
+            "Yes; local routing contexts require provider MP-BGP peering before any route lookup.",
+            "Yes; an RD must be serialized in each local packet to distinguish BLUE from RED.",
+            "No; separate local contexts and attachments are sufficient for its scope."
+          ],
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Platform attachment form",
+          "question": "Can a Catalyst SVI example prove that the same provisioning syntax supports a router subinterface?",
+          "answer": "No; use each target's supported attachment and syntax.",
+          "explanation": "The worksheet labels are abstract and commands specify their target.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "No; use each target's supported attachment and syntax.",
+            "Yes; all Layer 3 logical interfaces share the same provisioning syntax.",
+            "Yes; an SVI VLAN binding supplies identical encapsulation commands on a router subinterface.",
+            "Yes; the VRF name determines attachment syntax independently of platform and interface type."
+          ],
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Explicit import usability",
+          "question": "RED has a permitted BLUE service candidate, but leakResolved is false. What can the model establish?",
+          "answer": "Candidate presence without target-resolved installation.",
+          "explanation": "A source next hop resolved in BLUE does not satisfy the separate target RED declaration.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "BLUE resolution of the same numeric next hop automatically satisfies RED resolution.",
+            "Candidate presence without target-resolved installation.",
+            "The imported prefix is installed because candidate presence means selected source.",
+            "RED receives an automatic reverse route as soon as BLUE service import is permitted."
+          ],
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "RD/RT limit",
+          "question": "Do an RD or RT value alone provide packet delivery or tenant authorization?",
+          "answer": "No; actual attachment, control/data-plane and policy requirements remain.",
+          "explanation": "Control identity or import policy labels are not an entire forwarding/security system.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "The RD creates the required dataplane path even when attachment binding is missing.",
+            "An RT value authenticates the tenant independently of access policy.",
+            "No; actual attachment, control/data-plane and policy requirements remain.",
+            "Matching RT values guarantee a usable next hop and original return path."
+          ],
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Untagged sentinel",
+          "question": "What does packetVlan0 mean in this fixture?",
+          "answer": "Untagged separate default-port, not an IEEE VLAN ID or automatic trunk fallback.",
+          "explanation": "The worksheet deliberately excludes native-VLAN processing.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "A real VLAN assigned to every untagged frame by this worksheet.",
+            "The shared trunk native VLAN, inferred without reading target configuration.",
+            "Permission to put unknown tenant VLANs into the default routing context.",
+            "Untagged separate default-port, not an IEEE VLAN ID or automatic trunk fallback."
+          ],
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Implementation comparison",
+          "question": "How should the separate Linux analogy's table-miss behavior be assessed?",
+          "answer": "Inspect actual rule priorities and terminal/default routes rather than assume the fixture's no-fallback policy.",
+          "explanation": "Linux RPDB behavior is target-specific and outside the declared algorithm.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Inspect actual rule priorities and terminal/default routes rather than assume the fixture's no-fallback policy.",
+            "Assume a named Linux VRF can never continue to a later routing-policy rule.",
+            "Treat the Cisco table behavior and FRR Linux backend as identical implementations.",
+            "Use a local route-get result as proof of the original forwarded exchange."
+          ],
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Independent return",
+          "question": "BLUE route prerequisites agree but returnReady is false. What changes?",
+          "answer": "Original exchange prerequisites fail while the declared route installation remains.",
+          "explanation": "The reply declaration does not remove the forward candidate.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "RED becomes the route source when the BLUE reply path is absent.",
+            "Original exchange prerequisites fail while the declared route installation remains.",
+            "A selected forward route guarantees a working original reply path.",
+            "The shared trunk automatically supplies the reply route because forward readiness is true."
+          ],
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Separate ownership",
+          "question": "Does sharing a trunk combine BLUE and RED route tables?",
+          "answer": "No.",
+          "explanation": "Logical Layer 3 bindings preserve distinct context ownership.",
+          "difficulty": "Beginner",
+          "type": "short-answer",
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Attachment agreement",
+          "question": "Which declarations establish intended tenant ingress readiness?",
+          "answer": "Available trunk/attachment and agreement among VLAN, logical attachment, actual VRF binding, intended endpoint and gateway owner.",
+          "explanation": "The destination IP does not repair a mismatch.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Evidence limit",
+          "question": "All VRF-Lite declarations agree. What actual frame or service observation did the tool make?",
+          "answer": "None.",
+          "explanation": "The tabletop evaluates supplied prerequisites only.",
+          "difficulty": "Advanced",
+          "type": "short-answer",
+          "topicId": "s3-g6-t1",
+          "questionId": "s3-g6-t1-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g7-t0",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Host gateway",
+          "question": "What default gateway does the fixed host use while A and B change roles?",
+          "answer": "192.0.2.1, the virtual gateway.",
+          "explanation": "HSRP preserves a virtual host gateway identity.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "192.0.2.1, the virtual gateway.",
+            "192.0.2.2, A’s real interface address.",
+            "192.0.2.3, B’s real interface address.",
+            "224.0.0.102, the hello multicast destination."
+          ],
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Initial tie",
+          "question": "No previous active exists; A and B are available at priority 100. Which router wins this fixed initial selection?",
+          "answer": "B because its real IPv4 .3 is higher than A .2.",
+          "explanation": "The supplied equal-priority initial tie uses real interface IPv4.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "A because the lower real interface IPv4 wins a tie.",
+            "B because its real IPv4 .3 is higher than A .2.",
+            "A because the virtual gateway address is lower than both real addresses.",
+            "Neither until preemption is enabled for the initial election."
+          ],
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Recovery history",
+          "question": "B is serving; higher-priority A returns with A preemption disabled. What does this settled worksheet select?",
+          "answer": "B retains the available active role.",
+          "explanation": "Highest returning priority does not override disabled preemption.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "A takes over solely because 110 exceeds 100.",
+            "B retains the role only if B’s own preemption is enabled.",
+            "B retains the available active role.",
+            "A and B share the active role for this one group."
+          ],
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Failure takeover",
+          "question": "A is unavailable and completed failure/expiry is declared. Can available B take over without preemption?",
+          "answer": "Yes, failure takeover differs from displacing a live active.",
+          "explanation": "Failure takeover is a different case from recovery preemption.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "No; B needs preemption even after active failure.",
+            "No; failure takeover requires B to have higher priority than A had.",
+            "Yes, but B must replace the virtual IP with its own real address.",
+            "Yes, failure takeover differs from displacing a live active."
+          ],
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Configured tracking",
+          "question": "A priority 110 has configured down-object decrement 20; B is 100 with preempt enabled. What is the scoped result?",
+          "answer": "A becomes 90 and B can take over.",
+          "explanation": "Only configured tracking changes A’s effective priority.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "A becomes 90 and B can take over.",
+            "A stays 110 because tracking changes only the hello timer.",
+            "A becomes 90 but remains active even though B can preempt at 100.",
+            "B becomes 80 because the tracked failure lowers both routers’ priorities."
+          ],
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "No tracking",
+          "question": "A’s uplink declaration fails but tracking is absent. What can remain true?",
+          "answer": "A can remain active at its supplied priority while path readiness fails.",
+          "explanation": "Control availability and upstream dependency are separate.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "B becomes active because any uplink failure implicitly configures tracking.",
+            "A can remain active at its supplied priority while path readiness fails.",
+            "A’s priority automatically drops by the default decrement despite absent tracking.",
+            "B must have a higher group number to take over."
+          ],
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Version 2 identity",
+          "question": "What is the fixed HSRP v2 group 10 virtual MAC?",
+          "answer": "0000.0c9f.f00a.",
+          "explanation": "The v2 group number is represented in its three-hex-digit suffix.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "0000.5e00.010a.",
+            "0000.0c07.ac0a.",
+            "0000.0c9f.f00a.",
+            "0000.0c9f.f010."
+          ],
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Protocol transport",
+          "question": "Which control destination is scoped for IPv4 HSRP v2?",
+          "answer": "UDP 1985 to 224.0.0.102.",
+          "explanation": "HSRP and GLBP share a multicast destination but use different UDP ports.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "UDP 1985 to 224.0.0.2.",
+            "IP protocol 112 to 224.0.0.18.",
+            "UDP 3222 to 224.0.0.102.",
+            "UDP 1985 to 224.0.0.102."
+          ],
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "History consistency",
+          "question": "Which declaration pair does the worksheet reject?",
+          "answer": "Completed expiry while the previous active is still declared available.",
+          "explanation": "Expiry is scoped to a previous active now unavailable.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Completed expiry while the previous active is still declared available.",
+            "Previous active A unavailable and expiry complete.",
+            "No previous active and both routers unavailable with no expiry declaration.",
+            "Current B available with higher-priority A preemption disabled."
+          ],
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Proof limit",
+          "question": "A is active and upstream/system declarations are ready, but returnReady is false. What follows?",
+          "answer": "Original exchange prerequisites do not agree.",
+          "explanation": "The return path remains an independent original-transaction requirement.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The active role must automatically move to the standby.",
+            "Original exchange prerequisites do not agree.",
+            "HSRP priority must be decremented because the return checkbox is false.",
+            "Changing the virtual MAC is required before checking the return path."
+          ],
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Default priority",
+          "question": "What is the scoped default HSRP priority?",
+          "answer": "100.",
+          "explanation": "Initial preference is separate from existing-role history.",
+          "difficulty": "Beginner",
+          "type": "short-answer",
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Equal recovery",
+          "question": "Does equal priority displace an available active in this model?",
+          "answer": "No.",
+          "explanation": "Initial ties and live-owner replacement are distinct.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Execution scope",
+          "question": "Does selecting completed expiry measure the hold interval?",
+          "answer": "No; it is a supplied checkpoint.",
+          "explanation": "The worksheet has no timers or packets.",
+          "difficulty": "Advanced",
+          "type": "short-answer",
+          "topicId": "s3-g7-t0",
+          "questionId": "s3-g7-t0-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g7-t1",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Current specification",
+          "question": "Which document currently specifies VRRP v3 for IPv4 and IPv6?",
+          "answer": "RFC 9568, which obsoletes RFC 5798.",
+          "explanation": "The lesson uses the current RFC 9568.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "RFC 9568, which obsoletes RFC 5798.",
+            "RFC 5798, with RFC 9568 applying only toIPv6.",
+            "RFC 3768, with version3 using its unchanged IPv4-only specification.",
+            "RFC 2281, the HSRP specification used by VRRP v3."
+          ],
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Ordinary default",
+          "question": "What is the VRRP ordinary preemption default in RFC 9568?",
+          "answer": "Enabled.",
+          "explanation": "Preempt_Mode defaults to True.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Disabled, matching the scoped HSRP default.",
+            "Enabled.",
+            "Enabled only for routers at the default priority 100.",
+            "Disabled for nonowners and configurable only on the owner."
+          ],
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Reserved owner",
+          "question": "A declares VIP .1 as its actual primary address. What priority must the scoped owner use?",
+          "answer": "255.",
+          "explanation": "The owner has reserved priority 255.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "100, the nonowner default.",
+            "254, the highest configurable nonowner value.",
+            "255.",
+            "0, the relinquishing advertisement value."
+          ],
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Owner recovery",
+          "question": "B is active, owner A returns with ordinary preempt disabled. Which settled result follows?",
+          "answer": "A takes precedence as the address owner.",
+          "explanation": "Owner precedence is independent of the ordinary preemption flag.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "B retains the role because A’s ordinary preemption is disabled.",
+            "A must wait for B to fail before its ownership takes effect.",
+            "B must first increase its own priority to 255.",
+            "A takes precedence as the address owner."
+          ],
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Nonowner priority",
+          "question": "Which configured input is rejected for nonowner B?",
+          "answer": "255.",
+          "explanation": "255 is reserved for the sole modeled owner A.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "255.",
+            "254.",
+            "100.",
+            "1."
+          ],
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Priority zero",
+          "question": "What does priority 0 mean in the specification?",
+          "answer": "An Active relinquishing advertisement, not a normal backup configuration.",
+          "explanation": "The worksheet rejects 0 instead of simulating shutdown advertisements.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The default configured backup priority.",
+            "An Active relinquishing advertisement, not a normal backup configuration.",
+            "The reserved address-owner priority.",
+            "The tie-break value for the lower interface IPv4 address."
+          ],
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Wire transport",
+          "question": "Which IPv4 transport identity is correct?",
+          "answer": "IP protocol 112 to 224.0.0.18, TTL 255.",
+          "explanation": "VRRP is carried directly over IP.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "UDP 112 to 224.0.0.18, TTL 255.",
+            "UDP 1985 to 224.0.0.102, TTL 255.",
+            "IP protocol 112 to 224.0.0.18, TTL 255.",
+            "IP protocol 112 to 224.0.0.102, TTL 1."
+          ],
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Virtual MAC",
+          "question": "What MAC maps to fixed IPv4 VRID 10?",
+          "answer": "0000.5e00.010a.",
+          "explanation": "VRID 10 is hexadecimal 0a in the IPv4 VRRP MAC block.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "0000.0c9f.f00a.",
+            "0000.5e00.020a.",
+            "0000.5e00.0110.",
+            "0000.5e00.010a."
+          ],
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "VIP versus service",
+          "question": "Why is pinging the VIP not a universal transit-service acceptance test?",
+          "answer": "Owner/Accept_Mode address acceptance and original transit forwarding are different scopes.",
+          "explanation": "Inspect the original routed destination and return separately.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Owner/Accept_Mode address acceptance and original transit forwarding are different scopes.",
+            "The virtual MAC is used only for router management rather than transit.",
+            "An ordinary backup answers all VIP ARP requests even while another router is active.",
+            "Reaching the VIP establishes the destination server’s independent return route."
+          ],
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Failure takeover",
+          "question": "Owner A is unavailable after declared expiry; B is available at 100. What can B do?",
+          "answer": "Serve the virtual router as a nonowner without acquiring ownership.",
+          "explanation": "Role takeover does not change physical address ownership.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Become owner at 255 automatically.",
+            "Serve the virtual router as a nonowner without acquiring ownership.",
+            "Take over only after making the VIP its actual primary address.",
+            "Remain backup because disabled ordinary preemption forbids failure takeover."
+          ],
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Nonowner default",
+          "question": "What is the default nonowner priority?",
+          "answer": "100.",
+          "explanation": "The legal nonowner range is1–254.",
+          "difficulty": "Beginner",
+          "type": "short-answer",
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Terminology",
+          "question": "How does older CLI MASTER relate to current RFC Active?",
+          "answer": "It names the serving role in that display context.",
+          "explanation": "Do not infer full current-standard compliance from a label.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Wire scope",
+          "question": "Does this worksheet validate TTL, checksum or priority-zero packets?",
+          "answer": "No.",
+          "explanation": "It computes supplied role/readiness declarations only.",
+          "difficulty": "Advanced",
+          "type": "short-answer",
+          "topicId": "s3-g7-t1",
+          "questionId": "s3-g7-t1-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g7-t2",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "AVG purpose",
+          "question": "Which role coordinates virtual MAC assignment and answers ARP for the shared VIP?",
+          "answer": "AVG.",
+          "explanation": "AVG responsibility differs from per-MAC forwarding.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "AVG.",
+            "The AVF serving Host 1’s cached MAC, irrespective of the AVG.",
+            "The standby virtual gateway before it becomes AVG.",
+            "Each AVF independently assigning all of the group’s virtual MACs."
+          ],
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "AVF purpose",
+          "question": "What selects the forwarding owner for an existing supplied host entry?",
+          "answer": "Its cached virtual MAC and that MAC’s settled owner.",
+          "explanation": "The worksheet resolves supplied MAC ownership per host.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The current AVG identity, regardless of the cached MAC.",
+            "Its cached virtual MAC and that MAC’s settled owner.",
+            "The highest gateway priority, regardless of the MAC owner.",
+            "The highest weighting value, without checking the supplied owner."
+          ],
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Shared VIP",
+          "question": "Can two hosts use the same GLBP gateway IP but different supplied MACs?",
+          "answer": "Yes, the AVG can provide different virtual MAC assignments.",
+          "explanation": "GLBP separates shared VIP from individual host MAC assignment.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "No; one VIP requires one shared virtual MAC for all hosts.",
+            "Yes, but only by configuring different virtual IPs on the hosts.",
+            "Yes, the AVG can provide different virtual MAC assignments.",
+            "Yes, because GLBP alternates the next-hop MAC for each packet."
+          ],
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "AVG default",
+          "question": "Which preemption default is documented in the scoped IOS 15M&T guide?",
+          "answer": "AVG disabled; AVF enabled with default 30-second delay.",
+          "explanation": "Gateway and forwarder preemption have different defaults.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "AVG enabled and AVF disabled.",
+            "Both enabled with the same 30-second delay.",
+            "Both disabled until gateway priority exceeds 100.",
+            "AVG disabled; AVF enabled with default 30-second delay."
+          ],
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Weighting distinction",
+          "question": "Which distinction is correct?",
+          "answer": "Gateway priority concerns AVG preference; weighting concerns forwarding capacity/thresholds.",
+          "explanation": "Do not exchange those independent policy quantities.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Gateway priority concerns AVG preference; weighting concerns forwarding capacity/thresholds.",
+            "Weighting selects AVG and gateway priority selects the host-assigned MAC.",
+            "Gateway priority and weighting are the same advertised quantity.",
+            "Tracking gateway priority automatically changes every host’s cached MAC."
+          ],
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Cached versus new",
+          "question": "No AVG is supplied, but both cached MAC owners and their paths are ready. What can the model report?",
+          "answer": "Cached host prerequisites can agree while new ARP answering is false.",
+          "explanation": "The contract excludes cache expiry and distinguishes the gates.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "New ARP answering remains true because any AVF is necessarily the AVG.",
+            "Cached host prerequisites can agree while new ARP answering is false.",
+            "Every cached assignment is automatically cleared when the AVG is unavailable.",
+            "Existing host forwarding requires a fresh AVG ARP answer for each packet."
+          ],
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Settled handoff",
+          "question": "B is declared owner of both virtual MACs after handoff. What does this prove?",
+          "answer": "Only the supplied settled ownership and resulting readiness predicates.",
+          "explanation": "The worksheet does not execute handoff timers or packets.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "A measured zero-loss transfer between forwarders.",
+            "An observed 30-second takeover matching the documented default.",
+            "Only the supplied settled ownership and resulting readiness predicates.",
+            "A computed weighted allocation placing both hosts on B."
+          ],
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Uneven host failure",
+          "question": "A is unavailable but still declared V-MAC-A owner; B serves V-MAC-B. Which host lacks forward prerequisites in the baseline assignments?",
+          "answer": "Host 1, whose supplied cache selects V-MAC-A.",
+          "explanation": "Failure follows the supplied MAC owner and its availability.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Both because only the AVG can forward traffic.",
+            "Only Host 2 because its MAC differs from the original AVG’s MAC.",
+            "Neither because another live member automatically owns all failed MACs in this model.",
+            "Host 1, whose supplied cache selects V-MAC-A."
+          ],
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Protocol identity",
+          "question": "Which IPv4 multicast hello transport is scoped for GLBP?",
+          "answer": "UDP 3222 to 224.0.0.102.",
+          "explanation": "Do not conflate it with HSRP or VRRP.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "UDP 3222 to 224.0.0.102.",
+            "UDP 1985 to 224.0.0.102.",
+            "UDP 3222 to 224.0.0.2.",
+            "IP protocol 112 to 224.0.0.18."
+          ],
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Algorithm limit",
+          "question": "Does the worksheet derive Cisco round-robin or weighted assignments from traffic?",
+          "answer": "No; both host assignments are supplied explicitly.",
+          "explanation": "The model deliberately does not implement vendor allocation or packet scheduling.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Yes, the order of the two host rows runs round-robin assignment.",
+            "No; both host assignments are supplied explicitly.",
+            "Yes, changing AVG computes a new weighted allocation.",
+            "Yes, the two ownership declarations implement per-packet ECMP."
+          ],
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Role separation",
+          "question": "Does AVG necessarily own every virtual MAC?",
+          "answer": "No.",
+          "explanation": "Per-MAC AVF ownership is separate.",
+          "difficulty": "Beginner",
+          "type": "short-answer",
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Packet distribution",
+          "question": "Do different supplied host MACs prove per-packet ECMP?",
+          "answer": "No.",
+          "explanation": "The assignments say nothing about measured flow or packet distribution.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Timer scope",
+          "question": "Does declaring a handoff run redirect or forwarder-timeout timers?",
+          "answer": "No.",
+          "explanation": "They are source-described limitations, not executable history.",
+          "difficulty": "Advanced",
+          "type": "short-answer",
+          "topicId": "s3-g7-t2",
+          "questionId": "s3-g7-t2-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g8-t0",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Replication",
+          "question": "RPF passes, TTL is eight, and both downstreams meet all declared gates. How many hypothetical copies?",
+          "answer": "Two",
+          "options": [
+            "Two",
+            "One because multicast cannot replicate",
+            "Zero unless TCP acknowledges",
+            "An observed packet rate of two per second"
+          ],
+          "explanation": "Each supplied downstream independently qualifies.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Independent OIL",
+          "question": "Only oilB becomes false in the baseline. What changes?",
+          "answer": "Only A remains a hypothetical copy",
+          "options": [
+            "Source traffic is proven stopped",
+            "Only A remains a hypothetical copy",
+            "Both copies necessarily disappear",
+            "B remains because its name is second"
+          ],
+          "explanation": "The downstream declarations are independent.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Wrong ingress",
+          "question": "Expected ingress is up-a but actual arrival is up-b. What does the model declare?",
+          "answer": "RPF fails and no hypothetical routed copy passes",
+          "options": [
+            "Every receiver must leave the group",
+            "The application socket is closed",
+            "RPF fails and no hypothetical routed copy passes",
+            "A destination route to G always overrides RPF"
+          ],
+          "explanation": "The supplied ingress does not match the expectation.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "TTL boundary",
+          "question": "Which supplied TTL first permits this routed hop?",
+          "answer": "Two",
+          "options": [
+            "Zero",
+            "One",
+            "256",
+            "Two"
+          ],
+          "explanation": "Values greater than one pass this limited hop gate.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Source readiness",
+          "question": "Source readiness is false while all forwarding declarations pass. What follows?",
+          "answer": "Hypothetical copies remain, but service prerequisites are incomplete",
+          "options": [
+            "Hypothetical copies remain, but service prerequisites are incomplete",
+            "The source necessarily transmitted",
+            "Membership creates source packets",
+            "The OIL must become empty"
+          ],
+          "explanation": "Source readiness is separate from hypothetical forwarding.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "SSM identity",
+          "question": "What identifies the SSM channel in this lesson?",
+          "answer": "Source 192.0.2.10 and group 232.1.1.1",
+          "options": [
+            "The router MAC address",
+            "Source 192.0.2.10 and group 232.1.1.1",
+            "Only an application UDP port",
+            "Only group 239.1.1.1"
+          ],
+          "explanation": "SSM identifies source and group together.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Local topology",
+          "question": "Why does this worksheet require memberA for down-a?",
+          "answer": "Down-a serves a local attached receiver LAN in this fixed topology",
+          "options": [
+            "PIM uses no downstream routing state",
+            "A local member proves hardware programming",
+            "Down-a serves a local attached receiver LAN in this fixed topology",
+            "Every transit interface universally needs a local IGMP host"
+          ],
+          "explanation": "Real transit demand can instead come from downstream PIM state.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Scope",
+          "question": "What does using 239.1.1.1 establish by itself?",
+          "answer": "It is an administratively scoped demonstration group, not an access credential",
+          "options": [
+            "Every host is authenticated",
+            "Every router must forward it outside the domain",
+            "The group automatically creates policy boundaries",
+            "It is an administratively scoped demonstration group, not an access credential"
+          ],
+          "explanation": "Boundary enforcement and authorization need separate controls.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Evidence",
+          "question": "Which evidence most directly distinguishes installed multicast state from actual traffic?",
+          "answer": "State observations correlated with counters and the original receiver transaction",
+          "options": [
+            "State observations correlated with counters and the original receiver transaction",
+            "Only the group address",
+            "Only a PIM neighbor name",
+            "Only the worksheet reset button"
+          ],
+          "explanation": "State and actual forwarding answer different questions.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Transport",
+          "question": "Which statement describes multicast application transport?",
+          "answer": "The application chooses transport and ports; multicast itself supplies no UDP port",
+          "options": [
+            "PIM is TCP 103",
+            "The application chooses transport and ports; multicast itself supplies no UDP port",
+            "Every stream uses TCP 179",
+            "IGMP is a UDP application on port two"
+          ],
+          "explanation": "IP protocol numbers differ from transport ports.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "RPF",
+          "question": "Does RPF here use an ordinary destination lookup for G?",
+          "answer": "No; it validates the supplied selected reverse-path ingress.",
+          "explanation": "The selected target is the source or supplied RP context.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "TTL",
+          "question": "Can TTL one pass this routed forwarding hop?",
+          "answer": "No.",
+          "explanation": "A routed copy needs TTL greater than one.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Readiness",
+          "question": "Does local receiver demand prove source traffic?",
+          "answer": "No.",
+          "explanation": "Source transmission is an independent declaration and needs actual evidence.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g8-t0",
+          "questionId": "s3-g8-t0-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g8-t1",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Protocol independence",
+          "question": "What does protocol independent mean in PIM?",
+          "answer": "It can use underlying route information without requiring one particular unicast routing protocol",
+          "options": [
+            "It can use underlying route information without requiring one particular unicast routing protocol",
+            "It needs no RPF route information",
+            "It forwards independently of all interfaces",
+            "It authenticates every source"
+          ],
+          "explanation": "Route information remains a dependency.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Shared RPF",
+          "question": "The worksheet selects ASM shared context. Which target is used?",
+          "answer": "Supplied RP 192.0.2.254",
+          "options": [
+            "The receiver application port",
+            "Supplied RP 192.0.2.254",
+            "The multicast destination as an ordinary unicast host",
+            "Always source 192.0.2.10"
+          ],
+          "explanation": "The supplied shared context points toward RP.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Source RPF",
+          "question": "The worksheet selects ASM source context. Which target is used?",
+          "answer": "Source 192.0.2.10",
+          "options": [
+            "The group MAC address",
+            "The IGMP querier election winner",
+            "Source 192.0.2.10",
+            "Always the RP"
+          ],
+          "explanation": "The selected source context points toward S.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "SSM RP",
+          "question": "SSM source context is ready and source-specific demand is true, but rpReady is false. What follows?",
+          "answer": "The unused RP gate does not block this context",
+          "options": [
+            "Every SSM route requires an RP",
+            "The group changes to ASM automatically",
+            "A live Register was transmitted",
+            "The unused RP gate does not block this context"
+          ],
+          "explanation": "SSM does not use a shared RP tree.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "SSM receiver",
+          "question": "Which missing declaration blocks the SSM selected-context gate?",
+          "answer": "Source-specific receiver demand",
+          "options": [
+            "Source-specific receiver demand",
+            "Unused RP readiness",
+            "An ASM shared-tree mapping",
+            "A TCP 103 session"
+          ],
+          "explanation": "SSM reception identifies a source.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Tree state",
+          "question": "Both local receiver LANs are interested but treeState is false. What follows?",
+          "answer": "The supplied selected-context gate fails",
+          "options": [
+            "The RP number becomes zero",
+            "The supplied selected-context gate fails",
+            "IGMP creates tree state automatically in this model",
+            "The application is guaranteed to receive"
+          ],
+          "explanation": "Demand and selected tree state remain independent.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Ingress",
+          "question": "RPF route exists but actual ingress differs from expected. What does the limited model declare?",
+          "answer": "No hypothetical routed copy passes RPF",
+          "options": [
+            "The source changes address",
+            "Every router globally withdraws the group",
+            "No hypothetical routed copy passes RPF",
+            "The OIL bypasses all ingress checks"
+          ],
+          "explanation": "RPF checks selected incoming context.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Control protocol",
+          "question": "Which statement about PIM control is correct?",
+          "answer": "PIM uses IP protocol 103; link-local multicast control uses 224.0.0.13",
+          "options": [
+            "PIM uses TCP port 103 for every message",
+            "Every PIM message is multicast to the group payload address",
+            "PIM is a UDP application on port 179",
+            "PIM uses IP protocol 103; link-local multicast control uses 224.0.0.13"
+          ],
+          "explanation": "Some PIM messages are unicast, and protocol numbers are not transport ports.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Selected snapshot",
+          "question": "What does the source-tree selector establish in this worksheet?",
+          "answer": "A supplied selected context, without computing a tree transition",
+          "options": [
+            "A supplied selected context, without computing a tree transition",
+            "Observed SPT switchover timing",
+            "A transmitted Join/Prune sequence",
+            "A kernel installation result"
+          ],
+          "explanation": "No PIM FSM is implemented.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Current references",
+          "question": "Which reference relationship is accurate?",
+          "answer": "RFC 9436 updates PIM specifications and obsoletes RFC 8736",
+          "options": [
+            "FRR 8.4 proves all future PIM defaults",
+            "RFC 9436 updates PIM specifications and obsoletes RFC 8736",
+            "RFC 8736 obsoletes RFC 9436",
+            "RFC 7761 is an IGMPv3 specification"
+          ],
+          "explanation": "The lesson preserves the actual update history.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Context",
+          "question": "Where does RPF point in this selected ASM shared context?",
+          "answer": "Toward supplied RP 192.0.2.254.",
+          "explanation": "The selected context determines the reverse-path target.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "SSM",
+          "question": "Does an SSM source tree need this RP readiness gate?",
+          "answer": "No.",
+          "explanation": "It requires source-specific receiver demand and source context.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Model limits",
+          "question": "Does selecting source context simulate a PIM switchover?",
+          "answer": "No.",
+          "explanation": "Tree selection is supplied settled context, not an FSM.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g8-t1",
+          "questionId": "s3-g8-t1-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g8-t2",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "INCLUDE",
+          "question": "A usable host has INCLUDE {.10}. Which worksheet source does it request?",
+          "answer": "Only 192.0.2.10",
+          "options": [
+            "Only 192.0.2.10",
+            "Only 192.0.2.20",
+            "Both because INCLUDE means every source",
+            "Neither because IGMP cannot filter sources"
+          ],
+          "explanation": "Only listed sources are requested.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "INCLUDE empty",
+          "question": "What does a valid live INCLUDE {} card accept?",
+          "answer": "Neither worksheet source",
+          "options": [
+            "Every source except .20",
+            "Neither worksheet source",
+            "Both sources",
+            "Only whichever source arrived last"
+          ],
+          "explanation": "An empty wanted list requests none.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "EXCLUDE empty",
+          "question": "What does a valid live ASM EXCLUDE {} card accept?",
+          "answer": "Both worksheet sources",
+          "options": [
+            "Only .10",
+            "Only the querier address",
+            "Both worksheet sources",
+            "Neither source"
+          ],
+          "explanation": "No sources are excluded in this bounded universe.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Union",
+          "question": "A excludes .10 and B includes .10; both cards are usable in ASM. What is LAN demand for .10?",
+          "answer": "Present because B requests it",
+          "options": [
+            "Absent because any host exclusion is global",
+            "Unknown until an RP authenticates the source",
+            "An observed source packet rate",
+            "Present because B requests it"
+          ],
+          "explanation": "The settled local demand is a union.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Validity",
+          "question": "Host A requests .10 but recordValid is false; B requests only .20. Which demand remains?",
+          "answer": "Only .20",
+          "options": [
+            "Only .20",
+            "Both because the invalid record wins",
+            "Only .10 because it is listed first",
+            "No source can be requested by B"
+          ],
+          "explanation": "Only usable records contribute.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Explicit timer",
+          "question": "What does timerLive false mean here?",
+          "answer": "That supplied host card contributes no demand; no expiry sequence is simulated",
+          "options": [
+            "A querier election completed",
+            "That supplied host card contributes no demand; no expiry sequence is simulated",
+            "A live target timer was measured",
+            "Every LAN group is globally deleted"
+          ],
+          "explanation": "This is an explicit settled declaration.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Querier",
+          "question": "QuerierPresent becomes false while both supplied records remain valid and live. What happens to demand?",
+          "answer": "It remains unchanged in this settled worksheet",
+          "options": [
+            "The router switches to PIM shared tree",
+            "The application is authorized",
+            "It remains unchanged in this settled worksheet",
+            "All records expire immediately"
+          ],
+          "explanation": "Querier observation does not infer time.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "SSM reporting",
+          "question": "Which host filter contributes source-specific demand for the worksheet SSM group?",
+          "answer": "A valid live INCLUDE record identifying sources",
+          "options": [
+            "EXCLUDE empty as an all-source SSM subscription",
+            "Only a group-only IGMPv2 leave",
+            "An RP mapping without a source",
+            "A valid live INCLUDE record identifying sources"
+          ],
+          "explanation": "SSM demand identifies S and G.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Protocol scope",
+          "question": "Which destination is used for IGMPv3 Reports?",
+          "answer": "224.0.0.22",
+          "options": [
+            "224.0.0.22",
+            "224.0.0.13 for all reports",
+            "The RP unicast address for every report",
+            "TCP port 2"
+          ],
+          "explanation": "IGMP is IP protocol 2 and current v3 reports use the router-listener group.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Current specification",
+          "question": "Which statement reflects the current IGMPv3 source used here?",
+          "answer": "RFC 9776 obsoletes RFC 3376 and updates RFC 2236",
+          "options": [
+            "RFC 9776 is only a switch snooping algorithm",
+            "RFC 9776 obsoletes RFC 3376 and updates RFC 2236",
+            "RFC 3376 obsoletes RFC 9776",
+            "RFC 7761 is the IGMPv3 specification"
+          ],
+          "explanation": "The lesson uses the current specification and labels older behavior historically.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Empty filters",
+          "question": "What does INCLUDE empty request?",
+          "answer": "None of the worksheet sources.",
+          "explanation": "INCLUDE requests only listed sources.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Union",
+          "question": "A excludes .10 but B includes .10. Is there LAN demand for .10?",
+          "answer": "Yes, if B is valid and live.",
+          "explanation": "Any usable host request contributes to the union.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Timer scope",
+          "question": "Does observing no querier instantly expire these supplied records?",
+          "answer": "No.",
+          "explanation": "Timer liveness is explicit; no timer or querier FSM is simulated.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g8-t2",
+          "questionId": "s3-g8-t2-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g9-t0",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Aggregate demand",
+          "question": "Voice is 1 Mb/s, interactive 2 Mb/s and bulk 3 Mb/s. What is the declared total?",
+          "answer": "6 Mb/s.",
+          "explanation": "Add the three rates with the same unit; the capacity is not included in the sum.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "3 Mb/s.",
+            "6 Mb/s.",
+            "10 Mb/s.",
+            "12 Mb/s."
+          ],
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Offered utilization",
+          "question": "What does 120 percent utilization mean in this worksheet?",
+          "answer": "Declared demand is 1.2 times supplied capacity.",
+          "explanation": "The numerator is supplied offered demand, so it can exceed available service.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The link has negotiated 20 percent more speed.",
+            "ECN has expanded the serializer rate.",
+            "Declared demand is 1.2 times supplied capacity.",
+            "The application throughput was measured at 120 percent."
+          ],
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Overload arithmetic",
+          "question": "Total demand is 12 Mb/s and C is 10 Mb/s. What is overload?",
+          "answer": "2 Mb/s.",
+          "explanation": "Only the positive demand minus capacity difference is overload.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "2 Mb/s.",
+            "10 Mb/s.",
+            "12 Mb/s.",
+            "22 Mb/s."
+          ],
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Serialization units",
+          "question": "A 1500-byte packet on ideal C = 10 Mb/s takes how long to serialize?",
+          "answer": "1.2 ms.",
+          "explanation": "1500 × 8 / 10,000,000 seconds is 1.2 milliseconds.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "0.15 ms.",
+            "12 ms.",
+            "120 ms.",
+            "1.2 ms."
+          ],
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Equal demand",
+          "question": "Total demand equals C. What follows from the supplied arithmetic?",
+          "answer": "Overload is zero and arithmetic headroom is zero.",
+          "explanation": "Equality removes the arithmetic deficit but supplies no burst or service guarantee.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "There is a one-packet reserved queue.",
+            "Overload is zero and arithmetic headroom is zero.",
+            "The original application meets its latency target.",
+            "Every class receives equal scheduling turns."
+          ],
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Idle declaration",
+          "question": "All demand fields are zero but packetBytes is 1500. Why is serialization nonzero?",
+          "answer": "The hypothetical packet still contains bits.",
+          "explanation": "The individual hypothetical packet calculation is separate from aggregate offered rates.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The hypothetical packet still contains bits.",
+            "A hidden queue adds a minimum delay.",
+            "The model assumes background TCP traffic.",
+            "DSCP inserts an extra packet."
+          ],
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "DS field",
+          "question": "Which division reflects RFC 2474 with RFC 3168 ECN use?",
+          "answer": "Six DSCP bits and two ECN bits.",
+          "explanation": "The treatment codepoint and ECN occupy different portions of the IP DS field.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Eight DSCP bits and no ECN bits.",
+            "Three DSCP bits and five ECN bits.",
+            "Six DSCP bits and two ECN bits.",
+            "Two DSCP bits and six ECN bits."
+          ],
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Application context",
+          "question": "Changing only applicationReady from true to false should change which result?",
+          "answer": "The independent readiness declaration.",
+          "explanation": "The declaration does not alter local arithmetic or measure the application.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Total demand.",
+            "Packet serialization.",
+            "Capacity.",
+            "The independent readiness declaration."
+          ],
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Policy boundary",
+          "question": "Which additional model is needed to decide which waiting packet gets service next?",
+          "answer": "A scheduler with an explicit selection rule.",
+          "explanation": "An aggregate budget contains no packet-selection rule.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "A scheduler with an explicit selection rule.",
+            "A DSCP width calculation alone.",
+            "The aggregate sum alone.",
+            "A TCP port number alone."
+          ],
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Capacity location",
+          "question": "Why map the actual resource before interpreting production QoS?",
+          "answer": "Different interfaces and directions may have different congestion points.",
+          "explanation": "The local worksheet capacity is declared; actual congestion placement needs evidence.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Every route uses the same egress capacity.",
+            "Different interfaces and directions may have different congestion points.",
+            "The DSCP value identifies the physical bottleneck.",
+            "An interface name determines its actual offered workload."
+          ],
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Calculation",
+          "question": "For 250,000 + 750,000 + 2,000,000 bps on C = 2,000,000 bps, give total and overload.",
+          "answer": "Total 3,000,000 bps; overload 1,000,000 bps.",
+          "explanation": "Aggregate rates share a unit; subtract C only for positive excess.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Serialization",
+          "question": "Calculate ideal serialization of 200 bytes at C = 1,000,000 bps.",
+          "answer": "1.6 milliseconds.",
+          "explanation": "200 × 8000 / 1,000,000 = 1.6 ms.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Scope",
+          "question": "Name two quantities this worksheet does not calculate.",
+          "answer": "Queue wait and end-to-end application response time.",
+          "explanation": "A one-link serializer and aggregate demand do not supply either quantity.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t0",
+          "questionId": "s3-g9-t0-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g9-t1",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Voice lower boundary",
+          "question": "Which class matches UDP destination 16384?",
+          "answer": "voice",
+          "explanation": "16384 is included in the UDP voice range.",
+          "difficulty": "Beginner",
+          "type": "multiple-choice",
+          "options": [
+            "voice",
+            "interactive",
+            "default",
+            "invalid because source port is missing"
+          ],
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Voice upper boundary",
+          "question": "Which class matches UDP destination 32767?",
+          "answer": "voice",
+          "explanation": "32767 is the inclusive upper boundary.",
+          "difficulty": "Beginner",
+          "type": "multiple-choice",
+          "options": [
+            "voice",
+            "interactive",
+            "default",
+            "ICMP"
+          ],
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Below range",
+          "question": "Which class matches UDP destination 16383?",
+          "answer": "default",
+          "explanation": "It is below the voice range and matches no later rule.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "voice",
+            "interactive",
+            "default",
+            "trusted-preserve"
+          ],
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Above range",
+          "question": "Which class matches UDP destination 32768?",
+          "answer": "default",
+          "explanation": "It is one above the inclusive range.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "voice",
+            "interactive",
+            "default",
+            "malformed DSCP"
+          ],
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Transport distinction",
+          "question": "A packet declares UDP destination 443. Which class matches?",
+          "answer": "default",
+          "explanation": "Interactive requires TCP; UDP/443 is outside voice range.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "voice",
+            "interactive",
+            "default",
+            "TCP/443 rule"
+          ],
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "HTTPS rule",
+          "question": "A packet declares TCP destination 443. Which class is selected?",
+          "answer": "interactive",
+          "explanation": "The TCP/443 rule maps to interactive.",
+          "difficulty": "Beginner",
+          "type": "multiple-choice",
+          "options": [
+            "voice",
+            "interactive",
+            "default",
+            "untrusted-zero"
+          ],
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Source port",
+          "question": "What happens if source port changes but UDP destination remains 20000?",
+          "answer": "The class remains voice",
+          "explanation": "This voice rule checks protocol and destination only.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "The class remains voice",
+            "The class becomes default",
+            "The class becomes interactive",
+            "Input DSCP is rewritten"
+          ],
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "ICMP contract",
+          "question": "Which port values does this worksheet require for ICMP?",
+          "answer": "Source and destination ports both equal zero",
+          "explanation": "Zero represents no transport port in this fixed schema.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Source and destination ports both equal zero",
+            "Destination port 443",
+            "Any integer ports",
+            "Ports 16384 and 32767"
+          ],
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "DSCP/ECN preservation",
+          "question": "Input DSCP is 12 and ECN is 2. What output pair does classification produce?",
+          "answer": "DSCP 12 and ECN 2",
+          "explanation": "Classification does not alter DS field in this model.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "DSCP 12 and ECN 2",
+            "DSCP 46 and ECN 0",
+            "DSCP 18 and ECN 2",
+            "DSCP 0 and ECN 3"
+          ],
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Identity boundary",
+          "question": "A UDP header matches the voice range. What has this worksheet established?",
+          "answer": "Only that the declared headers match the local voice rule",
+          "explanation": "A port match does not authenticate an application or user.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Only that the declared headers match the local voice rule",
+            "That payload is a voice call",
+            "That sender is authenticated",
+            "That a queue guarantees bandwidth"
+          ],
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Protocol match",
+          "question": "Does UDP destination 443 match the TCP/443 interactive rule?",
+          "answer": "No.",
+          "explanation": "The rule requires TCP.",
+          "difficulty": "Beginner",
+          "type": "short-answer",
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Inclusive range",
+          "question": "Does UDP destination 32768 match the voice range?",
+          "answer": "No.",
+          "explanation": "The upper bound is 32767.",
+          "difficulty": "Beginner",
+          "type": "short-answer",
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "DS field",
+          "question": "Does classification change input DSCP here?",
+          "answer": "No.",
+          "explanation": "The class is local; the model preserves DSCP and ECN.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t1",
+          "questionId": "s3-g9-t1-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g9-t2",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Trusted preserve",
+          "question": "Input DSCP 12 and ECN 2 use trusted-preserve with trustBoundary=true. What is output DSCP?",
+          "answer": "12",
+          "explanation": "The trusted policy retains the supplied DSCP.",
+          "difficulty": "Beginner",
+          "type": "multiple-choice",
+          "options": [
+            "0",
+            "12",
+            "18",
+            "46"
+          ],
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Trust consistency",
+          "question": "What happens when trusted-preserve is selected with trustBoundary=false?",
+          "answer": "The worksheet rejects the inconsistent declaration",
+          "explanation": "It does not silently preserve a declared-untrusted marking.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The worksheet rejects the inconsistent declaration",
+            "Output DSCP is always 46",
+            "ECN is forced to 0",
+            "Class changes to default"
+          ],
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Untrusted zero",
+          "question": "Input DSCP is 46 and ECN is 3 under untrusted-zero. What output pair is shown?",
+          "answer": "DSCP 0 and ECN 3",
+          "explanation": "The local policy clears DSCP and preserves ECN.",
+          "difficulty": "Beginner",
+          "type": "multiple-choice",
+          "options": [
+            "DSCP 0 and ECN 3",
+            "DSCP 0 and ECN 0",
+            "DSCP 46 and ECN 3",
+            "DSCP 63 and ECN 1"
+          ],
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Voice map",
+          "question": "Which local DSCP value does class-map assign to voice?",
+          "answer": "46",
+          "explanation": "This is the local example mapping and the EF codepoint number.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "0",
+            "18",
+            "46",
+            "63"
+          ],
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Interactive map",
+          "question": "Which local DSCP value does class-map assign to interactive?",
+          "answer": "18",
+          "explanation": "18 is the chosen local value and the AF21 codepoint number.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "0",
+            "18",
+            "46",
+            "48"
+          ],
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Default map",
+          "question": "What DSCP does the fixed class map assign to default?",
+          "answer": "0",
+          "explanation": "The supplied local map assigns default to zero.",
+          "difficulty": "Beginner",
+          "type": "multiple-choice",
+          "options": [
+            "0",
+            "1",
+            "18",
+            "46"
+          ],
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "DS field calculation",
+          "question": "For output DSCP 18 and ECN 2, what decimal DS-field byte is displayed?",
+          "answer": "74",
+          "explanation": "18×4+2 equals 74.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "20",
+            "72",
+            "74",
+            "182"
+          ],
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "ECN split",
+          "question": "Which integer represents ECN bit pattern 11?",
+          "answer": "3",
+          "explanation": "Two bits encode values zero through three.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Codepoint semantics",
+          "question": "Do 46 and 18 define a universal priority order between voice and interactive?",
+          "answer": "No; they are local examples and do not define universal class ordering",
+          "explanation": "Codepoint definitions do not establish a universal policy ranking.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; 46 always receives more service",
+            "No; they are local examples and do not define universal class ordering",
+            "Yes; every device queues 46 first",
+            "No; DSCP is the ECN field"
+          ],
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Layer 2 marking",
+          "question": "What does this lesson specify about 802.1Q PCP?",
+          "answer": "It is a separate three-bit field and no automatic mapping is modeled",
+          "explanation": "PCP is distinct from DSCP and this lesson invents no CoS mapping.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "It is a separate three-bit field and no automatic mapping is modeled",
+            "It is identical to six-bit DSCP",
+            "It always equals ECN",
+            "It is automatically set to 46"
+          ],
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Field widths",
+          "question": "How many DSCP bits and ECN bits are represented here?",
+          "answer": "Six DSCP bits and two ECN bits.",
+          "explanation": "Both fields share one octet but retain separate meanings.",
+          "difficulty": "Beginner",
+          "type": "short-answer",
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Trust gate",
+          "question": "May trusted-preserve run when trustBoundary is false?",
+          "answer": "No.",
+          "explanation": "The model rejects that inconsistent declaration.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "ECN preservation",
+          "question": "Under untrusted-zero, what happens to input ECN?",
+          "answer": "It remains unchanged.",
+          "explanation": "Only DSCP is reset under this policy.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t2",
+          "questionId": "s3-g9-t2-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g9-t3",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Rate conversion",
+          "question": "R = 8000 bps supplies how many token bytes per millisecond?",
+          "answer": "1 byte.",
+          "explanation": "8000 bits/second divided by eight and by 1000 gives one byte/ms.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "1 byte.",
+            "8 bytes.",
+            "1000 bytes.",
+            "0.125 byte."
+          ],
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Initial credit",
+          "question": "What balance exists before the first packet at 0 ms when B = 1000?",
+          "answer": "1000 bytes.",
+          "explanation": "The chosen teaching contract initializes the bucket full.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "0 bytes.",
+            "1000 bytes.",
+            "8000 bytes.",
+            "The first packet’s size."
+          ],
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Excess action",
+          "question": "A 600-byte packet sees 400 tokens. What follows?",
+          "answer": "It drops and leaves 400 tokens.",
+          "explanation": "Excess is dropped atomically without consuming credit.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "It waits 200 ms.",
+            "It consumes the 400 and drops the remainder.",
+            "It drops and leaves 400 tokens.",
+            "It borrows 200 from the next refill."
+          ],
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Equality",
+          "question": "A 1000-byte packet sees exactly 1000 tokens. What is the result?",
+          "answer": "Conform and leave zero tokens.",
+          "explanation": "The comparison uses tokens greater than or equal to packet size.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Drop because one extra token is required.",
+            "Yellow with 1000 tokens retained.",
+            "Wait for one refill interval.",
+            "Conform and leave zero tokens."
+          ],
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Idle cap",
+          "question": "An empty B = 1000 bucket at R = 8000 idles for 10 seconds. How much can it hold?",
+          "answer": "1000 bytes.",
+          "explanation": "The stored balance is capped at B regardless of idle duration.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "1000 bytes.",
+            "10,000 bytes.",
+            "80,000 bytes.",
+            "Unlimited credit until another packet arrives."
+          ],
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Oversized packet",
+          "question": "A 1001-byte packet arrives with a full B = 1000 bucket. Which outcome applies?",
+          "answer": "Drop because size exceeds the maximum credit.",
+          "explanation": "This contract includes no fragmentation or oversized exception.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Conform using the next millisecond’s token.",
+            "Drop because size exceeds the maximum credit.",
+            "Fragment into two conforming packets.",
+            "Expand B temporarily to 1001."
+          ],
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "RFC comparison",
+          "question": "What distinguishes RFC 2697 srTCM from this worksheet?",
+          "answer": "It uses two buckets and three colors.",
+          "explanation": "RFC 2697 is a different marker, not this single-bucket drop action.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "It replaces bytes with DSCP bit counts.",
+            "It uses one unlimited bucket.",
+            "It uses two buckets and three colors.",
+            "It schedules high-priority packets before low packets."
+          ],
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Fractional balance",
+          "question": "At R = 3000, an empty bucket refills for 1 ms. Can a 1-byte packet conform?",
+          "answer": "No; only 0.375 bytes are available.",
+          "explanation": "The model retains fractional credit and needs the whole packet size.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Yes, refill rounds to one byte.",
+            "Yes, packet size is divided by eight again.",
+            "Yes, the first fraction is borrowed.",
+            "No; only 0.375 bytes are available."
+          ],
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Same-arrival order",
+          "question": "B = 1000; packets of 600 then 600 arrive at 0 ms. What are the outcomes?",
+          "answer": "First conforms; second drops with 400 tokens retained.",
+          "explanation": "The first consumes 600; no time passes before the second.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "First conforms; second drops with 400 tokens retained.",
+            "Both conform because rate is checked over one second.",
+            "Both wait until the bucket refills.",
+            "First drops; second conforms from unused credit."
+          ],
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Production observation",
+          "question": "What does a conforming worksheet row establish?",
+          "answer": "Conformance under the supplied local contract.",
+          "explanation": "The browser performs a profile calculation, not target execution or delivery.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The receiver acknowledged that packet.",
+            "Conformance under the supplied local contract.",
+            "The device has an installed filter policer.",
+            "The original application met its SLA."
+          ],
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Sequence",
+          "question": "R = 8000, B = 1000: packets (0 ms,600 B),(0 ms,600 B),(200 ms,500 B). Give outcomes and final tokens.",
+          "answer": "Conform, drop, conform; final tokens 100 bytes.",
+          "explanation": "The drop leaves 400; 200 ms adds 200; the last consumes 500.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Rate units",
+          "question": "What is the refill formula in bytes for elapsed milliseconds?",
+          "answer": "elapsedMs × R / 8000, capped by remaining bucket space.",
+          "explanation": "Eight bits per byte and 1000 milliseconds per second give the denominator.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Algorithm distinction",
+          "question": "Why is this not RFC 2697 srTCM?",
+          "answer": "It has one bucket and two outcomes instead of the RFC’s two buckets and three colors.",
+          "explanation": "Meter algorithm and action scope must stay explicit.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t3",
+          "questionId": "s3-g9-t3-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g9-t4",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Missing credit",
+          "question": "How does this shaper handle a packet no larger than B when tokens are missing?",
+          "answer": "Wait until the full deficit refills.",
+          "explanation": "Admissible packets are delayed for complete token credit.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Drop immediately like the chosen policer.",
+            "Wait until the full deficit refills.",
+            "Mark it yellow and transmit immediately.",
+            "Consume only its available fraction."
+          ],
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Baseline release",
+          "question": "After 600 B releases at 0 ms from B = 1000, another 600 B at 0 with R = 8000 releases when?",
+          "answer": "200 ms.",
+          "explanation": "Only 200 bytes are missing and refill is one byte/ms.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "0 ms.",
+            "600 ms.",
+            "200 ms.",
+            "1000 ms."
+          ],
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "FIFO continuation",
+          "question": "The previous packet releases at 200 ms leaving zero. A 500 B packet arrives at 200 ms, R = 8000. Its release is?",
+          "answer": "700 ms.",
+          "explanation": "Its 500-byte deficit requires 500 ms after the 200-ms checkpoint.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "200 ms.",
+            "500 ms.",
+            "600 ms.",
+            "700 ms."
+          ],
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Output boundary",
+          "question": "What is a token-eligible release in this lesson?",
+          "answer": "Profile eligibility, before any separately modeled physical serializer.",
+          "explanation": "Eligibility is the specific modeled timing boundary.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Profile eligibility, before any separately modeled physical serializer.",
+            "The last bit reaching the receiver.",
+            "A measured Linux dequeue timestamp.",
+            "The application acknowledgement arrival."
+          ],
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Oversized packet",
+          "question": "What does size greater than B do here?",
+          "answer": "Drop explicitly as impossible under the chosen contract.",
+          "explanation": "This model has no fragmentation or oversized exception.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Wait indefinitely with a computed finite release.",
+            "Drop explicitly as impossible under the chosen contract.",
+            "Increase B for that packet.",
+            "Fragment automatically before shaping."
+          ],
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Independent C",
+          "question": "Changing only C affects which output?",
+          "answer": "Standalone serialization duration.",
+          "explanation": "Token release uses R and B; C supplies a separate serializer duration.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The token deficit.",
+            "The FIFO ordering.",
+            "Standalone serialization duration.",
+            "The initial bucket balance."
+          ],
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Fractional eligibility",
+          "question": "After emptying the bucket, one byte at R = 3000 becomes eligible after what delay?",
+          "answer": "8/3 ms.",
+          "explanation": "One byte requires 8000/3000 milliseconds of refill.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "0.375 ms.",
+            "1 ms.",
+            "8 ms.",
+            "8/3 ms."
+          ],
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Same-time release",
+          "question": "Why can two packets have identical eligible release timestamps?",
+          "answer": "Initial tokens can pay both without advancing time.",
+          "explanation": "Burst credit can create simultaneous eligibility but not simultaneous wire service.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Initial tokens can pay both without advancing time.",
+            "The link physically serializes both simultaneously.",
+            "FIFO is disabled for same-arrival packets.",
+            "Their packet sizes were ignored."
+          ],
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Buffer scope",
+          "question": "Which buffer assumption is declared?",
+          "answer": "Infinite queue for this finite workload only.",
+          "explanation": "This is a bounded teaching workload with an explicit ideal storage assumption.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Linux’s installed TBF limit was discovered.",
+            "Infinite queue for this finite workload only.",
+            "One packet maximum on all devices.",
+            "No waiting storage because shaping drops every excess."
+          ],
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Kernel distinction",
+          "question": "Why does the pinned tc-tbf manual not make this a TBF emulator?",
+          "answer": "Actual TBF has additional parameters and implementation behavior absent here.",
+          "explanation": "The lesson isolates continuous token eligibility rather than claiming kernel equivalence.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "The manual describes only DSCP.",
+            "TBF cannot use a rate parameter.",
+            "Actual TBF has additional parameters and implementation behavior absent here.",
+            "TBF is the same two-class scheduler used in queuing."
+          ],
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Timeline",
+          "question": "Give eligible releases for baseline (0,600),(0,600),(200,500), R = 8000, B = 1000.",
+          "answer": "0, 200 and 700 milliseconds.",
+          "explanation": "Initial tokens pay the first; later deficits require 200 and 500 ms.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Scope",
+          "question": "Does changing line capacity C change token-release times here?",
+          "answer": "No; it changes only the separate serialization column.",
+          "explanation": "R supplies tokens and C supplies the separate link duration.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Impossible packet",
+          "question": "Why is size greater than B dropped in this contract?",
+          "answer": "The capped bucket can never hold the full packet credit and no oversized exception is modeled.",
+          "explanation": "This is an explicit local choice, not a universal hardware rule.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t4",
+          "questionId": "s3-g9-t4-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "s3-g9-t5",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "Nonpreemption",
+          "question": "L of 1000 B starts at 0 on C = 8000; H arrives at 1 ms. When can H start?",
+          "answer": "1000 ms.",
+          "explanation": "The current L service lasts 1000 ms and cannot be interrupted.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "1 ms.",
+            "1000 ms.",
+            "100 ms.",
+            "After half the L packet."
+          ],
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Eligible candidates",
+          "question": "At server-free time 100 ms, H arrives at 101 and L is already waiting. Strict priority selects?",
+          "answer": "The waiting L now.",
+          "explanation": "Only already-arrived waiting packets are candidates.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Future H before it arrives.",
+            "Neither until every class is populated.",
+            "The waiting L now.",
+            "H at time zero retroactively."
+          ],
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "FIFO tie",
+          "question": "Two packets arrive at 0: listed L then H. FIFO chooses which first?",
+          "answer": "The first-listed L.",
+          "explanation": "FIFO ignores H/L for selection and uses input order for equal arrivals.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "H because it has a preferred class.",
+            "The smaller real IP.",
+            "The longest packet.",
+            "The first-listed L."
+          ],
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Priority tie",
+          "question": "Listed L,H,H all arrive at 0. Strict priority chooses what order?",
+          "answer": "First H, second H, then L.",
+          "explanation": "H precedes L, and input order resolves the tie between H packets.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "First H, second H, then L.",
+            "L, first H, second H.",
+            "Second H, L, first H.",
+            "All three start simultaneously."
+          ],
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Sojourn",
+          "question": "Arrival is 100 ms, start 1000 and finish 1100. What is sojourn?",
+          "answer": "1000 ms.",
+          "explanation": "Sojourn is finish minus arrival; wait is 900 and service is 100.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "900 ms.",
+            "1000 ms.",
+            "100 ms.",
+            "1100 ms."
+          ],
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Fractional service",
+          "question": "One byte at C = 3000 requires what service duration?",
+          "answer": "8/3 ms.",
+          "explanation": "One byte is eight bits, giving 8000/3000 milliseconds.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "0.375 ms.",
+            "3 ms.",
+            "8/3 ms.",
+            "8000 ms."
+          ],
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Idle server",
+          "question": "No packet is waiting and the next arrival is at 500 ms. What does the scheduler do?",
+          "answer": "Remain idle until 500 ms.",
+          "explanation": "The server advances only to an actual next arrival.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Transmit a placeholder packet.",
+            "Start the future packet at the prior finish.",
+            "Set wait to negative time.",
+            "Remain idle until 500 ms."
+          ],
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Finite starvation scope",
+          "question": "What can this finite workload establish about starvation?",
+          "answer": "Listed packets complete; unbounded future starvation is not measured.",
+          "explanation": "The finite input ends; sustained unlisted arrivals require a separate argument.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Listed packets complete; unbounded future starvation is not measured.",
+            "L can never starve under continuous H traffic.",
+            "All strict-priority systems guarantee equal class wait.",
+            "The final timestamp is a universal starvation bound."
+          ],
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Packet versus byte fairness",
+          "question": "Why are equal packet turns not necessarily equal byte bandwidth?",
+          "answer": "Packet sizes can differ, so turns consume different byte totals.",
+          "explanation": "Service consumption depends on bytes, not only packet counts.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "DSCP changes packet length to one byte.",
+            "Packet sizes can differ, so turns consume different byte totals.",
+            "FIFO removes serialization.",
+            "Every H packet is the same size as every L packet."
+          ],
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Policy boundary",
+          "question": "Which algorithm is implemented by this worksheet?",
+          "answer": "Two-class FIFO or strict priority on one ideal server.",
+          "explanation": "The declared model excludes kernel hierarchy and weighted/vendor algorithms.",
+          "difficulty": "Intermediate",
+          "type": "multiple-choice",
+          "options": [
+            "Linux’s full three-band PRIO hierarchy.",
+            "Cisco LLQ with its policer.",
+            "Two-class FIFO or strict priority on one ideal server.",
+            "Weighted fair queuing with inferred weights."
+          ],
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Baseline priority",
+          "question": "At C = 8000, baseline packets are (0,1000,L),(100,100,L),(200,100,H). Give strict-priority service order.",
+          "answer": "Packet 1, packet 3, packet 2.",
+          "explanation": "Packet 1 has already begun; at 1000 ms both others wait and H wins.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Wait arithmetic",
+          "question": "H arrives at 1 ms, starts at 1000 and finishes at 1100. Give wait and sojourn.",
+          "answer": "Wait 999 ms; sojourn 1099 ms.",
+          "explanation": "Subtract arrival from start and finish respectively.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Fairness distinction",
+          "question": "Why should byte-based DRR/WFQ not be described as equal packet turns?",
+          "answer": "Unequal packet sizes require byte/service accounting rather than packet-count equality.",
+          "explanation": "Those algorithms have additional accounting and are not implemented here.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "s3-g9-t5",
+          "questionId": "s3-g9-t5-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    },
+    {
+      "topicId": "lab-3",
+      "examCount": 10,
+      "quickCount": 3,
+      "reviewed": [
+        {
+          "testedConcept": "VLAN scope",
+          "question": "Do VLAN10 and VLAN20 alone create separate IP routing tables?",
+          "answer": "No; the prepared campus uses a shared RIB unless a separate design says otherwise.",
+          "explanation": "Broadcast separation does not create a VRF or automatically deny inter-VLAN routing.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; every VLAN is automatically a VRF.",
+            "No; the prepared campus uses a shared RIB unless a separate design says otherwise.",
+            "Only HSRP group 20 creates routing isolation.",
+            "OSPF area 0 forces all VLAN traffic to be denied."
+          ],
+          "topicId": "lab-3",
+          "questionId": "lab-3-Q01",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Gateway versus uplink",
+          "question": "D1 remains supplied active while its routed uplink is unavailable. What can this worksheet conclude?",
+          "answer": "The original path fails the uplink gate; no alternate takeover is predicted.",
+          "explanation": "HSRP role and selected upstream health are separate supplied inputs.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "D2 must take over instantly.",
+            "Remote traffic must remain lossless.",
+            "The original path fails the uplink gate; no alternate takeover is predicted.",
+            "OSPF automatically changes HSRP priorities."
+          ],
+          "topicId": "lab-3",
+          "questionId": "lab-3-Q02",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Preemption scope",
+          "question": "Does lower-priority D2 preempt configuration alone detect every D1 upstream failure?",
+          "answer": "No; effective tracking and actual role conditions require separate evidence.",
+          "explanation": "Preemption permits a qualifying priority-driven takeover; it is not universal upstream-health detection.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; preempt monitors every remote application.",
+            "Yes; priority 100 is always higher than110.",
+            "Only VLAN20 availability matters.",
+            "No; effective tracking and actual role conditions require separate evidence."
+          ],
+          "topicId": "lab-3",
+          "questionId": "lab-3-Q03",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "OSPF layers",
+          "question": "Which can be ready while the required OSPF underlay route is absent?",
+          "answer": "The OSPF adjacency declaration.",
+          "explanation": "Neighbor state and the required selected route are independent evidence layers.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "The OSPF adjacency declaration.",
+            "Every remote application necessarily works.",
+            "The worksheet invents the missing route.",
+            "Passive SVI advertisement creates endpoint neighbors automatically."
+          ],
+          "topicId": "lab-3",
+          "questionId": "lab-3-Q04",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "BGP layers",
+          "question": "A required BGP session is ready but exact remote import is denied. What fails?",
+          "answer": "The supplied remote BGP prefix gate.",
+          "explanation": "Peer control state does not bypass exact-prefix admission policy.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "The session is necessarily reset by the worksheet.",
+            "The supplied remote BGP prefix gate.",
+            "Every local source route is deleted.",
+            "The return route is automatically created."
+          ],
+          "topicId": "lab-3",
+          "questionId": "lab-3-Q05",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "System source",
+          "question": "Can a selected BGP candidate be displaced from the actual system route choice?",
+          "answer": "Yes; protocol choice and system selection are separate.",
+          "explanation": "The worksheet exposes systemSelected independently after the supplied BGP choice.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "No; all BGP selected paths must be installed.",
+            "Only if the selected gateway changes VLAN.",
+            "Yes; protocol choice and system selection are separate.",
+            "HSRP preempt prevents system displacement."
+          ],
+          "topicId": "lab-3",
+          "questionId": "lab-3-Q06",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Policy context",
+          "question": "Does admitting a BGP route automatically permit the original packet through an ACL?",
+          "answer": "No; control-plane admission and packet policy are distinct.",
+          "explanation": "A selected route can coexist with a packet denial at the original interface/direction.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Yes; a route filter overrides every ACL.",
+            "Yes; TCP 179 policy permits every application.",
+            "Only a shorter AS_PATH creates packet permission.",
+            "No; control-plane admission and packet policy are distinct."
+          ],
+          "topicId": "lab-3",
+          "questionId": "lab-3-Q07",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Measurements",
+          "question": "What does the browser's all-green trace establish?",
+          "answer": "Agreement of the supplied declarations only.",
+          "explanation": "No packet, timer, protocol transition or original application was measured.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Agreement of the supplied declarations only.",
+            "Measured zero-loss convergence.",
+            "Authenticated end-to-end service success.",
+            "An exact hardware failover timestamp."
+          ],
+          "topicId": "lab-3",
+          "questionId": "lab-3-Q08",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Probe uncertainty",
+          "question": "What is justified by firstSuccessAfter minus failureInjection from actual sampled original probes?",
+          "answer": "An observed post-injection first-success gap with sampling and layered scope limits.",
+          "explanation": "It does not isolate pure protocol convergence or prove that no unobserved loss occurred.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "An exact HSRP election duration.",
+            "An observed post-injection first-success gap with sampling and layered scope limits.",
+            "Guaranteed zero loss between probes.",
+            "The OSPF SPF runtime alone."
+          ],
+          "topicId": "lab-3",
+          "questionId": "lab-3-Q09",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Rollback",
+          "question": "What restores the workbook's isolated D1 uplink fault when the recorded baseline was administratively up?",
+          "answer": "Exact mapped no shutdown followed by baseline and original-service verification.",
+          "explanation": "Keep the exercise change unsaved and restore exact owned state; a reload or broad clear is not the procedure.",
+          "difficulty": "Advanced",
+          "type": "multiple-choice",
+          "options": [
+            "Save the fault then reload all devices.",
+            "Clear every BGP and OSPF process.",
+            "Exact mapped no shutdown followed by baseline and original-service verification.",
+            "Assume browser reset changed the router."
+          ],
+          "topicId": "lab-3",
+          "questionId": "lab-3-Q10",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ],
+      "quickReviewed": [
+        {
+          "testedConcept": "Original return",
+          "question": "Can all forward path declarations agree while the original return is missing?",
+          "answer": "Yes; returnReady is an independent gate.",
+          "explanation": "Forward routing and policy do not establish remote reply reachability.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "lab-3",
+          "questionId": "lab-3-QC1",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Protocol scope",
+          "question": "Does changing selectedGateway run a real HSRP election?",
+          "answer": "No; it supplies an observed selected-role declaration.",
+          "explanation": "The model computes no timers, tracking or alternate-path transition.",
+          "difficulty": "Intermediate",
+          "type": "short-answer",
+          "topicId": "lab-3",
+          "questionId": "lab-3-QC2",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        },
+        {
+          "testedConcept": "Recovery evidence",
+          "question": "Why record a sustained-success criterion instead of only the first restored reply?",
+          "answer": "An isolated success may be followed by failure and does not establish continuous restoration.",
+          "explanation": "Preserve subsequent timestamped samples and report the declared criterion and measurement uncertainty.",
+          "difficulty": "Advanced",
+          "type": "short-answer",
+          "topicId": "lab-3",
+          "questionId": "lab-3-QC3",
+          "result": "RETAINED_AFTER_PRIMARY_REVIEW"
+        }
+      ]
+    }
+  ]
+}

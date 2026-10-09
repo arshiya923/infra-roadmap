@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "independentCases": 8706,
+  "sourceSha256": {
+    "content/batch-10.js": "d03df952235051e1efbde4ccbe81d7c4e9ff2e9382645868960c48bc4288033b",
+    "scripts/route-control-models.js": "d3d4ff03057faec7638d002dcab60cb2c12e8d6b6b96a080092b5ec7e9726dc9",
+    "scripts/vrf-scope-models.js": "5fc67812dba849499353fd3857956ed26e3ca9be8dded02f8a99e0a4ce3406e0",
+    "scripts/gateway-redundancy-models.js": "7e51e8684a7ed8f66bc3c7a4eedae8c34a1a9b3e6eaf0c271751de5d9219d97a",
+    "tests/batch-10-primary.cjs": "41a494814c3c267841b1fd9684c47694fee62e3525cf3d30c039d82b457282a8"
+  },
+  "scope": "Independent supplied-declaration expectations; no target router, packet, protocol FSM or convergence execution."
+}

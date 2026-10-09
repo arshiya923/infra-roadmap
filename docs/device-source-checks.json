@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-09",
+  "checks": [
+    {
+      "key": "2960",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst2960x/software/15-2_2_e/vlan/configuration_guide/b_vlan_1522e_2960x_cg/b_vlan_152ex_2960-x_cg_chapter_011.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "trunk",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst2960x/software/15-2_2_e/vlan/configuration_guide/b_vlan_1522e_2960x_cg/b_vlan_152ex_2960-x_cg_chapter_0100.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "multilayer",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750x_3560x/software/release/15-0_2_se/configuration/guide/3750x_cg/swiprout.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "vlan3750",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750x_3560x/software/release/15-2_1_e/configuration/guide/scg3750x/swvlan.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "9200",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "9300",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9300-series-switches/nb-06-cat9300-ser-data-sheet-cte-en.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "9500",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/16-10/configuration_guide/ha/b_1610_ha_9500_cg/configuring_cisco_stackwise_virtual.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "isr",
+      "url": "https://www.cisco.com/c/en/us/support/routers/4000-series-integrated-services-routers-isr/series.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "qfp",
+      "url": "https://www.cisco.com/c/en/us/support/docs/technical-details/222469-reporting-problems-effectively-to-tac-se.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "asr",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "xr",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-9000-series-aggregation-services-routers/datasheet-c78-737841.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "asa",
+      "url": "https://edge.us.cdo.cisco.com/content/docs/c-asa-packet-tracer.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "ftd",
+      "url": "https://secure.cisco.com/secure-firewall/v7.0/docs/access-control-policy",
+      "finalUrl": "https://secure.cisco.com/secure-firewall/v7.0/docs/access-control-policy",
+      "status": 200,
+      "bytesRead": 100000,
+      "result": "PASS"
+    },
+    {
+      "key": "natftd",
+      "url": "https://www.cisco.com/c/en/us/support/docs/security/firepower-management-center/212702-configure-and-verify-nat-on-ftd.pdf",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "aironet",
+      "url": "https://www.cisco.com/c/en/us/td/docs/wireless/controller/9800/17-3/config-guide/b_wl_17_3_cg/m_ap_convert-autonomousaps_cg.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "wireless",
+      "url": "https://www.cisco.com/c/en/us/td/docs/wireless/compatibility/matrix/compatibility-matrix.pdf",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "tags",
+      "url": "https://www.cisco.com/c/en/us/support/docs/wireless/catalyst-9800-series-wireless-controllers/213911-understand-catalyst-9800-wireless-contro.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "aireos",
+      "url": "https://www.cisco.com/c/en/us/support/docs/wireless/4400-series-wireless-lan-controllers/69719-wlc-lwap-config.pdf",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "n3k",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus3000/sw/interfaces/7_x/b_Cisco_Nexus_3000_Series_NX-OS_Interfaces_Configuration_Guide_7x/b_Cisco_Nexus_3000_Series_NX-OS_Interfaces_Configuration_Guide_7x_chapter_01.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "n3kl3",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus3000/sw/interfaces/93x/configuration/guide/b-cisco-nexus-3000-nx-os-interfaces-configuration-guide-93x/b-cisco-nexus-3000-nx-os-interfaces-configuration-guide-93x_chapter_011.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "n5k",
+      "url": "https://www.cisco.com/c/en/us/support/docs/switches/nexus-5000-series-switches/116248-configure-fcoe-00.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "vdc",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_device_context/configuration/archive_601/vdc_nx-os_cfg/vdc_overview.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "n7kl2",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/layer2/configuration/guide/b_Cisco_Nexus_7000_Series_NX-OS_Layer_2_Switching_Configuration_Guide/b_Cisco_Nexus_7000_Series_NX-OS_Layer_2_Switching_Configuration_Guide_chapter_010.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "n9k",
+      "url": "https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-release-notes-list.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "mds",
+      "url": "https://www.cisco.com/c/en/us/td/docs/dcn/mds9000/sw/9x/configuration/fabric/cisco-mds-9000-nx-os-fabric-configuration-guide-9x/configuring_and_managing_zones.html",
+      "result": "UNAVAILABLE",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

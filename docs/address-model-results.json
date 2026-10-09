@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-04",
+  "result": "PASS",
+  "octetCases": 768,
+  "ipv4ReferenceCases": 4389,
+  "ipv6ReferenceCases": 134,
+  "allocationCases": 250,
+  "invalidCases": 33,
+  "reference": "Python ipaddress with deterministic seeded vectors; fixed independent /31-/32 and VLSM expectations."
+}

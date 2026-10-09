@@ -1,0 +1,123 @@
+{
+  "result": "PASS",
+  "batch": "22",
+  "topics": 19,
+  "questions": 247,
+  "checks": [
+    {
+      "id": "s9-g0-t0",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": true
+    },
+    {
+      "id": "s9-g0-t1",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": true
+    },
+    {
+      "id": "s9-g0-t2",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": true
+    },
+    {
+      "id": "s9-g0-t3",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": true
+    },
+    {
+      "id": "s9-g0-t4",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": true
+    },
+    {
+      "id": "s9-g0-t5",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": true
+    },
+    {
+      "id": "s9-g0-t6",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": true
+    },
+    {
+      "id": "s9-g0-t7",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g0-t8",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": true
+    },
+    {
+      "id": "s9-g1-t0",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g1-t1",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g1-t2",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g1-t3",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g1-t4",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g1-t5",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g1-t6",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g1-t7",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g1-t8",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g1-t9",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    }
+  ],
+  "sha256": "f6c8599e7bb193a803d06a9651ec956e7441157490ca242a32e0e2b59805caff"
+}

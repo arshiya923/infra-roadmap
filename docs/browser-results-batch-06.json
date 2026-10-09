@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-08",
+  "result": "PASS",
+  "scope": "Twelve accepted units including integrated lab",
+  "checks": [
+    "twelve accepted diagnostic units retain full contracts and accepted count",
+    "ping separates missing replies from zero RTT and hides conclusions until requested",
+    "trace scenarios retain uncertainty and reset disclosure state",
+    "trace table keyboard scroll and light/dark mobile screenshots",
+    "integrated lab navigation reaches the next batch draft honestly",
+    "diagnostic quiz uses correct authored feedback",
+    "direct-file cases work with no network dependency",
+    "DNS cases distinguish protocol response from client exit and missing response",
+    "DNS mobile screenshot, exact lab downloads and direct-file case",
+    "socket lessons expose exact downloadable lab and independent quiz",
+    "packet categories, truncation explanation, keyboard selection and reset",
+    "capture downloads match bytes, narrow inspector and direct file operation",
+    "integrated lab separates local controls, fault evidence and original transaction recovery",
+    "no page or missing-resource errors"
+  ],
+  "errors": []
+}

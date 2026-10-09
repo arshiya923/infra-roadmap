@@ -1,0 +1,231 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "topics": 44,
+  "courseAccepted": 242,
+  "nextNode": "s7-g0-t0",
+  "checks": [
+    {
+      "id": "s6-g0-t0",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g0-t1",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g0-t2",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g0-t3",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g0-t4",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g0-t5",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g0-t6",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g0-t7",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g0-t8",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g1-t0",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g1-t1",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g1-t2",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g1-t3",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g1-t4",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g1-t5",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g1-t6",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g1-t7",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g1-t8",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g2-t0",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g2-t1",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g2-t2",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g2-t3",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g3-t0",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g3-t1",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g3-t2",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g3-t3",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g3-t4",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g3-t5",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g3-t6",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g3-t7",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g4-t0",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g4-t1",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g4-t2",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g4-t3",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g4-t4",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g4-t5",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g4-t6",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g4-t7",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g4-t8",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g5-t0",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g5-t1",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g5-t2",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "s6-g5-t3",
+      "result": "PASS",
+      "cases": 4
+    },
+    {
+      "id": "lab-6",
+      "result": "PASS",
+      "cases": 4
+    }
+  ],
+  "errors": [],
+  "scope": "Accepted state plus every supplied case input and displayed result compared with the separately loaded pure evaluator; independent formula expectations are in model tests."
+}

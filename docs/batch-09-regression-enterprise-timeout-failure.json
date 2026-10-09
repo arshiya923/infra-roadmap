@@ -1,0 +1,347 @@
+{
+  "date": "2026-10-09",
+  "result": "FAIL",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "tests/content.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "{\n  \"result\": \"PASS\",\n  \"originalNodes\": 442,\n  \"groups\": 69,\n  \"lessons\": 105,\n  \"examQuestions\": 1050,\n  \"quickChecks\": 315,\n  \"labs\": 105,\n  \"sourceHash\": \"ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25\",\n  \"batches\": 33\n}",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/static-route-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 1536 independently expected declaration/address-boundary cases, eight scenarios, installation versus LPM, strict input and copy isolation",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/floating-route-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 2048 independent eligibility/distance/health cases, ten scenarios, equal-AD scope, AD 255 exclusion, strict validation and copy isolation",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/pbr-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 2048 independent packet/origin/attachment/sequence/health cases, eleven scenarios, ACL versus route-map deny, strict declarations and result isolation",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 1536 independent directed-path/boolean combinations, ten cases, cost boundaries and strict/fresh inputs",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-area-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 3072 independent Areas graph cases and eleven authored scenarios",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-dr-bdr-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 19469 independent DR/BDR event histories; actual phase corroboration",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/routing-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "{\n  date: '2026-10-04',\n  result: 'PASS',\n  reference: 'Python standard-library ipaddress, independent prefix matching',\n  vectors: 1546,\n  invalidInputs: 15,\n  checks: [\n    'All addresses in three sample /24s plus external boundaries, default on/off',\n    'Prefix length precedes metric; equal-prefix lower metric wins',\n    'Blackhole is terminal; connected action distinct',\n    'Invalid inputs rejected; results cannot mutate subsequent lookup'\n  ],\n  limitations: 'Fixed eligible IPv4 table; no policy routing, route installation, ECMP or neighbor resolution'\n}",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/static-routing-lab.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 9 actual isolated Linux routing and cleanup checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-routing-lab.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 16 actual OSPF, packet and isolation checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-areas-lab.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 12 actual multi-area OSPF and isolation checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-dr-bdr-lab.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 12 actual DR-BDR election, forwarding, capture and isolation checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/eigrp-routing-lab.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 12 actual EIGRP/probe/packet/isolation checks; five interrupted cleanup paths",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/eigrp-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 34816 supplied-distance/declaration combinations, nine cases and strict/fresh boundaries",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/eigrp-metric-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 19600 independent metric combinations and nine cases",
+      "error": null
+    },
+    {
+      "command": [
+        "python",
+        "tools/build-ospf-lsa-evidence.py"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "Built seven preserved actual OSPF LSA header views from two passing experiments",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-lsa-models.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 279936 independent LSA header comparisons and eighteen authored cases",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-lsa-evidence.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 33 actual LSA headers in seven separately scoped views",
+      "error": null
+    },
+    {
+      "command": [
+        "python",
+        "tools/build-ospf-troubleshooting-evidence.py"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "Built 10 separate actual troubleshooting views",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ospf-troubleshooting-evidence.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 7 troubleshooting evidence checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-static-routing.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8 Static Routing browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-floating-routes.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8 Floating Static Routes browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-pbr.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8 Policy-Based Routing browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ospf.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8 OSPF browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ospf-areas.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 9 OSPF Areas browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ospf-dr-bdr.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 9 DR/BDR lesson browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ospf-lsa.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 9 LSA lesson browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ospf-troubleshooting.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 9 troubleshooting lesson browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-eigrp.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 EIGRP preview browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-eigrp-lesson.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 7 integrated EIGRP lesson browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-eigrp-metrics.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8 EIGRP metrics browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-enterprise-lab.cjs"
+      ],
+      "result": "FAIL",
+      "exitCode": 1,
+      "output": "",
+      "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#enterprise-tool') to be visible\u001b[22m\n\n    at C:\\Users\\Arshiya\\Desktop\\Infta Roadmap\\tests\\browser-enterprise-lab.cjs:3:413 {\n  log: [ \"  - waiting for locator('#enterprise-tool') to be visible\" ],\n  name: 'TimeoutError'\n}"
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS original roadmap preserves all runtime node and group IDs\nPASS original dialog links to correct lesson and preserves learner storage\nPASS all seven lesson routes render complete components\nPASS stepper next/previous/play/pause/reset and diagram zoom\nPASS exam answers hidden until response; correct/wrong feedback and modes\nPASS quick check is separate from exam\nPASS clipboard copies exact command\nPASS anchors preserve lesson route\nPASS full-content search finds commands and glossary concepts\nPASS RAID known failure patterns and reset\nPASS RAID exhaustive four-drive failure masks\nPASS RAID blocks show copies, parity and missing members\nPASS pending and malformed routes are honest and recoverable\nPASS light/dark persistence\nPASS desktop/tablet/mobile layouts and screenshots\nPASS keyboard flow controls and reduced-motion behavior\nPASS file URL works without HTTP or external dependencies\nPASS no JavaScript errors or missing assets\nPASS 18 browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/quality-audit.cjs"
+      ],
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "{\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"Prerequisite graph is acyclic and all prerequisites are authored\",\n    \"Per-lesson exams have ten distinct prompts; comparison/flow/port context present\",\n    \"All authored lessons have substantial structured content (word count used only as a floor, not proof of accuracy)\",\n    \"Initial reader loads only the selected lesson bundle\",\n    \"All 105 authored routes: unique DOM IDs, named form controls/buttons, one H1 and valid section anchors\",\n    \"All authored previous/next links preserve original adjacency, including pending lab nodes\",\n    \"Core body/muted/accent/warning color tokens meet 4.5:1 on paper/surface/soft backgrounds in both themes\",\n    \"Broad local search responds within the 2-second audit ceiling\",\n    \"No page exceptions while traversing the complete authored course\"\n  ],\n  \"localSearchMs\": 157,\n  \"bytes\": {\n    \"learn.html\": 4942,\n    \"content/catalog.js\": 760443,\n    \"scripts/learning.js\": 32476,\n    \"scripts/network-models.js\": 12295,\n    \"scripts/address-tools.js\": 16322,\n    \"scripts/protocol-models.js\": 8560,\n    \"scripts/service-models.js\": 9352,\n    \"scripts/switching-models.js\": 8062,\n    \"scripts/routing-models.js\": 4118,\n    \"scripts/diagnostic-models.js\": 10649,\n    \"scripts/packet-models.js\": 3905,\n    \"scripts/cisco-models.js\": 6882,\n    \"scripts/boot-models.js\": 7002,\n    \"scripts/storage-models.js\": 3781,\n    \"scripts/lifecycle-models.js\": 6609,\n    \"scripts/port-models.js\": 4448,\n    \"scripts/vlan-control-models.js\": 13183,\n    \"scripts/aggregation-models.js\": 4035,\n    \"scripts/stp-evidence.js\": 5642,\n    \"scripts/mst-models.js\": 5652,\n    \"scripts/edge-models.js\": 4426,\n    \"scripts/guard-models.js\": 3908,\n    \"scripts/root-guard-models.js\": 6098,\n    \"scripts/loop-guard-models.js\": 6478,\n    \"scripts/storm-models.js\": 8027,\n    \"scripts/security-port-models.js\": 8563,\n    \"scripts/span-models.js\": 7308,\n    \"scripts/rspan-models.js\": 7950,\n    \"scripts/erspan-models.js\": 9000,\n    \"scripts/enterprise-lab-models.js\": 11143,\n    \"scripts/static-route-models.js\": 8469,\n    \"scripts/floating-route-models.js\": 11018,\n    \"scripts/pbr-models.js\": 8415,\n    \"scripts/ospf-models.js\": 9819,\n    \"scripts/ospf-area-models.js\": 11114,\n    \"scripts/ospf-dr-bdr-models.js\": 11763,\n    \"styles/ospf-dr-bdr.css\": 1331,\n    \"scripts/ospf-lsa-models.js\": 13454,\n    \"content/ospf-lsa-evidence.js\": 11623,\n    \"styles/ospf-lsa.css\": 961,\n    \"content/ospf-troubleshooting-evidence.js\": 80615,\n    \"scripts/ospf-troubleshooting.js\": 8395,\n    \"styles/ospf-troubleshooting.css\": 1342,\n    \"scripts/eigrp-models.js\": 8887,\n    \"styles/eigrp.css\": 1283,\n    \"scripts/eigrp-metric-models.js\": 8590,\n    \"styles/eigrp-metrics.css\": 1233,\n    \"styles/learning.css\": 27128,\n    \"content/batch-01.js\": 71800,\n    \"content/batch-02.js\": 57137,\n    \"content/batch-03.js\": 128672,\n    \"content/batch-04.js\": 100550,\n    \"content/batch-05.js\": 231658,\n    \"content/batch-06.js\": 170199,\n    \"content/batch-07.js\": 325720,\n    \"content/batch-08.js\": 283392,\n    \"content/batch-09.js\": 379842\n  }\n}",
+      "error": null
+    }
+  ],
+  "scope": "Ten reviewed routing drafts including integrated EIGRP with separate supplied-distance worksheet and actual single-transit IPv4 lab. Combined link restoration/owned-daemon recovery and rejected trials remain explicit. All 105 authored routes audited; original previous/next adjacency preserved. Ten original topics/full twenty-topic Batch 09 acceptance remain pending; no actual Cisco, full DUAL/alternate-path, authentication/IPv6/application/hardware/zero-loss/convergence execution."
+}

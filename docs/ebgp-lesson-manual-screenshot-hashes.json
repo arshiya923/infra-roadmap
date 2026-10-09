@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant",
+  "sha256": {
+    "ebgp-lesson-desktop.png": "7706df1c86471e8e8aecb44b664ca6bf25c6da291d94ecb75a36c47a12e4ed28",
+    "ebgp-lesson-mechanism.png": "cfcce7b419cbdcba5031f1ce4306b6906448c4d1c51efbb4c50fc69dc32a3626",
+    "ebgp-lesson-light-mobile.png": "47c4a1625b941df8312b419be8e4fdf21cd4a5f0764da637528efa150e21320c",
+    "ebgp-lesson-dark-mobile.png": "da7137903363d868099da7aec3e1c0f1751cfeeaaf0e35db2be3726d0cc7ebd7",
+    "ebgp-lesson-table-start.png": "ae3bf85b7d57ab16bfa05e76169ff1551fc37eff87724e56cdaa0d4000b4f0d4",
+    "ebgp-lesson-table-end.png": "908f1b65c643c058ad73e0c63d21f8159f9b2abdca11ce9b93cbf78c0dc1045c",
+    "ebgp-lesson-flow.png": "d5378ff5160e7e28b642fe7a85a168154a9deb204d44e97746ffd9116340b615"
+  }
+}

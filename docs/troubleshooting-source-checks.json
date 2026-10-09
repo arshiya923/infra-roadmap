@@ -1,0 +1,380 @@
+{
+  "date": "2026-10-09",
+  "scope": "HTTP reachability, not proof of every technical assertion; sample bodies limited to 2 MB",
+  "sources": [
+    {
+      "url": "https://docs.kernel.org/networking/statistics.html",
+      "title": "Linux interface statistics",
+      "status": 200,
+      "finalURL": "https://docs.kernel.org/networking/statistics.html",
+      "bytesRead": 35009,
+      "sampleSHA256": "dbe2ffa4485f3382b3360b02be107842cfd2eefdd49d376d8fba76d641a30567"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man8/ip-link.8.html",
+      "title": "iproute2: ip link manual",
+      "status": 200,
+      "finalURL": "https://man7.org/linux/man-pages/man8/ip-link.8.html",
+      "bytesRead": 109083,
+      "sampleSHA256": "1aaabb40239fa314ec2010d27130c3a1d52a62d411e58e03baaa74d64089009d"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/support/docs/switches/catalyst-6500-series-switches/12027-53.html",
+      "title": "Cisco: switch port and interface problems",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/10561-3.html",
+      "title": "Cisco: Ethernet negotiation and legacy duplex mismatch",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man8/ethtool.8.html",
+      "title": "ethtool manual",
+      "status": 200,
+      "finalURL": "https://man7.org/linux/man-pages/man8/ethtool.8.html",
+      "bytesRead": 94584,
+      "sampleSHA256": "09fa2efe51855ef992830df61114ce078431e3cc3b9148f3158404c2e3363a44"
+    },
+    {
+      "url": "https://www.cisco.com/en/US/docs/internetworking/troubleshooting/guide/tr1904.html",
+      "title": "Cisco: Ethernet troubleshooting, historical platform examples",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/10561-3.pdf",
+      "title": "Cisco: Ethernet negotiation, media-specific applicability",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man8/bridge.8.html",
+      "title": "Linux bridge commands and VLAN flags",
+      "status": 200,
+      "finalURL": "https://man7.org/linux/man-pages/man8/bridge.8.html",
+      "bytesRead": 67825,
+      "sampleSHA256": "3604117fe68929bca1cb529354df84b2d52a19c09b265f843228285e5637532b"
+    },
+    {
+      "url": "https://docs.kernel.org/networking/bridge.html",
+      "title": "Linux kernel: Ethernet bridging",
+      "status": 200,
+      "finalURL": "https://docs.kernel.org/networking/bridge.html",
+      "bytesRead": 59980,
+      "sampleSHA256": "66129ba3f7ac582e89a425000ddbda42dd7624c52201beff888adc4b905009e7"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/vlan/vlan-configuration-guide/configure-vlan-trunks.html",
+      "title": "Cisco IOS XE: VLAN trunk configuration (platform-specific)",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-15/configuration_guide/lyr2/b_1715_lyr2_9300_cg/configuring_spanning_tree_protocol.html",
+      "title": "Catalyst 9300 IOS XE 17.15 spanning-tree configuration",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-15/configuration_guide/lyr2/b_1715_lyr2_9300_cg/configuring_multiple_spanning_tree_protocol.html",
+      "title": "Catalyst 9300 IOS XE 17.15 MST and rapid-state context",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/28943-170.html",
+      "title": "Cisco: troubleshoot STP issues on Catalyst",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-15/configuration_guide/lyr2/b_1715_lyr2_9300_cg/configuring_etherchannels.html",
+      "title": "Catalyst 9300 17.15 EtherChannel configuration",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/support/docs/switches/catalyst-9300-series-switches/220367-troubleshoot-etherchannels-on-catalyst-9.html",
+      "title": "Cisco Catalyst 9000 EtherChannel troubleshooting",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-15/configuration_guide/vlan/b_1715_vlan_9300_cg/configuring_vlan_trunks.html",
+      "title": "Catalyst 9300 17.15 VLAN trunks",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html",
+      "title": "Cisco: LAN switching troubleshooting",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
+      "title": "iproute2: route lookup and management",
+      "status": 200,
+      "finalURL": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
+      "bytesRead": 58090,
+      "sampleSHA256": "d7d68af6dc3c2c0435b759572057f7696122aecd002a62cb4ae45e313631299a"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man8/ip-rule.8.html",
+      "title": "iproute2 policy rules",
+      "status": 200,
+      "finalURL": "https://man7.org/linux/man-pages/man8/ip-rule.8.html",
+      "bytesRead": 17565,
+      "sampleSHA256": "f339ac481306b327049562abca8cb78ed6d6618c1289b285ee7f479dbf8bf6e4"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc4632",
+      "title": "RFC 4632: classless routing",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/info/rfc4632/",
+      "bytesRead": 344825,
+      "sampleSHA256": "59b6f22c7f88a17d0413311b6e0da882b6d29f770a0170e1a90bd04be373184f"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc2328",
+      "title": "RFC2328: Hello acceptance, required adjacencies, database exchange and route calculations",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/info/rfc2328/",
+      "bytesRead": 1718465,
+      "sampleSHA256": "95bd686354379092b889f6a98933f81617cbf24a5e5fbd1fc22ff66b072c53df"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13699-29.html",
+      "title": "Cisco neighbor troubleshooting: absent, Init, expected 2-Way and exchange-state interpretation",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13684-12.html",
+      "title": "Cisco ExStart/Exchange: MTU investigation and bounded mtu-ignore exception",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_ospf/command/iro-cr-book/ospf-s1.html",
+      "title": "Cisco OSPF operational command syntax and evidence scope",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-15/configuration_guide/rtng/b_1715_rtng_9300_cg/configuring_ospf.html",
+      "title": "Catalyst 9300 IOS XE 17.15 OSPF configuration and operational inspection",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-15/configuration_guide/rtng/b_1715_rtng_9300_cg/protocol_independent_features.html",
+      "title": "Catalyst 9300 IOS XE 17.15 installation and protocol-independent route context",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://docs.frrouting.org/en/stable-8.4/ospfd.html",
+      "title": "FRR stable 8.4: OSPF interface/neighbor/database/route inspection",
+      "status": 200,
+      "finalURL": "https://docs.frrouting.org/en/stable-8.4/ospfd.html",
+      "bytesRead": 185459,
+      "sampleSHA256": "068cd5118f798551492b14dc0caa58bc98ce4341f2c185a49f3a1c1da64e9f5e"
+    },
+    {
+      "url": "https://www.kernel.org/doc/html/latest/networking/ip-sysctl.html",
+      "title": "Linux IP sysctl: forwarding switch and host/router-default reset semantics",
+      "status": 200,
+      "finalURL": "https://www.kernel.org/doc/html/latest/networking/ip-sysctl.html",
+      "bytesRead": 163847,
+      "sampleSHA256": "723db80651b705454b48b0e92dcdcde8396a74efd9cf8332a2fb0d5c216aa819"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+      "title": "Cisco show ip route address: selected route inspection syntax",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipswitch/command/isw-cr-book/isw-s1.html",
+      "title": "Cisco show ip cef network: FIB inspection syntax",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc4271",
+      "title": "RFC 4271: BGP operation, attributes and conceptual RIBs",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/info/rfc4271/",
+      "bytesRead": 879071,
+      "sampleSHA256": "06560d2711f65433f410d6389b163268b8fea8de0166af371580b89e3d7dc7ef"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8212",
+      "title": "RFC 8212: explicit external import/export defaults",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/info/rfc8212/",
+      "bytesRead": 145557,
+      "sampleSHA256": "1d9b20f4a20e9ecc001264b03c3f035994dce2f648b64ba613097f7691bb5b78"
+    },
+    {
+      "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+      "title": "FRR stable 8.4: BGP origination, policy and inspection",
+      "status": 200,
+      "finalURL": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+      "bytesRead": 536181,
+      "sampleSHA256": "969803d8a1d001aebfa719ae595deef392b8b9ee0d77746c915353f45ca74048"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+      "title": "RFC 2131: DHCPv4",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/rfc/rfc2131.html",
+      "bytesRead": 130604,
+      "sampleSHA256": "2738855a6714a3297b432c8562c8511b66c6030ef82f909df2d15159acbb9873"
+    },
+    {
+      "url": "https://www.rfc-editor.org/info/rfc3046/",
+      "title": "RFC 3046 relay information option",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/info/rfc3046/",
+      "bytesRead": 195033,
+      "sampleSHA256": "cdc58e62904fd977c9875cc5c422ac61c49f33404feb9348cc6bb2dd7310a25a"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc1034.html",
+      "title": "RFC 1034",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/rfc/rfc1034.html",
+      "bytesRead": 142381,
+      "sampleSHA256": "b836375d9ce5b9d3565c8f4c55066764d8572bcad65d7a1af53d3662c94fd59e"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc2308.html",
+      "title": "RFC 2308",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/rfc/rfc2308.html",
+      "bytesRead": 46858,
+      "sampleSHA256": "613de9d15f9db4556f4a245dc0a1efa927cca7e02c605dcb080e778965c407ed"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc3022.html",
+      "title": "RFC 3022: traditional NAT",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/rfc/rfc3022.html",
+      "bytesRead": 44217,
+      "sampleSHA256": "bf7f425c947738f72bea3a668780b22dd3651fd37478210b07b56522d60ed736"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc4787.html",
+      "title": "RFC 4787: UDP NAT mapping/filtering distinctions",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/rfc/rfc4787.html",
+      "bytesRead": 83110,
+      "sampleSHA256": "a1ea96256a7188fdf600a6f0f4ae63100a27c9b3655b075a4d2d4fc9baa47e7e"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+      "title": "iproute2: ss socket inspection",
+      "status": 200,
+      "finalURL": "https://man7.org/linux/man-pages/man8/ss.8.html",
+      "bytesRead": 29103,
+      "sampleSHA256": "0e077ba9125e0fcf017fd61a404599249ec5960b0af310d755225817849ca069"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man8/ip.8.html",
+      "title": "iproute2: ip command",
+      "status": 200,
+      "finalURL": "https://man7.org/linux/man-pages/man8/ip.8.html",
+      "bytesRead": 22950,
+      "sampleSHA256": "94bcc1b02f3205338b445ca61f2b27e594ce9d105fa2787453f72ff5fc6afc8d"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/sec-vpn/b-security-vpn/m_sec-access-list-ov-0.html",
+      "title": "Cisco IOS XE 17 IP access-list overview",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://csrc.nist.gov/pubs/sp/800/41/r1/final",
+      "title": "NIST SP 800-41 Rev. 1 firewall policy",
+      "status": 200,
+      "finalURL": "https://csrc.nist.gov/pubs/sp/800/41/r1/final",
+      "bytesRead": 43157,
+      "sampleSHA256": "97fe79c23e5d4d29a4f5467d70f6ba9d199665d8d60b95a190f08a63d8164dce"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/sec-vpn/b-security-vpn/m_sec-zone-pol-fw-xe.html",
+      "title": "IOS XE 17 zone-based policy firewall",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc2132.html",
+      "title": "RFC 2132: DHCP options",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/rfc/rfc2132.html",
+      "bytesRead": 82894,
+      "sampleSHA256": "6e53fdeff32c314a351dbce64d28a90b781f28400fab6749699761c0ae4bd799"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc5227",
+      "title": "RFC 5227: address conflict detection",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/info/rfc5227/",
+      "bytesRead": 270073,
+      "sampleSHA256": "7f34ce0dd11e90b2a7da90b0d59bb5b20bdfdc139194da43bc6bbb75c37809d3"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/support/docs/wireless/5508-wireless-controller/200072-Cheat-Sheet-Common-Wireless-issues.html",
+      "title": "Cisco: wireless client state troubleshooting; platform-specific examples",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.intel.com/content/www/us/en/support/articles/000055509/server-products/server-boards.html",
+      "title": "Intel S2600WF memory population rules \u2014 platform example",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "url": "https://www.dmtf.org/standards/redfish",
+      "title": "DMTF Redfish standard and implementation resources",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://dl.dell.com/topicspdf/troubleshootingguide_en-us.pdf",
+      "title": "Dell PowerEdge troubleshooting guide; controller-specific recovery",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.kernel.org/doc/html/v6.6/admin-guide/md.html",
+      "title": "Linux 6.6 MD array semantics",
+      "status": 200,
+      "finalURL": "https://www.kernel.org/doc/html/v6.6/admin-guide/md.html",
+      "bytesRead": 60376,
+      "sampleSHA256": "bdd1624730b52cab82a5c55a022137ab79b06f82b360d4f92e16592e8db33ae6"
+    },
+    {
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html-single/managing_storage_devices/index",
+      "title": "RHEL 9 storage layers and device management",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://docs.netapp.com/us-en/ontap/san-config/fibre-channel-fcoe-zoning-concept.html",
+      "title": "ONTAP FC/FCoE zoning and port identity",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://developer.broadcom.com/xapis/esxcli-command-reference/latest/namespace/esxcli_storage.html",
+      "title": "Broadcom ESXCLI storage inspection reference",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html-single/configuring_and_managing_virtualization/index",
+      "title": "RHEL 9 virtualization architecture and operations",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://knowledge.broadcom.com/external/article/318938/esxi-hosts-in-all-paths-down-apd-conditi.html",
+      "title": "Broadcom: ESXi all-paths-down conditions",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+      "title": "NIST SP 800-34 Rev 1 contingency planning",
+      "status": 200,
+      "finalURL": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+      "bytesRead": 46487,
+      "sampleSHA256": "b2930d8205b7a0ab0edcf67692972de97f8a2d5919b24ae8a0f88dcdb8ce9f9d"
+    },
+    {
+      "url": "https://sre.google/workbook/incident-response/",
+      "title": "Google SRE: incident response",
+      "status": 200,
+      "finalURL": "https://sre.google/workbook/incident-response/",
+      "bytesRead": 90037,
+      "sampleSHA256": "11894e848cfccc52f073e998815027e7ea56915ca3e16d53df20eb7d28ab7184"
+    }
+  ]
+}

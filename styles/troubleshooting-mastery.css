@@ -1,0 +1,8 @@
+#tm-tool {padding:20px;border:1px solid var(--line);border-radius:8px;background:var(--soft)}
+#tm-tool label {display:block;margin:18px 0 8px;font-weight:600}
+#tm-tool textarea {display:block;box-sizing:border-box;width:100%;min-height:110px;padding:12px;border:1px solid var(--muted);border-radius:4px;background:var(--surface);color:var(--ink);font:inherit;resize:vertical;margin-bottom:12px}
+#tm-tool textarea:focus-visible {outline:2px solid var(--accent);outline-offset:3px}
+#tm-tool > button {margin:0 8px 12px 0;max-width:100%;white-space:normal}
+#tm-tool h4 {margin:20px 0 8px}
+#tm-tool details {margin-top:16px}
+@media(max-width:420px){#tm-tool{padding:14px}}

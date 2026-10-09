@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "Full topic/quiz/lab contracts with draft status and unchanged accepted progress",
+    "Ten cases distinguish standby, silent failure, tracking, wrong/equal/excluded distance, return loss and restoration",
+    "Seven independent gates, same-prefix distance boundaries and static tracking cannot gate declared OSPF",
+    "Entered observations never become measurements, changes clear stale observations, invalid distances hide stale predictions and keyboard reset restores all declarations",
+    "Four widths, both themes and locally keyboard-scrolling table/parallel SVG topology endpoints",
+    "Four mobile lesson-flow steps visible normal and zoomed",
+    "Quiz feedback and original next Policy-Based Routing remains explicitly draft",
+    "Direct-file worksheet without page/resource errors"
+  ],
+  "errors": [],
+  "scope": "Fixed two-candidate preference and independent declared health/return/track conditions; no actual Cisco parser, routing protocol, IP SLA, probe, timer, recursive chain, failover or transaction."
+}

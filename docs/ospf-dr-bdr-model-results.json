@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "vectors": 19469,
+  "checks": [
+    "19456 independent two-/three-event presence histories across twelve priority profiles, plus thirteen authored cases",
+    "Per-router declaration oracle follows RFC 2328 section 9.4 local recalculation and consensus, separately from model shortcut",
+    "Six pair states, priority-zero exclusion, BDR promotion, nonpreemption, cold-start ties and lone-DR network-LSA suppression",
+    "RIB/forward/return gates do not change role history; strict bounds, sparse arrays, input preservation and fresh nested results",
+    "Four event checkpoints corroborated against preserved actual FRR interfaces, neighbor pairs and current-DR network-LSA identity/membership"
+  ],
+  "scope": "Settled consistent broadcast segment with fixed unique RIDs and reset departed attachments. Not a complete RFC election/neighbor FSM, timing, packet, LSA retention, conflicting-declaration or forwarding engine. Curriculum lesson is integrated as a draft; full batch acceptance remains pending."
+}

@@ -1,0 +1,2312 @@
+{
+  "exitCode": 0,
+  "records": {
+    "BASELINE_SUMMARY_R1": {
+      "routerId": "1.1.1.1",
+      "as": 65001,
+      "vrfId": 0,
+      "vrfName": "default",
+      "tableVersion": 2,
+      "ribCount": 3,
+      "ribMemory": 576,
+      "peerCount": 1,
+      "peerMemory": 741464,
+      "peers": {
+        "203.0.113.2": {
+          "hostname": "fb09b-176918-r2",
+          "domainname": "localdomain",
+          "remoteAs": 65002,
+          "localAs": 65001,
+          "version": 4,
+          "msgRcvd": 4,
+          "msgSent": 4,
+          "tableVersion": 0,
+          "outq": 0,
+          "inq": 0,
+          "peerUptime": "00:00:01",
+          "peerUptimeMsec": 1000,
+          "peerUptimeEstablishedEpoch": 1791540144,
+          "pfxRcd": 1,
+          "pfxSnt": 1,
+          "state": "Established",
+          "peerState": "OK",
+          "connectionsEstablished": 1,
+          "connectionsDropped": 0,
+          "idType": "ipv4"
+        }
+      },
+      "failedPeers": 0,
+      "displayedPeers": 1,
+      "totalPeers": 1,
+      "dynamicPeers": 0,
+      "bestPath": {
+        "multiPathRelax": "false"
+      }
+    },
+    "BASELINE_TABLE_R1": {
+      "vrfId": 0,
+      "vrfName": "default",
+      "tableVersion": 2,
+      "routerId": "1.1.1.1",
+      "defaultLocPrf": 100,
+      "localAS": 65001,
+      "routes": {
+        "192.0.2.0/24": [
+          {
+            "valid": true,
+            "bestpath": true,
+            "selectionReason": "First path received",
+            "pathFrom": "external",
+            "prefix": "192.0.2.0",
+            "prefixLen": 24,
+            "network": "192.0.2.0/24",
+            "version": 1,
+            "metric": 0,
+            "weight": 32768,
+            "peerId": "(unspec)",
+            "path": "",
+            "origin": "IGP",
+            "nexthops": [
+              {
+                "ip": "0.0.0.0",
+                "hostname": "fb09b-176918-r1",
+                "afi": "ipv4",
+                "used": true
+              }
+            ]
+          }
+        ],
+        "198.51.100.0/24": [
+          {
+            "valid": true,
+            "bestpath": true,
+            "selectionReason": "First path received",
+            "pathFrom": "external",
+            "prefix": "198.51.100.0",
+            "prefixLen": 24,
+            "network": "198.51.100.0/24",
+            "version": 2,
+            "metric": 0,
+            "weight": 0,
+            "peerId": "203.0.113.2",
+            "path": "65002",
+            "origin": "IGP",
+            "nexthops": [
+              {
+                "ip": "203.0.113.2",
+                "hostname": "fb09b-176918-r2",
+                "afi": "ipv4",
+                "used": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "BASELINE_NEIGHBORS_R1": {
+      "203.0.113.2": {
+        "remoteAs": 65002,
+        "localAs": 65001,
+        "nbrExternalLink": true,
+        "localRole": "undefined",
+        "remoteRole": "undefined",
+        "hostname": "fb09b-176918-r2",
+        "domainname": "localdomain",
+        "bgpVersion": 4,
+        "remoteRouterId": "2.2.2.2",
+        "localRouterId": "1.1.1.1",
+        "bgpState": "Established",
+        "bgpTimerUpMsec": 2000,
+        "bgpTimerUpString": "00:00:02",
+        "bgpTimerUpEstablishedEpoch": 1791540143,
+        "bgpTimerLastRead": 1000,
+        "bgpTimerLastWrite": 1000,
+        "bgpInUpdateElapsedTimeMsecs": 1000,
+        "bgpTimerConfiguredHoldTimeMsecs": 180000,
+        "bgpTimerConfiguredKeepAliveIntervalMsecs": 60000,
+        "bgpTimerHoldTimeMsecs": 180000,
+        "bgpTimerKeepAliveIntervalMsecs": 60000,
+        "extendedOptionalParametersLength": false,
+        "bgpTimerConfiguredConditionalAdvertisementsSec": 60,
+        "neighborCapabilities": {
+          "4byteAs": "advertisedAndReceived",
+          "extendedMessage": "advertisedAndReceived",
+          "addPath": {
+            "ipv4Unicast": {
+              "rxAdvertisedAndReceived": true
+            }
+          },
+          "longLivedGracefulRestart": "advertisedAndReceived",
+          "longLivedGracefulRestartByPeer": {},
+          "routeRefresh": "advertisedAndReceivedOldNew",
+          "enhancedRouteRefresh": "advertisedAndReceived",
+          "multiprotocolExtensions": {
+            "ipv4Unicast": {
+              "advertisedAndReceived": true
+            }
+          },
+          "hostName": {
+            "advHostName": "fb09b-176918-r1",
+            "advDomainName": "localdomain",
+            "rcvHostName": "fb09b-176918-r2",
+            "rcvDomainName": "localdomain"
+          },
+          "gracefulRestart": "advertisedAndReceived",
+          "gracefulRestartRemoteTimerMsecs": 120000,
+          "addressFamiliesByPeer": "none"
+        },
+        "gracefulRestartInfo": {
+          "endOfRibSend": {
+            "ipv4Unicast": true
+          },
+          "endOfRibRecv": {
+            "ipv4Unicast": true
+          },
+          "localGrMode": "Helper*",
+          "remoteGrMode": "Helper",
+          "rBit": true,
+          "nBit": true,
+          "timers": {
+            "configuredRestartTimer": 120,
+            "receivedRestartTimer": 120
+          },
+          "ipv4Unicast": {
+            "fBit": false,
+            "endOfRibStatus": {
+              "endOfRibSend": true,
+              "endOfRibSentAfterUpdate": true,
+              "endOfRibRecv": true
+            },
+            "timers": {
+              "stalePathTimer": 360
+            }
+          }
+        },
+        "messageStats": {
+          "depthInq": 0,
+          "depthOutq": 0,
+          "opensSent": 1,
+          "opensRecv": 1,
+          "notificationsSent": 0,
+          "notificationsRecv": 0,
+          "updatesSent": 2,
+          "updatesRecv": 2,
+          "keepalivesSent": 1,
+          "keepalivesRecv": 1,
+          "routeRefreshSent": 0,
+          "routeRefreshRecv": 0,
+          "capabilitySent": 0,
+          "capabilityRecv": 0,
+          "totalSent": 4,
+          "totalRecv": 4
+        },
+        "minBtwnAdvertisementRunsTimerMsecs": 0,
+        "addressFamilyInfo": {
+          "ipv4Unicast": {
+            "updateGroupId": 1,
+            "subGroupId": 1,
+            "packetQueueLength": 0,
+            "commAttriSentToNbr": "extendedAndStandard",
+            "inboundPathPolicyConfig": true,
+            "outboundPathPolicyConfig": true,
+            "routeMapForIncomingAdvertisements": "PEER-IMPORT",
+            "routeMapForOutgoingAdvertisements": "OWN-EXPORT",
+            "acceptedPrefixCounter": 1,
+            "sentPrefixCounter": 1
+          }
+        },
+        "connectionsEstablished": 1,
+        "connectionsDropped": 0,
+        "lastResetTimerMsecs": 3000,
+        "lastResetDueTo": "Waiting for peer OPEN",
+        "lastResetCode": 32,
+        "externalBgpNbrMaxHopsAway": 1,
+        "hostLocal": "203.0.113.1",
+        "portLocal": 51940,
+        "hostForeign": "203.0.113.2",
+        "portForeign": 179,
+        "nexthop": "203.0.113.1",
+        "nexthopGlobal": "fe80::fc8f:bff:fecd:a391",
+        "nexthopLocal": "fe80::fc8f:bff:fecd:a391",
+        "bgpConnection": "sharedNetwork",
+        "connectRetryTimer": 120,
+        "readThread": "on",
+        "writeThread": "on"
+      }
+    },
+    "BASELINE_CONFIG_R1": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09b-176918-r1\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter bgp 65001\n bgp router-id 1.1.1.1\n neighbor 203.0.113.2 remote-as 65002\n !\n address-family ipv4 unicast\n  network 192.0.2.0/24\n  neighbor 203.0.113.2 route-map PEER-IMPORT in\n  neighbor 203.0.113.2 route-map OWN-EXPORT out\n exit-address-family\nexit\n!\nip prefix-list OWN-LAN seq 10 permit 192.0.2.0/24\nip prefix-list PEER-LAN seq 10 permit 198.51.100.0/24\n!\nroute-map OWN-EXPORT permit 10\n match ip address prefix-list OWN-LAN\nexit\n!\nroute-map PEER-IMPORT permit 10\n match ip address prefix-list PEER-LAN\nexit\n!\nend\n"
+    },
+    "BASELINE_RIB_R1": {
+      "198.51.100.0/24": [
+        {
+          "prefix": "198.51.100.0/24",
+          "prefixLen": 24,
+          "protocol": "bgp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "selected": true,
+          "destSelected": true,
+          "distance": 20,
+          "metric": 0,
+          "installed": true,
+          "table": 254,
+          "internalStatus": 16,
+          "internalFlags": 8,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 10,
+          "installedNexthopGroupId": 10,
+          "uptime": "00:00:01",
+          "nexthops": [
+            {
+              "flags": 3,
+              "fib": true,
+              "ip": "203.0.113.2",
+              "afi": "ipv4",
+              "interfaceIndex": 4,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "BASELINE_KERNEL_R1": [
+      {
+        "dst": "192.0.2.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "192.0.2.1",
+        "flags": []
+      },
+      {
+        "dst": "198.51.100.0/24",
+        "nhid": 10,
+        "gateway": "203.0.113.2",
+        "dev": "transit",
+        "protocol": "bgp",
+        "metric": 20,
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.1",
+        "flags": []
+      }
+    ],
+    "BASELINE_LINKS_R1": [
+      {
+        "ifindex": 1,
+        "ifname": "lo",
+        "flags": [
+          "LOOPBACK",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 65536,
+        "qdisc": "noqueue",
+        "operstate": "UNKNOWN",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "loopback",
+        "address": "00:00:00:00:00:00",
+        "broadcast": "00:00:00:00:00:00"
+      },
+      {
+        "ifindex": 2,
+        "link_index": 3,
+        "ifname": "lan",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "ea:5d:64:b5:63:d9",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 0
+      },
+      {
+        "ifindex": 4,
+        "link_index": 3,
+        "ifname": "transit",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "fe:8f:0b:cd:a3:91",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 1
+      }
+    ],
+    "BASELINE_SUMMARY_R2": {
+      "routerId": "2.2.2.2",
+      "as": 65002,
+      "vrfId": 0,
+      "vrfName": "default",
+      "tableVersion": 2,
+      "ribCount": 3,
+      "ribMemory": 576,
+      "peerCount": 1,
+      "peerMemory": 741464,
+      "peers": {
+        "203.0.113.1": {
+          "hostname": "fb09b-176918-r1",
+          "domainname": "localdomain",
+          "remoteAs": 65001,
+          "localAs": 65002,
+          "version": 4,
+          "msgRcvd": 4,
+          "msgSent": 4,
+          "tableVersion": 0,
+          "outq": 0,
+          "inq": 0,
+          "peerUptime": "00:00:02",
+          "peerUptimeMsec": 2000,
+          "peerUptimeEstablishedEpoch": 1791540144,
+          "pfxRcd": 1,
+          "pfxSnt": 1,
+          "state": "Established",
+          "peerState": "OK",
+          "connectionsEstablished": 1,
+          "connectionsDropped": 0,
+          "idType": "ipv4"
+        }
+      },
+      "failedPeers": 0,
+      "displayedPeers": 1,
+      "totalPeers": 1,
+      "dynamicPeers": 0,
+      "bestPath": {
+        "multiPathRelax": "false"
+      }
+    },
+    "BASELINE_TABLE_R2": {
+      "vrfId": 0,
+      "vrfName": "default",
+      "tableVersion": 2,
+      "routerId": "2.2.2.2",
+      "defaultLocPrf": 100,
+      "localAS": 65002,
+      "routes": {
+        "192.0.2.0/24": [
+          {
+            "valid": true,
+            "bestpath": true,
+            "selectionReason": "First path received",
+            "pathFrom": "external",
+            "prefix": "192.0.2.0",
+            "prefixLen": 24,
+            "network": "192.0.2.0/24",
+            "version": 2,
+            "metric": 0,
+            "weight": 0,
+            "peerId": "203.0.113.1",
+            "path": "65001",
+            "origin": "IGP",
+            "nexthops": [
+              {
+                "ip": "203.0.113.1",
+                "hostname": "fb09b-176918-r1",
+                "afi": "ipv4",
+                "used": true
+              }
+            ]
+          }
+        ],
+        "198.51.100.0/24": [
+          {
+            "valid": true,
+            "bestpath": true,
+            "selectionReason": "First path received",
+            "pathFrom": "external",
+            "prefix": "198.51.100.0",
+            "prefixLen": 24,
+            "network": "198.51.100.0/24",
+            "version": 1,
+            "metric": 0,
+            "weight": 32768,
+            "peerId": "(unspec)",
+            "path": "",
+            "origin": "IGP",
+            "nexthops": [
+              {
+                "ip": "0.0.0.0",
+                "hostname": "fb09b-176918-r2",
+                "afi": "ipv4",
+                "used": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "BASELINE_NEIGHBORS_R2": {
+      "203.0.113.1": {
+        "remoteAs": 65001,
+        "localAs": 65002,
+        "nbrExternalLink": true,
+        "localRole": "undefined",
+        "remoteRole": "undefined",
+        "hostname": "fb09b-176918-r1",
+        "domainname": "localdomain",
+        "bgpVersion": 4,
+        "remoteRouterId": "1.1.1.1",
+        "localRouterId": "2.2.2.2",
+        "bgpState": "Established",
+        "bgpTimerUpMsec": 2000,
+        "bgpTimerUpString": "00:00:02",
+        "bgpTimerUpEstablishedEpoch": 1791540144,
+        "bgpTimerLastRead": 1000,
+        "bgpTimerLastWrite": 1000,
+        "bgpInUpdateElapsedTimeMsecs": 1000,
+        "bgpTimerConfiguredHoldTimeMsecs": 180000,
+        "bgpTimerConfiguredKeepAliveIntervalMsecs": 60000,
+        "bgpTimerHoldTimeMsecs": 180000,
+        "bgpTimerKeepAliveIntervalMsecs": 60000,
+        "extendedOptionalParametersLength": false,
+        "bgpTimerConfiguredConditionalAdvertisementsSec": 60,
+        "neighborCapabilities": {
+          "4byteAs": "advertisedAndReceived",
+          "extendedMessage": "advertisedAndReceived",
+          "addPath": {
+            "ipv4Unicast": {
+              "rxAdvertisedAndReceived": true
+            }
+          },
+          "longLivedGracefulRestart": "advertisedAndReceived",
+          "longLivedGracefulRestartByPeer": {},
+          "routeRefresh": "advertisedAndReceivedOldNew",
+          "enhancedRouteRefresh": "advertisedAndReceived",
+          "multiprotocolExtensions": {
+            "ipv4Unicast": {
+              "advertisedAndReceived": true
+            }
+          },
+          "hostName": {
+            "advHostName": "fb09b-176918-r2",
+            "advDomainName": "localdomain",
+            "rcvHostName": "fb09b-176918-r1",
+            "rcvDomainName": "localdomain"
+          },
+          "gracefulRestart": "advertisedAndReceived",
+          "gracefulRestartRemoteTimerMsecs": 120000,
+          "addressFamiliesByPeer": "none"
+        },
+        "gracefulRestartInfo": {
+          "endOfRibSend": {
+            "ipv4Unicast": true
+          },
+          "endOfRibRecv": {
+            "ipv4Unicast": true
+          },
+          "localGrMode": "Helper*",
+          "remoteGrMode": "Helper",
+          "rBit": true,
+          "nBit": true,
+          "timers": {
+            "configuredRestartTimer": 120,
+            "receivedRestartTimer": 120
+          },
+          "ipv4Unicast": {
+            "fBit": false,
+            "endOfRibStatus": {
+              "endOfRibSend": true,
+              "endOfRibSentAfterUpdate": true,
+              "endOfRibRecv": true
+            },
+            "timers": {
+              "stalePathTimer": 360
+            }
+          }
+        },
+        "messageStats": {
+          "depthInq": 0,
+          "depthOutq": 0,
+          "opensSent": 1,
+          "opensRecv": 1,
+          "notificationsSent": 0,
+          "notificationsRecv": 0,
+          "updatesSent": 2,
+          "updatesRecv": 2,
+          "keepalivesSent": 1,
+          "keepalivesRecv": 1,
+          "routeRefreshSent": 0,
+          "routeRefreshRecv": 0,
+          "capabilitySent": 0,
+          "capabilityRecv": 0,
+          "totalSent": 4,
+          "totalRecv": 4
+        },
+        "minBtwnAdvertisementRunsTimerMsecs": 0,
+        "addressFamilyInfo": {
+          "ipv4Unicast": {
+            "updateGroupId": 1,
+            "subGroupId": 1,
+            "packetQueueLength": 0,
+            "commAttriSentToNbr": "extendedAndStandard",
+            "inboundPathPolicyConfig": true,
+            "outboundPathPolicyConfig": true,
+            "routeMapForIncomingAdvertisements": "PEER-IMPORT",
+            "routeMapForOutgoingAdvertisements": "OWN-EXPORT",
+            "acceptedPrefixCounter": 1,
+            "sentPrefixCounter": 1
+          }
+        },
+        "connectionsEstablished": 1,
+        "connectionsDropped": 0,
+        "lastResetTimerMsecs": 3000,
+        "lastResetDueTo": "No AFI/SAFI activated for peer",
+        "lastResetCode": 30,
+        "externalBgpNbrMaxHopsAway": 1,
+        "hostLocal": "203.0.113.2",
+        "portLocal": 179,
+        "hostForeign": "203.0.113.1",
+        "portForeign": 51940,
+        "nexthop": "203.0.113.2",
+        "nexthopGlobal": "fe80::bc06:c9ff:fe43:991e",
+        "nexthopLocal": "fe80::bc06:c9ff:fe43:991e",
+        "bgpConnection": "sharedNetwork",
+        "connectRetryTimer": 120,
+        "readThread": "on",
+        "writeThread": "on"
+      }
+    },
+    "BASELINE_CONFIG_R2": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09b-176918-r2\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter bgp 65002\n bgp router-id 2.2.2.2\n neighbor 203.0.113.1 remote-as 65001\n !\n address-family ipv4 unicast\n  network 198.51.100.0/24\n  neighbor 203.0.113.1 route-map PEER-IMPORT in\n  neighbor 203.0.113.1 route-map OWN-EXPORT out\n exit-address-family\nexit\n!\nip prefix-list OWN-LAN seq 10 permit 198.51.100.0/24\nip prefix-list PEER-LAN seq 10 permit 192.0.2.0/24\n!\nroute-map OWN-EXPORT permit 10\n match ip address prefix-list OWN-LAN\nexit\n!\nroute-map PEER-IMPORT permit 10\n match ip address prefix-list PEER-LAN\nexit\n!\nend\n"
+    },
+    "BASELINE_RIB_R2": {
+      "192.0.2.0/24": [
+        {
+          "prefix": "192.0.2.0/24",
+          "prefixLen": 24,
+          "protocol": "bgp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "selected": true,
+          "destSelected": true,
+          "distance": 20,
+          "metric": 0,
+          "installed": true,
+          "table": 254,
+          "internalStatus": 16,
+          "internalFlags": 8,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 10,
+          "installedNexthopGroupId": 10,
+          "uptime": "00:00:02",
+          "nexthops": [
+            {
+              "flags": 3,
+              "fib": true,
+              "ip": "203.0.113.1",
+              "afi": "ipv4",
+              "interfaceIndex": 3,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "BASELINE_KERNEL_R2": [
+      {
+        "dst": "192.0.2.0/24",
+        "nhid": 10,
+        "gateway": "203.0.113.1",
+        "dev": "transit",
+        "protocol": "bgp",
+        "metric": 20,
+        "flags": []
+      },
+      {
+        "dst": "198.51.100.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "198.51.100.1",
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.2",
+        "flags": []
+      }
+    ],
+    "BASELINE_LINKS_R2": [
+      {
+        "ifindex": 1,
+        "ifname": "lo",
+        "flags": [
+          "LOOPBACK",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 65536,
+        "qdisc": "noqueue",
+        "operstate": "UNKNOWN",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "loopback",
+        "address": "00:00:00:00:00:00",
+        "broadcast": "00:00:00:00:00:00"
+      },
+      {
+        "ifindex": 3,
+        "link_index": 4,
+        "ifname": "transit",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "be:06:c9:43:99:1e",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 0
+      },
+      {
+        "ifindex": 4,
+        "link_index": 2,
+        "ifname": "lan",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "6e:ea:09:bd:f8:3a",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 1
+      }
+    ],
+    "BASELINE_PROBE_CLIENT": {
+      "target": "198.51.100.20",
+      "exitCode": 0,
+      "output": "PING 198.51.100.20 (198.51.100.20) 56(84) bytes of data.\n64 bytes from 198.51.100.20: icmp_seq=1 ttl=62 time=0.083 ms\n\n--- 198.51.100.20 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.083/0.083/0.083/0.000 ms\n"
+    },
+    "BASELINE_PROBE_SERVER": {
+      "target": "192.0.2.10",
+      "exitCode": 0,
+      "output": "PING 192.0.2.10 (192.0.2.10) 56(84) bytes of data.\n64 bytes from 192.0.2.10: icmp_seq=1 ttl=62 time=0.057 ms\n\n--- 192.0.2.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.057/0.057/0.057/0.000 ms\n"
+    },
+    "PACKETS": [
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "51940",
+        "179",
+        "1"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "179",
+        "51940",
+        "1"
+      ],
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "51940",
+        "179",
+        "4"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "179",
+        "51940",
+        "4"
+      ],
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "51940",
+        "179",
+        "2,2"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "179",
+        "51940",
+        "2,2"
+      ],
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "51940",
+        "179",
+        "5"
+      ],
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "51940",
+        "179",
+        "2"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "179",
+        "51940",
+        "5"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "179",
+        "51940",
+        "2,5"
+      ],
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "51940",
+        "179",
+        "2"
+      ],
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "51940",
+        "179",
+        "2"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "179",
+        "51940",
+        "5"
+      ],
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "51940",
+        "179",
+        "5"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "179",
+        "51940",
+        "2"
+      ],
+      [
+        "203.0.113.1",
+        "203.0.113.2",
+        "51940",
+        "179",
+        "2,5"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "179",
+        "51940",
+        "2"
+      ],
+      [
+        "203.0.113.2",
+        "203.0.113.1",
+        "179",
+        "51940",
+        "2"
+      ]
+    ],
+    "FAULT_SUMMARY_R1": {
+      "routerId": "1.1.1.1",
+      "as": 65001,
+      "vrfId": 0,
+      "vrfName": "default",
+      "tableVersion": 3,
+      "ribCount": 1,
+      "ribMemory": 192,
+      "peerCount": 1,
+      "peerMemory": 741464,
+      "peers": {
+        "203.0.113.2": {
+          "hostname": "fb09b-176918-r2",
+          "domainname": "localdomain",
+          "remoteAs": 65002,
+          "localAs": 65001,
+          "version": 4,
+          "msgRcvd": 12,
+          "msgSent": 11,
+          "tableVersion": 0,
+          "outq": 0,
+          "inq": 0,
+          "peerUptime": "00:00:10",
+          "peerUptimeMsec": 10000,
+          "peerUptimeEstablishedEpoch": 1791540144,
+          "pfxRcd": 0,
+          "pfxSnt": 1,
+          "state": "Established",
+          "peerState": "OK",
+          "connectionsEstablished": 1,
+          "connectionsDropped": 0,
+          "idType": "ipv4"
+        }
+      },
+      "failedPeers": 0,
+      "displayedPeers": 1,
+      "totalPeers": 1,
+      "dynamicPeers": 0,
+      "bestPath": {
+        "multiPathRelax": "false"
+      }
+    },
+    "FAULT_TABLE_R1": {
+      "vrfId": 0,
+      "vrfName": "default",
+      "tableVersion": 3,
+      "routerId": "1.1.1.1",
+      "defaultLocPrf": 100,
+      "localAS": 65001,
+      "routes": {
+        "192.0.2.0/24": [
+          {
+            "valid": true,
+            "bestpath": true,
+            "selectionReason": "First path received",
+            "pathFrom": "external",
+            "prefix": "192.0.2.0",
+            "prefixLen": 24,
+            "network": "192.0.2.0/24",
+            "version": 1,
+            "metric": 0,
+            "weight": 32768,
+            "peerId": "(unspec)",
+            "path": "",
+            "origin": "IGP",
+            "nexthops": [
+              {
+                "ip": "0.0.0.0",
+                "hostname": "fb09b-176918-r1",
+                "afi": "ipv4",
+                "used": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "FAULT_NEIGHBORS_R1": {
+      "203.0.113.2": {
+        "remoteAs": 65002,
+        "localAs": 65001,
+        "nbrExternalLink": true,
+        "localRole": "undefined",
+        "remoteRole": "undefined",
+        "hostname": "fb09b-176918-r2",
+        "domainname": "localdomain",
+        "bgpVersion": 4,
+        "remoteRouterId": "2.2.2.2",
+        "localRouterId": "1.1.1.1",
+        "bgpState": "Established",
+        "bgpTimerUpMsec": 11000,
+        "bgpTimerUpString": "00:00:11",
+        "bgpTimerUpEstablishedEpoch": 1791540143,
+        "bgpTimerLastRead": 1000,
+        "bgpTimerLastWrite": 6000,
+        "bgpInUpdateElapsedTimeMsecs": 1000,
+        "bgpTimerConfiguredHoldTimeMsecs": 180000,
+        "bgpTimerConfiguredKeepAliveIntervalMsecs": 60000,
+        "bgpTimerHoldTimeMsecs": 180000,
+        "bgpTimerKeepAliveIntervalMsecs": 60000,
+        "extendedOptionalParametersLength": false,
+        "bgpTimerConfiguredConditionalAdvertisementsSec": 60,
+        "neighborCapabilities": {
+          "4byteAs": "advertisedAndReceived",
+          "extendedMessage": "advertisedAndReceived",
+          "addPath": {
+            "ipv4Unicast": {
+              "rxAdvertisedAndReceived": true
+            }
+          },
+          "longLivedGracefulRestart": "advertisedAndReceived",
+          "longLivedGracefulRestartByPeer": {},
+          "routeRefresh": "advertisedAndReceivedOldNew",
+          "enhancedRouteRefresh": "advertisedAndReceived",
+          "multiprotocolExtensions": {
+            "ipv4Unicast": {
+              "advertisedAndReceived": true
+            }
+          },
+          "hostName": {
+            "advHostName": "fb09b-176918-r1",
+            "advDomainName": "localdomain",
+            "rcvHostName": "fb09b-176918-r2",
+            "rcvDomainName": "localdomain"
+          },
+          "gracefulRestart": "advertisedAndReceived",
+          "gracefulRestartRemoteTimerMsecs": 120000,
+          "addressFamiliesByPeer": "none"
+        },
+        "gracefulRestartInfo": {
+          "endOfRibSend": {
+            "ipv4Unicast": true
+          },
+          "endOfRibRecv": {
+            "ipv4Unicast": true
+          },
+          "localGrMode": "Helper*",
+          "remoteGrMode": "Helper",
+          "rBit": true,
+          "nBit": true,
+          "timers": {
+            "configuredRestartTimer": 120,
+            "receivedRestartTimer": 120
+          },
+          "ipv4Unicast": {
+            "fBit": false,
+            "endOfRibStatus": {
+              "endOfRibSend": true,
+              "endOfRibSentAfterUpdate": false,
+              "endOfRibRecv": true
+            },
+            "timers": {
+              "stalePathTimer": 360
+            }
+          }
+        },
+        "messageStats": {
+          "depthInq": 0,
+          "depthOutq": 0,
+          "opensSent": 1,
+          "opensRecv": 1,
+          "notificationsSent": 0,
+          "notificationsRecv": 0,
+          "updatesSent": 6,
+          "updatesRecv": 7,
+          "keepalivesSent": 1,
+          "keepalivesRecv": 1,
+          "routeRefreshSent": 3,
+          "routeRefreshRecv": 3,
+          "capabilitySent": 0,
+          "capabilityRecv": 0,
+          "totalSent": 11,
+          "totalRecv": 12
+        },
+        "minBtwnAdvertisementRunsTimerMsecs": 0,
+        "addressFamilyInfo": {
+          "ipv4Unicast": {
+            "updateGroupId": 1,
+            "subGroupId": 1,
+            "packetQueueLength": 0,
+            "commAttriSentToNbr": "extendedAndStandard",
+            "inboundPathPolicyConfig": true,
+            "outboundPathPolicyConfig": true,
+            "routeMapForIncomingAdvertisements": "PEER-IMPORT",
+            "routeMapForOutgoingAdvertisements": "OWN-EXPORT",
+            "acceptedPrefixCounter": 0,
+            "sentPrefixCounter": 1
+          }
+        },
+        "connectionsEstablished": 1,
+        "connectionsDropped": 0,
+        "lastResetTimerMsecs": 12000,
+        "lastResetDueTo": "Waiting for peer OPEN",
+        "lastResetCode": 32,
+        "externalBgpNbrMaxHopsAway": 1,
+        "hostLocal": "203.0.113.1",
+        "portLocal": 51940,
+        "hostForeign": "203.0.113.2",
+        "portForeign": 179,
+        "nexthop": "203.0.113.1",
+        "nexthopGlobal": "fe80::fc8f:bff:fecd:a391",
+        "nexthopLocal": "fe80::fc8f:bff:fecd:a391",
+        "bgpConnection": "sharedNetwork",
+        "connectRetryTimer": 120,
+        "readThread": "on",
+        "writeThread": "on"
+      }
+    },
+    "FAULT_CONFIG_R1": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09b-176918-r1\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter bgp 65001\n bgp router-id 1.1.1.1\n neighbor 203.0.113.2 remote-as 65002\n !\n address-family ipv4 unicast\n  network 192.0.2.0/24\n  neighbor 203.0.113.2 route-map PEER-IMPORT in\n  neighbor 203.0.113.2 route-map OWN-EXPORT out\n exit-address-family\nexit\n!\nip prefix-list OWN-LAN seq 10 permit 192.0.2.0/24\nip prefix-list PEER-LAN seq 10 permit 198.51.100.0/24\n!\nroute-map OWN-EXPORT permit 10\n match ip address prefix-list OWN-LAN\nexit\n!\nroute-map PEER-IMPORT permit 10\n match ip address prefix-list PEER-LAN\nexit\n!\nend\n"
+    },
+    "FAULT_RIB_R1": {},
+    "FAULT_KERNEL_R1": [
+      {
+        "dst": "192.0.2.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "192.0.2.1",
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.1",
+        "flags": []
+      }
+    ],
+    "FAULT_LINKS_R1": [
+      {
+        "ifindex": 1,
+        "ifname": "lo",
+        "flags": [
+          "LOOPBACK",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 65536,
+        "qdisc": "noqueue",
+        "operstate": "UNKNOWN",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "loopback",
+        "address": "00:00:00:00:00:00",
+        "broadcast": "00:00:00:00:00:00"
+      },
+      {
+        "ifindex": 2,
+        "link_index": 3,
+        "ifname": "lan",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "ea:5d:64:b5:63:d9",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 0
+      },
+      {
+        "ifindex": 4,
+        "link_index": 3,
+        "ifname": "transit",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "fe:8f:0b:cd:a3:91",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 1
+      }
+    ],
+    "FAULT_SUMMARY_R2": {
+      "routerId": "2.2.2.2",
+      "as": 65002,
+      "vrfId": 0,
+      "vrfName": "default",
+      "tableVersion": 3,
+      "ribCount": 1,
+      "ribMemory": 192,
+      "peerCount": 1,
+      "peerMemory": 741464,
+      "peers": {
+        "203.0.113.1": {
+          "hostname": "fb09b-176918-r1",
+          "domainname": "localdomain",
+          "remoteAs": 65001,
+          "localAs": 65002,
+          "version": 4,
+          "msgRcvd": 11,
+          "msgSent": 12,
+          "tableVersion": 0,
+          "outq": 0,
+          "inq": 0,
+          "peerUptime": "00:00:11",
+          "peerUptimeMsec": 11000,
+          "peerUptimeEstablishedEpoch": 1791540144,
+          "pfxRcd": 1,
+          "pfxSnt": 0,
+          "state": "Established",
+          "peerState": "OK",
+          "connectionsEstablished": 1,
+          "connectionsDropped": 0,
+          "idType": "ipv4"
+        }
+      },
+      "failedPeers": 0,
+      "displayedPeers": 1,
+      "totalPeers": 1,
+      "dynamicPeers": 0,
+      "bestPath": {
+        "multiPathRelax": "false"
+      }
+    },
+    "FAULT_TABLE_R2": {
+      "vrfId": 0,
+      "vrfName": "default",
+      "tableVersion": 3,
+      "routerId": "2.2.2.2",
+      "defaultLocPrf": 100,
+      "localAS": 65002,
+      "routes": {
+        "192.0.2.0/24": [
+          {
+            "valid": true,
+            "bestpath": true,
+            "selectionReason": "First path received",
+            "pathFrom": "external",
+            "prefix": "192.0.2.0",
+            "prefixLen": 24,
+            "network": "192.0.2.0/24",
+            "version": 2,
+            "metric": 0,
+            "weight": 0,
+            "peerId": "203.0.113.1",
+            "path": "65001",
+            "origin": "IGP",
+            "nexthops": [
+              {
+                "ip": "203.0.113.1",
+                "hostname": "fb09b-176918-r1",
+                "afi": "ipv4",
+                "used": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "FAULT_NEIGHBORS_R2": {
+      "203.0.113.1": {
+        "remoteAs": 65001,
+        "localAs": 65002,
+        "nbrExternalLink": true,
+        "localRole": "undefined",
+        "remoteRole": "undefined",
+        "hostname": "fb09b-176918-r1",
+        "domainname": "localdomain",
+        "bgpVersion": 4,
+        "remoteRouterId": "1.1.1.1",
+        "localRouterId": "2.2.2.2",
+        "bgpState": "Established",
+        "bgpTimerUpMsec": 12000,
+        "bgpTimerUpString": "00:00:12",
+        "bgpTimerUpEstablishedEpoch": 1791540143,
+        "bgpTimerLastRead": 7000,
+        "bgpTimerLastWrite": 2000,
+        "bgpInUpdateElapsedTimeMsecs": 7000,
+        "bgpTimerConfiguredHoldTimeMsecs": 180000,
+        "bgpTimerConfiguredKeepAliveIntervalMsecs": 60000,
+        "bgpTimerHoldTimeMsecs": 180000,
+        "bgpTimerKeepAliveIntervalMsecs": 60000,
+        "extendedOptionalParametersLength": false,
+        "bgpTimerConfiguredConditionalAdvertisementsSec": 60,
+        "neighborCapabilities": {
+          "4byteAs": "advertisedAndReceived",
+          "extendedMessage": "advertisedAndReceived",
+          "addPath": {
+            "ipv4Unicast": {
+              "rxAdvertisedAndReceived": true
+            }
+          },
+          "longLivedGracefulRestart": "advertisedAndReceived",
+          "longLivedGracefulRestartByPeer": {},
+          "routeRefresh": "advertisedAndReceivedOldNew",
+          "enhancedRouteRefresh": "advertisedAndReceived",
+          "multiprotocolExtensions": {
+            "ipv4Unicast": {
+              "advertisedAndReceived": true
+            }
+          },
+          "hostName": {
+            "advHostName": "fb09b-176918-r2",
+            "advDomainName": "localdomain",
+            "rcvHostName": "fb09b-176918-r1",
+            "rcvDomainName": "localdomain"
+          },
+          "gracefulRestart": "advertisedAndReceived",
+          "gracefulRestartRemoteTimerMsecs": 120000,
+          "addressFamiliesByPeer": "none"
+        },
+        "gracefulRestartInfo": {
+          "endOfRibSend": {
+            "ipv4Unicast": true
+          },
+          "endOfRibRecv": {
+            "ipv4Unicast": true
+          },
+          "localGrMode": "Helper*",
+          "remoteGrMode": "Helper",
+          "rBit": true,
+          "nBit": true,
+          "timers": {
+            "configuredRestartTimer": 120,
+            "receivedRestartTimer": 120
+          },
+          "ipv4Unicast": {
+            "fBit": false,
+            "endOfRibStatus": {
+              "endOfRibSend": true,
+              "endOfRibSentAfterUpdate": false,
+              "endOfRibRecv": true
+            },
+            "timers": {
+              "stalePathTimer": 360
+            }
+          }
+        },
+        "messageStats": {
+          "depthInq": 0,
+          "depthOutq": 0,
+          "opensSent": 1,
+          "opensRecv": 1,
+          "notificationsSent": 0,
+          "notificationsRecv": 0,
+          "updatesSent": 7,
+          "updatesRecv": 6,
+          "keepalivesSent": 1,
+          "keepalivesRecv": 1,
+          "routeRefreshSent": 3,
+          "routeRefreshRecv": 3,
+          "capabilitySent": 0,
+          "capabilityRecv": 0,
+          "totalSent": 12,
+          "totalRecv": 11
+        },
+        "minBtwnAdvertisementRunsTimerMsecs": 0,
+        "addressFamilyInfo": {
+          "ipv4Unicast": {
+            "updateGroupId": 1,
+            "subGroupId": 1,
+            "packetQueueLength": 0,
+            "commAttriSentToNbr": "extendedAndStandard",
+            "inboundPathPolicyConfig": true,
+            "outboundPathPolicyConfig": true,
+            "routeMapForIncomingAdvertisements": "PEER-IMPORT",
+            "routeMapForOutgoingAdvertisements": "OWN-EXPORT",
+            "acceptedPrefixCounter": 1,
+            "sentPrefixCounter": 0
+          }
+        },
+        "connectionsEstablished": 1,
+        "connectionsDropped": 0,
+        "lastResetTimerMsecs": 13000,
+        "lastResetDueTo": "No AFI/SAFI activated for peer",
+        "lastResetCode": 30,
+        "externalBgpNbrMaxHopsAway": 1,
+        "hostLocal": "203.0.113.2",
+        "portLocal": 179,
+        "hostForeign": "203.0.113.1",
+        "portForeign": 51940,
+        "nexthop": "203.0.113.2",
+        "nexthopGlobal": "fe80::bc06:c9ff:fe43:991e",
+        "nexthopLocal": "fe80::bc06:c9ff:fe43:991e",
+        "bgpConnection": "sharedNetwork",
+        "connectRetryTimer": 120,
+        "readThread": "on",
+        "writeThread": "on"
+      }
+    },
+    "FAULT_CONFIG_R2": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09b-176918-r2\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter bgp 65002\n bgp router-id 2.2.2.2\n neighbor 203.0.113.1 remote-as 65001\n !\n address-family ipv4 unicast\n  neighbor 203.0.113.1 route-map PEER-IMPORT in\n  neighbor 203.0.113.1 route-map OWN-EXPORT out\n exit-address-family\nexit\n!\nip prefix-list OWN-LAN seq 10 permit 198.51.100.0/24\nip prefix-list PEER-LAN seq 10 permit 192.0.2.0/24\n!\nroute-map OWN-EXPORT permit 10\n match ip address prefix-list OWN-LAN\nexit\n!\nroute-map PEER-IMPORT permit 10\n match ip address prefix-list PEER-LAN\nexit\n!\nend\n"
+    },
+    "FAULT_RIB_R2": {
+      "192.0.2.0/24": [
+        {
+          "prefix": "192.0.2.0/24",
+          "prefixLen": 24,
+          "protocol": "bgp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "selected": true,
+          "destSelected": true,
+          "distance": 20,
+          "metric": 0,
+          "installed": true,
+          "table": 254,
+          "internalStatus": 16,
+          "internalFlags": 8,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 10,
+          "installedNexthopGroupId": 10,
+          "uptime": "00:00:11",
+          "nexthops": [
+            {
+              "flags": 3,
+              "fib": true,
+              "ip": "203.0.113.1",
+              "afi": "ipv4",
+              "interfaceIndex": 3,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "FAULT_KERNEL_R2": [
+      {
+        "dst": "192.0.2.0/24",
+        "nhid": 10,
+        "gateway": "203.0.113.1",
+        "dev": "transit",
+        "protocol": "bgp",
+        "metric": 20,
+        "flags": []
+      },
+      {
+        "dst": "198.51.100.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "198.51.100.1",
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.2",
+        "flags": []
+      }
+    ],
+    "FAULT_LINKS_R2": [
+      {
+        "ifindex": 1,
+        "ifname": "lo",
+        "flags": [
+          "LOOPBACK",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 65536,
+        "qdisc": "noqueue",
+        "operstate": "UNKNOWN",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "loopback",
+        "address": "00:00:00:00:00:00",
+        "broadcast": "00:00:00:00:00:00"
+      },
+      {
+        "ifindex": 3,
+        "link_index": 4,
+        "ifname": "transit",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "be:06:c9:43:99:1e",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 0
+      },
+      {
+        "ifindex": 4,
+        "link_index": 2,
+        "ifname": "lan",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "6e:ea:09:bd:f8:3a",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 1
+      }
+    ],
+    "FAULT_PROBE_CLIENT": {
+      "target": "198.51.100.20",
+      "exitCode": 1,
+      "output": "PING 198.51.100.20 (198.51.100.20) 56(84) bytes of data.\nFrom 192.0.2.1 icmp_seq=1 Destination Net Unreachable\n\n--- 198.51.100.20 ping statistics ---\n1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms\n\n"
+    },
+    "FAULT_PROBE_SERVER": {
+      "target": "192.0.2.10",
+      "exitCode": 1,
+      "output": "PING 192.0.2.10 (192.0.2.10) 56(84) bytes of data.\n\n--- 192.0.2.10 ping statistics ---\n1 packets transmitted, 0 received, 100% packet loss, time 0ms\n\n"
+    },
+    "FAULT_PROBE_CLIENT_GATEWAY": {
+      "target": "192.0.2.1",
+      "exitCode": 0,
+      "output": "PING 192.0.2.1 (192.0.2.1) 56(84) bytes of data.\n64 bytes from 192.0.2.1: icmp_seq=1 ttl=64 time=0.341 ms\n\n--- 192.0.2.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.341/0.341/0.341/0.000 ms\n"
+    },
+    "FAULT_PROBE_SERVER_GATEWAY": {
+      "target": "198.51.100.1",
+      "exitCode": 0,
+      "output": "PING 198.51.100.1 (198.51.100.1) 56(84) bytes of data.\n64 bytes from 198.51.100.1: icmp_seq=1 ttl=64 time=0.200 ms\n\n--- 198.51.100.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.200/0.200/0.200/0.000 ms\n"
+    },
+    "RECOVERED_SUMMARY_R1": {
+      "routerId": "1.1.1.1",
+      "as": 65001,
+      "vrfId": 0,
+      "vrfName": "default",
+      "tableVersion": 4,
+      "ribCount": 3,
+      "ribMemory": 576,
+      "peerCount": 1,
+      "peerMemory": 741464,
+      "peers": {
+        "203.0.113.2": {
+          "hostname": "fb09b-176918-r2",
+          "domainname": "localdomain",
+          "remoteAs": 65002,
+          "localAs": 65001,
+          "version": 4,
+          "msgRcvd": 13,
+          "msgSent": 11,
+          "tableVersion": 0,
+          "outq": 0,
+          "inq": 0,
+          "peerUptime": "00:00:14",
+          "peerUptimeMsec": 14000,
+          "peerUptimeEstablishedEpoch": 1791540143,
+          "pfxRcd": 1,
+          "pfxSnt": 1,
+          "state": "Established",
+          "peerState": "OK",
+          "connectionsEstablished": 1,
+          "connectionsDropped": 0,
+          "idType": "ipv4"
+        }
+      },
+      "failedPeers": 0,
+      "displayedPeers": 1,
+      "totalPeers": 1,
+      "dynamicPeers": 0,
+      "bestPath": {
+        "multiPathRelax": "false"
+      }
+    },
+    "RECOVERED_TABLE_R1": {
+      "vrfId": 0,
+      "vrfName": "default",
+      "tableVersion": 4,
+      "routerId": "1.1.1.1",
+      "defaultLocPrf": 100,
+      "localAS": 65001,
+      "routes": {
+        "192.0.2.0/24": [
+          {
+            "valid": true,
+            "bestpath": true,
+            "selectionReason": "First path received",
+            "pathFrom": "external",
+            "prefix": "192.0.2.0",
+            "prefixLen": 24,
+            "network": "192.0.2.0/24",
+            "version": 1,
+            "metric": 0,
+            "weight": 32768,
+            "peerId": "(unspec)",
+            "path": "",
+            "origin": "IGP",
+            "nexthops": [
+              {
+                "ip": "0.0.0.0",
+                "hostname": "fb09b-176918-r1",
+                "afi": "ipv4",
+                "used": true
+              }
+            ]
+          }
+        ],
+        "198.51.100.0/24": [
+          {
+            "valid": true,
+            "bestpath": true,
+            "selectionReason": "First path received",
+            "pathFrom": "external",
+            "prefix": "198.51.100.0",
+            "prefixLen": 24,
+            "network": "198.51.100.0/24",
+            "version": 4,
+            "metric": 0,
+            "weight": 0,
+            "peerId": "203.0.113.2",
+            "path": "65002",
+            "origin": "IGP",
+            "nexthops": [
+              {
+                "ip": "203.0.113.2",
+                "hostname": "fb09b-176918-r2",
+                "afi": "ipv4",
+                "used": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "RECOVERED_NEIGHBORS_R1": {
+      "203.0.113.2": {
+        "remoteAs": 65002,
+        "localAs": 65001,
+        "nbrExternalLink": true,
+        "localRole": "undefined",
+        "remoteRole": "undefined",
+        "hostname": "fb09b-176918-r2",
+        "domainname": "localdomain",
+        "bgpVersion": 4,
+        "remoteRouterId": "2.2.2.2",
+        "localRouterId": "1.1.1.1",
+        "bgpState": "Established",
+        "bgpTimerUpMsec": 14000,
+        "bgpTimerUpString": "00:00:14",
+        "bgpTimerUpEstablishedEpoch": 1791540144,
+        "bgpTimerLastRead": 1000,
+        "bgpTimerLastWrite": 9000,
+        "bgpInUpdateElapsedTimeMsecs": 1000,
+        "bgpTimerConfiguredHoldTimeMsecs": 180000,
+        "bgpTimerConfiguredKeepAliveIntervalMsecs": 60000,
+        "bgpTimerHoldTimeMsecs": 180000,
+        "bgpTimerKeepAliveIntervalMsecs": 60000,
+        "extendedOptionalParametersLength": false,
+        "bgpTimerConfiguredConditionalAdvertisementsSec": 60,
+        "neighborCapabilities": {
+          "4byteAs": "advertisedAndReceived",
+          "extendedMessage": "advertisedAndReceived",
+          "addPath": {
+            "ipv4Unicast": {
+              "rxAdvertisedAndReceived": true
+            }
+          },
+          "longLivedGracefulRestart": "advertisedAndReceived",
+          "longLivedGracefulRestartByPeer": {},
+          "routeRefresh": "advertisedAndReceivedOldNew",
+          "enhancedRouteRefresh": "advertisedAndReceived",
+          "multiprotocolExtensions": {
+            "ipv4Unicast": {
+              "advertisedAndReceived": true
+            }
+          },
+          "hostName": {
+            "advHostName": "fb09b-176918-r1",
+            "advDomainName": "localdomain",
+            "rcvHostName": "fb09b-176918-r2",
+            "rcvDomainName": "localdomain"
+          },
+          "gracefulRestart": "advertisedAndReceived",
+          "gracefulRestartRemoteTimerMsecs": 120000,
+          "addressFamiliesByPeer": "none"
+        },
+        "gracefulRestartInfo": {
+          "endOfRibSend": {
+            "ipv4Unicast": true
+          },
+          "endOfRibRecv": {
+            "ipv4Unicast": true
+          },
+          "localGrMode": "Helper*",
+          "remoteGrMode": "Helper",
+          "rBit": true,
+          "nBit": true,
+          "timers": {
+            "configuredRestartTimer": 120,
+            "receivedRestartTimer": 120
+          },
+          "ipv4Unicast": {
+            "fBit": false,
+            "endOfRibStatus": {
+              "endOfRibSend": true,
+              "endOfRibSentAfterUpdate": false,
+              "endOfRibRecv": true
+            },
+            "timers": {
+              "stalePathTimer": 360
+            }
+          }
+        },
+        "messageStats": {
+          "depthInq": 0,
+          "depthOutq": 0,
+          "opensSent": 1,
+          "opensRecv": 1,
+          "notificationsSent": 0,
+          "notificationsRecv": 0,
+          "updatesSent": 6,
+          "updatesRecv": 8,
+          "keepalivesSent": 1,
+          "keepalivesRecv": 1,
+          "routeRefreshSent": 3,
+          "routeRefreshRecv": 3,
+          "capabilitySent": 0,
+          "capabilityRecv": 0,
+          "totalSent": 11,
+          "totalRecv": 13
+        },
+        "minBtwnAdvertisementRunsTimerMsecs": 0,
+        "addressFamilyInfo": {
+          "ipv4Unicast": {
+            "updateGroupId": 1,
+            "subGroupId": 1,
+            "packetQueueLength": 0,
+            "commAttriSentToNbr": "extendedAndStandard",
+            "inboundPathPolicyConfig": true,
+            "outboundPathPolicyConfig": true,
+            "routeMapForIncomingAdvertisements": "PEER-IMPORT",
+            "routeMapForOutgoingAdvertisements": "OWN-EXPORT",
+            "acceptedPrefixCounter": 1,
+            "sentPrefixCounter": 1
+          }
+        },
+        "connectionsEstablished": 1,
+        "connectionsDropped": 0,
+        "lastResetTimerMsecs": 15000,
+        "lastResetDueTo": "Waiting for peer OPEN",
+        "lastResetCode": 32,
+        "externalBgpNbrMaxHopsAway": 1,
+        "hostLocal": "203.0.113.1",
+        "portLocal": 51940,
+        "hostForeign": "203.0.113.2",
+        "portForeign": 179,
+        "nexthop": "203.0.113.1",
+        "nexthopGlobal": "fe80::fc8f:bff:fecd:a391",
+        "nexthopLocal": "fe80::fc8f:bff:fecd:a391",
+        "bgpConnection": "sharedNetwork",
+        "connectRetryTimer": 120,
+        "readThread": "on",
+        "writeThread": "on"
+      }
+    },
+    "RECOVERED_CONFIG_R1": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09b-176918-r1\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter bgp 65001\n bgp router-id 1.1.1.1\n neighbor 203.0.113.2 remote-as 65002\n !\n address-family ipv4 unicast\n  network 192.0.2.0/24\n  neighbor 203.0.113.2 route-map PEER-IMPORT in\n  neighbor 203.0.113.2 route-map OWN-EXPORT out\n exit-address-family\nexit\n!\nip prefix-list OWN-LAN seq 10 permit 192.0.2.0/24\nip prefix-list PEER-LAN seq 10 permit 198.51.100.0/24\n!\nroute-map OWN-EXPORT permit 10\n match ip address prefix-list OWN-LAN\nexit\n!\nroute-map PEER-IMPORT permit 10\n match ip address prefix-list PEER-LAN\nexit\n!\nend\n"
+    },
+    "RECOVERED_RIB_R1": {
+      "198.51.100.0/24": [
+        {
+          "prefix": "198.51.100.0/24",
+          "prefixLen": 24,
+          "protocol": "bgp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "selected": true,
+          "destSelected": true,
+          "distance": 20,
+          "metric": 0,
+          "installed": true,
+          "table": 254,
+          "internalStatus": 16,
+          "internalFlags": 8,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 10,
+          "installedNexthopGroupId": 10,
+          "uptime": "00:00:02",
+          "nexthops": [
+            {
+              "flags": 3,
+              "fib": true,
+              "ip": "203.0.113.2",
+              "afi": "ipv4",
+              "interfaceIndex": 4,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "RECOVERED_KERNEL_R1": [
+      {
+        "dst": "192.0.2.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "192.0.2.1",
+        "flags": []
+      },
+      {
+        "dst": "198.51.100.0/24",
+        "nhid": 10,
+        "gateway": "203.0.113.2",
+        "dev": "transit",
+        "protocol": "bgp",
+        "metric": 20,
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.1",
+        "flags": []
+      }
+    ],
+    "RECOVERED_LINKS_R1": [
+      {
+        "ifindex": 1,
+        "ifname": "lo",
+        "flags": [
+          "LOOPBACK",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 65536,
+        "qdisc": "noqueue",
+        "operstate": "UNKNOWN",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "loopback",
+        "address": "00:00:00:00:00:00",
+        "broadcast": "00:00:00:00:00:00"
+      },
+      {
+        "ifindex": 2,
+        "link_index": 3,
+        "ifname": "lan",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "ea:5d:64:b5:63:d9",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 0
+      },
+      {
+        "ifindex": 4,
+        "link_index": 3,
+        "ifname": "transit",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "fe:8f:0b:cd:a3:91",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 1
+      }
+    ],
+    "RECOVERED_SUMMARY_R2": {
+      "routerId": "2.2.2.2",
+      "as": 65002,
+      "vrfId": 0,
+      "vrfName": "default",
+      "tableVersion": 4,
+      "ribCount": 3,
+      "ribMemory": 576,
+      "peerCount": 1,
+      "peerMemory": 741464,
+      "peers": {
+        "203.0.113.1": {
+          "hostname": "fb09b-176918-r1",
+          "domainname": "localdomain",
+          "remoteAs": 65001,
+          "localAs": 65002,
+          "version": 4,
+          "msgRcvd": 11,
+          "msgSent": 13,
+          "tableVersion": 0,
+          "outq": 0,
+          "inq": 0,
+          "peerUptime": "00:00:15",
+          "peerUptimeMsec": 15000,
+          "peerUptimeEstablishedEpoch": 1791540144,
+          "pfxRcd": 1,
+          "pfxSnt": 1,
+          "state": "Established",
+          "peerState": "OK",
+          "connectionsEstablished": 1,
+          "connectionsDropped": 0,
+          "idType": "ipv4"
+        }
+      },
+      "failedPeers": 0,
+      "displayedPeers": 1,
+      "totalPeers": 1,
+      "dynamicPeers": 0,
+      "bestPath": {
+        "multiPathRelax": "false"
+      }
+    },
+    "RECOVERED_TABLE_R2": {
+      "vrfId": 0,
+      "vrfName": "default",
+      "tableVersion": 4,
+      "routerId": "2.2.2.2",
+      "defaultLocPrf": 100,
+      "localAS": 65002,
+      "routes": {
+        "192.0.2.0/24": [
+          {
+            "valid": true,
+            "bestpath": true,
+            "selectionReason": "First path received",
+            "pathFrom": "external",
+            "prefix": "192.0.2.0",
+            "prefixLen": 24,
+            "network": "192.0.2.0/24",
+            "version": 2,
+            "metric": 0,
+            "weight": 0,
+            "peerId": "203.0.113.1",
+            "path": "65001",
+            "origin": "IGP",
+            "nexthops": [
+              {
+                "ip": "203.0.113.1",
+                "hostname": "fb09b-176918-r1",
+                "afi": "ipv4",
+                "used": true
+              }
+            ]
+          }
+        ],
+        "198.51.100.0/24": [
+          {
+            "valid": true,
+            "bestpath": true,
+            "selectionReason": "First path received",
+            "pathFrom": "external",
+            "prefix": "198.51.100.0",
+            "prefixLen": 24,
+            "network": "198.51.100.0/24",
+            "version": 4,
+            "metric": 0,
+            "weight": 32768,
+            "peerId": "(unspec)",
+            "path": "",
+            "origin": "IGP",
+            "nexthops": [
+              {
+                "ip": "0.0.0.0",
+                "hostname": "fb09b-176918-r2",
+                "afi": "ipv4",
+                "used": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "RECOVERED_NEIGHBORS_R2": {
+      "203.0.113.1": {
+        "remoteAs": 65001,
+        "localAs": 65002,
+        "nbrExternalLink": true,
+        "localRole": "undefined",
+        "remoteRole": "undefined",
+        "hostname": "fb09b-176918-r1",
+        "domainname": "localdomain",
+        "bgpVersion": 4,
+        "remoteRouterId": "1.1.1.1",
+        "localRouterId": "2.2.2.2",
+        "bgpState": "Established",
+        "bgpTimerUpMsec": 16000,
+        "bgpTimerUpString": "00:00:16",
+        "bgpTimerUpEstablishedEpoch": 1791540143,
+        "bgpTimerLastRead": 11000,
+        "bgpTimerLastWrite": 3000,
+        "bgpInUpdateElapsedTimeMsecs": 11000,
+        "bgpTimerConfiguredHoldTimeMsecs": 180000,
+        "bgpTimerConfiguredKeepAliveIntervalMsecs": 60000,
+        "bgpTimerHoldTimeMsecs": 180000,
+        "bgpTimerKeepAliveIntervalMsecs": 60000,
+        "extendedOptionalParametersLength": false,
+        "bgpTimerConfiguredConditionalAdvertisementsSec": 60,
+        "neighborCapabilities": {
+          "4byteAs": "advertisedAndReceived",
+          "extendedMessage": "advertisedAndReceived",
+          "addPath": {
+            "ipv4Unicast": {
+              "rxAdvertisedAndReceived": true
+            }
+          },
+          "longLivedGracefulRestart": "advertisedAndReceived",
+          "longLivedGracefulRestartByPeer": {},
+          "routeRefresh": "advertisedAndReceivedOldNew",
+          "enhancedRouteRefresh": "advertisedAndReceived",
+          "multiprotocolExtensions": {
+            "ipv4Unicast": {
+              "advertisedAndReceived": true
+            }
+          },
+          "hostName": {
+            "advHostName": "fb09b-176918-r2",
+            "advDomainName": "localdomain",
+            "rcvHostName": "fb09b-176918-r1",
+            "rcvDomainName": "localdomain"
+          },
+          "gracefulRestart": "advertisedAndReceived",
+          "gracefulRestartRemoteTimerMsecs": 120000,
+          "addressFamiliesByPeer": "none"
+        },
+        "gracefulRestartInfo": {
+          "endOfRibSend": {
+            "ipv4Unicast": true
+          },
+          "endOfRibRecv": {
+            "ipv4Unicast": true
+          },
+          "localGrMode": "Helper*",
+          "remoteGrMode": "Helper",
+          "rBit": true,
+          "nBit": true,
+          "timers": {
+            "configuredRestartTimer": 120,
+            "receivedRestartTimer": 120
+          },
+          "ipv4Unicast": {
+            "fBit": false,
+            "endOfRibStatus": {
+              "endOfRibSend": true,
+              "endOfRibSentAfterUpdate": false,
+              "endOfRibRecv": true
+            },
+            "timers": {
+              "stalePathTimer": 360
+            }
+          }
+        },
+        "messageStats": {
+          "depthInq": 0,
+          "depthOutq": 0,
+          "opensSent": 1,
+          "opensRecv": 1,
+          "notificationsSent": 0,
+          "notificationsRecv": 0,
+          "updatesSent": 8,
+          "updatesRecv": 6,
+          "keepalivesSent": 1,
+          "keepalivesRecv": 1,
+          "routeRefreshSent": 3,
+          "routeRefreshRecv": 3,
+          "capabilitySent": 0,
+          "capabilityRecv": 0,
+          "totalSent": 13,
+          "totalRecv": 11
+        },
+        "minBtwnAdvertisementRunsTimerMsecs": 0,
+        "addressFamilyInfo": {
+          "ipv4Unicast": {
+            "updateGroupId": 1,
+            "subGroupId": 1,
+            "packetQueueLength": 0,
+            "commAttriSentToNbr": "extendedAndStandard",
+            "inboundPathPolicyConfig": true,
+            "outboundPathPolicyConfig": true,
+            "routeMapForIncomingAdvertisements": "PEER-IMPORT",
+            "routeMapForOutgoingAdvertisements": "OWN-EXPORT",
+            "acceptedPrefixCounter": 1,
+            "sentPrefixCounter": 1
+          }
+        },
+        "connectionsEstablished": 1,
+        "connectionsDropped": 0,
+        "lastResetTimerMsecs": 17000,
+        "lastResetDueTo": "No AFI/SAFI activated for peer",
+        "lastResetCode": 30,
+        "externalBgpNbrMaxHopsAway": 1,
+        "hostLocal": "203.0.113.2",
+        "portLocal": 179,
+        "hostForeign": "203.0.113.1",
+        "portForeign": 51940,
+        "nexthop": "203.0.113.2",
+        "nexthopGlobal": "fe80::bc06:c9ff:fe43:991e",
+        "nexthopLocal": "fe80::bc06:c9ff:fe43:991e",
+        "bgpConnection": "sharedNetwork",
+        "connectRetryTimer": 120,
+        "readThread": "on",
+        "writeThread": "on"
+      }
+    },
+    "RECOVERED_CONFIG_R2": {
+      "command": "show running-config",
+      "output": "Building configuration...\n\nCurrent configuration:\n!\nfrr version 8.4.4\nfrr defaults traditional\nhostname fb09b-176918-r2\ndomainname localdomain\nno ipv6 forwarding\nhostname Arshiya-Laptop\nusername root nopassword\n!\nrouter bgp 65002\n bgp router-id 2.2.2.2\n neighbor 203.0.113.1 remote-as 65001\n !\n address-family ipv4 unicast\n  network 198.51.100.0/24\n  neighbor 203.0.113.1 route-map PEER-IMPORT in\n  neighbor 203.0.113.1 route-map OWN-EXPORT out\n exit-address-family\nexit\n!\nip prefix-list OWN-LAN seq 10 permit 198.51.100.0/24\nip prefix-list PEER-LAN seq 10 permit 192.0.2.0/24\n!\nroute-map OWN-EXPORT permit 10\n match ip address prefix-list OWN-LAN\nexit\n!\nroute-map PEER-IMPORT permit 10\n match ip address prefix-list PEER-LAN\nexit\n!\nend\n"
+    },
+    "RECOVERED_RIB_R2": {
+      "192.0.2.0/24": [
+        {
+          "prefix": "192.0.2.0/24",
+          "prefixLen": 24,
+          "protocol": "bgp",
+          "vrfId": 0,
+          "vrfName": "default",
+          "selected": true,
+          "destSelected": true,
+          "distance": 20,
+          "metric": 0,
+          "installed": true,
+          "table": 254,
+          "internalStatus": 16,
+          "internalFlags": 8,
+          "internalNextHopNum": 1,
+          "internalNextHopActiveNum": 1,
+          "nexthopGroupId": 10,
+          "installedNexthopGroupId": 10,
+          "uptime": "00:00:15",
+          "nexthops": [
+            {
+              "flags": 3,
+              "fib": true,
+              "ip": "203.0.113.1",
+              "afi": "ipv4",
+              "interfaceIndex": 3,
+              "interfaceName": "transit",
+              "active": true,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "RECOVERED_KERNEL_R2": [
+      {
+        "dst": "192.0.2.0/24",
+        "nhid": 10,
+        "gateway": "203.0.113.1",
+        "dev": "transit",
+        "protocol": "bgp",
+        "metric": 20,
+        "flags": []
+      },
+      {
+        "dst": "198.51.100.0/24",
+        "dev": "lan",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "198.51.100.1",
+        "flags": []
+      },
+      {
+        "dst": "203.0.113.0/30",
+        "dev": "transit",
+        "protocol": "kernel",
+        "scope": "link",
+        "prefsrc": "203.0.113.2",
+        "flags": []
+      }
+    ],
+    "RECOVERED_LINKS_R2": [
+      {
+        "ifindex": 1,
+        "ifname": "lo",
+        "flags": [
+          "LOOPBACK",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 65536,
+        "qdisc": "noqueue",
+        "operstate": "UNKNOWN",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "loopback",
+        "address": "00:00:00:00:00:00",
+        "broadcast": "00:00:00:00:00:00"
+      },
+      {
+        "ifindex": 3,
+        "link_index": 4,
+        "ifname": "transit",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "be:06:c9:43:99:1e",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 0
+      },
+      {
+        "ifindex": 4,
+        "link_index": 2,
+        "ifname": "lan",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "linkmode": "DEFAULT",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "6e:ea:09:bd:f8:3a",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 1
+      }
+    ],
+    "RECOVERED_PROBE_CLIENT": {
+      "target": "198.51.100.20",
+      "exitCode": 0,
+      "output": "PING 198.51.100.20 (198.51.100.20) 56(84) bytes of data.\n64 bytes from 198.51.100.20: icmp_seq=1 ttl=62 time=0.088 ms\n\n--- 198.51.100.20 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.088/0.088/0.088/0.000 ms\n"
+    },
+    "RECOVERED_PROBE_SERVER": {
+      "target": "192.0.2.10",
+      "exitCode": 0,
+      "output": "PING 192.0.2.10 (192.0.2.10) 56(84) bytes of data.\n64 bytes from 192.0.2.10: icmp_seq=1 ttl=62 time=0.078 ms\n\n--- 192.0.2.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.078/0.078/0.078/0.000 ms\n"
+    }
+  },
+  "output": [
+    "bgpd version 8.4.4",
+    "BASELINE_SUMMARY_R1 {\"routerId\":\"1.1.1.1\",\"as\":65001,\"vrfId\":0,\"vrfName\":\"default\",\"tableVersion\":2,\"ribCount\":3,\"ribMemory\":576,\"peerCount\":1,\"peerMemory\":741464,\"peers\":{\"203.0.113.2\":{\"hostname\":\"fb09b-176918-r2\",\"domainname\":\"localdomain\",\"remoteAs\":65002,\"localAs\":65001,\"version\":4,\"msgRcvd\":4,\"msgSent\":4,\"tableVersion\":0,\"outq\":0,\"inq\":0,\"peerUptime\":\"00:00:01\",\"peerUptimeMsec\":1000,\"peerUptimeEstablishedEpoch\":1791540144,\"pfxRcd\":1,\"pfxSnt\":1,\"state\":\"Established\",\"peerState\":\"OK\",\"connectionsEstablished\":1,\"connectionsDropped\":0,\"idType\":\"ipv4\"}},\"failedPeers\":0,\"displayedPeers\":1,\"totalPeers\":1,\"dynamicPeers\":0,\"bestPath\":{\"multiPathRelax\":\"false\"}}",
+    "BASELINE_TABLE_R1 {\"vrfId\":0,\"vrfName\":\"default\",\"tableVersion\":2,\"routerId\":\"1.1.1.1\",\"defaultLocPrf\":100,\"localAS\":65001,\"routes\":{\"192.0.2.0/24\":[{\"valid\":true,\"bestpath\":true,\"selectionReason\":\"First path received\",\"pathFrom\":\"external\",\"prefix\":\"192.0.2.0\",\"prefixLen\":24,\"network\":\"192.0.2.0/24\",\"version\":1,\"metric\":0,\"weight\":32768,\"peerId\":\"(unspec)\",\"path\":\"\",\"origin\":\"IGP\",\"nexthops\":[{\"ip\":\"0.0.0.0\",\"hostname\":\"fb09b-176918-r1\",\"afi\":\"ipv4\",\"used\":true}]}],\"198.51.100.0/24\":[{\"valid\":true,\"bestpath\":true,\"selectionReason\":\"First path received\",\"pathFrom\":\"external\",\"prefix\":\"198.51.100.0\",\"prefixLen\":24,\"network\":\"198.51.100.0/24\",\"version\":2,\"metric\":0,\"weight\":0,\"peerId\":\"203.0.113.2\",\"path\":\"65002\",\"origin\":\"IGP\",\"nexthops\":[{\"ip\":\"203.0.113.2\",\"hostname\":\"fb09b-176918-r2\",\"afi\":\"ipv4\",\"used\":true}]}]}}",
+    "BASELINE_NEIGHBORS_R1 {\"203.0.113.2\":{\"remoteAs\":65002,\"localAs\":65001,\"nbrExternalLink\":true,\"localRole\":\"undefined\",\"remoteRole\":\"undefined\",\"hostname\":\"fb09b-176918-r2\",\"domainname\":\"localdomain\",\"bgpVersion\":4,\"remoteRouterId\":\"2.2.2.2\",\"localRouterId\":\"1.1.1.1\",\"bgpState\":\"Established\",\"bgpTimerUpMsec\":2000,\"bgpTimerUpString\":\"00:00:02\",\"bgpTimerUpEstablishedEpoch\":1791540143,\"bgpTimerLastRead\":1000,\"bgpTimerLastWrite\":1000,\"bgpInUpdateElapsedTimeMsecs\":1000,\"bgpTimerConfiguredHoldTimeMsecs\":180000,\"bgpTimerConfiguredKeepAliveIntervalMsecs\":60000,\"bgpTimerHoldTimeMsecs\":180000,\"bgpTimerKeepAliveIntervalMsecs\":60000,\"extendedOptionalParametersLength\":false,\"bgpTimerConfiguredConditionalAdvertisementsSec\":60,\"neighborCapabilities\":{\"4byteAs\":\"advertisedAndReceived\",\"extendedMessage\":\"advertisedAndReceived\",\"addPath\":{\"ipv4Unicast\":{\"rxAdvertisedAndReceived\":true}},\"longLivedGracefulRestart\":\"advertisedAndReceived\",\"longLivedGracefulRestartByPeer\":{},\"routeRefresh\":\"advertisedAndReceivedOldNew\",\"enhancedRouteRefresh\":\"advertisedAndReceived\",\"multiprotocolExtensions\":{\"ipv4Unicast\":{\"advertisedAndReceived\":true}},\"hostName\":{\"advHostName\":\"fb09b-176918-r1\",\"advDomainName\":\"localdomain\",\"rcvHostName\":\"fb09b-176918-r2\",\"rcvDomainName\":\"localdomain\"},\"gracefulRestart\":\"advertisedAndReceived\",\"gracefulRestartRemoteTimerMsecs\":120000,\"addressFamiliesByPeer\":\"none\"},\"gracefulRestartInfo\":{\"endOfRibSend\":{\"ipv4Unicast\":true},\"endOfRibRecv\":{\"ipv4Unicast\":true},\"localGrMode\":\"Helper*\",\"remoteGrMode\":\"Helper\",\"rBit\":true,\"nBit\":true,\"timers\":{\"configuredRestartTimer\":120,\"receivedRestartTimer\":120},\"ipv4Unicast\":{\"fBit\":false,\"endOfRibStatus\":{\"endOfRibSend\":true,\"endOfRibSentAfterUpdate\":true,\"endOfRibRecv\":true},\"timers\":{\"stalePathTimer\":360}}},\"messageStats\":{\"depthInq\":0,\"depthOutq\":0,\"opensSent\":1,\"opensRecv\":1,\"notificationsSent\":0,\"notificationsRecv\":0,\"updatesSent\":2,\"updatesRecv\":2,\"keepalivesSent\":1,\"keepalivesRecv\":1,\"routeRefreshSent\":0,\"routeRefreshRecv\":0,\"capabilitySent\":0,\"capabilityRecv\":0,\"totalSent\":4,\"totalRecv\":4},\"minBtwnAdvertisementRunsTimerMsecs\":0,\"addressFamilyInfo\":{\"ipv4Unicast\":{\"updateGroupId\":1,\"subGroupId\":1,\"packetQueueLength\":0,\"commAttriSentToNbr\":\"extendedAndStandard\",\"inboundPathPolicyConfig\":true,\"outboundPathPolicyConfig\":true,\"routeMapForIncomingAdvertisements\":\"PEER-IMPORT\",\"routeMapForOutgoingAdvertisements\":\"OWN-EXPORT\",\"acceptedPrefixCounter\":1,\"sentPrefixCounter\":1}},\"connectionsEstablished\":1,\"connectionsDropped\":0,\"lastResetTimerMsecs\":3000,\"lastResetDueTo\":\"Waiting for peer OPEN\",\"lastResetCode\":32,\"externalBgpNbrMaxHopsAway\":1,\"hostLocal\":\"203.0.113.1\",\"portLocal\":51940,\"hostForeign\":\"203.0.113.2\",\"portForeign\":179,\"nexthop\":\"203.0.113.1\",\"nexthopGlobal\":\"fe80::fc8f:bff:fecd:a391\",\"nexthopLocal\":\"fe80::fc8f:bff:fecd:a391\",\"bgpConnection\":\"sharedNetwork\",\"connectRetryTimer\":120,\"readThread\":\"on\",\"writeThread\":\"on\"}}",
+    "BASELINE_CONFIG_R1 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09b-176918-r1\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter bgp 65001\\n bgp router-id 1.1.1.1\\n neighbor 203.0.113.2 remote-as 65002\\n !\\n address-family ipv4 unicast\\n  network 192.0.2.0/24\\n  neighbor 203.0.113.2 route-map PEER-IMPORT in\\n  neighbor 203.0.113.2 route-map OWN-EXPORT out\\n exit-address-family\\nexit\\n!\\nip prefix-list OWN-LAN seq 10 permit 192.0.2.0/24\\nip prefix-list PEER-LAN seq 10 permit 198.51.100.0/24\\n!\\nroute-map OWN-EXPORT permit 10\\n match ip address prefix-list OWN-LAN\\nexit\\n!\\nroute-map PEER-IMPORT permit 10\\n match ip address prefix-list PEER-LAN\\nexit\\n!\\nend\\n\"}",
+    "BASELINE_RIB_R1 {\"198.51.100.0/24\":[{\"prefix\":\"198.51.100.0/24\",\"prefixLen\":24,\"protocol\":\"bgp\",\"vrfId\":0,\"vrfName\":\"default\",\"selected\":true,\"destSelected\":true,\"distance\":20,\"metric\":0,\"installed\":true,\"table\":254,\"internalStatus\":16,\"internalFlags\":8,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":10,\"installedNexthopGroupId\":10,\"uptime\":\"00:00:01\",\"nexthops\":[{\"flags\":3,\"fib\":true,\"ip\":\"203.0.113.2\",\"afi\":\"ipv4\",\"interfaceIndex\":4,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}]}",
+    "BASELINE_KERNEL_R1 [{\"dst\":\"192.0.2.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"192.0.2.1\",\"flags\":[]},{\"dst\":\"198.51.100.0/24\",\"nhid\":10,\"gateway\":\"203.0.113.2\",\"dev\":\"transit\",\"protocol\":\"bgp\",\"metric\":20,\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.1\",\"flags\":[]}]",
+    "BASELINE_LINKS_R1 [{\"ifindex\":1,\"ifname\":\"lo\",\"flags\":[\"LOOPBACK\",\"UP\",\"LOWER_UP\"],\"mtu\":65536,\"qdisc\":\"noqueue\",\"operstate\":\"UNKNOWN\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"loopback\",\"address\":\"00:00:00:00:00:00\",\"broadcast\":\"00:00:00:00:00:00\"},{\"ifindex\":2,\"link_index\":3,\"ifname\":\"lan\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"ea:5d:64:b5:63:d9\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":0},{\"ifindex\":4,\"link_index\":3,\"ifname\":\"transit\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"fe:8f:0b:cd:a3:91\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":1}]",
+    "BASELINE_SUMMARY_R2 {\"routerId\":\"2.2.2.2\",\"as\":65002,\"vrfId\":0,\"vrfName\":\"default\",\"tableVersion\":2,\"ribCount\":3,\"ribMemory\":576,\"peerCount\":1,\"peerMemory\":741464,\"peers\":{\"203.0.113.1\":{\"hostname\":\"fb09b-176918-r1\",\"domainname\":\"localdomain\",\"remoteAs\":65001,\"localAs\":65002,\"version\":4,\"msgRcvd\":4,\"msgSent\":4,\"tableVersion\":0,\"outq\":0,\"inq\":0,\"peerUptime\":\"00:00:02\",\"peerUptimeMsec\":2000,\"peerUptimeEstablishedEpoch\":1791540144,\"pfxRcd\":1,\"pfxSnt\":1,\"state\":\"Established\",\"peerState\":\"OK\",\"connectionsEstablished\":1,\"connectionsDropped\":0,\"idType\":\"ipv4\"}},\"failedPeers\":0,\"displayedPeers\":1,\"totalPeers\":1,\"dynamicPeers\":0,\"bestPath\":{\"multiPathRelax\":\"false\"}}",
+    "BASELINE_TABLE_R2 {\"vrfId\":0,\"vrfName\":\"default\",\"tableVersion\":2,\"routerId\":\"2.2.2.2\",\"defaultLocPrf\":100,\"localAS\":65002,\"routes\":{\"192.0.2.0/24\":[{\"valid\":true,\"bestpath\":true,\"selectionReason\":\"First path received\",\"pathFrom\":\"external\",\"prefix\":\"192.0.2.0\",\"prefixLen\":24,\"network\":\"192.0.2.0/24\",\"version\":2,\"metric\":0,\"weight\":0,\"peerId\":\"203.0.113.1\",\"path\":\"65001\",\"origin\":\"IGP\",\"nexthops\":[{\"ip\":\"203.0.113.1\",\"hostname\":\"fb09b-176918-r1\",\"afi\":\"ipv4\",\"used\":true}]}],\"198.51.100.0/24\":[{\"valid\":true,\"bestpath\":true,\"selectionReason\":\"First path received\",\"pathFrom\":\"external\",\"prefix\":\"198.51.100.0\",\"prefixLen\":24,\"network\":\"198.51.100.0/24\",\"version\":1,\"metric\":0,\"weight\":32768,\"peerId\":\"(unspec)\",\"path\":\"\",\"origin\":\"IGP\",\"nexthops\":[{\"ip\":\"0.0.0.0\",\"hostname\":\"fb09b-176918-r2\",\"afi\":\"ipv4\",\"used\":true}]}]}}",
+    "BASELINE_NEIGHBORS_R2 {\"203.0.113.1\":{\"remoteAs\":65001,\"localAs\":65002,\"nbrExternalLink\":true,\"localRole\":\"undefined\",\"remoteRole\":\"undefined\",\"hostname\":\"fb09b-176918-r1\",\"domainname\":\"localdomain\",\"bgpVersion\":4,\"remoteRouterId\":\"1.1.1.1\",\"localRouterId\":\"2.2.2.2\",\"bgpState\":\"Established\",\"bgpTimerUpMsec\":2000,\"bgpTimerUpString\":\"00:00:02\",\"bgpTimerUpEstablishedEpoch\":1791540144,\"bgpTimerLastRead\":1000,\"bgpTimerLastWrite\":1000,\"bgpInUpdateElapsedTimeMsecs\":1000,\"bgpTimerConfiguredHoldTimeMsecs\":180000,\"bgpTimerConfiguredKeepAliveIntervalMsecs\":60000,\"bgpTimerHoldTimeMsecs\":180000,\"bgpTimerKeepAliveIntervalMsecs\":60000,\"extendedOptionalParametersLength\":false,\"bgpTimerConfiguredConditionalAdvertisementsSec\":60,\"neighborCapabilities\":{\"4byteAs\":\"advertisedAndReceived\",\"extendedMessage\":\"advertisedAndReceived\",\"addPath\":{\"ipv4Unicast\":{\"rxAdvertisedAndReceived\":true}},\"longLivedGracefulRestart\":\"advertisedAndReceived\",\"longLivedGracefulRestartByPeer\":{},\"routeRefresh\":\"advertisedAndReceivedOldNew\",\"enhancedRouteRefresh\":\"advertisedAndReceived\",\"multiprotocolExtensions\":{\"ipv4Unicast\":{\"advertisedAndReceived\":true}},\"hostName\":{\"advHostName\":\"fb09b-176918-r2\",\"advDomainName\":\"localdomain\",\"rcvHostName\":\"fb09b-176918-r1\",\"rcvDomainName\":\"localdomain\"},\"gracefulRestart\":\"advertisedAndReceived\",\"gracefulRestartRemoteTimerMsecs\":120000,\"addressFamiliesByPeer\":\"none\"},\"gracefulRestartInfo\":{\"endOfRibSend\":{\"ipv4Unicast\":true},\"endOfRibRecv\":{\"ipv4Unicast\":true},\"localGrMode\":\"Helper*\",\"remoteGrMode\":\"Helper\",\"rBit\":true,\"nBit\":true,\"timers\":{\"configuredRestartTimer\":120,\"receivedRestartTimer\":120},\"ipv4Unicast\":{\"fBit\":false,\"endOfRibStatus\":{\"endOfRibSend\":true,\"endOfRibSentAfterUpdate\":true,\"endOfRibRecv\":true},\"timers\":{\"stalePathTimer\":360}}},\"messageStats\":{\"depthInq\":0,\"depthOutq\":0,\"opensSent\":1,\"opensRecv\":1,\"notificationsSent\":0,\"notificationsRecv\":0,\"updatesSent\":2,\"updatesRecv\":2,\"keepalivesSent\":1,\"keepalivesRecv\":1,\"routeRefreshSent\":0,\"routeRefreshRecv\":0,\"capabilitySent\":0,\"capabilityRecv\":0,\"totalSent\":4,\"totalRecv\":4},\"minBtwnAdvertisementRunsTimerMsecs\":0,\"addressFamilyInfo\":{\"ipv4Unicast\":{\"updateGroupId\":1,\"subGroupId\":1,\"packetQueueLength\":0,\"commAttriSentToNbr\":\"extendedAndStandard\",\"inboundPathPolicyConfig\":true,\"outboundPathPolicyConfig\":true,\"routeMapForIncomingAdvertisements\":\"PEER-IMPORT\",\"routeMapForOutgoingAdvertisements\":\"OWN-EXPORT\",\"acceptedPrefixCounter\":1,\"sentPrefixCounter\":1}},\"connectionsEstablished\":1,\"connectionsDropped\":0,\"lastResetTimerMsecs\":3000,\"lastResetDueTo\":\"No AFI/SAFI activated for peer\",\"lastResetCode\":30,\"externalBgpNbrMaxHopsAway\":1,\"hostLocal\":\"203.0.113.2\",\"portLocal\":179,\"hostForeign\":\"203.0.113.1\",\"portForeign\":51940,\"nexthop\":\"203.0.113.2\",\"nexthopGlobal\":\"fe80::bc06:c9ff:fe43:991e\",\"nexthopLocal\":\"fe80::bc06:c9ff:fe43:991e\",\"bgpConnection\":\"sharedNetwork\",\"connectRetryTimer\":120,\"readThread\":\"on\",\"writeThread\":\"on\"}}",
+    "BASELINE_CONFIG_R2 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09b-176918-r2\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter bgp 65002\\n bgp router-id 2.2.2.2\\n neighbor 203.0.113.1 remote-as 65001\\n !\\n address-family ipv4 unicast\\n  network 198.51.100.0/24\\n  neighbor 203.0.113.1 route-map PEER-IMPORT in\\n  neighbor 203.0.113.1 route-map OWN-EXPORT out\\n exit-address-family\\nexit\\n!\\nip prefix-list OWN-LAN seq 10 permit 198.51.100.0/24\\nip prefix-list PEER-LAN seq 10 permit 192.0.2.0/24\\n!\\nroute-map OWN-EXPORT permit 10\\n match ip address prefix-list OWN-LAN\\nexit\\n!\\nroute-map PEER-IMPORT permit 10\\n match ip address prefix-list PEER-LAN\\nexit\\n!\\nend\\n\"}",
+    "BASELINE_RIB_R2 {\"192.0.2.0/24\":[{\"prefix\":\"192.0.2.0/24\",\"prefixLen\":24,\"protocol\":\"bgp\",\"vrfId\":0,\"vrfName\":\"default\",\"selected\":true,\"destSelected\":true,\"distance\":20,\"metric\":0,\"installed\":true,\"table\":254,\"internalStatus\":16,\"internalFlags\":8,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":10,\"installedNexthopGroupId\":10,\"uptime\":\"00:00:02\",\"nexthops\":[{\"flags\":3,\"fib\":true,\"ip\":\"203.0.113.1\",\"afi\":\"ipv4\",\"interfaceIndex\":3,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}]}",
+    "BASELINE_KERNEL_R2 [{\"dst\":\"192.0.2.0/24\",\"nhid\":10,\"gateway\":\"203.0.113.1\",\"dev\":\"transit\",\"protocol\":\"bgp\",\"metric\":20,\"flags\":[]},{\"dst\":\"198.51.100.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"198.51.100.1\",\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.2\",\"flags\":[]}]",
+    "BASELINE_LINKS_R2 [{\"ifindex\":1,\"ifname\":\"lo\",\"flags\":[\"LOOPBACK\",\"UP\",\"LOWER_UP\"],\"mtu\":65536,\"qdisc\":\"noqueue\",\"operstate\":\"UNKNOWN\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"loopback\",\"address\":\"00:00:00:00:00:00\",\"broadcast\":\"00:00:00:00:00:00\"},{\"ifindex\":3,\"link_index\":4,\"ifname\":\"transit\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"be:06:c9:43:99:1e\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":0},{\"ifindex\":4,\"link_index\":2,\"ifname\":\"lan\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"6e:ea:09:bd:f8:3a\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":1}]",
+    "BASELINE_PROBE_CLIENT {\"target\":\"198.51.100.20\",\"exitCode\":0,\"output\":\"PING 198.51.100.20 (198.51.100.20) 56(84) bytes of data.\\n64 bytes from 198.51.100.20: icmp_seq=1 ttl=62 time=0.083 ms\\n\\n--- 198.51.100.20 ping statistics ---\\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\\nrtt min/avg/max/mdev = 0.083/0.083/0.083/0.000 ms\\n\"}",
+    "BASELINE_PROBE_SERVER {\"target\":\"192.0.2.10\",\"exitCode\":0,\"output\":\"PING 192.0.2.10 (192.0.2.10) 56(84) bytes of data.\\n64 bytes from 192.0.2.10: icmp_seq=1 ttl=62 time=0.057 ms\\n\\n--- 192.0.2.10 ping statistics ---\\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\\nrtt min/avg/max/mdev = 0.057/0.057/0.057/0.000 ms\\n\"}",
+    "PASS baseline: explicit exact-prefix import/export policies, established eBGP and original bidirectional ICMP.",
+    "PACKETS [[\"203.0.113.1\",\"203.0.113.2\",\"51940\",\"179\",\"1\"],[\"203.0.113.2\",\"203.0.113.1\",\"179\",\"51940\",\"1\"],[\"203.0.113.1\",\"203.0.113.2\",\"51940\",\"179\",\"4\"],[\"203.0.113.2\",\"203.0.113.1\",\"179\",\"51940\",\"4\"],[\"203.0.113.1\",\"203.0.113.2\",\"51940\",\"179\",\"2,2\"],[\"203.0.113.2\",\"203.0.113.1\",\"179\",\"51940\",\"2,2\"],[\"203.0.113.1\",\"203.0.113.2\",\"51940\",\"179\",\"5\"],[\"203.0.113.1\",\"203.0.113.2\",\"51940\",\"179\",\"2\"],[\"203.0.113.2\",\"203.0.113.1\",\"179\",\"51940\",\"5\"],[\"203.0.113.2\",\"203.0.113.1\",\"179\",\"51940\",\"2,5\"],[\"203.0.113.1\",\"203.0.113.2\",\"51940\",\"179\",\"2\"],[\"203.0.113.1\",\"203.0.113.2\",\"51940\",\"179\",\"2\"],[\"203.0.113.2\",\"203.0.113.1\",\"179\",\"51940\",\"5\"],[\"203.0.113.1\",\"203.0.113.2\",\"51940\",\"179\",\"5\"],[\"203.0.113.2\",\"203.0.113.1\",\"179\",\"51940\",\"2\"],[\"203.0.113.1\",\"203.0.113.2\",\"51940\",\"179\",\"2,5\"],[\"203.0.113.2\",\"203.0.113.1\",\"179\",\"51940\",\"2\"],[\"203.0.113.2\",\"203.0.113.1\",\"179\",\"51940\",\"2\"]]",
+    "FAULT_SUMMARY_R1 {\"routerId\":\"1.1.1.1\",\"as\":65001,\"vrfId\":0,\"vrfName\":\"default\",\"tableVersion\":3,\"ribCount\":1,\"ribMemory\":192,\"peerCount\":1,\"peerMemory\":741464,\"peers\":{\"203.0.113.2\":{\"hostname\":\"fb09b-176918-r2\",\"domainname\":\"localdomain\",\"remoteAs\":65002,\"localAs\":65001,\"version\":4,\"msgRcvd\":12,\"msgSent\":11,\"tableVersion\":0,\"outq\":0,\"inq\":0,\"peerUptime\":\"00:00:10\",\"peerUptimeMsec\":10000,\"peerUptimeEstablishedEpoch\":1791540144,\"pfxRcd\":0,\"pfxSnt\":1,\"state\":\"Established\",\"peerState\":\"OK\",\"connectionsEstablished\":1,\"connectionsDropped\":0,\"idType\":\"ipv4\"}},\"failedPeers\":0,\"displayedPeers\":1,\"totalPeers\":1,\"dynamicPeers\":0,\"bestPath\":{\"multiPathRelax\":\"false\"}}",
+    "FAULT_TABLE_R1 {\"vrfId\":0,\"vrfName\":\"default\",\"tableVersion\":3,\"routerId\":\"1.1.1.1\",\"defaultLocPrf\":100,\"localAS\":65001,\"routes\":{\"192.0.2.0/24\":[{\"valid\":true,\"bestpath\":true,\"selectionReason\":\"First path received\",\"pathFrom\":\"external\",\"prefix\":\"192.0.2.0\",\"prefixLen\":24,\"network\":\"192.0.2.0/24\",\"version\":1,\"metric\":0,\"weight\":32768,\"peerId\":\"(unspec)\",\"path\":\"\",\"origin\":\"IGP\",\"nexthops\":[{\"ip\":\"0.0.0.0\",\"hostname\":\"fb09b-176918-r1\",\"afi\":\"ipv4\",\"used\":true}]}]}}",
+    "FAULT_NEIGHBORS_R1 {\"203.0.113.2\":{\"remoteAs\":65002,\"localAs\":65001,\"nbrExternalLink\":true,\"localRole\":\"undefined\",\"remoteRole\":\"undefined\",\"hostname\":\"fb09b-176918-r2\",\"domainname\":\"localdomain\",\"bgpVersion\":4,\"remoteRouterId\":\"2.2.2.2\",\"localRouterId\":\"1.1.1.1\",\"bgpState\":\"Established\",\"bgpTimerUpMsec\":11000,\"bgpTimerUpString\":\"00:00:11\",\"bgpTimerUpEstablishedEpoch\":1791540143,\"bgpTimerLastRead\":1000,\"bgpTimerLastWrite\":6000,\"bgpInUpdateElapsedTimeMsecs\":1000,\"bgpTimerConfiguredHoldTimeMsecs\":180000,\"bgpTimerConfiguredKeepAliveIntervalMsecs\":60000,\"bgpTimerHoldTimeMsecs\":180000,\"bgpTimerKeepAliveIntervalMsecs\":60000,\"extendedOptionalParametersLength\":false,\"bgpTimerConfiguredConditionalAdvertisementsSec\":60,\"neighborCapabilities\":{\"4byteAs\":\"advertisedAndReceived\",\"extendedMessage\":\"advertisedAndReceived\",\"addPath\":{\"ipv4Unicast\":{\"rxAdvertisedAndReceived\":true}},\"longLivedGracefulRestart\":\"advertisedAndReceived\",\"longLivedGracefulRestartByPeer\":{},\"routeRefresh\":\"advertisedAndReceivedOldNew\",\"enhancedRouteRefresh\":\"advertisedAndReceived\",\"multiprotocolExtensions\":{\"ipv4Unicast\":{\"advertisedAndReceived\":true}},\"hostName\":{\"advHostName\":\"fb09b-176918-r1\",\"advDomainName\":\"localdomain\",\"rcvHostName\":\"fb09b-176918-r2\",\"rcvDomainName\":\"localdomain\"},\"gracefulRestart\":\"advertisedAndReceived\",\"gracefulRestartRemoteTimerMsecs\":120000,\"addressFamiliesByPeer\":\"none\"},\"gracefulRestartInfo\":{\"endOfRibSend\":{\"ipv4Unicast\":true},\"endOfRibRecv\":{\"ipv4Unicast\":true},\"localGrMode\":\"Helper*\",\"remoteGrMode\":\"Helper\",\"rBit\":true,\"nBit\":true,\"timers\":{\"configuredRestartTimer\":120,\"receivedRestartTimer\":120},\"ipv4Unicast\":{\"fBit\":false,\"endOfRibStatus\":{\"endOfRibSend\":true,\"endOfRibSentAfterUpdate\":false,\"endOfRibRecv\":true},\"timers\":{\"stalePathTimer\":360}}},\"messageStats\":{\"depthInq\":0,\"depthOutq\":0,\"opensSent\":1,\"opensRecv\":1,\"notificationsSent\":0,\"notificationsRecv\":0,\"updatesSent\":6,\"updatesRecv\":7,\"keepalivesSent\":1,\"keepalivesRecv\":1,\"routeRefreshSent\":3,\"routeRefreshRecv\":3,\"capabilitySent\":0,\"capabilityRecv\":0,\"totalSent\":11,\"totalRecv\":12},\"minBtwnAdvertisementRunsTimerMsecs\":0,\"addressFamilyInfo\":{\"ipv4Unicast\":{\"updateGroupId\":1,\"subGroupId\":1,\"packetQueueLength\":0,\"commAttriSentToNbr\":\"extendedAndStandard\",\"inboundPathPolicyConfig\":true,\"outboundPathPolicyConfig\":true,\"routeMapForIncomingAdvertisements\":\"PEER-IMPORT\",\"routeMapForOutgoingAdvertisements\":\"OWN-EXPORT\",\"acceptedPrefixCounter\":0,\"sentPrefixCounter\":1}},\"connectionsEstablished\":1,\"connectionsDropped\":0,\"lastResetTimerMsecs\":12000,\"lastResetDueTo\":\"Waiting for peer OPEN\",\"lastResetCode\":32,\"externalBgpNbrMaxHopsAway\":1,\"hostLocal\":\"203.0.113.1\",\"portLocal\":51940,\"hostForeign\":\"203.0.113.2\",\"portForeign\":179,\"nexthop\":\"203.0.113.1\",\"nexthopGlobal\":\"fe80::fc8f:bff:fecd:a391\",\"nexthopLocal\":\"fe80::fc8f:bff:fecd:a391\",\"bgpConnection\":\"sharedNetwork\",\"connectRetryTimer\":120,\"readThread\":\"on\",\"writeThread\":\"on\"}}",
+    "FAULT_CONFIG_R1 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09b-176918-r1\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter bgp 65001\\n bgp router-id 1.1.1.1\\n neighbor 203.0.113.2 remote-as 65002\\n !\\n address-family ipv4 unicast\\n  network 192.0.2.0/24\\n  neighbor 203.0.113.2 route-map PEER-IMPORT in\\n  neighbor 203.0.113.2 route-map OWN-EXPORT out\\n exit-address-family\\nexit\\n!\\nip prefix-list OWN-LAN seq 10 permit 192.0.2.0/24\\nip prefix-list PEER-LAN seq 10 permit 198.51.100.0/24\\n!\\nroute-map OWN-EXPORT permit 10\\n match ip address prefix-list OWN-LAN\\nexit\\n!\\nroute-map PEER-IMPORT permit 10\\n match ip address prefix-list PEER-LAN\\nexit\\n!\\nend\\n\"}",
+    "FAULT_RIB_R1 {}",
+    "FAULT_KERNEL_R1 [{\"dst\":\"192.0.2.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"192.0.2.1\",\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.1\",\"flags\":[]}]",
+    "FAULT_LINKS_R1 [{\"ifindex\":1,\"ifname\":\"lo\",\"flags\":[\"LOOPBACK\",\"UP\",\"LOWER_UP\"],\"mtu\":65536,\"qdisc\":\"noqueue\",\"operstate\":\"UNKNOWN\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"loopback\",\"address\":\"00:00:00:00:00:00\",\"broadcast\":\"00:00:00:00:00:00\"},{\"ifindex\":2,\"link_index\":3,\"ifname\":\"lan\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"ea:5d:64:b5:63:d9\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":0},{\"ifindex\":4,\"link_index\":3,\"ifname\":\"transit\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"fe:8f:0b:cd:a3:91\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":1}]",
+    "FAULT_SUMMARY_R2 {\"routerId\":\"2.2.2.2\",\"as\":65002,\"vrfId\":0,\"vrfName\":\"default\",\"tableVersion\":3,\"ribCount\":1,\"ribMemory\":192,\"peerCount\":1,\"peerMemory\":741464,\"peers\":{\"203.0.113.1\":{\"hostname\":\"fb09b-176918-r1\",\"domainname\":\"localdomain\",\"remoteAs\":65001,\"localAs\":65002,\"version\":4,\"msgRcvd\":11,\"msgSent\":12,\"tableVersion\":0,\"outq\":0,\"inq\":0,\"peerUptime\":\"00:00:11\",\"peerUptimeMsec\":11000,\"peerUptimeEstablishedEpoch\":1791540144,\"pfxRcd\":1,\"pfxSnt\":0,\"state\":\"Established\",\"peerState\":\"OK\",\"connectionsEstablished\":1,\"connectionsDropped\":0,\"idType\":\"ipv4\"}},\"failedPeers\":0,\"displayedPeers\":1,\"totalPeers\":1,\"dynamicPeers\":0,\"bestPath\":{\"multiPathRelax\":\"false\"}}",
+    "FAULT_TABLE_R2 {\"vrfId\":0,\"vrfName\":\"default\",\"tableVersion\":3,\"routerId\":\"2.2.2.2\",\"defaultLocPrf\":100,\"localAS\":65002,\"routes\":{\"192.0.2.0/24\":[{\"valid\":true,\"bestpath\":true,\"selectionReason\":\"First path received\",\"pathFrom\":\"external\",\"prefix\":\"192.0.2.0\",\"prefixLen\":24,\"network\":\"192.0.2.0/24\",\"version\":2,\"metric\":0,\"weight\":0,\"peerId\":\"203.0.113.1\",\"path\":\"65001\",\"origin\":\"IGP\",\"nexthops\":[{\"ip\":\"203.0.113.1\",\"hostname\":\"fb09b-176918-r1\",\"afi\":\"ipv4\",\"used\":true}]}]}}",
+    "FAULT_NEIGHBORS_R2 {\"203.0.113.1\":{\"remoteAs\":65001,\"localAs\":65002,\"nbrExternalLink\":true,\"localRole\":\"undefined\",\"remoteRole\":\"undefined\",\"hostname\":\"fb09b-176918-r1\",\"domainname\":\"localdomain\",\"bgpVersion\":4,\"remoteRouterId\":\"1.1.1.1\",\"localRouterId\":\"2.2.2.2\",\"bgpState\":\"Established\",\"bgpTimerUpMsec\":12000,\"bgpTimerUpString\":\"00:00:12\",\"bgpTimerUpEstablishedEpoch\":1791540143,\"bgpTimerLastRead\":7000,\"bgpTimerLastWrite\":2000,\"bgpInUpdateElapsedTimeMsecs\":7000,\"bgpTimerConfiguredHoldTimeMsecs\":180000,\"bgpTimerConfiguredKeepAliveIntervalMsecs\":60000,\"bgpTimerHoldTimeMsecs\":180000,\"bgpTimerKeepAliveIntervalMsecs\":60000,\"extendedOptionalParametersLength\":false,\"bgpTimerConfiguredConditionalAdvertisementsSec\":60,\"neighborCapabilities\":{\"4byteAs\":\"advertisedAndReceived\",\"extendedMessage\":\"advertisedAndReceived\",\"addPath\":{\"ipv4Unicast\":{\"rxAdvertisedAndReceived\":true}},\"longLivedGracefulRestart\":\"advertisedAndReceived\",\"longLivedGracefulRestartByPeer\":{},\"routeRefresh\":\"advertisedAndReceivedOldNew\",\"enhancedRouteRefresh\":\"advertisedAndReceived\",\"multiprotocolExtensions\":{\"ipv4Unicast\":{\"advertisedAndReceived\":true}},\"hostName\":{\"advHostName\":\"fb09b-176918-r2\",\"advDomainName\":\"localdomain\",\"rcvHostName\":\"fb09b-176918-r1\",\"rcvDomainName\":\"localdomain\"},\"gracefulRestart\":\"advertisedAndReceived\",\"gracefulRestartRemoteTimerMsecs\":120000,\"addressFamiliesByPeer\":\"none\"},\"gracefulRestartInfo\":{\"endOfRibSend\":{\"ipv4Unicast\":true},\"endOfRibRecv\":{\"ipv4Unicast\":true},\"localGrMode\":\"Helper*\",\"remoteGrMode\":\"Helper\",\"rBit\":true,\"nBit\":true,\"timers\":{\"configuredRestartTimer\":120,\"receivedRestartTimer\":120},\"ipv4Unicast\":{\"fBit\":false,\"endOfRibStatus\":{\"endOfRibSend\":true,\"endOfRibSentAfterUpdate\":false,\"endOfRibRecv\":true},\"timers\":{\"stalePathTimer\":360}}},\"messageStats\":{\"depthInq\":0,\"depthOutq\":0,\"opensSent\":1,\"opensRecv\":1,\"notificationsSent\":0,\"notificationsRecv\":0,\"updatesSent\":7,\"updatesRecv\":6,\"keepalivesSent\":1,\"keepalivesRecv\":1,\"routeRefreshSent\":3,\"routeRefreshRecv\":3,\"capabilitySent\":0,\"capabilityRecv\":0,\"totalSent\":12,\"totalRecv\":11},\"minBtwnAdvertisementRunsTimerMsecs\":0,\"addressFamilyInfo\":{\"ipv4Unicast\":{\"updateGroupId\":1,\"subGroupId\":1,\"packetQueueLength\":0,\"commAttriSentToNbr\":\"extendedAndStandard\",\"inboundPathPolicyConfig\":true,\"outboundPathPolicyConfig\":true,\"routeMapForIncomingAdvertisements\":\"PEER-IMPORT\",\"routeMapForOutgoingAdvertisements\":\"OWN-EXPORT\",\"acceptedPrefixCounter\":1,\"sentPrefixCounter\":0}},\"connectionsEstablished\":1,\"connectionsDropped\":0,\"lastResetTimerMsecs\":13000,\"lastResetDueTo\":\"No AFI/SAFI activated for peer\",\"lastResetCode\":30,\"externalBgpNbrMaxHopsAway\":1,\"hostLocal\":\"203.0.113.2\",\"portLocal\":179,\"hostForeign\":\"203.0.113.1\",\"portForeign\":51940,\"nexthop\":\"203.0.113.2\",\"nexthopGlobal\":\"fe80::bc06:c9ff:fe43:991e\",\"nexthopLocal\":\"fe80::bc06:c9ff:fe43:991e\",\"bgpConnection\":\"sharedNetwork\",\"connectRetryTimer\":120,\"readThread\":\"on\",\"writeThread\":\"on\"}}",
+    "FAULT_CONFIG_R2 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09b-176918-r2\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter bgp 65002\\n bgp router-id 2.2.2.2\\n neighbor 203.0.113.1 remote-as 65001\\n !\\n address-family ipv4 unicast\\n  neighbor 203.0.113.1 route-map PEER-IMPORT in\\n  neighbor 203.0.113.1 route-map OWN-EXPORT out\\n exit-address-family\\nexit\\n!\\nip prefix-list OWN-LAN seq 10 permit 198.51.100.0/24\\nip prefix-list PEER-LAN seq 10 permit 192.0.2.0/24\\n!\\nroute-map OWN-EXPORT permit 10\\n match ip address prefix-list OWN-LAN\\nexit\\n!\\nroute-map PEER-IMPORT permit 10\\n match ip address prefix-list PEER-LAN\\nexit\\n!\\nend\\n\"}",
+    "FAULT_RIB_R2 {\"192.0.2.0/24\":[{\"prefix\":\"192.0.2.0/24\",\"prefixLen\":24,\"protocol\":\"bgp\",\"vrfId\":0,\"vrfName\":\"default\",\"selected\":true,\"destSelected\":true,\"distance\":20,\"metric\":0,\"installed\":true,\"table\":254,\"internalStatus\":16,\"internalFlags\":8,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":10,\"installedNexthopGroupId\":10,\"uptime\":\"00:00:11\",\"nexthops\":[{\"flags\":3,\"fib\":true,\"ip\":\"203.0.113.1\",\"afi\":\"ipv4\",\"interfaceIndex\":3,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}]}",
+    "FAULT_KERNEL_R2 [{\"dst\":\"192.0.2.0/24\",\"nhid\":10,\"gateway\":\"203.0.113.1\",\"dev\":\"transit\",\"protocol\":\"bgp\",\"metric\":20,\"flags\":[]},{\"dst\":\"198.51.100.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"198.51.100.1\",\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.2\",\"flags\":[]}]",
+    "FAULT_LINKS_R2 [{\"ifindex\":1,\"ifname\":\"lo\",\"flags\":[\"LOOPBACK\",\"UP\",\"LOWER_UP\"],\"mtu\":65536,\"qdisc\":\"noqueue\",\"operstate\":\"UNKNOWN\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"loopback\",\"address\":\"00:00:00:00:00:00\",\"broadcast\":\"00:00:00:00:00:00\"},{\"ifindex\":3,\"link_index\":4,\"ifname\":\"transit\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"be:06:c9:43:99:1e\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":0},{\"ifindex\":4,\"link_index\":2,\"ifname\":\"lan\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"6e:ea:09:bd:f8:3a\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":1}]",
+    "FAULT_PROBE_CLIENT {\"target\":\"198.51.100.20\",\"exitCode\":1,\"output\":\"PING 198.51.100.20 (198.51.100.20) 56(84) bytes of data.\\nFrom 192.0.2.1 icmp_seq=1 Destination Net Unreachable\\n\\n--- 198.51.100.20 ping statistics ---\\n1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms\\n\\n\"}",
+    "FAULT_PROBE_SERVER {\"target\":\"192.0.2.10\",\"exitCode\":1,\"output\":\"PING 192.0.2.10 (192.0.2.10) 56(84) bytes of data.\\n\\n--- 192.0.2.10 ping statistics ---\\n1 packets transmitted, 0 received, 100% packet loss, time 0ms\\n\\n\"}",
+    "FAULT_PROBE_CLIENT_GATEWAY {\"target\":\"192.0.2.1\",\"exitCode\":0,\"output\":\"PING 192.0.2.1 (192.0.2.1) 56(84) bytes of data.\\n64 bytes from 192.0.2.1: icmp_seq=1 ttl=64 time=0.341 ms\\n\\n--- 192.0.2.1 ping statistics ---\\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\\nrtt min/avg/max/mdev = 0.341/0.341/0.341/0.000 ms\\n\"}",
+    "FAULT_PROBE_SERVER_GATEWAY {\"target\":\"198.51.100.1\",\"exitCode\":0,\"output\":\"PING 198.51.100.1 (198.51.100.1) 56(84) bytes of data.\\n64 bytes from 198.51.100.1: icmp_seq=1 ttl=64 time=0.200 ms\\n\\n--- 198.51.100.1 ping statistics ---\\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\\nrtt min/avg/max/mdev = 0.200/0.200/0.200/0.000 ms\\n\"}",
+    "PASS origin withdrawal: session stays Established, R1 loses remote prefix, R2 keeps return prefix, original round trips fail while local gateways work.",
+    "RECOVERY_ACTION restore only the exact owned R2 network statement; no daemon restart or session clear",
+    "RECOVERED_SUMMARY_R1 {\"routerId\":\"1.1.1.1\",\"as\":65001,\"vrfId\":0,\"vrfName\":\"default\",\"tableVersion\":4,\"ribCount\":3,\"ribMemory\":576,\"peerCount\":1,\"peerMemory\":741464,\"peers\":{\"203.0.113.2\":{\"hostname\":\"fb09b-176918-r2\",\"domainname\":\"localdomain\",\"remoteAs\":65002,\"localAs\":65001,\"version\":4,\"msgRcvd\":13,\"msgSent\":11,\"tableVersion\":0,\"outq\":0,\"inq\":0,\"peerUptime\":\"00:00:14\",\"peerUptimeMsec\":14000,\"peerUptimeEstablishedEpoch\":1791540143,\"pfxRcd\":1,\"pfxSnt\":1,\"state\":\"Established\",\"peerState\":\"OK\",\"connectionsEstablished\":1,\"connectionsDropped\":0,\"idType\":\"ipv4\"}},\"failedPeers\":0,\"displayedPeers\":1,\"totalPeers\":1,\"dynamicPeers\":0,\"bestPath\":{\"multiPathRelax\":\"false\"}}",
+    "RECOVERED_TABLE_R1 {\"vrfId\":0,\"vrfName\":\"default\",\"tableVersion\":4,\"routerId\":\"1.1.1.1\",\"defaultLocPrf\":100,\"localAS\":65001,\"routes\":{\"192.0.2.0/24\":[{\"valid\":true,\"bestpath\":true,\"selectionReason\":\"First path received\",\"pathFrom\":\"external\",\"prefix\":\"192.0.2.0\",\"prefixLen\":24,\"network\":\"192.0.2.0/24\",\"version\":1,\"metric\":0,\"weight\":32768,\"peerId\":\"(unspec)\",\"path\":\"\",\"origin\":\"IGP\",\"nexthops\":[{\"ip\":\"0.0.0.0\",\"hostname\":\"fb09b-176918-r1\",\"afi\":\"ipv4\",\"used\":true}]}],\"198.51.100.0/24\":[{\"valid\":true,\"bestpath\":true,\"selectionReason\":\"First path received\",\"pathFrom\":\"external\",\"prefix\":\"198.51.100.0\",\"prefixLen\":24,\"network\":\"198.51.100.0/24\",\"version\":4,\"metric\":0,\"weight\":0,\"peerId\":\"203.0.113.2\",\"path\":\"65002\",\"origin\":\"IGP\",\"nexthops\":[{\"ip\":\"203.0.113.2\",\"hostname\":\"fb09b-176918-r2\",\"afi\":\"ipv4\",\"used\":true}]}]}}",
+    "RECOVERED_NEIGHBORS_R1 {\"203.0.113.2\":{\"remoteAs\":65002,\"localAs\":65001,\"nbrExternalLink\":true,\"localRole\":\"undefined\",\"remoteRole\":\"undefined\",\"hostname\":\"fb09b-176918-r2\",\"domainname\":\"localdomain\",\"bgpVersion\":4,\"remoteRouterId\":\"2.2.2.2\",\"localRouterId\":\"1.1.1.1\",\"bgpState\":\"Established\",\"bgpTimerUpMsec\":14000,\"bgpTimerUpString\":\"00:00:14\",\"bgpTimerUpEstablishedEpoch\":1791540144,\"bgpTimerLastRead\":1000,\"bgpTimerLastWrite\":9000,\"bgpInUpdateElapsedTimeMsecs\":1000,\"bgpTimerConfiguredHoldTimeMsecs\":180000,\"bgpTimerConfiguredKeepAliveIntervalMsecs\":60000,\"bgpTimerHoldTimeMsecs\":180000,\"bgpTimerKeepAliveIntervalMsecs\":60000,\"extendedOptionalParametersLength\":false,\"bgpTimerConfiguredConditionalAdvertisementsSec\":60,\"neighborCapabilities\":{\"4byteAs\":\"advertisedAndReceived\",\"extendedMessage\":\"advertisedAndReceived\",\"addPath\":{\"ipv4Unicast\":{\"rxAdvertisedAndReceived\":true}},\"longLivedGracefulRestart\":\"advertisedAndReceived\",\"longLivedGracefulRestartByPeer\":{},\"routeRefresh\":\"advertisedAndReceivedOldNew\",\"enhancedRouteRefresh\":\"advertisedAndReceived\",\"multiprotocolExtensions\":{\"ipv4Unicast\":{\"advertisedAndReceived\":true}},\"hostName\":{\"advHostName\":\"fb09b-176918-r1\",\"advDomainName\":\"localdomain\",\"rcvHostName\":\"fb09b-176918-r2\",\"rcvDomainName\":\"localdomain\"},\"gracefulRestart\":\"advertisedAndReceived\",\"gracefulRestartRemoteTimerMsecs\":120000,\"addressFamiliesByPeer\":\"none\"},\"gracefulRestartInfo\":{\"endOfRibSend\":{\"ipv4Unicast\":true},\"endOfRibRecv\":{\"ipv4Unicast\":true},\"localGrMode\":\"Helper*\",\"remoteGrMode\":\"Helper\",\"rBit\":true,\"nBit\":true,\"timers\":{\"configuredRestartTimer\":120,\"receivedRestartTimer\":120},\"ipv4Unicast\":{\"fBit\":false,\"endOfRibStatus\":{\"endOfRibSend\":true,\"endOfRibSentAfterUpdate\":false,\"endOfRibRecv\":true},\"timers\":{\"stalePathTimer\":360}}},\"messageStats\":{\"depthInq\":0,\"depthOutq\":0,\"opensSent\":1,\"opensRecv\":1,\"notificationsSent\":0,\"notificationsRecv\":0,\"updatesSent\":6,\"updatesRecv\":8,\"keepalivesSent\":1,\"keepalivesRecv\":1,\"routeRefreshSent\":3,\"routeRefreshRecv\":3,\"capabilitySent\":0,\"capabilityRecv\":0,\"totalSent\":11,\"totalRecv\":13},\"minBtwnAdvertisementRunsTimerMsecs\":0,\"addressFamilyInfo\":{\"ipv4Unicast\":{\"updateGroupId\":1,\"subGroupId\":1,\"packetQueueLength\":0,\"commAttriSentToNbr\":\"extendedAndStandard\",\"inboundPathPolicyConfig\":true,\"outboundPathPolicyConfig\":true,\"routeMapForIncomingAdvertisements\":\"PEER-IMPORT\",\"routeMapForOutgoingAdvertisements\":\"OWN-EXPORT\",\"acceptedPrefixCounter\":1,\"sentPrefixCounter\":1}},\"connectionsEstablished\":1,\"connectionsDropped\":0,\"lastResetTimerMsecs\":15000,\"lastResetDueTo\":\"Waiting for peer OPEN\",\"lastResetCode\":32,\"externalBgpNbrMaxHopsAway\":1,\"hostLocal\":\"203.0.113.1\",\"portLocal\":51940,\"hostForeign\":\"203.0.113.2\",\"portForeign\":179,\"nexthop\":\"203.0.113.1\",\"nexthopGlobal\":\"fe80::fc8f:bff:fecd:a391\",\"nexthopLocal\":\"fe80::fc8f:bff:fecd:a391\",\"bgpConnection\":\"sharedNetwork\",\"connectRetryTimer\":120,\"readThread\":\"on\",\"writeThread\":\"on\"}}",
+    "RECOVERED_CONFIG_R1 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09b-176918-r1\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter bgp 65001\\n bgp router-id 1.1.1.1\\n neighbor 203.0.113.2 remote-as 65002\\n !\\n address-family ipv4 unicast\\n  network 192.0.2.0/24\\n  neighbor 203.0.113.2 route-map PEER-IMPORT in\\n  neighbor 203.0.113.2 route-map OWN-EXPORT out\\n exit-address-family\\nexit\\n!\\nip prefix-list OWN-LAN seq 10 permit 192.0.2.0/24\\nip prefix-list PEER-LAN seq 10 permit 198.51.100.0/24\\n!\\nroute-map OWN-EXPORT permit 10\\n match ip address prefix-list OWN-LAN\\nexit\\n!\\nroute-map PEER-IMPORT permit 10\\n match ip address prefix-list PEER-LAN\\nexit\\n!\\nend\\n\"}",
+    "RECOVERED_RIB_R1 {\"198.51.100.0/24\":[{\"prefix\":\"198.51.100.0/24\",\"prefixLen\":24,\"protocol\":\"bgp\",\"vrfId\":0,\"vrfName\":\"default\",\"selected\":true,\"destSelected\":true,\"distance\":20,\"metric\":0,\"installed\":true,\"table\":254,\"internalStatus\":16,\"internalFlags\":8,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":10,\"installedNexthopGroupId\":10,\"uptime\":\"00:00:02\",\"nexthops\":[{\"flags\":3,\"fib\":true,\"ip\":\"203.0.113.2\",\"afi\":\"ipv4\",\"interfaceIndex\":4,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}]}",
+    "RECOVERED_KERNEL_R1 [{\"dst\":\"192.0.2.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"192.0.2.1\",\"flags\":[]},{\"dst\":\"198.51.100.0/24\",\"nhid\":10,\"gateway\":\"203.0.113.2\",\"dev\":\"transit\",\"protocol\":\"bgp\",\"metric\":20,\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.1\",\"flags\":[]}]",
+    "RECOVERED_LINKS_R1 [{\"ifindex\":1,\"ifname\":\"lo\",\"flags\":[\"LOOPBACK\",\"UP\",\"LOWER_UP\"],\"mtu\":65536,\"qdisc\":\"noqueue\",\"operstate\":\"UNKNOWN\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"loopback\",\"address\":\"00:00:00:00:00:00\",\"broadcast\":\"00:00:00:00:00:00\"},{\"ifindex\":2,\"link_index\":3,\"ifname\":\"lan\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"ea:5d:64:b5:63:d9\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":0},{\"ifindex\":4,\"link_index\":3,\"ifname\":\"transit\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"fe:8f:0b:cd:a3:91\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":1}]",
+    "RECOVERED_SUMMARY_R2 {\"routerId\":\"2.2.2.2\",\"as\":65002,\"vrfId\":0,\"vrfName\":\"default\",\"tableVersion\":4,\"ribCount\":3,\"ribMemory\":576,\"peerCount\":1,\"peerMemory\":741464,\"peers\":{\"203.0.113.1\":{\"hostname\":\"fb09b-176918-r1\",\"domainname\":\"localdomain\",\"remoteAs\":65001,\"localAs\":65002,\"version\":4,\"msgRcvd\":11,\"msgSent\":13,\"tableVersion\":0,\"outq\":0,\"inq\":0,\"peerUptime\":\"00:00:15\",\"peerUptimeMsec\":15000,\"peerUptimeEstablishedEpoch\":1791540144,\"pfxRcd\":1,\"pfxSnt\":1,\"state\":\"Established\",\"peerState\":\"OK\",\"connectionsEstablished\":1,\"connectionsDropped\":0,\"idType\":\"ipv4\"}},\"failedPeers\":0,\"displayedPeers\":1,\"totalPeers\":1,\"dynamicPeers\":0,\"bestPath\":{\"multiPathRelax\":\"false\"}}",
+    "RECOVERED_TABLE_R2 {\"vrfId\":0,\"vrfName\":\"default\",\"tableVersion\":4,\"routerId\":\"2.2.2.2\",\"defaultLocPrf\":100,\"localAS\":65002,\"routes\":{\"192.0.2.0/24\":[{\"valid\":true,\"bestpath\":true,\"selectionReason\":\"First path received\",\"pathFrom\":\"external\",\"prefix\":\"192.0.2.0\",\"prefixLen\":24,\"network\":\"192.0.2.0/24\",\"version\":2,\"metric\":0,\"weight\":0,\"peerId\":\"203.0.113.1\",\"path\":\"65001\",\"origin\":\"IGP\",\"nexthops\":[{\"ip\":\"203.0.113.1\",\"hostname\":\"fb09b-176918-r1\",\"afi\":\"ipv4\",\"used\":true}]}],\"198.51.100.0/24\":[{\"valid\":true,\"bestpath\":true,\"selectionReason\":\"First path received\",\"pathFrom\":\"external\",\"prefix\":\"198.51.100.0\",\"prefixLen\":24,\"network\":\"198.51.100.0/24\",\"version\":4,\"metric\":0,\"weight\":32768,\"peerId\":\"(unspec)\",\"path\":\"\",\"origin\":\"IGP\",\"nexthops\":[{\"ip\":\"0.0.0.0\",\"hostname\":\"fb09b-176918-r2\",\"afi\":\"ipv4\",\"used\":true}]}]}}",
+    "RECOVERED_NEIGHBORS_R2 {\"203.0.113.1\":{\"remoteAs\":65001,\"localAs\":65002,\"nbrExternalLink\":true,\"localRole\":\"undefined\",\"remoteRole\":\"undefined\",\"hostname\":\"fb09b-176918-r1\",\"domainname\":\"localdomain\",\"bgpVersion\":4,\"remoteRouterId\":\"1.1.1.1\",\"localRouterId\":\"2.2.2.2\",\"bgpState\":\"Established\",\"bgpTimerUpMsec\":16000,\"bgpTimerUpString\":\"00:00:16\",\"bgpTimerUpEstablishedEpoch\":1791540143,\"bgpTimerLastRead\":11000,\"bgpTimerLastWrite\":3000,\"bgpInUpdateElapsedTimeMsecs\":11000,\"bgpTimerConfiguredHoldTimeMsecs\":180000,\"bgpTimerConfiguredKeepAliveIntervalMsecs\":60000,\"bgpTimerHoldTimeMsecs\":180000,\"bgpTimerKeepAliveIntervalMsecs\":60000,\"extendedOptionalParametersLength\":false,\"bgpTimerConfiguredConditionalAdvertisementsSec\":60,\"neighborCapabilities\":{\"4byteAs\":\"advertisedAndReceived\",\"extendedMessage\":\"advertisedAndReceived\",\"addPath\":{\"ipv4Unicast\":{\"rxAdvertisedAndReceived\":true}},\"longLivedGracefulRestart\":\"advertisedAndReceived\",\"longLivedGracefulRestartByPeer\":{},\"routeRefresh\":\"advertisedAndReceivedOldNew\",\"enhancedRouteRefresh\":\"advertisedAndReceived\",\"multiprotocolExtensions\":{\"ipv4Unicast\":{\"advertisedAndReceived\":true}},\"hostName\":{\"advHostName\":\"fb09b-176918-r2\",\"advDomainName\":\"localdomain\",\"rcvHostName\":\"fb09b-176918-r1\",\"rcvDomainName\":\"localdomain\"},\"gracefulRestart\":\"advertisedAndReceived\",\"gracefulRestartRemoteTimerMsecs\":120000,\"addressFamiliesByPeer\":\"none\"},\"gracefulRestartInfo\":{\"endOfRibSend\":{\"ipv4Unicast\":true},\"endOfRibRecv\":{\"ipv4Unicast\":true},\"localGrMode\":\"Helper*\",\"remoteGrMode\":\"Helper\",\"rBit\":true,\"nBit\":true,\"timers\":{\"configuredRestartTimer\":120,\"receivedRestartTimer\":120},\"ipv4Unicast\":{\"fBit\":false,\"endOfRibStatus\":{\"endOfRibSend\":true,\"endOfRibSentAfterUpdate\":false,\"endOfRibRecv\":true},\"timers\":{\"stalePathTimer\":360}}},\"messageStats\":{\"depthInq\":0,\"depthOutq\":0,\"opensSent\":1,\"opensRecv\":1,\"notificationsSent\":0,\"notificationsRecv\":0,\"updatesSent\":8,\"updatesRecv\":6,\"keepalivesSent\":1,\"keepalivesRecv\":1,\"routeRefreshSent\":3,\"routeRefreshRecv\":3,\"capabilitySent\":0,\"capabilityRecv\":0,\"totalSent\":13,\"totalRecv\":11},\"minBtwnAdvertisementRunsTimerMsecs\":0,\"addressFamilyInfo\":{\"ipv4Unicast\":{\"updateGroupId\":1,\"subGroupId\":1,\"packetQueueLength\":0,\"commAttriSentToNbr\":\"extendedAndStandard\",\"inboundPathPolicyConfig\":true,\"outboundPathPolicyConfig\":true,\"routeMapForIncomingAdvertisements\":\"PEER-IMPORT\",\"routeMapForOutgoingAdvertisements\":\"OWN-EXPORT\",\"acceptedPrefixCounter\":1,\"sentPrefixCounter\":1}},\"connectionsEstablished\":1,\"connectionsDropped\":0,\"lastResetTimerMsecs\":17000,\"lastResetDueTo\":\"No AFI/SAFI activated for peer\",\"lastResetCode\":30,\"externalBgpNbrMaxHopsAway\":1,\"hostLocal\":\"203.0.113.2\",\"portLocal\":179,\"hostForeign\":\"203.0.113.1\",\"portForeign\":51940,\"nexthop\":\"203.0.113.2\",\"nexthopGlobal\":\"fe80::bc06:c9ff:fe43:991e\",\"nexthopLocal\":\"fe80::bc06:c9ff:fe43:991e\",\"bgpConnection\":\"sharedNetwork\",\"connectRetryTimer\":120,\"readThread\":\"on\",\"writeThread\":\"on\"}}",
+    "RECOVERED_CONFIG_R2 {\"command\":\"show running-config\",\"output\":\"Building configuration...\\n\\nCurrent configuration:\\n!\\nfrr version 8.4.4\\nfrr defaults traditional\\nhostname fb09b-176918-r2\\ndomainname localdomain\\nno ipv6 forwarding\\nhostname Arshiya-Laptop\\nusername root nopassword\\n!\\nrouter bgp 65002\\n bgp router-id 2.2.2.2\\n neighbor 203.0.113.1 remote-as 65001\\n !\\n address-family ipv4 unicast\\n  network 198.51.100.0/24\\n  neighbor 203.0.113.1 route-map PEER-IMPORT in\\n  neighbor 203.0.113.1 route-map OWN-EXPORT out\\n exit-address-family\\nexit\\n!\\nip prefix-list OWN-LAN seq 10 permit 198.51.100.0/24\\nip prefix-list PEER-LAN seq 10 permit 192.0.2.0/24\\n!\\nroute-map OWN-EXPORT permit 10\\n match ip address prefix-list OWN-LAN\\nexit\\n!\\nroute-map PEER-IMPORT permit 10\\n match ip address prefix-list PEER-LAN\\nexit\\n!\\nend\\n\"}",
+    "RECOVERED_RIB_R2 {\"192.0.2.0/24\":[{\"prefix\":\"192.0.2.0/24\",\"prefixLen\":24,\"protocol\":\"bgp\",\"vrfId\":0,\"vrfName\":\"default\",\"selected\":true,\"destSelected\":true,\"distance\":20,\"metric\":0,\"installed\":true,\"table\":254,\"internalStatus\":16,\"internalFlags\":8,\"internalNextHopNum\":1,\"internalNextHopActiveNum\":1,\"nexthopGroupId\":10,\"installedNexthopGroupId\":10,\"uptime\":\"00:00:15\",\"nexthops\":[{\"flags\":3,\"fib\":true,\"ip\":\"203.0.113.1\",\"afi\":\"ipv4\",\"interfaceIndex\":3,\"interfaceName\":\"transit\",\"active\":true,\"weight\":1}]}]}",
+    "RECOVERED_KERNEL_R2 [{\"dst\":\"192.0.2.0/24\",\"nhid\":10,\"gateway\":\"203.0.113.1\",\"dev\":\"transit\",\"protocol\":\"bgp\",\"metric\":20,\"flags\":[]},{\"dst\":\"198.51.100.0/24\",\"dev\":\"lan\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"198.51.100.1\",\"flags\":[]},{\"dst\":\"203.0.113.0/30\",\"dev\":\"transit\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"203.0.113.2\",\"flags\":[]}]",
+    "RECOVERED_LINKS_R2 [{\"ifindex\":1,\"ifname\":\"lo\",\"flags\":[\"LOOPBACK\",\"UP\",\"LOWER_UP\"],\"mtu\":65536,\"qdisc\":\"noqueue\",\"operstate\":\"UNKNOWN\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"loopback\",\"address\":\"00:00:00:00:00:00\",\"broadcast\":\"00:00:00:00:00:00\"},{\"ifindex\":3,\"link_index\":4,\"ifname\":\"transit\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"be:06:c9:43:99:1e\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":0},{\"ifindex\":4,\"link_index\":2,\"ifname\":\"lan\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"noqueue\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"6e:ea:09:bd:f8:3a\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"link_netnsid\":1}]",
+    "RECOVERED_PROBE_CLIENT {\"target\":\"198.51.100.20\",\"exitCode\":0,\"output\":\"PING 198.51.100.20 (198.51.100.20) 56(84) bytes of data.\\n64 bytes from 198.51.100.20: icmp_seq=1 ttl=62 time=0.088 ms\\n\\n--- 198.51.100.20 ping statistics ---\\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\\nrtt min/avg/max/mdev = 0.088/0.088/0.088/0.000 ms\\n\"}",
+    "RECOVERED_PROBE_SERVER {\"target\":\"192.0.2.10\",\"exitCode\":0,\"output\":\"PING 192.0.2.10 (192.0.2.10) 56(84) bytes of data.\\n64 bytes from 192.0.2.10: icmp_seq=1 ttl=62 time=0.078 ms\\n\\n--- 192.0.2.10 ping statistics ---\\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\\nrtt min/avg/max/mdev = 0.078/0.078/0.078/0.000 ms\\n\"}",
+    "PASS recovery: original network intent restores remote installation and both endpoint ICMP probes.",
+    "PASS cleanup: owned processes/namespaces/runtime paths removed."
+  ],
+  "error": "",
+  "scope": "Raw trial awaiting independent assertions; not a passing verification report."
+}

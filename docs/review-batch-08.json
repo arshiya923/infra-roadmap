@@ -1,0 +1,201 @@
+{
+  "date": "2026-10-09",
+  "status": "ACCEPTED",
+  "reviewedIds": [
+    "s2-g4-t0",
+    "s2-g4-t1",
+    "s2-g4-t2",
+    "s2-g5-t0",
+    "s2-g5-t1",
+    "s2-g5-t2",
+    "s2-g5-t3",
+    "s2-g5-t4",
+    "s2-g5-t5",
+    "s2-g6-t0",
+    "s2-g6-t1",
+    "s2-g6-t2",
+    "lab-2"
+  ],
+  "originalContent": "Inspected original STP why/concepts/lab brief. Its triangle/root/uplink-fault intent is retained; PortFast and protection are separate later original nodes. Actual counters/captures belong to optional device evidence and the upcoming integrated lab, not browser observations.",
+  "technicalReview": "Reviewed explanation, terminology, mode/instance boundaries, original ten exam questions and three quick answers. Reused fixed-A/equal-cost/no-parallel-link stable model; its Alternate/Discarding labels explicitly use rapid-style vocabulary. Traditional learning versus listening and root-versus-gateway are distinct. Model cases and arithmetic agree with independently expected four cases. No timer, multi-fault, BPDU or service measurement inferred.",
+  "commandReview": "Source opened and root-primary plus monitoring sections inspected. Mode identification precedes interpretation; prepared isolated VLAN/trunks and recorded prior priority are prerequisites. Rollback restores actual prior state. Commands are guided/unexecuted.",
+  "manualRendering": "Actual flow and both ends of the horizontal lab path inspected. Stable triangle, six endpoint rows, selector and reset are readable in 320px light/dark screenshots. Flow active-step visibility passes normal and zoomed at 320px.",
+  "evidence": [
+    "docs/browser-results-batch-08.json",
+    "docs/quality-audit-latest.json",
+    "tests/switching-models.cjs",
+    "docs/commands-results-batch-08.json"
+  ],
+  "remaining": [],
+  "limits": "Acceptance covers curriculum and recorded bounded evidence. No actual Cisco/parser/BPDU/LACP/counter/live capture or recovery timing. Earlier isolated Linux evidence does not establish this optional device build. Appropriate guided/model/tabletop exercises are distinguished from actual vendor execution.",
+  "rstpReview": {
+    "original": "Preserved original RSTP ID/title; inventory has no separate RSTP brief. STP triangle transitions and following MST/protection topics remain distinct.",
+    "technical": "Reviewed all ten serialized exam questions/answers/explanations and three quick checks. Proposal/synchronization/agreement is scoped to the illustrated point-to-point sequence; no every-port shutdown or universal timing promise. Alternate versus backup, operational edge versus guard, legacy-facing behavior and actual traffic/service checkpoints are distinct.",
+    "implementation": "Inspected actual six-case evidence module and integration. Cases are authored observations, copied on read, with invalid/prototype IDs rejected. No BPDU/parser/timer/device operation. Service arithmetic independently reviewed: 7-0=7, 7-5=2, 7-2=5.",
+    "commands": "Reopened exact 17.15 mode procedure; rapid-pvst is global switch-wide mode intent. Read-only monitoring precedes optional coordinated mode change; prior-mode and independent-access rollback stated. No forced link-type or protocol-clear shortcut supplied.",
+    "manual": "Flow labels, both scrolling lab-path endpoints and 320px light/dark service case inspected; observations, conclusion and missing-evidence note are readable.",
+    "evidence": [
+      "tests/stp-evidence.cjs",
+      "docs/browser-rstp-results.json",
+      "docs/browser-results-batch-08.json",
+      "docs/quality-audit-latest.json"
+    ]
+  },
+  "mstReview": {
+    "original": "Original MST ID/title inspected and retained; no separate original brief. Does not compress preceding STP/RSTP units or later integrated lab.",
+    "technical": "All ten serialized exam questions/answers/explanations and three quick checks reviewed. VLAN versus instance identity, IST/CIST/CST scope, full map, revision matching, mode boundaries, active versus pending and incremental rollback remain distinct. No universal platform instance-count claim.",
+    "implementation": "Inspected actual map constructor/comparator and seven cases. Named ASCII and instance 0/1/2 are explicit exercise limits. Every VLAN 1..4094 compared; canonical default 0; assignment duplicates and malformed/sparse maps rejected. No vendor digest, BPDU, real adjacency, root election or boundary-state simulation.",
+    "commands": "Read 17.15 pending/map/application/activation procedure and Catalyst 9000 digest/current/pending examples. Exit applies changes; incremental assignments require a clean reviewed baseline. Activation is switch-wide and coordinated. Real parser/configuration unexecuted.",
+    "manual": "Flow and both scrolling lab endpoints inspected, plus 320px light/dark map/difference views. Clarified carriage text to service VLAN 20 to avoid implying uncarried VLAN 50 is available; updated narrow capture inspected and focused model/browser tests rerun.",
+    "evidence": [
+      "tests/mst-models.cjs",
+      "docs/browser-mst-results.json",
+      "docs/browser-rstp-results.json",
+      "docs/quality-audit-latest.json"
+    ]
+  },
+  "portfastReview": {
+    "original": "Retained original PortFast ID/title; inventory has no separate brief. Related BPDU Guard/protection remain their original following nodes.",
+    "technical": "Reviewed all ten serialized exam prompts/answers/explanations and three quick checks. Edge topology, command coverage, configured versus operational state, inherited defaults and service carriage remain separate. A server label or guest MAC count does not prove topology; no actual state/guard/timing claim inferred from flags.",
+    "implementation": "Inspected actual selected checker and independent eight-entry coverage table. 192 combinations cover four intents, two roles, three attachment conditions and three boolean flags. Carriage does not change the edge prerequisite result. Global-default context explicitly excludes per-interface override. Invalid flags/selectors rejected and results independent.",
+    "commands": "17.15 PortFast access/trunk forms and nontrunk default scope reviewed against the opened guide. Guided single-port examples assume prepared attachment/VLAN service and exact baseline. Trunk extension is an alternative reviewed endpoint plan. No broad global default/filter recipe or actual parser execution.",
+    "manual": "Actual flow, both scrolling lab endpoints and 320px light/dark checker inspected. All selectors/flags, satisfied edge status with excluded carriage and separate service warning are readable. Mobile active step visibility passes normal/zoomed.",
+    "evidence": [
+      "tests/edge-models.cjs",
+      "docs/browser-portfast-results.json",
+      "docs/browser-mst-results.json",
+      "docs/quality-audit-latest.json"
+    ]
+  },
+  "bpduGuardReview": {
+    "original": "Original ID/title preserved; inventory contains no separate BPDU Guard brief. PortFast, Root Guard and Loop Guard remain separate original topics.",
+    "technical": "Reviewed actual serialized ten exams and three quick checks, trigger/scope, cause/action versus state, whole-port response, containment versus availability, and correction versus restoration. Interface enable is independent of PortFast; global default assumes operational edge at reception with no override.",
+    "implementation": "Inspected guard-models.js and integration. 48 independently expected combinations and incident history pass. Policy or checkbox edits retain prior state; fresh reception clears correction assumption. Restoration review is explicitly a teaching workflow gate, not an IOS command rejection or actual service observation.",
+    "commands": "Reopened 17.15 optional guard scope and exact interface/hardware recovery reference. General cause-investigation guide has older examples and does not establish actual 9300 execution. All four guided command blocks remain unexecuted, with reviewed dedicated attachment, independent access, cause correction and exact prior-context rollback.",
+    "manual": "Inspected actual flow, both horizontal lab endpoints and 320px light/dark pending-recovery captures. Scope, state, workflow caveat and controls are readable. Every active step remains visible normal/zoomed.",
+    "evidence": [
+      "tests/guard-models.cjs",
+      "docs/browser-bpdu-guard-results.json",
+      "docs/browser-portfast-results.json",
+      "docs/quality-audit-latest.json",
+      "docs/commands-results-batch-08.json"
+    ]
+  },
+  "rootGuardReview": {
+    "original": "Original Root Guard ID/title preserved; inventory contains no separate brief. BPDU Guard, Loop Guard and later storm protection remain separate nodes.",
+    "technical": "Reviewed actual serialized ten exams/answers/explanations and three quick checks. Superior information differs from any-BPDU reception; root-inconsistent differs from err-disable. Same-root better-path evidence can conflict. Root perimeter requires normal/failure-role review. Automatic recovery criterion is distinct from actual role/state, carriage and original service.",
+    "implementation": "Inspected actual root-guard-models.js and integration. 168 independent expected scope/placement/carriage cases pass: two-VLAN Rapid PVST, internal MST 0/1/2 and selected boundary IST cascade. Superiority is assumed input, not packet ranking. No other constraints or full region/PVST simulation. No-constraint rows never claim forwarding. Arrays are copied, duplicates/sparse/invalid/prototype inputs rejected. Domain change resets fixture assumptions explicitly.",
+    "commands": "Reviewed exact 17.15 optional feature enable/monitoring, MST boundary IST impact and root/loop exclusion. General Root Guard article has historical commands/state vocabulary; these are not treated as universal target syntax/timers. Same-root cost-method incident is source evidence, not executed here or a copied global fix. Three command blocks remain guided/unexecuted with isolated reviewed boundary, independent access and exact prior context rollback.",
+    "manual": "Initial 320px table overflow was reproduced, traced to the wrapper and repaired with the existing named keyboard-focusable scroll wrapper plus local wrapping for the two-column table. Fresh focused checks and all-route audit pass after repair. Actual flow, both lab path endpoints and updated 320px light/dark boundary table/state/controls inspected. All mobile active flow steps visible in normal/zoomed states.",
+    "evidence": [
+      "tests/root-guard-models.cjs",
+      "docs/browser-root-guard-results.json",
+      "docs/browser-bpdu-guard-results.json",
+      "docs/quality-audit-latest.json",
+      "docs/commands-results-batch-08.json"
+    ]
+  },
+  "loopGuardReview": {
+    "original": "Original Loop Guard ID/title preserved; inventory contains no separate brief. Other guard triggers and storm/mirroring topics remain separate nodes.",
+    "technical": "Reviewed actual serialized ten exams and three quick checks. Expected-reception loss differs from superior or any-BPDU trigger. Established history and recognized loss differ from never-received new link or one missing packet. Receiving-role/point-to-point/edge and carrier contexts are explicit. Recovery does not promise forwarding: a recovered alternate can remain nonforwarding. UDLD scope, MST boundary and EtherChannel logical-port contexts are explained separately.",
+    "implementation": "Inspected loop-guard-models.js and reader integration. Two independently configured VLAN rows use authored role/reception/history observations, no inheritance override or other protection. 288 independently expected combinations verify established root/alternate loss, designated/no-history/shared/edge/down exclusions, effective policy and independent service carriage. Input types/enums reject malformed cases. Carrier-down disables authored receipt/loss controls. Loading a loss case explicitly includes prior receipt and recognition; it runs no timer or packet.",
+    "commands": "Opened exact 17.15 optional-feature and Layer 2/3 command references for point-to-point/root-loop exclusion, interface loop/root/none and global-default override contexts. General technical note supports established history, per-tree action, automatic recovery and UDLD distinction; historical timer/output/interoperability summaries are not universal target parser or rapid-time claims. All three command blocks remain guided/unexecuted with dedicated isolated receiving link, independent access and exact prior explicit/inherited context rollback.",
+    "manual": "Actual flow, both lab path endpoints and 320px light/dark loss case inspected. Role/reception selectors, VLAN rows, history/timer caveat and recovery/service conclusions are readable. Four widths and every mobile active flow step in normal/zoomed states pass focused checks.",
+    "evidence": [
+      "tests/loop-guard-models.cjs",
+      "docs/browser-loop-guard-results.json",
+      "docs/browser-root-guard-results.json",
+      "docs/quality-audit-latest.json",
+      "docs/commands-results-batch-08.json"
+    ]
+  },
+  "stormControlReview": {
+    "original": "Original Storm Control ID/title preserved; inventory contains no separate brief. Spanning-tree control and port-security/mirroring remain separate topics.",
+    "technical": "Reviewed actual serialized ten exams/answers/explanations and three quick checks. Class/direction/unit/implementation are explicit. Hysteresis history, omitted falling and 0/100 percentage endpoints are distinct. Percentage conversion is nominal arithmetic, not throughput. Counted-size pps arithmetic explicitly excludes added overhead. Filter, notification and shutdown have distinct evidence; trap/shutdown flags are independent. A falling sample does not clear a disabled latch or prove cause/service repair.",
+    "implementation": "Inspected storm-models.js and integration. Conceptual broadcast-only percentages use strict entry/return rule, not ASIC/counter/burst/class implementation. 192 independently expected boundary/action/prior-latch cases, four full sequences and 20002 hundredth-rate decisions pass. Percentage/link arithmetic and invalid precision/range/order/type inputs pass. Invalid sample preserves history/state. Notification only marks authored entry, not real frequency/delivery. After a disabled latch, samples are planning values. Reset/sequence begins a new authored scenario explicitly, not real recovery.",
+    "commands": "Opened exact 17.15 security guide/reference for class/unit/implementation, threshold endpoints/ordering, show/enable and independent action flags. Fresh interface/hardware reference verifies storm-control cause/recovery context; security text abbreviates restoration while generic error-disable guidance gives administrative recycle, so no universal one-line recovery claim is made. Three blocks remain guided/unexecuted with prior class/action/state, independent access, bounded isolated method and exact-context rollback. The 20/10 example is not a production recommendation and does not erase prior shutdown/trap actions.",
+    "manual": "Actual flow and both lab endpoints inspected. Narrow history initially had an unreadable long notification cell; local wrapping and sample-column width were repaired. Final focused checks and all-route audit pass. Updated 320px light/dark input/meter/state/history and both keyboard-scrollable history endpoints inspected. Exact text complements the small arithmetic meter; active mobile flow is visible normal/zoomed.",
+    "evidence": [
+      "tests/storm-models.cjs",
+      "docs/browser-storm-control-results.json",
+      "docs/browser-loop-guard-results.json",
+      "docs/quality-audit-latest.json",
+      "docs/commands-results-batch-08.json"
+    ]
+  },
+  "portSecurityReview": {
+    "original": "Original Port Security ID/title inspected and retained in Edge protection. No separate original brief; following SPAN/RSPAN/ERSPAN and integrated lab remain separate nodes.",
+    "technical": "Reviewed all ten serialized exam questions, answers and explanations plus three quick checks. Source budget is not physical box count or authenticated identity. Known-source reuse differs from unlisted-at-capacity. Static seed leaves unused dynamic learning slots; sticky running intent is not automatically saved. Current, running, saved and disabled state are distinct. Cross-port conflicts, voice/trunk, aging and VLAN-only shutdown are outside the model.",
+    "implementation": "Inspected security-port-models.js, lesson and renderer integration. Fixed locally administered A/B/C examples and limits 1-3 are exercise scope. 108 independently expected profile/capacity/mode/source trajectories pass alongside saved/unsaved/stale/corrected persistence, static plus dynamic learning, retained latch/counter, invalid/prototype/sparse/duplicate/counter overflow and deep-copy checks. Saved checkpoint only loads address intent, never simulates whole-device restart or recovery. Browser test caught a missing mount export; fixed and all focused/general/all-route checks passed afterward.",
+    "commands": "Opened exact 17.15 Port Security guide and security command reference for types, saved intent, maximum, static access, violation, sticky conversion and monitoring. Interface/hardware cause/recovery context inspected. Guide shutdown trap/log table conflicts with command prose; actual target evidence remains required. Sticky disabling paragraphs have conflicting context, so no blanket removal/disable recipe is supplied. Four blocks remain guided and unexecuted, with authorized prepared service/source baseline, independent management, exact current/running/saved rollback and original-service validation. No automatic whole-switch save.",
+    "manual": "Inspected actual flow, both horizontal lab endpoints, 320px light/dark selectors/state/address table/buttons and both keyboard-scrollable record endpoints. Shortened the static-scenario option to fit the narrow selector; retained detailed assumption in scenario note. Updated focused captures inspected. Table deliberately scrolls locally while page has no horizontal overflow; flow remains visible normal and zoomed.",
+    "evidence": [
+      "tests/security-port-models.cjs",
+      "docs/browser-port-security-results.json",
+      "docs/browser-storm-control-results.json",
+      "docs/quality-audit-latest.json",
+      "docs/commands-results-batch-08.json"
+    ]
+  },
+  "spanReview": {
+    "original": "Inspected and retained original SPAN ID/title in Traffic mirroring; no separate original brief. RSPAN/ERSPAN and integrated lab remain separate original nodes.",
+    "technical": "Reviewed ten serialized exam questions/answers/explanations and three quick checks against actual transcript and arithmetic. Receive/transmit are source-relative. Input-copy presence is not original delivery, repeated authored frame IDs are not a universal hardware duplication/loop claim, and filter selection is not original forwarding policy. Dedicated destination role, source/filter context, tag visibility, retention and owned-session cleanup are distinct. Source limits differ between guide/reference; no universal count asserted.",
+    "implementation": "Inspected span-models.js and actual HTML/renderer hooks. Seven authored events describe four frames on two assumed VLAN-carrying trunks. All 36 independently expected source/direction/VLAN selections pass; repeated/unique counts and later-drop observation reviewed. Eight explicit capacity boundary/fraction cases pass; invalid/sparse/duplicate/enum/range/zero/subminimum inputs and copied-result isolation verified. Numeric aggregate assumptions remain independent of transcript filters. Changed inputs clear the prior arithmetic conclusion; invalid inputs produce no valid conclusion. No actual copy, wire ordering, packet identity, tags or frame-drop selection is simulated.",
+    "commands": "Opened exact 17.15 SPAN/RSPAN guide and network-management source/destination/filter/show reference. Five command blocks are guided/unexecuted. Confirmed unused session and dedicated distinct destination with independent management and authorized baseline are required before writes. VLAN filter branch is limited to reviewed port-based trunk source. No broad session deletion, traffic injection, automatic save or untested saturation procedure. Cleanup targets only owned session and exact prior destination/service context.",
+    "manual": "Inspected actual flow, both scrolling lab-path ends and both keyboard-scrollable event-table ends. Final 320px light/dark source checkboxes, direction/filter selections, repeated/selected counts, table, capacity inputs/conclusion and reset are readable; local table scroll preserves page width. Mobile active-step visibility passes normal/zoomed. Both capacity ranges are explicitly labeled in the updated captures.",
+    "evidence": [
+      "tests/span-models.cjs",
+      "docs/browser-span-results.json",
+      "docs/browser-port-security-results.json",
+      "docs/quality-audit-latest.json",
+      "docs/commands-results-batch-08.json"
+    ]
+  },
+  "rspanReview": {
+    "original": "Original RSPAN ID/title retained in Traffic mirroring; original inventory and embedded roadmap inspected. No separate original brief; ERSPAN and integrated lab remain separate nodes.",
+    "technical": "Reviewed all ten serialized exam questions/answers/explanations and three quick checks. Original service VLAN, mirror transport VLAN, local session identity and analyzer output context remain distinct. Cross-switch local labels may differ. Carriage is not forwarding, and declared prerequisites are not packet operation or capture completeness. The selected target special flooding/no-learning, relabel/untagged presentation and control/encapsulation exclusions are scoped; no routed/encrypted/authenticated-collector claim.",
+    "implementation": "Inspected rspan-models.js, rendered gate logic and loader hooks. Fixed A-B-C chain, VLAN 901/902 and local labels 1/2 are exercise limits. All 8192 independent nine-condition/VLAN/local-label combinations pass, including ten check statuses and cumulative gates at masks 3/87/255/511. Six authored presets, strict sparse/type/enum/vector/prototype rejection, input immutability and copied scenario/result checks pass. Missing remote-span is an unmet declaration, not a simulated physical frame drop. Session selectors do not alter VLAN association. Presets are starting assumptions and reset does not change a device.",
+    "commands": "Opened exact 17.15 SPAN/RSPAN guide and matching network-management reference for remote-span, source/destination remote VLAN, local session examples and targeted removal. Six blocks remain guided/unexecuted, scoped separately to all participants, A source and C destination. Prepared trunks, reserved unused VLAN/session, distinct analyzer and independent management are prerequisites. No broad allowed-list replacement, automatic STP/VTP change, blanket session/VLAN deletion, injection or whole-switch save. A and C cleanup are explicit and coordinated; shared dependencies and retained capture files need separate reconciliation.",
+    "manual": "Actual flow, both lab-path ends and both keyboard-scrollable gate-path ends inspected. 320px light/dark selectors, nine checkbox labels, three missing conditions, local label/VLAN context and reset are readable. Corrected cumulative gate-card top alignment and clarified the selector as starting authored scenario, then reran focused checks/captures. No document horizontal overflow across four widths; lesson-flow active steps pass normal/zoomed.",
+    "evidence": [
+      "tests/rspan-models.cjs",
+      "docs/browser-rspan-results.json",
+      "docs/browser-span-results.json",
+      "docs/quality-audit-latest.json",
+      "docs/commands-results-batch-08.json"
+    ]
+  },
+  "erspanReview": {
+    "original": "Original ERSPAN ID/title and Traffic mirroring placement inspected and retained. No separate original brief. SPAN/RSPAN and integrated lab remain separate nodes.",
+    "technical": "Reviewed all ten serialized exam prompts/answers/explanations and three quick checks against sources, model and actual decoded bytes. Outer/inner addresses, local labels/flow ID, GRE IP protocol 47 versus TCP/UDP ports, collector local termination address versus origin, selected format expectations, admin/readiness, pure size arithmetic and copy truncation versus snap length are distinct. No actual original delivery or latency inferred.",
+    "implementation": "Inspected module/renderer/HTML/CSS hooks and fixture generator. 1024 independently expected declaration/address/flow/format combinations (eight complete), six scenarios, seven explicit size cases and 33 neighboring-boundary cases pass strict inputs/copy isolation. Path and size controls remain independent; inactive prefix ignored, active blank rejected and stale conclusion cleared. Supplied Type-II bytes independently checked for PCAP headers/timestamps/lengths, IP/GRE/ERSPAN fields, all IP checksums and full-inner UDP checksums. Installed TShark 4.2.2 confirms fields and five filters. Generator default is inert, explicit write preserves deterministic bytes and different existing content is refused.",
+    "commands": "Primary 17.15 guide source/destination mode sequences reviewed, including destination-source no shutdown placement. Actual capability examples conflict with guide support; conditional collector branch requires real model/release support. Five Cisco blocks remain guided/unexecuted; two offline TShark blocks actually verified. Prepared owned unused session, dedicated output, local termination address, route/VRF/policy baseline and independent management precede changes. No force, global routing/policy, truncation MTU recipe, broad deletion, saturation or automatic save.",
+    "manual": "Inspected actual four-stage flow, both horizontal lab endpoints and complete 320px light/dark selector/declaration/size/prefix/error/reset screenshots. Controls and descriptions fit without page overflow. Mobile flow steps visible normal/zoomed. Both actual HTTP artifact downloads match exact source bytes; direct-file model/artifact link works.",
+    "evidence": [
+      "tests/erspan-models.cjs",
+      "tests/erspan-fixture.py",
+      "docs/erspan-fixture-results.json",
+      "docs/browser-erspan-results.json",
+      "docs/browser-rspan-results.json",
+      "docs/quality-audit-latest.json",
+      "docs/commands-results-batch-08.json"
+    ],
+    "limits": "Offline synthetic PCAP and declared worksheet only. No Cisco parser/configuration, routing/VRF/policy measurement, live capture/emission, collector arrival, fragmentation/path discovery/hardware truncation, throughput, timestamp latency or original-service execution. Expired informational ERSPAN draft is format context, not a ratified standard or universal capability promise."
+  },
+  "integratedLabReview": {
+    "original": "Read the actual immutable original lab: build three switches with redundant links, VLANs, trunks, LACP, STP root, PortFast/BPDU Guard and test a link failure. All requirements retained with mapped optional three-target configuration and A3 AC fault/restore; no actual device build claimed.",
+    "technical": "Reviewed all ten serialized exam prompts/answers/explanations and three quick checks. Distinguishes member versus logical bundle, per-VLAN eligible graph, intended versus connected-component root, endpoint versus trunk fault, mirror declaration versus service, stable prediction versus manually recorded probe and event/transaction recovery evidence. The original AC fault branch is tested through its model control and actual-guided procedure remains unexecuted.",
+    "implementation": "4096 independently expected boolean/LACP/VLAN combinations cover all eight eligible graphs with explicit roots, costs, forwarding links, B-to-C path and endpoint/mirror distinctions. Eight presets, invalid inputs, copied results and probe contradiction/consistency semantics pass. Browser records are manual declarations and clear whenever topology/intent/prerequisite changes. One-member sufficiency, fixed cost 10 and no individual-member fallback are explicit, not platform defaults.",
+    "commands": "Inspected exact 17.15 EtherChannel, trunk, STP and optional-feature guides. Twelve blocks are guided/unexecuted. Named A/B/C port map, owned unused VLAN/Po1/ports, existing compatible Rapid PVST+ mode, database authority and independent management precede writes. Links remain down during VLAN/member/root preparation. B/C edge only has PortFast/BPDU Guard; C links have different partners and are not bundled. A3 fault restore assumes its immediately recorded enabled baseline; final exact prior-state rollback is separate. No mode change, blanket defaults, force aggregation, erase/reload, broad VLAN/session deletion, flood/BPDU injection or automatic save.",
+    "manual": "Inspected actual flow, both lab endpoints, desktop baseline topology, full 320px light/dark controls/state/selected-VLAN diagram and both keyboard-scrollable role-table ends. Refined SVG text size and no-VLAN/link-absence distinction; refreshed focused captures and checks inspected. Four widths preserve document bounds and every mobile flow step is visible normal/zoomed.",
+    "evidence": [
+      "tests/enterprise-lab-models.cjs",
+      "docs/browser-enterprise-lab-results.json",
+      "docs/browser-erspan-results.json",
+      "docs/commands-results-batch-08.json",
+      "docs/quality-audit-latest.json"
+    ],
+    "limits": "Fixed stable graph/declared worksheet only; no real Cisco parser/build, BPDU/LACP exchange, min-links/hash/standalone behavior, host configuration/transaction, fault event, latency/recovery timing, throughput or actual mirror/capture."
+  },
+  "acceptanceEvidence": "docs/acceptance-batch-08.json"
+}

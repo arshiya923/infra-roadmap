@@ -1,0 +1,1908 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "reviewer": "Primary assistant, direct work without GapCode",
+  "examCount": 130,
+  "quickCount": 39,
+  "exactRepeatedExamPromptsFullCourse": 0,
+  "topics": [
+    {
+      "topicId": "s2-g4-t0",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:technicalReview/commandReview/manualRendering/originalContent",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Baseline",
+          "question": "Which connections forward at both ends in the baseline authored triangle?",
+          "answer": "AB and AC.",
+          "explanation": "C discards toward B on BC.",
+          "type": "multiple-choice",
+          "options": [
+            "AB and AC.",
+            "AB, AC and BC.",
+            "BC only.",
+            "No links."
+          ],
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Cost",
+          "question": "After AB fails, what is B’s root path and illustrative total cost?",
+          "answer": "B to C to A, cost 20.",
+          "explanation": "Two available links each contribute cost 10.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-Q02"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Standby failure",
+          "question": "BC fails while AB and AC remain available. What changes and what remains available in this model?",
+          "answer": "The standby connection is lost; the baseline AB/AC forwarding paths remain.",
+          "explanation": "Current connectivity and remaining redundancy are different outcomes.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-Q03"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Identity",
+          "question": "Two bridges have equal configured priority in the same extended-system-ID scope. Which additional identity component can decide the lower bridge ID?",
+          "answer": "The bridge MAC address.",
+          "explanation": "Compare the complete applicable bridge identities rather than device names.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-Q04"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "States",
+          "question": "A traditional STP port is learning MAC addresses while withholding ordinary data forwarding. Which named state matches?",
+          "answer": "Learning.",
+          "explanation": "Listening does not learn source addresses; forwarding permits ordinary data traffic.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-Q05"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Gateway",
+          "question": "A diagram places the routed gateway on B but the observed root is A. Is that alone a protocol failure?",
+          "answer": "No; compare the topology to the intended root/gateway design and service requirements.",
+          "explanation": "The two roles need not be the same device, although placement affects the path.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "VLAN scope",
+          "question": "VLAN 10 forwards but VLAN 20 fails on the same cable. What evidence must be scoped independently?",
+          "answer": "VLAN membership/carriage, the applicable tree and both endpoint role/state, plus the original VLAN 20 service.",
+          "explanation": "Carrier and success in VLAN 10 are insufficient.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-Q07"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Unexpected root",
+          "question": "A newly attached switch becomes root. What should the incident record establish before a corrective priority change?",
+          "answer": "The actual identities, attachment/change history, intended authority and affected VLAN/service scope.",
+          "explanation": "A blind priority race can hide the attachment problem and redirect paths.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-Q08"
+        },
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Recovery objective",
+          "question": "A role table stabilizes before the service probe returns. Which event ends the service recovery interval?",
+          "answer": "The defined successful original service probe.",
+          "explanation": "Topology stabilization is a useful checkpoint but does not alone meet a service recovery criterion.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-Q09"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Evidence boundary",
+          "question": "The model reports AC/BC after AB loss. Which claim exceeds that evidence?",
+          "answer": "A real Cisco network exchanged BPDUs and restored service within a measured interval.",
+          "explanation": "The browser proves only its selected stable topology under fixed assumptions.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Layers",
+          "question": "Is the root bridge necessarily the IP default gateway?",
+          "answer": "No.",
+          "explanation": "Root election and routed gateway selection serve different functions.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Both endpoints",
+          "question": "Does a designated role at one end prove a cable forwards at both ends?",
+          "answer": "No.",
+          "explanation": "Inspect the other endpoint and the applicable instance.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Timing",
+          "question": "Can this stable-tree model establish a three-second recovery result?",
+          "answer": "No.",
+          "explanation": "It contains no message exchange, transition clock or service probes.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t0",
+          "questionId": "s2-g4-t0-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    },
+    {
+      "topicId": "s2-g4-t1",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:rstpReview",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "States",
+          "question": "Which state vocabulary matches the rapid protocol?",
+          "answer": "Discarding, learning, forwarding.",
+          "explanation": "It separates state from root/designated/alternate/backup roles.",
+          "type": "multiple-choice",
+          "options": [
+            "Discarding, learning, forwarding.",
+            "Root, gateway, backup.",
+            "Access, trunk, routed.",
+            "Active, passive, desirable."
+          ],
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Synchronization",
+          "question": "In the illustrated sequence, why must B make its required nonedge downstream path safe before agreeing with A?",
+          "answer": "To prevent the new root-facing path from creating a transient forwarding cycle.",
+          "explanation": "Agreement follows the selected synchronization condition.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-Q02"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Shared link",
+          "question": "A shared segment lacks a successful point-to-point agreement record. What fast-transition claim is unsupported?",
+          "answer": "That the same point-to-point handshake completed and guarantees the expected recovery interval.",
+          "explanation": "Inspect actual link/protocol/state progression and service measurements.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-Q03"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Alternate versus backup",
+          "question": "In the earlier triangle, C’s standby path through B reaches the root by another route. Which role fits that relationship?",
+          "answer": "Alternate.",
+          "explanation": "Backup concerns redundancy toward the same segment, not every alternate root path.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-Q04"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Edge BPDU",
+          "question": "An intended edge port receives a BPDU and has no BPDU guard. Can the record alone establish guard-driven err-disable?",
+          "answer": "No.",
+          "explanation": "Investigate operational edge treatment and the real peer; guard action needs its own configured condition.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-Q05"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Legacy",
+          "question": "A bridge is configured rapid-pvst but faces legacy information on one port. What should be inspected before promising rapid operation?",
+          "answer": "Operational neighbor/protocol behavior, link type, state and supported migration procedure.",
+          "explanation": "Local configuration alone does not prove the peer participates in rapid coordination.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-Q06"
+        },
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Checkpoint arithmetic",
+          "question": "The authored record is event 0, stable topology 2, service success 7 seconds. How long is the gap between topology and service?",
+          "answer": "Five seconds.",
+          "explanation": "7 minus 2 equals 5; investigate the gap rather than replacing service timing with topology timing.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-Q07"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Control loss",
+          "question": "Carrier is UP while expected BPDUs are missing. Why is “unidirectional link failure proven” too strong?",
+          "answer": "The record lacks both-peer direction/capture/cause evidence and actual protection state.",
+          "explanation": "Several faults or observation limitations can explain missing control.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-Q08"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Change scope",
+          "question": "Why review all affected VLANs before the guided rapid-pvst mode change?",
+          "answer": "The mode change affects the switch-wide spanning-tree operation, not only the inspected interface.",
+          "explanation": "Plan compatibility, topology, independent access and exact prior-mode rollback.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-Q09"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Evidence",
+          "question": "The explorer’s agreement case reveals a supported transition checkpoint. Which additional evidence establishes the service objective?",
+          "answer": "Timestamped actual event and successful original service probes over the verified traffic path.",
+          "explanation": "Authored observations and conceptual agreement do not measure device recovery.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Role/state",
+          "question": "Can a designated port still be discarding?",
+          "answer": "Yes.",
+          "explanation": "Role describes responsibility while state describes current data treatment.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Interoperability",
+          "question": "Does local rapid mode prove rapid operation with a legacy neighbor?",
+          "answer": "No.",
+          "explanation": "Inspect the operational segment and protocol behavior.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Recovery",
+          "question": "Does a two-second stable topology meet a five-second service objective if the service returns at seven seconds?",
+          "answer": "No.",
+          "explanation": "The service interval exceeds the objective by two seconds.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t1",
+          "questionId": "s2-g4-t1-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    },
+    {
+      "topicId": "s2-g4-t2",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:mstReview",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Default exercise map",
+          "question": "Where does unassigned VLAN 50 map in the baseline exercise?",
+          "answer": "Instance 0.",
+          "explanation": "Only VLANs 10/20 and 30/40 are explicitly assigned to nonzero groups.",
+          "type": "multiple-choice",
+          "options": [
+            "Instance 0.",
+            "Instance 1.",
+            "Instance 2.",
+            "It is automatically created as a new tree."
+          ],
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Complete comparison",
+          "question": "A and B match for VLANs 10/20/30/40 but B maps VLAN 50 to 1. Why is the full-map comparison different?",
+          "answer": "Region mapping comparison includes VLAN 50 even when the selected link does not carry it.",
+          "explanation": "Inspecting only active traffic VLANs omits part of the configuration.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-Q02"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Case sensitivity",
+          "question": "A uses lab-east and B uses Lab-East with identical revisions/maps. Which selected condition fails?",
+          "answer": "Exact region-name equality.",
+          "explanation": "The name comparison preserves capitalization.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-Q03"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Revision",
+          "question": "B changes revision 7 to 8 without changing the map. What does the comparator establish?",
+          "answer": "Revision mismatch, without a winner or configuration distribution.",
+          "explanation": "A larger number does not implement VTP-like takeover semantics.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-Q04"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Carriage",
+          "question": "Both peers match region parameters but VLAN 20 is excluded on the required trunk. What remains to be corrected and verified?",
+          "answer": "The actual VLAN 20 carriage/forwarding path and original service.",
+          "explanation": "Region equality does not permit traffic on the trunk.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-Q05"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Pending state",
+          "question": "Why is show pending insufficient evidence of the active region map?",
+          "answer": "It is the proposed MST configuration before application, so inspect the active configuration afterward.",
+          "explanation": "The guided procedure reviews pending state before exit applies it.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-Q06"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Authentication",
+          "question": "What security conclusion exceeds matching region name/revision/map evidence?",
+          "answer": "That the attached peer is authenticated and payload traffic is encrypted.",
+          "explanation": "Configuration matching does not provide those protections.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-Q07"
+        },
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Shared failure",
+          "question": "Two MST instances use the same physical uplink. Does the instance separation prove independent failure domains?",
+          "answer": "No.",
+          "explanation": "A shared physical fault can affect both groups.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-Q08"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Boundary",
+          "question": "A selected peer uses Rapid PVST+ while stored parameter values match. What evidence is needed beyond the comparator?",
+          "answer": "Actual operational mode, supported boundary/interoperability and common topology/service observations.",
+          "explanation": "The comparator does not simulate region adjacency or boundary roles.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-Q09"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Rollback",
+          "question": "A prior map included VLAN 50 in instance 2. Why is deleting only the newly added lab assignments an incomplete rollback proof?",
+          "answer": "It does not reconstruct and verify the complete recorded prior map and mode.",
+          "explanation": "Incremental commands and unrelated prior assignments require exact baseline comparison.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Identity",
+          "question": "Do VLANs mapped to one MST instance become one broadcast domain?",
+          "answer": "No.",
+          "explanation": "They share topology decisions while retaining VLAN identity.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Full map",
+          "question": "Can an uncarried VLAN mapping difference affect the selected region-parameter comparison?",
+          "answer": "Yes.",
+          "explanation": "The comparison covers the full map, not just current trunk traffic.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Revision",
+          "question": "Does a higher MST revision automatically distribute a winning map?",
+          "answer": "No.",
+          "explanation": "It is a matching configuration field, not a takeover channel.",
+          "type": "short-answer",
+          "topicId": "s2-g4-t2",
+          "questionId": "s2-g4-t2-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    },
+    {
+      "topicId": "s2-g5-t0",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:portfastReview",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Purpose",
+          "question": "Which task does PortFast address on a suitable endpoint attachment?",
+          "answer": "Avoiding the selected nonedge startup wait.",
+          "explanation": "It is not a capacity, VLAN-permission or authentication feature.",
+          "type": "multiple-choice",
+          "options": [
+            "Avoiding the selected nonedge startup wait.",
+            "Creating the allowed VLAN list.",
+            "Encrypting user payloads.",
+            "Negotiating EtherChannel."
+          ],
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Trunk coverage",
+          "question": "The checker has plain interface PortFast intent and a trunk role. What scoped configuration distinction should be inspected?",
+          "answer": "The documented PortFast trunk form and actual effective target configuration.",
+          "explanation": "Do not infer trunk coverage from access intent.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-Q02"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Inherited default",
+          "question": "Why can removing a local PortFast line fail to restore a prior nonedge effective setting?",
+          "answer": "An inherited global default or other effective context can remain.",
+          "explanation": "Compare the exact recorded baseline rather than one configuration line.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-Q03"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Endpoint topology",
+          "question": "A hypervisor carries several guest MAC addresses. What evidence determines edge suitability more directly than its server label or MAC count?",
+          "answer": "Its real Layer 2 bridge/uplink topology and whether another forwarding path can exist.",
+          "explanation": "Those labels alone neither prove nor disprove a loop path.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-Q04"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Guard boundary",
+          "question": "A BPDU arrives on an intended edge. What additional evidence is required before reporting BPDU Guard err-disable?",
+          "answer": "Actual guard configuration, operational context and corresponding observed action.",
+          "explanation": "PortFast and BPDU receipt alone do not establish the separate protection response.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-Q05"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Service path",
+          "question": "The checker is satisfied but VLAN carriage is removed. Which result is supported?",
+          "answer": "Edge prerequisites remain selected while a separate service-path defect exists.",
+          "explanation": "PortFast does not permit the missing VLAN.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-Q06"
+        },
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Timing",
+          "question": "The interface forwards before the host obtains addressing. Which checkpoint proves successful application startup?",
+          "answer": "The defined successful original application transaction.",
+          "explanation": "Forwarding, addressing and service timing are separate observations.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-Q07"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Change scope",
+          "question": "Why is a switch-wide global PortFast default a different reviewed change from one interface edit?",
+          "answer": "It affects a broader set of nontrunking attachments and their effective inheritance.",
+          "explanation": "Inventory and topology review must match the actual scope.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-Q08"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Operational state",
+          "question": "Why distinguish configured PortFast from operational edge treatment after an unexpected BPDU?",
+          "answer": "The configuration expresses intent while current behavior depends on actual control/attachment and policy observations.",
+          "explanation": "A persistent flag is not a full state or protection record.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-Q09"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Rollback",
+          "question": "What completes an optional lab rollback more convincingly than session closure?",
+          "answer": "Exact prior interface/inherited settings restored, effective state verified, original service repeated and saved intent reconciled.",
+          "explanation": "Ending the management session does not undo configuration changes.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Coverage",
+          "question": "Does plain interface PortFast cover the selected trunk role in this exercise?",
+          "answer": "No.",
+          "explanation": "The cited trunk form explicitly extends coverage.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Topology",
+          "question": "Does a command covering a role prove a bridging attachment is a suitable edge?",
+          "answer": "No.",
+          "explanation": "Review the real attachment topology independently.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Service",
+          "question": "Can edge prerequisites be satisfied while the selected VLAN is excluded?",
+          "answer": "Yes.",
+          "explanation": "Carriage is a separate service-path condition.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t0",
+          "questionId": "s2-g5-t0-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    },
+    {
+      "topicId": "s2-g5-t1",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:bpduGuardReview",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Interface scope",
+          "question": "Which selected guard policy can trigger on a received BPDU without operational edge?",
+          "answer": "Interface enable.",
+          "explanation": "The cited interface scope does not require PortFast.",
+          "type": "multiple-choice",
+          "options": [
+            "Interface enable.",
+            "Global PortFast default under a false operational-edge assumption.",
+            "No guard.",
+            "PortFast alone."
+          ],
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Global scope",
+          "question": "What selected condition is required for the global PortFast guard default in this exercise?",
+          "answer": "Operational edge at reception.",
+          "explanation": "Inspect actual effective context rather than only configured intent.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-Q02"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Latch",
+          "question": "A violation is latched, then scope is changed to none. What does the workflow retain?",
+          "answer": "The previous authored err-disable until restoration is reviewed.",
+          "explanation": "A policy edit is not a return-to-service observation.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-Q03"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Root distinction",
+          "question": "Must a received BPDU advertise a better root to meet the selected guard trigger?",
+          "answer": "No.",
+          "explanation": "Guard reception and Root Guard superior-information handling are different conditions.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-Q04"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Intent",
+          "question": "Why does a BPDU Guard event not prove malicious intent by itself?",
+          "answer": "It establishes a configured reception/action condition; the attachment and change context still require investigation.",
+          "explanation": "An unauthorized or accidental bridge can produce the same event.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-Q05"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Cause",
+          "question": "An interface is err-disabled. Which evidence establishes BPDU Guard more strongly than the state alone?",
+          "answer": "The correlated actual cause/action record, received-control context and effective guard policy.",
+          "explanation": "Err-disable can arise from other causes.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-Q06"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Workflow scope",
+          "question": "The correction checkbox is false and restoration review stays pending. Does this prove IOS rejects shutdown/no shutdown?",
+          "answer": "No.",
+          "explanation": "The checkbox implements a teaching incident workflow, not device parser enforcement.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-Q07"
+        },
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Availability",
+          "question": "Why can successful guard containment coincide with a failed original service?",
+          "answer": "The selected whole-port response intentionally interrupts that attachment.",
+          "explanation": "Protection outcome and availability outcome are separate.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-Q08"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Repeat event",
+          "question": "After reviewed restoration, a new BPDU triggers another selected violation. What should be investigated instead of assuming recovery fixed it?",
+          "answer": "The fresh reception, actual peer/path and effective policy/cause correction.",
+          "explanation": "A restored port does not establish a permanently corrected topology.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-Q09"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Recovery policy",
+          "question": "Why is automatic recovery separate from cause correction?",
+          "answer": "It can retry return-to-service while the underlying attachment problem persists.",
+          "explanation": "A timer is not proof of a healthy path or successful original transaction.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Scope",
+          "question": "Does interface BPDU Guard enable require PortFast in the cited context?",
+          "answer": "No.",
+          "explanation": "It is independent of PortFast.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Diagnosis",
+          "question": "Does err-disable alone prove the cause is BPDU Guard?",
+          "answer": "No.",
+          "explanation": "Correlate actual cause/action and policy evidence.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Recovery",
+          "question": "Does correcting an attachment alone prove service restoration?",
+          "answer": "No.",
+          "explanation": "Return-to-service and original service verification are separate steps.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t1",
+          "questionId": "s2-g5-t1-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    },
+    {
+      "topicId": "s2-g5-t2",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:rootGuardReview",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Trigger",
+          "question": "What selected observation conflicts with the guarded root boundary?",
+          "answer": "Superior spanning-tree information.",
+          "explanation": "Ordinary BPDU participation alone is not this trigger.",
+          "type": "multiple-choice",
+          "options": [
+            "Superior spanning-tree information.",
+            "Any user TCP connection.",
+            "Any ordinary BPDU regardless of superiority.",
+            "A successful application transaction."
+          ],
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Placement",
+          "question": "Why can Root Guard on a legitimate root-path attachment break the design?",
+          "answer": "It can block the path that must be allowed to lead toward the root.",
+          "explanation": "Review normal and failure roles before placing the boundary.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-Q02"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "State",
+          "question": "Carrier is up but the selected tree is root-inconsistent. What does carrier alone fail to establish?",
+          "answer": "Data forwarding and original service through that tree.",
+          "explanation": "Physical link and spanning-tree constraint are distinct.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-Q03"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "PVST scope",
+          "question": "Only VLAN 10 has superior information in the fixture. What conclusion is justified for VLAN 20?",
+          "answer": "No modeled Root Guard constraint, without proof of forwarding or service.",
+          "explanation": "Other state and carriage are not calculated.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-Q04"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "MST boundary",
+          "question": "How does the boundary IST block differ from selecting only internal MST instance 1?",
+          "answer": "The boundary IST case constrains all three exercise instances; the internal case constrains instance 1.",
+          "explanation": "Actual mode, boundary and mapping need evidence.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-Q05"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Same root",
+          "question": "Why investigate path cost even if the intended root ID is unchanged?",
+          "answer": "Better received information toward that same root can conflict with the protected boundary.",
+          "explanation": "Superiority need not advertise a new malicious root.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-Q06"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Identity",
+          "question": "Does Root Guard authenticate a downstream bridge or prove malicious intent?",
+          "answer": "No.",
+          "explanation": "Identity and intent need separate evidence.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-Q07"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Recovery",
+          "question": "What is the recovery criterion, and must the BPDU Guard manual restart procedure be copied?",
+          "answer": "Superior BPDUs cease; Root Guard recovery is automatic, so that separate procedure is not the criterion.",
+          "explanation": "Observe actual resulting state and original service.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-Q08"
+        },
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Service",
+          "question": "Superior information ceases but carriage remains excluded. Why is service restoration unsupported?",
+          "answer": "Removing the guard condition does not repair the carriage defect or prove an original transaction.",
+          "explanation": "Report protection and service independently.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-Q09"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Feature choice",
+          "question": "Why not combine Root Guard and Loop Guard on this interface as a universal fix?",
+          "answer": "The cited procedure prohibits simultaneous enable; their placement and triggers address different requirements.",
+          "explanation": "Review boundary and control-loss design before selection.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Trigger",
+          "question": "Does every ordinary BPDU trigger Root Guard?",
+          "answer": "No.",
+          "explanation": "Superior information conflicting with the protected root boundary is the selected trigger.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "State",
+          "question": "Is root-inconsistent the same as BPDU Guard err-disable?",
+          "answer": "No.",
+          "explanation": "They have different triggers, scope and recovery.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Recovery",
+          "question": "Does removal of a Root Guard constraint prove original service works?",
+          "answer": "No.",
+          "explanation": "Actual normal STP, carriage and original transaction still need observation.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t2",
+          "questionId": "s2-g5-t2-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    },
+    {
+      "topicId": "s2-g5-t3",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:loopGuardReview",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Trigger",
+          "question": "Which observation defines the exercise’s established control-loss case?",
+          "answer": "Prior expected reception followed by recognized loss.",
+          "explanation": "It is not one absent packet or superior information.",
+          "type": "multiple-choice",
+          "options": [
+            "Prior expected reception followed by recognized loss.",
+            "Any superior BPDU.",
+            "One missing application reply.",
+            "A successful user transaction."
+          ],
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Roles",
+          "question": "Why review possible root/alternate roles during failover rather than only currently blocked ports?",
+          "answer": "Protection placement must cover appropriate receiving paths across intended topologies.",
+          "explanation": "The same attachment can have different roles by tree or after a failure.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-Q02"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "History",
+          "question": "Why is the never-received fixture not proof of Loop Guard protection?",
+          "answer": "It lacks the established reception history and actual receiving role evidence.",
+          "explanation": "The browser role selector does not establish a new link’s real role.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-Q03"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Link scope",
+          "question": "What should be reviewed before applying the selected protection to a shared or edge attachment?",
+          "answer": "Actual point-to-point classification, edge intent and supported placement restrictions.",
+          "explanation": "The selected carrier-up receiving model does not establish those designs as supported.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-Q04"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "VLAN scope",
+          "question": "VLAN 10 has recognized loss while VLAN 20 still receives expected control. Must both fixture rows be constrained?",
+          "answer": "No.",
+          "explanation": "The selected per-tree observations are independent.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-Q05"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Recovery",
+          "question": "Expected BPDUs resume on an alternate path. What does automatic recovery fail to prove?",
+          "answer": "That the path now forwards or that the original service succeeds.",
+          "explanation": "Normal role/state, carriage and transaction evidence remain necessary.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-Q06"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Cause",
+          "question": "Why does loop-inconsistent state not identify malicious intent or a uniquely physical fault?",
+          "answer": "Different sender/path faults and changes can interrupt expected control reception.",
+          "explanation": "Correlate actual evidence rather than inferring intent or one cause from state.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-Q07"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "UDLD distinction",
+          "question": "Why can healthy bidirectional-link evidence fail to prove the peer is transmitting expected STP control?",
+          "answer": "Link checks and spanning-tree sender/reception behavior have different scope.",
+          "explanation": "UDLD and Loop Guard are not interchangeable.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-Q08"
+        },
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Timer",
+          "question": "Why is the expired selector not a measured recovery or detection interval?",
+          "answer": "It loads an authored recognized-loss condition without running packets or protocol timers.",
+          "explanation": "Actual mode and timed receipt/state/service evidence are separate.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-Q09"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Rollback",
+          "question": "Why is an explicit none override different from restoring prior inherited guard intent?",
+          "answer": "They can produce different effective policy under a global default.",
+          "explanation": "Rollback must restore and verify the recorded prior context, not just remove a visible line.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Trigger",
+          "question": "Does a received superior BPDU define the selected Loop Guard trigger?",
+          "answer": "No.",
+          "explanation": "Established expected-reception loss is a different condition from Root Guard’s trigger.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "History",
+          "question": "Does a new link with no received BPDUs establish the protected history case?",
+          "answer": "No.",
+          "explanation": "Prior reception and actual role need evidence.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Recovery",
+          "question": "Must an alternate path become forwarding when Loop Guard recovers?",
+          "answer": "No.",
+          "explanation": "Normal spanning-tree role/state still applies.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t3",
+          "questionId": "s2-g5-t3-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    },
+    {
+      "topicId": "s2-g5-t4",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:stormControlReview",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Scope",
+          "question": "What must a meaningful Storm Control threshold record include?",
+          "answer": "Traffic class, ingress attachment, unit and implementation context.",
+          "explanation": "A bare number is insufficient.",
+          "type": "multiple-choice",
+          "options": [
+            "Traffic class, ingress attachment, unit and implementation context.",
+            "Only a total interface average.",
+            "Only the endpoint name.",
+            "Only whether a service uses TCP."
+          ],
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Hysteresis",
+          "question": "At rising 20/falling 10, why can 15% suppress after a prior 20% sample but not before it?",
+          "answer": "The conceptual filter retains its state until below falling after entry.",
+          "explanation": "The decision includes history, not just the current sample.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-Q02"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Equality",
+          "question": "After entry at 20/10, what happens at 10 then 9 in the fixture?",
+          "answer": "10 retains suppression; 9 clears it.",
+          "explanation": "This is its strict return rule, not measured ASIC behavior.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-Q03"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Endpoint intent",
+          "question": "How do a 0/0 percentage endpoint and 100% differ in the fixture?",
+          "answer": "0/0 blocks the selected class; 100% imposes no selected percentage limit.",
+          "explanation": "Zero does not mean disable.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-Q04"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Arithmetic",
+          "question": "What nominal bandwidth does 20% represent at 1 Gbps and 10 Gbps?",
+          "answer": "200 Mbps and 2000 Mbps respectively.",
+          "explanation": "Percentage limits have different absolute arithmetic equivalents; these are not measured rates.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-Q05"
+        },
+        {
+          "difficulty": "Performance",
+          "testedConcept": "Packet units",
+          "question": "Why is 1000 pps insufficient to determine a universal bit rate?",
+          "answer": "Counted frame size and wire/accounting overhead are not specified.",
+          "explanation": "Packet count and bandwidth are different quantities.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Action",
+          "question": "The conceptual filter clears but the shutdown latch remains. Is service restoration proven?",
+          "answer": "No.",
+          "explanation": "Corrected cause, supported port recovery and original transaction evidence remain necessary.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-Q07"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Diagnosis",
+          "question": "Does a threshold crossing prove a malicious loop?",
+          "answer": "No.",
+          "explanation": "Faults, topology and legitimate workload changes need actual cause evidence.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-Q08"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Notification",
+          "question": "Why must a configured trap and a delivered monitoring incident be verified separately?",
+          "answer": "Event generation, SNMP/transport/receiver and enforcement have different evidence.",
+          "explanation": "The authored notification entry is not actual delivery or trap frequency.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-Q09"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Implementation",
+          "question": "Why should the broadcast percentage history not predict every multicast/unicast or ASIC drop decision?",
+          "answer": "The selected class, exceptions, policer accounting, burst and enforcement implementation differ.",
+          "explanation": "The exercise is a conceptual decision model, not a complete target data plane.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Units",
+          "question": "Is a bare 20 in the percentage fixture 20 packets per second?",
+          "answer": "No.",
+          "explanation": "The labeled percentage and pps are different units.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Hysteresis",
+          "question": "At 20/10, does an already-suppressing conceptual filter clear at exactly 10%?",
+          "answer": "No.",
+          "explanation": "The defined return rule requires below falling.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Recovery",
+          "question": "Does below-falling traffic alone clear the authored disabled-port latch?",
+          "answer": "No.",
+          "explanation": "Filtering recovery and port restoration are separate.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t4",
+          "questionId": "s2-g5-t4-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    },
+    {
+      "topicId": "s2-g5-t5",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:portSecurityReview",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Capacity",
+          "question": "At maximum 1 with A already secure, what selected event creates a capacity violation?",
+          "answer": "An unlisted B source arrives.",
+          "explanation": "Known A reuse is different from a new unlisted source.",
+          "type": "multiple-choice",
+          "options": [
+            "An unlisted B source arrives.",
+            "A source is reused while the fixture is enabled.",
+            "The table merely contains one entry.",
+            "A saved record is inspected."
+          ],
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Modes",
+          "question": "How do protect and restrict differ for the selected unlisted-at-capacity case?",
+          "answer": "Both drop that source; restrict adds selected counter and notification intent while protect does not.",
+          "explanation": "Actual records and trap delivery remain separate evidence.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-Q02"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Shutdown",
+          "question": "A stale current entry is removed after shutdown. Why is original service still unproven?",
+          "answer": "The disabled attachment needs supported recovery after correction, plus actual path and transaction verification.",
+          "explanation": "Slot removal alone is not restoration.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-Q03"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Spoofing",
+          "question": "Why can a frame with known secure A still fail to prove approved identity?",
+          "answer": "Its source address can be copied, and table satisfaction is not authentication.",
+          "explanation": "Learning or a static entry does not provide a cryptographic credential.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-Q04"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Sticky save",
+          "question": "Sticky A appears in running intent but was never saved. What is missing from a persistence claim?",
+          "answer": "The reviewed saved configuration containing that address intent.",
+          "explanation": "Running and saved configurations are distinct.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-Q05"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Stale saved record",
+          "question": "Why can a removed current sticky A reappear at the saved-address checkpoint?",
+          "answer": "The saved snapshot still contains A unless corrected intent is saved.",
+          "explanation": "Removal and persistence reconciliation are separate.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-Q06"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Free capacity",
+          "question": "With saved static A and maximum 2, why can B become a dynamic secure entry?",
+          "answer": "Unused learning capacity remains in this selected scenario.",
+          "explanation": "One static entry is not a universal complete no-learning allowlist.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-Q07"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Budget",
+          "question": "Why is a maximum of one not a universal choice for a phone/host or virtualized attachment?",
+          "answer": "Actual source/VLAN/topology behavior can require multiple reviewed addresses.",
+          "explanation": "Count observed intended sources rather than physical boxes alone.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-Q08"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Aging",
+          "question": "Why should ordinary MAC aging not be assumed to remove saved sticky secure intent?",
+          "answer": "Ordinary forwarding aging, secure types and configured/saved persistence have different scope.",
+          "explanation": "The selected guide excludes sticky secure aging; exact target behavior needs inspection.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-Q09"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Observability",
+          "question": "The target source table and command prose differ on shutdown notifications. What evidence should decide an actual incident?",
+          "answer": "Correlated actual cause/state/counter/log and authorized notification delivery on the target.",
+          "explanation": "Do not turn conflicting documentation into an unverified universal notification claim.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Identity",
+          "question": "Does a secure MAC record authenticate its sender?",
+          "answer": "No.",
+          "explanation": "A source constraint is not cryptographic identity.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Persistence",
+          "question": "Is learned sticky running intent automatically saved for restart?",
+          "answer": "No.",
+          "explanation": "Saved intent requires separate review and saving.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Recovery",
+          "question": "Does removing a stale current entry itself clear the authored disabled latch?",
+          "answer": "No.",
+          "explanation": "Cause correction and return-to-service are separate.",
+          "type": "short-answer",
+          "topicId": "s2-g5-t5",
+          "questionId": "s2-g5-t5-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    },
+    {
+      "topicId": "s2-g6-t0",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:spanReview",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Direction",
+          "question": "Which description correctly defines rx for a selected SPAN source?",
+          "answer": "Traffic received by the monitored source.",
+          "explanation": "Direction is relative to the source, not analyzer or application role.",
+          "type": "multiple-choice",
+          "options": [
+            "Traffic received by the monitored source.",
+            "Only traffic received by an application server.",
+            "Packets transmitted by the analyzer.",
+            "Only replies to a client."
+          ],
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Observation selection",
+          "question": "P1/rx with both authored VLANs selects which event IDs?",
+          "answer": "E1, E5 and E7.",
+          "explanation": "These are the three supplied receive events at P1; E4 is transmit.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-Q02"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Later drop",
+          "question": "F4 is selected at ingress but its authored original path drops it later. What delivery claim is unsupported?",
+          "answer": "That F4 reached the intended original destination.",
+          "explanation": "A copy-point observation and original delivery are separate.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-Q03"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Repeated observations",
+          "question": "Both sources/both directions select seven points for four frames. Why is that not proof of a loop?",
+          "answer": "The transcript includes the same frame at multiple selected observation points.",
+          "explanation": "Diagnose loops or retransmissions with actual path and identity evidence, not raw capture count alone.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-Q04"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Copy filter",
+          "question": "Why does a VLAN filter in this trunk-source fixture not prove original VLAN forwarding was changed?",
+          "answer": "It selects which authored copies are included; the original path is separate.",
+          "explanation": "An observation filter is not an original traffic policy.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-Q05"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Destination role",
+          "question": "Why must the destination be reviewed before reusing an existing service attachment?",
+          "answer": "The monitoring role changes ordinary port behavior and can interrupt that service.",
+          "explanation": "Use a distinct dedicated analyzer attachment and separate management path.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-Q06"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Capacity arithmetic",
+          "question": "Given offered 1200, destination 1000 and analyzer 800 Mbps on one counted-bit basis, what are ceiling and deficit?",
+          "answer": "800 Mbps ceiling and 400 Mbps sustained deficit.",
+          "explanation": "The bottleneck is 800; no exact missing-frame or actual-loss result is inferred.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-Q07"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Capture absence",
+          "question": "An expected reply is absent with ample average headroom. What still needs checking?",
+          "answer": "Source/direction/filter, session/destination, expected original exchange and analyzer capture/storage evidence.",
+          "explanation": "Headroom does not prove completeness or locate the missing packet.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-Q08"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Evidence handling",
+          "question": "Why does removing an owned SPAN session not finish all capture cleanup?",
+          "answer": "Retained files and analyzer access/retention remain separate responsibilities.",
+          "explanation": "Mirrored evidence can expose sensitive traffic after the copy session ends.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-Q09"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Rollback ownership",
+          "question": "Why is no monitor session all unsuitable for this owned-session exercise?",
+          "answer": "It can remove unrelated sessions rather than only the confirmed temporary session.",
+          "explanation": "Record ownership and restore exact prior destination/session context.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Direction",
+          "question": "Does rx mean received by the monitored source or received by an application server?",
+          "answer": "Received by the monitored source.",
+          "explanation": "Application role is a separate interpretation.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Original delivery",
+          "question": "Does a selected ingress observation prove original delivery?",
+          "answer": "No.",
+          "explanation": "The original packet can be dropped later, and selected copy arrival is also unproven.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Headroom",
+          "question": "Does average copy-rate headroom prove lossless capture?",
+          "answer": "No.",
+          "explanation": "Bursts and analyzer/capture/storage limits require evidence.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t0",
+          "questionId": "s2-g6-t0-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    },
+    {
+      "topicId": "s2-g6-t1",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:rspanReview",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Transport identity",
+          "question": "Which item associates the selected source and destination copy transport across switches?",
+          "answer": "The intended RSPAN transport VLAN.",
+          "explanation": "Local session labels belong to each switch.",
+          "type": "multiple-choice",
+          "options": [
+            "The intended RSPAN transport VLAN.",
+            "A mandatory equal local session number.",
+            "The analyzer application TCP port.",
+            "An arbitrary IP route without Layer 2 carriage."
+          ],
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Local session",
+          "question": "A uses local session 1 and C uses local session 2 with VLAN 901. What label-based fault is unsupported?",
+          "answer": "That unequal cross-switch local labels alone break this association.",
+          "explanation": "Check consistent local commands and matching transport VLAN instead.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-Q02"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Middle participant",
+          "question": "Both trunks are declared carried/forwarding but B lacks remote-span intent. What does the worksheet establish?",
+          "answer": "A declared participant prerequisite is missing; complete path assumptions are not established.",
+          "explanation": "It does not identify actual packet behavior or a physical cable fault.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-Q03"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Forwarding",
+          "question": "Why does A–B allowed/carried true not replace its forwarding check?",
+          "answer": "Permission to carry and effective forwarding for the VLAN are separate conditions.",
+          "explanation": "Inspect actual VLAN/path state, not only a link or configuration signal.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-Q04"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Mismatch",
+          "question": "A injects 901 and C collects 902. Why does changing C local session 2 to 1 not reconcile it?",
+          "answer": "The transport VLAN mismatch is independent of the local label.",
+          "explanation": "Session identity and transport selection answer different questions.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-Q05"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Transport scope",
+          "question": "Why is RSPAN not a general recipe for transporting copies across an arbitrary routed IP boundary?",
+          "answer": "This design uses a reviewed Layer 2 transport VLAN path.",
+          "explanation": "ERSPAN receives a separate routed-encapsulation lesson.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-Q06"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Capture transformation",
+          "question": "Why must original VLAN/control evidence be scoped at a selected RSPAN destination?",
+          "answer": "The target transport transformation and control exclusions can omit original tag/protocol context.",
+          "explanation": "Do not infer original traffic absence from a transformed copy alone.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-Q07"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Exposure",
+          "question": "Why can an unintended transport trunk matter even if the intended collector works?",
+          "answer": "It can extend copied-traffic exposure beyond the reviewed observation path.",
+          "explanation": "Transport VLAN identity does not authenticate or encrypt recipients.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-Q08"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Capacity",
+          "question": "What needs budgeting beyond the dedicated analyzer link?",
+          "answer": "Aggregate mirror traffic and competing capacity on each transport segment plus analyzer retention.",
+          "explanation": "The worksheet does not measure rate, queueing or loss.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-Q09"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Cleanup",
+          "question": "Why must a shared transport VLAN be reviewed before deleting it after one capture?",
+          "answer": "Other approved sessions or paths may still depend on it.",
+          "explanation": "Remove only owned temporary sessions and reconcile exact shared context.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Session labels",
+          "question": "Must the local source and destination session labels match across different switches?",
+          "answer": "No.",
+          "explanation": "The transport VLAN association is separate; commands within each local session must be consistent.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Transit",
+          "question": "Does an allowed trunk VLAN alone prove effective forwarding?",
+          "answer": "No.",
+          "explanation": "Inspect actual forwarding and the complete participant/path context.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Evidence",
+          "question": "Does a complete declared prerequisite worksheet prove retained capture?",
+          "answer": "No.",
+          "explanation": "Actual copy, analyzer and original-service evidence remain separate.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t1",
+          "questionId": "s2-g6-t1-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    },
+    {
+      "topicId": "s2-g6-t2",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:erspanReview",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Envelope",
+          "question": "Which addresses identify the original application exchange in an ERSPAN packet?",
+          "answer": "The inner packet addresses.",
+          "explanation": "Outer addresses identify the routed copy transport.",
+          "type": "multiple-choice",
+          "options": [
+            "The inner packet addresses.",
+            "Only the outer destination.",
+            "The local monitor-session number.",
+            "The analyzer management hostname."
+          ],
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Identifiers",
+          "question": "Source local session 1 and collector local session 2 both use flow 100. Does unequal local numbering alone establish a mismatch?",
+          "answer": "No; local session labels are separate from the shared ERSPAN flow identifier.",
+          "explanation": "Check actual transport address, flow and supported interpretation instead.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-Q02"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Collector address",
+          "question": "What does ip address mean in the selected destination-session source-properties submode?",
+          "answer": "The local outer termination address on the collector, matching its local interface or loopback.",
+          "explanation": "It is not the source origin. The force option has broader effects and is excluded.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-Q03"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "GRE policy",
+          "question": "Why is allowing TCP port 47 insufficient evidence of permitted ERSPAN transport?",
+          "answer": "GRE uses IP protocol 47 rather than a TCP/UDP port.",
+          "explanation": "Inspect actual policy and path for the outer protocol.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-Q04"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Size arithmetic",
+          "question": "With 1500 inner Ethernet bytes, 36 supplied extra header bytes and path IP MTU 1500, what is the pre-fragmentation result?",
+          "answer": "1536 outer-IP bytes, exceeding the supplied bound by 36.",
+          "explanation": "This arithmetic does not predict fragmentation, delivery or a hardware truncation setting.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-Q05"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Evidence trade",
+          "question": "A hypothetical 1400-byte retained prefix from a 1500-byte frame uses 36 extra bytes. What is gained and lost?",
+          "answer": "1436 outer-IP bytes fit the supplied 1500 bound, while 100 original frame bytes are omitted.",
+          "explanation": "The trial reduces evidence and makes no original-service or real-device guarantee.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-Q06"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Truncation distinction",
+          "question": "Synthetic record 4 has ERSPAN truncation set and equal PCAP captured/original record lengths. Is this contradictory?",
+          "answer": "No; the shortened mirrored copy is fully captured as an outer packet.",
+          "explanation": "ERSPAN copy truncation and PCAP snap-length omission describe different boundaries.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-Q07"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Capabilities",
+          "question": "A guide describes termination but a command-reference sample marks destination support false. What establishes target support?",
+          "answer": "Actual model/release capability evidence and the applicable supported collector procedure.",
+          "explanation": "Neither documentation example is a universal capability promise.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-Q08"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Observation lifecycle",
+          "question": "Why does removing the owned source session not finish the evidence lifecycle?",
+          "answer": "Collector state, retained-file access and retention still require their own cleanup.",
+          "explanation": "GRE/ERSPAN alone does not encrypt or authenticate retained evidence.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-Q09"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Service evidence",
+          "question": "All browser declarations are met and a synthetic offline packet decodes. What real operational claim remains unsupported?",
+          "answer": "Actual mirror arrival and successful original-service delivery.",
+          "explanation": "The exercise runs no target session, routing, live traffic or original transaction.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Envelope",
+          "question": "Does the outer destination identify the original application peer?",
+          "answer": "No; it identifies the copy transport collector.",
+          "explanation": "Inspect inner addresses for original packet context.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Protocol",
+          "question": "Is GRE TCP or UDP port 47?",
+          "answer": "Neither; it is IP protocol 47.",
+          "explanation": "Policy and diagnostics must address the actual protocol.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Evidence length",
+          "question": "Does the ERSPAN truncation flag imply PCAP captured length is smaller than original record length?",
+          "answer": "No.",
+          "explanation": "A shortened mirrored copy can be fully captured as its own outer packet.",
+          "type": "short-answer",
+          "topicId": "s2-g6-t2",
+          "questionId": "s2-g6-t2-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    },
+    {
+      "topicId": "lab-2",
+      "result": "PASS",
+      "technicalReview": "docs/review-batch-08.json:integratedLabReview",
+      "exams": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Topology mapping",
+          "question": "Why must C1 and C2 remain independent trunks in this lab?",
+          "answer": "They connect different independent partner switches A and B.",
+          "explanation": "The A/B two-member bundle is a different peer relationship.",
+          "type": "multiple-choice",
+          "options": [
+            "They connect different independent partner switches A and B.",
+            "A channel always needs exactly three members.",
+            "LACP can only use access ports.",
+            "STP requires every cable in one bundle."
+          ],
+          "topicId": "lab-2",
+          "questionId": "lab-2-Q01"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "Member versus bundle",
+          "question": "Why does one AB member loss leave the worksheet baseline path unchanged?",
+          "answer": "One eligible member suffices and logical cost stays fixed at 10 under this exercise.",
+          "explanation": "Actual min-links, cost and member/standalone behavior must be inspected on a device.",
+          "type": "short-answer",
+          "topicId": "lab-2",
+          "questionId": "lab-2-Q02"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Whole-bundle fault",
+          "question": "With AB unavailable and AC/BC usable, what are B root cost and B-to-C path in the fixed model?",
+          "answer": "B cost 20 to A through C; B-to-C uses BC directly.",
+          "explanation": "Logical cost is illustrative, not a recovery time or throughput value.",
+          "type": "short-answer",
+          "topicId": "lab-2",
+          "questionId": "lab-2-Q03"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "VLAN partition",
+          "question": "All carrier declarations are usable but VLAN 20 is excluded from both AB and BC. Why does B become a separate root?",
+          "answer": "B has no eligible VLAN 20 path to A/C and selects its own component reference.",
+          "explanation": "Intended root authority requires actual connectivity for that VLAN.",
+          "type": "short-answer",
+          "topicId": "lab-2",
+          "questionId": "lab-2-Q04"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Alternate carriage",
+          "question": "Why is restoring only AB VLAN 20 carriage enough to reconnect B in the isolation worksheet?",
+          "answer": "The restored AB path joins B to A and the already-carried AC path reaches C.",
+          "explanation": "A VLAN fault must be interpreted over all possible eligible paths.",
+          "type": "short-answer",
+          "topicId": "lab-2",
+          "questionId": "lab-2-Q05"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Protection role",
+          "question": "A connected tree coexists with an unavailable B endpoint. What should be inspected before disabling protection?",
+          "answer": "Actual edge state, cause/history, attachment role and the original transaction.",
+          "explanation": "BPDU Guard, port-security violations and guard inconsistency have different causes/scope.",
+          "type": "short-answer",
+          "topicId": "lab-2",
+          "questionId": "lab-2-Q06"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Fault scope",
+          "question": "Which interface is deliberately shut for the optional core link-failure experiment?",
+          "answer": "A GigabitEthernet1/0/3, the mapped dedicated AC link.",
+          "explanation": "Record its enabled baseline and independent management first; do not fail an unspecified production uplink.",
+          "type": "short-answer",
+          "topicId": "lab-2",
+          "questionId": "lab-2-Q07"
+        },
+        {
+          "difficulty": "Troubleshooting",
+          "testedConcept": "Evidence conflict",
+          "question": "A possible worksheet path coexists with a recorded failed probe. What is the justified next conclusion?",
+          "answer": "The actual service may depend on omitted prerequisites; collect scoped endpoint/path evidence.",
+          "explanation": "A stable prediction is not an executed host/application result.",
+          "type": "short-answer",
+          "topicId": "lab-2",
+          "questionId": "lab-2-Q08"
+        },
+        {
+          "difficulty": "Security",
+          "testedConcept": "Monitoring separation",
+          "question": "Original service is possible but mirror readiness is missing. Does the worksheet establish original-service failure?",
+          "answer": "No; observation readiness and original-service evidence are separate.",
+          "explanation": "An absent copy can result from the monitoring path rather than original forwarding.",
+          "type": "short-answer",
+          "topicId": "lab-2",
+          "questionId": "lab-2-Q09"
+        },
+        {
+          "difficulty": "Design",
+          "testedConcept": "Rollback",
+          "question": "Why is restoring A3 with no shutdown not the final whole-lab rollback?",
+          "answer": "It repairs only the demonstrated AC fault; prior VLAN, channel, cost, root, edge, host and saved intent still need reconciliation.",
+          "explanation": "Restore exact owned prior context and verify service/management instead of resetting broadly.",
+          "type": "short-answer",
+          "topicId": "lab-2",
+          "questionId": "lab-2-Q10"
+        }
+      ],
+      "quick": [
+        {
+          "difficulty": "Beginner",
+          "testedConcept": "Logical graph",
+          "question": "Do two valid AB bundle members count as two independent STP edges here?",
+          "answer": "No; the established bundle is one logical edge.",
+          "explanation": "Membership and actual logical state must be verified.",
+          "type": "short-answer",
+          "topicId": "lab-2",
+          "questionId": "lab-2-QC1"
+        },
+        {
+          "difficulty": "Intermediate",
+          "testedConcept": "VLAN isolation",
+          "question": "Does removing VLAN 20 from AB alone necessarily isolate B?",
+          "answer": "No.",
+          "explanation": "BC may provide an alternate selected path when it carries VLAN 20.",
+          "type": "short-answer",
+          "topicId": "lab-2",
+          "questionId": "lab-2-QC2"
+        },
+        {
+          "difficulty": "Advanced",
+          "testedConcept": "Recovery evidence",
+          "question": "Does a stable model path prove the measured service recovery interval?",
+          "answer": "No.",
+          "explanation": "Actual event and original transaction observations are independent.",
+          "type": "short-answer",
+          "topicId": "lab-2",
+          "questionId": "lab-2-QC3"
+        }
+      ],
+      "review": "Primary reviewed prompts, expected answers and explanations in the topic evidence; contracts/option uniqueness and full-course exact-prompt duplication checked separately."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "s0-g0-t0 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g0-t0 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g0-t1 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g0-t2 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g0-t3 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g1-t0 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g1-t1 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g1-t2 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g1-t3 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g1-t4 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g1-t5 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g1-t6 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g1-t7 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g2-t0 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g2-t1 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g2-t2 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g2-t3 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g2-t4 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g2-t5 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g3-t0 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g3-t1 active step visible forwards/backwards at 320px, normal and zoomed",
+    "s2-g3-t2 active step visible forwards/backwards at 320px, normal and zoomed"
+  ],
+  "errors": [],
+  "scope": "Active step visibility in all twenty-one Batch 07 routes plus one earlier regression route at 320px, both zoom states; not a full accessibility certification"
+}

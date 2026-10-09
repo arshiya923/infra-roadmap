@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Infrastructure lessons, visual explanations, safe labs and original exam practice. Built incrementally from the Infrastructure Expert Roadmap.">
+  <title>Infrastructure Fieldbook · Learn</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles/learning.css">
+  <link rel="stylesheet" href="styles/ospf-dr-bdr.css">
+  <link rel="stylesheet" href="styles/ospf-lsa.css">
+  <link rel="stylesheet" href="styles/ospf-troubleshooting.css">
+  <link rel="stylesheet" href="styles/eigrp.css">
+  <link rel="stylesheet" href="styles/eigrp-metrics.css">
+  <link rel="stylesheet" href="styles/eigrp-neighbors.css">
+  <link rel="stylesheet" href="styles/eigrp-topology.css">
+  <link rel="stylesheet" href="styles/bgp.css">
+  <link rel="stylesheet" href="styles/ebgp-policy.css">
+  <link rel="stylesheet" href="styles/ibgp.css">
+  <script defer src="content/catalog.js"></script>
+  <script defer src="scripts/network-models.js"></script>
+  <script defer src="scripts/address-tools.js"></script>
+  <script defer src="scripts/protocol-models.js"></script>
+  <script defer src="scripts/service-models.js"></script>
+  <script defer src="scripts/switching-models.js"></script>
+  <script defer src="scripts/routing-models.js"></script>
+  <script defer src="scripts/diagnostic-models.js"></script>
+  <script defer src="scripts/packet-models.js"></script>
+  <script defer src="scripts/cisco-models.js"></script>
+  <script defer src="scripts/boot-models.js"></script>
+  <script defer src="scripts/storage-models.js"></script>
+  <script defer src="scripts/lifecycle-models.js"></script>
+  <script defer src="scripts/port-models.js"></script>
+  <script defer src="scripts/vlan-control-models.js"></script>
+  <script defer src="scripts/aggregation-models.js"></script>
+  <script defer src="scripts/stp-evidence.js"></script>
+  <script defer src="scripts/mst-models.js"></script>
+  <script defer src="scripts/edge-models.js"></script>
+  <script defer src="scripts/guard-models.js"></script>
+  <script defer src="scripts/root-guard-models.js"></script>
+  <script defer src="scripts/loop-guard-models.js"></script>
+  <script defer src="scripts/storm-models.js"></script>
+  <script defer src="scripts/security-port-models.js"></script>
+  <script defer src="scripts/span-models.js"></script>
+  <script defer src="scripts/rspan-models.js"></script>
+  <script defer src="scripts/erspan-models.js"></script>
+  <script defer src="scripts/enterprise-lab-models.js"></script>
+  <script defer src="scripts/static-route-models.js"></script>
+  <script defer src="scripts/floating-route-models.js"></script>
+  <script defer src="scripts/pbr-models.js"></script>
+  <script defer src="scripts/ospf-models.js"></script>
+  <script defer src="scripts/ospf-area-models.js"></script>
+  <script defer src="scripts/ospf-dr-bdr-models.js"></script>
+  <script defer src="content/ospf-lsa-evidence.js"></script>
+  <script defer src="scripts/ospf-lsa-models.js"></script>
+  <script defer src="content/ospf-troubleshooting-evidence.js"></script>
+  <script defer src="scripts/ospf-troubleshooting.js"></script>
+  <script defer src="scripts/eigrp-models.js"></script>
+  <script defer src="scripts/eigrp-metric-models.js"></script>
+  <script defer src="content/eigrp-neighbor-evidence.js"></script>
+  <script defer src="scripts/eigrp-neighbors.js"></script>
+  <script defer src="scripts/eigrp-topology.js"></script>
+  <script defer src="content/bgp-evidence.js"></script>
+  <script defer src="scripts/bgp.js"></script>
+  <script defer src="scripts/ebgp-policy-models.js"></script>
+  <script defer src="scripts/ibgp-models.js"></script>
+  <link rel="stylesheet" href="styles/bgp-attributes.css">
+  <script defer src="scripts/bgp-attributes-models.js"></script>
+  <link rel="stylesheet" href="styles/local-preference.css">
+  <script defer src="scripts/local-preference-models.js"></script>
+  <link rel="stylesheet" href="styles/med.css">
+  <script defer src="scripts/med-models.js"></script>
+  <link rel="stylesheet" href="styles/as-path.css">
+  <script defer src="scripts/as-path-models.js"></script>
+  <link rel="stylesheet" href="styles/communities.css">
+  <script defer src="scripts/communities-models.js"></script>
+  <link rel="stylesheet" href="styles/route-control.css">
+  <script defer src="scripts/route-control-models.js"></script>
+  <link rel="stylesheet" href="styles/vrf-scope.css">
+  <script defer src="scripts/vrf-scope-models.js"></script>
+  <link rel="stylesheet" href="styles/gateway-redundancy.css">
+  <script defer src="scripts/gateway-redundancy-models.js"></script>
+  <link rel="stylesheet" href="styles/multicast.css">
+  <script defer src="scripts/multicast-models.js"></script>
+  <link rel="stylesheet" href="styles/qos-service.css">
+  <script defer src="scripts/qos-service-models.js"></script>
+  <link rel="stylesheet" href="styles/qos-labels.css">
+  <script defer src="scripts/qos-labels-models.js"></script>
+  <link rel="stylesheet" href="styles/advanced-lab.css">
+  <script defer src="scripts/advanced-lab-models.js"></script>
+  <link rel="stylesheet" href="styles/network-services.css">
+  <script defer src="content/network-services-cases.js"></script>
+  <script defer src="scripts/network-services-models.js"></script>
+  <link rel="stylesheet" href="styles/network-security.css">
+  <script defer src="content/network-security-cases.js"></script>
+  <script defer src="scripts/network-security-models.js"></script>
+  <link rel="stylesheet" href="styles/data-center.css">
+  <script defer src="content/data-center-cases.js"></script>
+  <script defer src="scripts/data-center-models.js"></script>
+  <link rel="stylesheet" href="styles/cisco-dc.css">
+  <script defer src="scripts/cisco-dc.js"></script>
+  <script defer src="scripts/storage-virtualization.js"></script>
+  <script defer src="scripts/automation-architecture.js"></script>
+  <link rel="stylesheet" href="styles/storage-virtualization.css">
+<link rel="stylesheet" href="styles/automation-architecture.css">
+  <link rel="stylesheet" href="styles/troubleshooting-mastery.css">
+  <script defer src="scripts/troubleshooting-mastery.js"></script>
+  <script defer src="scripts/device-mastery.js"></script>
+  <link rel="stylesheet" href="styles/capstone.css">
+  <script defer src="scripts/capstone.js"></script>
+  <script defer src="scripts/expansion.js"></script>
+  <script defer src="scripts/learning.js"></script>
+<link rel="stylesheet" href="styles/device-mastery.css">
+</head>
+<body>
+  <a class="skip" href="#lesson">Skip to lesson</a>
+  <header class="masthead">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">▦</span> INFRA / PATH <span class="edition">FOUNDATIONS / FIELDNOTES</span></a>
+    <div class="header-actions"><a href="supporting.html">Practice & references</a><a href="index.html">Roadmap ↗</a><button id="theme" aria-label="Switch color theme">Dark theme</button></div>
+  </header>
+  <div class="workspace">
+    <aside class="library" aria-label="Course library">
+      <div class="library-heading"><div><p class="kicker">THE CURRICULUM</p><h2>Build your foundations.</h2></div><button id="menu" aria-expanded="false" aria-controls="library-body">Browse lessons</button></div>
+      <div id="library-body">
+        <label class="search-label" for="lesson-search">Search the fieldbook</label>
+        <input id="lesson-search" type="search" placeholder="Try: memory, RAID, lscpu…" autocomplete="off">
+        <p id="search-status" class="small" aria-live="polite"></p>
+        <nav id="catalog" aria-label="Lessons"></nav>
+        <div class="library-note"><span class="status-dot"></span><strong>Growing, one batch at a time.</strong><p>Lesson availability describes authored material. Your checkmarks record your own study progress.</p><p id="editorial-count"></p></div>
+      </div>
+    </aside>
+    <main id="lesson" tabindex="-1"><p class="loading">Opening the fieldbook…</p></main>
+    <aside class="on-page" aria-label="On this page"><p class="kicker">IN THIS LESSON</p><nav id="anchors"></nav><div class="study-card"><p class="kicker">A WORKING HABIT</p><p>Observe.<br>Form a hypothesis.<br>Test one thing.<br>Verify recovery.</p></div></aside>
+  </div>
+  <div id="toast" role="status" hidden></div>
+</body>
+</html>

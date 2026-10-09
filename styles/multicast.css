@@ -1,0 +1,11 @@
+#mc-tool fieldset,#pm-tool fieldset,#ig-tool fieldset{border:1px solid var(--line);padding:1rem;margin:1rem 0}
+.multicast-controls label:has(input[type=checkbox]){display:flex;align-items:flex-start;gap:.65rem}
+.multicast-controls input[type=checkbox]{flex:0 0 auto;margin-top:.3rem}
+.multicast-controls input[type=text],.multicast-controls input[type=number]{display:block;width:100%;min-width:0;border:1px solid var(--line);padding:.6rem;border-radius:.3rem;background:var(--surface);color:var(--ink);font:inherit;box-sizing:border-box}
+.multicast-controls input[type=text]{max-width:34rem}
+.multicast-controls input[type=number]{max-width:12rem}
+#mc-tool table,#pm-tool table,#ig-tool table{min-width:670px}
+#mc-tool p,#pm-tool p,#ig-tool p,#ig-tool td{overflow-wrap:anywhere}
+#mc-tool [hidden],#pm-tool [hidden],#ig-tool [hidden]{display:none}
+#mc-tool input:focus-visible,#mc-tool select:focus-visible,#mc-tool button:focus-visible,#mc-tool .en-scroll[role=region]:focus-visible,#pm-tool input:focus-visible,#pm-tool select:focus-visible,#pm-tool button:focus-visible,#pm-tool .en-scroll[role=region]:focus-visible,#ig-tool input:focus-visible,#ig-tool select:focus-visible,#ig-tool button:focus-visible,#ig-tool .en-scroll[role=region]:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+#mc-tool th,#pm-tool th,#ig-tool th{white-space:nowrap}

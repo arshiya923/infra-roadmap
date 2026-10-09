@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-09",
+  "trials": [
+    {
+      "id": "passive-timer-interface",
+      "requested": [
+        "interface transit: eigrp bandwidth 100000, delay 100, ip hello-interval eigrp 1, ip hold-time eigrp 3",
+        "router eigrp 100: passive-interface lan, no passive-interface transit; later passive-interface transit"
+      ],
+      "finding": "Retained configuration/interface output did not demonstrate requested settings; intended passive fault did not withdraw remote paths.",
+      "rawEvidence": "docs/eigrp-runtime-rejected-passive.txt",
+      "result": "REJECTED",
+      "exitCode": 1,
+      "sha256": "3b36206b40db96a74f41614428b6eb2bf3210a2e8748e8531e55ab29e6f511b9"
+    },
+    {
+      "id": "link-only-recovery",
+      "requested": [
+        "Owned R1 transit down followed by link up, without daemon reinitialization"
+      ],
+      "finding": "Baseline and attachment fault recorded; bounded original-endpoint recovery did not finish in this trial.",
+      "rawEvidence": "docs/eigrp-runtime-rejected-link-recovery.txt",
+      "result": "REJECTED",
+      "exitCode": 1,
+      "sha256": "64ad6d14ba0b98b059e65e25dffb9661e5f39f5c297d78114454c002e9e60b16"
+    }
+  ],
+  "scope": "Observed rejected development trials, not passing feature or universal implementation claims."
+}

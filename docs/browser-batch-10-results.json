@@ -1,0 +1,408 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    {
+      "topicId": "s3-g5-t0",
+      "interactive": "route-filtering",
+      "result": "PASS",
+      "presets": 9,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g5-t1",
+      "interactive": "route-redistribution",
+      "result": "PASS",
+      "presets": 11,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g5-t2",
+      "interactive": "route-maps",
+      "result": "PASS",
+      "presets": 9,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g5-t3",
+      "interactive": "prefix-lists",
+      "result": "PASS",
+      "presets": 12,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g5-t4",
+      "interactive": "access-lists",
+      "result": "PASS",
+      "presets": 12,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g6-t0",
+      "interactive": "vrf",
+      "result": "PASS",
+      "presets": 18,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g6-t1",
+      "interactive": "vrf-lite",
+      "result": "PASS",
+      "presets": 20,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g7-t0",
+      "interactive": "hsrp",
+      "result": "PASS",
+      "presets": 12,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g7-t1",
+      "interactive": "vrrp",
+      "result": "PASS",
+      "presets": 12,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g7-t2",
+      "interactive": "glbp",
+      "result": "PASS",
+      "presets": 12,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g8-t0",
+      "interactive": "multicast-fundamentals",
+      "result": "PASS",
+      "presets": 13,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g8-t1",
+      "interactive": "pim",
+      "result": "PASS",
+      "presets": 14,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g8-t2",
+      "interactive": "igmp",
+      "result": "PASS",
+      "presets": 13,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g9-t0",
+      "interactive": "qos-fundamentals",
+      "result": "PASS",
+      "presets": 8,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g9-t1",
+      "interactive": "classification",
+      "result": "PASS",
+      "presets": 11,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g9-t2",
+      "interactive": "marking",
+      "result": "PASS",
+      "presets": 12,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g9-t3",
+      "interactive": "policing",
+      "result": "PASS",
+      "presets": 8,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g9-t4",
+      "interactive": "shaping",
+      "result": "PASS",
+      "presets": 8,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g9-t5",
+      "interactive": "queuing",
+      "result": "PASS",
+      "presets": 8,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "lab-3",
+      "interactive": "advanced-lab",
+      "result": "PASS",
+      "presets": 18,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    }
+  ],
+  "errors": [],
+  "scope": "Reader/UI contract. Protocol truth, guided target commands and primary manual rendering review are separate."
+}

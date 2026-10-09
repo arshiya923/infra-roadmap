@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "SPAN full draft contracts and separate accepted progress",
+    "Source perspective, copy filter, repeated/empty observations, capacity independence, boundaries, stale-input clearing, invalid conclusion and keyboard reset",
+    "Four widths, both themes and named keyboard-scrollable observation endpoints",
+    "All mobile flow steps visible normal and zoomed",
+    "Quiz feedback and authored RSPAN draft adjacency",
+    "Direct-file fixture with no page/resource errors"
+  ],
+  "errors": [],
+  "scope": "Authored trunk observation transcript and independent sustained-capacity arithmetic only; no target parser, ASIC replication, packets, actual loss/capture/encapsulation, analyzer performance or original-service execution"
+}

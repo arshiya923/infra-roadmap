@@ -1,0 +1,12 @@
+.dr-preview{max-width:1000px;margin:auto;padding:36px 24px 70px}
+#dr-tool{min-width:0}#dr-tool .dr-priorities{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#dr-tool .dr-priorities label{min-width:0}#dr-tool input[type=number]{width:100%;min-width:0}
+#dr-tool fieldset{min-width:0;border:1px solid var(--line);margin:20px 0;padding:14px}
+#dr-tool fieldset>label{display:flex;align-items:flex-start;gap:8px;margin:12px 0}#dr-tool fieldset>label input{flex:0 0 auto;margin-top:4px}
+#dr-tool p{overflow-wrap:anywhere}#dr-tool select{width:100%;min-width:0}#dr-tool button{white-space:normal;max-width:100%}
+#dr-error{color:var(--amber);border-left:3px solid var(--amber);padding:10px}
+#dr-topology{overflow-x:auto}#dr-topology svg{display:block;min-width:700px;width:100%;height:auto}
+#dr-topology:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+#dr-tool table{min-width:840px;width:100%;table-layout:fixed}#dr-tool th,#dr-tool td{white-space:normal;overflow-wrap:anywhere}#dr-tool th:first-child{width:100px}
+.shared-topology span:not(:last-child)::after{content:none}.shared-topology:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.dr-preview{padding:24px 16px 50px}#dr-tool .dr-priorities{grid-template-columns:1fr}#dr-tool fieldset{padding:10px}}

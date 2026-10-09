@@ -1,0 +1,1 @@
+(function(){'use strict';document.getElementById('eigrp-preview').innerHTML=window.EigrpModels.html('eigrp');window.EigrpModels.mount('eigrp');document.getElementById('eigrp-theme').addEventListener('click',()=>{const page=document.documentElement;page.dataset.theme=page.dataset.theme==='dark'?'light':'dark';});})();

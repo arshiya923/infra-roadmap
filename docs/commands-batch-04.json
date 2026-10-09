@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-04",
+  "result": "PASS",
+  "results": [
+    {
+      "topicId": "s0-g3-t0",
+      "command": 1,
+      "result": "PASS",
+      "output": [
+        "11000000",
+        "192"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t0",
+      "command": 2,
+      "result": "PASS",
+      "output": [
+        "128",
+        "256 255"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t1",
+      "command": 1,
+      "result": "PASS",
+      "output": [
+        "3221225985",
+        "192.0.2.1"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t1",
+      "command": 2,
+      "result": "PASS",
+      "output": [
+        "['192.0.2.20', '192.0.2.100']"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t2",
+      "command": 1,
+      "result": "PASS",
+      "output": [
+        "C0",
+        "192",
+        "16"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t2",
+      "command": 2,
+      "result": "PASS",
+      "output": [
+        "0000110110111000",
+        "a00"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t3",
+      "command": 1,
+      "result": "PASS",
+      "outputRetained": false,
+      "context": "Read-only WSL network context; no physical/remote reachability claim."
+    },
+    {
+      "topicId": "s0-g3-t3",
+      "command": 2,
+      "result": "PASS",
+      "output": [
+        "192.0.2.130",
+        "192.0.2.128/26"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t4",
+      "command": 1,
+      "result": "PASS",
+      "output": [
+        "2001:db8::1",
+        "2001:0db8:0000:0000:0000:0000:0000:0001"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t4",
+      "command": 2,
+      "result": "PASS",
+      "outputRetained": false,
+      "context": "Read-only WSL network context; no physical/remote reachability claim."
+    },
+    {
+      "topicId": "s0-g3-t5",
+      "command": 1,
+      "result": "PASS",
+      "output": [
+        "192.0.2.128/26",
+        "255.255.255.192",
+        "64"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t5",
+      "command": 2,
+      "result": "PASS",
+      "output": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t6",
+      "command": 1,
+      "result": "PASS",
+      "output": [
+        "[IPv4Network('192.0.2.0/26'), IPv4Network('192.0.2.64/26'), IPv4Network('192.0.2.128/26'), IPv4Network('192.0.2.192/26')]"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t6",
+      "command": 2,
+      "result": "PASS",
+      "output": [
+        "False",
+        "True"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t7",
+      "command": 1,
+      "result": "PASS",
+      "output": [
+        "192.0.2.128 192.0.2.191 64",
+        "255.255.255.192"
+      ]
+    },
+    {
+      "topicId": "s0-g3-t7",
+      "command": 2,
+      "result": "PASS",
+      "output": [
+        "[IPv4Address('192.0.2.0'), IPv4Address('192.0.2.1')]",
+        "[IPv4Address('192.0.2.1')]"
+      ]
+    }
+  ],
+  "foundationLabEvidence": "foundation-lab-results.json"
+}

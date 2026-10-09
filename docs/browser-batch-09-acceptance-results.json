@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "editorialCount": 115,
+  "batchStatus": "complete",
+  "checks": [
+    {
+      "topicId": "s3-g0-t0",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g0-t1",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g0-t2",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g1-t0",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g1-t1",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g1-t2",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g1-t3",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g1-t4",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g2-t0",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g2-t1",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g2-t2",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g2-t3",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g3-t0",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g3-t1",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g3-t2",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g3-t3",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g4-t0",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g4-t1",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g4-t2",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    },
+    {
+      "topicId": "s3-g4-t3",
+      "result": "PASS",
+      "checks": [
+        "Timed step advancement, pause and reset with controlled browser clock",
+        "Reduced-motion suppression and full static sequence",
+        "Every rendered prerequisite/related target exists in preserved catalog"
+      ]
+    }
+  ],
+  "errors": [],
+  "limits": "Controlled browser clock checks UI timers, not device convergence. Catalog presence allows honest pending outlines; technical review and manual diagrams are separate evidence."
+}

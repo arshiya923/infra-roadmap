@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant; five images individually inspected",
+  "sha256": {
+    "bgp-groundwork-desktop.png": "8b47ccb1c9e5c261bbc17ed05911d810853c75eab833e9916ab4baa33dbc1003",
+    "bgp-groundwork-light-mobile.png": "366dc43763fe7e476fd59a262826bc6780e56d9ff0c7bf32e0009e3a82e65d05",
+    "bgp-groundwork-dark-mobile.png": "fc74d6e9edadd2e3f68a644971c488dc76a3502320fad98ed6a5d599d30ba53e",
+    "bgp-groundwork-table-start.png": "0bedab2201296306b7dad83b16c99e3ee4679e28c75faaaea5d6bec76c504fcd",
+    "bgp-groundwork-table-end.png": "524f9bee107907b21a2cbbc94223a9b8be486767ad8e3fff843eddf879c5b951"
+  },
+  "freshRegressionReview": "Re-inspected desktop and light/dark mobile after fresh report SHA changed; both table endpoint images byte-identical."
+}

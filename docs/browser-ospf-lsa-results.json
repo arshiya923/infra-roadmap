@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "Original LSA-basics draft has ten sections, ten exams/three quick checks and honest editorial/learner separation",
+    "Eighteen independently expected cases, signed sequence, MaxAge/age boundaries, identity scope and skipped successors",
+    "Seven separately scoped actual header views, exact copied display fields and invalid snapshot stale-row suppression",
+    "Fourteen header controls, reserved/zero/IPv4/age bounds, scientific/decimal rejection and keyboard reset",
+    "Both actual lab runners and shared preparation download exact source bytes",
+    "Four widths/both themes, no page overflow and keyboard-scrolling header/trace/evidence/lab regions",
+    "Four normal/zoomed mobile flow steps, play/pause/reset and reduced-motion static explanation",
+    "Exam feedback and original previous DR/BDR/next authored troubleshooting navigation",
+    "Direct-file model/preserved evidence and HTTP reader without script/resource errors"
+  ],
+  "errors": [],
+  "scope": "Integrated LSA-basics draft; assumed-valid header comparison and preserved actual type-1/2/3 snapshots from separate experiments. No live checksum/body validation, flooding/aging/FSM/route selection, external/NSSA execution, packet/application or full batch acceptance claim."
+}

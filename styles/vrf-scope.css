@@ -1,0 +1,10 @@
+#vf-tool, #vl-tool { min-width: 0; }
+#vf-tool fieldset, #vl-tool fieldset { min-width: 0; }
+#vf-tool fieldset > label, #vl-tool fieldset > label { display: block; margin-block: .5rem .2rem; }
+#vf-tool select, #vl-tool select { max-width: 100%; box-sizing: border-box; }
+#vf-tool .vrf-scope-scroll, #vl-tool .vrf-scope-scroll { max-width: 100%; overflow-x: auto; }
+#vf-tool table, #vl-tool table { min-width: 960px; }
+#vf-tool .vrf-scope-scroll:focus-visible, #vl-tool .vrf-scope-scroll:focus-visible { outline: 3px solid var(--accent, #3e80b8); outline-offset: 3px; }
+#vf-tool [hidden], #vl-tool [hidden] { display: none !important; }
+.vrf-scope-scroll table { min-width: 1000px; }
+.vrf-scope-scroll td:nth-child(2), .vrf-scope-scroll th { white-space: nowrap; }

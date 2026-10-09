@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "BPDU Guard draft retains full contracts and independent accepted progress",
+    "Interface/global scope, persistent incident, reviewed restoration, repeat violation and keyboard reset",
+    "Four widths without document overflow and actual light/dark captures",
+    "Every mobile flow step visible, normal and zoomed",
+    "Exam feedback and authored Root Guard draft adjacency",
+    "Direct-file workflow works without page/resource errors"
+  ],
+  "errors": [],
+  "scope": "BPDU Guard authored scope and incident-review workflow only; no IOS parser enforcement, actual BPDU, err-disable, recovery or service execution"
+}

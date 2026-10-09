@@ -1,0 +1,441 @@
+{
+  "date": "2026-10-09",
+  "scope": "Eleven spanning-tree, edge-protection, SPAN and RSPAN drafts; Catalyst 9300 IOS XE 17.15 guided procedures",
+  "result": "LIMITED",
+  "commands": [
+    {
+      "command": "show spanning-tree summary",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target or parser execution; browser topology does not execute these commands.",
+      "topicId": "s2-g4-t0"
+    },
+    {
+      "command": "show spanning-tree vlan 10",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target or parser execution; browser topology does not execute these commands.",
+      "topicId": "s2-g4-t0"
+    },
+    {
+      "command": "show spanning-tree interface GigabitEthernet1/0/1\nshow spanning-tree detail",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target or parser execution; browser topology does not execute these commands.",
+      "topicId": "s2-g4-t0"
+    },
+    {
+      "command": "configure terminal\nspanning-tree vlan 10 root primary\nend\nshow spanning-tree vlan 10",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target or parser execution; browser topology does not execute these commands.",
+      "topicId": "s2-g4-t0"
+    },
+    {
+      "topicId": "s2-g4-t1",
+      "command": "show spanning-tree summary\nshow spanning-tree vlan 10",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Switch-wide mode change is an isolated coordinated procedure with prior-state rollback; the explorer executes no commands."
+    },
+    {
+      "topicId": "s2-g4-t1",
+      "command": "show spanning-tree interface GigabitEthernet1/0/1\nshow spanning-tree detail",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Switch-wide mode change is an isolated coordinated procedure with prior-state rollback; the explorer executes no commands."
+    },
+    {
+      "topicId": "s2-g4-t1",
+      "command": "configure terminal\nspanning-tree mode rapid-pvst\nend\nshow spanning-tree summary",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Switch-wide mode change is an isolated coordinated procedure with prior-state rollback; the explorer executes no commands."
+    },
+    {
+      "topicId": "s2-g4-t2",
+      "command": "show spanning-tree summary\nshow spanning-tree mst configuration",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Fresh isolated prior map and independent access are prerequisites; pending review, application and coordinated mode activation are separate."
+    },
+    {
+      "topicId": "s2-g4-t2",
+      "command": "show spanning-tree mst configuration digest\nshow spanning-tree mst",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Fresh isolated prior map and independent access are prerequisites; pending review, application and coordinated mode activation are separate."
+    },
+    {
+      "topicId": "s2-g4-t2",
+      "command": "configure terminal\nspanning-tree mst configuration\nname lab-east\nrevision 7\ninstance 1 vlan 10,20\ninstance 2 vlan 30,40\nshow pending\nexit\nend",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Fresh isolated prior map and independent access are prerequisites; pending review, application and coordinated mode activation are separate."
+    },
+    {
+      "topicId": "s2-g4-t2",
+      "command": "configure terminal\nspanning-tree mode mst\nend\nshow spanning-tree summary\nshow spanning-tree mst configuration\nshow spanning-tree mst",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Fresh isolated prior map and independent access are prerequisites; pending review, application and coordinated mode activation are separate."
+    },
+    {
+      "topicId": "s2-g5-t0",
+      "command": "show spanning-tree summary\nshow spanning-tree interface GigabitEthernet1/0/2 portfast",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Dedicated prepared attachment, reviewed topology and exact prior interface/inherited policy are prerequisites; access/trunk examples are alternatives."
+    },
+    {
+      "topicId": "s2-g5-t0",
+      "command": "show interfaces GigabitEthernet1/0/2 switchport\nshow spanning-tree interface GigabitEthernet1/0/2",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Dedicated prepared attachment, reviewed topology and exact prior interface/inherited policy are prerequisites; access/trunk examples are alternatives."
+    },
+    {
+      "topicId": "s2-g5-t0",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/2\nspanning-tree portfast\nend\nshow spanning-tree interface GigabitEthernet1/0/2 portfast",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Dedicated prepared attachment, reviewed topology and exact prior interface/inherited policy are prerequisites; access/trunk examples are alternatives."
+    },
+    {
+      "topicId": "s2-g5-t0",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/2\nspanning-tree portfast trunk\nend",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Dedicated prepared attachment, reviewed topology and exact prior interface/inherited policy are prerequisites; access/trunk examples are alternatives."
+    },
+    {
+      "topicId": "s2-g5-t1",
+      "command": "show interfaces status err-disabled\nshow errdisable recovery",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no target/parser/BPDU/err-disable/recovery/protection/service execution. Browser restoration is an incident workflow checkpoint."
+    },
+    {
+      "topicId": "s2-g5-t1",
+      "command": "show spanning-tree summary\nshow spanning-tree interface GigabitEthernet1/0/2 portfast\nshow logging",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no target/parser/BPDU/err-disable/recovery/protection/service execution. Browser restoration is an incident workflow checkpoint."
+    },
+    {
+      "topicId": "s2-g5-t1",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/2\nspanning-tree bpduguard enable\nend",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no target/parser/BPDU/err-disable/recovery/protection/service execution. Browser restoration is an incident workflow checkpoint."
+    },
+    {
+      "topicId": "s2-g5-t1",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/2\nshutdown\nno shutdown\nend\nshow interfaces status err-disabled",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no target/parser/BPDU/err-disable/recovery/protection/service execution. Browser restoration is an incident workflow checkpoint."
+    },
+    {
+      "topicId": "s2-g5-t2",
+      "command": "show spanning-tree summary\nshow spanning-tree interface GigabitEthernet1/0/2\nshow spanning-tree detail",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no Cisco target/parser, actual superiority, root-inconsistent, recovery or service execution. Prepared isolated downstream boundary and exact prior context required."
+    },
+    {
+      "topicId": "s2-g5-t2",
+      "command": "show spanning-tree mst interface GigabitEthernet1/0/2",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no Cisco target/parser, actual superiority, root-inconsistent, recovery or service execution. Prepared isolated downstream boundary and exact prior context required."
+    },
+    {
+      "topicId": "s2-g5-t2",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/2\nspanning-tree guard root\nend",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no Cisco target/parser, actual superiority, root-inconsistent, recovery or service execution. Prepared isolated downstream boundary and exact prior context required."
+    },
+    {
+      "topicId": "s2-g5-t3",
+      "command": "show spanning-tree summary\nshow spanning-tree active\nshow spanning-tree interface GigabitEthernet1/0/2",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no actual Cisco parser, BPDU history/expiry, loop-inconsistent, recovery or service execution. Isolated reviewed established receiving link and exact prior inherited/explicit context required."
+    },
+    {
+      "topicId": "s2-g5-t3",
+      "command": "show spanning-tree detail\nshow logging",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no actual Cisco parser, BPDU history/expiry, loop-inconsistent, recovery or service execution. Isolated reviewed established receiving link and exact prior inherited/explicit context required."
+    },
+    {
+      "topicId": "s2-g5-t3",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/2\nspanning-tree guard loop\nend",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no actual Cisco parser, BPDU history/expiry, loop-inconsistent, recovery or service execution. Isolated reviewed established receiving link and exact prior inherited/explicit context required."
+    },
+    {
+      "topicId": "s2-g5-t4",
+      "command": "show storm-control GigabitEthernet1/0/2 broadcast",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no actual target parser, class/policer filtering, trap, disabled-port recovery or service execution. Teaching percentage values require isolated prepared prior-action context and are not production recommendations."
+    },
+    {
+      "topicId": "s2-g5-t4",
+      "command": "show running-config interface GigabitEthernet1/0/2\nshow interfaces status err-disabled\nshow logging",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no actual target parser, class/policer filtering, trap, disabled-port recovery or service execution. Teaching percentage values require isolated prepared prior-action context and are not production recommendations."
+    },
+    {
+      "topicId": "s2-g5-t4",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/2\nstorm-control broadcast level 20.00 10.00\nend\nshow storm-control GigabitEthernet1/0/2 broadcast",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "Source-reviewed only; no actual target parser, class/policer filtering, trap, disabled-port recovery or service execution. Teaching percentage values require isolated prepared prior-action context and are not production recommendations."
+    },
+    {
+      "topicId": "s2-g5-t5",
+      "command": "show port-security interface GigabitEthernet1/0/2\nshow port-security address",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Current/running/saved source intent, learning window, actual source budget, cause and original service require isolated authorized evidence. Browser address checkpoint is not device restart or recovery."
+    },
+    {
+      "topicId": "s2-g5-t5",
+      "command": "show running-config interface GigabitEthernet1/0/2\nshow startup-config",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Current/running/saved source intent, learning window, actual source budget, cause and original service require isolated authorized evidence. Browser address checkpoint is not device restart or recovery."
+    },
+    {
+      "topicId": "s2-g5-t5",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/2\nswitchport mode access\nswitchport port-security\nswitchport port-security maximum 2\nswitchport port-security violation restrict\nend",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Current/running/saved source intent, learning window, actual source budget, cause and original service require isolated authorized evidence. Browser address checkpoint is not device restart or recovery."
+    },
+    {
+      "topicId": "s2-g5-t5",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/2\nswitchport port-security mac-address sticky\nend\nshow port-security address\nshow running-config interface GigabitEthernet1/0/2",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser execution. Current/running/saved source intent, learning window, actual source budget, cause and original service require isolated authorized evidence. Browser address checkpoint is not device restart or recovery."
+    },
+    {
+      "topicId": "s2-g6-t0",
+      "command": "show monitor session all\nshow interfaces GigabitEthernet1/0/1\nshow interfaces GigabitEthernet1/0/24",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco target/parser/capture execution. Confirm unused owned session, distinct dedicated destination, trunk filter context, independent management and original-service baseline. Remove only owned session and restore exact prior context; arithmetic/transcript is not capture evidence."
+    },
+    {
+      "topicId": "s2-g6-t0",
+      "command": "show running-config interface GigabitEthernet1/0/24\nshow running-config",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco target/parser/capture execution. Confirm unused owned session, distinct dedicated destination, trunk filter context, independent management and original-service baseline. Remove only owned session and restore exact prior context; arithmetic/transcript is not capture evidence."
+    },
+    {
+      "topicId": "s2-g6-t0",
+      "command": "configure terminal\nmonitor session 1 source interface GigabitEthernet1/0/1 rx\nmonitor session 1 destination interface GigabitEthernet1/0/24\nend\nshow monitor session 1",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco target/parser/capture execution. Confirm unused owned session, distinct dedicated destination, trunk filter context, independent management and original-service baseline. Remove only owned session and restore exact prior context; arithmetic/transcript is not capture evidence."
+    },
+    {
+      "topicId": "s2-g6-t0",
+      "command": "configure terminal\nmonitor session 1 filter vlan 10\nend\nshow monitor session 1",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco target/parser/capture execution. Confirm unused owned session, distinct dedicated destination, trunk filter context, independent management and original-service baseline. Remove only owned session and restore exact prior context; arithmetic/transcript is not capture evidence."
+    },
+    {
+      "topicId": "s2-g6-t0",
+      "command": "configure terminal\nno monitor session 1\nend\nshow monitor session all",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco target/parser/capture execution. Confirm unused owned session, distinct dedicated destination, trunk filter context, independent management and original-service baseline. Remove only owned session and restore exact prior context; arithmetic/transcript is not capture evidence."
+    },
+    {
+      "topicId": "s2-g6-t1",
+      "command": "show monitor session all\nshow vlan id 901\nshow interfaces trunk\nshow spanning-tree vlan 901",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco target/parser/remote capture execution. All-participant/A-only/C-only scope is explicit in lesson explanations. Confirm owned reserved VLAN/session, prepared trunk path, independent management and dedicated analyzer; coordinate targeted A/C cleanup and exact prior shared context."
+    },
+    {
+      "topicId": "s2-g6-t1",
+      "command": "configure terminal\nvlan 901\nremote-span\nend\nshow vlan id 901\nshow running-config",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco target/parser/remote capture execution. All-participant/A-only/C-only scope is explicit in lesson explanations. Confirm owned reserved VLAN/session, prepared trunk path, independent management and dedicated analyzer; coordinate targeted A/C cleanup and exact prior shared context."
+    },
+    {
+      "topicId": "s2-g6-t1",
+      "command": "configure terminal\nmonitor session 1 source interface GigabitEthernet1/0/1 rx\nmonitor session 1 destination remote vlan 901\nend\nshow monitor session 1",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco target/parser/remote capture execution. All-participant/A-only/C-only scope is explicit in lesson explanations. Confirm owned reserved VLAN/session, prepared trunk path, independent management and dedicated analyzer; coordinate targeted A/C cleanup and exact prior shared context."
+    },
+    {
+      "topicId": "s2-g6-t1",
+      "command": "configure terminal\nmonitor session 2 source remote vlan 901\nmonitor session 2 destination interface GigabitEthernet1/0/24\nend\nshow monitor session 2",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco target/parser/remote capture execution. All-participant/A-only/C-only scope is explicit in lesson explanations. Confirm owned reserved VLAN/session, prepared trunk path, independent management and dedicated analyzer; coordinate targeted A/C cleanup and exact prior shared context."
+    },
+    {
+      "topicId": "s2-g6-t1",
+      "command": "configure terminal\nno monitor session 1\nend\nshow monitor session all",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco target/parser/remote capture execution. All-participant/A-only/C-only scope is explicit in lesson explanations. Confirm owned reserved VLAN/session, prepared trunk path, independent management and dedicated analyzer; coordinate targeted A/C cleanup and exact prior shared context."
+    },
+    {
+      "topicId": "s2-g6-t1",
+      "command": "configure terminal\nno monitor session 2\nend\nshow monitor session all",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco target/parser/remote capture execution. All-participant/A-only/C-only scope is explicit in lesson explanations. Confirm owned reserved VLAN/session, prepared trunk path, independent management and dedicated analyzer; coordinate targeted A/C cleanup and exact prior shared context."
+    },
+    {
+      "topicId": "s2-g6-t2",
+      "command": "show capability feature monitor erspan-source\nshow capability feature monitor erspan-destination\nshow monitor session all",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser executed. Conditional actual-capability support, prepared owned source/collector sessions, independent management, dedicated output, local address and reviewed routing/policy baseline required. Cleanup only owned sessions and exact prior intent."
+    },
+    {
+      "topicId": "s2-g6-t2",
+      "command": "configure terminal\nmonitor session 2 type erspan-destination\ndestination interface GigabitEthernet1/0/24\nsource\nerspan-id 100\nip address 192.0.2.20\nno shutdown\nend\nshow monitor session 2",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser executed. Conditional actual-capability support, prepared owned source/collector sessions, independent management, dedicated output, local address and reviewed routing/policy baseline required. Cleanup only owned sessions and exact prior intent."
+    },
+    {
+      "topicId": "s2-g6-t2",
+      "command": "configure terminal\nmonitor session 1 type erspan-source\nsource interface GigabitEthernet1/0/1 rx\ndestination\nerspan-id 100\nip address 192.0.2.20\norigin ip address 192.0.2.10\nexit\nno shutdown\nend\nshow monitor session 1",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser executed. Conditional actual-capability support, prepared owned source/collector sessions, independent management, dedicated output, local address and reviewed routing/policy baseline required. Cleanup only owned sessions and exact prior intent."
+    },
+    {
+      "topicId": "s2-g6-t2",
+      "command": "tshark -n -r labs/erspan-fixture.pcap -T fields -E occurrence=f -e frame.number -e ip.dst -e erspan.spanid -e erspan.truncated -e frame.cap_len -e frame.len",
+      "platform": "Ubuntu 24.04 · TShark 4.2.2 · supplied offline synthetic fixture",
+      "result": "PASS_OFFLINE_SYNTHETIC",
+      "reason": "Actual installed TShark 4.2.2 fields/filter outputs verified by tests/erspan-fixture.py; retained in docs/erspan-fixture-results.json. Offline file only, no emission/arrival."
+    },
+    {
+      "topicId": "s2-g6-t2",
+      "command": "tshark -n -r labs/erspan-fixture.pcap -Y \"erspan.truncated == 1\" -T fields -e frame.number\ntshark -n -r labs/erspan-fixture.pcap -Y \"frame.cap_len < frame.len\" -T fields -e frame.number",
+      "platform": "Ubuntu 24.04 · TShark 4.2.2 · supplied offline synthetic fixture",
+      "result": "PASS_OFFLINE_SYNTHETIC",
+      "reason": "Actual installed TShark 4.2.2 fields/filter outputs verified by tests/erspan-fixture.py; retained in docs/erspan-fixture-results.json. Offline file only, no emission/arrival."
+    },
+    {
+      "topicId": "s2-g6-t2",
+      "command": "configure terminal\nno monitor session 1\nend\nshow monitor session all",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser executed. Conditional actual-capability support, prepared owned source/collector sessions, independent management, dedicated output, local address and reviewed routing/policy baseline required. Cleanup only owned sessions and exact prior intent."
+    },
+    {
+      "topicId": "s2-g6-t2",
+      "command": "configure terminal\nno monitor session 2\nend\nshow monitor session all",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No Cisco target/parser executed. Conditional actual-capability support, prepared owned source/collector sessions, independent management, dedicated output, local address and reviewed routing/policy baseline required. Cleanup only owned sessions and exact prior intent."
+    },
+    {
+      "topicId": "lab-2",
+      "command": "show version\nshow running-config\nshow startup-config\nshow vlan brief\nshow interfaces trunk\nshow etherchannel summary\nshow lacp neighbor\nshow spanning-tree summary\nshow spanning-tree vlan 10\nshow spanning-tree vlan 20",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco targets/parser/build/fault/service. Named A/B/C scope requires isolated prepared compatible mode, owned unused VLAN/Po1/ports, database authority, mapped peers and independent management. Record exact prior state; preserve protection and shared dependencies; no broad reset/save or injected traffic."
+    },
+    {
+      "topicId": "lab-2",
+      "command": "configure terminal\nvlan 10\nname LAB10\nexit\nvlan 20\nname LAB20\nend\nshow vlan brief",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco targets/parser/build/fault/service. Named A/B/C scope requires isolated prepared compatible mode, owned unused VLAN/Po1/ports, database authority, mapped peers and independent management. Record exact prior state; preserve protection and shared dependencies; no broad reset/save or injected traffic."
+    },
+    {
+      "topicId": "lab-2",
+      "command": "configure terminal\ninterface range GigabitEthernet1/0/1 - 2\nshutdown\nswitchport mode trunk\nswitchport trunk native vlan 1\nswitchport trunk allowed vlan 10,20\nswitchport nonegotiate\nchannel-group 1 mode active\nexit\ninterface Port-channel1\nshutdown\nswitchport mode trunk\nswitchport trunk native vlan 1\nswitchport trunk allowed vlan 10,20\nswitchport nonegotiate\nspanning-tree vlan 10,20 cost 10\nend",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco targets/parser/build/fault/service. Named A/B/C scope requires isolated prepared compatible mode, owned unused VLAN/Po1/ports, database authority, mapped peers and independent management. Record exact prior state; preserve protection and shared dependencies; no broad reset/save or injected traffic."
+    },
+    {
+      "topicId": "lab-2",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/3\nshutdown\nswitchport mode trunk\nswitchport trunk native vlan 1\nswitchport trunk allowed vlan 10,20\nswitchport nonegotiate\nspanning-tree vlan 10,20 cost 10\nend",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco targets/parser/build/fault/service. Named A/B/C scope requires isolated prepared compatible mode, owned unused VLAN/Po1/ports, database authority, mapped peers and independent management. Record exact prior state; preserve protection and shared dependencies; no broad reset/save or injected traffic."
+    },
+    {
+      "topicId": "lab-2",
+      "command": "configure terminal\ninterface range GigabitEthernet1/0/1 - 2\nshutdown\nswitchport mode trunk\nswitchport trunk native vlan 1\nswitchport trunk allowed vlan 10,20\nswitchport nonegotiate\nspanning-tree vlan 10,20 cost 10\nend",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco targets/parser/build/fault/service. Named A/B/C scope requires isolated prepared compatible mode, owned unused VLAN/Po1/ports, database authority, mapped peers and independent management. Record exact prior state; preserve protection and shared dependencies; no broad reset/save or injected traffic."
+    },
+    {
+      "topicId": "lab-2",
+      "command": "configure terminal\nspanning-tree vlan 10,20 root primary\nend\nshow spanning-tree vlan 10\nshow spanning-tree vlan 20",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco targets/parser/build/fault/service. Named A/B/C scope requires isolated prepared compatible mode, owned unused VLAN/Po1/ports, database authority, mapped peers and independent management. Record exact prior state; preserve protection and shared dependencies; no broad reset/save or injected traffic."
+    },
+    {
+      "topicId": "lab-2",
+      "command": "configure terminal\nspanning-tree vlan 10,20 root secondary\nend\nshow spanning-tree vlan 10\nshow spanning-tree vlan 20",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco targets/parser/build/fault/service. Named A/B/C scope requires isolated prepared compatible mode, owned unused VLAN/Po1/ports, database authority, mapped peers and independent management. Record exact prior state; preserve protection and shared dependencies; no broad reset/save or injected traffic."
+    },
+    {
+      "topicId": "lab-2",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/10\nshutdown\nswitchport mode access\nswitchport access vlan 10\nspanning-tree portfast\nspanning-tree bpduguard enable\nno shutdown\nend\nshow spanning-tree interface GigabitEthernet1/0/10 portfast",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco targets/parser/build/fault/service. Named A/B/C scope requires isolated prepared compatible mode, owned unused VLAN/Po1/ports, database authority, mapped peers and independent management. Record exact prior state; preserve protection and shared dependencies; no broad reset/save or injected traffic."
+    },
+    {
+      "topicId": "lab-2",
+      "command": "configure terminal\ninterface Port-channel1\nno shutdown\nexit\ninterface range GigabitEthernet1/0/1 - 3\nno shutdown\nend\nshow etherchannel summary\nshow lacp neighbor\nshow interfaces trunk",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco targets/parser/build/fault/service. Named A/B/C scope requires isolated prepared compatible mode, owned unused VLAN/Po1/ports, database authority, mapped peers and independent management. Record exact prior state; preserve protection and shared dependencies; no broad reset/save or injected traffic."
+    },
+    {
+      "topicId": "lab-2",
+      "command": "configure terminal\ninterface range GigabitEthernet1/0/1 - 2\nno shutdown\nend\nshow interfaces trunk\nshow spanning-tree vlan 10\nshow spanning-tree vlan 20",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco targets/parser/build/fault/service. Named A/B/C scope requires isolated prepared compatible mode, owned unused VLAN/Po1/ports, database authority, mapped peers and independent management. Record exact prior state; preserve protection and shared dependencies; no broad reset/save or injected traffic."
+    },
+    {
+      "topicId": "lab-2",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/3\nshutdown\nend\nshow interfaces GigabitEthernet1/0/3\nshow spanning-tree vlan 10",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco targets/parser/build/fault/service. Named A/B/C scope requires isolated prepared compatible mode, owned unused VLAN/Po1/ports, database authority, mapped peers and independent management. Record exact prior state; preserve protection and shared dependencies; no broad reset/save or injected traffic."
+    },
+    {
+      "topicId": "lab-2",
+      "command": "configure terminal\ninterface GigabitEthernet1/0/3\nno shutdown\nend\nshow interfaces trunk\nshow etherchannel summary\nshow spanning-tree vlan 10\nshow spanning-tree vlan 20",
+      "platform": "Isolated Catalyst 9300 IOS XE 17.15 lab · guided, not executed here",
+      "result": "GUIDED_NOT_EXECUTED",
+      "reason": "No actual Cisco targets/parser/build/fault/service. Named A/B/C scope requires isolated prepared compatible mode, owned unused VLAN/Po1/ports, database authority, mapped peers and independent management. Record exact prior state; preserve protection and shared dependencies; no broad reset/save or injected traffic."
+    }
+  ]
+}

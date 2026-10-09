@@ -1,0 +1,153 @@
+{
+  "result": "PASS",
+  "checks": 4159,
+  "runs": [
+    {
+      "scope": "Actual local validation/render/file operations; topology and budgets are synthetic. No external deployment.",
+      "events": [
+        {
+          "phase": "validated",
+          "sha256": "05eff0453f03f399da45451346a68572010787025133517358e5702523805543"
+        },
+        {
+          "phase": "applied",
+          "sha256": "ade3e96e6e89284a38232260b1b5661d091079feb54cca677c99d8bb92c96521"
+        },
+        {
+          "phase": "drifted",
+          "sha256": "f97be2917cfaa16f2c5dbf51e1e32e952562fc0adeaa0f3642168db75f143070"
+        },
+        {
+          "phase": "restored",
+          "sha256": "05eff0453f03f399da45451346a68572010787025133517358e5702523805543"
+        }
+      ],
+      "result": "PASS",
+      "invalidRejected": true,
+      "revision": 2,
+      "artifactSha256": "ade3e96e6e89284a38232260b1b5661d091079feb54cca677c99d8bb92c96521",
+      "changed": true,
+      "secondChanged": false,
+      "staleRejected": true,
+      "designCalculations": {
+        "survivorCapacityUnits": 160,
+        "demandUnits": 140,
+        "serialRecoveryMinutes": 70,
+        "rtoMinutes": 60,
+        "rtoGapMinutes": 10,
+        "recoverablePointAgeMinutes": 40,
+        "rpoMinutes": 15,
+        "rpoGapMinutes": 25,
+        "note": "Supplied design arithmetic, not measured timing or deployment"
+      },
+      "restored": true,
+      "baselineSha256": "05eff0453f03f399da45451346a68572010787025133517358e5702523805543",
+      "cleaned": true,
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-automation-zb3ugczm"
+    },
+    {
+      "scope": "Actual local validation/render/file operations; topology and budgets are synthetic. No external deployment.",
+      "events": [
+        {
+          "phase": "validated",
+          "sha256": "05eff0453f03f399da45451346a68572010787025133517358e5702523805543"
+        }
+      ],
+      "result": "INTERRUPTED",
+      "invalidRejected": true,
+      "revision": 2,
+      "artifactSha256": "ade3e96e6e89284a38232260b1b5661d091079feb54cca677c99d8bb92c96521",
+      "interruptedAt": "validated",
+      "restored": true,
+      "baselineSha256": "05eff0453f03f399da45451346a68572010787025133517358e5702523805543",
+      "cleaned": true,
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-automation-vwkr91k8"
+    },
+    {
+      "scope": "Actual local validation/render/file operations; topology and budgets are synthetic. No external deployment.",
+      "events": [
+        {
+          "phase": "validated",
+          "sha256": "05eff0453f03f399da45451346a68572010787025133517358e5702523805543"
+        },
+        {
+          "phase": "applied",
+          "sha256": "ade3e96e6e89284a38232260b1b5661d091079feb54cca677c99d8bb92c96521"
+        }
+      ],
+      "result": "INTERRUPTED",
+      "invalidRejected": true,
+      "revision": 2,
+      "artifactSha256": "ade3e96e6e89284a38232260b1b5661d091079feb54cca677c99d8bb92c96521",
+      "changed": true,
+      "secondChanged": false,
+      "interruptedAt": "applied",
+      "restored": true,
+      "baselineSha256": "05eff0453f03f399da45451346a68572010787025133517358e5702523805543",
+      "cleaned": true,
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-automation-9xmie0w0"
+    },
+    {
+      "scope": "Actual local validation/render/file operations; topology and budgets are synthetic. No external deployment.",
+      "events": [
+        {
+          "phase": "validated",
+          "sha256": "05eff0453f03f399da45451346a68572010787025133517358e5702523805543"
+        },
+        {
+          "phase": "applied",
+          "sha256": "ade3e96e6e89284a38232260b1b5661d091079feb54cca677c99d8bb92c96521"
+        },
+        {
+          "phase": "drifted",
+          "sha256": "f97be2917cfaa16f2c5dbf51e1e32e952562fc0adeaa0f3642168db75f143070"
+        }
+      ],
+      "result": "INTERRUPTED",
+      "invalidRejected": true,
+      "revision": 2,
+      "artifactSha256": "ade3e96e6e89284a38232260b1b5661d091079feb54cca677c99d8bb92c96521",
+      "changed": true,
+      "secondChanged": false,
+      "staleRejected": true,
+      "interruptedAt": "drifted",
+      "restored": true,
+      "baselineSha256": "05eff0453f03f399da45451346a68572010787025133517358e5702523805543",
+      "cleaned": true,
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-automation-r8t8t4tz"
+    },
+    {
+      "scope": "Actual local validation/render/file operations; topology and budgets are synthetic. No external deployment.",
+      "events": [
+        {
+          "phase": "validated",
+          "sha256": "05eff0453f03f399da45451346a68572010787025133517358e5702523805543"
+        },
+        {
+          "phase": "applied",
+          "sha256": "ade3e96e6e89284a38232260b1b5661d091079feb54cca677c99d8bb92c96521"
+        },
+        {
+          "phase": "drifted",
+          "sha256": "f97be2917cfaa16f2c5dbf51e1e32e952562fc0adeaa0f3642168db75f143070"
+        },
+        {
+          "phase": "restored",
+          "sha256": "05eff0453f03f399da45451346a68572010787025133517358e5702523805543"
+        }
+      ],
+      "result": "INTERRUPTED",
+      "invalidRejected": true,
+      "revision": 2,
+      "artifactSha256": "ade3e96e6e89284a38232260b1b5661d091079feb54cca677c99d8bb92c96521",
+      "changed": true,
+      "secondChanged": false,
+      "staleRejected": true,
+      "interruptedAt": "restored",
+      "restored": true,
+      "baselineSha256": "05eff0453f03f399da45451346a68572010787025133517358e5702523805543",
+      "cleaned": true,
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-automation-z7as8yin"
+    }
+  ]
+}

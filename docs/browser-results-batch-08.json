@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "Complete draft contracts; editorial count/status match manifest",
+    "All four selected stable topologies and keyboard reset; scope retained",
+    "Four viewport widths without document overflow; light/dark mobile captures",
+    "Separate exam feedback and original authored RSTP adjacency",
+    "Direct-file model works; no page or missing-resource errors"
+  ],
+  "errors": [],
+  "scope": "One STP draft; stable fixed-root roles only, no Cisco/parser/BPDU/counter/capture/convergence evidence"
+}

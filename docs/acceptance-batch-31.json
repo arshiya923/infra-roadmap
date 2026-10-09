@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-09",
+  "batch": "31",
+  "status": "accepted",
+  "scope": "Actual owned loopback HTTP forwarding with controlled origin 503 and actual TLS expected-hostname rejection/recovery. The test certificate is temporary and trusted only by the client context. Pool sizing is supplied arithmetic; Nginx, ACME renewal, expiry faults and real load-balancer/database execution remain guided or unexecuted.",
+  "primaryReview": "Reviewed 39 questions, lesson mechanisms, commands and distinct evidence scopes. Inspected mobile dark evidence desk. Fresh HTTP results are 200/503/200 with expected bodies; TLS failure explicitly reports hostname mismatch before successful fresh recovery. Pool equality, oversubscription and invalid inputs are checked. Nginx syntax validation is labelled guided because Nginx is absent.",
+  "sources": [
+    "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "https://nginx.org/en/docs/beginners_guide.html",
+    "https://nginx.org/en/docs/http/ngx_http_proxy_module.html",
+    "https://nginx.org/en/docs/http/ngx_http_ssl_module.html",
+    "https://letsencrypt.org/docs/challenge-types/",
+    "https://nginx.org/en/docs/http/load_balancing.html",
+    "https://docs.python.org/3/library/ssl.html"
+  ],
+  "hashes": {
+    "content/batch-31.js": "a71a002961f6357c9a09ecf5fa3222b275144220ffdaabccf3f43c14ef2ede91",
+    "docs/browser-expansion-31.json": "1447dfed662f8676635795e3206cbf984c46d2b44a95437475f0e921685362cd",
+    "docs/expansion-lab-31.json": "b0f4a01f0fad07a9855afce84dcebfa31da7d97824268786061560ffba07c74d",
+    "scripts/expansion.js": "a1eaed8af5dd10c212f31c1d4c9182f01ed8ae73c7f94ad7c265547f2201b045"
+  },
+  "finalReverification": "docs/expansion-final-verification.json"
+}

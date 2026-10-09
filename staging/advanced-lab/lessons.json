@@ -1,0 +1,456 @@
+[
+  {
+    "id": "lab-3",
+    "batch": "10",
+    "title": "Advanced Routing & Switching Lab",
+    "subtitle": "Trace one owned campus exchange across VLAN, virtual gateway, underlay, external route and return boundaries.",
+    "level": "Advanced → Production",
+    "minutes": 150,
+    "interactive": "advanced-lab",
+    "definition": "This integrated lab combines two distribution switches, two campus routers, VLAN segmentation, HSRPv2, OSPFv2 and an explicitly bounded BGP route-policy boundary. D1 and D2 share campus VLAN10 and VLAN20 broadcast domains; routed links connect D1–R1, D2–R2 and R1–R2. R1 and R2 are AS65001 speakers, and a separately owned external AS65002 peer supplies remote 198.51.100.0/24 outside the four-device campus. The browser evaluates supplied selected-path declarations only. The downloadable workbook defines optional prepared-target observations and a timestamped failure exercise; no Cisco image, router process or packet experiment is executed by the worksheet.",
+    "purpose": "Build a defensible explanation for an original source-to-service exchange and its behavior during one owned failure. Preserve the original roadmap exercise: prepare two distribution switches and two routers, use HSRP with OSPF/BGP and VLAN/route-policy boundaries, then record failure observations. Distinguish a selected gateway from usable upstream routing, an OSPF adjacency from its required selected route, a BGP session from an admitted destination and a route from a working application. The goal is a reproducible evidence record, not a claim that green checkboxes measured convergence.",
+    "mental": "Follow one packet's required evidence pages without assuming the preceding page proves the next. First identify the campus endpoint's VLAN and virtual gateway. Then inspect the selected gateway uplink, actual shared routing context and underlay route. Next inspect the admitted remote BGP prefix and system choice, followed by packet policy, the original opposite direction and service state. Redundancy supplies possible resources, not an automatic proof that another path took over. A separate observation notebook records timestamps and packet results when real prepared equipment is available.",
+    "components": [
+      "Campus devices: D1/D2 are supported IOS XE17 L3 switches and R1/R2 are supported IOS XE17 routers in the optional target plan. Real interface names and feature/license support must be mapped before any command.",
+      "VLAN10:172.16.10.0/24 with VIP 172.16.10.1, D1 SVI172.16.10.2 and D2 SVI172.16.10.3. Prepared HSRPv2 group 10 declares D1 active priority 110 and D2 standby priority 100 with preempt enabled. These are supplied baseline observations, not a browser election.",
+      "VLAN20:172.16.20.0/24 with independent group 20 and VIP 172.16.20.1. It is a separate broadcast scope; the worksheet models VLAN10 only. Both VLANs use the prepared shared campus routing table unless a separately designed VRF boundary exists.",
+      "OSPFv2 area 0: routed links10.0.1.0/30,10.0.2.0/30 and10.0.3.0/30. Endpoint SVI networks are advertised passively in the prepared plan; passive advertisement does not create neighbors on the endpoint VLAN.",
+      "BGP and route policy: both campus routers use AS65001; an owned outside peer is AS65002. Exact import/export scope, usable NEXT_HOP, BGP choice and system installation are independent evidence questions. The worksheet checks supplied remote import prerequisites and does not calculate full internal distribution or best path.",
+      "Original outcome and measurement: packet policy, opposite-direction reachability and application readiness are independent. Actual observation requires timed original probes before, during and after one owned fault with a declared continuous-restoration criterion."
+    ],
+    "mechanism": [
+      "Bound the original exchange and observers before drawing failure conclusions. Record the campus source, remote service endpoint, family, routing table, packet protocol/port and actual ingress attachment. The VLAN declarations compare the campus endpoint's expected and actual VLAN membership; the remote AS65002 endpoint is outside the campus and is not being assigned to VLAN10 by this check. The browser accepts numeric VLAN10/20 and selectedGateway A/B/none, with A mapping to D1 and B to D2.",
+      "Establish the two campus broadcast scopes and shared routing context deliberately. VLAN10 and VLAN20 isolate Layer2 broadcast membership, but their SVIs in one ordinary routing table can route between those networks. VLAN segmentation alone creates neither a VRF nor an IP access-control boundary. Record any intended inter-VLAN packet policy separately, and preserve the trunk/access allowed VLANs and host masks. The worksheet's wrong-VLAN case fails its supplied VLAN10 path without claiming that VLAN20 can never communicate in a different valid design.",
+      "Verify the prepared VLAN10 HSRPv2 observations. D1 priority 110 is supplied active and D2 priority 100 is supplied standby with preempt enabled. Availability of the virtual gateway is a separate declaration from which device is selected. The model never computes priority ties, timers, roles or preemption. VLAN20 group 20 is independent and must be observed on the actual target; it is not evidence that group 10 has identical state. Use the exact group and interface before interpreting active/standby output.",
+      "Inspect the selected gateway uplink independently of its HSRP role. An active D1 with an unusable D1–R1 link can still own a usable VLAN10 virtual gateway if the prepared baseline has no effective upstream tracking. D2's lower priority and configured preempt do not themselves detect every upstream failure or guarantee takeover. A reviewed tracking design can change priorities, but this exercise does not silently add it. The selectedGateway control supplies an observed choice rather than predicting the alternate path after a fault.",
+      "Check the underlay's actual table, required adjacency and required selected route. Area0 on the three routed links does not imply that every expected network exists at every observer. Passive SVI advertisements contribute campus destinations without forming endpoint adjacencies. Preserve OSPF interface, neighbor and route evidence separately. The worksheet intentionally distinguishes ospfAdjacencyReady from ospfRouteSelected; adjacency alone is insufficient for the chosen original path. It does not calculate LSAs, SPF or reconvergence.",
+      "Inspect the remote destination at the relevant BGP speaker. Session readiness, exact 198.51.100.0/24 import admission, usable NEXT_HOP and selected BGP choice all must agree. R1/R2 internal distribution and R1's outside peer are explicit prepared-target design, not a browser mesh simulator. Export toward the external peer is a separate observation, especially for campus return reachability; denying one export does not inherently delete a local route. Record the correct observer, family and peer before comparing local and remote visibility.",
+      "Compare protocol choice with the actual system route used by the original source path. A BGP selected candidate can coexist with system displacement, while a distribution switch can require its deliberately prepared exact-prefix forwarding route toward its local router. The workbook separates D1/D2 remote forwarding intent from router BGP information rather than pretending that OSPF automatically imports BGP destinations. The browser uses systemSelected as a declaration and does not implement source-distance competition, recursive route lookup or hardware programming.",
+      "Read original packet policy and return evidence after routing. A route filter admits control-plane information; an ACL can deny packets even while that route remains selected. Preserve the remote endpoint's return route toward172.16.10.0/24, reverse packet policy and endpoint service state independently. A ping to a gateway or next hop is a supporting observation rather than proof of the original remote application. The applicationReady declaration is another gate; it does not execute or authenticate the service.",
+      "Record actual failure observations only when the separately prepared target exists. Run the original probe sequence before injection, continue without restarting it through the fault and restoration, and preserve sample times, interval, loss and observer context. Note injection time, last successful observation before injection, first observed failure, first subsequent success and the start of a declared sustained-success window. An observed post-injection first-success gap is a sampled end-to-end observation; it is not pure protocol convergence, an exact detection timestamp or proof of zero loss between samples.",
+      "Restore exact original ownership and dependencies. The optional workbook fault is a single reviewed mapped D1–R1 interface shutdown followed by exact no shutdown restoration; it requires an isolated owned target, preserved baseline and independent management access. Keep changes unsaved, do not use reload or broad clears as rollback, and stop if ownership or control is lost. Recollect gateway, underlay, BGP/system, packet and original service evidence before claiming baseline restoration. Browser reset changes declarations only and records no device result."
+    ],
+    "flow": [
+      [
+        "Map the original campus exchange",
+        "Fix endpoint VLAN, virtual gateway, address plan, table and independent management."
+      ],
+      [
+        "Trace control and forwarding prerequisites",
+        "Inspect selected uplink, underlay route, exact BGP prefix and system choice separately."
+      ],
+      [
+        "Observe one owned failure",
+        "Keep timestamped original probes and control-plane evidence before, during and after the mapped fault."
+      ],
+      [
+        "Restore and assess the evidence",
+        "Restore the exact interface baseline and verify sustained original service without inventing protocol timing."
+      ]
+    ],
+    "comparison": [
+      [
+        "VLAN separation / routing isolation",
+        "Broadcast membership / deliberately distinct routing context",
+        "Two SVIs in the shared campus RIB can route between VLANs unless explicit policy says otherwise."
+      ],
+      [
+        "HSRP selected role / upstream usability",
+        "Virtual-gateway ownership / selected routed uplink health",
+        "An active role can persist during an upstream-only failure without effective tracking."
+      ],
+      [
+        "OSPF neighbor / selected route",
+        "Control adjacency / required forwarding information",
+        "A live neighbor does not establish every destination route."
+      ],
+      [
+        "BGP session / destination admission",
+        "Peer control state / exact-prefix policy and NEXT_HOP eligibility",
+        "Established does not mean every remote prefix is usable."
+      ],
+      [
+        "Sampled recovery observation / protocol convergence",
+        "Original exchange timestamps / internal protocol completion timing",
+        "Probe interval and multiple layers limit the conclusion."
+      ],
+      [
+        "Declared agreement / actual service",
+        "Supplied worksheet inputs / observed original transaction",
+        "Green gates measure no packets and certify no application."
+      ]
+    ],
+    "example": "Begin with selected gatewayA/D1 and all independent declarations true. Remove only selectedGatewayUplinkReady: virtual-gateway selection remains supplied D1, while the trace stops at uplink. Do not infer D2 takeover. Restore it and remove ospfRouteSelected while leaving adjacency ready, then deny BGP import while leaving session ready. Finally preserve all network gates and remove returnReady or applicationReady separately. These cases isolate mechanism boundaries; real failure timing requires the workbook's continuous timestamped original probes.",
+    "ports": "The prepared HSRPv2 IPv4 group uses multicast 224.0.0.102 and UDP 1985; inspect the exact version rather than using HSRPv1 multicast 224.0.0.2 assumptions. OSPFv2 uses IP protocol 89, and BGP conventionally uses TCP 179. These are distinct control mechanisms. The original application's actual protocol/port must be recorded separately. The worksheet opens no socket, sends no hello/update or application request, and models no timers.",
+    "commands": [
+      {
+        "code": "show standby brief\nshow vlan brief\nshow interfaces trunk",
+        "platform": "Prepared supported IOS XE17 D1/D2 campus switches; GUIDED NOT EXECUTED",
+        "explanation": "Preserve exact VLAN10/group 10 gateway state, source/access membership and trunk VLAN carriage on both observers.",
+        "expected": "An active/standby role and VLAN listing are control/configuration observations, not proof of upstream routing or the original remote exchange. Inspect detailed group state when the brief view is insufficient."
+      },
+      {
+        "code": "show ip ospf neighbor\nshow ip ospf interface\nshow ip route ospf",
+        "platform": "Prepared supported IOS XE17 area 0 D1/D2/R1/R2; GUIDED NOT EXECUTED",
+        "explanation": "Read routed-link adjacency, passive SVI context and selected OSPF information separately in the actual campus table.",
+        "expected": "A neighbor can exist while the required selected underlay or return route is absent. No OSPF database, SPF or convergence event was executed by the browser."
+      },
+      {
+        "code": "show ip bgp summary\nshow ip bgp 198.51.100.0 255.255.255.0\nshow ip bgp neighbors 203.0.113.2 advertised-routes",
+        "platform": "Prepared supported IOS XE17 R1 with mapped owned AS65002 peer 203.0.113.2; GUIDED NOT EXECUTED",
+        "explanation": "Separate session, exact remote candidate attributes and the independent return-prefix advertisement toward the outside peer.",
+        "expected": "Use R1's actual peer mapping; R2 has different internal-peer context. An advertisement view does not bypass receiving-side policy or prove actual return traffic."
+      },
+      {
+        "code": "show ip route 198.51.100.10\nshow ip arp\nshow ip interface\nshow running-config",
+        "platform": "Prepared supported IOS XE17 mapped original-path observer; GUIDED NOT EXECUTED",
+        "explanation": "Compare system lookup, local neighbor context, actual interface packet-policy attachment and precise relevant baseline intent.",
+        "expected": "Preserve sensitive configuration securely. Route and ARP observations do not measure the original application; repeat the timed original exchange in both directions on a separately prepared target."
+      }
+    ],
+    "configuration": "The workbook supplies concrete GUIDED NOT EXECUTED IOS XE17 preparation templates for the exclusively owned D1/D2 VLAN, HSRPv2 and routed uplinks, OSPF process10, R1/R2 internal BGP and exact route filters, and optional outside AS65002 peer X. Map real interfaces and collision-check processes, ASNs, VLANs, prefixes and device-local policy names before using any template; preserve the exact baseline off-device and verify independent management. The deliberate prepared choice enables preempt on both switches without effective upstream tracking and keeps both campus VLANs in one shared RIB; no packet ACL requirement is invented. Validate exact RIB prerequisites for BGP network statements, neighbor policy views, usable next hops, system routes and original return/service with the four read-only groups before the separately mapped one-interface shutdown/no shutdown fault. Keep preparation and fault changes unsaved, restore exact owned baseline, and do not reload, save or broadly clear routing processes. No template or fault was executed on a target here.",
+    "production": "Campus redundancy needs complete control, forwarding and operating designs. Two distribution switches do not guarantee useful gateway failover if selected upstream health is not tied to a reviewed tracking policy. Two routers do not automatically share external prefix visibility or next-hop reachability. VLAN placement, shared-table inter-VLAN policy, OSPF endpoint advertisement, internal BGP distribution, external import/export and reverse service all require explicit ownership. Maintain management independence and preserve each observer's evidence. This four-device exercise is a bounded integration lesson; its declarations are not a production architecture, zero-loss guarantee or recommendation to copy addressing and priorities into another network.",
+    "troubleshooting": [
+      [
+        "VLAN10 host cannot use virtual gateway",
+        "Check actual access/trunk membership, host mask, SVI and exact HSRP group before changing routing protocols."
+      ],
+      [
+        "D1 active during upstream failure",
+        "Inspect mapped uplink and effective tracking/preemption intent; selected role alone does not prove remote reachability."
+      ],
+      [
+        "OSPF neighbor present but remote dependency missing",
+        "Read required underlay/system route and actual table; passive campus advertisements and routed-link adjacency answer different questions."
+      ],
+      [
+        "BGP session established but destination unavailable",
+        "Inspect exact-prefix admission, received/selected attributes and usable NEXT_HOP separately from the peer summary."
+      ],
+      [
+        "System route selected yet original service fails",
+        "Preserve packet-policy attachment, real FIB/neighbor observations, remote return and endpoint application evidence."
+      ],
+      [
+        "One probe succeeds after failure",
+        "Apply the declared sustained-restoration criterion and retain subsequent samples; an isolated success is not continuous recovery."
+      ],
+      [
+        "Measured gap called protocol convergence",
+        "State observer, probe interval, loss and layered scope. Internal HSRP/OSPF/BGP event timestamps need their own evidence."
+      ],
+      [
+        "Restore command issued but baseline not recovered",
+        "Recheck interface admin/oper state and exact original gateway/route/service observations; a command acknowledgement is insufficient."
+      ]
+    ],
+    "security": "Segmentation and route filtering constrain different scopes. VLAN10/VLAN20 membership does not automatically isolate their IP routing or authorize remote prefixes. Route import/export policy is not packet ACL enforcement, and a label or selected BGP path is not authenticated provenance. Protect management, peer and endpoint ownership, keep independent access during a fault and handle baseline configuration/captures securely. Review the actual service's authentication separately from reachability. The workbook authorizes no production change or unknown interface fault; its guided procedure depends on exact exclusive ownership and a prepared supported target.",
+    "performance": "Observed recovery includes sampling, gateway availability, underlay and BGP/system behavior, packet-policy state and the application itself. A one-second probe interval cannot prove an exact subsecond event or zero loss between samples. Preserve continuous samples and control-plane observations without equating their timestamps. The worksheet computes only gate conjunctions; it measures no CPU, queue, traffic load, hardware FIB programming, throughput or convergence. Report sample count, losses, outage observation bounds and sustained-restoration criteria from actual target evidence, including measurement uncertainty and the observer's clock.",
+    "mistakes": [
+      "Treating VLAN broadcast separation as an automatic VRF or IP security boundary.",
+      "Inferring upstream health or failover from HSRP active state alone.",
+      "Treating OSPF adjacency as proof of a selected destination route.",
+      "Treating BGP Established as exact-prefix admission and installation.",
+      "Assuming the worksheet predicts an alternate path or protocol convergence.",
+      "Calling the first isolated successful probe sustained recovery.",
+      "Saving, reloading or broadly clearing unrelated processes during a one-interface fault.",
+      "Claiming real service from all-green supplied declarations."
+    ],
+    "prerequisites": [
+      "s3-g7-t0",
+      "s3-g1-t0",
+      "s3-g3-t0",
+      "s3-g5-t0",
+      "s2-g2-t0"
+    ],
+    "related": [
+      "s3-g8-t0",
+      "s3-g9-t0"
+    ],
+    "lab": {
+      "objective": "Integrate the original two-switch/two-router HSRP/OSPF/BGP/VLAN/filtering exercise while separating declared path dependencies from actual timestamped failure and sustained recovery evidence.",
+      "requirements": "Browser for the tabletop worksheet. Optional actual execution requires exclusively owned supported IOS XE17 L3 switches/routers, mapped interfaces/address plan, outside AS65002 peer and remote service, clocked original probes, preserved baseline and independent management. No Cisco runtime or actual target is provided here.",
+      "topologyKind": "shared",
+      "topology": [
+        "VLAN10 and VLAN20 shared across D1/D2; independent HSRPv2 groups10/20",
+        "D1–R1:10.0.1.0/30 and D2–R2:10.0.2.0/30",
+        "R1–R2:10.0.3.0/30 OSPFv2 area 0; campus endpoints advertised passively",
+        "R1/R2 AS65001 → separately owned outside AS65002 peer → remote 198.51.100.0/24"
+      ],
+      "steps": [
+        "Fill exclusive ownership and exact device/interface/address mapping, collision-check the prepared objects, and review the D1/D2/R1/R2 plus optional outside X configuration templates before preparation and baseline observations; preserve off-device baseline and independent management.",
+        "Record source VLAN10, VIP and chosen gateway, actual area 0 adjacency/route, BGP candidate/system route and original forward/return application baseline.",
+        "Compare all supplied missing-dependency cases in the browser; keep the chosen gateway supplied rather than predicting a new election.",
+        "For a separately prepared target, run continuous timestamped original probes before, during and after one reviewed mapped uplink fault, preserving control-plane snapshots independently.",
+        "Restore exact original interface state with the mapped no shutdown only when the baseline was administratively up; keep changes unsaved and stop if ownership or independent management is lost.",
+        "Apply the declared sustained-success criterion, report interval/loss/observation bounds and verify baseline gateway/route/service restoration.",
+        "Reset the browser and reconcile optional target evidence. Delete only exclusively owned unused lab resources after exact restoration and independent baseline verification."
+      ],
+      "verification": "Tabletop output reports supplied gate agreement only. Actual original transaction, control-plane changes, failure timestamps and recovery observations require the prepared target/workbook evidence. There is no router, election, SPF, full best-path, packet or convergence result from browser controls.",
+      "troubleshooting": "Start with the first missing declaration but preserve later independent states; do not assume an earlier failure changes every later observation. On a real target, collect the actual owned scope before changing one demonstrated fault and restore exact intent.",
+      "challenge": "Hold D1 active and virtual gateway usable while its uplink is unavailable; explain why D2 preempt alone does not prove takeover. Then leave OSPF adjacency present while removing its selected underlay route, and leave BGP session present while denying exact import. Contrast those cases with a missing original return or application.",
+      "cleanup": "Reset restores browser declarations only. Optional target work restores the exact prior mapped interface admin state and relevant policy attachments, verifies baseline original service and independent management, then removes exclusively owned unused resources. No save, reload, broad peer clear or automatic protocol repair is performed."
+    },
+    "glossary": {
+      "Selected gateway": "Supplied observed D1/D2 choice for VLAN10; no browser election.",
+      "Shared campus RIB": "Prepared ordinary routing table containing campus SVIs and routed underlay routes.",
+      "Passive SVI": "Campus network advertisement without forming OSPF neighbors on the endpoint VLAN.",
+      "Observed recovery": "Timestamped original probe evidence of restored operation under a declared criterion.",
+      "Sampling interval": "Time between observations, limiting event timing and unobserved-loss claims.",
+      "Sustained success": "Declared consecutive-success window used to distinguish recovery from one isolated reply."
+    },
+    "exams": [
+      {
+        "testedConcept": "VLAN scope",
+        "question": "Do VLAN10 and VLAN20 alone create separate IP routing tables?",
+        "answer": "No; the prepared campus uses a shared RIB unless a separate design says otherwise.",
+        "explanation": "Broadcast separation does not create a VRF or automatically deny inter-VLAN routing.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; every VLAN is automatically a VRF.",
+          "No; the prepared campus uses a shared RIB unless a separate design says otherwise.",
+          "Only HSRP group 20 creates routing isolation.",
+          "OSPF area 0 forces all VLAN traffic to be denied."
+        ],
+        "topicId": "lab-3",
+        "questionId": "lab-3-Q01"
+      },
+      {
+        "testedConcept": "Gateway versus uplink",
+        "question": "D1 remains supplied active while its routed uplink is unavailable. What can this worksheet conclude?",
+        "answer": "The original path fails the uplink gate; no alternate takeover is predicted.",
+        "explanation": "HSRP role and selected upstream health are separate supplied inputs.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "D2 must take over instantly.",
+          "Remote traffic must remain lossless.",
+          "The original path fails the uplink gate; no alternate takeover is predicted.",
+          "OSPF automatically changes HSRP priorities."
+        ],
+        "topicId": "lab-3",
+        "questionId": "lab-3-Q02"
+      },
+      {
+        "testedConcept": "Preemption scope",
+        "question": "Does lower-priority D2 preempt configuration alone detect every D1 upstream failure?",
+        "answer": "No; effective tracking and actual role conditions require separate evidence.",
+        "explanation": "Preemption permits a qualifying priority-driven takeover; it is not universal upstream-health detection.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; preempt monitors every remote application.",
+          "Yes; priority 100 is always higher than110.",
+          "Only VLAN20 availability matters.",
+          "No; effective tracking and actual role conditions require separate evidence."
+        ],
+        "topicId": "lab-3",
+        "questionId": "lab-3-Q03"
+      },
+      {
+        "testedConcept": "OSPF layers",
+        "question": "Which can be ready while the required OSPF underlay route is absent?",
+        "answer": "The OSPF adjacency declaration.",
+        "explanation": "Neighbor state and the required selected route are independent evidence layers.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "The OSPF adjacency declaration.",
+          "Every remote application necessarily works.",
+          "The worksheet invents the missing route.",
+          "Passive SVI advertisement creates endpoint neighbors automatically."
+        ],
+        "topicId": "lab-3",
+        "questionId": "lab-3-Q04"
+      },
+      {
+        "testedConcept": "BGP layers",
+        "question": "A required BGP session is ready but exact remote import is denied. What fails?",
+        "answer": "The supplied remote BGP prefix gate.",
+        "explanation": "Peer control state does not bypass exact-prefix admission policy.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "The session is necessarily reset by the worksheet.",
+          "The supplied remote BGP prefix gate.",
+          "Every local source route is deleted.",
+          "The return route is automatically created."
+        ],
+        "topicId": "lab-3",
+        "questionId": "lab-3-Q05"
+      },
+      {
+        "testedConcept": "System source",
+        "question": "Can a selected BGP candidate be displaced from the actual system route choice?",
+        "answer": "Yes; protocol choice and system selection are separate.",
+        "explanation": "The worksheet exposes systemSelected independently after the supplied BGP choice.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "No; all BGP selected paths must be installed.",
+          "Only if the selected gateway changes VLAN.",
+          "Yes; protocol choice and system selection are separate.",
+          "HSRP preempt prevents system displacement."
+        ],
+        "topicId": "lab-3",
+        "questionId": "lab-3-Q06"
+      },
+      {
+        "testedConcept": "Policy context",
+        "question": "Does admitting a BGP route automatically permit the original packet through an ACL?",
+        "answer": "No; control-plane admission and packet policy are distinct.",
+        "explanation": "A selected route can coexist with a packet denial at the original interface/direction.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; a route filter overrides every ACL.",
+          "Yes; TCP 179 policy permits every application.",
+          "Only a shorter AS_PATH creates packet permission.",
+          "No; control-plane admission and packet policy are distinct."
+        ],
+        "topicId": "lab-3",
+        "questionId": "lab-3-Q07"
+      },
+      {
+        "testedConcept": "Measurements",
+        "question": "What does the browser's all-green trace establish?",
+        "answer": "Agreement of the supplied declarations only.",
+        "explanation": "No packet, timer, protocol transition or original application was measured.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Agreement of the supplied declarations only.",
+          "Measured zero-loss convergence.",
+          "Authenticated end-to-end service success.",
+          "An exact hardware failover timestamp."
+        ],
+        "topicId": "lab-3",
+        "questionId": "lab-3-Q08"
+      },
+      {
+        "testedConcept": "Probe uncertainty",
+        "question": "What is justified by firstSuccessAfter minus failureInjection from actual sampled original probes?",
+        "answer": "An observed post-injection first-success gap with sampling and layered scope limits.",
+        "explanation": "It does not isolate pure protocol convergence or prove that no unobserved loss occurred.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "An exact HSRP election duration.",
+          "An observed post-injection first-success gap with sampling and layered scope limits.",
+          "Guaranteed zero loss between probes.",
+          "The OSPF SPF runtime alone."
+        ],
+        "topicId": "lab-3",
+        "questionId": "lab-3-Q09"
+      },
+      {
+        "testedConcept": "Rollback",
+        "question": "What restores the workbook's isolated D1 uplink fault when the recorded baseline was administratively up?",
+        "answer": "Exact mapped no shutdown followed by baseline and original-service verification.",
+        "explanation": "Keep the exercise change unsaved and restore exact owned state; a reload or broad clear is not the procedure.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Save the fault then reload all devices.",
+          "Clear every BGP and OSPF process.",
+          "Exact mapped no shutdown followed by baseline and original-service verification.",
+          "Assume browser reset changed the router."
+        ],
+        "topicId": "lab-3",
+        "questionId": "lab-3-Q10"
+      }
+    ],
+    "quick": [
+      {
+        "testedConcept": "Original return",
+        "question": "Can all forward path declarations agree while the original return is missing?",
+        "answer": "Yes; returnReady is an independent gate.",
+        "explanation": "Forward routing and policy do not establish remote reply reachability.",
+        "difficulty": "Intermediate",
+        "type": "short-answer",
+        "topicId": "lab-3",
+        "questionId": "lab-3-QC1"
+      },
+      {
+        "testedConcept": "Protocol scope",
+        "question": "Does changing selectedGateway run a real HSRP election?",
+        "answer": "No; it supplies an observed selected-role declaration.",
+        "explanation": "The model computes no timers, tracking or alternate-path transition.",
+        "difficulty": "Intermediate",
+        "type": "short-answer",
+        "topicId": "lab-3",
+        "questionId": "lab-3-QC2"
+      },
+      {
+        "testedConcept": "Recovery evidence",
+        "question": "Why record a sustained-success criterion instead of only the first restored reply?",
+        "answer": "An isolated success may be followed by failure and does not establish continuous restoration.",
+        "explanation": "Preserve subsequent timestamped samples and report the declared criterion and measurement uncertainty.",
+        "difficulty": "Advanced",
+        "type": "short-answer",
+        "topicId": "lab-3",
+        "questionId": "lab-3-QC3"
+      }
+    ],
+    "artifacts": [
+      {
+        "title": "Advanced routing and switching evidence workbook",
+        "path": "labs/advanced-routing-switching-workbook.md",
+        "description": "Owned topology mapping, exact address plan, timestamped one-fault observations and baseline restoration; guided target procedure, not executed evidence."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cisco IOS XE17.x HSRP: group/version, priority, preemption and inspection",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-0.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17.x HSRP preempt and track: upstream object and role distinctions",
+        "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/13780-6.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17.x OSPF: passive interface and neighbor/interface inspection",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_iro-cfg-0.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17.x basic BGP: route, summary and advertisement inspection",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_irg-basic-net-0.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17 BGP switch configuration: route-policy and prefix-list context",
+        "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr3-fwd/bgp/bgp-configuration-guide/routing-bgp.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17 protocol-independent command reference: system route inspection",
+        "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17.x HSRP version2: IPv4 multicast distinction",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-v2.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17.12 VLAN inspection and broadcast membership",
+        "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/17-12/configuration_guide/vlan/b_1712_vlan_9500_cg/configuring_vlans.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17.12 VLAN trunk allowed scope and inspection",
+        "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/17-12/configuration_guide/vlan/b_1712_vlan_9500_cg/configuring_vlan_trunks.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17.17 system route, ARP and IP interface inspection",
+        "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/rtng/b_1717_rtng_9600_cg/configuring_ip_unicast_routing.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  }
+]

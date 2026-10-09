@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "Original iBGP draft has ten sections, thirteen questions and four guided read-only command blocks; accepted count unchanged.",
+    "Twelve scenarios preserve exact distribution, resolution, BGP and system selection; independent return and keyboard reset checked.",
+    "Four widths/both themes, named keyboard scrolling and mechanism/play/reset/reduced-motion pass.",
+    "Quiz/progress, original eBGP/iBGP/attributes draft adjacency and direct-file use pass without errors."
+  ],
+  "errors": [],
+  "scope": "Full iBGP draft with declared fixed distribution/next-hop context; no actual iBGP/RR or measured traffic/loop history."
+}

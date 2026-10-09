@@ -1,0 +1,12 @@
+#med-tool { min-width: 0; }
+#med-tool .med-candidates { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+#med-tool fieldset { min-width: 0; }
+#med-tool fieldset > label { display: block; margin-block: .55rem .2rem; }
+#med-tool input[type="number"], #med-tool select { max-width: 100%; box-sizing: border-box; }
+#med-tool .med-scroll { max-width: 100%; overflow-x: auto; }
+#med-tool table { min-width: 760px; }
+#med-tool th { white-space: nowrap; }
+#med-tool input[type="number"] { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); padding: .55rem; border-radius: .25rem; width: 12rem; }
+#med-tool .med-scroll:focus-visible { outline: 3px solid var(--accent, #3e80b8); outline-offset: 3px; }
+#med-tool [hidden] { display: none !important; }
+@media (max-width: 640px) { #med-tool .med-candidates { grid-template-columns: minmax(0, 1fr); } }

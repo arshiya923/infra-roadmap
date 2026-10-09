@@ -1,0 +1,1 @@
+(function(){'use strict';document.getElementById('em-preview').innerHTML=window.EigrpMetricModels.html('eigrp-metrics');window.EigrpMetricModels.mount('eigrp-metrics');document.getElementById('em-theme').addEventListener('click',()=>{const page=document.documentElement;page.dataset.theme=page.dataset.theme==='dark'?'light':'dark';});})();

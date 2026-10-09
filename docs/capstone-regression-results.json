@@ -1,0 +1,70 @@
+{
+  "result": "PASS",
+  "commands": [
+    {
+      "command": [
+        "node",
+        "--check",
+        "scripts/capstone.js"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "scripts/learning.js"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/content.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"result\": \"PASS\",\n  \"originalNodes\": 442,\n  \"groups\": 69,\n  \"lessons\": 442,\n  \"examQuestions\": 4420,\n  \"quickChecks\": 1326,\n  \"labs\": 442,\n  \"sourceHash\": \"ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25\",\n  \"batches\": 33\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/capstone.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"result\":\"PASS\",\"modelChecks\":763,\"actualLocalRuns\":5,\"workbookDeliverables\":15}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-capstone.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"result\":\"PASS\",\"checks\":[\"four keyboard cases; budget failures; invalid input clears stale result; reset\",\"all 13 assessment submissions and answer explanations\",\"flow keyboard/reset/reduced motion; exact copy; separate learner/editorial progress\",\"both downloads byte-equivalent\",\"eight viewport/theme combinations without document overflow\",\"direct-file lesson and model load\"],\"errors\":[]}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS original roadmap preserves all runtime node and group IDs\nPASS original dialog links to correct lesson and preserves learner storage\nPASS all seven lesson routes render complete components\nPASS stepper next/previous/play/pause/reset and diagram zoom\nPASS exam answers hidden until response; correct/wrong feedback and modes\nPASS quick check is separate from exam\nPASS clipboard copies exact command\nPASS anchors preserve lesson route\nPASS full-content search finds commands and glossary concepts\nPASS RAID known failure patterns and reset\nPASS RAID exhaustive four-drive failure masks\nPASS RAID blocks show copies, parity and missing members\nPASS pending and malformed routes are honest and recoverable\nPASS light/dark persistence\nPASS desktop/tablet/mobile layouts and screenshots\nPASS keyboard flow controls and reduced-motion behavior\nPASS file URL works without HTTP or external dependencies\nPASS no JavaScript errors or missing assets\nPASS 18 browser checks\n",
+      "stderr": ""
+    }
+  ],
+  "sha256": {
+    "content/batch-28.js": "90e83f1ca7a625af6c563cfccea28c77d1f8f91685c135071d04ce03c077c43c",
+    "labs/capstone-workbook.md": "d374805f64c49fa8f29c8548c32e70feaee4d46b621fe03b343d63b41eb80ba9",
+    "labs/capstone-recovery.py": "47676cf4de3b52f4ffa687c2b1e61bcfff085de12969493aa6570df72d6b64b6",
+    "scripts/capstone.js": "789e882a7fd5280cef81adbdf84ab0c25739494d72d4b4fe2185cd8889bc865a",
+    "styles/capstone.css": "4e0e3ddc819cf8cd920c5d3050be17e0247a8de9f0d33dc85048ffd1dc10fbfc",
+    "tests/capstone.cjs": "ed3fd00326a905f98ac17e6796b94f2f42a8089d330de5ccfaca5e27216fb6d4",
+    "tests/browser-capstone.cjs": "185915c191b603766fb89081f34a702496791a25945606ca76468b22687aa5a2"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "Storm Control draft preserves full contracts and independent accepted progress",
+    "Exact hysteresis/omitted-falling/endpoints, independent notification/shutdown, retained latch, invalid-state preservation, conversion and keyboard reset",
+    "Four widths, light/dark captures and named keyboard-scrollable history endpoints",
+    "All mobile active flow steps visible normal and zoomed",
+    "Quiz feedback and authored Port Security draft adjacency",
+    "Direct-file fixture without page/resource errors"
+  ],
+  "errors": [],
+  "scope": "Conceptual broadcast percentage/history/action fixture only; no target parser, ASIC/counter, packet drop, trap delivery, disabled-port recovery, performance/timing or original service execution"
+}

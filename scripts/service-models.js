@@ -1,0 +1,46 @@
+'use strict';
+(() => {
+function leaseState(lease,age){
+ if(!Number.isInteger(lease)||lease<8||lease>86400)throw new RangeError('Choose a whole lease duration from 8 to 86400 seconds.');
+ if(!Number.isInteger(age)||age<0||age>172800)throw new RangeError('Choose a whole age from 0 to 172800 seconds.');
+ const t1=lease/2,t2=lease*7/8;
+ if(age>=lease)return {state:'EXPIRED → INIT',t1,t2,remaining:0,action:'Stop using the expired lease and return to acquisition.'};
+ if(age>=t2)return {state:'REBINDING',t1,t2,remaining:lease-age,action:'Seek renewal from available servers through the applicable local/relay path.'};
+ if(age>=t1)return {state:'RENEWING',t1,t2,remaining:lease-age,action:'Seek renewal from the original server; the existing lease has not yet expired.'};
+ return {state:'BOUND',t1,t2,remaining:lease-age,action:'Use the valid lease; no renewal response or early transition is modelled.'};
+}
+function vlanTag(pcp,dei,vid){
+ for(const [value,max,name] of [[pcp,7,'PCP'],[dei,1,'DEI'],[vid,4095,'VID']])if(!Number.isInteger(value)||value<0||value>max)throw new RangeError(`${name} must be a whole value from 0 to ${max}.`);
+ const tci=(pcp<<13)|(dei<<12)|vid;
+ return {tci,hex:'0x'+tci.toString(16).toUpperCase().padStart(4,'0'),bits:[pcp.toString(2).padStart(3,'0'),String(dei),vid.toString(2).padStart(12,'0')],meaning:vid===0?'Priority-tagged case; this is not ordinary VLAN 0.':vid===4095?'Reserved VID; do not use as an ordinary VLAN identifier.':'Ordinary VID field value; platform support and admission policy still apply.'};
+}
+const mappings=[{client:'A',inside:'10.0.0.10:51514',outside:'198.51.100.7:40000'},{client:'B',inside:'10.0.0.20:51514',outside:'198.51.100.7:40001'}];
+function natPacket(scenario){
+ if(!['out-a','out-b','return-a','return-b','expired-a'].includes(scenario))throw new RangeError('Unknown translation scenario.');
+ const i=scenario.endsWith('b')?1:0,m=mappings[i],out=scenario.startsWith('out'),expired=scenario==='expired-a',remote='203.0.113.80:443';
+ return {client:m.client,protocol:'TCP',before:{source:out?m.inside:remote,destination:out?remote:m.outside},after:expired?null:{source:out?m.outside:remote,destination:out?remote:m.inside},mappings:mappings.filter(x=>!expired||x.client!=='A').map(x=>({...x})),note:expired?'No matching dynamic mapping in this model. Other translation/filtering rules are not modelled.':'Existing illustrative mapping used; allocation algorithm and firewall policy are not modelled.'};
+}
+function html(kind){
+ if(kind==='vlan-tag')return `<div class="calculator service-tool" id="tag-tool"><p class="kicker">INTERACTIVE / SINGLE CUSTOMER TAG</p><h3>Build the 16-bit tag-control field</h3><label for="tag-pcp">PCP · 3 bits (0–7)</label><input id="tag-pcp" type="number" min="0" max="7" step="1" value="5"><label for="tag-dei">DEI · 1 bit (0–1)</label><input id="tag-dei" type="number" min="0" max="1" step="1" value="1"><label for="tag-vid">VID · 12 bits (0–4095)</label><input id="tag-vid" type="number" min="0" max="4095" step="1" value="123"><p class="small">Fixed TPID: 0x8100. This calculates one customer tag, not stacked tags, QoS scheduling or deployable configuration.</p><p id="tag-error" role="alert" hidden></p><div id="tag-output" aria-live="polite"><h3 id="tag-hex"></h3><p>Bits grouped as PCP | DEI | VID:</p><p id="tag-bits"></p><p id="tag-meaning"></p></div><button id="tag-reset">Reset tag</button></div>`;
+ if(kind==='dhcp-lease')return `<div class="calculator service-tool" id="lease-tool"><p class="kicker">INTERACTIVE / DHCPv4 LEASE</p><h3>When does the client change state?</h3><label for="lease-duration">Lease duration (seconds)</label><input id="lease-duration" type="number" min="8" max="86400" step="1" value="3600"><label for="lease-age">Age since lease began (seconds)</label><input id="lease-age" type="number" min="0" max="172800" step="1" value="0"><p class="small">No-response teaching scenario: T1 = ½ lease; T2 = ⅞ lease. No ACK, NAK, restart, explicit server timers or retransmission jitter. Input limits are model limits, not protocol limits. Jump buttons choose the first whole second at or after the timer.</p><p id="lease-error" role="alert" hidden></p><div id="lease-output" aria-live="polite"><h3 id="lease-state"></h3><p id="lease-times"></p><p id="lease-action"></p></div><div class="flow-controls"><button data-lease-jump="t1">Jump to T1</button><button data-lease-jump="t2">Jump to T2</button><button data-lease-jump="expiry">Jump to expiry</button><button id="lease-reset">Reset lease</button></div></div>`;
+ if(kind==='nat-table')return `<div class="calculator service-tool" id="nat-tool"><p class="kicker">INTERACTIVE / TCP PAT TABLE</p><h3>Which endpoint receives the reply?</h3><label for="nat-scenario">Packet scenario</label><select id="nat-scenario"><option value="out-a">Client A outbound</option><option value="out-b">Client B outbound</option><option value="return-a">Reply for A</option><option value="return-b">Reply for B</option><option value="expired-a">Reply after A mapping expires</option></select><p class="small">Fixed illustrative IPv4 TCP mappings, not a vendor simulator. Ports 40000/40001 are chosen examples. No live traffic, port-allocation algorithm, filtering or NAT64.</p><p class="small">On narrow screens, scroll each table sideways. Keyboard: focus the table region, then use the arrow keys.</p><div aria-live="polite"><h3>Mappings available in this scenario</h3><div class="table-wrap" tabindex="0" role="region" aria-label="Translation mappings, scroll horizontally if needed"><table><thead><tr><th>Client</th><th>Internal endpoint</th><th>External endpoint</th></tr></thead><tbody id="nat-mappings"></tbody></table></div><h3>Packet endpoints</h3><div class="table-wrap" tabindex="0" role="region" aria-label="Packet endpoints, scroll horizontally if needed"><table><thead><tr><th>Observation</th><th>TCP source</th><th>TCP destination</th></tr></thead><tbody id="nat-packet"></tbody></table></div><p id="nat-note"></p></div><button id="nat-reset">Reset translation</button></div>`;
+ return '';
+}
+function mount(kind){
+ if(kind==='vlan-tag'){
+  const fields=['pcp','dei','vid'].map(k=>document.getElementById('tag-'+k)),error=document.getElementById('tag-error'),output=document.getElementById('tag-output');
+  const update=()=>{try{if(fields.some(e=>!e.value.trim()))throw new RangeError('Enter all three fields.');const t=vlanTag(...fields.map(e=>Number(e.value)));output.hidden=false;error.hidden=true;document.getElementById('tag-hex').textContent='TCI '+t.hex;document.getElementById('tag-bits').textContent=t.bits.join(' | ');document.getElementById('tag-meaning').textContent=t.meaning;}catch(e){output.hidden=true;error.textContent=e.message;error.hidden=false;}};
+  fields.forEach(e=>e.addEventListener('input',update));document.getElementById('tag-reset').addEventListener('click',()=>{fields.forEach((e,i)=>e.value=String([5,1,123][i]));update();});update();return;
+ }
+ if(kind==='dhcp-lease'){
+  const duration=document.getElementById('lease-duration'),age=document.getElementById('lease-age'),error=document.getElementById('lease-error'),output=document.getElementById('lease-output'),jumps=[...document.querySelectorAll('[data-lease-jump]')];
+  const update=()=>{try{if(!duration.value.trim()||!age.value.trim())throw new RangeError('Enter both duration and age.');const l=leaseState(Number(duration.value),Number(age.value));error.hidden=true;output.hidden=false;document.getElementById('lease-state').textContent=l.state;document.getElementById('lease-times').textContent=`T1: ${l.t1} s · T2: ${l.t2} s · expiry: ${duration.value} s · remaining: ${l.remaining} s`;document.getElementById('lease-action').textContent=l.action;jumps.forEach(b=>b.disabled=false);}catch(e){output.hidden=true;error.textContent=e.message;error.hidden=false;jumps.forEach(b=>b.disabled=true);}};
+  duration.addEventListener('input',update);age.addEventListener('input',update);jumps.forEach(b=>b.addEventListener('click',()=>{const d=Number(duration.value);age.value=String(Math.ceil(b.dataset.leaseJump==='t1'?d/2:b.dataset.leaseJump==='t2'?d*7/8:d));update();}));document.getElementById('lease-reset').addEventListener('click',()=>{duration.value='3600';age.value='0';update();});update();
+ }else if(kind==='nat-table'){
+  const select=document.getElementById('nat-scenario');
+  const rows=(id,values)=>{const body=document.getElementById(id);body.replaceChildren();for(const cells of values){const tr=document.createElement('tr');cells.forEach((text,i)=>{const cell=document.createElement(i?'td':'th');if(!i)cell.scope='row';cell.textContent=text;tr.append(cell);});body.append(tr);}};
+  const update=()=>{const p=natPacket(select.value);rows('nat-mappings',p.mappings.map(m=>[m.client,m.inside,m.outside]));rows('nat-packet',[['Before',p.before.source,p.before.destination],['After',p.after?.source||'No translation',p.after?.destination||'No translation']]);document.getElementById('nat-note').textContent=p.note;};select.addEventListener('change',update);document.getElementById('nat-reset').addEventListener('click',()=>{select.value='out-a';update();});update();
+ }
+}
+const api={leaseState,natPacket,vlanTag,html,mount};if(typeof module!=='undefined'&&module.exports)module.exports=api;else window.ServiceModels=api;
+})();

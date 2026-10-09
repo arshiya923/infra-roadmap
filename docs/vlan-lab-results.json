@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "environment": "Ubuntu-24.04 / WSL2, root namespace capability",
+  "checks": [
+    "Default invocation is inert help",
+    "VLAN 10 peers communicate both ways across tagged trunk; VLAN 20 isolated",
+    "Missing trunk VLAN breaks VLAN 10 while link remains UP",
+    "Restored trunk VLAN recovers peers and retains cross-VLAN isolation",
+    "Normal cleanup leaves no owned namespaces",
+    "Host link inventory and IPv4/IPv6 routes unchanged",
+    "In-memory early-failure injection cleans all created namespaces"
+  ],
+  "output": [
+    "PASS baseline: VLAN 10 peers communicate both ways across tagged trunk.",
+    "PASS isolation: same-prefix VLAN 20 endpoint cannot exchange with VLAN 10.",
+    "PASS injected fault: deleting trunk VLAN 10 breaks that path while the link remains UP.",
+    "PASS recovery: VLAN 10 restored and VLAN 20 isolation retained.",
+    "PASS cleanup: all owned namespaces removed."
+  ],
+  "limitations": "Two virtual bridges/shared kernel only; no physical switch, cable, routing, STP redundancy, DNS or throughput test. Raw host network inventory not retained."
+}

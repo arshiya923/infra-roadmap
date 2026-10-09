@@ -1,0 +1,352 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "tests/content.cjs"
+      ],
+      "scope": "Content/original/hash/catalog contracts",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "{\n  \"result\": \"PASS\",\n  \"originalNodes\": 442,\n  \"groups\": 69,\n  \"lessons\": 95,\n  \"examQuestions\": 950,\n  \"quickChecks\": 285,\n  \"labs\": 95,\n  \"sourceHash\": \"ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25\",\n  \"batches\": 33\n}",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/switching-models.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS four stable-tree topologies, six complete learning-table snapshots, invalid inputs and replay independence",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/stp-evidence.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS six scoped evidence cases, independent service arithmetic, invalid IDs and copy independence",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/mst-models.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS all 4094 map entries and single-VLAN differences, seven cases, ordering, invalid input and copy independence",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/edge-models.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 192 selected edge/role/attachment/BPDU/carrier/carriage combinations, invalid input and independent results",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/guard-models.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 48 scope/event/recovery combinations, incident history, workflow disclosure and invalid inputs",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/root-guard-models.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 168 independent scope/placement/carriage cases, boundary cascade, malformed input and copy isolation",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/loop-guard-models.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 288 independent role/history/link/policy/carriage cases, service separation and malformed inputs",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/storm-models.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 192 independent boundary/action/latch cases, four sequences, 20002 hundredth-rate decisions, unit arithmetic and invalid inputs",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/security-port-models.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 108 independent capacity/source trajectories, violation observability, saved/current persistence, retained latch/counter, invalid inputs and copy isolation",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/span-models.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 36 independent source/direction/VLAN selections, explicit repeated/drop observations, eight capacity boundaries, invalid inputs and copied results",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/rspan-models.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 8192 independent declared prerequisite/VLAN/local-label cases, six authored scenarios, strict invalid inputs and copy isolation",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/erspan-models.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 1024 independent declaration/tuple cases, six scenarios, seven explicit size cases, 33 neighboring size boundaries, strict input and result isolation",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/enterprise-lab-models.cjs"
+      ],
+      "scope": "Independent bounded model expectations",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 4096 independent logical/VLAN/LACP/endpoint/mirror combinations, all eight graph/component trees, eight scenarios, independent probe evidence, invalid inputs and copied results",
+      "error": null
+    },
+    {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-24.04",
+        "--",
+        "python3",
+        "/mnt/c/Users/Arshiya/Desktop/Infta Roadmap/tests/erspan-fixture.py"
+      ],
+      "scope": "Actual offline synthetic decoder/byte evidence",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS four independent synthetic records, checksums, installed offline decoder fields/five filters and guarded generator writes",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-batch-08.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 5 STP browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-rstp.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 RSTP browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-mst.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 MST browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-portfast.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 PortFast browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-bpdu-guard.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 BPDU Guard browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-root-guard.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 Root Guard browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-loop-guard.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 Loop Guard browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-storm-control.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 Storm Control browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-port-security.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 Port Security browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-span.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 SPAN browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-rspan.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 RSPAN browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-erspan.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 ERSPAN browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-enterprise-lab.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS 6 integrated lab browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-batch-08-acceptance.cjs"
+      ],
+      "scope": "Focused UI, animation/connection and responsive gates",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS all 13 animation/static/connection routes",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser.cjs"
+      ],
+      "scope": "Shared reader/original controls and direct-file operation",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "PASS original roadmap preserves all runtime node and group IDs\nPASS original dialog links to correct lesson and preserves learner storage\nPASS all seven lesson routes render complete components\nPASS stepper next/previous/play/pause/reset and diagram zoom\nPASS exam answers hidden until response; correct/wrong feedback and modes\nPASS quick check is separate from exam\nPASS clipboard copies exact command\nPASS anchors preserve lesson route\nPASS full-content search finds commands and glossary concepts\nPASS RAID known failure patterns and reset\nPASS RAID exhaustive four-drive failure masks\nPASS RAID blocks show copies, parity and missing members\nPASS pending and malformed routes are honest and recoverable\nPASS light/dark persistence\nPASS desktop/tablet/mobile layouts and screenshots\nPASS keyboard flow controls and reduced-motion behavior\nPASS file URL works without HTTP or external dependencies\nPASS no JavaScript errors or missing assets\nPASS 18 browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/quality-audit.cjs"
+      ],
+      "scope": "Full authored-course prerequisite/content/route/contrast/search audit",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "{\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"Prerequisite graph is acyclic and all prerequisites are authored\",\n    \"Per-lesson exams have ten distinct prompts; comparison/flow/port context present\",\n    \"All authored lessons have substantial structured content (word count used only as a floor, not proof of accuracy)\",\n    \"Initial reader loads only the selected lesson bundle\",\n    \"All 95 authored routes: unique DOM IDs, named form controls/buttons, one H1 and valid section anchors\",\n    \"All authored previous/next links preserve original adjacency, including pending lab nodes\",\n    \"Core body/muted/accent/warning color tokens meet 4.5:1 on paper/surface/soft backgrounds in both themes\",\n    \"Broad local search responds within the 2-second audit ceiling\",\n    \"No page exceptions while traversing the complete authored course\"\n  ],\n  \"localSearchMs\": 151,\n  \"bytes\": {\n    \"learn.html\": 3974,\n    \"content/catalog.js\": 649369,\n    \"scripts/learning.js\": 31542,\n    \"scripts/network-models.js\": 12295,\n    \"scripts/address-tools.js\": 16322,\n    \"scripts/protocol-models.js\": 8560,\n    \"scripts/service-models.js\": 9352,\n    \"scripts/switching-models.js\": 8062,\n    \"scripts/routing-models.js\": 4118,\n    \"scripts/diagnostic-models.js\": 10649,\n    \"scripts/packet-models.js\": 3905,\n    \"scripts/cisco-models.js\": 6882,\n    \"scripts/boot-models.js\": 7002,\n    \"scripts/storage-models.js\": 3781,\n    \"scripts/lifecycle-models.js\": 6609,\n    \"scripts/port-models.js\": 4448,\n    \"scripts/vlan-control-models.js\": 13183,\n    \"scripts/aggregation-models.js\": 4035,\n    \"scripts/stp-evidence.js\": 5642,\n    \"scripts/mst-models.js\": 5652,\n    \"scripts/edge-models.js\": 4426,\n    \"scripts/guard-models.js\": 3908,\n    \"scripts/root-guard-models.js\": 6098,\n    \"scripts/loop-guard-models.js\": 6478,\n    \"scripts/storm-models.js\": 8027,\n    \"scripts/security-port-models.js\": 8563,\n    \"scripts/span-models.js\": 7308,\n    \"scripts/rspan-models.js\": 7950,\n    \"scripts/erspan-models.js\": 9000,\n    \"scripts/enterprise-lab-models.js\": 11143,\n    \"styles/learning.css\": 24187,\n    \"content/batch-01.js\": 71800,\n    \"content/batch-02.js\": 57137,\n    \"content/batch-03.js\": 128672,\n    \"content/batch-04.js\": 100550,\n    \"content/batch-05.js\": 231658,\n    \"content/batch-06.js\": 170199,\n    \"content/batch-07.js\": 325720,\n    \"content/batch-08.js\": 283392\n  }\n}",
+      "error": null
+    }
+  ],
+  "scope": "Batch 08 taught models, actual synthetic offline fixture, full-unit UI and broad course audit. No actual Cisco execution or live fault/service/capture."
+}

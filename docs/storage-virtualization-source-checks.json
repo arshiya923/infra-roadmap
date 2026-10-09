@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-09",
+  "scope": "Link retrieval only; technical claims reviewed separately against primary sources.",
+  "sources": [
+    {
+      "key": "storage",
+      "title": "RHEL 9 storage layers and device management",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html-single/managing_storage_devices/index",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "nfs",
+      "title": "RHEL 9 network file services: NFS and identity",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html-single/configuring_and_using_network_file_services/index",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "smb",
+      "title": "Microsoft: SMB file-service overview",
+      "url": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/file-server-smb-overview",
+      "status": 200,
+      "finalURL": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/file-server-smb-overview",
+      "bytes": 62088,
+      "sha256": "1a74c3f684062307f0595f452db1115e232683cae9eaf974e9dcb9dc5f4a8ebf"
+    },
+    {
+      "key": "object",
+      "title": "Amazon S3 object, bucket and version concepts",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+      "status": 200,
+      "finalURL": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+      "bytes": 62278,
+      "sha256": "37eda5874f5577bc02552d465e45ecf935b2048b880212de47f65242cb1e16f1"
+    },
+    {
+      "key": "iscsi",
+      "title": "RFC 7143: iSCSI protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc7143.html",
+      "status": 200,
+      "finalURL": "https://www.rfc-editor.org/rfc/rfc7143.html",
+      "bytes": 789362,
+      "sha256": "c3ebbb88bed2a0591f69f1f8a6264f5db35bdfb80316686253700c7daa1d1bc3"
+    },
+    {
+      "key": "nvme",
+      "title": "RHEL 9 NVMe over Fabrics",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/overview-of-nvme-over-fabric-devices_managing-storage-devices",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "multipath",
+      "title": "RHEL 9 Device Mapper Multipath",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html-single/configuring_device_mapper_multipath/index",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "zoning",
+      "title": "ONTAP FC/FCoE zoning and port identity",
+      "url": "https://docs.netapp.com/us-en/ontap/san-config/fibre-channel-fcoe-zoning-concept.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "mds",
+      "title": "Cisco MDS 9.x: managing zones and zone sets",
+      "url": "https://www.cisco.com/c/en/us/td/docs/dcn/mds9000/sw/9x/configuration/fabric/cisco-mds-9000-nx-os-fabric-configuration-guide-9x/configuring_and_managing_zones.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "fcoe",
+      "title": "Cisco Nexus 9.3(x): FCoE NPV and FIP",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/fcoe/configuration/guide/b-cisco-nexus-9000-nx-os-fcoe-npv-configuration-guide-933/b-cisco-nexus-9000-nx-os-fcoe-npv-configuration-guide-933-DRAFT_chapter_010.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "brocade",
+      "title": "Brocade Fabric OS 8.2.x: historical defined/effective zoning reference; verify installed release before operation",
+      "url": "https://docs.broadcom.com/doc/FOS-82x-Command-RM",
+      "status": 200,
+      "finalURL": "https://docs.broadcom.com/doc/FOS-82x-Command-RM",
+      "bytes": 5894812,
+      "sha256": "fc1ff24e7c93f5757df646ef3e6cb89e735fe3aed57e9f2392f512d85522465d"
+    },
+    {
+      "key": "msa",
+      "title": "HPE MSA 1060/2060/2062 management guide",
+      "url": "https://support.hpe.com/hpesc/public/api/document/a00128580en_us",
+      "status": 200,
+      "finalURL": "https://support.hpe.com/hpesc/public/api/document/a00128580en_us",
+      "bytes": 1616476,
+      "sha256": "eb4f973835b8ade88ca15131c9720d743537ff13db50a299ac40e8f8638b7278"
+    },
+    {
+      "key": "dell",
+      "title": "Dell PowerStore: volumes",
+      "url": "https://www.dell.com/support/manuals/en-ie/powerstore-5000/pwrstr-cfg-vols/volumes?guid=guid-27435c56-5a18-491e-9f73-0e09b36541b1&lang=en-us",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "netapp",
+      "title": "ONTAP FC SAN provisioning",
+      "url": "https://docs.netapp.com/us-en/ontap/san-admin/san-provisioning-fc-concept.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "virt",
+      "title": "RHEL 9 virtualization architecture and operations",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html-single/configuring_and_managing_virtualization/index",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "esx",
+      "title": "Broadcom ESXCLI storage inspection reference",
+      "url": "https://developer.broadcom.com/xapis/esxcli-command-reference/latest/namespace/esxcli_storage.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "network",
+      "title": "Broadcom ESXCLI network inspection reference",
+      "url": "https://developer.broadcom.com/xapis/esxcli-command-reference/latest/namespace/esxcli_network.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "cluster",
+      "title": "Broadcom vSphere: HA/DRS cluster and automation levels",
+      "url": "https://knowledge.broadcom.com/external/article/308413/creating-a-vsphere-drs-and-ha-cluster-us.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "motion",
+      "title": "Broadcom: vMotion VMkernel network requirements",
+      "url": "https://knowledge.broadcom.com/external/article/304952/vmotion-interface-creating-a-vmkernel-p.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "snapshot",
+      "title": "Broadcom: VMware snapshot practices and backup boundary",
+      "url": "https://knowledge.broadcom.com/external/article/318825/best-practices-for-using-vmware-snapshot.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "hyperv",
+      "title": "Microsoft Hyper-V architecture overview",
+      "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview",
+      "status": 200,
+      "finalURL": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview",
+      "bytes": 66457,
+      "sha256": "1101110da6abcf1dcbfb85c955fa6550d85c4db1cc00bf9a939bf193b3c079f9"
+    },
+    {
+      "key": "kvm",
+      "title": "Linux kernel KVM documentation",
+      "url": "https://docs.kernel.org/virt/kvm/index.html",
+      "status": 200,
+      "finalURL": "https://docs.kernel.org/virt/kvm/index.html",
+      "bytes": 20419,
+      "sha256": "67ea04c83e9b1ef067e59850f083773adf7ab2b474e1f51c53dd32829ac52f41"
+    },
+    {
+      "key": "docker",
+      "title": "Docker engine, image and container concepts",
+      "url": "https://docs.docker.com/get-started/docker-overview/",
+      "status": 200,
+      "finalURL": "https://docs.docker.com/get-started/docker-overview/",
+      "bytes": 198988,
+      "sha256": "aa85d40fd4918fc803a1a0e9f852c581663c3f55638c24ceb1e17a4b17243c8c"
+    },
+    {
+      "key": "kube",
+      "title": "Kubernetes components and reconciliation roles",
+      "url": "https://kubernetes.io/docs/concepts/overview/components/",
+      "status": 200,
+      "finalURL": "https://kubernetes.io/docs/concepts/overview/components/",
+      "bytes": 501153,
+      "sha256": "064ef7c8d8e0fd7beeb960c5f07a7f4a6b89d2c03e2404e9933789e49c13b08b"
+    }
+  ]
+}

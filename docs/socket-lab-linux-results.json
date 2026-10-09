@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-04",
+  "result": "PASS",
+  "environment": "Ubuntu WSL",
+  "checks": [
+    "Inert help",
+    "Only ephemeral loopback binds and loopback connects",
+    "Five real state/application observations",
+    "All four sockets closed normally",
+    "Both sockets closed after injected inspection failure"
+  ],
+  "observed": {
+    "result": "PASS",
+    "provider": "ss",
+    "scope": "IPv4 loopback only, ephemeral owned ports; no raw host socket inventory retained",
+    "checks": [
+      "TCP listener observed",
+      "UDP bound socket observed without a handshake claim",
+      "Accepted TCP connection observed independently from listener",
+      "PING/OK application exchange verified separately",
+      "Listener absent after socket cleanup"
+    ],
+    "limitations": "No external reachability, IPv6, TLS, production application, backlog load or firewall change tested"
+  }
+}

@@ -1,0 +1,2752 @@
+{
+  "date": "2026-10-09",
+  "summary": {
+    "total": 80,
+    "guidedNotExecuted": 80,
+    "targetExecuted": 0
+  },
+  "blocks": [
+    {
+      "topicId": "s3-g5-t0",
+      "index": 1,
+      "code": "show running-config",
+      "platform": "Prepared FRR8.4 owned speaker; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Configuration is intended behavior, not proof of a matching route or measured service."
+    },
+    {
+      "topicId": "s3-g5-t0",
+      "index": 2,
+      "code": "show bgp ipv4 unicast json",
+      "platform": "Prepared FRR8.4 declared observer; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Do not call every view an unfiltered received-route history."
+    },
+    {
+      "topicId": "s3-g5-t0",
+      "index": 3,
+      "code": "show bgp ipv4 unicast summary json",
+      "platform": "Prepared FRR8.4 declared observer; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "An established session can coexist with denied import or export."
+    },
+    {
+      "topicId": "s3-g5-t0",
+      "index": 4,
+      "code": "show ip route 198.51.100.0/24",
+      "platform": "Prepared FRR8.4 actual table context; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Selected system state must be supplemented by actual FIB/adjacency and original exchange evidence."
+    },
+    {
+      "topicId": "s3-g5-t1",
+      "index": 1,
+      "code": "show running-config",
+      "platform": "Prepared FRR8.4 owned speaker; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 OSPFv2: redistribution metric/type/filter scope",
+          "url": "https://docs.frrouting.org/en/stable-8.4/ospfd.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Configuration is intended behavior, not proof of a matching route or measured service."
+    },
+    {
+      "topicId": "s3-g5-t1",
+      "index": 2,
+      "code": "show ip route 198.51.100.0/24",
+      "platform": "Prepared FRR8.4 actual table context; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 OSPFv2: redistribution metric/type/filter scope",
+          "url": "https://docs.frrouting.org/en/stable-8.4/ospfd.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Selected system state must be supplemented by actual FIB/adjacency and original exchange evidence."
+    },
+    {
+      "topicId": "s3-g5-t1",
+      "index": 3,
+      "code": "show route-map json",
+      "platform": "Prepared FRR8.4 source/target boundary; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 OSPFv2: redistribution metric/type/filter scope",
+          "url": "https://docs.frrouting.org/en/stable-8.4/ospfd.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "A label is a policy marker, not authenticated provenance or universal loop proof."
+    },
+    {
+      "topicId": "s3-g5-t1",
+      "index": 4,
+      "code": "show ip ospf database external",
+      "platform": "Prepared FRR8.4 OSPFv2 target; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 OSPFv2: redistribution metric/type/filter scope",
+          "url": "https://docs.frrouting.org/en/stable-8.4/ospfd.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "No OSPF LSA or convergence result is produced by the browser."
+    },
+    {
+      "topicId": "s3-g5-t2",
+      "index": 1,
+      "code": "show running-config",
+      "platform": "Prepared FRR8.4 owned speaker; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Configuration is intended behavior, not proof of a matching route or measured service."
+    },
+    {
+      "topicId": "s3-g5-t2",
+      "index": 2,
+      "code": "show route-map json",
+      "platform": "Prepared FRR8.4 consuming speaker; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Separate list match result, entry action and consuming-feature semantics."
+    },
+    {
+      "topicId": "s3-g5-t2",
+      "index": 3,
+      "code": "show ip prefix-list json",
+      "platform": "Prepared FRR8.4 consuming speaker; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "A referenced deny means nonmatch in the fixed route-map match context."
+    },
+    {
+      "topicId": "s3-g5-t2",
+      "index": 4,
+      "code": "show ip route 198.51.100.0/24",
+      "platform": "Prepared FRR8.4 actual table context; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Selected system state must be supplemented by actual FIB/adjacency and original exchange evidence."
+    },
+    {
+      "topicId": "s3-g5-t3",
+      "index": 1,
+      "code": "show ip prefix-list json",
+      "platform": "Prepared FRR8.4 owned speaker; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE Network as Code prefix-list examples: ge/le and default-only",
+          "url": "https://netascode.cisco.com/docs/data_models/iosxe/device/prefix_list/",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Default-only and all-lengths entries have different specificity scope."
+    },
+    {
+      "topicId": "s3-g5-t3",
+      "index": 2,
+      "code": "show ip prefix-list detail json",
+      "platform": "Prepared FRR8.4 owned speaker; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE Network as Code prefix-list examples: ge/le and default-only",
+          "url": "https://netascode.cisco.com/docs/data_models/iosxe/device/prefix_list/",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Preserve observations before editing; counters do not prove an entire original exchange."
+    },
+    {
+      "topicId": "s3-g5-t3",
+      "index": 3,
+      "code": "show running-config",
+      "platform": "Prepared FRR8.4 owned speaker; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE Network as Code prefix-list examples: ge/le and default-only",
+          "url": "https://netascode.cisco.com/docs/data_models/iosxe/device/prefix_list/",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Configuration is intended behavior, not proof of a matching route or measured service."
+    },
+    {
+      "topicId": "s3-g5-t3",
+      "index": 4,
+      "code": "show ip route 198.51.100.0/24",
+      "platform": "Prepared FRR8.4 actual table context; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+          "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+          "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE Network as Code prefix-list examples: ge/le and default-only",
+          "url": "https://netascode.cisco.com/docs/data_models/iosxe/device/prefix_list/",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Selected system state must be supplemented by actual FIB/adjacency and original exchange evidence."
+    },
+    {
+      "topicId": "s3-g5-t4",
+      "index": 1,
+      "code": "show ip access-lists",
+      "platform": "Prepared Cisco IOS XE17.x device; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS XE17.x IP Access List Overview: ordered packet rules, source/extended scope and wildcard bits",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/sec-vpn/b-security-vpn/m_sec-access-list-ov-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE Gibraltar16.12.x: ACL inspection and interface attachment commands",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/xe-16-12/sec-data-acl-xe-16-12-book/sec-create-ip-apply.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS Security Command Reference: show ip access-lists and show ip interface",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/s1/sec-s1-cr-book/sec-cr-s4.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 protocol-independent command reference: show ip route",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Counters and order support policy investigation; they do not reconstruct a complete transaction."
+    },
+    {
+      "topicId": "s3-g5-t4",
+      "index": 2,
+      "code": "show ip interface",
+      "platform": "Prepared Cisco IOS XE17.x device; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS XE17.x IP Access List Overview: ordered packet rules, source/extended scope and wildcard bits",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/sec-vpn/b-security-vpn/m_sec-access-list-ov-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE Gibraltar16.12.x: ACL inspection and interface attachment commands",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/xe-16-12/sec-data-acl-xe-16-12-book/sec-create-ip-apply.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS Security Command Reference: show ip access-lists and show ip interface",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/s1/sec-s1-cr-book/sec-cr-s4.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 protocol-independent command reference: show ip route",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "An ACL definition alone does not activate interface packet filtering."
+    },
+    {
+      "topicId": "s3-g5-t4",
+      "index": 3,
+      "code": "show running-config",
+      "platform": "Prepared Cisco IOS XE17.x device; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS XE17.x IP Access List Overview: ordered packet rules, source/extended scope and wildcard bits",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/sec-vpn/b-security-vpn/m_sec-access-list-ov-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE Gibraltar16.12.x: ACL inspection and interface attachment commands",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/xe-16-12/sec-data-acl-xe-16-12-book/sec-create-ip-apply.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS Security Command Reference: show ip access-lists and show ip interface",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/s1/sec-s1-cr-book/sec-cr-s4.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 protocol-independent command reference: show ip route",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Configuration can contain sensitive information; retain only scoped owned evidence securely."
+    },
+    {
+      "topicId": "s3-g5-t4",
+      "index": 4,
+      "code": "show ip route 198.51.100.10",
+      "platform": "Prepared Cisco IOS XE17.x device; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS XE17.x IP Access List Overview: ordered packet rules, source/extended scope and wildcard bits",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/sec-vpn/b-security-vpn/m_sec-access-list-ov-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE Gibraltar16.12.x: ACL inspection and interface attachment commands",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/xe-16-12/sec-data-acl-xe-16-12-book/sec-create-ip-apply.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS Security Command Reference: show ip access-lists and show ip interface",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/s1/sec-s1-cr-book/sec-cr-s4.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 protocol-independent command reference: show ip route",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "This routing observation is not an application or return-path test."
+    },
+    {
+      "topicId": "s3-g6-t0",
+      "index": 1,
+      "code": "ip -d link show type vrf\nip link show master BLUE\nip link show master RED",
+      "platform": "Prepared Linux kernel 6.6 / iproute2 6.6.0 VRF-device lab · guided read-only, not executed",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Linux kernel 6.6 VRF device, l3mdev rules and scoped inspection",
+          "url": "https://www.kernel.org/doc/html/v6.6/networking/vrf.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 6.6.0 ip-rule manual: read-only rule show",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/ip-rule.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable 8.4 Zebra VRF backends, table-miss warning and show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html#virtual-routing-and-forwarding",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable 8.4 BGP VRF route leaking: explicit configured mechanism outside worksheet",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html#vrf-route-leaking",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "BLUE and RED must already be owned VRF-device names in this observer namespace. The -d view exposes table IDs. This is not a command for an unprepared host or proof of FRR namespace-backend mapping."
+    },
+    {
+      "topicId": "s3-g6-t0",
+      "index": 2,
+      "code": "ip rule show\nip route show vrf BLUE\nip route show vrf RED",
+      "platform": "Prepared Linux kernel 6.6 / iproute2 6.6.0 VRF-device lab · guided read-only, not executed",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Linux kernel 6.6 VRF device, l3mdev rules and scoped inspection",
+          "url": "https://www.kernel.org/doc/html/v6.6/networking/vrf.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 6.6.0 ip-rule manual: read-only rule show",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/ip-rule.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable 8.4 Zebra VRF backends, table-miss warning and show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html#virtual-routing-and-forwarding",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable 8.4 BGP VRF route leaking: explicit configured mechanism outside worksheet",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html#vrf-route-leaking",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Retain rule priorities and each selected table's intended terminal/default behavior. A table miss can continue to another applicable rule; do not claim universal no-fallback from a VRF name. No rule or default route is added by these commands."
+    },
+    {
+      "topicId": "s3-g6-t0",
+      "index": 3,
+      "code": "ip route get 10.10.0.42 vrf BLUE\nip route get 10.10.0.42 vrf RED",
+      "platform": "Prepared Linux kernel 6.6 / iproute2 6.6.0 VRF-device lab · guided read-only, not executed",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Linux kernel 6.6 VRF device, l3mdev rules and scoped inspection",
+          "url": "https://www.kernel.org/doc/html/v6.6/networking/vrf.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 6.6.0 ip-rule manual: read-only rule show",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/ip-rule.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable 8.4 Zebra VRF backends, table-miss warning and show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html#virtual-routing-and-forwarding",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable 8.4 BGP VRF route leaking: explicit configured mechanism outside worksheet",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html#vrf-route-leaking",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Record table, selected source and egress from the actual output. A local route-get result is a lookup diagnostic, not a forwarded original-packet trace or service measurement; rules, source and ingress context need their own actual evidence."
+    },
+    {
+      "topicId": "s3-g6-t0",
+      "index": 4,
+      "code": "show ip route vrf BLUE\nshow ip route vrf RED\nshow ip nht vrf BLUE\nshow ip nht vrf RED",
+      "platform": "Prepared FRR stable 8.4 Zebra CLI · guided read-only, not executed",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Linux kernel 6.6 VRF device, l3mdev rules and scoped inspection",
+          "url": "https://www.kernel.org/doc/html/v6.6/networking/vrf.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 6.6.0 ip-rule manual: read-only rule show",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/ip-rule.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable 8.4 Zebra VRF backends, table-miss warning and show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html#virtual-routing-and-forwarding",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable 8.4 BGP VRF route leaking: explicit configured mechanism outside worksheet",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html#vrf-route-leaking",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Scope names must match actual FRR VRFs. In the ordinary backend route views map to associated Linux tables; with Zebra -n they map to network-namespace routing context. Candidate/next-hop metadata is independent of FIB, neighbor and original traffic proof."
+    },
+    {
+      "topicId": "s3-g6-t1",
+      "index": 1,
+      "code": "show interfaces GigabitEthernet1/0/2 trunk\nshow vrf definition interfaces",
+      "platform": "Prepared Catalyst9600 IOS XE17.17.x switch lab · guided read-only, not executed",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco Catalyst9600 IOS XE17.17.x VRF-Lite: ingress context, overlapping routes and read-only VRF/ARP views",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/rtng/b_1717_rtng_9600_cg/configuring_vrf_lite.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco Catalyst9600 IOS XE17.17.x VLAN trunk inspection and native/tag context",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/vlan/b_1717_vlan_9600_cg/configuring_vlan_trunks.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Linux kernel6.6 VRF device and explicitly scoped inspection",
+          "url": "https://www.kernel.org/doc/html/v6.6/networking/vrf.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 6.6.0 ip-rule manual: read-only show",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/ip-rule.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra backend and rule/default caveats",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html#virtual-routing-and-forwarding",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP explicit VRF route leaking, outside model",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html#vrf-route-leaking",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GigabitEthernet1/0/2 is a replaceable owned example interface that must exist on the prepared target. Record allowed/active/forwarding VLAN context and actual SVI/routed-interface bindings. This is not router-subinterface syntax and does not configure a switchport or attach a VRF."
+    },
+    {
+      "topicId": "s3-g6-t1",
+      "index": 2,
+      "code": "show ip route vrf BLUE\nshow ip route vrf RED",
+      "platform": "Prepared Catalyst9600 IOS XE17.17.x switch lab · guided read-only, not executed",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco Catalyst9600 IOS XE17.17.x VRF-Lite: ingress context, overlapping routes and read-only VRF/ARP views",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/rtng/b_1717_rtng_9600_cg/configuring_vrf_lite.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco Catalyst9600 IOS XE17.17.x VLAN trunk inspection and native/tag context",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/vlan/b_1717_vlan_9600_cg/configuring_vlan_trunks.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Linux kernel6.6 VRF device and explicitly scoped inspection",
+          "url": "https://www.kernel.org/doc/html/v6.6/networking/vrf.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 6.6.0 ip-rule manual: read-only show",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/ip-rule.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra backend and rule/default caveats",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html#virtual-routing-and-forwarding",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP explicit VRF route leaking, outside model",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html#vrf-route-leaking",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Record BLUE/RED ownership even when the numeric prefixes overlap. A missing route in one context is not evidence that the other table is a substitute. Routing output alone does not prove hardware programming or original service."
+    },
+    {
+      "topicId": "s3-g6-t1",
+      "index": 3,
+      "code": "show ip arp vrf BLUE\nshow ip arp vrf RED",
+      "platform": "Prepared Catalyst9600 IOS XE17.17.x switch lab · guided read-only, not executed",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco Catalyst9600 IOS XE17.17.x VRF-Lite: ingress context, overlapping routes and read-only VRF/ARP views",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/rtng/b_1717_rtng_9600_cg/configuring_vrf_lite.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco Catalyst9600 IOS XE17.17.x VLAN trunk inspection and native/tag context",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/vlan/b_1717_vlan_9600_cg/configuring_vlan_trunks.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Linux kernel6.6 VRF device and explicitly scoped inspection",
+          "url": "https://www.kernel.org/doc/html/v6.6/networking/vrf.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 6.6.0 ip-rule manual: read-only show",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/ip-rule.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra backend and rule/default caveats",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html#virtual-routing-and-forwarding",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP explicit VRF route leaking, outside model",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html#vrf-route-leaking",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Record context, neighbor MAC/interface and state where supplied. ARP evidence differs from route recursion and does not establish the far-side reply/application path. No static ARP entry or probe is created."
+    },
+    {
+      "topicId": "s3-g6-t1",
+      "index": 4,
+      "code": "ip rule show\nip route show vrf BLUE\nip route show vrf RED\nip route get 10.10.0.42 vrf BLUE",
+      "platform": "Separate prepared Linux kernel6.6 / iproute2 6.6.0 VRF-device analogy · guided read-only, not executed",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco Catalyst9600 IOS XE17.17.x VRF-Lite: ingress context, overlapping routes and read-only VRF/ARP views",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/rtng/b_1717_rtng_9600_cg/configuring_vrf_lite.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco Catalyst9600 IOS XE17.17.x VLAN trunk inspection and native/tag context",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/vlan/b_1717_vlan_9600_cg/configuring_vlan_trunks.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Linux kernel6.6 VRF device and explicitly scoped inspection",
+          "url": "https://www.kernel.org/doc/html/v6.6/networking/vrf.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 6.6.0 ip-rule manual: read-only show",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/ip-rule.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 Zebra backend and rule/default caveats",
+          "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html#virtual-routing-and-forwarding",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRR stable8.4 BGP explicit VRF route leaking, outside model",
+          "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html#vrf-route-leaking",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "These are Linux commands on a separately prepared observer, not commands for the Cisco switch. BLUE/RED must be actual VRF-device names in that namespace. Inspect applicable rule priorities and terminal/default actions; Linux can continue beyond a table miss. A route-get is diagnostic and sends no original-service probe."
+    },
+    {
+      "topicId": "s3-g7-t0",
+      "index": 1,
+      "code": "show standby brief",
+      "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS XE17: HSRP roles, preemption, tracking and inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: HSRP v2 identities and interoperability",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-v2.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco HSRP FAQ: equal-priority initial selection and tracking",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/9281-3.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco HSRP troubleshooting: both IPv4 versions use UDP 1985",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/10583-62.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: ARP read-only inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record interface, group, version context, priority and active/standby identities from actual output; a row is not service evidence."
+    },
+    {
+      "topicId": "s3-g7-t0",
+      "index": 2,
+      "code": "show standby\nshow track",
+      "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS XE17: HSRP roles, preemption, tracking and inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: HSRP v2 identities and interoperability",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-v2.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco HSRP FAQ: equal-priority initial selection and tracking",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/9281-3.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco HSRP troubleshooting: both IPv4 versions use UDP 1985",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/10583-62.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: ARP read-only inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Compare configured and effective priority, track-object state and supported delays; preserve actual output instead of assuming tracking exists."
+    },
+    {
+      "topicId": "s3-g7-t0",
+      "index": 3,
+      "code": "show ip arp",
+      "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS XE17: HSRP roles, preemption, tracking and inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: HSRP v2 identities and interoperability",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-v2.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco HSRP FAQ: equal-priority initial selection and tracking",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/9281-3.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco HSRP troubleshooting: both IPv4 versions use UDP 1985",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/10583-62.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: ARP read-only inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Correlate virtual versus real identities and separately inspect the original host cache. Router ARP alone does not prove host learning or packet delivery."
+    },
+    {
+      "topicId": "s3-g7-t0",
+      "index": 4,
+      "code": "show ip route\nshow running-config",
+      "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS XE17: HSRP roles, preemption, tracking and inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: HSRP v2 identities and interoperability",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-v2.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco HSRP FAQ: equal-priority initial selection and tracking",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/9281-3.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco HSRP troubleshooting: both IPv4 versions use UDP 1985",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/10583-62.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: ARP read-only inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Scope table/VRF and intended destination/return routes. Configuration can be sensitive; neither record certifies hardware forwarding or service."
+    },
+    {
+      "topicId": "s3-g7-t1",
+      "index": 1,
+      "code": "show vrrp brief",
+      "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 9568: current VRRP v3, owner, preemption, packet and MAC rules",
+          "url": "https://www.rfc-editor.org/rfc/rfc9568",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: show vrrp brief inspection syntax; implementation scoped",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-vrrp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 FHRP VRRP guide: show vrrp detail",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr3-fwd/fhrp/fhrp-configuration-guide/vrrp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: ARP inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record version/family/VRID, priority, ownership, preemption and displayed MASTER/BACKUP scope. Map MASTER to the current RFC Active concept without claiming exact current-standard implementation compliance."
+    },
+    {
+      "topicId": "s3-g7-t1",
+      "index": 2,
+      "code": "show vrrp detail",
+      "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 9568: current VRRP v3, owner, preemption, packet and MAC rules",
+          "url": "https://www.rfc-editor.org/rfc/rfc9568",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: show vrrp brief inspection syntax; implementation scoped",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-vrrp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 FHRP VRRP guide: show vrrp detail",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr3-fwd/fhrp/fhrp-configuration-guide/vrrp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: ARP inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record the actual platform parser, advertised intervals and ownership context; no timer behavior or packet validation is inferred from a worksheet."
+    },
+    {
+      "topicId": "s3-g7-t1",
+      "index": 3,
+      "code": "show ip arp",
+      "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 9568: current VRRP v3, owner, preemption, packet and MAC rules",
+          "url": "https://www.rfc-editor.org/rfc/rfc9568",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: show vrrp brief inspection syntax; implementation scoped",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-vrrp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 FHRP VRRP guide: show vrrp detail",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr3-fwd/fhrp/fhrp-configuration-guide/vrrp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: ARP inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Correlate virtual MAC and host gateway cache separately. A VIP echo result or router cache alone is not a transit/application result."
+    },
+    {
+      "topicId": "s3-g7-t1",
+      "index": 4,
+      "code": "show ip route\nshow running-config",
+      "platform": "Prepared isolated Cisco IOS XE 17 context · read-only inspection; exact platform/support required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 9568: current VRRP v3, owner, preemption, packet and MAC rules",
+          "url": "https://www.rfc-editor.org/rfc/rfc9568",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: show vrrp brief inspection syntax; implementation scoped",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-vrrp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 FHRP VRRP guide: show vrrp detail",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr3-fwd/fhrp/fhrp-configuration-guide/vrrp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17: ARP inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Inspect original destination and return context in the applicable table. Keep configuration private; no mutation or save is supplied."
+    },
+    {
+      "topicId": "s3-g7-t2",
+      "index": 1,
+      "code": "show glbp brief",
+      "platform": "Prepared isolated Cisco IOS 15M&T GLBP-supported context · read-only inspection; exact platform/support required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS 15M&T: GLBP roles, ARP sharing, preemption, weighting and show syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipapp_fhrp/configuration/15-mt/fhp-15-mt-book/Configuring-GLBP.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE 17: base ARP inspection syntax only",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record interface/group, AVG and forwarder rows rather than collapsing all Active labels into one role. Actual syntax/support must match the prepared platform."
+    },
+    {
+      "topicId": "s3-g7-t2",
+      "index": 2,
+      "code": "show glbp",
+      "platform": "Prepared isolated Cisco IOS 15M&T GLBP-supported context · read-only inspection; exact platform/support required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS 15M&T: GLBP roles, ARP sharing, preemption, weighting and show syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipapp_fhrp/configuration/15-mt/fhp-15-mt-book/Configuring-GLBP.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE 17: base ARP inspection syntax only",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Preserve actual virtual MAC owner, priority, weighting/threshold and redirect/timeout fields. They are observations, not worksheet-computed delays."
+    },
+    {
+      "topicId": "s3-g7-t2",
+      "index": 3,
+      "code": "show ip arp",
+      "platform": "Prepared isolated Cisco IOS 15M&T; ARP syntax cross-checked with IOS XE 17 guide · read-only inspection; exact platform/support required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS 15M&T: GLBP roles, ARP sharing, preemption, weighting and show syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipapp_fhrp/configuration/15-mt/fhp-15-mt-book/Configuring-GLBP.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE 17: base ARP inspection syntax only",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record each original host’s actual VIP cache through its own supported host tool; router ARP alone does not establish both host assignments."
+    },
+    {
+      "topicId": "s3-g7-t2",
+      "index": 4,
+      "code": "show ip route\nshow running-config",
+      "platform": "Prepared isolated Cisco IOS 15M&T; base inspection syntax also documented in IOS XE 17 · read-only inspection; exact platform/support required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS 15M&T: GLBP roles, ARP sharing, preemption, weighting and show syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipapp_fhrp/configuration/15-mt/fhp-15-mt-book/Configuring-GLBP.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE 17: base ARP inspection syntax only",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_arp-config-arp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS protocol-independent command reference: show ip route syntax",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Inspect each selected forwarder’s applicable destination and return scope. The record does not prove traffic fairness, state synchronization or original service."
+    },
+    {
+      "topicId": "s3-g8-t0",
+      "index": 1,
+      "code": "vtysh -c 'show ip multicast'",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 1112: host extensions for IPv4 multicast",
+          "url": "https://www.rfc-editor.org/rfc/rfc1112.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2365: administratively scoped IP multicast",
+          "url": "https://www.rfc-editor.org/rfc/rfc2365.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 1812: router TTL behavior",
+          "url": "https://www.rfc-editor.org/rfc/rfc1812.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4607: Source-Specific Multicast for IP",
+          "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record the actual interfaces and target VRF; do not infer a particular channel solely from global readiness."
+    },
+    {
+      "topicId": "s3-g8-t0",
+      "index": 2,
+      "code": "vtysh -c 'show ip pim rpf'",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 1112: host extensions for IPv4 multicast",
+          "url": "https://www.rfc-editor.org/rfc/rfc1112.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2365: administratively scoped IP multicast",
+          "url": "https://www.rfc-editor.org/rfc/rfc2365.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 1812: router TTL behavior",
+          "url": "https://www.rfc-editor.org/rfc/rfc1812.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4607: Source-Specific Multicast for IP",
+          "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record actual source/group and RPF interface; confirm the selected reverse-path context separately."
+    },
+    {
+      "topicId": "s3-g8-t0",
+      "index": 3,
+      "code": "vtysh -c 'show ip mroute'",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 1112: host extensions for IPv4 multicast",
+          "url": "https://www.rfc-editor.org/rfc/rfc1112.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2365: administratively scoped IP multicast",
+          "url": "https://www.rfc-editor.org/rfc/rfc2365.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 1812: router TTL behavior",
+          "url": "https://www.rfc-editor.org/rfc/rfc1812.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4607: Source-Specific Multicast for IP",
+          "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record actual channel ingress and outgoing interfaces without asserting sample output or hardware delivery."
+    },
+    {
+      "topicId": "s3-g8-t0",
+      "index": 4,
+      "code": "vtysh -c 'show ip multicast count'",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 1112: host extensions for IPv4 multicast",
+          "url": "https://www.rfc-editor.org/rfc/rfc1112.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2365: administratively scoped IP multicast",
+          "url": "https://www.rfc-editor.org/rfc/rfc2365.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 1812: router TTL behavior",
+          "url": "https://www.rfc-editor.org/rfc/rfc1812.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4607: Source-Specific Multicast for IP",
+          "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record counters and observation interval; counts need correlation with the exact source and receiver transaction."
+    },
+    {
+      "topicId": "s3-g8-t1",
+      "index": 1,
+      "code": "vtysh -c 'show ip pim neighbor'",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 7761: PIM-SM base specification",
+          "url": "https://www.rfc-editor.org/rfc/rfc7761",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 8736: historical PIM update superseded by RFC 9436",
+          "url": "https://www.rfc-editor.org/rfc/rfc8736",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 9436: current message type/flag update, obsoletes RFC 8736",
+          "url": "https://www.rfc-editor.org/rfc/rfc9436",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4607: Source-Specific Multicast for IP",
+          "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record real neighbors per interface; a neighbor line does not prove this channel has a tree."
+    },
+    {
+      "topicId": "s3-g8-t1",
+      "index": 2,
+      "code": "vtysh -c 'show ip pim rp-info'",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 7761: PIM-SM base specification",
+          "url": "https://www.rfc-editor.org/rfc/rfc7761",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 8736: historical PIM update superseded by RFC 9436",
+          "url": "https://www.rfc-editor.org/rfc/rfc8736",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 9436: current message type/flag update, obsoletes RFC 8736",
+          "url": "https://www.rfc-editor.org/rfc/rfc9436",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4607: Source-Specific Multicast for IP",
+          "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record actual group mapping and context; this is an ASM/shared investigation, not an SSM RP requirement."
+    },
+    {
+      "topicId": "s3-g8-t1",
+      "index": 3,
+      "code": "vtysh -c 'show ip pim rpf'",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 7761: PIM-SM base specification",
+          "url": "https://www.rfc-editor.org/rfc/rfc7761",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 8736: historical PIM update superseded by RFC 9436",
+          "url": "https://www.rfc-editor.org/rfc/rfc8736",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 9436: current message type/flag update, obsoletes RFC 8736",
+          "url": "https://www.rfc-editor.org/rfc/rfc9436",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4607: Source-Specific Multicast for IP",
+          "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record source/group, selected lookup information and interface without deriving RPF from a destination group lookup."
+    },
+    {
+      "topicId": "s3-g8-t1",
+      "index": 4,
+      "code": "vtysh -c 'show ip mroute'",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 7761: PIM-SM base specification",
+          "url": "https://www.rfc-editor.org/rfc/rfc7761",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 8736: historical PIM update superseded by RFC 9436",
+          "url": "https://www.rfc-editor.org/rfc/rfc8736",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 9436: current message type/flag update, obsoletes RFC 8736",
+          "url": "https://www.rfc-editor.org/rfc/rfc9436",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4607: Source-Specific Multicast for IP",
+          "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record actual incoming and outgoing interfaces and correlate with exact-channel evidence; no live packet result is asserted."
+    },
+    {
+      "topicId": "s3-g8-t2",
+      "index": 1,
+      "code": "vtysh -c 'show ip igmp interface'",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 9776: current IGMPv3 specification; obsoletes RFC 3376 and updates RFC 2236",
+          "url": "https://www.rfc-editor.org/rfc/rfc9776",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4604: IGMPv3 source-specific reporting and SSM-aware host/router guidance",
+          "url": "https://www.rfc-editor.org/rfc/rfc4604",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2236: historical IGMPv2 reports and Leave Group behavior",
+          "url": "https://www.rfc-editor.org/rfc/rfc2236",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4607: Source-Specific Multicast for IP",
+          "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record actual attached LAN and target state, including observed querier context where shown; no timer history is invented."
+    },
+    {
+      "topicId": "s3-g8-t2",
+      "index": 2,
+      "code": "vtysh -c 'show ip igmp groups'",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 9776: current IGMPv3 specification; obsoletes RFC 3376 and updates RFC 2236",
+          "url": "https://www.rfc-editor.org/rfc/rfc9776",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4604: IGMPv3 source-specific reporting and SSM-aware host/router guidance",
+          "url": "https://www.rfc-editor.org/rfc/rfc4604",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2236: historical IGMPv2 reports and Leave Group behavior",
+          "url": "https://www.rfc-editor.org/rfc/rfc2236",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4607: Source-Specific Multicast for IP",
+          "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record exact group and actual state/timers; these aggregate router records are not the worksheet host cards."
+    },
+    {
+      "topicId": "s3-g8-t2",
+      "index": 3,
+      "code": "vtysh -c 'show ip igmp sources'",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 9776: current IGMPv3 specification; obsoletes RFC 3376 and updates RFC 2236",
+          "url": "https://www.rfc-editor.org/rfc/rfc9776",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4604: IGMPv3 source-specific reporting and SSM-aware host/router guidance",
+          "url": "https://www.rfc-editor.org/rfc/rfc4604",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2236: historical IGMPv2 reports and Leave Group behavior",
+          "url": "https://www.rfc-editor.org/rfc/rfc2236",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4607: Source-Specific Multicast for IP",
+          "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Correlate exact group/source and displayed state with target version; do not infer acceptance from one list without its mode/context."
+    },
+    {
+      "topicId": "s3-g8-t2",
+      "index": 4,
+      "code": "vtysh -c 'show ip igmp statistics'",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 9776: current IGMPv3 specification; obsoletes RFC 3376 and updates RFC 2236",
+          "url": "https://www.rfc-editor.org/rfc/rfc9776",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4604: IGMPv3 source-specific reporting and SSM-aware host/router guidance",
+          "url": "https://www.rfc-editor.org/rfc/rfc4604",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2236: historical IGMPv2 reports and Leave Group behavior",
+          "url": "https://www.rfc-editor.org/rfc/rfc2236",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 4607: Source-Specific Multicast for IP",
+          "url": "https://www.rfc-editor.org/rfc/rfc4607.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "FRRouting stable 8.4: PIM and IGMP operational show commands",
+          "url": "https://docs.frrouting.org/en/stable-8.4/pim.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record counters and observation interval; report counts do not establish source traffic or application authorization."
+    },
+    {
+      "topicId": "s3-g9-t0",
+      "index": 1,
+      "code": "tc -s qdisc show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — differentiated services conceptual model",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2474 — differentiated services field",
+          "url": "https://www.rfc-editor.org/rfc/rfc2474",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3168 — ECN IP field",
+          "url": "https://www.rfc-editor.org/rfc/rfc3168",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc manual",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Preserve the actual root/child handles, qdisc types and counters. A counter snapshot is not a measured original application result."
+    },
+    {
+      "topicId": "s3-g9-t0",
+      "index": 2,
+      "code": "tc -s class show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — differentiated services conceptual model",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2474 — differentiated services field",
+          "url": "https://www.rfc-editor.org/rfc/rfc2474",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3168 — ECN IP field",
+          "url": "https://www.rfc-editor.org/rfc/rfc3168",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc manual",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Correlate class handles with the qdisc hierarchy and actual configured rates; do not manufacture a class for every worksheet row."
+    },
+    {
+      "topicId": "s3-g9-t0",
+      "index": 3,
+      "code": "tc filter show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — differentiated services conceptual model",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2474 — differentiated services field",
+          "url": "https://www.rfc-editor.org/rfc/rfc2474",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3168 — ECN IP field",
+          "url": "https://www.rfc-editor.org/rfc/rfc3168",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc manual",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record what the command actually lists and identify the hook/hierarchy before interpreting a missing filter. This command does not create classification or marking."
+    },
+    {
+      "topicId": "s3-g9-t0",
+      "index": 4,
+      "code": "tc -d -s qdisc show dev \"$QOS_DEV\"\ntc -d -s class show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — differentiated services conceptual model",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2474 — differentiated services field",
+          "url": "https://www.rfc-editor.org/rfc/rfc2474",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3168 — ECN IP field",
+          "url": "https://www.rfc-editor.org/rfc/rfc3168",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc manual",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Inspect actual parameter details and cumulative counters. No supplied output, kernel scheduling trace or packet capture is claimed."
+    },
+    {
+      "topicId": "s3-g9-t1",
+      "index": 1,
+      "code": "ip -s -s link show",
+      "platform": "Linux iproute2 · read-only example; target/version not inspected",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 2474: Differentiated Services Field",
+          "url": "https://www.rfc-editor.org/rfc/rfc2474",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3168: Explicit Congestion Notification",
+          "url": "https://www.rfc-editor.org/rfc/rfc3168",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "tc(8): Linux traffic-control inspection commands",
+          "url": "https://man7.org/linux/man-pages/man8/tc.8.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Linux kernel interface statistics documentation",
+          "url": "https://www.kernel.org/doc/html/latest/networking/statistics.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: record interface, link state and counters shown. Counters are platform/driver evidence and do not prove this worksheet rule matched a packet."
+    },
+    {
+      "topicId": "s3-g9-t1",
+      "index": 2,
+      "code": "tc -s qdisc show dev DEV",
+      "platform": "Linux iproute2 tc · read-only example; target/version not inspected",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 2474: Differentiated Services Field",
+          "url": "https://www.rfc-editor.org/rfc/rfc2474",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3168: Explicit Congestion Notification",
+          "url": "https://www.rfc-editor.org/rfc/rfc3168",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "tc(8): Linux traffic-control inspection commands",
+          "url": "https://man7.org/linux/man-pages/man8/tc.8.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Linux kernel interface statistics documentation",
+          "url": "https://www.kernel.org/doc/html/latest/networking/statistics.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: record attached qdisc and any statistics. An absent qdisc or counter does not prove a classifier result."
+    },
+    {
+      "topicId": "s3-g9-t1",
+      "index": 3,
+      "code": "tc -s class show dev DEV",
+      "platform": "Linux iproute2 tc · read-only example; target/version not inspected",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 2474: Differentiated Services Field",
+          "url": "https://www.rfc-editor.org/rfc/rfc2474",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3168: Explicit Congestion Notification",
+          "url": "https://www.rfc-editor.org/rfc/rfc3168",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "tc(8): Linux traffic-control inspection commands",
+          "url": "https://man7.org/linux/man-pages/man8/tc.8.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Linux kernel interface statistics documentation",
+          "url": "https://www.kernel.org/doc/html/latest/networking/statistics.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: record the actual class tree and counters if available. A class name is not a queue-service guarantee."
+    },
+    {
+      "topicId": "s3-g9-t1",
+      "index": 4,
+      "code": "tc -s filter show dev DEV",
+      "platform": "Linux iproute2 tc · read-only example; target/version not inspected",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 2474: Differentiated Services Field",
+          "url": "https://www.rfc-editor.org/rfc/rfc2474",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3168: Explicit Congestion Notification",
+          "url": "https://www.rfc-editor.org/rfc/rfc3168",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "tc(8): Linux traffic-control inspection commands",
+          "url": "https://man7.org/linux/man-pages/man8/tc.8.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Linux kernel interface statistics documentation",
+          "url": "https://www.kernel.org/doc/html/latest/networking/statistics.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: compare actual filter keys and actions with intended contract. Counter availability and scope are target-specific; no live match is claimed."
+    },
+    {
+      "topicId": "s3-g9-t2",
+      "index": 1,
+      "code": "ip -s -s link show",
+      "platform": "Linux iproute2 · read-only example; target/version not inspected",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 2474: Differentiated Services Field",
+          "url": "https://www.rfc-editor.org/rfc/rfc2474",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3168: Explicit Congestion Notification",
+          "url": "https://www.rfc-editor.org/rfc/rfc3168",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3246: Expedited Forwarding PHB and recommended codepoint",
+          "url": "https://www.rfc-editor.org/rfc/rfc3246",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2597: Assured Forwarding PHB Group codepoints",
+          "url": "https://www.rfc-editor.org/rfc/rfc2597",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "tc(8): Linux traffic-control inspection commands",
+          "url": "https://man7.org/linux/man-pages/man8/tc.8.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Linux kernel interface statistics documentation",
+          "url": "https://www.kernel.org/doc/html/latest/networking/statistics.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: record actual interface and counters. Broad counters alone do not prove this policy marked a packet."
+    },
+    {
+      "topicId": "s3-g9-t2",
+      "index": 2,
+      "code": "tc -s qdisc show dev DEV",
+      "platform": "Linux iproute2 tc · read-only example; target/version not inspected",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 2474: Differentiated Services Field",
+          "url": "https://www.rfc-editor.org/rfc/rfc2474",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3168: Explicit Congestion Notification",
+          "url": "https://www.rfc-editor.org/rfc/rfc3168",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3246: Expedited Forwarding PHB and recommended codepoint",
+          "url": "https://www.rfc-editor.org/rfc/rfc3246",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2597: Assured Forwarding PHB Group codepoints",
+          "url": "https://www.rfc-editor.org/rfc/rfc2597",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "tc(8): Linux traffic-control inspection commands",
+          "url": "https://man7.org/linux/man-pages/man8/tc.8.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Linux kernel interface statistics documentation",
+          "url": "https://www.kernel.org/doc/html/latest/networking/statistics.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: note qdisc and actual stats. Queue presence is not proof that a DSCP received treatment."
+    },
+    {
+      "topicId": "s3-g9-t2",
+      "index": 3,
+      "code": "tc -s class show dev DEV",
+      "platform": "Linux iproute2 tc · read-only example; target/version not inspected",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 2474: Differentiated Services Field",
+          "url": "https://www.rfc-editor.org/rfc/rfc2474",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3168: Explicit Congestion Notification",
+          "url": "https://www.rfc-editor.org/rfc/rfc3168",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3246: Expedited Forwarding PHB and recommended codepoint",
+          "url": "https://www.rfc-editor.org/rfc/rfc3246",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2597: Assured Forwarding PHB Group codepoints",
+          "url": "https://www.rfc-editor.org/rfc/rfc2597",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "tc(8): Linux traffic-control inspection commands",
+          "url": "https://man7.org/linux/man-pages/man8/tc.8.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Linux kernel interface statistics documentation",
+          "url": "https://www.kernel.org/doc/html/latest/networking/statistics.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: record actual class IDs and counters if present. A class name does not establish a DSCP mapping without filter and qdisc context."
+    },
+    {
+      "topicId": "s3-g9-t2",
+      "index": 4,
+      "code": "tc -s filter show dev DEV",
+      "platform": "Linux iproute2 tc · read-only example; target/version not inspected",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 2474: Differentiated Services Field",
+          "url": "https://www.rfc-editor.org/rfc/rfc2474",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3168: Explicit Congestion Notification",
+          "url": "https://www.rfc-editor.org/rfc/rfc3168",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 3246: Expedited Forwarding PHB and recommended codepoint",
+          "url": "https://www.rfc-editor.org/rfc/rfc3246",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2597: Assured Forwarding PHB Group codepoints",
+          "url": "https://www.rfc-editor.org/rfc/rfc2597",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "tc(8): Linux traffic-control inspection commands",
+          "url": "https://man7.org/linux/man-pages/man8/tc.8.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Linux kernel interface statistics documentation",
+          "url": "https://www.kernel.org/doc/html/latest/networking/statistics.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: verify actual match keys, action, direction and counters. No target configuration or output is asserted."
+    },
+    {
+      "topicId": "s3-g9-t3",
+      "index": 1,
+      "code": "tc -s qdisc show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — meters and actions",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2697 — comparison: single-rate three-color marker",
+          "url": "https://www.rfc-editor.org/rfc/rfc2697",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc inspection syntax",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Preserve the actual root/child handles, qdisc types and counters. A counter snapshot is not a measured original application result."
+    },
+    {
+      "topicId": "s3-g9-t3",
+      "index": 2,
+      "code": "tc -s class show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — meters and actions",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2697 — comparison: single-rate three-color marker",
+          "url": "https://www.rfc-editor.org/rfc/rfc2697",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc inspection syntax",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Correlate class handles with the qdisc hierarchy and actual configured rates; do not manufacture a class for every worksheet row."
+    },
+    {
+      "topicId": "s3-g9-t3",
+      "index": 3,
+      "code": "tc filter show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — meters and actions",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2697 — comparison: single-rate three-color marker",
+          "url": "https://www.rfc-editor.org/rfc/rfc2697",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc inspection syntax",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record what the command actually lists and identify the hook/hierarchy before interpreting a missing filter. This command does not create classification or marking."
+    },
+    {
+      "topicId": "s3-g9-t3",
+      "index": 4,
+      "code": "tc -d -s qdisc show dev \"$QOS_DEV\"\ntc -d -s class show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — meters and actions",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "RFC 2697 — comparison: single-rate three-color marker",
+          "url": "https://www.rfc-editor.org/rfc/rfc2697",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc inspection syntax",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Inspect actual parameter details and cumulative counters. No supplied output, kernel scheduling trace or packet capture is claimed."
+    },
+    {
+      "topicId": "s3-g9-t4",
+      "index": 1,
+      "code": "tc -s qdisc show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — shapers and token-bucket discussion",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc-tbf manual, comparison only",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-tbf.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc inspection syntax",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Preserve the actual root/child handles, qdisc types and counters. A counter snapshot is not a measured original application result."
+    },
+    {
+      "topicId": "s3-g9-t4",
+      "index": 2,
+      "code": "tc -s class show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — shapers and token-bucket discussion",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc-tbf manual, comparison only",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-tbf.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc inspection syntax",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Correlate class handles with the qdisc hierarchy and actual configured rates; do not manufacture a class for every worksheet row."
+    },
+    {
+      "topicId": "s3-g9-t4",
+      "index": 3,
+      "code": "tc filter show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — shapers and token-bucket discussion",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc-tbf manual, comparison only",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-tbf.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc inspection syntax",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record what the command actually lists and identify the hook/hierarchy before interpreting a missing filter. This command does not create classification or marking."
+    },
+    {
+      "topicId": "s3-g9-t4",
+      "index": 4,
+      "code": "tc -d -s qdisc show dev \"$QOS_DEV\"\ntc -d -s class show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — shapers and token-bucket discussion",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc-tbf manual, comparison only",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-tbf.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc inspection syntax",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Inspect actual parameter details and cumulative counters. No supplied output, kernel scheduling trace or packet capture is claimed."
+    },
+    {
+      "topicId": "s3-g9-t5",
+      "index": 1,
+      "code": "tc -s qdisc show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — queues and schedulers",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc-prio manual, scoped comparison",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-prio.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc inspection syntax",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc-drr byte deficit accounting, prose comparison only",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-drr.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Preserve the actual root/child handles, qdisc types and counters. A counter snapshot is not a measured original application result."
+    },
+    {
+      "topicId": "s3-g9-t5",
+      "index": 2,
+      "code": "tc -s class show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — queues and schedulers",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc-prio manual, scoped comparison",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-prio.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc inspection syntax",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc-drr byte deficit accounting, prose comparison only",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-drr.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Correlate class handles with the qdisc hierarchy and actual configured rates; do not manufacture a class for every worksheet row."
+    },
+    {
+      "topicId": "s3-g9-t5",
+      "index": 3,
+      "code": "tc filter show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — queues and schedulers",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc-prio manual, scoped comparison",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-prio.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc inspection syntax",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc-drr byte deficit accounting, prose comparison only",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-drr.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Record what the command actually lists and identify the hook/hierarchy before interpreting a missing filter. This command does not create classification or marking."
+    },
+    {
+      "topicId": "s3-g9-t5",
+      "index": 4,
+      "code": "tc -d -s qdisc show dev \"$QOS_DEV\"\ntc -d -s class show dev \"$QOS_DEV\"",
+      "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "RFC 3290 — queues and schedulers",
+          "url": "https://www.rfc-editor.org/rfc/rfc3290",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc-prio manual, scoped comparison",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-prio.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc inspection syntax",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "iproute2 v6.6.0 — tc-drr byte deficit accounting, prose comparison only",
+          "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-drr.8",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "GUIDED, NOT EXECUTED: Inspect actual parameter details and cumulative counters. No supplied output, kernel scheduling trace or packet capture is claimed."
+    },
+    {
+      "topicId": "lab-3",
+      "index": 1,
+      "code": "show standby brief\nshow vlan brief\nshow interfaces trunk",
+      "platform": "Prepared supported IOS XE17 D1/D2 campus switches; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS XE17.x HSRP: group/version, priority, preemption and inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x HSRP preempt and track: upstream object and role distinctions",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/13780-6.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x OSPF: passive interface and neighbor/interface inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_iro-cfg-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x basic BGP: route, summary and advertisement inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_irg-basic-net-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 BGP switch configuration: route-policy and prefix-list context",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr3-fwd/bgp/bgp-configuration-guide/routing-bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 protocol-independent command reference: system route inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x HSRP version2: IPv4 multicast distinction",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-v2.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.12 VLAN inspection and broadcast membership",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/17-12/configuration_guide/vlan/b_1712_vlan_9500_cg/configuring_vlans.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.12 VLAN trunk allowed scope and inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/17-12/configuration_guide/vlan/b_1712_vlan_9500_cg/configuring_vlan_trunks.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.17 system route, ARP and IP interface inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/rtng/b_1717_rtng_9600_cg/configuring_ip_unicast_routing.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "An active/standby role and VLAN listing are control/configuration observations, not proof of upstream routing or the original remote exchange. Inspect detailed group state when the brief view is insufficient."
+    },
+    {
+      "topicId": "lab-3",
+      "index": 2,
+      "code": "show ip ospf neighbor\nshow ip ospf interface\nshow ip route ospf",
+      "platform": "Prepared supported IOS XE17 area 0 D1/D2/R1/R2; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS XE17.x HSRP: group/version, priority, preemption and inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x HSRP preempt and track: upstream object and role distinctions",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/13780-6.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x OSPF: passive interface and neighbor/interface inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_iro-cfg-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x basic BGP: route, summary and advertisement inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_irg-basic-net-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 BGP switch configuration: route-policy and prefix-list context",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr3-fwd/bgp/bgp-configuration-guide/routing-bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 protocol-independent command reference: system route inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x HSRP version2: IPv4 multicast distinction",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-v2.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.12 VLAN inspection and broadcast membership",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/17-12/configuration_guide/vlan/b_1712_vlan_9500_cg/configuring_vlans.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.12 VLAN trunk allowed scope and inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/17-12/configuration_guide/vlan/b_1712_vlan_9500_cg/configuring_vlan_trunks.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.17 system route, ARP and IP interface inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/rtng/b_1717_rtng_9600_cg/configuring_ip_unicast_routing.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "A neighbor can exist while the required selected underlay or return route is absent. No OSPF database, SPF or convergence event was executed by the browser."
+    },
+    {
+      "topicId": "lab-3",
+      "index": 3,
+      "code": "show ip bgp summary\nshow ip bgp 198.51.100.0 255.255.255.0\nshow ip bgp neighbors 203.0.113.2 advertised-routes",
+      "platform": "Prepared supported IOS XE17 R1 with mapped owned AS65002 peer 203.0.113.2; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS XE17.x HSRP: group/version, priority, preemption and inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x HSRP preempt and track: upstream object and role distinctions",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/13780-6.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x OSPF: passive interface and neighbor/interface inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_iro-cfg-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x basic BGP: route, summary and advertisement inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_irg-basic-net-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 BGP switch configuration: route-policy and prefix-list context",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr3-fwd/bgp/bgp-configuration-guide/routing-bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 protocol-independent command reference: system route inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x HSRP version2: IPv4 multicast distinction",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-v2.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.12 VLAN inspection and broadcast membership",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/17-12/configuration_guide/vlan/b_1712_vlan_9500_cg/configuring_vlans.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.12 VLAN trunk allowed scope and inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/17-12/configuration_guide/vlan/b_1712_vlan_9500_cg/configuring_vlan_trunks.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.17 system route, ARP and IP interface inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/rtng/b_1717_rtng_9600_cg/configuring_ip_unicast_routing.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Use R1's actual peer mapping; R2 has different internal-peer context. An advertisement view does not bypass receiving-side policy or prove actual return traffic."
+    },
+    {
+      "topicId": "lab-3",
+      "index": 4,
+      "code": "show ip route 198.51.100.10\nshow ip arp\nshow ip interface\nshow running-config",
+      "platform": "Prepared supported IOS XE17 mapped original-path observer; GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "sources": [
+        {
+          "title": "Cisco IOS XE17.x HSRP: group/version, priority, preemption and inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x HSRP preempt and track: upstream object and role distinctions",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/13780-6.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x OSPF: passive interface and neighbor/interface inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_iro-cfg-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x basic BGP: route, summary and advertisement inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_irg-basic-net-0.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 BGP switch configuration: route-policy and prefix-list context",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr3-fwd/bgp/bgp-configuration-guide/routing-bgp.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17 protocol-independent command reference: system route inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.x HSRP version2: IPv4 multicast distinction",
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ntw-servs/b-network-services/m_fhp-hsrp-v2.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.12 VLAN inspection and broadcast membership",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/17-12/configuration_guide/vlan/b_1712_vlan_9500_cg/configuring_vlans.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.12 VLAN trunk allowed scope and inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/17-12/configuration_guide/vlan/b_1712_vlan_9500_cg/configuring_vlan_trunks.html",
+          "checked": "2026-10-09"
+        },
+        {
+          "title": "Cisco IOS XE17.17 system route, ARP and IP interface inspection",
+          "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-17/configuration_guide/rtng/b_1717_rtng_9600_cg/configuring_ip_unicast_routing.html",
+          "checked": "2026-10-09"
+        }
+      ],
+      "limits": "Preserve sensitive configuration securely. Route and ARP observations do not measure the original application; repeat the timed original exchange in both directions on a separately prepared target."
+    }
+  ],
+  "workbook": "labs/advanced-routing-switching-workbook.md",
+  "limits": "Batch10 browser worksheets evaluate supplied declarations and bounded ideal calculations. No Cisco target commands, real packet service, protocol state machine or convergence were executed. Workbook configuration, fault and restore steps are GUIDED_NOT_EXECUTED. Prior Batch09 actual isolated Linux/FRR evidence retains its separate scope. Editorial acceptance does not mark learner study progress."
+}

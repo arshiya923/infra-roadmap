@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "independentCases": 8064,
+  "sourceSha256": {
+    "scripts/local-preference-models.js": "06230f43359c98004b10f8fed970c413c0ae039bdbb76fbf7ca3373f2ff35af7",
+    "scripts/med-models.js": "21168187e824f739c5a6cfbd4054f9436afd02a6916eaed9a39fe90b90478bd6",
+    "scripts/bgp-attributes-models.js": "a3cc02006b00f9257b8d74773b2e5fde2b9001ab9bf51d0162d5399b101b07ca"
+  },
+  "scope": "Independent LP eligibility/value/service cross product, all 256 flags for eleven attribute classes, two-candidate conditional MED boundary/missing-value matrix. No wire parser, full bestpath or live protocol execution."
+}

@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-04",
+  "result": "PASS",
+  "lessons": 31,
+  "checks": [
+    "Prerequisite graph is acyclic and all prerequisites are authored",
+    "Per-lesson exams have ten distinct prompts; comparison/flow/port context present",
+    "All authored lessons have substantial structured content (word count used only as a floor, not proof of accuracy)",
+    "Initial reader loads only the selected lesson bundle",
+    "All 31 authored routes: unique DOM IDs, named form controls/buttons, one H1 and valid section anchors",
+    "Core body/muted/accent/warning color tokens meet 4.5:1 on paper/surface/soft backgrounds in both themes",
+    "Broad local search responds within the 2-second audit ceiling",
+    "No page exceptions while traversing the complete authored course"
+  ],
+  "issues": [],
+  "contentWordCounts": [
+    {
+      "id": "s0-g0-t0",
+      "words": 1449
+    },
+    {
+      "id": "s0-g0-t1",
+      "words": 1398
+    },
+    {
+      "id": "s0-g0-t2",
+      "words": 1341
+    },
+    {
+      "id": "s0-g0-t3",
+      "words": 1316
+    },
+    {
+      "id": "s0-g0-t4",
+      "words": 1341
+    },
+    {
+      "id": "s0-g0-t5",
+      "words": 1333
+    },
+    {
+      "id": "s0-g0-t6",
+      "words": 1355
+    },
+    {
+      "id": "s0-g1-t0",
+      "words": 1794
+    },
+    {
+      "id": "s0-g1-t1",
+      "words": 1760
+    },
+    {
+      "id": "s0-g1-t2",
+      "words": 1849
+    },
+    {
+      "id": "s0-g1-t3",
+      "words": 1915
+    },
+    {
+      "id": "s0-g2-t0",
+      "words": 1694
+    },
+    {
+      "id": "s0-g2-t1",
+      "words": 1593
+    },
+    {
+      "id": "s0-g2-t2",
+      "words": 1581
+    },
+    {
+      "id": "s0-g2-t3",
+      "words": 1513
+    },
+    {
+      "id": "s0-g2-t4",
+      "words": 1596
+    },
+    {
+      "id": "s0-g2-t5",
+      "words": 1628
+    },
+    {
+      "id": "s0-g2-t6",
+      "words": 1595
+    },
+    {
+      "id": "s0-g2-t7",
+      "words": 1672
+    },
+    {
+      "id": "s0-g2-t8",
+      "words": 1584
+    },
+    {
+      "id": "s0-g2-t9",
+      "words": 1601
+    },
+    {
+      "id": "s0-g2-t10",
+      "words": 1601
+    },
+    {
+      "id": "s0-g3-t0",
+      "words": 1484
+    },
+    {
+      "id": "s0-g3-t1",
+      "words": 1451
+    },
+    {
+      "id": "s0-g3-t2",
+      "words": 1383
+    },
+    {
+      "id": "s0-g3-t3",
+      "words": 1497
+    },
+    {
+      "id": "s0-g3-t4",
+      "words": 1488
+    },
+    {
+      "id": "s0-g3-t5",
+      "words": 1428
+    },
+    {
+      "id": "s0-g3-t6",
+      "words": 1496
+    },
+    {
+      "id": "s0-g3-t7",
+      "words": 1443
+    },
+    {
+      "id": "lab-0",
+      "words": 1820
+    }
+  ],
+  "bytes": {
+    "learn.html": 2467,
+    "content/catalog.js": 252359,
+    "scripts/learning.js": 29165,
+    "scripts/network-models.js": 12295,
+    "scripts/address-tools.js": 16322,
+    "styles/learning.css": 20218,
+    "content/batch-01.js": 71800,
+    "content/batch-02.js": 57137,
+    "content/batch-03.js": 128672,
+    "content/batch-04.js": 100550
+  },
+  "initialResources": [
+    {
+      "name": "/styles/learning.css",
+      "bytes": 20218,
+      "durationMs": 14
+    },
+    {
+      "name": "/content/catalog.js",
+      "bytes": 252359,
+      "durationMs": 17
+    },
+    {
+      "name": "/scripts/network-models.js",
+      "bytes": 12295,
+      "durationMs": 16
+    },
+    {
+      "name": "/scripts/address-tools.js",
+      "bytes": 16322,
+      "durationMs": 24
+    },
+    {
+      "name": "/scripts/learning.js",
+      "bytes": 29165,
+      "durationMs": 24
+    },
+    {
+      "name": "/content/batch-01.js",
+      "bytes": 71800,
+      "durationMs": 16
+    },
+    {
+      "name": "/assets/favicon.svg",
+      "bytes": 260,
+      "durationMs": 3
+    }
+  ],
+  "localSearchMs": 141,
+  "limits": "Local Edge audit, not real-device/network performance certification. Automated accessible-name/contrast/structure checks supplement manual screenshots; they are not a full WCAG audit. Editorial technical review and source scope are documented separately."
+}

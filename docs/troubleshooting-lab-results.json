@@ -1,0 +1,39 @@
+{
+  "result": "PASS",
+  "localRuns": [
+    {
+      "scope": "ACTUAL LOCAL FILE OPERATIONS; not a device or network test",
+      "baseline": {
+        "service": "example.test",
+        "port": 443
+      },
+      "fault": {
+        "service": "example.test",
+        "port": 444
+      },
+      "detected": true,
+      "restored": true,
+      "cleaned": true,
+      "result": "PASS"
+    },
+    {
+      "scope": "ACTUAL LOCAL FILE OPERATIONS; not a device or network test",
+      "baseline": {
+        "service": "example.test",
+        "port": 443
+      },
+      "fault": {
+        "service": "example.test",
+        "port": 444
+      },
+      "detected": true,
+      "interruption": "Intentional interruption after detection",
+      "restored": true,
+      "cleaned": true,
+      "result": "PASS"
+    }
+  ],
+  "standaloneTopics": 21,
+  "invalidInputsRejected": 2,
+  "labSHA256": "26d0f46aad47fcd692a955c224899cfa0851e1fa375a11419a84e11038acfad5"
+}

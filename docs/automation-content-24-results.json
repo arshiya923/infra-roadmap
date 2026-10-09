@@ -1,0 +1,135 @@
+{
+  "result": "PASS",
+  "batch": "24",
+  "topics": 21,
+  "questions": 273,
+  "checks": [
+    {
+      "id": "s9-g6-t0",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g6-t1",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g6-t2",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g6-t3",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g6-t4",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g6-t5",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g6-t6",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g6-t7",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g6-t8",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g7-t0",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g7-t1",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g7-t2",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g7-t3",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g8-t0",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g8-t1",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g8-t2",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g8-t3",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g8-t4",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g8-t5",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "s9-g8-t6",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    },
+    {
+      "id": "lab-9",
+      "questions": 13,
+      "inspector": "PASS",
+      "standaloneExample": false
+    }
+  ],
+  "sha256": "783c6325b02c5fa2d88b771551b813948df6799e6420dad0c2d28544bcdebd70"
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "vectors": 279936,
+  "checks": [
+    "279936 ordered header-pair vectors across six types, signed sequences, unsigned checksums and nine boundary ages",
+    "Independent binary integer decoder/lexicographic precedence with age-dispersion equivalence; reverse-order symmetry",
+    "Eighteen manually expected cases, first-decisive-rule trace and skipped successors",
+    "Object identity includes type/LSID/advertiser and applicable area; type 5 domain scope differs from type 7 NSSA scope",
+    "Strict IPv4/hex/age/type validation, reserved sequence and zero-checksum rejection, input preservation and fresh results"
+  ],
+  "scope": "Assumed-valid OSPFv2 header comparison within one supplied process. No actual checksum/body validity, live FSM, origination/flush/flood/timer/DoNotAge/opaque/OSPFv3, route selection or packet/service proof. LSA basics is a draft; full batch acceptance remains pending."
+}

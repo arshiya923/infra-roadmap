@@ -1,0 +1,270 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "guidedBlocks": 30,
+  "targetCommandsExecuted": 0,
+  "blocks": [
+    {
+      "topicId": "s4-g0-t0",
+      "code": "show ip dhcp binding\nshow ip dhcp pool",
+      "platform": "Cisco IOS XE17 supported lab router · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "A binding and available capacity must be correlated with actual client options and a valid lease."
+    },
+    {
+      "topicId": "s4-g0-t1",
+      "code": "show running-config interface Vlan20\nshow ip route 192.0.2.10",
+      "platform": "Cisco IOS XE17 lab SVI; addresses are placeholders · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Configured helper and route establish intent only, not giaddr correctness or a completed lease."
+    },
+    {
+      "topicId": "s4-g0-t2",
+      "code": "dig @192.0.2.53 app.example.test A +norecurse",
+      "platform": "BIND9 client in an isolated lab · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Inspect AA, status, answer type and TTL; a timeout differs from NXDOMAIN or a cached answer."
+    },
+    {
+      "topicId": "s4-g0-t3",
+      "code": "chronyc tracking\nchronyc sources -v",
+      "platform": "Ubuntu24.04 with an already configured chrony lab daemon · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Selected source, offset and synchronization evidence are distinct from merely seeing a reachable address."
+    },
+    {
+      "topicId": "s4-g1-t0",
+      "code": "show snmp user\nshow snmp group",
+      "platform": "Cisco IOS XE17 supported isolated device · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "A configured user/group is intent; verify a scoped OID query separately on the prepared target."
+    },
+    {
+      "topicId": "s4-g1-t1",
+      "code": "show logging",
+      "platform": "Cisco IOS XE17 owned device · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "A buffered local event does not prove network delivery, collector ingestion or retained search results."
+    },
+    {
+      "topicId": "s4-g2-t0",
+      "code": "show aaa servers",
+      "platform": "Cisco IOS XE17 target where supported · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "A reachable server display does not prove authentication, command authorization or accounting success."
+    },
+    {
+      "topicId": "s4-g2-t1",
+      "code": "show aaa servers",
+      "platform": "Cisco IOS XE17 lab NAS · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Access-Accept, installed policy and retained accounting are separate observations."
+    },
+    {
+      "topicId": "s4-g2-t2",
+      "code": "show tacacs",
+      "platform": "Cisco IOS XE17 lab device where this observation is supported · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Transport counters and server status do not prove a command was allowed or its record retained."
+    },
+    {
+      "topicId": "s4-g3-t0",
+      "code": "show ip cache flow",
+      "platform": "Cisco IOS XE17 platform supporting the selected traditional NetFlow feature · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "A local flow cache is distinct from correctly decoded collector records."
+    },
+    {
+      "topicId": "s4-g3-t1",
+      "code": "show flow record\nshow flow monitor\nshow flow exporter",
+      "platform": "Cisco IOS XE17 FNF-supported lab platform · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Each display answers a different question; correlate actual interface attachment and collector decoding."
+    },
+    {
+      "topicId": "s4-g3-t2",
+      "code": "show ip sla configuration\nshow ip sla statistics",
+      "platform": "Cisco IOS XE17 IP SLA-supported lab target · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "A successful ICMP operation is evidence of that echo exchange, not application health."
+    },
+    {
+      "topicId": "s4-g3-t3",
+      "code": "show track\nshow ip route 198.51.100.0/24",
+      "platform": "Cisco IOS XE17 enhanced tracking lab; prefix placeholder · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Object up does not prove consumer installation, forwarding or the original application transaction."
+    },
+    {
+      "topicId": "s4-g4-t0",
+      "code": "show cdp neighbors detail\nshow cdp interface",
+      "platform": "Cisco IOS XE17 CDP-supported lab device · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "A neighbor entry is an advertised local attachment clue, not verified routed management access."
+    },
+    {
+      "topicId": "s4-g4-t1",
+      "code": "show lldp neighbors detail\nshow lldp interface",
+      "platform": "Cisco IOS XE17 LLDP-supported target · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Neighbor fields identify advertised context; validate actual attachment and service separately."
+    },
+    {
+      "topicId": "s4-g4-t2",
+      "code": "ssh -G admin@lab.example.test",
+      "platform": "OpenSSH client; configuration expansion only · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Expanded settings show intent, not a verified server, accepted credential or executed session."
+    },
+    {
+      "topicId": "s4-g4-t3",
+      "code": "sftp -h",
+      "platform": "OpenSSH client; usage inspection only · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "A usage display confirms local client availability only, not a working remote subsystem."
+    },
+    {
+      "topicId": "s4-g4-t4",
+      "code": "tftp --help",
+      "platform": "Installed compatible lab client; availability/usage inspection only · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Client presence and help output do not verify transfer tuple, server access or artifact authenticity."
+    },
+    {
+      "topicId": "s4-g4-t5",
+      "code": "curl --version",
+      "platform": "curl client; read-only feature inspection · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Client features do not prove server TLS policy, data-channel connectivity or artifact delivery."
+    },
+    {
+      "topicId": "s4-g4-t6",
+      "code": "curl --version",
+      "platform": "curl client; read-only capability inspection · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Local features are not proof of server identity, HTTP response or application success."
+    },
+    {
+      "topicId": "s4-g5-t0",
+      "code": "openssl version",
+      "platform": "OpenSSL lab client; version inspection only · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Tool availability is not a validated certificate chain or an authenticated application endpoint."
+    },
+    {
+      "topicId": "s4-g5-t1",
+      "code": "openssl x509 -in labs/owned-server.pem -noout -issuer -subject -dates -ext subjectAltName",
+      "platform": "OpenSSL with a separately prepared owned PEM fixture; guided only · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Parsing and metadata do not prove path trust, reference identity, revocation or a live endpoint."
+    },
+    {
+      "topicId": "s4-g5-t2",
+      "code": "show authentication sessions interface GigabitEthernet1/0/10 details",
+      "platform": "Cisco IOS XE17 access device where supported; owned port placeholder · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Authorized display must be corroborated with intended permitted/denied traffic and identity evidence."
+    },
+    {
+      "topicId": "s4-g5-t3",
+      "code": "date -u",
+      "platform": "Linux read-only clock observation · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Timestamp provenance helps interpretation but requires separate synchronization evidence."
+    },
+    {
+      "topicId": "s4-g6-t0",
+      "code": "Open the owned sensor: Overview → latest result/error; inspect its probe and inherited settings.",
+      "platform": "PRTG prepared lab UI; guided not executed · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Sensor status is scoped to that check, and notification delivery needs separate receiver evidence."
+    },
+    {
+      "topicId": "s4-g6-t1",
+      "code": "Open Latest data for the owned item, then inspect its trigger event and action history.",
+      "platform": "Zabbix prepared lab UI; guided not executed · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "Frontend login and host presence do not prove current item collection or delivered notifications."
+    },
+    {
+      "topicId": "s4-g6-t2",
+      "code": "Inspect the owned device last poll/error and compare interface instance mapping with graph timestamps.",
+      "platform": "LibreNMS prepared lab UI; guided not executed · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "A discovered device or graph frame does not establish fresh values or alert delivery."
+    },
+    {
+      "topicId": "s4-g6-t3",
+      "code": "Inspect panel query and data inspection, then compare alert evaluation and notification history.",
+      "platform": "Grafana prepared lab UI; guided not executed · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "A rendered panel or datasource test alone is not verified measurement or recipient delivery."
+    },
+    {
+      "topicId": "s4-g6-t4",
+      "code": "Inspect the owned target page, up{job=\"lab\"}, and the documented service metric over a bounded interval.",
+      "platform": "Prometheus prepared lab UI; guided not executed · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "up=1 means that scrape succeeded, not that the original application transaction succeeded."
+    },
+    {
+      "topicId": "lab-4",
+      "code": "show ntp associations\nshow logging\nshow snmp user\nshow aaa servers",
+      "platform": "Cisco IOS XE17 supported disposable lab device; guided observations · GUIDED NOT EXECUTED",
+      "classification": "GUIDED_NOT_EXECUTED",
+      "expected": "These displays alone do not complete synchronization, remote marker delivery, scoped OID access, user/command decisions or local recovery."
+    }
+  ],
+  "executed": [
+    {
+      "program": "curl",
+      "args": [
+        "--version"
+      ],
+      "exit": 0,
+      "firstLine": "curl 8.21.0 (Windows) libcurl/8.21.0 Schannel zlib/1.3.2 WinIDN WinLDAP",
+      "scope": "Actual read-only local tool/configuration inspection; no network transaction or target configuration."
+    },
+    {
+      "program": "wsl",
+      "args": [
+        "-d",
+        "Ubuntu-24.04",
+        "--",
+        "openssl",
+        "version"
+      ],
+      "exit": 0,
+      "firstLine": "OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)",
+      "scope": "Actual read-only local tool/configuration inspection; no network transaction or target configuration."
+    },
+    {
+      "program": "wsl",
+      "args": [
+        "-d",
+        "Ubuntu-24.04",
+        "--",
+        "date",
+        "-u"
+      ],
+      "exit": 0,
+      "firstLine": "Fri Oct  9 13:28:24 UTC 2026",
+      "scope": "Actual read-only local tool/configuration inspection; no network transaction or target configuration."
+    },
+    {
+      "program": "wsl",
+      "args": [
+        "-d",
+        "Ubuntu-24.04",
+        "--",
+        "ssh",
+        "-G",
+        "admin@lab.example.test"
+      ],
+      "exit": 0,
+      "firstLine": "host lab.example.test",
+      "scope": "Actual read-only local tool/configuration inspection; no network transaction or target configuration."
+    }
+  ],
+  "limits": "Vendor device displays, prepared-target file inspection and monitoring-platform UI procedures remain guided. Actual HTTPS/UDP transport fixture evidence is separate."
+}

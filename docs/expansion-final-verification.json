@@ -1,0 +1,340 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "tools/catalog.py"
+      ],
+      "exitCode": 0,
+      "stdout": "Wrote 457 catalog entries.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "tools/progress.py"
+      ],
+      "exitCode": 0,
+      "stdout": "Coverage verified: 457 IDs assigned once; 457 editorially complete; 33 batches.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/content.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"result\": \"PASS\",\n  \"originalNodes\": 442,\n  \"expansionNodes\": 15,\n  \"acceptedExpansionNodes\": 15,\n  \"groups\": 69,\n  \"lessons\": 457,\n  \"examQuestions\": 4570,\n  \"quickChecks\": 1371,\n  \"labs\": 457,\n  \"sourceHash\": \"ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25\",\n  \"batches\": 33\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "scripts\\learning.js"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "scripts\\expansion.js"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "scripts\\supporting.js"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "content\\batch-29.js"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "content\\batch-30.js"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "content\\batch-31.js"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "content\\batch-32.js"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "content\\batch-33.js"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-expansion.cjs",
+        "29"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-09\",\n  \"batch\": \"29\",\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"ADD-INFRA-001: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"ADD-INFRA-002: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"ADD-INFRA-003: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"Expansion progress persists independently, preserves legacy keys, leaves editorial original count unchanged, and title search finds the lesson\",\n    \"Direct-file route and incident desk load\"\n  ],\n  \"errors\": [],\n  \"limits\": \"Local Edge, authored incident records; not platform execution or a complete assistive-technology audit.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-expansion.cjs",
+        "30"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-09\",\n  \"batch\": \"30\",\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"ADD-LINUX-001: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"ADD-LINUX-002: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"ADD-LINUX-003: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"Expansion progress persists independently, preserves legacy keys, leaves editorial original count unchanged, and title search finds the lesson\",\n    \"Direct-file route and incident desk load\"\n  ],\n  \"errors\": [],\n  \"limits\": \"Local Edge, authored incident records; not platform execution or a complete assistive-technology audit.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-expansion.cjs",
+        "31"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-09\",\n  \"batch\": \"31\",\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"ADD-APP-001: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"ADD-APP-002: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"ADD-APP-003: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"Expansion progress persists independently, preserves legacy keys, leaves editorial original count unchanged, and title search finds the lesson\",\n    \"Direct-file route and incident desk load\"\n  ],\n  \"errors\": [],\n  \"limits\": \"Local Edge, authored incident records; not platform execution or a complete assistive-technology audit.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-expansion.cjs",
+        "32"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-09\",\n  \"batch\": \"32\",\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"ADD-CONT-001: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"ADD-CONT-002: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"ADD-CONT-003: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"Expansion progress persists independently, preserves legacy keys, leaves editorial original count unchanged, and title search finds the lesson\",\n    \"Direct-file route and incident desk load\"\n  ],\n  \"errors\": [],\n  \"limits\": \"Local Edge, authored incident records; not platform execution or a complete assistive-technology audit.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-expansion.cjs",
+        "33"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-09\",\n  \"batch\": \"33\",\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"ADD-CLOUD-001: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"ADD-CLOUD-002: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"ADD-CLOUD-003: route, structure, three keyboard phases/reset, reduced motion, 13 answers, clipboard, downloads and eight viewport/theme combinations\",\n    \"Expansion progress persists independently, preserves legacy keys, leaves editorial original count unchanged, and title search finds the lesson\",\n    \"Direct-file route and incident desk load\"\n  ],\n  \"errors\": [],\n  \"limits\": \"Local Edge, authored incident records; not platform execution or a complete assistive-technology audit.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/supporting.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-09\",\n  \"result\": \"PASS\",\n  \"items\": 84,\n  \"collections\": 5,\n  \"checks\": [\n    \"Exact original supporting ID coverage\",\n    \"All local references exist and lesson IDs resolve\",\n    \"84 learner-facing review entries\",\n    \"Four widths in both themes\",\n    \"Keyboard theme control\",\n    \"Links from roadmap and reader\",\n    \"Direct-file support\",\n    \"No page exceptions\"\n  ],\n  \"limits\": \"Editorial supporting review, not full certification alignment or physical validation.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/content.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"result\": \"PASS\",\n  \"originalNodes\": 442,\n  \"expansionNodes\": 15,\n  \"acceptedExpansionNodes\": 15,\n  \"groups\": 69,\n  \"lessons\": 457,\n  \"examQuestions\": 4570,\n  \"quickChecks\": 1371,\n  \"labs\": 457,\n  \"sourceHash\": \"ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25\",\n  \"batches\": 33\n}\n",
+      "stderr": "",
+      "scope": "Final manifest/supporting-audit metadata reconciliation"
+    }
+  ],
+  "separatelyExecuted": [
+    {
+      "command": [
+        "node",
+        "tests/browser.cjs"
+      ],
+      "evidence": "docs/browser-results.json",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "node",
+        "tests/quality-audit.cjs"
+      ],
+      "evidence": "docs/quality-audit-expansion-final.json",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "python",
+        "tests/expansion-labs.py",
+        "29"
+      ],
+      "evidence": "docs/expansion-lab-29.json",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-24.04",
+        "--",
+        "python3",
+        "/mnt/c/Users/Arshiya/Desktop/Infta Roadmap/tests/expansion-labs.py",
+        "30"
+      ],
+      "evidence": "docs/expansion-lab-30.json",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-24.04",
+        "--",
+        "python3",
+        "/mnt/c/Users/Arshiya/Desktop/Infta Roadmap/tests/expansion-labs.py",
+        "31"
+      ],
+      "evidence": "docs/expansion-lab-31.json",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-24.04",
+        "--",
+        "python3",
+        "/mnt/c/Users/Arshiya/Desktop/Infta Roadmap/tests/expansion-labs.py",
+        "32"
+      ],
+      "evidence": "docs/expansion-lab-32.json",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "python",
+        "tests/expansion-labs.py",
+        "33"
+      ],
+      "evidence": "docs/expansion-lab-33.json",
+      "result": "PASS"
+    }
+  ],
+  "hashes": {
+    "original/index.html": "ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25",
+    "index.html": "1306586e7623b145faf70b2468c0518b8e64652b60f7f5503ea71373b8480843",
+    "learn.html": "97cfad36cb7ace21370df33d697745e9b0185b3a036da5deeb1d6c86293409f8",
+    "supporting.html": "80878f6714d6fbc5534fd5d8e9eb42bc6dc57a3be49118c663b84a63cecd729d",
+    "content/roadmap-inventory.json": "2fcc0cb93fa90abe480f8bb55d75bcd86f4eb853d4e3ac6ea537a0c0d1f05a2a",
+    "content/expansion-inventory.json": "2154299079889f670db39c4fd907e373086e1387bbeae6199f1bfb8ea70a2d04",
+    "content/enrichment.json": "0ff6679feed77a620c06fe773be1680b0675da141ada0604f46334bc729f3223",
+    "content/catalog.js": "d0d9082d97c2178644f5d2abe65c36f83192e8c8af11ab9a76f2e0b0360f7acb",
+    "content/supporting-review.json": "ac4d979ca3bfd320fee1d1324e467076088a36ee6bc10e9dcfe55f2d478a8bbe",
+    "scripts/learning.js": "02ebb525b4230ee94b2bd882a45bc1b82fb49f2942d7184ed7fbf0a109c48b8d",
+    "scripts/expansion.js": "a1eaed8af5dd10c212f31c1d4c9182f01ed8ae73c7f94ad7c265547f2201b045",
+    "scripts/supporting.js": "fa0052b0ced85520c9c29db28256c5f4ac47ec38a6f4d2b4de353774cae360d1",
+    "styles/supporting.css": "fd1acc04e944f8a1bef492c2715135effbd85cd7822fff5ea5ada3bcf116a0f3",
+    "tools/catalog.py": "69fd2554b9034acbce1755551792f6f8c241430b577e1a666c0f572b28c4304d",
+    "tools/progress.py": "5e363d205e7917c5a20418c8dc9cfd1d214a7a7ceeccaac40ca8cc39eae0e0e3",
+    "tools/curriculum.py": "6aa2cda3cf40fe4bad5d277bb4fa8f358b7cc2eb865b57f13d619eb7ece5333f",
+    "tests/content.cjs": "d53ffaf239781455fa3fc522f23fd122006c45858a284b6183ea01c3f493d5ac",
+    "tests/browser.cjs": "b284eeab2ca62d5c4d9b188a5f7fee3a261425fe432f4e0c8b1e3fbf33dfe55b",
+    "tests/quality-audit.cjs": "e49032dfc850f5e84e1cb60e7699181ff729c7c5d51f4f55b745003b173fd4a8",
+    "tests/browser-expansion.cjs": "823d1f32c7cbe4539aa776593842c17a5a50750973368bc8a1bc41ce9417898b",
+    "tests/expansion-labs.py": "c4523403c51a05df107b5860e74c40edb8fb8c0b36cd5d52bb2001db95af4830",
+    "tests/supporting.cjs": "063770acde1ba89ae4b64459e6a40ff8c066906f12d8b25c84ca51583974244a",
+    "labs/expansion-capstones.md": "3f1e0d6d851519bb3958b1062b7c2e30e580f74912bb54bf9a74bd0ce4afcd19",
+    "content/batch-29.js": "6f4fb919e923719c834ec390642dac342706c2c6cf4fa01f51107131fd05e78c",
+    "content/batch-30.js": "237df8faed74e99176968c9b8e03c70231fb124b2c71746216aeaf21910a75a2",
+    "content/batch-31.js": "a71a002961f6357c9a09ecf5fa3222b275144220ffdaabccf3f43c14ef2ede91",
+    "content/batch-32.js": "a0f902f84c37011caf82de2dbb91a301e1542530a2258f312636c90e927d350d",
+    "content/batch-33.js": "bbe6be78923cdf3327c2621315c6583738bebf46d7ea29962f792e32c89f451e",
+    "labs/infrastructure-rehearsal.py": "f22e3ae9133d139ae677333dabc118e0a78cbaf2de58d8f3918bf807acf11a2f",
+    "labs/linux-operations.py": "71c307ffb9fabaee6e6ef947ed3ce5e5943f19d967775940507931ac4823aae1",
+    "labs/application-delivery.py": "0fe5560cf2497297d86bffbd4b3fee3187301eaa49c701d09097b191914eb593",
+    "labs/container-operations.py": "189b7dcf3e1e0e6e0a5b362bd4d5da70b2bacbad9d63d8b17cbfaf6d39ae2eeb",
+    "labs/cloud-planning.py": "ad13deb54c1d590cb0dbfe9ea573a20090bddea748561148d33630ef88a4a083",
+    "docs/browser-expansion-29.json": "96f8da0273894b9ce9a931bbddce6f2ad5d14fd6827f3994b23ec7febb2309eb",
+    "docs/browser-expansion-30.json": "5da5f924b403871329423233445315d9712d7a5d467fbdd602807ee714762137",
+    "docs/browser-expansion-31.json": "1447dfed662f8676635795e3206cbf984c46d2b44a95437475f0e921685362cd",
+    "docs/browser-expansion-32.json": "83b8f8d6c1ec671679ba73e36365ed354230f3bde74350576ebdb8e906c3ac5f",
+    "docs/browser-expansion-33.json": "7b8979296d50d3ccaa8ab3fb4ad338e892fc7046e5f5eeef8aaf6e99f999b0a0",
+    "docs/expansion-lab-29.json": "854e295917dda3fd12716023343b7028f3c272481bd300a7efe7823a667bdbc8",
+    "docs/expansion-lab-30.json": "61bd3a7c386aa4f7a568fdf532f7e41cf78c44c3188da2eede028c4cf60606b8",
+    "docs/expansion-lab-31.json": "b0f4a01f0fad07a9855afce84dcebfa31da7d97824268786061560ffba07c74d",
+    "docs/expansion-lab-32.json": "94c6c9f93a8001136e6845a57d89aba40443b9e4385acac77a703976f8370baa",
+    "docs/expansion-lab-33.json": "db8e1ddea4b10bac3e24e604959a7f186ecb9f46b1824dcc68860a949e2fa688",
+    "docs/expansion-readonly-commands.json": "61ba00093c2fed4e2832c3d3f2fb71ab7f5a0fa08a67a580ace821e871d7c406",
+    "docs/quality-audit-expansion-final.json": "362cfbd335a49ba113f5e9e2f1366622d41c8f0c264480e112c7258ddf9f00c5",
+    "docs/browser-results.json": "9b9fac4346668ef344911cdf2c1675a5a3734c15c5855a619fba8eadb3a6a106",
+    "docs/supporting-results.json": "b2ad170725999643755050c0075bd833ebbe8a0c968dc161f40794b7e1b0ff1a",
+    "README.md": "43bc75d6f09d3f82c19d20100b603529c9ae7b0d78adb0555cf22037a6074ec9",
+    "ROADMAP_ENRICHMENT_PROGRESS.md": "4110ecb81705ff80c3debce3beccaffb3b277c1040aba4cb4d4af66a15053e85",
+    "ROADMAP_BATCH_PLAN.md": "5a7ed69256a14ae5c0237451c4843e2349a01fd49c7d6e755dfff1b15a54b951",
+    "ROADMAP_CONTENT_AUDIT.md": "0f1ed6ce25eae8d08cb21d90c040719e6c3ada26009e642d4f4dff9f7b6f3259",
+    "ROADMAP_DECISIONS.md": "b154c6e1bdaecbe4313f2fa60b307d93e79dc9dec855e6311d25caffc92b62e1",
+    "docs/validation-expansion-final.md": "899791a49e34ae532698c098289a9157b5bb398feeae003b13782cccbbe8da34",
+    "docs/expansion-plan.md": "73ae09db42188333a65becf360aff867b91cf51f1bff8ec339dd6b589c70fe3b",
+    "tools/verify_expansion.py": "04338362beb09808212f76a487f20939197e661afecf48b02fc3a14790640261",
+    "tools/supporting_material.py": "1af1bf6f14a6ed6e9fd945c6e102697df3752963d6733e1c53ebebb65c723a2c",
+    "tools/expansion_author.py": "38a73b792a759057a647a678fc56d674c36c351c50fc174315424b8f150f5c13",
+    "tools/accept_expansion.py": "eef8a71018700b5bfa9733f181b0ecc4afeb58233814f13edc04da3f60384e62",
+    "docs/acceptance-batch-29.json": "73fa558c0f5e27c7dffe20d5d5c1ffb78f0c931bb93b3048ecc33ef90fb38e9d",
+    "docs/acceptance-batch-30.json": "238d2456b74b9fe569b692335ed95dc3dbe8a898d03c896ccb06c6d0d167936f",
+    "docs/acceptance-batch-31.json": "05de4414002b1d1c352134f4d72e120b3cb09db846beb432e6f59aa14e7c6b8a",
+    "docs/acceptance-batch-32.json": "9f023192b81f1486d87c2ebdae47f87e30b94cbf8c7ea37625f30e83505bcba1",
+    "docs/acceptance-batch-33.json": "8ca64b64e7be7241ecea3660b0091fa7cc2f36800e135468e41c0d8b81929b50",
+    "docs/validation-batch-29.md": "ca6e797e599c1b34bab360f04aa17aafe27820c4bae0f8e0c258b6cbbf9ebfdb",
+    "docs/validation-batch-30.md": "35d5853dd59abf47efe222569c9842369b1f378eeedc4d70e29cd7cbd3bc583d",
+    "docs/validation-batch-31.md": "6cb18fe1138a03c60c221634737b78adf78727ff7a460577fc51e7de9739b451",
+    "docs/validation-batch-32.md": "2a04bc9089b059e87277ad4366fa759475e491ba86c9d9e13046262112fd2969",
+    "docs/validation-batch-33.md": "0d1573da47814631202ff14d09f0b4e6d4d744a8fc917c736f475bdf5cf31615",
+    "tools/author_batch29.py": "b3c4f08656aa62405727d4748b85890138a58dbe4956f5db4ceb3280c576e698",
+    "tools/author_batch30.py": "79b0594efdb37b1274fad961ebc7d5a7094115c16b2183a97f7cb9c09ab8f9a1",
+    "tools/author_batch31.py": "493d3c1307b4821c33a6b7d12a6de976211b43f49d994c758b94b56fe014c986",
+    "tools/author_batch32.py": "77a0917aa9b5c4b45704ac1f079cabee7c39684e3df91ac6e338de47b717f616",
+    "tools/author_batch33.py": "48744861262b5e97f11efddd0709e39d067723fc449ef8035a0949474b63671a"
+  },
+  "primaryReview": {
+    "date": "2026-10-09",
+    "lessons": 15,
+    "questionAnswerPairs": 195,
+    "supportingItems": 84,
+    "visuals": "All five batch desktop/mobile evidence-desk screenshot pairs and supporting companion desktop/mobile inspected.",
+    "limits": "Educational scope; full assistive-technology, physical/vendor and cloud operational execution are not claimed."
+  }
+}

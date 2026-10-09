@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "scope": "Seven CLI/boot accepted routes and storage adjacency; bounded browser models only, no Cisco execution",
+  "checks": [
+    "four draft lessons retain contracts, honest progress and four viewport widths",
+    "identity is synthetic and wrong-mode commands preserve state",
+    "keyboard mode navigation changes running only and preserves context",
+    "merge preserves extra description and explicit removal works",
+    "unsaved changes are lost and saved changes survive model reboot",
+    "input remains text and reset removes active and saved exercise state",
+    "help lists bounded subset and unsupported reload is rejected",
+    "CLI-to-boot navigation follows original configuration-register node",
+    "authored quiz feedback matches the save-direction question",
+    "mobile light/dark screenshots remain readable with no overflow",
+    "direct file model works without an external device or service",
+    "three boot lessons have full contracts and no overflow at four widths",
+    "register selected fields, strict input, platform boundary and keyboard reset",
+    "boot cases distinguish artifacts, policy, configuration and service checkpoints",
+    "boot direct-file operation and original adjacent storage navigation",
+    "boot mobile screenshots and separate quiz feedback",
+    "no page or missing-resource errors"
+  ],
+  "errors": []
+}

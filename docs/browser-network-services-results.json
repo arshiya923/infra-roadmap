@@ -1,0 +1,549 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "topics": 30,
+  "checks": [
+    {
+      "id": "s4-g0-t0",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g0-t1",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g0-t2",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g0-t3",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g1-t0",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g1-t1",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g2-t0",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g2-t1",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g2-t2",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g3-t0",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g3-t1",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g3-t2",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g3-t3",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g4-t0",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g4-t1",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g4-t2",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g4-t3",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g4-t4",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g4-t5",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g4-t6",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g5-t0",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g5-t1",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g5-t2",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g5-t3",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g6-t0",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g6-t1",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g6-t2",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g6-t3",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "s4-g6-t4",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    },
+    {
+      "id": "lab-4",
+      "result": "PASS",
+      "scenarios": 5,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "screens": 3
+    }
+  ],
+  "errors": [],
+  "scope": "Reader/worksheet/file/quiz/keyboard/responsive/copy/study/search/navigation contracts; not live service validation."
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "independentCases": 11802,
+  "sourceSha256": {
+    "content/batch-10.js": "d03df952235051e1efbde4ccbe81d7c4e9ff2e9382645868960c48bc4288033b",
+    "scripts/qos-service-models.js": "e53281bd7c0b11615b5a889dbb0d950cc531a5c0eb2190ab7bc345bd63bb9451",
+    "scripts/qos-labels-models.js": "a43fddc95f613276a06e28a1b7b786fcaeabcf141c2e73b18b869fa5ab898647",
+    "scripts/multicast-models.js": "b93462cb66d8dd955877e588364587cc7bf5ff733fca431cc2d98ed2290c0a4f",
+    "scripts/advanced-lab-models.js": "3aa9dbd9e7bdb7d007c47f25a9d3676e4e41cfcb8b6eb42df6c807f8ab66baa2",
+    "labs/advanced-routing-switching-workbook.md": "9b5bd032c640d19bcdcbb9f032b6dfd7ec5c30953d15b62cb3d66e2578cd8689",
+    "tests/batch-10-service-primary.cjs": "eddea4683e67d004e3748f09746e9cb5e0a3889592cb0bf4e0afe0dd84557ea4"
+  },
+  "scope": "Independent exact refill boundary, two-packet credit, constant-size shaping closed forms, simultaneous nonpreemptive schedules, DS field marking, settled demand unions and nine-stage lab declarations. Numeric output tolerance never determines eligibility. No actual target commands, traffic or convergence."
+}

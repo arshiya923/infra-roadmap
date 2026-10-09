@@ -1,0 +1,4011 @@
+{
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant",
+  "result": "PASS",
+  "questions": [
+    {
+      "id": "s6-g0-t0-QC1",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "64d838131da17b65d0d91dbe52025ba15eeab976a7f39d5ef8f5dcd6caa5f8b8"
+    },
+    {
+      "id": "s6-g0-t0-QC2",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c75da5383d080aaeef245561034ab4f05fe4dc6c27400941ff805f46201c48d2"
+    },
+    {
+      "id": "s6-g0-t0-QC3",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2866c84c726f91730742f4fef23790c01f780f4216c5c18fd55bdac7a8a579e0"
+    },
+    {
+      "id": "s6-g0-t0-Q01",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "811c8a358e400ccd95ee9aab275a4d16848bd16a274915c6c96d54966512d345"
+    },
+    {
+      "id": "s6-g0-t0-Q02",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4951c556e4ce709c9f01d24130ce4741e4b633291d125b7b06b325c96b1eece0"
+    },
+    {
+      "id": "s6-g0-t0-Q03",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "272019621a99092ab8976c43f9c98c0b8611d68ae216d615a699095d2f092480"
+    },
+    {
+      "id": "s6-g0-t0-Q04",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4f5c9f6340012fc8f431180f1d07ee4fde2134c5462e2db296996be15778247f"
+    },
+    {
+      "id": "s6-g0-t0-Q05",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4adf3732668191de06c78fdb85b24926f3f9403a9e11892d38718ea1abdbd6b4"
+    },
+    {
+      "id": "s6-g0-t0-Q06",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6b370e260be510bf984def3944e3c39b491d07c1a2ad3e8a20f585afd60f5f5a"
+    },
+    {
+      "id": "s6-g0-t0-Q07",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "950de11efa29ddb7a17c853a1ff20eb972219760743ea67b358bb44e4da94878"
+    },
+    {
+      "id": "s6-g0-t0-Q08",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b386837290057203ecd69afd8e9e74d4e3bbeb13ea92f5b2f9eb467c00bca9bb"
+    },
+    {
+      "id": "s6-g0-t0-Q09",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8cf80afdba42367e752522c2aa9038a2cfae78efb8df65acbef387d33dae5809"
+    },
+    {
+      "id": "s6-g0-t0-Q10",
+      "topic": "s6-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d9be1ab21aa8d48c96e542af69816e891c0b97e9fc7b34c768c5287058ce59a0"
+    },
+    {
+      "id": "s6-g0-t1-QC1",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b5c29e91400f6e88fe0a0ee3f2a4e69525827872036949c14965b06788dfefd2"
+    },
+    {
+      "id": "s6-g0-t1-QC2",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2165aff7d736e0279521420ad513df9474b72e0127f3599c788d7ae29afbc46d"
+    },
+    {
+      "id": "s6-g0-t1-QC3",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1ba6113949474a105036cb00ae26695d71fc0ea353aedc527a1624f0b3bc7faf"
+    },
+    {
+      "id": "s6-g0-t1-Q01",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1f8f5a52020e66b415cb428ca963b3379ceb4d2e49f2135fac149605203dcac6"
+    },
+    {
+      "id": "s6-g0-t1-Q02",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6ce874fafa7259959bf0b587ed464e318fe5c7058621ae80c7d8bff0b6c98345"
+    },
+    {
+      "id": "s6-g0-t1-Q03",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4f681609176a32feee84a6546529ce926696cc33201b030bbd53c507252801d7"
+    },
+    {
+      "id": "s6-g0-t1-Q04",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "819cd47c9bfdc3caee9cabc2e404b7aa521c0b717098c4d2dc16eff70e7d96c0"
+    },
+    {
+      "id": "s6-g0-t1-Q05",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e9902076794008b172d96cfaf69486d1d276878c8c74931b08be1699d79112fd"
+    },
+    {
+      "id": "s6-g0-t1-Q06",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bcdfc64deb27297e0c7858e2f44daf5febf5847534f8e770b39902a7aa7ae8f5"
+    },
+    {
+      "id": "s6-g0-t1-Q07",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bce9fa50bc97cf3c9d465cdf27cee76888f221dd9b7e4e6755623f7679e222d1"
+    },
+    {
+      "id": "s6-g0-t1-Q08",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f0a10536e2f35e82f8e82b9aa45d93bc91ee4d02eaa4f40cb87f8468942e7270"
+    },
+    {
+      "id": "s6-g0-t1-Q09",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a4c4ff6f29e44890b738d554f14d51bca9c5285195e366c13557af53637e8805"
+    },
+    {
+      "id": "s6-g0-t1-Q10",
+      "topic": "s6-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "72c887894b76bf10ecf7e8434daa9fab474ed95e783756adc9c51ee8c0d719b5"
+    },
+    {
+      "id": "s6-g0-t2-QC1",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "dc21ff55a6c6f9fd2246e5d94b6cae47195734bf619e2e2d8f1bbee662694516"
+    },
+    {
+      "id": "s6-g0-t2-QC2",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d1017fbba264e7db5a6914ba59ccfb88faec43e91f2c8dbb87af16acfc993f8c"
+    },
+    {
+      "id": "s6-g0-t2-QC3",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4f47f1e8298fb1d3e9091a195088c2c86b81c7cab395f10277a937eb8f9bba13"
+    },
+    {
+      "id": "s6-g0-t2-Q01",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a5f13bfedce4d5dc99afb12dd5021be8db030d456657188040030834cff05f8b"
+    },
+    {
+      "id": "s6-g0-t2-Q02",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5787f89b934ba6f8dd231c640adab125769a136c500689bdfa12f742bada4528"
+    },
+    {
+      "id": "s6-g0-t2-Q03",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1c140e6e8f19c765bcbbde5144d1742776ba249e1b2195d6965c8f8f79170959"
+    },
+    {
+      "id": "s6-g0-t2-Q04",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6f008b114147e702c764b96a70e6d48705828c08ea2dc3eee60a0dcf4c688966"
+    },
+    {
+      "id": "s6-g0-t2-Q05",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "42cf041ca9f60bb0551f6e9c0eb6aeb7ca1301c85d18823ffe0e585c4524c1d1"
+    },
+    {
+      "id": "s6-g0-t2-Q06",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ad9bf3d7d16f6030ee62b1db552176f347cac0ea2044248d08235094dbefb3d8"
+    },
+    {
+      "id": "s6-g0-t2-Q07",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "dadeafd13d274586ae03c8da6ef314e06c986ea6c92df16a46af3ab8cdc19076"
+    },
+    {
+      "id": "s6-g0-t2-Q08",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3ce4323c76caf89a1896f022cf1019dc5608fe44a15d884405fb568197489149"
+    },
+    {
+      "id": "s6-g0-t2-Q09",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2f2b24f615cc52e49dae3128cdd06bd2d88169454c7efcd5d9ba306a03e1470f"
+    },
+    {
+      "id": "s6-g0-t2-Q10",
+      "topic": "s6-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "14b63606a736696931624a75dd659b10e9688364d46ebacaec45bf11ace2e15d"
+    },
+    {
+      "id": "s6-g0-t3-QC1",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6eb56bd608fa0f97c1b652cf84d52cf38ad21f00a9c60306966e402e61b8bb18"
+    },
+    {
+      "id": "s6-g0-t3-QC2",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "72bcdb2732892583a35794a5149b00f155099c7b7201dbbe7531895608f8ac9f"
+    },
+    {
+      "id": "s6-g0-t3-QC3",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "161540b3a4732211b980b0c443b36767df1b72fb7a9f8c88928a9fe6d1ea8773"
+    },
+    {
+      "id": "s6-g0-t3-Q01",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e6026a256c274356929039c0fd6156ab5f7044afa537a871bc0c77a5831d3fd0"
+    },
+    {
+      "id": "s6-g0-t3-Q02",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bfc6e07fd9381756f7b3503709a1d87ea7b2e42d5d32c1d8db7533bff40b52be"
+    },
+    {
+      "id": "s6-g0-t3-Q03",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "107c63cfe7acb6e87bf7d6b43e54a1f791e6ad6ac8026745c9f1ff92ae7864d8"
+    },
+    {
+      "id": "s6-g0-t3-Q04",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0e1c32e41a9eb61c16f85b251ec0f22b286f3f48b28527bf1c604269833209cd"
+    },
+    {
+      "id": "s6-g0-t3-Q05",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a94cc07835c08b2bc912c35e97ea20a431b6d42799eacfee8af97b8efe4b0ac2"
+    },
+    {
+      "id": "s6-g0-t3-Q06",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f120e31b81f906f35ac9846406f3ade597e5df2d7867a8557d6410688912d9b0"
+    },
+    {
+      "id": "s6-g0-t3-Q07",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "249b7b032597f0a4c494f49cf2605e9d4fae66ddeea956bcde7db47a97d8f3e6"
+    },
+    {
+      "id": "s6-g0-t3-Q08",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3d37e1f7d14b39b0f63901fd77f54acab71a6bd0e66ab239ef66b7805aebdf39"
+    },
+    {
+      "id": "s6-g0-t3-Q09",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a7b66fb96b734a3fed9a898194f1a5d728ba0bfb89fa9b15b6fd0343ead56e51"
+    },
+    {
+      "id": "s6-g0-t3-Q10",
+      "topic": "s6-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3adc5e7fdb9fb4be012606646d089af4b0647a7bf0e97397e6ea726b666dd511"
+    },
+    {
+      "id": "s6-g0-t4-QC1",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5e45ed0ce4f7d2fbcefa2af9bfab44cebf7d096e974356f5c9fd572b773723f2"
+    },
+    {
+      "id": "s6-g0-t4-QC2",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6a761769cc4571a6dbc20824d17add75d742dca7f3ada5e6266383104099a988"
+    },
+    {
+      "id": "s6-g0-t4-QC3",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7a42845a7d8b2b3ac69eaa67ad372e0cdc0dfab3d34b3a54c388628b4a81706f"
+    },
+    {
+      "id": "s6-g0-t4-Q01",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "dbaa0763d6334d72d8176500dae7f7bf6f529a436bd2102ee50f744ee00fee1f"
+    },
+    {
+      "id": "s6-g0-t4-Q02",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "88d82dab657ef2a35f113c6f0c979c12d1a13695150bb9176e80026081367826"
+    },
+    {
+      "id": "s6-g0-t4-Q03",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0b3e2f9e94e26ec907e952e03abe296b4330dab23b40b52c6a2a22f175b52761"
+    },
+    {
+      "id": "s6-g0-t4-Q04",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7afcb5926e55e361f110bd835d39788ad268c85caf897c21ceadd81e1de6586d"
+    },
+    {
+      "id": "s6-g0-t4-Q05",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7218bcbfd0845139d37ca77a9749679f402f855c2affea3b8ccd098483a27d1e"
+    },
+    {
+      "id": "s6-g0-t4-Q06",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8974b90472e052a942a6899b81ec2c04dba70f14b229263544e1b490d91950ac"
+    },
+    {
+      "id": "s6-g0-t4-Q07",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "47c0f295529645b375689f1cf36dc81c575a2eceaa6fb91b61a68ab9a3a17d50"
+    },
+    {
+      "id": "s6-g0-t4-Q08",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c1b946848c8372661cc8a7ed06327621c48bdcf305acd21a5d574ebad325fea5"
+    },
+    {
+      "id": "s6-g0-t4-Q09",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "45bed0f3d38b18ca43daa3b7c680d1a904216a0f54797374622bc62a88567a2c"
+    },
+    {
+      "id": "s6-g0-t4-Q10",
+      "topic": "s6-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fbf6f6c360b8c9d49625075d776335952ae0cc526c15a301cd7b3e0ad8e8888b"
+    },
+    {
+      "id": "s6-g0-t5-QC1",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bf892a90b59b4478b8263518b52308df333c026b2ac834bb20221258f0941cb0"
+    },
+    {
+      "id": "s6-g0-t5-QC2",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "98171b58a7c7bd35c0ed1832e317f92b3f052a5ace1a5650cf1dfa3d977e8aae"
+    },
+    {
+      "id": "s6-g0-t5-QC3",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9701798051c43c3999e2beabf1cc5d4f9be02b3af4b2205e92af6bb98e76d05e"
+    },
+    {
+      "id": "s6-g0-t5-Q01",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "23a04461f9c3a0f8cbee6717e48a48ba0307536760be6667519ca393ec96960f"
+    },
+    {
+      "id": "s6-g0-t5-Q02",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "95aa8fb4fb6c8cf4e2040a3792570e92d9f45cca6c47111a22850464617ba47e"
+    },
+    {
+      "id": "s6-g0-t5-Q03",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0cc565b11a6c388f3cffddf02aa9162b81cd411a706ba992eb6c482e6fcdbb62"
+    },
+    {
+      "id": "s6-g0-t5-Q04",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "636ce754d65f70876eb936b72c138db82bd09a649bd6b6e5428e392083d79d17"
+    },
+    {
+      "id": "s6-g0-t5-Q05",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c0313ade564aa0c2295a5e2e3b74d94221027794a9c851db75669aea23f5d78d"
+    },
+    {
+      "id": "s6-g0-t5-Q06",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "238b35feb8d90b68ee7bba6255864b0b133b8d570a81e7adae310942a8e7f219"
+    },
+    {
+      "id": "s6-g0-t5-Q07",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a3d75ccdcf3ddfc12bb01af22583e1506382eb16965f14399b7c2f56ac2b11b6"
+    },
+    {
+      "id": "s6-g0-t5-Q08",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0b9f3567446282269ea7930ac4593cae14828e569b10b9085e9f13c4f1225591"
+    },
+    {
+      "id": "s6-g0-t5-Q09",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "73e05a1bbc7f9e196cff24330cc8dda18218676bbf146406eb51bb1977e7210e"
+    },
+    {
+      "id": "s6-g0-t5-Q10",
+      "topic": "s6-g0-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4e648ce69d40469fac86e6419d0b3e3f92db29506f6ba4204bdd148a4a531c05"
+    },
+    {
+      "id": "s6-g0-t6-QC1",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3ca421c20a208471d63232754663cde2b0d2fe5aa73e4e472e3ef6a4cc748778"
+    },
+    {
+      "id": "s6-g0-t6-QC2",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "41792e43a6332199b87241c3f0592975c890b368191133906e463c6a0fe49ede"
+    },
+    {
+      "id": "s6-g0-t6-QC3",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7b9c579dfe5db41fc7bbf7a4658d6e5fae25a19c76fea6a17d2ea1ab3dae7deb"
+    },
+    {
+      "id": "s6-g0-t6-Q01",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8052553e145fc60434983378de3c07e4a7ac5735e7a166ce3d3de67b467158fa"
+    },
+    {
+      "id": "s6-g0-t6-Q02",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "771aaa01826a47878faba4b6a496920a8dc5326360788206966c56b05d352ef6"
+    },
+    {
+      "id": "s6-g0-t6-Q03",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7bd708fb04a97d65851fc1e08b635624ef97762e50ea30e31c070a92725e25fd"
+    },
+    {
+      "id": "s6-g0-t6-Q04",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0f4137201aaa1421d4cc7e76d9368ae4069c093461aceeeb59786d8f690a4fe7"
+    },
+    {
+      "id": "s6-g0-t6-Q05",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "42937f751c8fcf8032a77417a08226aa469b9309b1b5d1d75e53d838a177a332"
+    },
+    {
+      "id": "s6-g0-t6-Q06",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "23d90b1729e659ea4bf409691d94b3c7c02166c40b75f251b9ee7ea3c01c10c2"
+    },
+    {
+      "id": "s6-g0-t6-Q07",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8d84c2c6eee87e89a02c1075ae5d379c2ed9355a6c9301fcbfe7dd1a783b1d71"
+    },
+    {
+      "id": "s6-g0-t6-Q08",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "dbbaf8ac50d05aca717336a6784842f6b2c0bc09b82af1fa8b72ed2780dd1b82"
+    },
+    {
+      "id": "s6-g0-t6-Q09",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0b493032eccb0ad79cd9c1eb34a991338b4b1ac030be9bba4ea91eb5bc4287f1"
+    },
+    {
+      "id": "s6-g0-t6-Q10",
+      "topic": "s6-g0-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f8d1a28712aecc7cfe23a6b1ae09dd371777ff6db48bb8a028995d7334c83835"
+    },
+    {
+      "id": "s6-g0-t7-QC1",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4d27bece34fc804fa29448e3a6a67755ff11caa1497484c2cd81cefbfd21ec95"
+    },
+    {
+      "id": "s6-g0-t7-QC2",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "96eae1dd8d7e888c5911555536993ff04029ce8cd61eb9b25afa339243a9c5d4"
+    },
+    {
+      "id": "s6-g0-t7-QC3",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7c598d33e14936242666721b93d4d6a0b56836ca9abad8b3746945a43125c66e"
+    },
+    {
+      "id": "s6-g0-t7-Q01",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8b9e8914aff1ac84eb121375a6f62eaa931ee166a6b6d332b242634ea1d5fa5f"
+    },
+    {
+      "id": "s6-g0-t7-Q02",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2d728378cb4478d531306bd2d034c0e4a4bf67852b769cad5eb3b2eb10013ceb"
+    },
+    {
+      "id": "s6-g0-t7-Q03",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3168aec33e7f829e8579a38f311ad4163ddc339e22b9a753debe7a8e305749ff"
+    },
+    {
+      "id": "s6-g0-t7-Q04",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c821e8d2a6b85ed0abd4fa7ec0fdc49e56936cad7a09e90f184bbfb5856be78e"
+    },
+    {
+      "id": "s6-g0-t7-Q05",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "eaf9912c1c38d48a56789cccc7e0aa1e374848513fea81bc57e1e8145448130d"
+    },
+    {
+      "id": "s6-g0-t7-Q06",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "000b7a9cfcc91f8f19847109096732a027ddc5c289ac7d1bc8ef6bdfb20f8713"
+    },
+    {
+      "id": "s6-g0-t7-Q07",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5d2b575981d1b49efe8abb9f57866d3b1990a94873025ae4da3cfffcb94dfc29"
+    },
+    {
+      "id": "s6-g0-t7-Q08",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "67e8a8bc659be79a635829671c3a3b00a2a350945fcff45740fab4a06b05ea52"
+    },
+    {
+      "id": "s6-g0-t7-Q09",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "98d345aa6d6add91aee8cc1bf5cc40c2a04a999a03ce02737d0844b1ac01c973"
+    },
+    {
+      "id": "s6-g0-t7-Q10",
+      "topic": "s6-g0-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "137c3a97d878964495a80da1be4535c0a5a926ea911cb4f49ff7d60181a1db8e"
+    },
+    {
+      "id": "s6-g0-t8-QC1",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "12044fae0c5bebf1b362b2e17a8ffd14ee7efdb9fb05346a7d7973c0f2523d4f"
+    },
+    {
+      "id": "s6-g0-t8-QC2",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "871d63719ce384b08a20631431a99855f339d60b960ae0862ce7d99fdf7f3ba8"
+    },
+    {
+      "id": "s6-g0-t8-QC3",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d723691b6ffd39423dec44204066be40c71f3e7c172c2197cbcaa3328c88d798"
+    },
+    {
+      "id": "s6-g0-t8-Q01",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8faa446605ec6660c6aee0a30577a522f4b776068c463fcb1b907f300dcbd8f7"
+    },
+    {
+      "id": "s6-g0-t8-Q02",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "20a161e1c1471c5a19043aeee492c6e2b51e939a1b173abc55fdefc1164a1a8c"
+    },
+    {
+      "id": "s6-g0-t8-Q03",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c7a1f249f4f39a2a1dc05a64342816e409a9335792ac919361ac3d70cc962382"
+    },
+    {
+      "id": "s6-g0-t8-Q04",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "edee20e9e09dedd0284bc7e496759fcddbaca57f9af5bf0960baba2bdc1365b2"
+    },
+    {
+      "id": "s6-g0-t8-Q05",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f723d3e9c369a22b929c04eaefd1011088c9aa756cb781624eccd0bfa194f9ea"
+    },
+    {
+      "id": "s6-g0-t8-Q06",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "96dbf5f98fe736835d54ccd56230e7aa87bb61e82e10f69d80c71c265b140631"
+    },
+    {
+      "id": "s6-g0-t8-Q07",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a0ad713eb128cdeebf85cb9e224d7f8305afd540a2e25badfdffa5b8776d8d75"
+    },
+    {
+      "id": "s6-g0-t8-Q08",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "61193c5608fd2438da38e6af69c5bc58586da0fd6e2113fb0bf638a5fd4caafa"
+    },
+    {
+      "id": "s6-g0-t8-Q09",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "099a72f91cbf9ee0712182ccf8844ba943a1bc119f0f8c15c5292c891538cd54"
+    },
+    {
+      "id": "s6-g0-t8-Q10",
+      "topic": "s6-g0-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "df162790e9bf0515a298fdb9e4223ab2b3aebf3fa39801b6d8c49b7c6b4d5eca"
+    },
+    {
+      "id": "s6-g1-t0-QC1",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1bfdd500f075ada23a762e83290d18de7cf4443d3d1d43f54b287ec58ab3db33"
+    },
+    {
+      "id": "s6-g1-t0-QC2",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2857b4221724d5685799feba1318d57d74c6a160583a70342ae7ed1e2bffd639"
+    },
+    {
+      "id": "s6-g1-t0-QC3",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f99f89f5c425a08ed2df1b97e2b9dc149f488ae294813b6ed58d84cb041cc4f9"
+    },
+    {
+      "id": "s6-g1-t0-Q01",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "af9cd826eb4d9742e7a55411bebe6261e68114d1b87b5da9dc3ff4b94b1c6691"
+    },
+    {
+      "id": "s6-g1-t0-Q02",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "83a7da2356e6fa057e5f46a020535259966bf9dad2da6f4f4ee36193dde1c1a6"
+    },
+    {
+      "id": "s6-g1-t0-Q03",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "05baa6adf59c30c4d08858b44e405965a02fd34842d1afeefd1fbe3fae1e22c0"
+    },
+    {
+      "id": "s6-g1-t0-Q04",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a0c0f5cede4ca7447206469e053a2505eca4526d9dd0425539bc2e36bfaf1d5e"
+    },
+    {
+      "id": "s6-g1-t0-Q05",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8593b37c31306297a5bcf5c7401bb933274213235ed782b4c09dab3c1f2984a1"
+    },
+    {
+      "id": "s6-g1-t0-Q06",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bd6d5047625cd3fc2e8377fc9794e90e1655820cab3235d9d62f9437e6e3042c"
+    },
+    {
+      "id": "s6-g1-t0-Q07",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2c600e87d29512373dde68dc8f93ad6284cb1f7f5c93ab5c9065d6daeae56f27"
+    },
+    {
+      "id": "s6-g1-t0-Q08",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "71cc2906031f0bc5bad4d29cd668879dc9b2d108d72a402af8e6e9a35921802c"
+    },
+    {
+      "id": "s6-g1-t0-Q09",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2b9f0cd4096e5db89706a9e2c8e9b1675d04f67f7164043276b092fc5a08cb68"
+    },
+    {
+      "id": "s6-g1-t0-Q10",
+      "topic": "s6-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "15718ed27c6fff84492742cd98c3dc978e84b278bfebe8fb9f9264c664e2ad30"
+    },
+    {
+      "id": "s6-g1-t1-QC1",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c9eaeb2f00da5a1074456093c6a52dab48f1f1e5bb0f55f5ae335c14cbec511a"
+    },
+    {
+      "id": "s6-g1-t1-QC2",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f7cc4938c2aa20ea00ebdc722986b61dcb479b73c4884134feb06e669a439e7b"
+    },
+    {
+      "id": "s6-g1-t1-QC3",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f2faf38325f0b53407007d48e6f4b20767ce56061100413b75e7598c5c380d1b"
+    },
+    {
+      "id": "s6-g1-t1-Q01",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b51233b7c932990e5c5e71875f9d76d779ae073023ee6d2fa85997e6c1cb9c31"
+    },
+    {
+      "id": "s6-g1-t1-Q02",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "30c913a536efb370f265241d3d7b2273834d552558059b1c29dd9b4cec2dd992"
+    },
+    {
+      "id": "s6-g1-t1-Q03",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3d93c80d9bad5c89a3bd7c9387ea7350a19a3bff8d90913c423a332ddf303ece"
+    },
+    {
+      "id": "s6-g1-t1-Q04",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c362765b3dfd109ab81ac95c5190b5a00be062a9f6c0c2c6b5c290d9308783a0"
+    },
+    {
+      "id": "s6-g1-t1-Q05",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6db5ce1ccda0267d257811a9232f572ae2810809d3049be3dddb88899ac2febb"
+    },
+    {
+      "id": "s6-g1-t1-Q06",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "86543b393d0573ceaf4a39ed6e691dd38df79f1d7312abf0d3c79b8ff6fc215a"
+    },
+    {
+      "id": "s6-g1-t1-Q07",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4542c721139d3458ff391b602ce7b5791d9e9dfcbfd1fe6d2ef454500424af9a"
+    },
+    {
+      "id": "s6-g1-t1-Q08",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "54f0afe5debe051e9d410f55cbb177bf7770a2c81c25564ce3228db0177734d9"
+    },
+    {
+      "id": "s6-g1-t1-Q09",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "70b533f9f4472bbd28fd04c7fe09268d4f6eae7117e49cbbd82587be27bb57c9"
+    },
+    {
+      "id": "s6-g1-t1-Q10",
+      "topic": "s6-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "edee96063c3183ca1f9569860ceeaabab6739ab15f4fb89daaa0b5aa17691b38"
+    },
+    {
+      "id": "s6-g1-t2-QC1",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5616d57ae7c115560bc8e682fb236a3e9fdfe6169db86329892b5ccbc00e082a"
+    },
+    {
+      "id": "s6-g1-t2-QC2",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "36417a935f5377c6e437545a4f73b939bb0c222add418be44c17da442f38eb36"
+    },
+    {
+      "id": "s6-g1-t2-QC3",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bfc37a926da2b1b2848451f1bdf22d38e177aef861392f753d1f6f65c8f950aa"
+    },
+    {
+      "id": "s6-g1-t2-Q01",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "217879ec73198e8dbc9047f2fcbd3e5e531a26b93ff4e6e05c99bc99f326a74f"
+    },
+    {
+      "id": "s6-g1-t2-Q02",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bbd17a983be1cd726398133f40429bd19a19aea769d84a18253803a656434d64"
+    },
+    {
+      "id": "s6-g1-t2-Q03",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "02613a5491c9f1fe68ddf19d49eca42e465f7355ca688b4e19a6671be4165b2d"
+    },
+    {
+      "id": "s6-g1-t2-Q04",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b6283c3b695dc883e90ecc5eb7d1e358ccd1a26f9f54b627cc9f468062ee1af4"
+    },
+    {
+      "id": "s6-g1-t2-Q05",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "08dbec3e8bcc2dea14000797557af0ba34c1ecc7ae18bd77c182b326ec39b6d3"
+    },
+    {
+      "id": "s6-g1-t2-Q06",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "74c5734087a368d418f5b825a7db373877dc3379ffe52bb0332b7203ae1bd41f"
+    },
+    {
+      "id": "s6-g1-t2-Q07",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ef90120da9d44446c61ec50d9b0194af1cb8c4eeefd7ac4fb9afda64c4b27292"
+    },
+    {
+      "id": "s6-g1-t2-Q08",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2e3719e3614a775ba987ad8a3cda1a822aa2af9f08ec9c78e253facd7a1bf8d4"
+    },
+    {
+      "id": "s6-g1-t2-Q09",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "20b94d0a89b69784219465573b52045a97ebaeffef4851b229c6f51358d46565"
+    },
+    {
+      "id": "s6-g1-t2-Q10",
+      "topic": "s6-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "db5b0a8b6f3e727e948d04f2dd939754c3391bd141dd46a524e146948b485ab0"
+    },
+    {
+      "id": "s6-g1-t3-QC1",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "64ab1c2aa1a840b1c79d2c0e3d092376321eb550815b300cca87c043a692af14"
+    },
+    {
+      "id": "s6-g1-t3-QC2",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a8e7f8dd93382b9a1763085a2bf87f159c4c4b6723563604265bad06a8d5236a"
+    },
+    {
+      "id": "s6-g1-t3-QC3",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3edce9268f51f265b1f29f41c7796b7d7883c33397264e32304ad622995a01d1"
+    },
+    {
+      "id": "s6-g1-t3-Q01",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1b983a5a77a2bfe083722deebb21bfde47542f501c3297c2ad3af0595185609b"
+    },
+    {
+      "id": "s6-g1-t3-Q02",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4bd39e0e26e3d99d92eaa1c8d02e9b8b7509096765ccebb1211ad73e99c6721d"
+    },
+    {
+      "id": "s6-g1-t3-Q03",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8045276a6c5345f88e506eb42141093353f09aa13fd0414de9416dc8e8570712"
+    },
+    {
+      "id": "s6-g1-t3-Q04",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6581badad38c873e80ee7e06d5196f2591e2b244ae2291de03d901f4801608ca"
+    },
+    {
+      "id": "s6-g1-t3-Q05",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "709b682930986e3de862c8aadc0070e99b49c1eab0defa7b39de71c5eb1ad4c5"
+    },
+    {
+      "id": "s6-g1-t3-Q06",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bd3d92272efcbdef3fcbe643498f06a4771579dbf2086bbb5f92d9db9dc97ca2"
+    },
+    {
+      "id": "s6-g1-t3-Q07",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "08a9d76cebe5f1186826a63d5d5a5eac95b5ec1ca542489bf1eba1abfa9fb96f"
+    },
+    {
+      "id": "s6-g1-t3-Q08",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2278625123782c726e8c471aa2f6fada6e245db7d053da2057cc56c84f44ef40"
+    },
+    {
+      "id": "s6-g1-t3-Q09",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b8dcec564f5506f842e4beef0faa07fd54edfac96bcbe360862940e99d60ea97"
+    },
+    {
+      "id": "s6-g1-t3-Q10",
+      "topic": "s6-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c10cff981925d8445a1efa6576b52e4b1366741cfc3c3fa2128690657bf3b6b1"
+    },
+    {
+      "id": "s6-g1-t4-QC1",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f5ea99de9582a7eae3c0db73ec561ff5a986042305975d5395f5dd20683437af"
+    },
+    {
+      "id": "s6-g1-t4-QC2",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "aba362d0b58d0a38ef3c32c160825033ab3fec9480fddb58605d1e77e75a6d23"
+    },
+    {
+      "id": "s6-g1-t4-QC3",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a62777328a6d8666be447d96232db383b071a9ec30ced3fa2d7501ca6452c056"
+    },
+    {
+      "id": "s6-g1-t4-Q01",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f28d4ad55369e442e8c454af7c7cc4a1c66222faa516cd3a23ceaf2e279ef658"
+    },
+    {
+      "id": "s6-g1-t4-Q02",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c0a304723bcf8a61b398781a0745ff1041ec374718418bb4bce1f48e4b367dc8"
+    },
+    {
+      "id": "s6-g1-t4-Q03",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "58ba7e8c2acef13b92c04e4a9e7ba15677d60a340237d01a81ab4ed94a538730"
+    },
+    {
+      "id": "s6-g1-t4-Q04",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "895842c8c0c6ad4407883ff03dc29637f5ea246a786a7ef756daaa663af92d52"
+    },
+    {
+      "id": "s6-g1-t4-Q05",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ec05a5fbbba9563ac27314f7faff59e60b29277e458f0b7c977ae5c3e78b0013"
+    },
+    {
+      "id": "s6-g1-t4-Q06",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "81b61a1c8b5bfb7cd0918f486b681928a7dea1e121ce9a3ecd109d9964294067"
+    },
+    {
+      "id": "s6-g1-t4-Q07",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "57c73c65817a1d08b3954d19b42b975c050326e47f7aed7cd89e57ffb5f08c49"
+    },
+    {
+      "id": "s6-g1-t4-Q08",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "49ed71a54e33e43b0ced88e4fff2452beaaa53624d93bcbdd6e53e574ebac60f"
+    },
+    {
+      "id": "s6-g1-t4-Q09",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "233d48657c6f88abe6fa547529604c32888b4349ba629ca8eb62383a6887bf63"
+    },
+    {
+      "id": "s6-g1-t4-Q10",
+      "topic": "s6-g1-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c52ba697049584ea4833d3ffe58c2e05f74077f0589d139172965f72afd43a82"
+    },
+    {
+      "id": "s6-g1-t5-QC1",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "077ffc21f8129701e1edde8cc308485342dda59d09d3f62dde391552887bf047"
+    },
+    {
+      "id": "s6-g1-t5-QC2",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "64de362016b22ed516f591201e0292ac9493bf4a33891c5728d1085cd56caf55"
+    },
+    {
+      "id": "s6-g1-t5-QC3",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "096117eb5bd0406b9cdc4e7f1537f4583fbeb211ab7dd3240babb6ebcb754366"
+    },
+    {
+      "id": "s6-g1-t5-Q01",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bc4593f63a6296223e0f08f60e1080843b4bdc8ddb9cac8778944ed05067d011"
+    },
+    {
+      "id": "s6-g1-t5-Q02",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "60ea509dea151cc00fd82e60013b4b964c998ab8d0f2e89d4100f69704a17553"
+    },
+    {
+      "id": "s6-g1-t5-Q03",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fa88e07fbe07dc8c53885964cd8b5a7718608accf5321cd03b616100db14b8d7"
+    },
+    {
+      "id": "s6-g1-t5-Q04",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8d830588ca62834cd26b98d6ebd83d0f7a1a51092f25fa59be8d7d7757a28f92"
+    },
+    {
+      "id": "s6-g1-t5-Q05",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "100a6abcdb850276f2c81ea30b69dbb62e6adbbc0c507d75bc9f1ef32c9ae0d3"
+    },
+    {
+      "id": "s6-g1-t5-Q06",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9eaefb008cc6d044b712a7883f5721f77226c2df5ceebeda6a1e8f172950280a"
+    },
+    {
+      "id": "s6-g1-t5-Q07",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "78265bb7781bd94a4546cb76dd9823b6d7607cf9ed9d101a59e41348c950e42c"
+    },
+    {
+      "id": "s6-g1-t5-Q08",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4d6570196ff5e0cfd935109581be618da3c11fadb5d8d652808fb78ca410efd7"
+    },
+    {
+      "id": "s6-g1-t5-Q09",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e51ad38fb97fb4e4d2623dc38fbdbf1339db74a0d804da11c97ced1488300d56"
+    },
+    {
+      "id": "s6-g1-t5-Q10",
+      "topic": "s6-g1-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bec11389913ca9490f5ad40bd0916e0ac024783fc798e5ad5e6b9e91a49fce75"
+    },
+    {
+      "id": "s6-g1-t6-QC1",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "cd629176d3029049855faf2ce88b7d565f19e1bd543f82a23a9812f9560bb92e"
+    },
+    {
+      "id": "s6-g1-t6-QC2",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f0d3c294cd813a1878f51c03248231e8673e07190dd2a5da35a48fb58664bcad"
+    },
+    {
+      "id": "s6-g1-t6-QC3",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "16efb3f25f0bf72660983788671e285951d04202574140b3af3122db09f3bd7d"
+    },
+    {
+      "id": "s6-g1-t6-Q01",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4724ba57d7fc421f71efa01279e05be56f7b87606edcb4a6ac2b8b209df90ddd"
+    },
+    {
+      "id": "s6-g1-t6-Q02",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9a852faf01b57947872d115bb51973efd13117bb7667d3848d32ae90f9e39d00"
+    },
+    {
+      "id": "s6-g1-t6-Q03",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fd660957d69c7039802bde6f805b1806ab3c33b5e2ab669c114dad7972bc5e9c"
+    },
+    {
+      "id": "s6-g1-t6-Q04",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "08467e5ca5bc13ca348fb4a9a4d9e6fc4ddd76c6f99a6dea641155dcec8047f3"
+    },
+    {
+      "id": "s6-g1-t6-Q05",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4d744c729396ba051c4b5dd8998e88c6521e87529507ee92e7492903b933cfce"
+    },
+    {
+      "id": "s6-g1-t6-Q06",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f362ce781b3074f023bf1cc8b32a9c4dbbb62a013dd136ebef571db53ba6996f"
+    },
+    {
+      "id": "s6-g1-t6-Q07",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1b1ac1bf5544e7cca14322b8a9a3676cc639e4a4df6ebfbb0d70aa1ee152d446"
+    },
+    {
+      "id": "s6-g1-t6-Q08",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0ca3fdacc64f44d817eb1111e285b7afd246799f628418455676804bb82aa401"
+    },
+    {
+      "id": "s6-g1-t6-Q09",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b0f60cd153145b24a5e29f08e087346329af88b77e907314b6b98c6f1e874cac"
+    },
+    {
+      "id": "s6-g1-t6-Q10",
+      "topic": "s6-g1-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "22369b692c385268ef4273ad228ff45bf694d7891af808eb92bdba131be49561"
+    },
+    {
+      "id": "s6-g1-t7-QC1",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "eb1675d6c38420874b439d0cb148abb5bc6f445fea1e09b1e8db362b9375ef94"
+    },
+    {
+      "id": "s6-g1-t7-QC2",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "682c8bfb097a34b9adfd805673cf833b379a8ff92e6c0a7207a729d17ad8a32a"
+    },
+    {
+      "id": "s6-g1-t7-QC3",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fceaeedc091a9dc5cca372029c68e69229bcff5c3a8a0268a2b219df6ef1f57c"
+    },
+    {
+      "id": "s6-g1-t7-Q01",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "25d42b098217cfabba8f0dc531da2f3f27bc81191b278bff2fcb281958e902b6"
+    },
+    {
+      "id": "s6-g1-t7-Q02",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "00e8516b36d9b021261aa03cf2d420f30379235d02cf9b73c2d8ce8352bf6937"
+    },
+    {
+      "id": "s6-g1-t7-Q03",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "92abaeb1b1ff42460c0bc796d14c430ce7031de2c9f3048e9e698ebd742ed11a"
+    },
+    {
+      "id": "s6-g1-t7-Q04",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e6167cbf3ce5a120f21d1f64930419ffdcb180889034f0366d2c72ed53c07877"
+    },
+    {
+      "id": "s6-g1-t7-Q05",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e907a20493dcd3e5aca7a17a9c54d50c8645753b595baea4c72c0d2ebde492ff"
+    },
+    {
+      "id": "s6-g1-t7-Q06",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5e47f830ff8eab4008b9ecb9ada62e992e731466d80c4e9510870f15550349b7"
+    },
+    {
+      "id": "s6-g1-t7-Q07",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b8b5e17223e3c3cfb854ded7d8dde9fe0139bdaea2177e1c917cca5f32f75c59"
+    },
+    {
+      "id": "s6-g1-t7-Q08",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "502632bcb86109835fb527af09d3880983c55111531a8feb8a0b1d0480929855"
+    },
+    {
+      "id": "s6-g1-t7-Q09",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "63b35150bb99169cbf414734029c4f7eee66469dadae4f523f21b5628741d00e"
+    },
+    {
+      "id": "s6-g1-t7-Q10",
+      "topic": "s6-g1-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7ccba05f617132ba430e8ffa076dced76bfa9b4e341460381303e434f8cf3567"
+    },
+    {
+      "id": "s6-g1-t8-QC1",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ae5755aeb611b38e9cdc1531a2a41c7ad8114aae7a0fad335f135fcbf8ab8b35"
+    },
+    {
+      "id": "s6-g1-t8-QC2",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "81c669f77a9bd2d8e64302ff454d78065c5e51fc3279ab654db77987e17234b1"
+    },
+    {
+      "id": "s6-g1-t8-QC3",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f56cc3916a5042f82b7c1945cd07b3ee48a7f877262c3ae1cee701cff1ef9277"
+    },
+    {
+      "id": "s6-g1-t8-Q01",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "712fc1e515d9e44a12110062283491b84ae9c4dfc0df02b9552cd2b4a901d641"
+    },
+    {
+      "id": "s6-g1-t8-Q02",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6e3a4d5713543d800de320d0ed5b6ab4d3ff9aa039913a8faa1a20aaadfb2fc6"
+    },
+    {
+      "id": "s6-g1-t8-Q03",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "54dc98ff9613b394e245df2d196100a5306be88ce6d5cd2a658c170991ee52e3"
+    },
+    {
+      "id": "s6-g1-t8-Q04",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b02558e7b2f035ddcd726ec1d4a5f6ab6d914f74c6b5ab554249d5b2ffddbc28"
+    },
+    {
+      "id": "s6-g1-t8-Q05",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f518051c7fbbe043de6e21d69d5c8e3ffc076a02bf79516d6ae745be70298fd4"
+    },
+    {
+      "id": "s6-g1-t8-Q06",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c190c3913c56f2d403676be523275384b39aee7534e2b64d092682ba2a1bd9d4"
+    },
+    {
+      "id": "s6-g1-t8-Q07",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4394fdf5d1b54f431a7488572bdd9910485536af99749d130f0753f75269ec85"
+    },
+    {
+      "id": "s6-g1-t8-Q08",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c029f7e7ef1d31ff951e91054cd368488ebae22c097c7aeebd98d3e07c8804f4"
+    },
+    {
+      "id": "s6-g1-t8-Q09",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4b37d196bdc6129ec471ba3f246fef551d083b21dfdeb380a01b83f7e660c3e1"
+    },
+    {
+      "id": "s6-g1-t8-Q10",
+      "topic": "s6-g1-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5d7f7cdf4d5fe960616912eeb5202b90e1e8fa92a0c417041722e6e9fed6b280"
+    },
+    {
+      "id": "s6-g2-t0-QC1",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3700365411b129d44d1d8385f61928aa4cc28ba127e81b15dfecd338a3e9bf4a"
+    },
+    {
+      "id": "s6-g2-t0-QC2",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "dbd2a773a0b6f0fa1c4ffd56200b9c7b33ae47c90ed9a6144ef17ba1c9f9d0c9"
+    },
+    {
+      "id": "s6-g2-t0-QC3",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c6d2e13ce0a4a2c0c98d7f040f376f5aca8a90ab2e46e5f1c651c0258407de72"
+    },
+    {
+      "id": "s6-g2-t0-Q01",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "98f5be26496c5f7edae00fb8f3d0689ac86119cffea580a9f347e11d20e7219f"
+    },
+    {
+      "id": "s6-g2-t0-Q02",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0666e0db919ccb5947bfcb3b4224157f482587b594781c9cb016ba25889ed726"
+    },
+    {
+      "id": "s6-g2-t0-Q03",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "255f57d03a9793dbfa4fae342565086f635aa4c97b96a917ee2cfb8eba640d25"
+    },
+    {
+      "id": "s6-g2-t0-Q04",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "67186f47f81655b84a64d720918ff6486513d81ab4490e0f2773e75589a1c669"
+    },
+    {
+      "id": "s6-g2-t0-Q05",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0b26d41839a366872655f5b10fee08c88c24275a2b25f391ef664292da8cb115"
+    },
+    {
+      "id": "s6-g2-t0-Q06",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "80e80d41006c366ef63f8f0f8668682217860aa1b07ee0f2b1d5fa90c68aebef"
+    },
+    {
+      "id": "s6-g2-t0-Q07",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fb8a693a397530bfa5deffc44e1fa0fa60c8b1f535766d19e29f78f68410db15"
+    },
+    {
+      "id": "s6-g2-t0-Q08",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "147c6143181225d59f412c53b783d38517d1337b8e083ef2d8634f1e6c4842de"
+    },
+    {
+      "id": "s6-g2-t0-Q09",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "03de9b42f499ad8b0cc5e07c724a240ef8b13018c8047e85f1efe0b7445ea351"
+    },
+    {
+      "id": "s6-g2-t0-Q10",
+      "topic": "s6-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "856548fee5036c8bc725ea35831b83a18f1e3da4c27729b6f6ecfd053b193498"
+    },
+    {
+      "id": "s6-g2-t1-QC1",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6addac93eab4871572ed93419ff04bb53ea5cccc158c5752fe38cd88f48941f6"
+    },
+    {
+      "id": "s6-g2-t1-QC2",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3c5211bbcafb9a6da2cc7d4cbb640649046a208bf27316a067d4680648d1780f"
+    },
+    {
+      "id": "s6-g2-t1-QC3",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8b887e967501e43bc2c2768931e5a35de07f3ce81ac5ad6ffb8a90edb92db40d"
+    },
+    {
+      "id": "s6-g2-t1-Q01",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2974e638836bfc48dec77cae12373d5de1b52978c10c9e20b6d9e9bd00ff1c99"
+    },
+    {
+      "id": "s6-g2-t1-Q02",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "52226f33455f83ba0cb4eea9217cef83d76dad3b0f7f9e709b88e19c60f96fa7"
+    },
+    {
+      "id": "s6-g2-t1-Q03",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "42b491b70a4175c46798d69eb264a09d69c0db79d52a718e3508629f9563b96f"
+    },
+    {
+      "id": "s6-g2-t1-Q04",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6b9049fbc600c879c6c7a00d506f0dcbc680eed17e09806a890a0447fe3498c8"
+    },
+    {
+      "id": "s6-g2-t1-Q05",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "781da1b110714c4dc5a05b14c5586ee77ee21e7b5ac505010c36b34a37b1c2bf"
+    },
+    {
+      "id": "s6-g2-t1-Q06",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "dee8f35cc8f00868eb4ffece0de261a5ff7c1acd883de8379a177988cf872c6e"
+    },
+    {
+      "id": "s6-g2-t1-Q07",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "13d51e83c7bae22fc75008d41d1ed7aceec5b59bc7223f0b84431188ce15dda7"
+    },
+    {
+      "id": "s6-g2-t1-Q08",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "cd68a13660879ccc3b35c30006e3e008de6aa09aa89f6180e036573fbeaaaab9"
+    },
+    {
+      "id": "s6-g2-t1-Q09",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "cf39652c0617676031dd48de9fd6d6f4fa24d876326e1c29cd62221fe6f0d611"
+    },
+    {
+      "id": "s6-g2-t1-Q10",
+      "topic": "s6-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d56e0d89cb168b1f082178d9514f057b28acf89aea55ae323430e6ed90851a14"
+    },
+    {
+      "id": "s6-g2-t2-QC1",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "844eddbfe52d0fe5ee907a58f0079c0a8f86143903f599fc716736db4e9b0e6b"
+    },
+    {
+      "id": "s6-g2-t2-QC2",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c914b48ca3ec927211bb0130a41171034934f72658c0f6bfd965300a31abf9b3"
+    },
+    {
+      "id": "s6-g2-t2-QC3",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "78ba319e997cdd7adc79c8522de742ff178bb0a428d97f7abc6e1b3f6c93db36"
+    },
+    {
+      "id": "s6-g2-t2-Q01",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "71081ed46e09a0f08117213aa996f088e45aef6a57d017c5835144b53c78b3af"
+    },
+    {
+      "id": "s6-g2-t2-Q02",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "36354389d6fbae0c737b48c22302639a1203e13f524137f1c179c6d3c2cd838b"
+    },
+    {
+      "id": "s6-g2-t2-Q03",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "59e53f36490d857af5d23cc9903171fa6b043a284b31fd2f1dcac4ae3f1fc28d"
+    },
+    {
+      "id": "s6-g2-t2-Q04",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "44b0891d0d4038e45ea58406bd488c890c5c6a8bbb9da262206e9b79b3c6e329"
+    },
+    {
+      "id": "s6-g2-t2-Q05",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9f4212b13506b48e0efc9866adc79dd24f910aaa25583467b0306192d80d2444"
+    },
+    {
+      "id": "s6-g2-t2-Q06",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a795c7fbe6f78f6267c69080cb846cbba494a8fc313da3afe1eeab6e7d0ac6e6"
+    },
+    {
+      "id": "s6-g2-t2-Q07",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "975920d88298c21304d132875d9072df0dfac30fb71d59ac8eaabf6c4a695af2"
+    },
+    {
+      "id": "s6-g2-t2-Q08",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8c6f0e81ef93991929cac5d7359fb2f7c254eb84325872596950045d28c74563"
+    },
+    {
+      "id": "s6-g2-t2-Q09",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "184dea9911bb4e7e4d7b987f60b1dc289e9ced648d84c15c56d6e4aa81cc63d5"
+    },
+    {
+      "id": "s6-g2-t2-Q10",
+      "topic": "s6-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "25301dc788448d3a13507215dcd65e191e48035088866b05519bd539bda559c5"
+    },
+    {
+      "id": "s6-g2-t3-QC1",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "71c73321f9665aeb645e88cf478ca1be69d20bed4028639e24680a081bfc1541"
+    },
+    {
+      "id": "s6-g2-t3-QC2",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "93e43f88b7c2c764f745c8fef69f5a662bb12eb917dc1c270e50a61b8eee2627"
+    },
+    {
+      "id": "s6-g2-t3-QC3",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bf7981abba24016b6dc3deb7618341253b1d25c471375eb1e7c003fc9e5dfeed"
+    },
+    {
+      "id": "s6-g2-t3-Q01",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1daf6fac4e3f257b7f41b998b626eb6b8ed30ec25099d056c07d24bec6753521"
+    },
+    {
+      "id": "s6-g2-t3-Q02",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4e6477326f769bc35ed6768d137daa40813a3d17ca911cedf16f55d4e01d69d9"
+    },
+    {
+      "id": "s6-g2-t3-Q03",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e858c26c482d5558723dc3523d31dcfcc67bda9e6839588d3eec95231309196c"
+    },
+    {
+      "id": "s6-g2-t3-Q04",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4f49c0234a07b709f0f1470aa48a896702ba88de9d015dc420b4d94b0970dcc9"
+    },
+    {
+      "id": "s6-g2-t3-Q05",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a766290565d4ecc5b595196c33c3aafa365490565814b9f0bbc21ac6e988f653"
+    },
+    {
+      "id": "s6-g2-t3-Q06",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "509d2e4a1b51aba1536dd6093b953fdb34c1ef11eb568c6b8d5d1b2c615deaba"
+    },
+    {
+      "id": "s6-g2-t3-Q07",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a428755ef3af95f53e0200c7b2e3719335054d4a09a1e5482ed985cf1e5a821a"
+    },
+    {
+      "id": "s6-g2-t3-Q08",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ad13f773a9e349106a7885e17e1981f37e138326733db73bfbb3d3f9654ec74d"
+    },
+    {
+      "id": "s6-g2-t3-Q09",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "16bfa8877c555c3284d94f27c59bab641c0a8e1a9169c76bd64134d739e7f4f3"
+    },
+    {
+      "id": "s6-g2-t3-Q10",
+      "topic": "s6-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3c72de117e536c42a1965d9881998275b5a7aa507a37469d392da8d34d793cc2"
+    },
+    {
+      "id": "s6-g3-t0-QC1",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "77f381ba19fc937ed4d1f7e83a190e8a40c367c2f97f3d43ef2bdf056236f482"
+    },
+    {
+      "id": "s6-g3-t0-QC2",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "dff496457fa90fbf61c1281eef1dc1028a27271e3efb9382117fee237c0a8ed2"
+    },
+    {
+      "id": "s6-g3-t0-QC3",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "503f6d05eb565fc547f12cac20e3273d4b452fd284c4ccda7c1bfa19e8cf6fa2"
+    },
+    {
+      "id": "s6-g3-t0-Q01",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4a52b58763390311b4bda21eba974cc9f842aa845e76e1b511018dc18b2444a8"
+    },
+    {
+      "id": "s6-g3-t0-Q02",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f1b9df7fe3f2332cc20a2b378f5a534b71400c59d885ee9c6327968f5f0266df"
+    },
+    {
+      "id": "s6-g3-t0-Q03",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a46c4326f24a60b0542e966e2c8f16447e2d43189909bf39b81b54877e12070e"
+    },
+    {
+      "id": "s6-g3-t0-Q04",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9c32f23ff3d2f61cd1ad51a2a8ed76098d45ec1634be55f99e5854dc22fb2ccc"
+    },
+    {
+      "id": "s6-g3-t0-Q05",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0cfe8f375addf2ad6fe58f59af97144493dd14eb82bea2d94b22210feec61e44"
+    },
+    {
+      "id": "s6-g3-t0-Q06",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "31c0de9600d4ab681c116086ed4c1af5905f6afae1a87c1b045498280dc351b7"
+    },
+    {
+      "id": "s6-g3-t0-Q07",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7039d749c075b161c87a392a667a124987757c18fef239e6fecf07da8991dbf8"
+    },
+    {
+      "id": "s6-g3-t0-Q08",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "aff811ff3dc82a1b6fd44b97ed163c01d49a2125a13a465b21c563dc742e5947"
+    },
+    {
+      "id": "s6-g3-t0-Q09",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c047342caf9fe184edf415c858639e155c89b653fb9bcd8e0e31c09cc3b0598d"
+    },
+    {
+      "id": "s6-g3-t0-Q10",
+      "topic": "s6-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e2cf7c134c19c7cbced588bb1315e33c9e242a871b2a1a2da6acf8e10500c3af"
+    },
+    {
+      "id": "s6-g3-t1-QC1",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f689f5d183e20b67b8b3f35efe13a6b94fb76c9122e4064bd07e2d7e3df418d1"
+    },
+    {
+      "id": "s6-g3-t1-QC2",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1897d28c2831559d54fe8dfe1a8071811013f3444c876ad5ece3a398e08935a7"
+    },
+    {
+      "id": "s6-g3-t1-QC3",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "cd328136171c7b50a618c635aa218ebac2bc16dcec5c428c9b27f2ae6c2ec8c5"
+    },
+    {
+      "id": "s6-g3-t1-Q01",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ec11339a05dbb799b571528dd4b0beee34d3dbb083b222893bf8e27d70c88b60"
+    },
+    {
+      "id": "s6-g3-t1-Q02",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2add38df93d0b06260cf314bb34f33c769b668d9d903d1c69bdffdda9cbb7500"
+    },
+    {
+      "id": "s6-g3-t1-Q03",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a826784f4cf2ada1a48527e339fe658a12ffb544142fd51368b3d2a7bce77b69"
+    },
+    {
+      "id": "s6-g3-t1-Q04",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "975c3bafd6d2f187a5a7a6865282b5e953687359949824270f559fbcc1a9d865"
+    },
+    {
+      "id": "s6-g3-t1-Q05",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1a35961632badc5f372dc289c442366829074911e5b9cf13fa575d0722ad6458"
+    },
+    {
+      "id": "s6-g3-t1-Q06",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "aeda7508e2dbf65c60719e8830ecbca56c794c55e86f12357550e102ba639ba4"
+    },
+    {
+      "id": "s6-g3-t1-Q07",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6fc205daedfc6ede8bfed356e5ab5f9dc334b7e5bdacef89066b96712c125656"
+    },
+    {
+      "id": "s6-g3-t1-Q08",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d4f6be8d51211a10dbd13a9b5f3a2da531e1d338ced6017e06332088a3f6ca80"
+    },
+    {
+      "id": "s6-g3-t1-Q09",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "72ac12beecc4bbea5ea9f602a6adf97d66e4b6a04ece66f474030abbea209902"
+    },
+    {
+      "id": "s6-g3-t1-Q10",
+      "topic": "s6-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2a1e9210da6584cd8efcabe80b75e2d3239ba33e8875492bc18365ac0fb1fa4e"
+    },
+    {
+      "id": "s6-g3-t2-QC1",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "09f5cd5f9dcd9191f7bdca593dad188550006b70c9c1c9db752f3d9982a40609"
+    },
+    {
+      "id": "s6-g3-t2-QC2",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e12a0c5c0b85851a85e2f6099615f949348b466c92cc81e549717381a661003b"
+    },
+    {
+      "id": "s6-g3-t2-QC3",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5072f7f9a87f7135592f4a31816a7bc5f415fcec6456700832f69236b15bcbb4"
+    },
+    {
+      "id": "s6-g3-t2-Q01",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "cba4d22a5c2224e310e1f08d83d99c11bb6d26b0f50c442ad816171e43b32dad"
+    },
+    {
+      "id": "s6-g3-t2-Q02",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4c7e86ee41725819f5ef8ba1a9def95c95bb08ecb9c055cdf36282224aa42b42"
+    },
+    {
+      "id": "s6-g3-t2-Q03",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e9c937b3c5e4c6a7a289e1691661db6174e928236dd021f56760e289658a1890"
+    },
+    {
+      "id": "s6-g3-t2-Q04",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a715d4aad983d0be8550e98859e93574640ce053a7825cc3df37e993c6080542"
+    },
+    {
+      "id": "s6-g3-t2-Q05",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8c842a1ee77745487e2419a280e636f463b71bb24e968eda7cb5bf212f9fc2e1"
+    },
+    {
+      "id": "s6-g3-t2-Q06",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ea982e5ad1f83b15fa5d9eaee0fd77f2fcccc742839d2288f52c8aff6b89ccf3"
+    },
+    {
+      "id": "s6-g3-t2-Q07",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a28705997bf13ed56419ed1ddf488ac4d92a72c9a7960b171ebaeb17765c1b9f"
+    },
+    {
+      "id": "s6-g3-t2-Q08",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "805fae67b7556f340f0be4938f7d8185de4f126a454b9b5015a18910a40170f4"
+    },
+    {
+      "id": "s6-g3-t2-Q09",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "396c7917c3c7be32193e7f9531837b996e9d0060abaf5845201a54e12283d61a"
+    },
+    {
+      "id": "s6-g3-t2-Q10",
+      "topic": "s6-g3-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c182fd60aa4ce80568e3465a863aab513b5a024013bf52218352930a9af69b56"
+    },
+    {
+      "id": "s6-g3-t3-QC1",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "561d4bbd20dcd660f6a52a713c766e5a504c882e15cbd7484330754351fa15f5"
+    },
+    {
+      "id": "s6-g3-t3-QC2",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e5bc8aa4029a1bef70f027e6ef77bd46d7654844e191a61a4f9d9e0243eeab80"
+    },
+    {
+      "id": "s6-g3-t3-QC3",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bd40bd3efa6de5d4d639235adab1afdd1ea9b48cf203dbdaaca9c792b28cc108"
+    },
+    {
+      "id": "s6-g3-t3-Q01",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9fe7f81520c276165f6fb1538e1d1e90abe77e4a7dc1b77f81388cf7b01783e6"
+    },
+    {
+      "id": "s6-g3-t3-Q02",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e5b3a4a2ced4fb86b53f2fc319974784e583ab3a38fd62b7c34b425a750dbab8"
+    },
+    {
+      "id": "s6-g3-t3-Q03",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "71c9f5eb352295d392016ac183d7dd82771f06a87d7a2c8930709b466f90b1be"
+    },
+    {
+      "id": "s6-g3-t3-Q04",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9fa0a6eaae5e8a191fcaf0f0ef92d3bf0fafd1a5596521c474719a57c6fa6917"
+    },
+    {
+      "id": "s6-g3-t3-Q05",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3e8af2946908960a3d2a42d8341f9aa9d1366a768f8f76e01fe43cf8d3487e95"
+    },
+    {
+      "id": "s6-g3-t3-Q06",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "995a79959f97c0a2fc7fd1e198a6a28a91ee6a29e4ac52e163cf1fd60c99e1d7"
+    },
+    {
+      "id": "s6-g3-t3-Q07",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a905df90e0d76a8ff2a11b2bc0421ab7d5d4719ea7126f765119dbdffbc8fc44"
+    },
+    {
+      "id": "s6-g3-t3-Q08",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "56ec8d6668f3639af3551e7fd296d4c9c1cab60cc342bb0837c346ea85a2ce6e"
+    },
+    {
+      "id": "s6-g3-t3-Q09",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f85fb384c3e88822c11b8291dea1b8128a121858b3ff31b1720c073a0e367b83"
+    },
+    {
+      "id": "s6-g3-t3-Q10",
+      "topic": "s6-g3-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "63605942cbf687f6b784f08510bd1406a19f4feb8f39b992c8c905cddc9f9330"
+    },
+    {
+      "id": "s6-g3-t4-QC1",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2ef8aa4e38c374710e986f2ed073f8c763b5dad6f4c41a12f75f9b7005916aef"
+    },
+    {
+      "id": "s6-g3-t4-QC2",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3f25a6317f43c22575d0057eadf1984172a1bf0b9f14bdc843c4a6df73b312d5"
+    },
+    {
+      "id": "s6-g3-t4-QC3",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8a520e6cf83855bbeaa55da0d61440374dd41e66b727e4293b31aa3e8456c262"
+    },
+    {
+      "id": "s6-g3-t4-Q01",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b848c02a869f787f13ddb06d540a778988ba046edc19670ea998c07bb618de46"
+    },
+    {
+      "id": "s6-g3-t4-Q02",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d747e011a7f85157c2483a7ac8afc5627506526e0d16794dd286042dc4dcce06"
+    },
+    {
+      "id": "s6-g3-t4-Q03",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "dbd15ff6c00d67afb6f530618c6aeab1a9ea6e62a5b2a0d9f1e1757008e9f6c1"
+    },
+    {
+      "id": "s6-g3-t4-Q04",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fd86be0d7af6f3e1e3778fefe6fd27f191198f2bc62cd4c55625b8149e06c435"
+    },
+    {
+      "id": "s6-g3-t4-Q05",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1aaec15b9231866ca8ee5cbb2862ac1a20760012a21a314e1c6b9a0b92314054"
+    },
+    {
+      "id": "s6-g3-t4-Q06",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "09a8abc913fdf1de6a242be73ec88af3fc0404631251a43ef0f02286e1e74f69"
+    },
+    {
+      "id": "s6-g3-t4-Q07",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "51adc9ddd6dcaeff435628c3511a07a0b6b4c74637311ef6cc44b5016ab7305a"
+    },
+    {
+      "id": "s6-g3-t4-Q08",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "00a847af3337d65a54b146d6de388ac344504e4a01202d4bd80866fe95dddde3"
+    },
+    {
+      "id": "s6-g3-t4-Q09",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "30a4866d8c881ffdb7242f2d89c1731893ef341e0aac3cd732368e997da17c24"
+    },
+    {
+      "id": "s6-g3-t4-Q10",
+      "topic": "s6-g3-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "39f606ae0b70a2da335fcd677a783583f521e03a9e33b8df9b37e45cbe9ee0b1"
+    },
+    {
+      "id": "s6-g3-t5-QC1",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "62fa2e0708a02ce909de8a2809b0944bc521d9774ca29b83b57fac9514b84d1c"
+    },
+    {
+      "id": "s6-g3-t5-QC2",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "32c90bd227b7189dc4734628830365bf6df50fdd7b453c99ee002d6f4b322788"
+    },
+    {
+      "id": "s6-g3-t5-QC3",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1cd2942b4885e262fe10e2b761b168599e30640d1ce572d53fb3d6c7d31c0f89"
+    },
+    {
+      "id": "s6-g3-t5-Q01",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "40e1e4216f9a52a1d5382d0da5281a0c77f16833937c57c993e8aa7a3f7754c3"
+    },
+    {
+      "id": "s6-g3-t5-Q02",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ab86e041e3c54e8a4abdfcc0cbce5e72c0341e6bdab87cac1887ab6014631eb2"
+    },
+    {
+      "id": "s6-g3-t5-Q03",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6e74c21b1fd31988f917495a9766acef44d55ee04f0b74b2654ca141cfb065e8"
+    },
+    {
+      "id": "s6-g3-t5-Q04",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a13fcc98cdc3db6fdf2047dc8624e7dbfbe9497d963ca10c8850773307cc8e59"
+    },
+    {
+      "id": "s6-g3-t5-Q05",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "880c6e8552e0e844af21564356242a6bb65cb0cfa0b1685014aa8e83b4184980"
+    },
+    {
+      "id": "s6-g3-t5-Q06",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "24d032cea98bb7398df08d3a5ed6584bca635c7df82721afbd430ce49fe4b11b"
+    },
+    {
+      "id": "s6-g3-t5-Q07",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fe73c2633ed2811ce6ca85cbf2d5afc1ad72cbadb236efc68dc576290fecb96c"
+    },
+    {
+      "id": "s6-g3-t5-Q08",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f264d8d9b7bbfc586ba4a9722d5cc2fd6985c7f37ad945e1de2e483ff88ed888"
+    },
+    {
+      "id": "s6-g3-t5-Q09",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4c1a36b64b69ec69726df33ae22cf58be1350e115825a63caf94ad2d300b8e62"
+    },
+    {
+      "id": "s6-g3-t5-Q10",
+      "topic": "s6-g3-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a9fa1a71c8c2adc7210bf338649dd5ac29cac3cfaa130352c08dcfcfa221c412"
+    },
+    {
+      "id": "s6-g3-t6-QC1",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c810fbd14f67055d7b66dbec6709f88885d081714f9a885296eb6053e9d3f84a"
+    },
+    {
+      "id": "s6-g3-t6-QC2",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "84f942ec544be66cba94c17cba2824e902d9ad4450cd0ef64b5295c824aa83d9"
+    },
+    {
+      "id": "s6-g3-t6-QC3",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "eb5aa51ca83540d7877aca0f5ed37b2f58fa1596713bc9261790c72c4bb5f640"
+    },
+    {
+      "id": "s6-g3-t6-Q01",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e5fa4825e82b727c0d96bdb21ac58edc0cf125c0fcf49338ce5a67fb156bdf64"
+    },
+    {
+      "id": "s6-g3-t6-Q02",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ecdc32a99c4c5e1ed8de5cbc46a93df6b6a3844dc30d6b9668587d69ffc56c4f"
+    },
+    {
+      "id": "s6-g3-t6-Q03",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ea6c39d32e071409768d990a8b9784f916ed86fc5f2572877a04b50d64e019e9"
+    },
+    {
+      "id": "s6-g3-t6-Q04",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "68d671c8451889fe4be671f2b89ed48bbf5aba70ee5c3c2abe395be39a512501"
+    },
+    {
+      "id": "s6-g3-t6-Q05",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b578ae741e5119b41eafff38f032457f4aa9136e6d6c30904d230f882bd81aa4"
+    },
+    {
+      "id": "s6-g3-t6-Q06",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3f7dfcd4b6c26bce131ea226b91eadbbe11f1b46ef545c9aa41fb04075cdbd63"
+    },
+    {
+      "id": "s6-g3-t6-Q07",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e1d509fdd334fa93def2e754ab7695fab4d57c8e6df3cb37c1a15d0d01b0f8fe"
+    },
+    {
+      "id": "s6-g3-t6-Q08",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0f6163b390e854cdb9c280c3f3a18b28fbbee42f8ef4764ea5096e12c08e9f0c"
+    },
+    {
+      "id": "s6-g3-t6-Q09",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b76ba70dc28db05cfc04df69ddba05a80047d0681098c19a795d1cfdf756c287"
+    },
+    {
+      "id": "s6-g3-t6-Q10",
+      "topic": "s6-g3-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1b6e4f7d66c5884830bc69485cfa936b038e7da95bc1cff0133276ba699957ec"
+    },
+    {
+      "id": "s6-g3-t7-QC1",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "87ddb53e84fb749f0be212f7304cbb44fcfb99a8100102765711d103db5ca950"
+    },
+    {
+      "id": "s6-g3-t7-QC2",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b867bcf263c296a2565d8a0e06ae06754e6501475fb57a371e2761e72ebca6a0"
+    },
+    {
+      "id": "s6-g3-t7-QC3",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4c2f5a580a7444f0213cab98af2106f1fe74997e21d5b926d1cecea4326035e4"
+    },
+    {
+      "id": "s6-g3-t7-Q01",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fa3a33dba725d47676c778887cd84f681630fe7570824c99870983941897a212"
+    },
+    {
+      "id": "s6-g3-t7-Q02",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "96206f104a78db8dafd9f7e613ee267b5f778ceadab74608c503672fb5c1aaa8"
+    },
+    {
+      "id": "s6-g3-t7-Q03",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7494316f26b62e18aceac6b1ff9663bcac4f9f24150ca7f0331096a7291d8ca2"
+    },
+    {
+      "id": "s6-g3-t7-Q04",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "258e070a284fb7a0a3ad146913fb48c06947d3da504d1d9e932d8f5b2fc57616"
+    },
+    {
+      "id": "s6-g3-t7-Q05",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3f1f0212c30a4c0e71416b688aee3bc6684cde6741cdcabf9bee594ddf5ffcca"
+    },
+    {
+      "id": "s6-g3-t7-Q06",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3348ae00b3b4c6818281eb771a86a4ba8f694c72fa9b102cbcbd3ef8b4cff8c3"
+    },
+    {
+      "id": "s6-g3-t7-Q07",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e004e014771dade2ba63e9db252f2c173d6a735bc4767d8e6fb165eafb2a904c"
+    },
+    {
+      "id": "s6-g3-t7-Q08",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5cb03a9add8a5cec719e6b6d7375a3ad106a7019ecaa59caf2672a4a97c59fad"
+    },
+    {
+      "id": "s6-g3-t7-Q09",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2b8b1a83c894af298aa9c0f2dff93a98281a3de4fbb452d78a48430e94ab77c1"
+    },
+    {
+      "id": "s6-g3-t7-Q10",
+      "topic": "s6-g3-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "84a51f0469aef369fa2a4c57ae035b22438d12b0f2eb7d8ca045b0471b5c7bb0"
+    },
+    {
+      "id": "s6-g4-t0-QC1",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a8e3402a4bfce3f8bea4cfb8fe05e2fd605ddc264927798bb629649076294dba"
+    },
+    {
+      "id": "s6-g4-t0-QC2",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "59e683075ebec9e4c8fa98dc841cc8a15052a3f8b4efc3d2d5700bfe9f6ef9e9"
+    },
+    {
+      "id": "s6-g4-t0-QC3",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0aad05da3574c65584403dafd1a84019089151f3d6ad9fcb1634a2bb4588424c"
+    },
+    {
+      "id": "s6-g4-t0-Q01",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7eea761d1ea20bd73a2eef5a745e1a84d1f6c0b3b842e65968a0539e138b0d69"
+    },
+    {
+      "id": "s6-g4-t0-Q02",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d2d59b20a0cea0ba006ff5d693cf652759d6fb9538404fde76e06977cded2422"
+    },
+    {
+      "id": "s6-g4-t0-Q03",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "408a5ad6eb7a9f63853eaf07ba9ac244582cca667339d7a6a5bfdbd249154b5c"
+    },
+    {
+      "id": "s6-g4-t0-Q04",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a297c34cbbbbfe467dec7be3ca083ca00c9ee14b83b2df75626fac6fb49c2765"
+    },
+    {
+      "id": "s6-g4-t0-Q05",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1de5159f94aa247230c1447c48d7544ee1284e08c4aab45e276e88ffedf5afde"
+    },
+    {
+      "id": "s6-g4-t0-Q06",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7a1f101f5d67c430b6cd4241c451bbf63c0a1c99ac3c6bffbe5b733fd313771e"
+    },
+    {
+      "id": "s6-g4-t0-Q07",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5ad8f6c578084770c2c8d69a72bbd903e2a6faf378a67a3a25f1c8c690ab8840"
+    },
+    {
+      "id": "s6-g4-t0-Q08",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6c91e4159885277fb517e392770032abf6630d28a62e287bbeb5f30d36499880"
+    },
+    {
+      "id": "s6-g4-t0-Q09",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9d73ccbf3211f6e34ee90362e10e97604505c5f93bdd74075b8a78ccf41d62c5"
+    },
+    {
+      "id": "s6-g4-t0-Q10",
+      "topic": "s6-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a06f7ec2c4eab4c1472f22452293421906ea1da8a499ed9456bc893be09753cd"
+    },
+    {
+      "id": "s6-g4-t1-QC1",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7503a28a664da4d965de1c85d9348e874e87d9aaef6080a9277e2d2bedf273d4"
+    },
+    {
+      "id": "s6-g4-t1-QC2",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "36e54f7680175e07c0a6ec90dcd877074520661ea325958e4b0dff6eaae99ce9"
+    },
+    {
+      "id": "s6-g4-t1-QC3",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e6f3be2178a04eaef4fba5eb48dd6eeb51b49c79ab9335672980cde14d973064"
+    },
+    {
+      "id": "s6-g4-t1-Q01",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b62b37400dfd0275b00b218be31de5bcb8a3db2da31e21e8bfa38f8f897b2fa0"
+    },
+    {
+      "id": "s6-g4-t1-Q02",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "20b3897d251e76dfa34fbb58b37bfd9d8907eb0274705379ef05b79345d4b0ad"
+    },
+    {
+      "id": "s6-g4-t1-Q03",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9074e16ab3d756fb245f9701c52ae7717ea891911c61c9343d6a130d0da53418"
+    },
+    {
+      "id": "s6-g4-t1-Q04",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6d278256b61bcafe37956ca660b49fd6e0dcfd365bf055c540e57f6c2489775c"
+    },
+    {
+      "id": "s6-g4-t1-Q05",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3edce745f9738f3d205a035651d2c014a9d4cf208bba3b022a1eac576b3ef887"
+    },
+    {
+      "id": "s6-g4-t1-Q06",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "48bc414aa4388f6c330cc60749ace210747d0abdc8aeca04460929b962cb72c1"
+    },
+    {
+      "id": "s6-g4-t1-Q07",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bc22a4ae65eedb64bd0db10ff3100ede65c93b72df43ab333fd435f8dd548dd4"
+    },
+    {
+      "id": "s6-g4-t1-Q08",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "20494a96178301a3932f6a0f2b3ed9c7b9a9c75d4f44cc81d581df9d547200f4"
+    },
+    {
+      "id": "s6-g4-t1-Q09",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "65abb0bc58fa5fb7413696a838766373349269a470b3a85d4d50b41f14ebadaa"
+    },
+    {
+      "id": "s6-g4-t1-Q10",
+      "topic": "s6-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "cd85042a5e0e152a50220d4cf858fa9195b8ef8677f613e532b398d9f8a19ed8"
+    },
+    {
+      "id": "s6-g4-t2-QC1",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e99221c110c0486e828c8786edb80bcde38cf88b0a7c459afe28b4bd29d93e21"
+    },
+    {
+      "id": "s6-g4-t2-QC2",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a2bedfd870470bfec26b3206e46ee9883d2ac6d5735eddba4b81b8c4d1665be1"
+    },
+    {
+      "id": "s6-g4-t2-QC3",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "06a9cc2bfcdec4eab7a74a14d7c58ba17fd8fbc0f0d2b23fa85159acb97f67c3"
+    },
+    {
+      "id": "s6-g4-t2-Q01",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5420cbe0f10394f903e6876a71a87b02d1297beb01930fe723229d6950d6a242"
+    },
+    {
+      "id": "s6-g4-t2-Q02",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c52691a02901e31a1f1efbf21d03b79c4a2f8dd05694d9ccdee029fbb6a50316"
+    },
+    {
+      "id": "s6-g4-t2-Q03",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5bdc88266eb262d0ae22c5e1781ca2677f0caf046cec721249e3fc052c4bfa15"
+    },
+    {
+      "id": "s6-g4-t2-Q04",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6d22c07403735dd2ac493bf35965b7cbc0f61e37ebb42bcb1501736999504b0c"
+    },
+    {
+      "id": "s6-g4-t2-Q05",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ff63ab95101a7962f8dcd21ed19414993b9af1ab8f7a193843422483644d2506"
+    },
+    {
+      "id": "s6-g4-t2-Q06",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fa5214766e51ee988fd8c23ed82e76695edfa24add1e62f6b44cf83ddd24c471"
+    },
+    {
+      "id": "s6-g4-t2-Q07",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7c411842d744882067c685400bd94de3d63be52f4ded5ce941296cd488c2a369"
+    },
+    {
+      "id": "s6-g4-t2-Q08",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "87f00e0574027cfdf3dfb28f004096d461f2cbf1679dbbc31489f4cc3eb0dc49"
+    },
+    {
+      "id": "s6-g4-t2-Q09",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "aa5ca71d18ad2e83a595d6852fe6c7a0996688aacf792c31aee37020f1cbcc67"
+    },
+    {
+      "id": "s6-g4-t2-Q10",
+      "topic": "s6-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a8184c78f1069252f919df1dff7f23610ebfb6e5bd681df1536ef53829673ece"
+    },
+    {
+      "id": "s6-g4-t3-QC1",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "34e4a165bf35522a8061c6c6aec50c5ee020a482d04d96208fdef6730220d112"
+    },
+    {
+      "id": "s6-g4-t3-QC2",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1dd22b4147e620a7b74c19a308b23bc8c8422658943ad4adc6947dbc390f34d7"
+    },
+    {
+      "id": "s6-g4-t3-QC3",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0a35d377af84ad34a1a65a89c72848e5c0335ad8371a59968a456cda3036a7b9"
+    },
+    {
+      "id": "s6-g4-t3-Q01",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a8205e8f16ee9bdc45cbbd03728d5ae6af6124cd217ffe6e0d7766f08f600024"
+    },
+    {
+      "id": "s6-g4-t3-Q02",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "88f410670ea0091f5fb2aae8f2ac6091f6c7e36a19e5f02cd2160a1bffd059fa"
+    },
+    {
+      "id": "s6-g4-t3-Q03",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c956b00a646e1a806cbc631b31227cd4f652b99b15eb662b08d7af3ec67bfe5c"
+    },
+    {
+      "id": "s6-g4-t3-Q04",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d3123a7652ab0fd681dc58cb2821c9ecf3b33c02f7bd255ba571beff88413bf4"
+    },
+    {
+      "id": "s6-g4-t3-Q05",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f446912982d4a122e5f30eecb5360645de5f252f541ba8b116798d4583c03ea9"
+    },
+    {
+      "id": "s6-g4-t3-Q06",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "66c87aa2c4984e3cb59333cdfa4d75e6e13a9b9a11b430163488ce51bfc4b796"
+    },
+    {
+      "id": "s6-g4-t3-Q07",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "eeb84b903ed9cf21e180948a909dac23ddd70b574e71dbf4ec0bee24800cd1d9"
+    },
+    {
+      "id": "s6-g4-t3-Q08",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "012dd4ebb15cfd0f80ca92af3d259e42e58eccabadb7bf51cb2f2aafaf5c381f"
+    },
+    {
+      "id": "s6-g4-t3-Q09",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "df4296eea22cce846a28cad92e93b939a61a3bf3ac01e05eb9a0b38c93c5b279"
+    },
+    {
+      "id": "s6-g4-t3-Q10",
+      "topic": "s6-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fbd565095839359c1f1263840bbb8a4c311604b23de8dce391bbfba7b5218b8c"
+    },
+    {
+      "id": "s6-g4-t4-QC1",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e6d94dc4c2282fd3a7d05d28d2828fde0c18120010558990d6634d93b4e2b180"
+    },
+    {
+      "id": "s6-g4-t4-QC2",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8f0d1b44b8baedb1bd7692f77c7e310ba73e9b1dc73efb30e2a9897307a5c1ea"
+    },
+    {
+      "id": "s6-g4-t4-QC3",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a71448ec03ca4d40313d125aafc70e5c816e75a40747e0dad0eb5ec6372c84de"
+    },
+    {
+      "id": "s6-g4-t4-Q01",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "16c99a3b8811f0723dc03030d5031d399da13e5d27241e667c107103585bbb27"
+    },
+    {
+      "id": "s6-g4-t4-Q02",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7f5c6aa45f46f38c3888c06820398833023a416e6fb53748353328a16abf1339"
+    },
+    {
+      "id": "s6-g4-t4-Q03",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7c561af0c774f6237d74e862dcde44065e7dabd7d070d1e79cb458fa230e6187"
+    },
+    {
+      "id": "s6-g4-t4-Q04",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c214c1e8f22dc608f9debbb65f736da3bc1bf92ccc27d114e1103ce3cf879e19"
+    },
+    {
+      "id": "s6-g4-t4-Q05",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1feb9fa9b8b64f2c2e1ae95ebd0dae0d6b78f974936de0f7e8384d76571b4c5b"
+    },
+    {
+      "id": "s6-g4-t4-Q06",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "097777008c124fb55972ca8faa4fb46900db6fcac7dfa5d58eb7dc37b441495e"
+    },
+    {
+      "id": "s6-g4-t4-Q07",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d42dfecbc3adc18cbd995c38d547ea6e87f290e4ed3fa9cf855076547ae86e24"
+    },
+    {
+      "id": "s6-g4-t4-Q08",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d98febd1ed9d18c3d4ff96ccc68049f4e8e213fe70c46cdaa6616b0ffe636002"
+    },
+    {
+      "id": "s6-g4-t4-Q09",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "35f78cdf3604763c504dfc3d1d56ee72b277080ae1d5b741fc014fd1713c5fa4"
+    },
+    {
+      "id": "s6-g4-t4-Q10",
+      "topic": "s6-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "728ef29f47702ccc5577f49a2812c9cec5d5209c267575fbd99f392ce033d370"
+    },
+    {
+      "id": "s6-g4-t5-QC1",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "703bf921744b04759860dbbc130b619bbcc4a9a4e6194cccd1ffbf27236a3849"
+    },
+    {
+      "id": "s6-g4-t5-QC2",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1eefe13cbb061b2afefd1cc45ba74b50173b9e7b74a00d8624517b865d5b310d"
+    },
+    {
+      "id": "s6-g4-t5-QC3",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4523479d3c11412b7919eb92575aad57001aae95f5d1c34a19182b1c73dc64e6"
+    },
+    {
+      "id": "s6-g4-t5-Q01",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8618ed41bfff4639eab44704724057d4e02c916bbbdb429116911e8b2008cf53"
+    },
+    {
+      "id": "s6-g4-t5-Q02",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f1bff434fb60a463159ebfb3abfc6ceb8d77191610df2e39ff661f83ca4f95bc"
+    },
+    {
+      "id": "s6-g4-t5-Q03",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "59bfe2eabea3c1c9b49f73c1b9fc0f08eae25c68aacc69fbd419f1f073759e5e"
+    },
+    {
+      "id": "s6-g4-t5-Q04",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fc5f77f3e0c3011275f64f5f9fdef0291669d5adb3212c5790ffbf42ac226eab"
+    },
+    {
+      "id": "s6-g4-t5-Q05",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f06ec312baba5b3baa6390fbe528647648349d0db046bfb9c5e55e1068254471"
+    },
+    {
+      "id": "s6-g4-t5-Q06",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a4e9dedadd991c6a98bcef11a50268aa3d538743cb7f2cd5fa837932e6407f64"
+    },
+    {
+      "id": "s6-g4-t5-Q07",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7e7db66b13ba34b451650972459c3120ca068bae238ed852f7f5a50abde058da"
+    },
+    {
+      "id": "s6-g4-t5-Q08",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "cc1289fb3e46f72c3a768f341ac991bf88434e942bcbdd3db8b16592449838c4"
+    },
+    {
+      "id": "s6-g4-t5-Q09",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "22ac75ada10b1afb857ecd8e97c28f4f264faa730211ee4093d25e5e675258d7"
+    },
+    {
+      "id": "s6-g4-t5-Q10",
+      "topic": "s6-g4-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f253a4f30f290f6f89b3e78bb4490efe8ca0b5fe923e72c5bf14d772e10c0687"
+    },
+    {
+      "id": "s6-g4-t6-QC1",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4093201b58e87aeb7e398cf2966ec9eec480666b6195f1fd9b379ff131c7dff3"
+    },
+    {
+      "id": "s6-g4-t6-QC2",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8a140b2e9b39cad53850b024e864b1c4deadda06ac9eda90a71f9e3eb937a1a3"
+    },
+    {
+      "id": "s6-g4-t6-QC3",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0ed62fdbd3a5274c2b75696ce4a427bf788bae82cb3d79e94276d81aedba0cd7"
+    },
+    {
+      "id": "s6-g4-t6-Q01",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2e79886f239e54817d3a6a0e3fba2ccdaad075412d514481cafc44c54c4ce5bf"
+    },
+    {
+      "id": "s6-g4-t6-Q02",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "46084671a7d9829223ea0c1471f03f5fcf98b9466727481df20482a5eb3845b0"
+    },
+    {
+      "id": "s6-g4-t6-Q03",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "0cce14ac647cd257cc850574f7195d7f581464f51893ac274622593181faffd7"
+    },
+    {
+      "id": "s6-g4-t6-Q04",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "de1956ebc30def0b70a9b7aa0bf5febeff5fe6e3c64cf68a87891a651e3a926c"
+    },
+    {
+      "id": "s6-g4-t6-Q05",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "49600dbb96c11b053fb57e78c832286a783333b01bdeb68ef9281be054f54949"
+    },
+    {
+      "id": "s6-g4-t6-Q06",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5e78468629af9579ef2a9f0108561b33495c38ec3c831cd922c0b412e5e67ec8"
+    },
+    {
+      "id": "s6-g4-t6-Q07",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1c6d83a9c42e75a9c04eae8e42930ec949b17035b3a8e66cf920111c161dd9e0"
+    },
+    {
+      "id": "s6-g4-t6-Q08",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "05e21f62c8bb169d7cb5122937eacc3284bc25ddf5312e63c324b6c59db8401f"
+    },
+    {
+      "id": "s6-g4-t6-Q09",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3837850b2e734c4f3408f4573c7e98b9f7163c30db438e06118677b5fec786d7"
+    },
+    {
+      "id": "s6-g4-t6-Q10",
+      "topic": "s6-g4-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "127a57facda1476f2ab3b22dbf2caaced077833ff2dbf6b94343cb9335e6483e"
+    },
+    {
+      "id": "s6-g4-t7-QC1",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fa8850868e11247819274cf22408771f6be5e5298021954923bae20ae8055bd0"
+    },
+    {
+      "id": "s6-g4-t7-QC2",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f465baf13990f6ee31c8b5f9ab6f7aa865426613c3599125eec53858147a628e"
+    },
+    {
+      "id": "s6-g4-t7-QC3",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6083882099b061cdab1ee18f2d51c7d9377ec2cd6b3ae331cc77f6469c55252c"
+    },
+    {
+      "id": "s6-g4-t7-Q01",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "251cb9a632eea1d6b6b5bd5e1e2d2a8568e16238d5a98820e60b3f3673289f27"
+    },
+    {
+      "id": "s6-g4-t7-Q02",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8ce0f3999143db0039ae34f5d4723e60caf6de11a64f8f5f3f2aea3005767ae1"
+    },
+    {
+      "id": "s6-g4-t7-Q03",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b10fdbe3d290ade2ac91ab12370655d658f100b50c1cd5f06f609ce990fb9033"
+    },
+    {
+      "id": "s6-g4-t7-Q04",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c1c2a23c200174200217bbe885296d62a1adde9a3a1ba095f833fa907ac3fd41"
+    },
+    {
+      "id": "s6-g4-t7-Q05",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4ce1da33b9221108749a08bfcf259d8912fdea53082b064653dfbdd93ccbdb02"
+    },
+    {
+      "id": "s6-g4-t7-Q06",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ad9fc571e8dc14dc004a74418ad08aae5bc8c328e9a8712b204b5e2d27e18f8a"
+    },
+    {
+      "id": "s6-g4-t7-Q07",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "643a0f2ec1b78ac8bfae98304e4f8063279af924e67c46a647c4cb8ce94d5515"
+    },
+    {
+      "id": "s6-g4-t7-Q08",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "25946cbba25f05fb44bfb65faf68d8858efe2e0fd809fc0b8a97481e826d054e"
+    },
+    {
+      "id": "s6-g4-t7-Q09",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "13612133ab6e2ef2844288de41e2858eb9769c17959c041b940e2c7f8e8a33f7"
+    },
+    {
+      "id": "s6-g4-t7-Q10",
+      "topic": "s6-g4-t7",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b5ee08e0c907aeff7ac1137dcdf552b09725fde28631f974e23098a87639699a"
+    },
+    {
+      "id": "s6-g4-t8-QC1",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "32aa0c730ef725b4ce0a78cc5d41e72fbcdd7ce76ce6bb5cb466bfd2477e8e9f"
+    },
+    {
+      "id": "s6-g4-t8-QC2",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9bc6b52c3be2699ca621dfc675390d9d238795737c070e63b66a4cafb4231ea7"
+    },
+    {
+      "id": "s6-g4-t8-QC3",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "21abf66b794b59f321cae0a90f506da3241e105e5be342d1105e4da7eab60782"
+    },
+    {
+      "id": "s6-g4-t8-Q01",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a162effc7fc3630ec6eaaca9c567054eb76b4fa5250f3055c10304e46d13c165"
+    },
+    {
+      "id": "s6-g4-t8-Q02",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d5c8d336d8ea216d1f5386991483e6364a3e6630b0233205dc75bb2c95cadd07"
+    },
+    {
+      "id": "s6-g4-t8-Q03",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "440f4cb69daf61c5d4ed0813b1a6adfecc420173c08844410001bc3b81b7f445"
+    },
+    {
+      "id": "s6-g4-t8-Q04",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9005498a55b4d048a95794195b3ce9e59e649fe4727a3443edb838545178bfac"
+    },
+    {
+      "id": "s6-g4-t8-Q05",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d232122e957daf880280a171579dfc10431c9a4cfa9d65705135116257dae1af"
+    },
+    {
+      "id": "s6-g4-t8-Q06",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a2eba1c1602e659de48b53653c6be56ab0c892cef49f436ec3c29382960644aa"
+    },
+    {
+      "id": "s6-g4-t8-Q07",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "35f9f2ea9319c8ba2342e6942f61dd083af38d36810fa04e7fac2ea8bcef2018"
+    },
+    {
+      "id": "s6-g4-t8-Q08",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2b7e495e85856ae7db8f715a00a344bf77723993d0622d0f01726787449dfb4e"
+    },
+    {
+      "id": "s6-g4-t8-Q09",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c6050543c7b8309991469ba136b650328bd2c1b1e858693f7985e94397e28389"
+    },
+    {
+      "id": "s6-g4-t8-Q10",
+      "topic": "s6-g4-t8",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e24894ec7464b0d5c6611ed0229ee99ba19b3a8baaf261eb316b020849e03487"
+    },
+    {
+      "id": "s6-g5-t0-QC1",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "05feb8a682c827c968a5b6f7f92704ef003ebf20194cd71735774697ded34b5c"
+    },
+    {
+      "id": "s6-g5-t0-QC2",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "88b0d57e9d39763932a7494cc229ee7220f1ba412ba113d1d38367b2ac63c711"
+    },
+    {
+      "id": "s6-g5-t0-QC3",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "906481310867edfc702ea7311e9421cf844c92f42d5c78f3736e56928f09a0eb"
+    },
+    {
+      "id": "s6-g5-t0-Q01",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "401be0fcd690ec573f96b8979b2379234387d60ff393bf00bb2a06d1d28ae1ce"
+    },
+    {
+      "id": "s6-g5-t0-Q02",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ba410ba2b2c8cfa0d734d31435d14223c99868c4531bd1aebb469a3e46bfec90"
+    },
+    {
+      "id": "s6-g5-t0-Q03",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bacc32f6729f52ec24d6f8185e391d23fc8360f49056fc47296186ce6011812d"
+    },
+    {
+      "id": "s6-g5-t0-Q04",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3e73da369ea2f00776d24713c0e0b21ecf4c0d3540e7847d61771d65f32d0a2c"
+    },
+    {
+      "id": "s6-g5-t0-Q05",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d1081731247da36d29b68b5d658ce5fa98da07d2f2de2a70210405ef86fe766e"
+    },
+    {
+      "id": "s6-g5-t0-Q06",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f5f7d959358962d31cebf5b302a2c024770a84b232898ad32c2225421e9bb6d9"
+    },
+    {
+      "id": "s6-g5-t0-Q07",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7fd79b4293edf4a9ad21e763d2cee885c970fb3d5e952f0a588197849af6fb2b"
+    },
+    {
+      "id": "s6-g5-t0-Q08",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "11b6b4567d5fc9f0da43c63316972a3bf933f31470d85e4df8a8edad45fbb42d"
+    },
+    {
+      "id": "s6-g5-t0-Q09",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "634b1fc9db02280b1edae9da49c3b9e1b061123ca34cf7dbf530158a7a6148ef"
+    },
+    {
+      "id": "s6-g5-t0-Q10",
+      "topic": "s6-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b02e31053c35663bfc1fc5436cabccdf2361985d762c1a3a699c76c521d1093b"
+    },
+    {
+      "id": "s6-g5-t1-QC1",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5773978b7c926a3bee4cc73b7c9e96968dbb458d4aef14e0f1a88f08627eed94"
+    },
+    {
+      "id": "s6-g5-t1-QC2",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "ee4eee86af0f10f3ebf0fa670896c8fb0d80f997ad489ff3b73cdeb91c34f26e"
+    },
+    {
+      "id": "s6-g5-t1-QC3",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d30610fd4180bff84222c04aab83d3240fe20b0407635d2249cc5fa38e81d1a1"
+    },
+    {
+      "id": "s6-g5-t1-Q01",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4ccb77a4bf5ded39d6ce67dd0b9d0b06964e264dcbc9df77af160e0139099ce2"
+    },
+    {
+      "id": "s6-g5-t1-Q02",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fea2e141156bccd265cc062c006d7787552503977d8302c37a71c2bf8939b4c7"
+    },
+    {
+      "id": "s6-g5-t1-Q03",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f3f82a27b8252f99e44a409d06933a7477c3790555c8b28a3a935b97249d2667"
+    },
+    {
+      "id": "s6-g5-t1-Q04",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f078203a0cbb7d466c0d775b310bad93ec50d1d6946fd629dc86878fbcc43e85"
+    },
+    {
+      "id": "s6-g5-t1-Q05",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "17d1ce8d0692fdb8de080df877450233195186452666c94aba4f4ec83be8a6a5"
+    },
+    {
+      "id": "s6-g5-t1-Q06",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "98a1e33c1c55b40556582ac7a0705731666fe5961ed0dcdcca22663a144c4d31"
+    },
+    {
+      "id": "s6-g5-t1-Q07",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f57ad497b36a736bd30bfde2387e8803b4715b7c798867c358076c9c7036c053"
+    },
+    {
+      "id": "s6-g5-t1-Q08",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8445e4e60773261d8f318358648b7a0aaba406623cb78dbc4b7c6aac6e503b09"
+    },
+    {
+      "id": "s6-g5-t1-Q09",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d32be0613f5421c94925e2b36ddc447084c1a3dd48b7999a3f22181500e5cfdc"
+    },
+    {
+      "id": "s6-g5-t1-Q10",
+      "topic": "s6-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "441b6bb73fd9c70bcce0ce4ca581dfbba118996cbd8da59633825a52d4b1cb07"
+    },
+    {
+      "id": "s6-g5-t2-QC1",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "8996704417f4182882778dad873d6fe36c5f54c9a35304a35d191e34cacf3e96"
+    },
+    {
+      "id": "s6-g5-t2-QC2",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4924309061610e1c8811af9918e2510ef71e03d78258fe4a91436f960699b353"
+    },
+    {
+      "id": "s6-g5-t2-QC3",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "5bbe201fdd5259a55f699e668b4fffbea9ff21a3bc7bcb416b2e049d4f00baf4"
+    },
+    {
+      "id": "s6-g5-t2-Q01",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d546ee3bf269ed3d17636fc9cec23408207517a11cd40e36f6cd240cb65c9ea6"
+    },
+    {
+      "id": "s6-g5-t2-Q02",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "96d5e1138b6e2ac5be343325d802f96607ecdd8b0342bf316ba1a27a8a4070d6"
+    },
+    {
+      "id": "s6-g5-t2-Q03",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "c0c5ade78f105ad06fe5000ea44816edfc491537bec213d5ef9068352263a006"
+    },
+    {
+      "id": "s6-g5-t2-Q04",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4b62beb294dc4e4b316009ab802c9e2ff69d47a0c1b99234b68f519e89c3df50"
+    },
+    {
+      "id": "s6-g5-t2-Q05",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "7bed2ec6ca747d1da69be9e7d2e35e241c404b7a6d6ec9290ac817c2037e1616"
+    },
+    {
+      "id": "s6-g5-t2-Q06",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "e79cfa9653f47752e9b01949e7191f9a5f33e5be96ffa5c4a1296111829d759d"
+    },
+    {
+      "id": "s6-g5-t2-Q07",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f7d165b8dd8ef46f43ee5cb3953d3445c4e0914895f49dd0c811a7ac266f949f"
+    },
+    {
+      "id": "s6-g5-t2-Q08",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a356eb99c1a32a455ff28e6605bca7c797bbb187daa0d041a65618ce891fa2a2"
+    },
+    {
+      "id": "s6-g5-t2-Q09",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "2858aaee76cf2bc47cb5d4469d02a82338cb434a8a144c9708c02239c53c2808"
+    },
+    {
+      "id": "s6-g5-t2-Q10",
+      "topic": "s6-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "26b8ea5b1a0b84731f8562a3e25f9e68044af3e3ac701d3e01709e32e30b3778"
+    },
+    {
+      "id": "s6-g5-t3-QC1",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f10ecf8bf8110f907b2f80a6a212acec0277cf650b0aa336db9feb6c9f820627"
+    },
+    {
+      "id": "s6-g5-t3-QC2",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "bf206aa33104da6bac02821546a98e44b316ec95ef2d71ed08bcbe274ff73964"
+    },
+    {
+      "id": "s6-g5-t3-QC3",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "dcb8bc4ca8079f922ea4026d7198b41c788c7aef8e38f7828686fa0154922147"
+    },
+    {
+      "id": "s6-g5-t3-Q01",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a81656c9ed24730bad6183b9a1b01f7a9cbd127f3be4dad29a651b1174f89cd6"
+    },
+    {
+      "id": "s6-g5-t3-Q02",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "d47866bcceaef05be4d15c6f9481b36e99628a5e5da23b866f78d84b3616a139"
+    },
+    {
+      "id": "s6-g5-t3-Q03",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3ca0bbe7aefc827931be25fe8106cef5b744d4c20dfe09f015ecd89c5c9c74fa"
+    },
+    {
+      "id": "s6-g5-t3-Q04",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "27fdab43a18109ca5099009fb5e54f990d5b4f2b21d2e3aea367f18c34b295ee"
+    },
+    {
+      "id": "s6-g5-t3-Q05",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9cc829e9b1a24bbc9bd56443af4ded44a152a7606b495950fcf2880a59ce0072"
+    },
+    {
+      "id": "s6-g5-t3-Q06",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "65dd096c89c8e0b3bd393d1f7274e43289c53c0b625feddc48ab4b6e4f08943f"
+    },
+    {
+      "id": "s6-g5-t3-Q07",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "84a76872bd9d34f9dab4c9cdc6d12e9121d0850d788cafa5e636cac8ce54c0bb"
+    },
+    {
+      "id": "s6-g5-t3-Q08",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "acaba7f1d987693def3eb481c9d5035ac7155142426ed8b158715a69509159c8"
+    },
+    {
+      "id": "s6-g5-t3-Q09",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "745dadf871170139c5c16b2b18e73cd9a67e4feed9ae504492d14438e90b1793"
+    },
+    {
+      "id": "s6-g5-t3-Q10",
+      "topic": "s6-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "9b6f98b36795aefca2c6783eb4acefbb6728cda3ce54b343c58b5d6c3d857a52"
+    },
+    {
+      "id": "lab-6-QC1",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "1395d10e1628f3cc7ef839d0d538814c4c428b5990e978b0556be700a042820c"
+    },
+    {
+      "id": "lab-6-QC2",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f35bc7b424a73df98f4667a077b1e54d343bc4ed99b97ea8fc9a72c97b3276ae"
+    },
+    {
+      "id": "lab-6-QC3",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3126bde5fedb87f99871e3b58afbef2c28cfec232ce73f8fd485a05ce4c774c0"
+    },
+    {
+      "id": "lab-6-Q01",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "b2d428c697faa9658fac7968e82094a078c0863f64f189c7d723d129f5f85767"
+    },
+    {
+      "id": "lab-6-Q02",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fba9ee3d1f0b59e3ec29e74042c23429c4612809efe6063accaf38679ce20472"
+    },
+    {
+      "id": "lab-6-Q03",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "3b5d84fa20806fa73048704127fb18dd29ba5378986d5049b3e5065166604f57"
+    },
+    {
+      "id": "lab-6-Q04",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "6eb83a227625565548a8b53b49aaf0d27bb5271b51a85ae041e03863f6f9ff9a"
+    },
+    {
+      "id": "lab-6-Q05",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "629e4b4d848e106c2fa32743b773339899ff0a93ec42b30fa91e5b0d7c269e50"
+    },
+    {
+      "id": "lab-6-Q06",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "4d02b3774c375278d88a276f338a651068cda6ed1e1e904ccdd9f1d1ac387d7b"
+    },
+    {
+      "id": "lab-6-Q07",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "53c40492be2b2995ea7a7e834a1131fa665b74ac45b707b991377aa532ffeb22"
+    },
+    {
+      "id": "lab-6-Q08",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "f7751d92530b4b45506845edfb1b875162c4290f4855a75752661bdfbf1cedca"
+    },
+    {
+      "id": "lab-6-Q09",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "fa8270d0e7dd044894b8add212af27bcba3bd063a1d8ac959788287c6227b191"
+    },
+    {
+      "id": "lab-6-Q10",
+      "topic": "lab-6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed scenario, answer, explanation, units and applicable distractors against the lesson mechanism and declared source scope.",
+      "sha256": "a7edf3025d9829584c717900a0934aa9b69b99407ca64868ce816fe71d0790a8"
+    }
+  ]
+}

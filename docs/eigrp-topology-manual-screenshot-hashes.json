@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant; eleven individually inspected screenshots",
+  "sha256": {
+    "et-desktop.png": "2bf35297c3cd5abae8cbb0b1e2b5dd52361ca0b526b4dcbe0754eda24a7202de",
+    "et-light-mobile.png": "734f2396ca70f099dcba1cd74df9c158d7c039387a1acf1ee6d0bc1bbb82a379",
+    "et-dark-mobile.png": "c894792ce61bfa4ce74e087bdabce69a5d38b8d940550f22cd72526a5c2f0a8f",
+    "et-table-start.png": "9b27a3495fd3284c2468bfdba11f343c435e3b2e60ed0bdce7e4edc489011867",
+    "et-table-end.png": "fce4273788535dba60ffd6df3f94949f2206b54a4149a5e038053ffdd5eda218",
+    "et-flow.png": "3357a9b0f3f51f78fc0560b336e84cc95b5be494d0584ca0f3de5b51b3d59718",
+    "et-lab.png": "29749c317ec3ea922c1e3485c6faae2de91240c821bd2fd51bc935d77fc45a24",
+    "et-example-light.png": "3aca4a47f19c10fa1cfebb9cf2716431574be743c85e79e988c5673b3c2f3364",
+    "et-example-dark.png": "26988241c59e3934a8f5f9ddec384d765c9096cc7c04279e9e917756d65ac6fa",
+    "et-lab-start.png": "312b6807b14c323e51bb12529be0614d0d03d6d619000bd1a0944077dafa9b64",
+    "et-lab-end.png": "eb68747384423aed4d9f9a96ec671531a9934ca9305fb4182ec7edbf86f74758"
+  },
+  "freshRegressionReview": "Re-inspected desktop, light/dark mobile and table-start after fresh lab source hash and literal raw via changed; seven remaining images byte-identical."
+}

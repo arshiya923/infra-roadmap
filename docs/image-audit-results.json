@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "runs": [
+    {
+      "result": "PASS",
+      "platform": "win32",
+      "checks": [
+        "Streaming comparison is read-only, preserves bytes/mtime and accepts uppercase expected digest",
+        "Same-size single-byte change fails independently supplied digest comparison",
+        "Missing arguments, malformed digest, missing file and directory are rejected",
+        "Default invocation is inert help",
+        "Temporary demo cleanup verified on normal and injected failure paths"
+      ],
+      "scope": "Synthetic bytes only; no Cisco image, vendor signature, compatibility or boot execution"
+    },
+    {
+      "result": "PASS",
+      "platform": "linux",
+      "checks": [
+        "Streaming comparison is read-only, preserves bytes/mtime and accepts uppercase expected digest",
+        "Same-size single-byte change fails independently supplied digest comparison",
+        "Missing arguments, malformed digest, missing file and directory are rejected",
+        "Linux FIFO rejected before blocking read",
+        "Default invocation is inert help",
+        "Temporary demo cleanup verified on normal and injected failure paths"
+      ],
+      "scope": "Synthetic bytes only; no Cisco image, vendor signature, compatibility or boot execution"
+    }
+  ]
+}

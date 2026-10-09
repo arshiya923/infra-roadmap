@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant; eleven images individually inspected",
+  "sha256": {
+    "em-desktop.png": "a80d44b8eaff49cf327a26ef17dc1742dbd8fd88d910f3c3134f8d1b6d229df3",
+    "em-light-mobile.png": "057eccae031bf560a060250d95ef7e5f39eb50e0bf1d59d6c05f75eb37c276f6",
+    "em-dark-mobile.png": "34fa3d0d6348d1713bc44591648258fdc863e547acb30858e586d8e158a8343f",
+    "em-table-start.png": "4ceff394552b0e675d0daeeaa10bd9f32f8a981c32156671f5d42dd7d582d39c",
+    "em-table-end.png": "f1b4d6c6b3cec0a3f57142a42c383fb08eaf23065ae05bee471e815db32f56c4",
+    "em-flow.png": "af34dfb866c66be53f6242c99a8eaa8117e9ab0f23cc30a793091779cd1fe52e",
+    "em-lab.png": "19b872e76aa1d59f04c570376e35fc479d138bdc7c34c8f66dc282e99f3d3944",
+    "em-example-light.png": "5ae512842262da31dea44d55f7661974cf04970ac648d84c72c51506b79a2cbb",
+    "em-example-dark.png": "38c2ad96db41f78c008e9fe76a7aed32d32395d98b50cb39b816f3a7f8ec1088",
+    "em-lab-start.png": "0053a5db5ad1556d80bd4315f4ffef7bd3cb91556ee9577d99e9310a613fcf22",
+    "em-lab-end.png": "8432af9a089ebf9a69972d8c30007ab38dbca49569580838b74a85d7a563763f"
+  }
+}

@@ -1,0 +1,12 @@
+.rc-tool fieldset{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;padding:1rem;border:1px solid var(--line)}
+.rc-tool fieldset label{display:flex;flex-direction:column;gap:.4rem;min-width:0}
+.rc-tool input:not([type=checkbox]),.rc-tool select{font:inherit;width:100%;max-width:100%;background:var(--surface);color:var(--ink);padding:.5rem;border:1px solid var(--line);border-radius:4px}
+.rc-tool input[type=checkbox]{align-self:flex-start}
+.rc-tool p,.rc-tool td{overflow-wrap:anywhere}
+.rc-tool .en-scroll{max-width:100%;overflow:auto}
+.rc-tool table{min-width:650px;width:100%;border-collapse:collapse}
+.rc-tool th,.rc-tool td{text-align:left;padding:.7rem;border-bottom:1px solid var(--line)}
+.rc-tool [role=alert]{color:var(--amber)}
+.rc-tool [hidden]{display:none!important}
+.rc-tool :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:480px){.rc-tool fieldset{grid-template-columns:1fr;padding:.75rem}}

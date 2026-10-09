@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "nodeId": "s3-g3-t0",
+  "checks": [
+    "44 fresh sequential regression commands pass",
+    "108 authored routes and original immutable source/IDs audited",
+    "Twelve BGP evidence combinations independently compared",
+    "Full draft has ten original exams and three quick checks reviewed",
+    "Six current rendering screenshots inspected and hashed",
+    "95 accepted original nodes unchanged; seven Batch09 topics plus all Batch10 remain"
+  ],
+  "scope": "One actual IPv4 external transit and known origin withdrawal. No full selection contest, iBGP/RR, live Cisco, RPKI/authentication, phase wire attributes, application/hardware or convergence benchmark. Full twenty-topic batch remains pending.",
+  "screenshots": [
+    "bgp-lesson-desktop.png",
+    "bgp-lesson-mechanism.png",
+    "bgp-lesson-light-mobile.png",
+    "bgp-lesson-dark-mobile.png",
+    "bgp-lesson-table-start.png",
+    "bgp-lesson-table-end.png"
+  ]
+}

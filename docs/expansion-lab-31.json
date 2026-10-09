@@ -1,0 +1,55 @@
+{
+  "batch": "31",
+  "result": "PASS",
+  "evidence": {
+    "http": {
+      "baseline": {
+        "status": 200,
+        "body": "receipt-17"
+      },
+      "fault": {
+        "status": 503,
+        "body": "maintenance"
+      },
+      "recovery": {
+        "status": 200,
+        "body": "receipt-17"
+      },
+      "listenersClosed": true,
+      "scope": "Actual HTTP/1.x loopback forwarding; backend controlled 503, not TCP refusal, Nginx, DNS or external traffic."
+    },
+    "tls": {
+      "baseline": {
+        "statusLine": "HTTP/1.0 200 OK",
+        "body": "trusted-local-receipt"
+      },
+      "hostnameMismatchRejected": true,
+      "verificationReason": "Hostname mismatch, certificate is not valid for 'wrong.invalid'.",
+      "recovery": {
+        "statusLine": "HTTP/1.0 200 OK",
+        "body": "trusted-local-receipt"
+      },
+      "listenersClosed": true,
+      "scope": "Actual TLS verification with an ephemeral explicitly trusted self-signed certificate; no ACME, renewal, expiry fault or Nginx execution.",
+      "cleanupVerified": true
+    },
+    "pools": {
+      "baseline": {
+        "configuredConnections": 40,
+        "withinDatabaseLimit": true,
+        "meanInFlight": 20.0
+      },
+      "fault": {
+        "configuredConnections": 80,
+        "withinDatabaseLimit": false,
+        "meanInFlight": 80.0
+      },
+      "recovery": {
+        "configuredConnections": 40,
+        "withinDatabaseLimit": true,
+        "meanInFlight": 20.0
+      },
+      "scope": "Supplied pool envelope and steady-state mean concurrency only; no live balancing, queuing, database or latency measurement."
+    }
+  }
+}

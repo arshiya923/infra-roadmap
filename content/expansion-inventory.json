@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {"id":"ADD-INFRA-001","name":"Infrastructure and service dependency maps","kind":"expansion","section":"Infrastructure concepts and service objectives"},
+    {"id":"ADD-INFRA-002","name":"Availability, reliability and service objectives","kind":"expansion","section":"Infrastructure concepts and service objectives"},
+    {"id":"ADD-INFRA-003","name":"Change control, incidents and evidence","kind":"expansion","section":"Infrastructure concepts and service objectives"},
+    {"id":"ADD-LINUX-001","name":"Linux files, identities, permissions and packages","kind":"expansion","section":"Linux administration depth"},
+    {"id":"ADD-LINUX-002","name":"Processes, systemd, journals and scheduling","kind":"expansion","section":"Linux administration depth"},
+    {"id":"ADD-LINUX-003","name":"Mounts, LVM, pressure and service recovery","kind":"expansion","section":"Linux administration depth"},
+    {"id":"ADD-APP-001","name":"HTTP request lifecycle and reverse proxies","kind":"expansion","section":"Application delivery, TLS and reverse proxies"},
+    {"id":"ADD-APP-002","name":"TLS trust, certificate renewal and Nginx changes","kind":"expansion","section":"Application delivery, TLS and reverse proxies"},
+    {"id":"ADD-APP-003","name":"Load balancing, health checks and connection pools","kind":"expansion","section":"Application delivery, TLS and reverse proxies"},
+    {"id":"ADD-CONT-001","name":"Container isolation, images and Docker Compose","kind":"expansion","section":"Container and Kubernetes operations"},
+    {"id":"ADD-CONT-002","name":"Kubernetes scheduling, networking, storage and RBAC","kind":"expansion","section":"Container and Kubernetes operations"},
+    {"id":"ADD-CONT-003","name":"Kubernetes deployment, debugging, backup and upgrades","kind":"expansion","section":"Container and Kubernetes operations"},
+    {"id":"ADD-CLOUD-001","name":"Cloud responsibility, IAM and networking","kind":"expansion","section":"Cloud architecture and cost controls"},
+    {"id":"ADD-CLOUD-002","name":"Cloud compute, storage and availability zones","kind":"expansion","section":"Cloud architecture and cost controls"},
+    {"id":"ADD-CLOUD-003","name":"Cloud budgets, tagging, IaC and recovery","kind":"expansion","section":"Cloud architecture and cost controls"}
+  ]
+}

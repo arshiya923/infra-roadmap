@@ -1,0 +1,386 @@
+{
+  "result": "PASS",
+  "reviewer": "Primary assistant",
+  "date": "2026-10-09",
+  "reviewNotes": [
+    "Reviewed all 19 specifications and 247 answers, including product-family scope, thin allocation, host mappings, hypervisor classifications, datastore identity, standard/distributed switching, VMkernel versus guest interfaces, planned migration versus HA restart, DRS modes, dependent snapshots and template identity.",
+    "Verified the 224 GiB aggregate example does not claim a 120 GiB VM fits on a 112 GiB eligible host. Snapshot linear arithmetic is 84.375 GiB plus 20 GiB reserve, not measured delta allocation.",
+    "Inspected five contact sheets containing 57 actual desktop/mobile/flow captures. Prediction controls fit; wide numeric tables use contained scrolling.",
+    "Initial responsive test sampled during layout transition and failed; the rerun waits for the actual width condition and passes. Integer GiB validation now agrees with the displayed scope."
+  ],
+  "topics": [
+    {
+      "id": "s8-g3-t0",
+      "sha256": "633f7ae2ebda19d4e7149ef037049e2efd709e137e3e28f0d81afec930f6da91",
+      "questions": {
+        "s8-g3-t0-Q1": "ac4d88ac456724d3b33e027b7766d353498ec25a47fb8e6f76ffc2f0b4772827",
+        "s8-g3-t0-Q2": "9e463bc237dc01551342c7870cc1f0bb2caa26a3977486e9dd6d93d29b864663",
+        "s8-g3-t0-Q3": "f120a7910988e291f612e04f7e363946588f69d2dfd87dafb3eaa1dc4426a695",
+        "s8-g3-t0-Q4": "dd98de49cd3fa51d1d51ad95cebaac263072767f5d16c5b74481dd47eb3cb400",
+        "s8-g3-t0-Q5": "df81d4322556a18611532c532e810e49e4dad6b9466994a873c9ead2f108a7b6",
+        "s8-g3-t0-Q6": "66b64d43ec8a5f291719d8dba7cc43e8a7ee0bc43f9543418e855ee33049c41b",
+        "s8-g3-t0-Q7": "1c4f72951792e71e3235329bc8708183d787cff77db6e0975ba458b65cabaa2a",
+        "s8-g3-t0-Q8": "b49f2fbb5709aa81800ffa908c1a44d027572f99c789461cef5d38a60e87e3ec",
+        "s8-g3-t0-Q9": "a222d9ccb9762c5b5a86ce403187e87338aa74ae470b391b051e31b46c78893f",
+        "s8-g3-t0-Q10": "40ac3c92afc0c44b50cecf343dff11c831947c758828e391c5f4937c0e5e1217",
+        "s8-g3-t0-QC1": "91f2c56b542401d15f1bb2b77e13d9711d3a1e5c015566320d404a25a36c4876",
+        "s8-g3-t0-QC2": "394c9e15dd1df98fb71b08edcdce3dc69708451ecda0a8c8a9f37378050c1037",
+        "s8-g3-t0-QC3": "4116541a3fd671a505c3a25d1dd378207b3202a8272d05d90e074c1ef7165314"
+      }
+    },
+    {
+      "id": "s8-g3-t1",
+      "sha256": "4b3df07c99b8097f80c6afc895bb4bb645bf8b3726269c4b70e0e240700ccf77",
+      "questions": {
+        "s8-g3-t1-Q1": "e73e54eb6a8a8416eca5ea3406234eeadfa8baff4559987320f3b43d3340e4d4",
+        "s8-g3-t1-Q2": "ac336fe11024c74bad3352a4f08c3e750950658644f8b073f1972c014f4ecd17",
+        "s8-g3-t1-Q3": "3c9d954630d3f4720cf0a1fc4372c23e3713bb98801addbf0c8fe06de6beec59",
+        "s8-g3-t1-Q4": "ce58971ac504d1312b3778dbb90c87e82718c17b6262df90aa9cdf6abb923f9b",
+        "s8-g3-t1-Q5": "2d1f4664feb45432c441cee74ff849147297cbdeb9d8a11d7b33ef6bd2edf2a4",
+        "s8-g3-t1-Q6": "4727ebf1ae183337c4c3141b7296b206b91cfdf8c4ec54fa6149a02fc824f9e0",
+        "s8-g3-t1-Q7": "1d78784bc845d9e8c692de543641885497f0b4b3d269d834209980f2c01f8649",
+        "s8-g3-t1-Q8": "d3e91e98a0dc4e7c32c887f31d9a6e4834c8719f1422f1eea089d85358b6ddf9",
+        "s8-g3-t1-Q9": "15c7e3d61aaa63eb70ddf880cf0c353476882aa8e2d8a2b3ea67cc767bdca462",
+        "s8-g3-t1-Q10": "591ba2fc594b398ca6c1a21a776076782f54ada32bf43abd743ef2dbf1c7c178",
+        "s8-g3-t1-QC1": "7ed3bc3796f8e7f24f98e614577197ff3e583d2361802f78ee76abc56e1fd82d",
+        "s8-g3-t1-QC2": "041a895addea04f184fa0123f37db09bfa4c403551310b725e15597ef31dd06a",
+        "s8-g3-t1-QC3": "cc245cbc75acb7fe40bbfcaeb6cd6d3d5c7e0ad972b5f129aa4a06520305d050"
+      }
+    },
+    {
+      "id": "s8-g3-t2",
+      "sha256": "6e7b56e9be0eaeb96707a5794e1d838e7bf49d22d06c8c74a34b616d4e212dcd",
+      "questions": {
+        "s8-g3-t2-Q1": "ca0e698681c3cff444b40354dcf14873481f456f41033033601376885f103a1a",
+        "s8-g3-t2-Q2": "e9ee2f1137c9b49180e2d73e174bbe08e330b635fc3078122c75557f4d1a6529",
+        "s8-g3-t2-Q3": "b657462d3036f5d19009a9a5645c02301f58e2c19a4f0ca3d70f20b78cd2012e",
+        "s8-g3-t2-Q4": "bcd958f5fe28630100a178c9079add47a18c0442466a78720855fb48ef05a696",
+        "s8-g3-t2-Q5": "c9055a8fa9814c8310ca566ae305ada6e22ed27fc6ea865a5dffa06e0d05d492",
+        "s8-g3-t2-Q6": "cc797d78baab00f3265fcf119a9696980dcae8e102f07bbc614d8a2e65f644d0",
+        "s8-g3-t2-Q7": "d343992ead1bc30ef03224a628dd87363a05d2963be9a2bb79a3f6042f0b161b",
+        "s8-g3-t2-Q8": "d5451dd8b44026e3813cf95f0babe650ba4c24e411b9c1b947b6ba48c2851fa9",
+        "s8-g3-t2-Q9": "824b61144d20167fda75633010cbfa659b15c58997169aa8691f4461ba697a90",
+        "s8-g3-t2-Q10": "cba3d805d7ff0adcf45b983ee50dc17a88f113c1161c53ebb94cb1b793a0c5b7",
+        "s8-g3-t2-QC1": "23708e1a5e0f14a56713cdaa0dfe3a5ccd125db1ee0cabd85fa09be164a02071",
+        "s8-g3-t2-QC2": "089cf69c88db1c60c6a344f3cabd297bdcca11eafe375f881f0dd3dfc713c425",
+        "s8-g3-t2-QC3": "36d549b1cc6ea380c73744d53c44bc094d40f56c8acf1d0be623eb0ae90969a1"
+      }
+    },
+    {
+      "id": "s8-g3-t3",
+      "sha256": "82f481fc4055c4bd8ba3c88db1503f7ece216299e48824000d5296e6428ee9ae",
+      "questions": {
+        "s8-g3-t3-Q1": "907b28768f752a8ef17f21870e4a89e4f765e36edaa77514e02f352039ff6ebc",
+        "s8-g3-t3-Q2": "444001bd43ad1ae9b52d3d7caa4d03fcc87a3c0e4a5963274bdb9b4a93fd39f8",
+        "s8-g3-t3-Q3": "b29f367c55268312a7f50cf742e268bd96a466a4567537e538821397685dbf35",
+        "s8-g3-t3-Q4": "2b2b00dd43adb515eccfa8125d2adbbffb1005104f3b1d3bc9664d9318c9744d",
+        "s8-g3-t3-Q5": "4647a31ae94ce7ca6ca38f33047d1783231dccbeb0751ab228e1e5458850a97b",
+        "s8-g3-t3-Q6": "20163fe20143bff44db45951d4d954bfddeb1757c0188b392004fc93c68e6be0",
+        "s8-g3-t3-Q7": "3496e29525eff9b7c29ce4a64eeafce9345561c517f13a2cd8db6d4f7d0b1ea9",
+        "s8-g3-t3-Q8": "a8aa38ad854ef8ca8d1f8738778ea03e1f0557197960c9609cc9c5b1c6cf4c83",
+        "s8-g3-t3-Q9": "614a7322b15861db54c24542bd374c66257a5928db47bea58c557f517f0a26e1",
+        "s8-g3-t3-Q10": "2345d97b6fcd9101126d98bef14bda23ffc8b7545abb1b7bbadc23dd3960cc03",
+        "s8-g3-t3-QC1": "8a739c0223b94ffd37131eb50b54b4b6244ca74afc000a7cde55f53a2d4e55f3",
+        "s8-g3-t3-QC2": "0704aaa9a090f338854831fe4d6f645b8cd4f7189523502a14ad11dc45ce2e37",
+        "s8-g3-t3-QC3": "60e635213aa2fc381be972b749bc2deece1dcf48bf496ea3a6f4c1bbe5b9d3d4"
+      }
+    },
+    {
+      "id": "s8-g4-t0",
+      "sha256": "236d782a14f46345e9eee2cb731c171bdd23b920a64bf2310cbdd5018ce32b18",
+      "questions": {
+        "s8-g4-t0-Q1": "7f1a295df8a4af2818d901a8a006fc11388b1038ced69020804e5749dabf5f2b",
+        "s8-g4-t0-Q2": "685b644b4fe653b277ea55abd02e8f9f98b1ff9f4a02d9eae7598fa7fe0441aa",
+        "s8-g4-t0-Q3": "2d5d70e1ff5ed90c577e49449114b36eeb96db916e1f3a97735c38a1a3817dce",
+        "s8-g4-t0-Q4": "072a508311a800f7048f1d00722840f1d38326a16230f619c3c056db59a522d4",
+        "s8-g4-t0-Q5": "7705f72757f6a06aad6b3e9c9f80cbb15753bf1f6908f65f8206e7dcad8004b3",
+        "s8-g4-t0-Q6": "ef314e403f8acf5791b3e32e3e4186d0c1696c2599ad237b344acbd88fa72f0b",
+        "s8-g4-t0-Q7": "cea050fa4aeb756c3ed6b44f90b8e5bd79ebab8f7b447c751e9622b810067e6f",
+        "s8-g4-t0-Q8": "a9575ad43fe15c218cf8acb7bf226b0801e68100d989f1b04e15f1a9058dfd62",
+        "s8-g4-t0-Q9": "82c9ad884f4b7bf40f7ced825c61232310454331448f16e5ab0ff21219aec5be",
+        "s8-g4-t0-Q10": "bcefae406d40c0aab5f51f2f23fba964ba77e1ef254758d878947227b41b595f",
+        "s8-g4-t0-QC1": "ca02722da1980526b4b5a2a51641cce0fb2a0d21fc7a316312a20eb3b12df01b",
+        "s8-g4-t0-QC2": "a024e8900f60cd95ae0ad2d8ad16a976729078c8d516c687d05eab6b7067802d",
+        "s8-g4-t0-QC3": "c8c585b3348b733b8822c1453eb317c8d88d170257dc17ead0baba75823aa9a1"
+      }
+    },
+    {
+      "id": "s8-g4-t1",
+      "sha256": "5f7c5cb0d0102ec8cf393c1d5382a4f60abc080e48d88753b66f47dea0244aab",
+      "questions": {
+        "s8-g4-t1-Q1": "015b30ca0c3ab231caf715e3f550acc65799111c883b68e3e06249d408a5bee4",
+        "s8-g4-t1-Q2": "3713c0e4748c9b015ffda1019c498240253029d9aff12ccdaa93107b3a7cb313",
+        "s8-g4-t1-Q3": "806e3e45f879a0ca74219d30a8f1e17620588f3438396c396220610d01efa56b",
+        "s8-g4-t1-Q4": "128435377141fd3d9e3cf0c11a0e7164342ab77cf0f071a19102c2bd21beeb91",
+        "s8-g4-t1-Q5": "2d005dc89ea7a01de92aad17fb3d5913e1654143c8f71dcff990aadbd7d5e23c",
+        "s8-g4-t1-Q6": "93ea2df19c6444205c9fcb86f9c833c2406ba21dfe601d8788087bd78f67bbb5",
+        "s8-g4-t1-Q7": "13a66e7e8c084c941cb67863e8bdd3ee33b5708eca9e1064822ac0efcb94e173",
+        "s8-g4-t1-Q8": "d8f0b1b1f3234bcd73b02a2dd80ef5384018e91e251bc2f9933ab05ec3f7817d",
+        "s8-g4-t1-Q9": "f11fa89c0c60414d851a17e11ca574f90271072cea81fbb75ceead5217732c51",
+        "s8-g4-t1-Q10": "d25dcba81a958f38a2d708f91fd2d1de4c9df9e717d0d9ac781219d036aefc73",
+        "s8-g4-t1-QC1": "51e6163103c182e1fcba1ad2f1cbc0bd36e06c11b417bf64da1febd2b0809f9b",
+        "s8-g4-t1-QC2": "978009c601005e144616b24ae4db43c53a570257ffdc193cd701345ebe81d12f",
+        "s8-g4-t1-QC3": "18b8a50eda5fb789da5514be1576cc1061e2126bfc7861ea52f430813e745cc9"
+      }
+    },
+    {
+      "id": "s8-g4-t2",
+      "sha256": "529f4bcbeb59d1251c18e4b78288d43809cf2d021ea64b9e535d92aec84ac059",
+      "questions": {
+        "s8-g4-t2-Q1": "216e1f9fcaed10a35f79e532ff637ff45e45ab00f86cf0a738823d0049ce467d",
+        "s8-g4-t2-Q2": "fed0e9d33ed74de4941a2c21db42ee6b1a770cf75ce01ea4047a063891f0be70",
+        "s8-g4-t2-Q3": "82b26d882deac6b75da7522d0a9622339782875ea2beafa9e766d3e7d8606d78",
+        "s8-g4-t2-Q4": "9a702f021723cea7f79aeae6f8e06ab37d9f02ec5dd9ed976f755135b252a134",
+        "s8-g4-t2-Q5": "6d0a60fefa339a64b93c2fc1e52d6e5613ef9e0ff3d04ea1017fe5f5b3d19529",
+        "s8-g4-t2-Q6": "6635d2c810ba4d2657f1190ec2f363f1334a71c2b7d763b9a4126989b299da1c",
+        "s8-g4-t2-Q7": "7d8f049afcfa420dd78332fb5e92f9d2edf888f5892cfde24374cae39d789325",
+        "s8-g4-t2-Q8": "e82f386f19c2c441c9472a2457518f06cd3f0411a5cfc991a9685f7fb38e6a5d",
+        "s8-g4-t2-Q9": "2b8cbc696e14b2d13ef8808f3044c4ecae2ac0f24e9c1312082ec3834228428f",
+        "s8-g4-t2-Q10": "7cff2774fe4750bcf9c51f3402fd9c3f580b2358c8a22de7bf28a3bffdc8f585",
+        "s8-g4-t2-QC1": "2a14b5b94834bbeb788f8871149f8d9667b62915064100ad3e1b1a9846f0c8d3",
+        "s8-g4-t2-QC2": "4cdf5f4bc53ad50dd0149455a4d6079eb2cd4ca73fc17616073c35d142801b4d",
+        "s8-g4-t2-QC3": "d0545738ce2b0fdf4437c50de4eb9370cb6d6a20c1ef02d9291829ee99ac59b3"
+      }
+    },
+    {
+      "id": "s8-g5-t0",
+      "sha256": "0c6f924969d355a6ca02f1833c62a38f53b504759fd24a95d8cfdcbcbd41cd4b",
+      "questions": {
+        "s8-g5-t0-Q1": "de97ddd6d028310e3346f4b5460826067602717f987f0b5316416fb6372ac7d5",
+        "s8-g5-t0-Q2": "0fab188a0d9792bc45a9f698d39937ea0282ce3b8fd665d3ef08b481255b69e3",
+        "s8-g5-t0-Q3": "09e880fa414d00383253155dc8cf440b959230d16686a0aeba35973665344019",
+        "s8-g5-t0-Q4": "859cc2bbeb8ab13680f4296099562d608feb09d7f0608801e8accd83a54db17a",
+        "s8-g5-t0-Q5": "266bb2de377fb240f438b5ea08621575048ad811a76ae88a934a15dc9b6ea87e",
+        "s8-g5-t0-Q6": "6a4279b078cb649bf98c09bf1eeecca2ca82e95564a435cad5760c430d68dc61",
+        "s8-g5-t0-Q7": "73e418bf4997d5e6cf3ca85cac837ad4ee7e9504df4032a4d7e113f2ddd9bb99",
+        "s8-g5-t0-Q8": "72e9648dbd58f96a86210ba1f1a0cee54626d99bf4bd666290297ed30aa88a37",
+        "s8-g5-t0-Q9": "a83a884d162b4263c3ce272c2f681fec2dca9db5317d1d0efcf3c508f2cd2131",
+        "s8-g5-t0-Q10": "b93a60fde98af813b09fa2c4c7444c72690d74dbc974ceca8287aa26cb64f926",
+        "s8-g5-t0-QC1": "63aefac9c3829ad159c968791dc12b22dd0eeceb7fe7674d6f1d0b1bc3c5912b",
+        "s8-g5-t0-QC2": "155d4eb7c3b1c7dcfdb8a5035edc046023d3d9c9752e804120f15fbf2d8d9414",
+        "s8-g5-t0-QC3": "cf04f096228cb463b2358967349c6303557116d7c367bd52c321a8bb70c3db30"
+      }
+    },
+    {
+      "id": "s8-g5-t1",
+      "sha256": "997e91930ce900fd67c89cd866da8dc42b12c2f54deab0ef45b775608a015339",
+      "questions": {
+        "s8-g5-t1-Q1": "3cb68b39c5a5c9cea0d3c8792f1538d5b30d7ed65f6eafacf09dbcb656e6ba0d",
+        "s8-g5-t1-Q2": "fc46ad7f5bf4d6cde9d4fb4d0893cae861060d9d1a17d1019b9c9453b2b16cfa",
+        "s8-g5-t1-Q3": "23cfb7268fceee7893e0123ac5880df74e58832ab40715745514db87a851fbe6",
+        "s8-g5-t1-Q4": "de22d2b20faa5dcd14a97673f8b5b7f463509c203c6d80a308dcb2f94f14e269",
+        "s8-g5-t1-Q5": "05a1a66d4c88a4fc4fa16663fc7c56f9c1aa75f345eeef0673abd8d3a80ed50f",
+        "s8-g5-t1-Q6": "325f840da34d92fa90a08e6781a6e1563ab3b3abd7e1472b9e2d0ad37a981844",
+        "s8-g5-t1-Q7": "cbcf8386bc5c2dc43651c4e1608bbbbbecb1c940b1e1658beb532249d416c8ed",
+        "s8-g5-t1-Q8": "c6690039377c9473486fbfb5d62505b26d63de805c68ffdcbbe553fea49e7e22",
+        "s8-g5-t1-Q9": "2baa813beb080a5b54202dc294d63cb6fbe28a0aad4e098bce18d83c42b2a812",
+        "s8-g5-t1-Q10": "44fe76917aadd8776245f14516f911c21f37d771cb146503ccfab7cc8be2c355",
+        "s8-g5-t1-QC1": "69ffcc830139d81dc21285f6a3b090ba3ff4abde67d28bb01c09d52bf80054fa",
+        "s8-g5-t1-QC2": "48b153e56a1351b016119d7c71d2e404d134ca31ace2a5890030cd55e21dddd0",
+        "s8-g5-t1-QC3": "4adf9fc3aafaea5a277bc12f52278d4b0a64bcdd9eeea0ec187b7eeaeb4fe48e"
+      }
+    },
+    {
+      "id": "s8-g5-t2",
+      "sha256": "3fa5efe17338f1293a7e452fca382bceb1d6a8ef0997657aa56361e07ce6a0d1",
+      "questions": {
+        "s8-g5-t2-Q1": "561af14a9606a4f8f06ce91770128c310a63106526906903b8b307245f190187",
+        "s8-g5-t2-Q2": "21cc49aa1927bd5a7862a4b1b439cae7d381c3274f14feb7517e2ecccbf94e0e",
+        "s8-g5-t2-Q3": "b8affa0ff3d8a0c2d4f6d1fedddb3fe64a4a80ea801625e176cf4411d4577b7f",
+        "s8-g5-t2-Q4": "00a3d28c3f315ccb31129957f3e9a1d4bd6f66b76085a813981200fb573f37a8",
+        "s8-g5-t2-Q5": "8f47f3df7557ab1c6af51e5aae825e9e0d8c3c96f30bee0e958eebbe42ed3f22",
+        "s8-g5-t2-Q6": "a3ef367d749dc25ca346d542d9cf01c120b751bcd4dbd55f123964480996d278",
+        "s8-g5-t2-Q7": "50eae894d9fdc085ba81156c23b0eca9d83b4b40153ad074d5d7ac950455b0ec",
+        "s8-g5-t2-Q8": "ce052efd95d9d453e695667eccd15833ec15002e650cfdaa94da3d9e5023b7ae",
+        "s8-g5-t2-Q9": "c21a7363302306f8a8941a997eada3f6a83592a3e792758773ea5962e3bbcd43",
+        "s8-g5-t2-Q10": "62df8f980561ca3c90c2bb36e180616e3570ada4f364bb7df27bd6aaa5fb989a",
+        "s8-g5-t2-QC1": "72df95dd571a044c94e536c318eeb5c8b6def3c323098fc2bd342fc4c452e34c",
+        "s8-g5-t2-QC2": "711b80f736eb76f346013818a818e8d8da83ecaa7fc671cdcf53fa49f4607a07",
+        "s8-g5-t2-QC3": "24f0deb7e39b74be95c137a8ffc09eca4534465c5e7a2cd9de6609876562b27c"
+      }
+    },
+    {
+      "id": "s8-g5-t3",
+      "sha256": "8301eb6d3d660c61fba94adb81c77bace8e35afb5435b59ae75d560c3cc7350a",
+      "questions": {
+        "s8-g5-t3-Q1": "2a3f6ed08c1e787a447bbf18eb9b2f7e436a72cd252e5d3fbe537c38dcd7afa2",
+        "s8-g5-t3-Q2": "3c0bd0c140fb8c2e111252ca11ae07da76f95804ec11f14d50a0ae4c626df808",
+        "s8-g5-t3-Q3": "32602dce14f73844a529f561dbbbd6d7eee570ecfead8962d50546e7cba9a5ba",
+        "s8-g5-t3-Q4": "a6d7dfb67f8cf34a37b07d338e677454e4cd774776f163c4118459e43f98a173",
+        "s8-g5-t3-Q5": "cc9a1ed3958d34195bb0aecfbe04416bcbbc2c1fd87a01b71e5b4fab60c84fd1",
+        "s8-g5-t3-Q6": "033cbd5268eb6f423ba654fe9aa34d06f3d58c76906b83a13333365d4a6377da",
+        "s8-g5-t3-Q7": "d7e8fcbb7b9b4dd62e1b8d109fa36a55e734385c84aaa5c40b538b1b024f82ca",
+        "s8-g5-t3-Q8": "92f6688ce1a7b0580b75ebb9b1a0a3a533a5cb32962e1f1b7d433bbf1039acea",
+        "s8-g5-t3-Q9": "9c827118ef1b42321a01be293deaa5122d7598ef32c093a188e816d7d7a4cc8a",
+        "s8-g5-t3-Q10": "6e1f007a752d442441cad10a5614b7881b8a5df21994e4caf959340806c22006",
+        "s8-g5-t3-QC1": "ce75b509aaee87bffdb61c4dda25e437de3718675ed7644a4ed7d8f7ac0e4d3b",
+        "s8-g5-t3-QC2": "2dffdf4670ac50a9fd7c33063f341d27dbdae76f633909544dbb489a5e3363a2",
+        "s8-g5-t3-QC3": "8fc53513ac141805a9d971fd1e7229e86a89cd967fae392883f9611b84eaae79"
+      }
+    },
+    {
+      "id": "s8-g5-t4",
+      "sha256": "2c7c1d50d64a4feb7b139b0febd5563dda519c733e81302c7a93cd079b0438a5",
+      "questions": {
+        "s8-g5-t4-Q1": "e6aa573d76688df7196e85dcb84cf5a9f692f771066dbd05f547072128ba5af3",
+        "s8-g5-t4-Q2": "14bdabe575dc7c2d18fef2a119befbbaa6fad0fd3436c6b39489f712f2c5ad10",
+        "s8-g5-t4-Q3": "ed33031980b65e39dc6ad792b7f387d8d002d16659f3a899246947a8b8c08b90",
+        "s8-g5-t4-Q4": "9de53c6fdc54733800d3c0b064f82d6bff51765d59ab16648acea38976aea895",
+        "s8-g5-t4-Q5": "4e0c42eaa7b60e0aa3432d5a24a1e532525c81945434175432fd4dcb745a47e7",
+        "s8-g5-t4-Q6": "0a4fcf1d3841555a9555395e421e0189872574a86688e0796865bb363a6472b1",
+        "s8-g5-t4-Q7": "2c4c901e72615886d97a3db39268bbdff32b21e774d772d6ad906e57416f628b",
+        "s8-g5-t4-Q8": "6633aa5826ed622c4165fc5706f9628eb6e0321efedab103da85cdd52d618962",
+        "s8-g5-t4-Q9": "7408cd22f767e0f99f2c35ec58a8e0fbbf8e0a0229dcd11d7aea25c2616551a1",
+        "s8-g5-t4-Q10": "5b48b39c9b31ace716739fc2a3f4b6af0dc29906e4e750bccba2ff3ba9704629",
+        "s8-g5-t4-QC1": "5d91e3cc606861e876818c0c8640ff4bcbab4daaa4d7e03d629783ee3840cff6",
+        "s8-g5-t4-QC2": "7f10b4174f83b7c349c7316f8e16f0d669c435084330b9f4d8f7436caad029dc",
+        "s8-g5-t4-QC3": "b85d2698239dc0e8de494c119011d55adfc744faf4dcc5e0dcee2ac44324e9e2"
+      }
+    },
+    {
+      "id": "s8-g5-t5",
+      "sha256": "f3dee85109209d1a49d74d492a9ca976ea8f915cad942a773c5d9113802f4855",
+      "questions": {
+        "s8-g5-t5-Q1": "3eea2822dba6ca99067c6dda0f321784b9ec605cb57c3d5c5fb3e381a83aef1e",
+        "s8-g5-t5-Q2": "2e76429c49e4e00a7899eec71082ee49257fd39cbc172f29014accb56be6f54c",
+        "s8-g5-t5-Q3": "d54cfb6c239388cf2c6d3c28372be1f5a7fe651582af3db9850dab1a77f17df3",
+        "s8-g5-t5-Q4": "a259e68a47118284879a0acad2da2624187b96071d72186f66daf8b455bfb4eb",
+        "s8-g5-t5-Q5": "f013b28d76b4f4e87767de738de9a700e25ca2c2492b2e077178004db0955d26",
+        "s8-g5-t5-Q6": "ebb7f1bae8f1e521dafacdae36fc2d4ecfe22403ec23ba8c064cfcd9b7e5213c",
+        "s8-g5-t5-Q7": "e4741776b52c4f59d7d3bf6575bf2fcf804d3550b63d69e1edf599c54300572f",
+        "s8-g5-t5-Q8": "636599a2701edc948c4f034114cd6d89ed2e0adfa5c0b0949976feb9193091c3",
+        "s8-g5-t5-Q9": "eafcafd1abc683a17a9911d56baf0c0eca34c2def3147aa6742020a0fb48c5d5",
+        "s8-g5-t5-Q10": "217e536f1489845f75a0a8ce4a99e34e1ff33d365c06c31a27b5468ced052c04",
+        "s8-g5-t5-QC1": "ce0fd24f034e99c86ce4bb7a4d979068a5f2d1d5d7eabfa75a08e5faa78a103e",
+        "s8-g5-t5-QC2": "8bcf689e5fe3bb8c690853238fd33b79c1c42f24c73cf951c3e5d50aa36681b8",
+        "s8-g5-t5-QC3": "7c08afb117565e5825c8c62461fcfbe4d9134942c113db28ea9165fec8783097"
+      }
+    },
+    {
+      "id": "s8-g5-t6",
+      "sha256": "5272286d04f9ca2ccb6e9b47e22fb59a96a2e2579ae92eefb77359cf89318f39",
+      "questions": {
+        "s8-g5-t6-Q1": "575b2181c10dc86feac8c5ff2993d79371b5f5b7f6defe630383015261ebae8a",
+        "s8-g5-t6-Q2": "30acaac16f712601c1e57c986a62d3fb0f9349115b077bb5e7673b1988134fbb",
+        "s8-g5-t6-Q3": "cb14a796ca66259ada4fb70b87a7ca4515905c2b5efe788fb4ec7438b780aba6",
+        "s8-g5-t6-Q4": "d6a8357b1766e816f61e55a7b695a66968b01ee07728f2fc71e0ef1c427a1e4f",
+        "s8-g5-t6-Q5": "e5f0e428ac33dde7f602a24e1ff2411013d0304f36afc140e4b189ae761479f6",
+        "s8-g5-t6-Q6": "9f4e07ff1c9301a7e49942f80f60a55949bca982b918ce0694f9d9bdfd97db8c",
+        "s8-g5-t6-Q7": "acaf5f93ff0d1baabb92a0c488fe52f38237426960c01221e06a88952bffb35c",
+        "s8-g5-t6-Q8": "51b5811c2c52c903ca3d5d1ba3774782dd2925154209ccc887dd26ec7652ed67",
+        "s8-g5-t6-Q9": "5c280b3cd2214154be0b5442639b4ae881bec135b93376006a9316ddcbad6d27",
+        "s8-g5-t6-Q10": "ec08ff6cd8e2eb6b7f9b74a7aeb67b10516f9e5d176952e74137db2ab5a5d19c",
+        "s8-g5-t6-QC1": "0b0332cd1f53cc7d4fe52c06d7bee0e22d69be198cb9e1d7163bb62517097f46",
+        "s8-g5-t6-QC2": "bc88c2f42138175af09b917db9ae120455aebd85a21adf959ad47efffb91942f",
+        "s8-g5-t6-QC3": "ad88d12576fea5ed7f33703cd13330415676f93f5d633ef477ead6f1f2590cb5"
+      }
+    },
+    {
+      "id": "s8-g5-t7",
+      "sha256": "9cf52d5a89654808c200d3ddbc41bf6f564b3b1ec9b6c03f716631fe76a1b2ee",
+      "questions": {
+        "s8-g5-t7-Q1": "f7294ed435ebf6c06a0bbcf3f7f017a96697cab54827353081584a7de9a89527",
+        "s8-g5-t7-Q2": "3530543ec7815e9425cda640c3d979b2f6afe40aa446ad6422861306dd181fb7",
+        "s8-g5-t7-Q3": "44566400678ca61b1067acc63b93e150040ee12ad4bfd6aa65c8b1a05103fcd5",
+        "s8-g5-t7-Q4": "afdbf453cbd106ce69dc5e1badbfbbb1254abe95187b20027c299dbc60011258",
+        "s8-g5-t7-Q5": "d8974ac64a419d9dfdbad17ead6f8c623357be1a50306088f118e388caaab322",
+        "s8-g5-t7-Q6": "9ac6165b66a6030493a85a294a9685c6b33924efb9fd2ad7ebc480d0b3abffd3",
+        "s8-g5-t7-Q7": "a2123146e61e935b1d96a502834d80a89a1652b724d569e20d0dccc5658e075e",
+        "s8-g5-t7-Q8": "4ce1b822b91ba274a0fa727bccfe4065583ab0a970a0ea5d7d72cf19a6433d80",
+        "s8-g5-t7-Q9": "fcf802b7749288ceef531d1454720dd1a543dbe2c9154f640433d4e5c8da23e8",
+        "s8-g5-t7-Q10": "3a3355e3b2b02003352fea1ff4c1ce234f609f9540617190062a7bcf903a42ac",
+        "s8-g5-t7-QC1": "230ca57bb1f7285056e16da2160a323394c4ef54c004fd2cdaa8904c12f9880d",
+        "s8-g5-t7-QC2": "1097737a7940639b0d841ee7f85d813dffc54f1553cf987d74bcee2112258dd1",
+        "s8-g5-t7-QC3": "d7ecc0cca0c8094df2c63a0802978eef05f94101075a3a333a1b9c8e9b2105ab"
+      }
+    },
+    {
+      "id": "s8-g5-t8",
+      "sha256": "56fd091cf844e5ef4a8cfbf13972c79b7542f9eba3233c836859494911f90446",
+      "questions": {
+        "s8-g5-t8-Q1": "0bd7af3157a9da5014bbaeb19f6cd2f05df542eba8ca657fe624580103e33388",
+        "s8-g5-t8-Q2": "6e2813dffee77b3193bac1a49f95816657e6d80f52439a1da920c0a8adc84c9a",
+        "s8-g5-t8-Q3": "d396f9134885c45c2c31076e2ccf41d98fa9f60ea298e69902e6c953c671a26c",
+        "s8-g5-t8-Q4": "ff8107d9481dca5495a161c12dd8615baba6d0a736c3082e9934d348e97729cf",
+        "s8-g5-t8-Q5": "327998cd0229d6f69961df248b564084d14cce7eced830c75eeb16885716f3d8",
+        "s8-g5-t8-Q6": "9cf2fcc29271d7c6dca6a2d967e4c19dda01cc5a93ac50063d6e3a36463d7846",
+        "s8-g5-t8-Q7": "9f367fc8244a197c99cf2146bbb484b540343dee6e4ad92866a085cac32bf945",
+        "s8-g5-t8-Q8": "20e1f806311d2265c82c29520d64e20d7aff9f24133177aa43d6a69d9a0d5914",
+        "s8-g5-t8-Q9": "e25a99d00843c0e153c639c2f20544a5c1bbc3bd464a98bd63726daef4b87cc3",
+        "s8-g5-t8-Q10": "f9d9770f30e4b3e372d9d6c44ef5e0b29b2ed78c6d53789dde8c93eaccd9bb7d",
+        "s8-g5-t8-QC1": "c577201d895e0d6527226f11984edae3e6a845faa0e824349646f2b02c30f969",
+        "s8-g5-t8-QC2": "424ad764ea675cdd14b236e552f4a671d197814a13cc0c6e69a1e776c61d6371",
+        "s8-g5-t8-QC3": "a6f720c34e7607aa306c6143d2b495757133ea51eb39899b4a616017304a4c30"
+      }
+    },
+    {
+      "id": "s8-g5-t9",
+      "sha256": "afa4c5f751bde43ebaf1dde551eec71e81796326bb98fbd87a16ada106d22070",
+      "questions": {
+        "s8-g5-t9-Q1": "b715af818a65c0b1d8a477d7fc407736eb1ed05041ee1e487920eed89ac1c204",
+        "s8-g5-t9-Q2": "924381c6e55d4f42abb8f86ac3741bd315df2192ae674359f934d14f70c8e13d",
+        "s8-g5-t9-Q3": "1dce647615b4e3548f70d32bf29fc73b89b9d68ceaf300b27998f37760946c06",
+        "s8-g5-t9-Q4": "2530c6db3267bfba85e92006c0a63948766c9ac766c7ba33fc563c604edb9289",
+        "s8-g5-t9-Q5": "e89238af937c849f7006dea666d15fa7f326e05f8136ed7461eb3e617d77e3dd",
+        "s8-g5-t9-Q6": "029282e5e18c54ab53bc68bec8f56180ff5137cdfd2be656cbe1b6ad7fe23e24",
+        "s8-g5-t9-Q7": "702e6f87ca671f6fb042c5d1711128b0afbbed3fb30573ddc83cb0f672a50c18",
+        "s8-g5-t9-Q8": "1fa808e374ab10930984b61101190a79abf7e47c3172d16dfd50dbad9f3a1d06",
+        "s8-g5-t9-Q9": "5e0e9ede9a1b2526c0a49b5842bda1dda08d361b53a64d9d548330c2b714eba3",
+        "s8-g5-t9-Q10": "18fa88d89746093a814b368582c2542324263e9f109d920d2fcb07a7c31eebf0",
+        "s8-g5-t9-QC1": "5b0b77d8da06c6eaf15ec645b7ab3e75d5f54c177aee3d23abd3861811df7355",
+        "s8-g5-t9-QC2": "0396544eacbcb774154d5cb167db52f73b68107b42ed487c29d7b01a90ba4207",
+        "s8-g5-t9-QC3": "47d5a531ef20b74eca90ab789e6b583b2189266951bbdf1e0f6fc9a398029e25"
+      }
+    },
+    {
+      "id": "s8-g5-t10",
+      "sha256": "43c3fdc43a212a1b76204c1ff0448c0b71f6d61723b75593c0b67fd7e884656d",
+      "questions": {
+        "s8-g5-t10-Q1": "dcde82a38b25116acaba5e6800a8b2dc4f67e71cb500f02cfa5d96ca4fcf036c",
+        "s8-g5-t10-Q2": "aeccdc4ffaed0fac9ad89ee9809b31667a4cc467763ff28cbb8533cee5864f39",
+        "s8-g5-t10-Q3": "4bba79f8e49b75f476f49f8b406d30ceda41e297cf7ae3c9557059e42af91806",
+        "s8-g5-t10-Q4": "ecf48b91962c3743a3be851d01e3375892ab4e2a2987b994042db6a91b89c510",
+        "s8-g5-t10-Q5": "9e907f9f5aba43bd27bc225a543021d0845a87ba6a1c4c3186ca617b7a7d4cb2",
+        "s8-g5-t10-Q6": "9db3acc5f93bdae728e692ed79fc2f47dea363e65048063b0844814bfaf72382",
+        "s8-g5-t10-Q7": "622b87233640d47ebac8016769320dfe44fe7f41b399ca0b1bc191eb37ff4a41",
+        "s8-g5-t10-Q8": "0675eae416878bb80189cf1ba2d67c2564f1766a7ddda08e81c2e26fc08da348",
+        "s8-g5-t10-Q9": "18bc449c7443c54a2af83e6dd39b3f1d44c375d67651f1acad8f78e61bd96a4e",
+        "s8-g5-t10-Q10": "4d593ae35d1e548219360fcbd819cbc534a331986a9d645a8c6f9327e629caf8",
+        "s8-g5-t10-QC1": "67b3776e2f1a4efcfcd6b18187558b0836c81de9924e597ed7ecc3f8ac5e633b",
+        "s8-g5-t10-QC2": "bccd76f0a6770cedd471bff3bafca91b7c6dec59fb4536775e89d134d8077184",
+        "s8-g5-t10-QC3": "2c1dd073bece886c69e4a774f6b1fcd544b359aabd04401cfbb0b9c5625f39c4"
+      }
+    },
+    {
+      "id": "s8-g5-t11",
+      "sha256": "1756570bd457c96116d22b136450cbbb4498da56953ae12b89d60594828b9f26",
+      "questions": {
+        "s8-g5-t11-Q1": "ebaa32a1da0dd918a129d614f5cd28ca35fc52a6e6bc9a4139d248a8cbadc7c1",
+        "s8-g5-t11-Q2": "a2228aca0125c1d31c786fdfc89810c4a74b63f91959c2fe1fb89077eac08a5c",
+        "s8-g5-t11-Q3": "a82f6fc80485e7e56e58ced82539a07e37bbc5a02250e9c42046f0c03d87a65f",
+        "s8-g5-t11-Q4": "bc9f7af4f5f64b063e3f0e893e5ae5416b18a8f38534975f058104d5edf5dcd3",
+        "s8-g5-t11-Q5": "8c408dc50235e3073b94dac257f90c00f703a25266e577ee992c8aeec84c36d3",
+        "s8-g5-t11-Q6": "aa4f3222a971b7e5126885fdcf85d2c50fc667503443c0a0e1d99b653f448fdb",
+        "s8-g5-t11-Q7": "4ed7dba1ccc380cfe8886780dbcce4707358b4c6bf824d55de0af59c2000b8c9",
+        "s8-g5-t11-Q8": "6d76410849ff6e3989e3015e09545db4beeb34d0caaa4403ae34b60c6a728bef",
+        "s8-g5-t11-Q9": "60e94431b021df5309b534257a4a58e84ccb27de0c682c1d01a334f9ab31a95b",
+        "s8-g5-t11-Q10": "33e99c193d061487edc8c4e26e0c15c3e684c512fe5979cf3edd1f34b89a7272",
+        "s8-g5-t11-QC1": "ab6e53d41db2a7ed075cccb69e6abe2ba6047d6c3da7495190f0797028b07a91",
+        "s8-g5-t11-QC2": "3764dddf13400f376421206f2d51d491288f3afcf8f3b99f60465c6d0a9ca6b5",
+        "s8-g5-t11-QC3": "7edf6d34034dc75ae72fe45996f25bdc77148d26e0a8403375bceaeca2a45505"
+      }
+    }
+  ],
+  "visualSheets": [
+    "docs/screenshots/storage-virtualization/batch-20-review-1.jpg",
+    "docs/screenshots/storage-virtualization/batch-20-review-2.jpg",
+    "docs/screenshots/storage-virtualization/batch-20-review-3.jpg",
+    "docs/screenshots/storage-virtualization/batch-20-review-4.jpg",
+    "docs/screenshots/storage-virtualization/batch-20-review-5.jpg"
+  ],
+  "limits": [
+    "No real array, hypervisor, live migration, HA event or DRS decision was executed.",
+    "ESXCLI blocks are source-checked guided observations, not captured target output.",
+    "Aggregate resource and snapshot budgets are bounded teaching calculations, not placement or allocation guarantees."
+  ]
+}

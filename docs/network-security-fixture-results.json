@@ -1,0 +1,540 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "normal": {
+    "scope": "Actual owned plain-HTTP loopback application identity/operation checks. Disposable tokens in memory only; no TLS, network-zone firewall, AAA, WAF, VPN or physical/device deployment.",
+    "checks": [
+      {
+        "label": "baseline required application",
+        "path": "/servers",
+        "status": 200,
+        "result": "PASS",
+        "bodySha256": "c913b074e41b3a69387e0aeea6e99de674957d1d553da9f74de20a13109d9880"
+      },
+      {
+        "label": "baseline prohibited management",
+        "path": "/management",
+        "status": 403,
+        "result": "PASS",
+        "bodySha256": "1a21ec984273bcdc3853fc93e20d8f0a5ec47869817a80dda8a2c139a469a390"
+      },
+      {
+        "label": "independent console baseline",
+        "path": "/console",
+        "status": 200,
+        "result": "PASS",
+        "bodySha256": "6d42d522917881eeaa64d807b396f5c672250edc76d3c4fad6ce4d1c15057e1e"
+      },
+      {
+        "label": "missing identity",
+        "path": "/servers",
+        "status": 401,
+        "result": "PASS",
+        "bodySha256": "2018fd55c554f40c06788f4fcbb533c426846012062ed21073c61d88205631d8"
+      },
+      {
+        "label": "wrong identity",
+        "path": "/servers",
+        "status": 401,
+        "result": "PASS",
+        "bodySha256": "2018fd55c554f40c06788f4fcbb533c426846012062ed21073c61d88205631d8"
+      },
+      {
+        "label": "unknown/encoded resource",
+        "path": "/%2e%2e/management",
+        "status": 404,
+        "result": "PASS",
+        "bodySha256": "63fc9aa2bbe348f0f2ecc943a0839231fc8fe1144dd1d119ba4a59b491004996"
+      },
+      {
+        "label": "query not accepted as another resource",
+        "path": "/servers?role=admin",
+        "status": 404,
+        "result": "PASS",
+        "bodySha256": "63fc9aa2bbe348f0f2ecc943a0839231fc8fe1144dd1d119ba4a59b491004996"
+      },
+      {
+        "label": "single owned application fault",
+        "path": "/servers",
+        "status": 403,
+        "result": "PASS",
+        "bodySha256": "b4122416180f4a820422c80906f2c49230533ffa1954cdcc4cd99c0eea92c03c"
+      },
+      {
+        "label": "management remains denied during fault",
+        "path": "/management",
+        "status": 403,
+        "result": "PASS",
+        "bodySha256": "1a21ec984273bcdc3853fc93e20d8f0a5ec47869817a80dda8a2c139a469a390"
+      },
+      {
+        "label": "independent console survives fault",
+        "path": "/console",
+        "status": 200,
+        "result": "PASS",
+        "bodySha256": "6d42d522917881eeaa64d807b396f5c672250edc76d3c4fad6ce4d1c15057e1e"
+      },
+      {
+        "label": "exact restore original application",
+        "path": "/servers",
+        "status": 200,
+        "result": "PASS",
+        "bodySha256": "c913b074e41b3a69387e0aeea6e99de674957d1d553da9f74de20a13109d9880"
+      },
+      {
+        "label": "exact restore prohibited management",
+        "path": "/management",
+        "status": 403,
+        "result": "PASS",
+        "bodySha256": "1a21ec984273bcdc3853fc93e20d8f0a5ec47869817a80dda8a2c139a469a390"
+      },
+      {
+        "label": "user cannot use recovery path",
+        "path": "/console",
+        "status": 403,
+        "result": "PASS",
+        "bodySha256": "02e73981825fa72c75245d9cef9e8ef570858f3167cc9af415194c6fa2ab07f0"
+      }
+    ],
+    "cleanup": {
+      "threadStopped": true,
+      "ownedListenerClosed": true,
+      "baselineRestoredInMemory": true,
+      "noPersistentCredentials": true
+    },
+    "events": [
+      {
+        "path": "/servers",
+        "status": 200
+      },
+      {
+        "path": "/management",
+        "status": 403
+      },
+      {
+        "path": "/console",
+        "status": 200
+      },
+      {
+        "path": "/servers",
+        "status": 401
+      },
+      {
+        "path": "/servers",
+        "status": 401
+      },
+      {
+        "path": "/%2e%2e/management",
+        "status": 404
+      },
+      {
+        "path": "/servers?role=admin",
+        "status": 404
+      },
+      {
+        "path": "/servers",
+        "status": 403
+      },
+      {
+        "path": "/management",
+        "status": 403
+      },
+      {
+        "path": "/console",
+        "status": 200
+      },
+      {
+        "path": "/servers",
+        "status": 200
+      },
+      {
+        "path": "/management",
+        "status": 403
+      },
+      {
+        "path": "/console",
+        "status": 403
+      }
+    ],
+    "result": "PASS",
+    "failureInjected": null
+  },
+  "interruptions": [
+    {
+      "scope": "Actual owned plain-HTTP loopback application identity/operation checks. Disposable tokens in memory only; no TLS, network-zone firewall, AAA, WAF, VPN or physical/device deployment.",
+      "checks": [
+        {
+          "label": "baseline required application",
+          "path": "/servers",
+          "status": 200,
+          "result": "PASS",
+          "bodySha256": "c913b074e41b3a69387e0aeea6e99de674957d1d553da9f74de20a13109d9880"
+        },
+        {
+          "label": "baseline prohibited management",
+          "path": "/management",
+          "status": 403,
+          "result": "PASS",
+          "bodySha256": "1a21ec984273bcdc3853fc93e20d8f0a5ec47869817a80dda8a2c139a469a390"
+        },
+        {
+          "label": "independent console baseline",
+          "path": "/console",
+          "status": 200,
+          "result": "PASS",
+          "bodySha256": "6d42d522917881eeaa64d807b396f5c672250edc76d3c4fad6ce4d1c15057e1e"
+        },
+        {
+          "label": "missing identity",
+          "path": "/servers",
+          "status": 401,
+          "result": "PASS",
+          "bodySha256": "2018fd55c554f40c06788f4fcbb533c426846012062ed21073c61d88205631d8"
+        },
+        {
+          "label": "wrong identity",
+          "path": "/servers",
+          "status": 401,
+          "result": "PASS",
+          "bodySha256": "2018fd55c554f40c06788f4fcbb533c426846012062ed21073c61d88205631d8"
+        },
+        {
+          "label": "unknown/encoded resource",
+          "path": "/%2e%2e/management",
+          "status": 404,
+          "result": "PASS",
+          "bodySha256": "63fc9aa2bbe348f0f2ecc943a0839231fc8fe1144dd1d119ba4a59b491004996"
+        },
+        {
+          "label": "query not accepted as another resource",
+          "path": "/servers?role=admin",
+          "status": 404,
+          "result": "PASS",
+          "bodySha256": "63fc9aa2bbe348f0f2ecc943a0839231fc8fe1144dd1d119ba4a59b491004996"
+        }
+      ],
+      "cleanup": {
+        "threadStopped": true,
+        "ownedListenerClosed": true,
+        "baselineRestoredInMemory": true,
+        "noPersistentCredentials": true
+      },
+      "events": [
+        {
+          "path": "/servers",
+          "status": 200
+        },
+        {
+          "path": "/management",
+          "status": 403
+        },
+        {
+          "path": "/console",
+          "status": 200
+        },
+        {
+          "path": "/servers",
+          "status": 401
+        },
+        {
+          "path": "/servers",
+          "status": 401
+        },
+        {
+          "path": "/%2e%2e/management",
+          "status": 404
+        },
+        {
+          "path": "/servers?role=admin",
+          "status": 404
+        }
+      ],
+      "result": "PASS",
+      "failureInjected": "baseline"
+    },
+    {
+      "scope": "Actual owned plain-HTTP loopback application identity/operation checks. Disposable tokens in memory only; no TLS, network-zone firewall, AAA, WAF, VPN or physical/device deployment.",
+      "checks": [
+        {
+          "label": "baseline required application",
+          "path": "/servers",
+          "status": 200,
+          "result": "PASS",
+          "bodySha256": "c913b074e41b3a69387e0aeea6e99de674957d1d553da9f74de20a13109d9880"
+        },
+        {
+          "label": "baseline prohibited management",
+          "path": "/management",
+          "status": 403,
+          "result": "PASS",
+          "bodySha256": "1a21ec984273bcdc3853fc93e20d8f0a5ec47869817a80dda8a2c139a469a390"
+        },
+        {
+          "label": "independent console baseline",
+          "path": "/console",
+          "status": 200,
+          "result": "PASS",
+          "bodySha256": "6d42d522917881eeaa64d807b396f5c672250edc76d3c4fad6ce4d1c15057e1e"
+        },
+        {
+          "label": "missing identity",
+          "path": "/servers",
+          "status": 401,
+          "result": "PASS",
+          "bodySha256": "2018fd55c554f40c06788f4fcbb533c426846012062ed21073c61d88205631d8"
+        },
+        {
+          "label": "wrong identity",
+          "path": "/servers",
+          "status": 401,
+          "result": "PASS",
+          "bodySha256": "2018fd55c554f40c06788f4fcbb533c426846012062ed21073c61d88205631d8"
+        },
+        {
+          "label": "unknown/encoded resource",
+          "path": "/%2e%2e/management",
+          "status": 404,
+          "result": "PASS",
+          "bodySha256": "63fc9aa2bbe348f0f2ecc943a0839231fc8fe1144dd1d119ba4a59b491004996"
+        },
+        {
+          "label": "query not accepted as another resource",
+          "path": "/servers?role=admin",
+          "status": 404,
+          "result": "PASS",
+          "bodySha256": "63fc9aa2bbe348f0f2ecc943a0839231fc8fe1144dd1d119ba4a59b491004996"
+        },
+        {
+          "label": "single owned application fault",
+          "path": "/servers",
+          "status": 403,
+          "result": "PASS",
+          "bodySha256": "b4122416180f4a820422c80906f2c49230533ffa1954cdcc4cd99c0eea92c03c"
+        },
+        {
+          "label": "management remains denied during fault",
+          "path": "/management",
+          "status": 403,
+          "result": "PASS",
+          "bodySha256": "1a21ec984273bcdc3853fc93e20d8f0a5ec47869817a80dda8a2c139a469a390"
+        },
+        {
+          "label": "independent console survives fault",
+          "path": "/console",
+          "status": 200,
+          "result": "PASS",
+          "bodySha256": "6d42d522917881eeaa64d807b396f5c672250edc76d3c4fad6ce4d1c15057e1e"
+        }
+      ],
+      "cleanup": {
+        "threadStopped": true,
+        "ownedListenerClosed": true,
+        "baselineRestoredInMemory": true,
+        "noPersistentCredentials": true
+      },
+      "events": [
+        {
+          "path": "/servers",
+          "status": 200
+        },
+        {
+          "path": "/management",
+          "status": 403
+        },
+        {
+          "path": "/console",
+          "status": 200
+        },
+        {
+          "path": "/servers",
+          "status": 401
+        },
+        {
+          "path": "/servers",
+          "status": 401
+        },
+        {
+          "path": "/%2e%2e/management",
+          "status": 404
+        },
+        {
+          "path": "/servers?role=admin",
+          "status": 404
+        },
+        {
+          "path": "/servers",
+          "status": 403
+        },
+        {
+          "path": "/management",
+          "status": 403
+        },
+        {
+          "path": "/console",
+          "status": 200
+        }
+      ],
+      "result": "PASS",
+      "failureInjected": "fault"
+    },
+    {
+      "scope": "Actual owned plain-HTTP loopback application identity/operation checks. Disposable tokens in memory only; no TLS, network-zone firewall, AAA, WAF, VPN or physical/device deployment.",
+      "checks": [
+        {
+          "label": "baseline required application",
+          "path": "/servers",
+          "status": 200,
+          "result": "PASS",
+          "bodySha256": "c913b074e41b3a69387e0aeea6e99de674957d1d553da9f74de20a13109d9880"
+        },
+        {
+          "label": "baseline prohibited management",
+          "path": "/management",
+          "status": 403,
+          "result": "PASS",
+          "bodySha256": "1a21ec984273bcdc3853fc93e20d8f0a5ec47869817a80dda8a2c139a469a390"
+        },
+        {
+          "label": "independent console baseline",
+          "path": "/console",
+          "status": 200,
+          "result": "PASS",
+          "bodySha256": "6d42d522917881eeaa64d807b396f5c672250edc76d3c4fad6ce4d1c15057e1e"
+        },
+        {
+          "label": "missing identity",
+          "path": "/servers",
+          "status": 401,
+          "result": "PASS",
+          "bodySha256": "2018fd55c554f40c06788f4fcbb533c426846012062ed21073c61d88205631d8"
+        },
+        {
+          "label": "wrong identity",
+          "path": "/servers",
+          "status": 401,
+          "result": "PASS",
+          "bodySha256": "2018fd55c554f40c06788f4fcbb533c426846012062ed21073c61d88205631d8"
+        },
+        {
+          "label": "unknown/encoded resource",
+          "path": "/%2e%2e/management",
+          "status": 404,
+          "result": "PASS",
+          "bodySha256": "63fc9aa2bbe348f0f2ecc943a0839231fc8fe1144dd1d119ba4a59b491004996"
+        },
+        {
+          "label": "query not accepted as another resource",
+          "path": "/servers?role=admin",
+          "status": 404,
+          "result": "PASS",
+          "bodySha256": "63fc9aa2bbe348f0f2ecc943a0839231fc8fe1144dd1d119ba4a59b491004996"
+        },
+        {
+          "label": "single owned application fault",
+          "path": "/servers",
+          "status": 403,
+          "result": "PASS",
+          "bodySha256": "b4122416180f4a820422c80906f2c49230533ffa1954cdcc4cd99c0eea92c03c"
+        },
+        {
+          "label": "management remains denied during fault",
+          "path": "/management",
+          "status": 403,
+          "result": "PASS",
+          "bodySha256": "1a21ec984273bcdc3853fc93e20d8f0a5ec47869817a80dda8a2c139a469a390"
+        },
+        {
+          "label": "independent console survives fault",
+          "path": "/console",
+          "status": 200,
+          "result": "PASS",
+          "bodySha256": "6d42d522917881eeaa64d807b396f5c672250edc76d3c4fad6ce4d1c15057e1e"
+        },
+        {
+          "label": "exact restore original application",
+          "path": "/servers",
+          "status": 200,
+          "result": "PASS",
+          "bodySha256": "c913b074e41b3a69387e0aeea6e99de674957d1d553da9f74de20a13109d9880"
+        },
+        {
+          "label": "exact restore prohibited management",
+          "path": "/management",
+          "status": 403,
+          "result": "PASS",
+          "bodySha256": "1a21ec984273bcdc3853fc93e20d8f0a5ec47869817a80dda8a2c139a469a390"
+        },
+        {
+          "label": "user cannot use recovery path",
+          "path": "/console",
+          "status": 403,
+          "result": "PASS",
+          "bodySha256": "02e73981825fa72c75245d9cef9e8ef570858f3167cc9af415194c6fa2ab07f0"
+        }
+      ],
+      "cleanup": {
+        "threadStopped": true,
+        "ownedListenerClosed": true,
+        "baselineRestoredInMemory": true,
+        "noPersistentCredentials": true
+      },
+      "events": [
+        {
+          "path": "/servers",
+          "status": 200
+        },
+        {
+          "path": "/management",
+          "status": 403
+        },
+        {
+          "path": "/console",
+          "status": 200
+        },
+        {
+          "path": "/servers",
+          "status": 401
+        },
+        {
+          "path": "/servers",
+          "status": 401
+        },
+        {
+          "path": "/%2e%2e/management",
+          "status": 404
+        },
+        {
+          "path": "/servers?role=admin",
+          "status": 404
+        },
+        {
+          "path": "/servers",
+          "status": 403
+        },
+        {
+          "path": "/management",
+          "status": 403
+        },
+        {
+          "path": "/console",
+          "status": 200
+        },
+        {
+          "path": "/servers",
+          "status": 200
+        },
+        {
+          "path": "/management",
+          "status": 403
+        },
+        {
+          "path": "/console",
+          "status": 403
+        }
+      ],
+      "result": "PASS",
+      "failureInjected": "restored"
+    }
+  ],
+  "scope": "Actual owned plain-HTTP loopback application identity/operation checks. Disposable tokens in memory only; no TLS, network-zone firewall, AAA, WAF, VPN or physical/device deployment."
+}

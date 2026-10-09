@@ -1,0 +1,1901 @@
+[
+  {
+    "id": "s3-g5-t0",
+    "batch": "10",
+    "title": "Route filtering",
+    "subtitle": "Separate inbound candidate admission from outbound route advertisement.",
+    "level": "Intermediate → Advanced",
+    "minutes": 65,
+    "interactive": "route-filtering",
+    "definition": "Route filtering decides which routing information may pass a specified control-plane boundary. That boundary can be an inbound neighbor policy, an outbound advertisement policy or a protocol-specific redistribution attachment. This lesson fixes a single ordinary IPv4 unicast BGP route, 198.51.100.0/24, and supplies independent import and export decisions. It does not interpret a universal filter language or treat route policy as a packet access list. The observer and direction are part of every statement about a route being denied.",
+    "purpose": "Use filtering to admit intended destinations, prevent unintended advertisements and explain visibility before changing selection preferences. A missing route and a failed session are different observations. An export denial can preserve a local BGP choice while suppressing its advertisement to one peer. An import denial removes the supplied incoming candidate from this worksheet without claiming that every other locally sourced route vanished. The distinction prevents repairing a route-policy fault by resetting a healthy transport connection.",
+    "mental": "Draw two doors around one local route notebook. The incoming door decides whether this peer candidate reaches the notebook. The outgoing door decides whether the selected BGP information may be sent to the specified peer. Closing the outgoing door does not erase the notebook. A third page records system route selection, and a fourth records the original packet exchange. This drawing has one supplied source only; it deliberately omits alternative routes and cached update history.",
+    "components": [
+      "Import direction and observer: identify the receiving speaker, peer, address family and exact prefix.",
+      "Export direction and observer: identify the transmitting speaker and intended receiving peer independently.",
+      "Session state: declared Established is a control prerequisite, not an all-prefix policy permit.",
+      "Eligibility and selection: import admission precedes the supplied NEXT_HOP and BGP selection declarations.",
+      "Local BGP versus system source: an export-permitted protocol choice can still be displaced locally.",
+      "Original service: forwarding and opposite-direction readiness are separate declarations, not measured traffic."
+    ],
+    "mechanism": [
+      "Fix the peer, IPv4 unicast family, prefix and table before reading policy. The worksheet uses one exact route and a declared established session; it has no alternative import sources, withdrawals, route refresh or cache. On an actual speaker, record where the candidate came from and whether the displayed table is postpolicy rather than calling every view an unfiltered Adj-RIB-In.",
+      "Apply the independent import gate to the supplied candidate. An established session with importPermit false produces no admitted incoming candidate in this scope. The session declaration remains true. This says nothing about a connected, static or other BGP candidate for the same prefix, which is absent from the fixed scenario. Filtering routing information is also distinct from denying packets to that prefix.",
+      "Resolve the admitted candidate NEXT_HOP and apply the supplied BGP choice gate. Candidate visibility alone cannot prove eligibility. A candidate may pass import but remain unresolved or lose a later selection stage. This model exposes those supplied states without running the full BGP decision process or inventing a replacement path.",
+      "Apply exportPermit to the local selected BGP candidate for the specified established session. With export denied, the local choice is preserved while the supplied advertisement is false. This default teaching scope does not model FIB-dependent advertisement suppression. System source displacement is therefore independent of the outbound policy decision; inspect any additional platform features separately.",
+      "Read system selection and original forward/return readiness after the protocol decision. A locally selected BGP candidate does not guarantee system installation, resolved neighbors, hardware programming or the remote reply. The worksheet reports conjunctions of declarations only. Preserve the actual source, destination, family, table and application transaction when collecting real evidence.",
+      "Investigate policy attachments and matching objects before considering a change. A correct permit in an unattached list has no effect at this peer boundary. Preserve the exact original attachment, relevant postpolicy route and intended receiving observer, then use an isolated owned change and restore the prior intent. The read-only command groups are guided references; no target command is executed here."
+    ],
+    "flow": [
+      [
+        "Identify the import or export boundary",
+        "Record the observer, address family and received route; import and export are separate policy directions."
+      ],
+      [
+        "Evaluate that policy decision",
+        "Apply the supplied import permission to admission and the separate export permission to advertisement eligibility."
+      ],
+      [
+        "Follow route selection and installation",
+        "Check next-hop resolution, BGP choice and system selection independently; policy permission alone installs no route."
+      ],
+      [
+        "Verify the original exchange",
+        "Check forwarding and return readiness with the original source and destination; a permitted advertisement is not delivery."
+      ]
+    ],
+    "comparison": [
+      [
+        "Import / export",
+        "Receiving candidate / outgoing advertisement",
+        "An export denial can preserve the local eligible BGP choice."
+      ],
+      [
+        "Route filter / packet ACL",
+        "Routing information / packet headers",
+        "Keep consuming feature, observer and direction explicit."
+      ],
+      [
+        "Policy definition / attachment",
+        "Named object / activated consumer",
+        "An unattached list does not govern the selected peer."
+      ]
+    ],
+    "example": "Keep the baseline session Established and deny export only. The local BGP choice stays true and the advertisement becomes false. Restore export and deny import only: the supplied incoming candidate disappears before resolution and selection, while the session stays Established. Finally preserve admission and BGP choice but displace system selection, then remove return readiness in a separate case. These changes answer four different questions.",
+    "ports": "These route-policy decisions are control-plane processing and introduce no new data service port. BGP context conventionally uses TCP 179; OSPF context uses IP protocol 89. The worksheet opens neither and proves no transport or adjacency state.",
+    "commands": [
+      {
+        "code": "show running-config",
+        "platform": "Prepared FRR8.4 owned speaker; GUIDED NOT EXECUTED",
+        "explanation": "Preserve relevant peer/family/table attachment and policy baseline; handle sensitive output securely.",
+        "expected": "Configuration is intended behavior, not proof of a matching route or measured service."
+      },
+      {
+        "code": "show bgp ipv4 unicast json",
+        "platform": "Prepared FRR8.4 declared observer; GUIDED NOT EXECUTED",
+        "explanation": "Inspect postpolicy candidate attributes and BGP choice in the correct family/table.",
+        "expected": "Do not call every view an unfiltered received-route history."
+      },
+      {
+        "code": "show bgp ipv4 unicast summary json",
+        "platform": "Prepared FRR8.4 declared observer; GUIDED NOT EXECUTED",
+        "explanation": "Read peer/session state independently of one prefix admission or advertisement.",
+        "expected": "An established session can coexist with denied import or export."
+      },
+      {
+        "code": "show ip route 198.51.100.0/24",
+        "platform": "Prepared FRR8.4 actual table context; GUIDED NOT EXECUTED",
+        "explanation": "Compare exact-prefix system source selection with route-policy output.",
+        "expected": "Selected system state must be supplemented by actual FIB/adjacency and original exchange evidence."
+      }
+    ],
+    "configuration": "These controls are declarations, not device configuration. Any optional actual exercise needs a separately prepared isolated owned target, reviewed consuming attachment and independent management access. Preserve exact original rules, sequence order, relevant attributes and baseline observation before one authorized change. Restore the precise prior attachment and original exchange before deleting exclusively owned unused objects. Avoid broad clears, reloads, saves or unrelated host-routing changes as diagnostic shortcuts. The four command groups are read-only guided references and have not been executed on a target for this lesson.",
+    "production": "Write allow boundaries for the exact family and neighbor role, including default and more-specific handling where intended. Review alternate route sources before describing a denial as deleting a local route. Make export ownership explicit and validate at the intended receiving observer; local configuration alone does not establish remote visibility. Preserve management reachability and rollback while investigating policy.",
+    "troubleshooting": [
+      [
+        "Peer established but prefix absent",
+        "Inspect applicable family import policy and whether the displayed view is postpolicy; do not reset transport merely to test a policy hypothesis."
+      ],
+      [
+        "Local route present but remote prefix absent",
+        "Trace export attachment, selected BGP information and receiving-side policy at the intended observer."
+      ],
+      [
+        "Imported route unusable",
+        "Separate NEXT_HOP resolution and full protocol selection from admission."
+      ],
+      [
+        "Export denied assumed local withdrawal",
+        "Review alternate source and local selected route before claiming local deletion."
+      ]
+    ],
+    "security": "Import and export filters are control-plane containment mechanisms, not endpoint firewalls or cryptographic route authorization. A permitted prefix can still be unauthorized or have malicious attributes. Use allocation, business policy, route validation and transport protections as separate evidence. Avoid sharing whole configurations when a scoped relevant attachment is sufficient.",
+    "performance": "Filtering can reduce route visibility and update work, but the worksheet measures neither memory nor convergence. A strict import boundary can remove useful alternatives; an export boundary can affect remote decisions without changing local data-plane capacity. Do not interpret fewer admitted routes as automatically faster traffic or greater availability.",
+    "mistakes": [
+      "Transferring matching semantics between unrelated consuming features.",
+      "Assuming a configured policy is attached and effective.",
+      "Ignoring the first matching entry or declared admission boundary.",
+      "Treating a permit, tag or attribute set as measured forwarding success.",
+      "Inferring original return readiness from the forward logical decision."
+    ],
+    "prerequisites": [
+      "s3-g3-t0",
+      "s3-g3-t1",
+      "s3-g3-t3",
+      "s3-g4-t0"
+    ],
+    "related": [
+      "s3-g5-t1",
+      "s3-g5-t2",
+      "s3-g5-t3",
+      "s3-g5-t4"
+    ],
+    "lab": {
+      "objective": "Explain route filtering with fixed scoped decisions, then distinguish logical policy outcome from original exchange prerequisites.",
+      "requirements": "Browser only. Optional guided target observations require separately prepared owned supported devices, actual family/table/interface/feature scope and independent management access. No routing or packet process is executed here.",
+      "topologyKind": "shared",
+      "topology": [
+        "Declared route/source → fixed policy boundary",
+        "Exact observer and IPv4 table context",
+        "Policy result → supplied system selection → original forward and return"
+      ],
+      "steps": [
+        "Start the baseline and write the declared route or packet fields and fixed ruleset.",
+        "Select each supplied permit, deny, ordering and boundary case; explain the first decisive rule or failed gate.",
+        "Separate invalid input from valid implicit denial: invalid input hides results rather than producing a policy decision.",
+        "Change one system, forward or return declaration while preserving the policy inputs, where those controls apply.",
+        "Use the named table region with the keyboard and activate the reset button to restore the baseline.",
+        "For an optional actual target, collect only the four read-only groups in exact owned scope and supplement them with original forward/return evidence.",
+        "Any separately authorized isolated configuration experiment must preserve and restore exact prior attachments and order before deleting exclusive unused resources."
+      ],
+      "verification": "The browser reports fixed logical policy and supplied outcome declarations. It does not establish actual protocol selection, device convergence, packet captures, hardware forwarding or application success. Confirm the original transaction at the actual observer when investigating a prepared target.",
+      "troubleshooting": "Identify malformed context, matching/nonmatching conditions, explicit or implicit denial and independent outcome gates as different causes. Preserve evidence before changing owned policy and do not invent a success result from a configured permit.",
+      "challenge": "Compare a matching explicit denial with a nonmatching condition and an unmatched final denial. Then retain a permitted baseline while removing only original return readiness; explain why logical admission and exchange readiness differ.",
+      "cleanup": "Reset restores only browser declarations without modifying a device or learner progress. Optional owned target work must restore exact prior policy attachment/order and verify baseline observation and original exchange before deleting exclusively owned unused resources."
+    },
+    "glossary": {
+      "Import": "Route-information admission at a receiving control boundary.",
+      "Export": "Route advertisement policy toward a named receiver.",
+      "Postpolicy": "A view after applicable routing policy has been applied.",
+      "Attachment": "The actual peer/family reference that activates a policy object."
+    },
+    "exams": [
+      {
+        "testedConcept": "Inbound scope",
+        "question": "Does denying this imported candidate prove the BGP session failed?",
+        "answer": "No; session state is independent.",
+        "explanation": "Import admission applies to one candidate; it does not change the independent session declaration.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "No; session state is independent.",
+          "Yes; every import denial closes TCP.",
+          "Only if the prefix is a /24.",
+          "Yes; route policy and session state are identical."
+        ],
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-Q01"
+      },
+      {
+        "testedConcept": "Export scope",
+        "question": "What can remain when exportPermit is false?",
+        "answer": "The local BGP choice.",
+        "explanation": "Export policy suppresses the advertisement while the eligible selected local BGP candidate can remain.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The export advertisement remains guaranteed.",
+          "The local BGP choice.",
+          "Every local source route must disappear.",
+          "NEXT_HOP resolution becomes automatic."
+        ],
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-Q02"
+      },
+      {
+        "testedConcept": "Eligibility",
+        "question": "What must an admitted candidate still satisfy?",
+        "answer": "Usable NEXT_HOP and applicable selection prerequisites.",
+        "explanation": "Import is one gate; unresolved NEXT_HOP or failed selection still prevents the supplied choice.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Only a short AS_PATH.",
+          "Only a live peer socket.",
+          "Usable NEXT_HOP and applicable selection prerequisites.",
+          "Nothing; admission proves installation."
+        ],
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-Q03"
+      },
+      {
+        "testedConcept": "Source scope",
+        "question": "Does import denial automatically delete every source for the prefix?",
+        "answer": "No; other route sources require separate inspection.",
+        "explanation": "The worksheet supplies one imported source; connected, static and other candidates require independent evidence.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; policy removes connected and static routes too.",
+          "Yes; all sources share one imported record.",
+          "Only a more-specific route survives by definition.",
+          "No; other route sources require separate inspection."
+        ],
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-Q04"
+      },
+      {
+        "testedConcept": "Attachment",
+        "question": "Does an unattached permit list govern the supplied peer?",
+        "answer": "No; the actual attachment matters.",
+        "explanation": "The consuming peer/family attachment activates policy; an object definition alone does not.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "No; the actual attachment matters.",
+          "Yes; every configured list affects every neighbor.",
+          "Yes; names activate policies globally.",
+          "Only the sequence number activates it."
+        ],
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-Q05"
+      },
+      {
+        "testedConcept": "Policy direction",
+        "question": "Which gate controls advertisement toward the peer?",
+        "answer": "The independent export gate.",
+        "explanation": "Export policy controls the supplied outgoing advertisement, separate from import and packet forwarding.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "The local system source distance.",
+          "The independent export gate.",
+          "The original reply packet.",
+          "The unrelated inbound packet ACL."
+        ],
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-Q06"
+      },
+      {
+        "testedConcept": "System source",
+        "question": "Can system displacement coexist with a local BGP choice?",
+        "answer": "Yes, in this scoped default advertisement design.",
+        "explanation": "This scope keeps protocol choice and system source selection separate and excludes extra advertisement-suppression features.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "No; system displacement always suppresses all BGP advertisements.",
+          "No; BGP and system source are the same gate.",
+          "Yes, in this scoped default advertisement design.",
+          "Only when return traffic is measured."
+        ],
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-Q07"
+      },
+      {
+        "testedConcept": "Packet distinction",
+        "question": "Is route filtering the same decision as a packet ACL?",
+        "answer": "No; routing information and packets have different contexts.",
+        "explanation": "Route filtering evaluates routing information; the packet ACL lesson evaluates declared packet headers.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; both decisions inspect the same fields universally.",
+          "Yes; a routing prefix is always a packet source.",
+          "Only TCP route filtering is a packet ACL.",
+          "No; routing information and packets have different contexts."
+        ],
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-Q08"
+      },
+      {
+        "testedConcept": "Observation",
+        "question": "What supports remote advertisement visibility?",
+        "answer": "Evidence at the intended receiving observer.",
+        "explanation": "A receiver observation can establish the intended advertisement visibility; a sender configuration alone cannot.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Evidence at the intended receiving observer.",
+          "Only local configured intent.",
+          "Only a local Established summary.",
+          "Only system route distance."
+        ],
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-Q09"
+      },
+      {
+        "testedConcept": "Return",
+        "question": "Does admitted and selected BGP information prove the reply works?",
+        "answer": "No; original return evidence is independent.",
+        "explanation": "BGP choice supplies no opposite-direction route, packet-policy or service evidence.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; selected BGP information creates reply routes.",
+          "No; original return evidence is independent.",
+          "Yes; admission implies application success.",
+          "Only a default route makes return automatic."
+        ],
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-Q10"
+      }
+    ],
+    "quick": [
+      {
+        "question": "Import denial with Established still declared: what fails?",
+        "answer": "This imported candidate, while the independent session declaration can remain Established.",
+        "explanation": "The filter applies to the supplied route rather than the TCP relationship.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-QC1"
+      },
+      {
+        "question": "What remains when only exportPermit becomes false?",
+        "answer": "The eligible selected local BGP candidate can remain; this outgoing advertisement is denied.",
+        "explanation": "Outgoing policy is a separate boundary from local choice.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-QC2"
+      },
+      {
+        "question": "Why is a postpolicy BGP view not a complete unfiltered received-route history?",
+        "answer": "It reflects its declared observer/store and policy scope, not every original UPDATE or rejected candidate.",
+        "explanation": "Name the actual view before interpreting absent information.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t0",
+        "questionId": "s3-g5-t0-QC3"
+      }
+    ],
+    "sources": [
+      {
+        "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+        "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+        "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+        "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+        "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+        "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "id": "s3-g5-t1",
+    "batch": "10",
+    "title": "Route redistribution",
+    "subtitle": "Translate owned source reachability into a deliberately bounded target candidate.",
+    "level": "Intermediate → Advanced",
+    "minutes": 65,
+    "interactive": "route-redistribution",
+    "definition": "Redistribution presents routes selected from one routing source to a different routing process under an explicit policy boundary. The source route, target family, admitted prefixes, seed metric and feedback controls are separate parts of that boundary. This worksheet fixes a selected source-RIB route as the starting declaration, IPv4 exact 198.51.100.0/24 admission, a supplied OSPF external seed and target tag 100. It is a postpolicy preparation model, not a running OSPF, BGP or multi-protocol network.",
+    "purpose": "Use redistribution only when the target domain needs the owned source destinations and the translation has a reviewed scope. Broad mutual redistribution can reintroduce information at another boundary and create unintended choices. This lesson isolates source selection, exact family/prefix admission, an explicit target metric requirement and a declared tag feedback guard. It does not convert source metrics by numerical comparison or certify every multi-domain topology loop-free.",
+    "mental": "Imagine an editor copying selected entries from one catalog into another. The editor checks ownership and destination scope, writes a new catalog-specific score and marks the copy. A later gate rejects copies carrying the designated mark to avoid this declared feedback case. The mark is an administrative label; someone can remove or forge it. Copying an entry does not prove the recipient selected it or that a reader can travel there and return.",
+    "components": [
+      "Source selected RIB route: configuration or protocol visibility alone is not the starting eligibility declaration.",
+      "Target family: the worksheet admits only its explicit IPv4 target context.",
+      "Exact prefix filter: /24 passes while a /25 inside it is a different candidate and fails.",
+      "Explicit seed: the scoped OSPF external metric is an integer 0–16777214; absent seed is blocked by design.",
+      "Target tag 100 and source tag 100 rejection: a declared guard against one identified feedback case.",
+      "Target choice, system source and original forward/return: independent post-admission gates."
+    ],
+    "mechanism": [
+      "Name source table, source owner, selected route and target routing process before configuring redistribution. The worksheet supplies sourceSelected rather than running source protocol selection. A configured static statement that never installed is not automatically a selected source route. Likewise, a route visible in a source protocol table may lose the system source choice used by an actual redistribution implementation.",
+      "Require the declared target family and exact route prefix. The teaching filter admits IPv4 198.51.100.0/24 only; 198.51.100.0/25 does not pass despite containment. family ipv6 is a boundary failure even though the entered fixture prefix remains an IPv4 string for comparison. That enum tests target context and is not a functioning IPv6 parser or AF conversion.",
+      "Check the source tag before admitting a translated candidate. A supplied source tag 100 is blocked as feedback; any other valid tag is not rejected by this particular guard. Accepted candidates receive target tag 100. This rule does not claim that arbitrary tags describe original provenance or survive every protocol boundary. Review all redistribution points and tag preservation in the actual design.",
+      "Require an explicit seed declaration. The worksheet uses the documented OSPF metric range 0 through 16777214 and writes the supplied value into the prepared target candidate. Absence is a teaching boundary requirement, not a claim that all real protocols require explicitly configured seeds or lack defaults. Source-protocol metrics are not translated by comparing unrelated numeric scales.",
+      "Separate admitted target candidate from target selection and system installation. Admission with a seed and tag does not execute external LSA generation, SPF, route advertisement or hardware programming. targetSelected and systemSelected are supplied independent gates. Removing either can preserve the translated candidate while preventing the original forwarding prerequisite conjunction.",
+      "Inspect exact source and target observations around the boundary before changing scope. Preserve route-map attachments, metric/type/tag intent and baseline routes at both ends. Use a separately prepared isolated topology for any actual experiment, introduce one owned change and restore exact prior policy. The worksheet has no routing daemons, convergence history, redistribution loops or packet capture."
+    ],
+    "flow": [
+      [
+        "Fix the source and destination protocols",
+        "Record the selected source route and intended redistribution destination in this one-way worksheet."
+      ],
+      [
+        "Test the redistribution guards",
+        "Require an accepted prefix, selected source, supplied seed metric and a source tag that is not the protected return tag."
+      ],
+      [
+        "Inspect the target candidate and tag",
+        "An admitted candidate receives tag 100 in this local design; admission does not run the destination protocol or prove loop freedom."
+      ],
+      [
+        "Verify propagation and rollback",
+        "Compare real destination protocol state and the original service test, then restore only owned changes."
+      ]
+    ],
+    "comparison": [
+      [
+        "Source protocol view / selected source RIB",
+        "Visible alternative / source selected for this boundary",
+        "A configured or visible route is not automatically redistributed."
+      ],
+      [
+        "Seed metric / administrative distance",
+        "Target protocol cost / local source preference",
+        "Neither is a universal conversion of the source metric."
+      ],
+      [
+        "Route tag / authenticated provenance",
+        "Administrative marker / independently established origin",
+        "A tag 100 guard covers one declared feedback case only."
+      ]
+    ],
+    "example": "The baseline source route is selected, exact-family admission passes, sourceTag is 0 and an explicit seed 20 is present; the prepared target candidate receives tag 100. Change sourceTag to 100 and it is blocked before translation. Change only prefix to 198.51.100.0/25 to expose exact-prefix rejection. Restore both and remove seedPresent: the scoped admission stops without pretending the source metric supplies the missing target declaration.",
+    "ports": "These route-policy decisions are control-plane processing and introduce no new data service port. BGP context conventionally uses TCP 179; OSPF context uses IP protocol 89. The worksheet opens neither and proves no transport or adjacency state.",
+    "commands": [
+      {
+        "code": "show running-config",
+        "platform": "Prepared FRR8.4 owned speaker; GUIDED NOT EXECUTED",
+        "explanation": "Preserve relevant peer/family/table attachment and policy baseline; handle sensitive output securely.",
+        "expected": "Configuration is intended behavior, not proof of a matching route or measured service."
+      },
+      {
+        "code": "show ip route 198.51.100.0/24",
+        "platform": "Prepared FRR8.4 actual table context; GUIDED NOT EXECUTED",
+        "explanation": "Compare exact-prefix system source selection with route-policy output.",
+        "expected": "Selected system state must be supplemented by actual FIB/adjacency and original exchange evidence."
+      },
+      {
+        "code": "show route-map json",
+        "platform": "Prepared FRR8.4 source/target boundary; GUIDED NOT EXECUTED",
+        "explanation": "Inspect relevant redistribution matching/set policy and tag intent.",
+        "expected": "A label is a policy marker, not authenticated provenance or universal loop proof."
+      },
+      {
+        "code": "show ip ospf database external",
+        "platform": "Prepared FRR8.4 OSPFv2 target; GUIDED NOT EXECUTED",
+        "explanation": "Inspect actual external target information only when a supported isolated topology exists.",
+        "expected": "No OSPF LSA or convergence result is produced by the browser."
+      }
+    ],
+    "configuration": "These controls are declarations, not device configuration. Any optional actual exercise needs a separately prepared isolated owned target, reviewed consuming attachment and independent management access. Preserve exact original rules, sequence order, relevant attributes and baseline observation before one authorized change. Restore the precise prior attachment and original exchange before deleting exclusively owned unused objects. Avoid broad clears, reloads, saves or unrelated host-routing changes as diagnostic shortcuts. The four command groups are read-only guided references and have not been executed on a target for this lesson.",
+    "production": "Minimize redistribution points and imported destination scope. Document source selection semantics, external metric/type, tag lifecycle and each possible feedback boundary. Repeated redistribution can change source preference and visibility even when filters appear symmetric. Inspect selected RIBs and advertised target information on actual observers, then evaluate failure and rollback with independent management access.",
+    "troubleshooting": [
+      [
+        "Configured source absent from target",
+        "Confirm source selected RIB eligibility before debugging target policy."
+      ],
+      [
+        "More-specific unexpectedly blocked",
+        "Read exact-prefix admission; a /25 does not equal the admitted /24."
+      ],
+      [
+        "Tagged route reappears",
+        "Trace every boundary and actual tag preservation rather than assuming labels are immutable."
+      ],
+      [
+        "Target candidate exists but service fails",
+        "Inspect target/system selection, actual forwarding and original return path independently."
+      ]
+    ],
+    "security": "A route tag is a policy label, not authentication or a globally trustworthy origin identity. Another process or operator can rewrite it, and an unreviewed boundary can remove it. Prefix ownership, authorization, tag preservation and admission controls therefore need independent evidence. A blocked tag 100 case demonstrates one guard, not universal loop prevention.",
+    "performance": "Redistribution can add external routes and processing work to the target domain. The browser does not measure LSA volume, SPF cost, convergence or memory. A seed metric expresses target routing preference under its own semantics; matching a source numeric value does not establish comparable performance. Track source changes and target visibility separately from packet throughput.",
+    "mistakes": [
+      "Transferring matching semantics between unrelated consuming features.",
+      "Assuming a configured policy is attached and effective.",
+      "Ignoring the first matching entry or declared admission boundary.",
+      "Treating a permit, tag or attribute set as measured forwarding success.",
+      "Inferring original return readiness from the forward logical decision."
+    ],
+    "prerequisites": [
+      "s3-g5-t0",
+      "s3-g0-t0",
+      "s3-g1-t0"
+    ],
+    "related": [
+      "s3-g5-t0",
+      "s3-g5-t2",
+      "s3-g5-t3",
+      "s3-g5-t4"
+    ],
+    "lab": {
+      "objective": "Explain route redistribution with fixed scoped decisions, then distinguish logical policy outcome from original exchange prerequisites.",
+      "requirements": "Browser only. Optional guided target observations require separately prepared owned supported devices, actual family/table/interface/feature scope and independent management access. No routing or packet process is executed here.",
+      "topologyKind": "shared",
+      "topology": [
+        "Declared route/source → fixed policy boundary",
+        "Exact observer and IPv4 table context",
+        "Policy result → supplied system selection → original forward and return"
+      ],
+      "steps": [
+        "Start the baseline and write the declared route or packet fields and fixed ruleset.",
+        "Select each supplied permit, deny, ordering and boundary case; explain the first decisive rule or failed gate.",
+        "Separate invalid input from valid implicit denial: invalid input hides results rather than producing a policy decision.",
+        "Change one system, forward or return declaration while preserving the policy inputs, where those controls apply.",
+        "Use the named table region with the keyboard and activate the reset button to restore the baseline.",
+        "For an optional actual target, collect only the four read-only groups in exact owned scope and supplement them with original forward/return evidence.",
+        "Any separately authorized isolated configuration experiment must preserve and restore exact prior attachments and order before deleting exclusive unused resources."
+      ],
+      "verification": "The browser reports fixed logical policy and supplied outcome declarations. It does not establish actual protocol selection, device convergence, packet captures, hardware forwarding or application success. Confirm the original transaction at the actual observer when investigating a prepared target.",
+      "troubleshooting": "Identify malformed context, matching/nonmatching conditions, explicit or implicit denial and independent outcome gates as different causes. Preserve evidence before changing owned policy and do not invent a success result from a configured permit.",
+      "challenge": "Compare a matching explicit denial with a nonmatching condition and an unmatched final denial. Then retain a permitted baseline while removing only original return readiness; explain why logical admission and exchange readiness differ.",
+      "cleanup": "Reset restores only browser declarations without modifying a device or learner progress. Optional owned target work must restore exact prior policy attachment/order and verify baseline observation and original exchange before deleting exclusively owned unused resources."
+    },
+    "glossary": {
+      "Redistribution": "Import of owned source reachability into another routing process.",
+      "Seed": "An explicit initial metric in the target process context.",
+      "Feedback": "Reintroduced routing information at a later boundary.",
+      "Tag": "Administrative route label used by a scoped policy guard."
+    },
+    "exams": [
+      {
+        "testedConcept": "Source eligibility",
+        "question": "Which starting source state does this worksheet require?",
+        "answer": "A selected source-RIB route.",
+        "explanation": "The starting declaration is source-RIB selection, not merely configured or protocol-visible intent.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "A selected source-RIB route.",
+          "A configured line regardless of installation.",
+          "Any visible source protocol alternative.",
+          "A successful source-interface ping only."
+        ],
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-Q01"
+      },
+      {
+        "testedConcept": "Prefix boundary",
+        "question": "Does the admitted /24 automatically admit a contained /25?",
+        "answer": "No; the filter is exact-prefix.",
+        "explanation": "The owned admission filter compares exact 198.51.100.0/24; a /25 is a different route.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; containment is sufficient for the exact filter.",
+          "No; the filter is exact-prefix.",
+          "Yes; more-specifics inherit exact admission.",
+          "Only a /32 is automatically admitted."
+        ],
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-Q02"
+      },
+      {
+        "testedConcept": "Family boundary",
+        "question": "Does target family ipv6 pass this IPv4 admission?",
+        "answer": "No.",
+        "explanation": "The target family gate requires ipv4 and does not translate the supplied route into another AF.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; the family name is decorative.",
+          "Yes; IPv4 automatically becomes IPv6.",
+          "No.",
+          "Only if the source tag is 100."
+        ],
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-Q03"
+      },
+      {
+        "testedConcept": "Seed scope",
+        "question": "What happens if seedPresent is false?",
+        "answer": "The scoped target preparation is blocked.",
+        "explanation": "Explicit seed presence is a requirement of this worksheet, independent of possible real protocol defaults.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The source numeric metric is copied automatically.",
+          "The model invents the target default seed.",
+          "The candidate is admitted without metric context.",
+          "The scoped target preparation is blocked."
+        ],
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-Q04"
+      },
+      {
+        "testedConcept": "Metric semantics",
+        "question": "Can source and target metrics be converted by comparing their numbers?",
+        "answer": "No; their protocol semantics differ.",
+        "explanation": "A metric number has meaning inside its protocol; equal integers do not establish an equivalent target metric.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "No; their protocol semantics differ.",
+          "Yes; lower numbers always describe a better route across protocols.",
+          "Yes; all metrics measure bandwidth.",
+          "Only matching integer sizes are needed."
+        ],
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-Q05"
+      },
+      {
+        "testedConcept": "Feedback guard",
+        "question": "Which supplied source tag is blocked?",
+        "answer": "Tag 100.",
+        "explanation": "The fixed feedback guard rejects sourceTag100 before preparing the target candidate.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Every nonzero tag.",
+          "Tag 100.",
+          "Tag 200 only.",
+          "An unmarked source only."
+        ],
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-Q06"
+      },
+      {
+        "testedConcept": "Target label",
+        "question": "Which tag is placed on an admitted target candidate?",
+        "answer": "Tag 100.",
+        "explanation": "Every admitted target candidate receives the supplied administrative tag 100.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "The source metric as a tag.",
+          "No tag because translation erases labels.",
+          "Tag 100.",
+          "The current source tag unchanged in every case."
+        ],
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-Q07"
+      },
+      {
+        "testedConcept": "Trust",
+        "question": "Does tag 100 authenticate original provenance?",
+        "answer": "No; it is a declared policy label.",
+        "explanation": "Tags can be changed or lost at boundaries and are not cryptographic origin proof.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; tags are cryptographic signatures.",
+          "Yes; tag 100 proves allocation ownership.",
+          "Only when its number is below 256.",
+          "No; it is a declared policy label."
+        ],
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-Q08"
+      },
+      {
+        "testedConcept": "Target choice",
+        "question": "Does admission guarantee target/system selection?",
+        "answer": "No; those gates are independent.",
+        "explanation": "Target candidate preparation precedes independent target and system selection gates.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "No; those gates are independent.",
+          "Yes; preparation forces target installation.",
+          "Only source metric comparison determines selection.",
+          "Return readiness forces target selection."
+        ],
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-Q09"
+      },
+      {
+        "testedConcept": "Execution",
+        "question": "Does the worksheet generate actual external LSAs?",
+        "answer": "No; it evaluates supplied declarations.",
+        "explanation": "No daemon runs and no protocol advertisement is emitted by the worksheet.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; changing the browser starts OSPF.",
+          "No; it evaluates supplied declarations.",
+          "Yes; tag assignment emits a live LSA.",
+          "Only the baseline runs a daemon."
+        ],
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-Q10"
+      }
+    ],
+    "quick": [
+      {
+        "question": "Why does a configured but unselected source route fail this boundary?",
+        "answer": "The worksheet starts from a selected source-RIB route.",
+        "explanation": "Configuration and protocol visibility are weaker than the required selection declaration.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-QC1"
+      },
+      {
+        "question": "Why is an equal source and target metric number not a conversion rule?",
+        "answer": "Each metric has protocol-specific meaning; the target requires its own seed design.",
+        "explanation": "Identical integers do not make different protocol metrics equivalent.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-QC2"
+      },
+      {
+        "question": "What is the exact scope of rejecting source tag 100?",
+        "answer": "It blocks this identified feedback marker, without proving universal loop prevention.",
+        "explanation": "Tags can be rewritten or lost at other boundaries.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t1",
+        "questionId": "s3-g5-t1-QC3"
+      }
+    ],
+    "sources": [
+      {
+        "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+        "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+        "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+        "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 OSPFv2: redistribution metric/type/filter scope",
+        "url": "https://docs.frrouting.org/en/stable-8.4/ospfd.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+        "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "id": "s3-g5-t2",
+    "batch": "10",
+    "title": "Route maps",
+    "subtitle": "Distinguish entry matching from the permit or deny action that follows.",
+    "level": "Intermediate → Advanced",
+    "minutes": 65,
+    "interactive": "route-maps",
+    "definition": "A route map is an ordered policy program whose matching entry applies a permit or deny action and optional set operations in its attached context. Its semantics depend on the consuming feature. This lesson uses fixed ordinary FRR8.4 routing-policy entries with simple prefix-list matches and a declared set LOCAL_PREF 200 on permit. Prefix-list permit means the entry match succeeds; prefix-list deny means that entry does not match. It is not itself an automatic route-map denial.",
+    "purpose": "Use route maps to combine intended selection criteria with explicit actions while keeping ordering and attachment visible. They can match route information and set attributes, but a route map used for routing policy does not automatically implement packet forwarding policy. The bounded worksheet demonstrates explicit matching denial, permitted attribute setting and implicit final denial. It excludes calls, continuation, goto and general combinations of match conditions.",
+    "mental": "Read an ordered checklist with two separate columns: whether this entry recognizes the route, and what this entry does when it recognizes it. A referenced list can refuse recognition without ordering the route to be denied. When recognition succeeds, the entry action matters. Under the fixed default exit behavior, the first recognized entry finishes the worksheet; if none recognizes the route, the final result is implicit deny.",
+    "components": [
+      "Ordered entries: sequence 10 is examined before sequence 20 under the fixed default exit behavior.",
+      "Referenced prefix-list match: permit returns true; deny or no match returns false for this route-map entry.",
+      "Explicit deny: a route is denied only when the deny entry matching condition succeeds.",
+      "Permit set: a matching permit writes declared LOCAL_PREF 200 and returns permit.",
+      "Implicit final denial: the fixed nonempty route map rejects when no entry matches.",
+      "Outcome gates: permit and attribute setting do not by themselves establish system installation or original service."
+    ],
+    "mechanism": [
+      "Fix the consuming route-policy context, observer, family, route prefix and attachment. The worksheet accepts canonical aligned IPv4 route prefixes and selected fixed entry sets. It does not execute a route-map text string or import arbitrary statements. On a real target, the same policy name can be consumed by different features; verify the actual attachment before transferring an explanation between contexts.",
+      "Evaluate sequence 10 first. In the bounded ruleset it is a deny entry referencing an exact permit list for 198.51.100.0/24. That prefix-list permit makes the entry match true, so the explicit route-map deny terminates processing. The result is denial because the entry action is deny, not because the referenced list contained a deny line.",
+      "If sequence 10 does not match, evaluate sequence 20. It is a permit entry using containment within 198.51.100.0/24 with lengths 25 through 28. A matching route receives the supplied LOCAL_PREF 200 set result and processing ends. A /29 in the same address block fails the length condition, and a /25 outside the block fails containment despite having an admitted length.",
+      "Compare the list-deny ruleset. Sequence 10 is a route-map deny entry whose referenced list denies the exact /24. Therefore its match condition is false and processing continues. Sequence 20 uses a permit-all prefix list and permits the route with LOCAL_PREF 200. This demonstrates why deny inside a referenced match list is not equivalent to a matching route-map deny.",
+      "When no fixed entry matches, return implicit deny. An explicit unconditional final permit would change that behavior, but it is not an excuse to assume every route map has one. This model has only the specified simple matches and default exits. FRR supports additional call and exit policies; this worksheet deliberately does not simulate them or generalize AND/OR semantics across arbitrary match types.",
+      "Treat permitted set output as a policy result rather than complete best-path selection. The worksheet holds no candidate competition and does not run BGP updates. Its independent system and forwarding/return controls show that setting LOCAL_PREF does not create a route or service. Investigate actual before/after attributes at the consuming speaker and restore exact original attachments in any separately authorized isolated change."
+    ],
+    "flow": [
+      [
+        "Read sequence 10 first",
+        "Evaluate the fixed ordered deny sequence against the referenced prefix-list result."
+      ],
+      [
+        "Distinguish a match from a list denial",
+        "A denied prefix-list entry makes that match condition false; it does not itself terminate this route-map."
+      ],
+      [
+        "Continue to sequence 20",
+        "A matching permit sequence admits the candidate and assigns local preference 200; no matching sequence reaches implicit deny."
+      ],
+      [
+        "Verify the consuming feature",
+        "Confirm the route-map attachment and resulting policy state; this worksheet has no call, goto or route installation engine."
+      ]
+    ],
+    "comparison": [
+      [
+        "Referenced-list deny / route-map deny",
+        "Entry nonmatch / matching entry rejection",
+        "Continue after nonmatch; reject after the fixed matching deny entry."
+      ],
+      [
+        "Match / set",
+        "Condition / attribute action",
+        "A set clause does not make a nonmatching entry match."
+      ],
+      [
+        "Simple default exits / advanced control",
+        "First matching permit or deny / call, goto or continue",
+        "This worksheet implements the simple fixed entry sets only."
+      ]
+    ],
+    "example": "For 198.51.100.0/24 under bounded rules, sequence 10 recognizes the exact prefix and explicitly denies it. Switch to list-deny rules: the deny inside the referenced prefix list causes sequence 10 nonmatch, then sequence 20 permits and supplies LOCAL_PREF 200. Switch back with 198.51.100.240/28 and sequence 20 matches. A contained /29 reaches implicit deny because no entry recognizes the required length.",
+    "ports": "These route-policy decisions are control-plane processing and introduce no new data service port. BGP context conventionally uses TCP 179; OSPF context uses IP protocol 89. The worksheet opens neither and proves no transport or adjacency state.",
+    "commands": [
+      {
+        "code": "show running-config",
+        "platform": "Prepared FRR8.4 owned speaker; GUIDED NOT EXECUTED",
+        "explanation": "Preserve relevant peer/family/table attachment and policy baseline; handle sensitive output securely.",
+        "expected": "Configuration is intended behavior, not proof of a matching route or measured service."
+      },
+      {
+        "code": "show route-map json",
+        "platform": "Prepared FRR8.4 consuming speaker; GUIDED NOT EXECUTED",
+        "explanation": "Inspect ordered entries and actual referenced matching objects.",
+        "expected": "Separate list match result, entry action and consuming-feature semantics."
+      },
+      {
+        "code": "show ip prefix-list json",
+        "platform": "Prepared FRR8.4 consuming speaker; GUIDED NOT EXECUTED",
+        "explanation": "Read the referenced prefix-list permit/deny and length conditions.",
+        "expected": "A referenced deny means nonmatch in the fixed route-map match context."
+      },
+      {
+        "code": "show ip route 198.51.100.0/24",
+        "platform": "Prepared FRR8.4 actual table context; GUIDED NOT EXECUTED",
+        "explanation": "Compare exact-prefix system source selection with route-policy output.",
+        "expected": "Selected system state must be supplemented by actual FIB/adjacency and original exchange evidence."
+      }
+    ],
+    "configuration": "These controls are declarations, not device configuration. Any optional actual exercise needs a separately prepared isolated owned target, reviewed consuming attachment and independent management access. Preserve exact original rules, sequence order, relevant attributes and baseline observation before one authorized change. Restore the precise prior attachment and original exchange before deleting exclusively owned unused objects. Avoid broad clears, reloads, saves or unrelated host-routing changes as diagnostic shortcuts. The four command groups are read-only guided references and have not been executed on a target for this lesson.",
+    "production": "Keep entry order, referenced object contents, consuming feature and default exit behavior in a single review. A route-map permit entry with no applicable match has broad consequences, while a route map without a final permit may reject unintended destinations. Confirm real object existence and attachment; empty or missing-policy behavior requires release and feature investigation rather than extending this fixed model.",
+    "troubleshooting": [
+      [
+        "Deny entry unexpectedly skipped",
+        "Read the referenced prefix-list result: list deny is entry nonmatch in this scope."
+      ],
+      [
+        "Route denied after many entries",
+        "Check whether any entry actually matched; unmatched fixed maps end with implicit deny."
+      ],
+      [
+        "LOCAL_PREF unchanged",
+        "Confirm matching permit, set statement, correct consuming attachment and real observed candidate."
+      ],
+      [
+        "Expected continuation absent",
+        "This worksheet uses default exit; call/continue/goto require separate supported policy interpretation."
+      ]
+    ],
+    "security": "Attribute policy can steer routes widely inside a routing domain. Protect route-map ownership and review referenced-object changes because modifying a list can change several consuming policies at once. A matching permit is not proof of authorized prefix origin. Avoid interpreting a control-plane route map as endpoint access control without the correct packet-policy attachment and feature semantics.",
+    "performance": "Policy evaluation and optimization are implementation concerns separate from the logical ordered result. FRR documents route-map optimization, but the worksheet does not benchmark it. A logically early match can affect attribute distribution and route visibility, yet neither the sequence number nor set LOCAL_PREF is a measure of packet latency or bandwidth.",
+    "mistakes": [
+      "Transferring matching semantics between unrelated consuming features.",
+      "Assuming a configured policy is attached and effective.",
+      "Ignoring the first matching entry or declared admission boundary.",
+      "Treating a permit, tag or attribute set as measured forwarding success.",
+      "Inferring original return readiness from the forward logical decision."
+    ],
+    "prerequisites": [
+      "s3-g5-t0",
+      "s3-g5-t1",
+      "s3-g4-t0"
+    ],
+    "related": [
+      "s3-g5-t0",
+      "s3-g5-t1",
+      "s3-g5-t3",
+      "s3-g5-t4"
+    ],
+    "lab": {
+      "objective": "Explain route maps with fixed scoped decisions, then distinguish logical policy outcome from original exchange prerequisites.",
+      "requirements": "Browser only. Optional guided target observations require separately prepared owned supported devices, actual family/table/interface/feature scope and independent management access. No routing or packet process is executed here.",
+      "topologyKind": "shared",
+      "topology": [
+        "Declared route/source → fixed policy boundary",
+        "Exact observer and IPv4 table context",
+        "Policy result → supplied system selection → original forward and return"
+      ],
+      "steps": [
+        "Start the baseline and write the declared route or packet fields and fixed ruleset.",
+        "Select each supplied permit, deny, ordering and boundary case; explain the first decisive rule or failed gate.",
+        "Separate invalid input from valid implicit denial: invalid input hides results rather than producing a policy decision.",
+        "Change one system, forward or return declaration while preserving the policy inputs, where those controls apply.",
+        "Use the named table region with the keyboard and activate the reset button to restore the baseline.",
+        "For an optional actual target, collect only the four read-only groups in exact owned scope and supplement them with original forward/return evidence.",
+        "Any separately authorized isolated configuration experiment must preserve and restore exact prior attachments and order before deleting exclusive unused resources."
+      ],
+      "verification": "The browser reports fixed logical policy and supplied outcome declarations. It does not establish actual protocol selection, device convergence, packet captures, hardware forwarding or application success. Confirm the original transaction at the actual observer when investigating a prepared target.",
+      "troubleshooting": "Identify malformed context, matching/nonmatching conditions, explicit or implicit denial and independent outcome gates as different causes. Preserve evidence before changing owned policy and do not invent a success result from a configured permit.",
+      "challenge": "Compare a matching explicit denial with a nonmatching condition and an unmatched final denial. Then retain a permitted baseline while removing only original return readiness; explain why logical admission and exchange readiness differ.",
+      "cleanup": "Reset restores only browser declarations without modifying a device or learner progress. Optional owned target work must restore exact prior policy attachment/order and verify baseline observation and original exchange before deleting exclusively owned unused resources."
+    },
+    "glossary": {
+      "Entry": "Ordered match condition plus permit/deny action and optional set.",
+      "Match": "The condition that recognizes the candidate at this entry.",
+      "Set": "A declared attribute change after a matching permit.",
+      "Implicit deny": "Final rejection when none of the fixed entries matches."
+    },
+    "exams": [
+      {
+        "testedConcept": "Referenced deny",
+        "question": "What does a prefix-list deny mean for this entry match?",
+        "answer": "The route-map entry does not match.",
+        "explanation": "A referenced prefix-list permit is match true; list deny or no match is match false for this entry.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The route-map entry does not match.",
+          "The route-map immediately denies the route.",
+          "The route-map automatically permits the route.",
+          "The set action runs before any match."
+        ],
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-Q01"
+      },
+      {
+        "testedConcept": "Explicit deny",
+        "question": "When does a route-map deny entry reject the route?",
+        "answer": "When its matching conditions succeed.",
+        "explanation": "The entry action deny applies only after its condition recognizes the candidate.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Whenever its referenced list contains any deny.",
+          "When its matching conditions succeed.",
+          "Before any matching condition is checked.",
+          "Only when no later permit exists."
+        ],
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-Q02"
+      },
+      {
+        "testedConcept": "Ordering",
+        "question": "Which fixed sequence is evaluated first?",
+        "answer": "Sequence 10.",
+        "explanation": "The fixed ordinary entry order is ascending sequence 10, then 20, with default exit behavior.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Sequence 20 because it permits.",
+          "The lowest route prefix length first.",
+          "Sequence 10.",
+          "All entries are evaluated simultaneously."
+        ],
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-Q03"
+      },
+      {
+        "testedConcept": "Set operation",
+        "question": "What does a matching scoped permit set?",
+        "answer": "LOCAL_PREF 200.",
+        "explanation": "The permitted fixed entry supplies LOCAL_PREF 200; it does not set system source distance or measure performance.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "A new source address.",
+          "A measured latency value200.",
+          "A system distance200 in all protocols.",
+          "LOCAL_PREF 200."
+        ],
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-Q04"
+      },
+      {
+        "testedConcept": "Implicit result",
+        "question": "What happens when no fixed route-map entry matches?",
+        "answer": "Implicit deny.",
+        "explanation": "With no matching entry, the nonempty fixed route map reaches its implicit final deny.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Implicit deny.",
+          "Automatic permit.",
+          "The last entry action regardless of match.",
+          "A random earlier permit."
+        ],
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-Q05"
+      },
+      {
+        "testedConcept": "Prefix boundary",
+        "question": "Does the bounded permit entry admit /29?",
+        "answer": "No; its maximum length is 28.",
+        "explanation": "The bounded permit uses ge 25 le 28; a /29 fails the maximum length even when contained.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; containment alone overrides length.",
+          "No; its maximum length is 28.",
+          "Yes; every more-specific child is admitted.",
+          "Only if the route-map action is deny."
+        ],
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-Q06"
+      },
+      {
+        "testedConcept": "List-deny case",
+        "question": "What follows a nonmatching deny entry in list-deny rules?",
+        "answer": "Evaluation continues to sequence 20.",
+        "explanation": "In list-deny rules, sequence 10 nonmatch allows sequence 20 evaluation; its permit-all list recognizes the route.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Immediate route denial.",
+          "Immediate set LOCAL_PREF without permit.",
+          "Evaluation continues to sequence 20.",
+          "The entire map is skipped."
+        ],
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-Q07"
+      },
+      {
+        "testedConcept": "Unsupported control flow",
+        "question": "Does this model execute call or goto?",
+        "answer": "No; only default fixed entry exits are modeled.",
+        "explanation": "Only simple list matches and normal exits are implemented; call, continue and goto are excluded.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; every FRR control-flow extension is implemented.",
+          "Only recursive call is automatic.",
+          "Goto is inferred from sequence gaps.",
+          "No; only default fixed entry exits are modeled."
+        ],
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-Q08"
+      },
+      {
+        "testedConcept": "Attachment",
+        "question": "What must be identified before interpreting a route map?",
+        "answer": "Its actual consuming feature and attachment.",
+        "explanation": "Feature and attachment determine how policy is consumed; a shared name alone does not prove equivalent behavior.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Its actual consuming feature and attachment.",
+          "Only the policy object name.",
+          "Only the prefix length.",
+          "Only the entry count."
+        ],
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-Q09"
+      },
+      {
+        "testedConcept": "Service distinction",
+        "question": "Does a permitted set operation prove the original service works?",
+        "answer": "No; forwarding and return need separate evidence.",
+        "explanation": "Attribute setting is a control-policy result, separate from system selection and original exchange evidence.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; LOCAL_PREF 200 authenticates service.",
+          "No; forwarding and return need separate evidence.",
+          "Yes; a set action creates the reply path.",
+          "Only when the matching entry is sequence 20."
+        ],
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-Q10"
+      }
+    ],
+    "quick": [
+      {
+        "question": "A referenced prefix-list denies the route: does that route-map entry match?",
+        "answer": "No; this fixed prefix-list match condition returns nonmatch.",
+        "explanation": "The model continues to another entry rather than applying the entry action.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-QC1"
+      },
+      {
+        "question": "A matching route-map deny precedes a later permit: which acts?",
+        "answer": "The matching deny rejects the route in this simple default-exit ruleset.",
+        "explanation": "Later entries are not consulted after that match.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-QC2"
+      },
+      {
+        "question": "Does set LOCAL_PREF200 make a nonmatching entry match?",
+        "answer": "No; the match condition is independent of its set action.",
+        "explanation": "Actions apply only under the consuming feature and matched entry semantics.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t2",
+        "questionId": "s3-g5-t2-QC3"
+      }
+    ],
+    "sources": [
+      {
+        "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+        "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+        "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+        "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+        "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+        "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "id": "s3-g5-t3",
+    "batch": "10",
+    "title": "Prefix lists",
+    "subtitle": "Match both destination containment and allowed route-prefix length.",
+    "level": "Intermediate → Advanced",
+    "minutes": 65,
+    "interactive": "prefix-lists",
+    "definition": "An IPv4 prefix list matches route prefixes by ordered address containment and optional prefix-length bounds. It describes destination route information rather than packet source/destination fields. Without ge or le, the route length must equal the entry base length. The first matching entry returns its permit or deny action; this worksheet uses nonempty fixed lists with an implicit final deny. It accepts only canonical aligned IPv4 route prefixes and deliberately separates a default-only entry from a permit-all lengths entry.",
+    "purpose": "Use prefix lists when intended destination scope includes both an address block and the specificity of routes permitted within it. Exact198.51.100.0/24, contained /25 and contained /29 are different policy questions. ge 25 le 28 can permit intended child routes while rejecting overly specific announcements. A length check alone is insufficient: a /25 outside the base block must not pass merely because25 lies inside the range.",
+    "mental": "Draw a box around the allowed address block, then put a ruler beside it for permitted prefix lengths. A route must fit inside the box and pass the ruler. Read boxes in sequence order and stop at the first match. A broad box labeled0.0.0.0/0 still has a length rule; without a le 32 extension it recognizes the default route only, not every route inside the IPv4 address space.",
+    "components": [
+      "Canonical route prefix: dotted IPv4, integer length 0–32 and no host bits set.",
+      "Containment: candidate network lies within the base entry network.",
+      "Exact length: an entry with no ge/le matches the base length only.",
+      "Length range: the fixed children list admits lengths 25–28 inside198.51.100.0/24.",
+      "Order: an earlier /25 deny can shadow a later broader permit.",
+      "Policy and outcome separation: list permit is a match/action result, not automatic installation or traffic proof."
+    ],
+    "mechanism": [
+      "Validate the route prefix before matching. The worksheet rejects malformed octets, leading-zero noncanonical addresses, exponent syntax, bad lengths and misaligned bases such as 198.51.100.1/24. A route prefix is not a host address with a decorative mask. Its canonical base and length establish the address interval used by containment. This parser supports IPv4 only and accepts no arbitrary CLI policy text.",
+      "Read the exact fixed list. Sequence 10 permits 198.51.100.0/24 with no range modifiers, so the /24 matches while a contained /25 does not. Address containment alone does not imply permission. This distinction is useful when a receiver should accept an aggregate but not its more-specific children, or vice versa under a different explicit list.",
+      "Read the children list as two tests. The candidate must be contained in 198.51.100.0/24 and its length must be at least 25 and at most 28. The aligned upper child 198.51.100.240/28 passes. The aligned 198.51.100.248/29 is contained but too specific. The neighboring 198.51.101.0/25 has a permitted length but is outside the base block.",
+      "Compare the two default-related lists. A permit entry for 0.0.0.0/0 with no range matches only default length 0. An entry 0.0.0.0/0 le 32 accepts all aligned IPv4 prefixes from length 0 through 32. The difference is explicit length policy, not a special interpretation that every bare default prefix-list entry means permit any route.",
+      "Evaluate entries in ascending supplied sequence order and stop on the first match. In ordered rules, sequence 10 denies 198.51.100.128/25, while sequence 20 permits children of the /24 at lengths 25–28. That exact /25 is denied immediately and never rescued by the later permit. A /26 within that denied /25 is not an exact match to sequence 10 and may match sequence 20.",
+      "Return implicit deny when no entry matches the nonempty fixed list. Then report system and original exchange declarations separately. Actual missing, empty, unattached or differently consumed objects require platform-specific review; this worksheet does not assign them universal defaults. Inspect the real list and consuming attachment before any isolated edit, restore exact original entries and recheck the original observation."
+    ],
+    "flow": [
+      [
+        "Read the network and length",
+        "Use a canonical IPv4 prefix and its exact prefix length, with the consuming policy boundary recorded."
+      ],
+      [
+        "Check containment and ge/le",
+        "A base prefix constrains the network; ge and le bound the accepted prefix lengths rather than host addresses."
+      ],
+      [
+        "Apply first-match ordering",
+        "Stop at the first matching entry; a prior /25 deny can override a later child-prefix permit."
+      ],
+      [
+        "Check the final unmatched result",
+        "Unmatched candidates hit implicit deny; 0.0.0.0/0 without le 32 matches only the default route."
+      ]
+    ],
+    "comparison": [
+      [
+        "Containment / prefix length",
+        "Address interval / route specificity",
+        "Both must satisfy the selected entry."
+      ],
+      [
+        "Bare 0/0 / 0/0 le 32",
+        "Default route only / all IPv4 route lengths",
+        "The same base prefix does not imply the same policy scope."
+      ],
+      [
+        "Exact entry / ge-le range",
+        "One route length / inclusive length bounds",
+        "A contained child needs an explicit permitted length range."
+      ]
+    ],
+    "example": "Choose exact /24 and then its /25 child to see why the bare entry permits only one length. Compare /25, /28 and /29 under children rules, followed by a /25 in the neighboring /24. Select all with 203.0.113.7/32 to test 0/0 le 32, then choose default-only with a non-default route. Finally select ordered rules and explain the specific /25 denial before the broader permit.",
+    "ports": "These route-policy decisions are control-plane processing and introduce no new data service port. BGP context conventionally uses TCP 179; OSPF context uses IP protocol 89. The worksheet opens neither and proves no transport or adjacency state.",
+    "commands": [
+      {
+        "code": "show ip prefix-list json",
+        "platform": "Prepared FRR8.4 owned speaker; GUIDED NOT EXECUTED",
+        "explanation": "Read base prefixes, ge/le bounds and sequence order.",
+        "expected": "Default-only and all-lengths entries have different specificity scope."
+      },
+      {
+        "code": "show ip prefix-list detail json",
+        "platform": "Prepared FRR8.4 owned speaker; GUIDED NOT EXECUTED",
+        "explanation": "Inspect detailed list and counter information without clearing it.",
+        "expected": "Preserve observations before editing; counters do not prove an entire original exchange."
+      },
+      {
+        "code": "show running-config",
+        "platform": "Prepared FRR8.4 owned speaker; GUIDED NOT EXECUTED",
+        "explanation": "Preserve relevant peer/family/table attachment and policy baseline; handle sensitive output securely.",
+        "expected": "Configuration is intended behavior, not proof of a matching route or measured service."
+      },
+      {
+        "code": "show ip route 198.51.100.0/24",
+        "platform": "Prepared FRR8.4 actual table context; GUIDED NOT EXECUTED",
+        "explanation": "Compare exact-prefix system source selection with route-policy output.",
+        "expected": "Selected system state must be supplemented by actual FIB/adjacency and original exchange evidence."
+      }
+    ],
+    "configuration": "These controls are declarations, not device configuration. Any optional actual exercise needs a separately prepared isolated owned target, reviewed consuming attachment and independent management access. Preserve exact original rules, sequence order, relevant attributes and baseline observation before one authorized change. Restore the precise prior attachment and original exchange before deleting exclusively owned unused objects. Avoid broad clears, reloads, saves or unrelated host-routing changes as diagnostic shortcuts. The four command groups are read-only guided references and have not been executed on a target for this lesson.",
+    "production": "Review permitted address containment and length ranges together against actual route ownership. Permit-all lengths entries are powerful and should be deliberate. Preserve sequence order during maintenance, including overlaps that are intentional. Observe the correct incoming or outgoing route-policy attachment; a prefix list does not activate merely because its configuration exists.",
+    "troubleshooting": [
+      [
+        "Contained child denied",
+        "Check exact length versus explicit ge/le bounds."
+      ],
+      [
+        "Outside block admitted by expectation",
+        "Containment and length are conjunctive; matching the ruler alone is insufficient."
+      ],
+      [
+        "Later permit ignored",
+        "Locate the first matching earlier entry and its action."
+      ],
+      [
+        "Host bits accepted elsewhere",
+        "This teaching parser requires canonical aligned route prefixes; inspect actual target normalization separately."
+      ]
+    ],
+    "security": "Prefix boundaries can reduce unintended routing announcements, but admission is not cryptographic ownership validation or a packet firewall. A too-broad length range can admit unauthorized more-specific destinations inside an otherwise intended block. Document exceptions and change ownership. Evaluate default-route handling separately because permitting default can redirect large portions of traffic under actual installed routing.",
+    "performance": "Prefix-list implementation can use optimized structures; the worksheet presents logical order rather than lookup benchmarks. Restricting specificity changes route visibility and possible longest-prefix outcomes downstream, not physical capacity. Keep control-plane memory, update processing and packet forwarding measurements separate from a simple count of permitted entries.",
+    "mistakes": [
+      "Transferring matching semantics between unrelated consuming features.",
+      "Assuming a configured policy is attached and effective.",
+      "Ignoring the first matching entry or declared admission boundary.",
+      "Treating a permit, tag or attribute set as measured forwarding success.",
+      "Inferring original return readiness from the forward logical decision."
+    ],
+    "prerequisites": [
+      "s3-g5-t0",
+      "s3-g5-t2"
+    ],
+    "related": [
+      "s3-g5-t0",
+      "s3-g5-t1",
+      "s3-g5-t2",
+      "s3-g5-t4"
+    ],
+    "lab": {
+      "objective": "Explain prefix lists with fixed scoped decisions, then distinguish logical policy outcome from original exchange prerequisites.",
+      "requirements": "Browser only. Optional guided target observations require separately prepared owned supported devices, actual family/table/interface/feature scope and independent management access. No routing or packet process is executed here.",
+      "topologyKind": "shared",
+      "topology": [
+        "Declared route/source → fixed policy boundary",
+        "Exact observer and IPv4 table context",
+        "Policy result → supplied system selection → original forward and return"
+      ],
+      "steps": [
+        "Start the baseline and write the declared route or packet fields and fixed ruleset.",
+        "Select each supplied permit, deny, ordering and boundary case; explain the first decisive rule or failed gate.",
+        "Separate invalid input from valid implicit denial: invalid input hides results rather than producing a policy decision.",
+        "Change one system, forward or return declaration while preserving the policy inputs, where those controls apply.",
+        "Use the named table region with the keyboard and activate the reset button to restore the baseline.",
+        "For an optional actual target, collect only the four read-only groups in exact owned scope and supplement them with original forward/return evidence.",
+        "Any separately authorized isolated configuration experiment must preserve and restore exact prior attachments and order before deleting exclusive unused resources."
+      ],
+      "verification": "The browser reports fixed logical policy and supplied outcome declarations. It does not establish actual protocol selection, device convergence, packet captures, hardware forwarding or application success. Confirm the original transaction at the actual observer when investigating a prepared target.",
+      "troubleshooting": "Identify malformed context, matching/nonmatching conditions, explicit or implicit denial and independent outcome gates as different causes. Preserve evidence before changing owned policy and do not invent a success result from a configured permit.",
+      "challenge": "Compare a matching explicit denial with a nonmatching condition and an unmatched final denial. Then retain a permitted baseline while removing only original return readiness; explain why logical admission and exchange readiness differ.",
+      "cleanup": "Reset restores only browser declarations without modifying a device or learner progress. Optional owned target work must restore exact prior policy attachment/order and verify baseline observation and original exchange before deleting exclusively owned unused resources."
+    },
+    "glossary": {
+      "Containment": "The route network falls inside the entry base network.",
+      "ge": "Minimum allowed candidate prefix length.",
+      "le": "Maximum allowed candidate prefix length.",
+      "Alignment": "A route prefix base has no host bits set."
+    },
+    "exams": [
+      {
+        "testedConcept": "Exact matching",
+        "question": "Does bare 198.51.100.0/24 permit its /25 child?",
+        "answer": "No; the route length must match exactly.",
+        "explanation": "Without ge/le, candidate length must equal the entry base length, so /25 does not match bare /24.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "No; the route length must match exactly.",
+          "Yes; all contained more-specifics inherit permit.",
+          "Yes; a /25 is shorter in address count.",
+          "Only if it is the upper half."
+        ],
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-Q01"
+      },
+      {
+        "testedConcept": "Lower boundary",
+        "question": "Does ge 25 le 28 admit a contained /25?",
+        "answer": "Yes.",
+        "explanation": "The lower bound is inclusive: a contained aligned /25 meets ge 25.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "No; ge 25 excludes 25.",
+          "Yes.",
+          "Only /28 matches.",
+          "Only exact /24 matches."
+        ],
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-Q02"
+      },
+      {
+        "testedConcept": "Upper boundary",
+        "question": "Does ge 25 le 28 admit a contained /28?",
+        "answer": "Yes.",
+        "explanation": "The upper bound is inclusive: a contained aligned /28 meets le 28.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "No; le 28 excludes 28.",
+          "Only /25 matches.",
+          "Yes.",
+          "Every /29 also matches."
+        ],
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-Q03"
+      },
+      {
+        "testedConcept": "Beyond boundary",
+        "question": "Does ge 25 le 28 admit a contained /29?",
+        "answer": "No.",
+        "explanation": "Length 29 exceeds le 28 even though the address block is contained.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; it remains contained.",
+          "Yes; le 28 means at least 28.",
+          "Only if its address is aligned.",
+          "No."
+        ],
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-Q04"
+      },
+      {
+        "testedConcept": "Containment",
+        "question": "Does a neighboring /25 pass just because its length is 25?",
+        "answer": "No; address containment must also pass.",
+        "explanation": "Containment and length are both required; neighboring 198.51.101.0/25 is outside the base block.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "No; address containment must also pass.",
+          "Yes; the length test is the only test.",
+          "Yes; neighboring blocks are equivalent.",
+          "Only its LOCAL_PREF matters."
+        ],
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-Q05"
+      },
+      {
+        "testedConcept": "Default-only",
+        "question": "What does bare permit 0.0.0.0/0 match?",
+        "answer": "Only the default route.",
+        "explanation": "A bare /0 entry has exact length 0 and recognizes only the default route.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Every IPv4 route prefix.",
+          "Only the default route.",
+          "Every non-default route only.",
+          "Every /32 host route only."
+        ],
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-Q06"
+      },
+      {
+        "testedConcept": "All lengths",
+        "question": "What does permit 0.0.0.0/0 le 32 match in this scope?",
+        "answer": "All aligned IPv4 route prefixes.",
+        "explanation": "Base /0 contains IPv4 space and le 32 permits candidate lengths 0 through 32.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Only the default route.",
+          "Only prefixes exactly /32.",
+          "All aligned IPv4 route prefixes.",
+          "Only non-default prefixes."
+        ],
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-Q07"
+      },
+      {
+        "testedConcept": "Ordered deny",
+        "question": "Can a later permit rescue an earlier matching deny?",
+        "answer": "No; first match stops processing.",
+        "explanation": "Processing stops at the first matching entry; a later permit is not examined after matching deny.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; permit overrides deny independently of order.",
+          "Yes; the last matching entry wins.",
+          "Only a default permit rescues it.",
+          "No; first match stops processing."
+        ],
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-Q08"
+      },
+      {
+        "testedConcept": "Alignment",
+        "question": "Is 198.51.100.1/24 a valid worksheet route prefix?",
+        "answer": "No; it has host bits set.",
+        "explanation": "A /24 base must have zero host bits; .1 is a host address inside that network, not its canonical base.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "No; it has host bits set.",
+          "Yes; host bits are ignored automatically here.",
+          "Yes; every dotted address with /24 is canonical.",
+          "Only if the list has a ge condition."
+        ],
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-Q09"
+      },
+      {
+        "testedConcept": "Implicit result",
+        "question": "What happens if no fixed list entry matches?",
+        "answer": "Implicit deny.",
+        "explanation": "No match in the fixed nonempty prefix list yields implicit deny, not a cached prior result.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Implicit permit.",
+          "Implicit deny.",
+          "Reuse the previous matching result.",
+          "Select the shortest listed prefix."
+        ],
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-Q10"
+      }
+    ],
+    "quick": [
+      {
+        "question": "Does bare 198.51.100.0/24 match 198.51.100.128/25?",
+        "answer": "No; without length qualifiers the route must have the exact /24 length.",
+        "explanation": "Containment alone does not satisfy an exact entry.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-QC1"
+      },
+      {
+        "question": "Which child lengths pass ge 25 le 28 under the /24 base?",
+        "answer": "Contained aligned children /25 through /28 inclusive.",
+        "explanation": "Both containment and inclusive lower/upper length bounds must agree.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-QC2"
+      },
+      {
+        "question": "How does bare 0/0 differ from 0/0 le 32?",
+        "answer": "Bare 0/0 matches only the default; le 32 admits every aligned IPv4 route prefix.",
+        "explanation": "Adding the upper qualifier changes specificity scope.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t3",
+        "questionId": "s3-g5-t3-QC3"
+      }
+    ],
+    "sources": [
+      {
+        "title": "FRR stable8.4 Filtering: prefix length ranges and ordered matching",
+        "url": "https://docs.frrouting.org/en/stable-8.4/filter.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 Route Maps: match, permit, deny and set semantics",
+        "url": "https://docs.frrouting.org/en/stable-8.4/routemap.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 BGP: family-scoped policy and route inspection",
+        "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE Network as Code prefix-list examples: ge/le and default-only",
+        "url": "https://netascode.cisco.com/docs/data_models/iosxe/device/prefix_list/",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "FRR stable8.4 Zebra: exact-prefix system route inspection",
+        "url": "https://docs.frrouting.org/en/stable-8.4/zebra.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "id": "s3-g5-t4",
+    "batch": "10",
+    "title": "Access lists",
+    "subtitle": "Evaluate declared IPv4 packets with ordered rules and precise wildcard bits.",
+    "level": "Intermediate → Advanced",
+    "minutes": 65,
+    "interactive": "access-lists",
+    "definition": "An access list can be consumed by several Cisco IOS XE features. This lesson fixes the IPv4 packet-filter context: a standard rule checks declared packet source, while the supplied extended rules check source, destination, protocol and TCP destination port. It uses ordered nonempty fixed rules and an implicit final deny. Route ACL matching is a different consuming context with different address meanings and is not modeled here. No packet, Cisco device or application is executed.",
+    "purpose": "Use packet ACLs to express intended traffic boundaries at a specified interface and direction, then verify the original exchange independently. The worksheet demonstrates a host-specific deny before a broader permit, an extended TCP 443 allow and noncontiguous wildcard matching. It does not implement a stateful firewall, infer attachment from configuration or treat a packet permit as proof of route availability, reverse permission or an established application session.",
+    "mental": "Pass one declared packet through an ordered sieve. Each rule checks only its stated bits and fields. Zero wildcard bits must match; one bits are ignored. The first matching rule decides permit or deny. After permit, the packet still needs the actual forwarding path and a separately permitted/reachable reply. The sieve is stateless and does not remember a prior TCP handshake or infer the fields of the return packet.",
+    "components": [
+      "Packet scope: canonical IPv4 source and destination plus tcp, udp or icmp declarations.",
+      "Standard fixed rules: source address only; destination and port do not affect their matching.",
+      "Extended fixed rules: source, exact destination 198.51.100.10, TCP and destination port 443.",
+      "Wildcard mask: zero means compare and one means ignore; noncontiguous ignored bits are valid.",
+      "Ordering: a deny for source 192.0.2.66 precedes the permit for the /24 source block.",
+      "Independent outcomes: permitted packet, forward readiness and return readiness are separate declarations."
+    ],
+    "mechanism": [
+      "Identify the actual consuming feature, interface and direction before reading an ACL. The worksheet uses a packet-filter decision with supplied headers only. A route-policy ACL, VTY access class or other consumer can interpret addresses differently. The existence of a configured ACL is not proof of attachment, and missing or empty actual list behavior requires target-specific investigation. This model uses nonempty known rulesets only.",
+      "Parse canonical dotted IPv4 source and destination strings strictly. Octets are0–255 without leading zeros; malformed, numeric-coerced or negative values are rejected. The declared protocol must be tcp, udp or icmp. TCP/UDP port declarations are integers 0–65535; ICMP uses zero placeholders because this worksheet does not model ICMP type/code. It contains no fragments, flags, connection state, time ranges, object groups or IPv6.",
+      "Evaluate standard rules by packet source. Sequence 10 denies the exact 192.0.2.66 source, and sequence 20 permits 192.0.2.0 with wildcard 0.0.0.255. A packet from 192.0.2.10 can therefore pass regardless of its declared destination or protocol in this fixed standard context. That broad result may be inappropriate for a service-specific policy, motivating a correctly attached extended ACL.",
+      "Evaluate extended rules by the stated combination. The first rule denies TCP destination 443 to 198.51.100.10 from source 192.0.2.66; the second permits the same protocol, destination and port from 192.0.2.0/24. Different destination ports, UDP or a different destination do not match the permit. Source port is preserved in the declarations but is not tested by these fixed rules; no unstated restriction is invented.",
+      "Use exact bitmask matching for wildcard entries rather than assuming every wildcard is an inverse contiguous subnet mask. The noncontiguous rule has base 10.1.2.0 and wildcard 0.0.254.255. It compares the first two octets and the low bit of the third, while ignoring other third-octet bits and all last-octet bits. Thus 10.1.254.77 matches and 10.1.3.77 fails. Noncontiguous wildcard bits are valid Cisco-style matching syntax.",
+      "Stop on the first matching entry and return its action. If no fixed entry matches, return implicit deny. A permit does not prove routing, adjacency, interface status, remote service readiness or reply handling. Keep the original return packet and actual interface direction independent. Any separately prepared target investigation should preserve attachments and counters before a reviewed isolated change, then restore the exact prior ACL order and original exchange."
+    ],
+    "flow": [
+      [
+        "Declare the packet fields and direction",
+        "Record source, destination, protocol and ports for the attached stateless packet policy."
+      ],
+      [
+        "Evaluate the correct ACL form",
+        "The standard example uses source only; the extended example also requires the stated protocol, destination and port."
+      ],
+      [
+        "Apply wildcard and rule order",
+        "Zero wildcard bits must match and one bits are ignored, including the noncontiguous example; stop at the first match."
+      ],
+      [
+        "Verify traffic and the return path",
+        "An ACL permit is one policy result, not a connection tracker, installed route or proof of a complete exchange."
+      ]
+    ],
+    "comparison": [
+      [
+        "Wildcard / subnet mask",
+        "One means ignore / one means network significance",
+        "A noncontiguous wildcard cannot be replaced by a CIDR assumption."
+      ],
+      [
+        "Standard / extended packet ACL",
+        "Source only / source, destination and protocol-specific fields",
+        "The fixed TCP443 rule checks destination port as well as both addresses."
+      ],
+      [
+        "Stateless permit / established transaction",
+        "One header decision / application and reply state",
+        "A permit creates no route, reply policy or session state."
+      ]
+    ],
+    "example": "The extended baseline packet 192.0.2.10 to 198.51.100.10 TCP 443 reaches sequence 20 permit. Change only source to 192.0.2.66 and sequence 10 denies before the broad permit. Change only destination port to 80 and both entries miss, giving implicit deny. Under standard rules, an ICMP packet from 192.0.2.10 can pass despite a different destination. Under noncontiguous rules, compare even and odd third octets to see which wildcard bit is actually checked.",
+    "ports": "The extended fixed example checks TCP destination 443; this does not validate TLS or a complete session. Standard and noncontiguous source-only examples do not test ports. No packets or sockets are created.",
+    "commands": [
+      {
+        "code": "show ip access-lists",
+        "platform": "Prepared Cisco IOS XE17.x device; GUIDED NOT EXECUTED",
+        "explanation": "Inspect ordered nonempty ACL rules and counters in the actual packet consumer.",
+        "expected": "Counters and order support policy investigation; they do not reconstruct a complete transaction."
+      },
+      {
+        "code": "show ip interface",
+        "platform": "Prepared Cisco IOS XE17.x device; GUIDED NOT EXECUTED",
+        "explanation": "Inspect actual inbound/outbound ACL attachment and interface context.",
+        "expected": "An ACL definition alone does not activate interface packet filtering."
+      },
+      {
+        "code": "show running-config",
+        "platform": "Prepared Cisco IOS XE17.x device; GUIDED NOT EXECUTED",
+        "explanation": "Preserve exact relevant rule order and attachment before a separately authorized change.",
+        "expected": "Configuration can contain sensitive information; retain only scoped owned evidence securely."
+      },
+      {
+        "code": "show ip route 198.51.100.10",
+        "platform": "Prepared Cisco IOS XE17.x device; GUIDED NOT EXECUTED",
+        "explanation": "Inspect destination routing separately from the declared packet ACL result.",
+        "expected": "This routing observation is not an application or return-path test."
+      }
+    ],
+    "configuration": "These controls are declarations, not device configuration. Any optional actual exercise needs a separately prepared isolated owned target, reviewed consuming attachment and independent management access. Preserve exact original rules, sequence order, relevant attributes and baseline observation before one authorized change. Restore the precise prior attachment and original exchange before deleting exclusively owned unused objects. Avoid broad clears, reloads, saves or unrelated host-routing changes as diagnostic shortcuts. The four command groups are read-only guided references and have not been executed on a target for this lesson.",
+    "production": "Record interface, direction, feature and packet fields for the original traffic before editing. Use a narrowly scoped management-safe policy and preserve independent access. Standard source-only rules can be too broad for destination/service intent; extended rules need the actual return direction reviewed separately. Check target hardware capabilities and fragment handling rather than extending this simple worksheet to every device path.",
+    "troubleshooting": [
+      [
+        "Expected TCP permit misses",
+        "Preserve actual source, destination, protocol and destination port at the observed direction."
+      ],
+      [
+        "Specific host still allowed by expectation",
+        "Read the earlier deny before the broader source-block permit."
+      ],
+      [
+        "Wildcard treated as subnet mask",
+        "Compute checked bits directly; noncontiguous one bits are allowed."
+      ],
+      [
+        "Permit but application fails",
+        "Inspect real route/adjacency and the independent return packet policy and service state."
+      ]
+    ],
+    "security": "Packet ACLs provide a stateless traffic boundary in this scope. A TCP 443 destination permit does not authenticate the client, validate TLS or establish connection state. Noncontiguous masks are exact bit rules and can be difficult to review; document the intended address set explicitly. Protect management and control traffic with the correct consumer and direction instead of assuming a routing filter blocks packets.",
+    "performance": "ACL processing may occur in software or hardware with target-specific capacity and feature limits. Rule counters and logging have different overheads, and packets denied before forwarding can change observed load. The browser computes a logical fixed-rule result only; it measures no throughput, TCAM use, CPU cost, logging rate or application latency. Sequence number is order, not a performance metric.",
+    "mistakes": [
+      "Transferring matching semantics between unrelated consuming features.",
+      "Assuming a configured policy is attached and effective.",
+      "Ignoring the first matching entry or declared admission boundary.",
+      "Treating a permit, tag or attribute set as measured forwarding success.",
+      "Inferring original return readiness from the forward logical decision."
+    ],
+    "prerequisites": [
+      "s3-g5-t0",
+      "s3-g5-t3"
+    ],
+    "related": [
+      "s3-g5-t0",
+      "s3-g5-t1",
+      "s3-g5-t2",
+      "s3-g5-t3"
+    ],
+    "lab": {
+      "objective": "Explain access lists with fixed scoped decisions, then distinguish logical policy outcome from original exchange prerequisites.",
+      "requirements": "Browser only. Optional guided target observations require separately prepared owned supported devices, actual family/table/interface/feature scope and independent management access. No routing or packet process is executed here.",
+      "topologyKind": "shared",
+      "topology": [
+        "Declared IPv4 packet source → fixed standard or extended ordered ACL",
+        "Optional noncontiguous source wildcard case",
+        "Permit result → independent forward and return declarations"
+      ],
+      "steps": [
+        "Start the baseline and write the declared route or packet fields and fixed ruleset.",
+        "Select each supplied permit, deny, ordering and boundary case; explain the first decisive rule or failed gate.",
+        "Separate invalid input from valid implicit denial: invalid input hides results rather than producing a policy decision.",
+        "Change one system, forward or return declaration while preserving the policy inputs, where those controls apply.",
+        "Use the named table region with the keyboard and activate the reset button to restore the baseline.",
+        "For an optional actual target, collect only the four read-only groups in exact owned scope and supplement them with original forward/return evidence.",
+        "Any separately authorized isolated configuration experiment must preserve and restore exact prior attachments and order before deleting exclusive unused resources."
+      ],
+      "verification": "The browser reports fixed logical policy and supplied outcome declarations. It does not establish actual protocol selection, device convergence, packet captures, hardware forwarding or application success. Confirm the original transaction at the actual observer when investigating a prepared target.",
+      "troubleshooting": "Identify malformed context, matching/nonmatching conditions, explicit or implicit denial and independent outcome gates as different causes. Preserve evidence before changing owned policy and do not invent a success result from a configured permit.",
+      "challenge": "Compare a matching explicit denial with a nonmatching condition and an unmatched final denial. Then retain a permitted baseline while removing only original return readiness; explain why logical admission and exchange readiness differ.",
+      "cleanup": "Reset restores only browser declarations without modifying a device or learner progress. Optional owned target work must restore exact prior policy attachment/order and verify baseline observation and original exchange before deleting exclusively owned unused resources."
+    },
+    "glossary": {
+      "Wildcard": "A one bit is ignored and a zero bit must match the corresponding address bit.",
+      "Stateless": "The decision does not remember prior connection state.",
+      "Standard ACL": "The fixed packet context checks source address only.",
+      "Extended ACL": "The fixed packet context checks explicit source, destination, protocol and port."
+    },
+    "exams": [
+      {
+        "testedConcept": "Standard scope",
+        "question": "What does the standard packet ruleset test?",
+        "answer": "Packet source address only.",
+        "explanation": "The fixed standard packet list ignores destination, protocol and ports when deciding its source match.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Packet source address only.",
+          "Destination address only.",
+          "TCP destination port only.",
+          "Every IP and transport field."
+        ],
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-Q01"
+      },
+      {
+        "testedConcept": "Extended scope",
+        "question": "Which fields must the scoped extended permit match?",
+        "answer": "Source, destination, TCP and destination port 443.",
+        "explanation": "The extended permit is a conjunction of its supplied source block, exact destination, TCP and destination port 443.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Only source address.",
+          "Source, destination, TCP and destination port 443.",
+          "Only destination port regardless of protocol.",
+          "Only an earlier Established declaration."
+        ],
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-Q02"
+      },
+      {
+        "testedConcept": "Order",
+        "question": "Which rule decides the 192.0.2.66 TCP 443 packet first?",
+        "answer": "Sequence 10 explicit deny.",
+        "explanation": "The host-specific deny matches before the broader source-block permit is considered.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Sequence 20 broad permit.",
+          "The implicit rule before explicit entries.",
+          "Sequence 10 explicit deny.",
+          "Both explicit entries simultaneously."
+        ],
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-Q03"
+      },
+      {
+        "testedConcept": "Wildcard zero",
+        "question": "What does a zero wildcard bit mean?",
+        "answer": "Compare the corresponding address bit.",
+        "explanation": "Zero wildcard bits are checked for equality against the corresponding base address bits.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Ignore the corresponding bit.",
+          "Require that bit to be zero in the packet.",
+          "Compare only if all mask bits are zero.",
+          "Compare the corresponding address bit."
+        ],
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-Q04"
+      },
+      {
+        "testedConcept": "Wildcard one",
+        "question": "What does a one wildcard bit mean?",
+        "answer": "Ignore the corresponding address bit.",
+        "explanation": "One wildcard bits remove those address bits from the equality test.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Ignore the corresponding address bit.",
+          "Require that bit to be one in the packet.",
+          "Compare the corresponding bit.",
+          "Deny any address containing that bit."
+        ],
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-Q05"
+      },
+      {
+        "testedConcept": "Noncontiguous masks",
+        "question": "Are noncontiguous wildcard bits valid in this context?",
+        "answer": "Yes; matching uses exact bit masks.",
+        "explanation": "Cisco-style wildcard masks specify ignored bits and need not have contiguous ones.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "No; wildcards must be contiguous subnet masks.",
+          "Yes; matching uses exact bit masks.",
+          "Only for IPv6.",
+          "Only when every bit is ignored."
+        ],
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-Q06"
+      },
+      {
+        "testedConcept": "Even third octet",
+        "question": "Does 10.1.254.77 match base 10.1.2.0 wildcard 0.0.254.255?",
+        "answer": "Yes.",
+        "explanation": "Wildcard 0.0.254.255 preserves the third-octet low bit;254 is even and the last octet is ignored.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "No; the third octet must equal2 exactly.",
+          "No; the last octet must be zero.",
+          "Yes.",
+          "Only TCP 443 can make the wildcard match."
+        ],
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-Q07"
+      },
+      {
+        "testedConcept": "Odd third octet",
+        "question": "Does 10.1.3.77 match that noncontiguous rule?",
+        "answer": "No.",
+        "explanation": "The low bit of third octet3 is one, while base third octet2 has a zero low bit, so it fails.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; all third-octet bits are ignored.",
+          "Yes;3 is adjacent to 2.",
+          "Only a standard list forces a match.",
+          "No."
+        ],
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-Q08"
+      },
+      {
+        "testedConcept": "Different consumer",
+        "question": "Are route-ACL source/destination semantics modeled here?",
+        "answer": "No; this scope is IPv4 packets.",
+        "explanation": "Route-policy and other ACL consumers can assign different meanings to address fields; only packet headers are modeled.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "No; this scope is IPv4 packets.",
+          "Yes; all ACL consumers interpret fields identically.",
+          "Yes; routes are treated as ICMP packets.",
+          "Only source semantics are universal."
+        ],
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-Q09"
+      },
+      {
+        "testedConcept": "Reply",
+        "question": "Does a forward packet permit prove its reply succeeds?",
+        "answer": "No; return policy and reachability need separate evidence.",
+        "explanation": "The stateless forward permit creates neither a remote return route nor reverse ACL permission or service state.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; packet permit creates the remote reply route.",
+          "No; return policy and reachability need separate evidence.",
+          "Yes; TCP 443 implies established state.",
+          "Only the broader permit guarantees return."
+        ],
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-Q10"
+      }
+    ],
+    "quick": [
+      {
+        "question": "Why does wildcard 0.0.254.255 match an even third octet?",
+        "answer": "Its third-octet least significant bit is significant while the other third-octet bits are ignored.",
+        "explanation": "Wildcard bit zero requires equality; the base third octet2 has low bit zero.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-QC1"
+      },
+      {
+        "question": "Does the fixed standard ACL inspect TCP destination port 443?",
+        "answer": "No; it tests packet source only.",
+        "explanation": "Extended rules can include transport fields, but this standard list does not.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-QC2"
+      },
+      {
+        "question": "Does a TCP443 packet permit create a return session?",
+        "answer": "No; this ACL is stateless and return/forwarding prerequisites are separate.",
+        "explanation": "A single allowed header decision proves no complete application exchange.",
+        "type": "short-answer",
+        "difficulty": "Intermediate",
+        "testedConcept": "Topic-specific boundary",
+        "topicId": "s3-g5-t4",
+        "questionId": "s3-g5-t4-QC3"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cisco IOS XE17.x IP Access List Overview: ordered packet rules, source/extended scope and wildcard bits",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/sec-vpn/b-security-vpn/m_sec-access-list-ov-0.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE Gibraltar16.12.x: ACL inspection and interface attachment commands",
+        "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/xe-16-12/sec-data-acl-xe-16-12-book/sec-create-ip-apply.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS Security Command Reference: show ip access-lists and show ip interface",
+        "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/s1/sec-s1-cr-book/sec-cr-s4.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Cisco IOS XE17 protocol-independent command reference: show ip route",
+        "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/command/iri-cr-book/iri-cr-s1.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  }
+]

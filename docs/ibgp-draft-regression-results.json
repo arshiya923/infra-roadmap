@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "tests/content.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "{\n  \"result\": \"PASS\",\n  \"originalNodes\": 442,\n  \"groups\": 69,\n  \"lessons\": 110,\n  \"examQuestions\": 1100,\n  \"quickChecks\": 330,\n  \"labs\": 110,\n  \"sourceHash\": \"ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25\",\n  \"batches\": 33\n}",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ibgp-models.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS12 scenarios,256 role/session cases and32 resolution cases",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ibgp.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS3 iBGP groundwork browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ibgp-lesson.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS4 integrated iBGP browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ebgp-lesson.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS 4 integrated eBGP browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-bgp.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS 6 BGP foundation browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS original roadmap preserves all runtime node and group IDs\nPASS original dialog links to correct lesson and preserves learner storage\nPASS all seven lesson routes render complete components\nPASS stepper next/previous/play/pause/reset and diagram zoom\nPASS exam answers hidden until response; correct/wrong feedback and modes\nPASS quick check is separate from exam\nPASS clipboard copies exact command\nPASS anchors preserve lesson route\nPASS full-content search finds commands and glossary concepts\nPASS RAID known failure patterns and reset\nPASS RAID exhaustive four-drive failure masks\nPASS RAID blocks show copies, parity and missing members\nPASS pending and malformed routes are honest and recoverable\nPASS light/dark persistence\nPASS desktop/tablet/mobile layouts and screenshots\nPASS keyboard flow controls and reduced-motion behavior\nPASS file URL works without HTTP or external dependencies\nPASS no JavaScript errors or missing assets\nPASS 18 browser checks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/quality-audit.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "{\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"Prerequisite graph is acyclic and all prerequisites are authored\",\n    \"Per-lesson exams have ten distinct prompts; comparison/flow/port context present\",\n    \"All authored lessons have substantial structured content (word count used only as a floor, not proof of accuracy)\",\n    \"Initial reader loads only the selected lesson bundle\",\n    \"All 110 authored routes: unique DOM IDs, named form controls/buttons, one H1 and valid section anchors\",\n    \"All authored previous/next links preserve original adjacency, including pending lab nodes\",\n    \"Core body/muted/accent/warning color tokens meet 4.5:1 on paper/surface/soft backgrounds in both themes\",\n    \"Broad local search responds within the 2-second audit ceiling\",\n    \"No page exceptions while traversing the complete authored course\"\n  ],\n  \"localSearchMs\": 168,\n  \"bytes\": {\n    \"learn.html\": 5709,\n    \"content/catalog.js\": 813577,\n    \"scripts/learning.js\": 33012,\n    \"scripts/network-models.js\": 12295,\n    \"scripts/address-tools.js\": 16322,\n    \"scripts/protocol-models.js\": 8560,\n    \"scripts/service-models.js\": 9352,\n    \"scripts/switching-models.js\": 8062,\n    \"scripts/routing-models.js\": 4118,\n    \"scripts/diagnostic-models.js\": 10649,\n    \"scripts/packet-models.js\": 3905,\n    \"scripts/cisco-models.js\": 6882,\n    \"scripts/boot-models.js\": 7002,\n    \"scripts/storage-models.js\": 3781,\n    \"scripts/lifecycle-models.js\": 6609,\n    \"scripts/port-models.js\": 4448,\n    \"scripts/vlan-control-models.js\": 13183,\n    \"scripts/aggregation-models.js\": 4035,\n    \"scripts/stp-evidence.js\": 5642,\n    \"scripts/mst-models.js\": 5652,\n    \"scripts/edge-models.js\": 4426,\n    \"scripts/guard-models.js\": 3908,\n    \"scripts/root-guard-models.js\": 6098,\n    \"scripts/loop-guard-models.js\": 6478,\n    \"scripts/storm-models.js\": 8027,\n    \"scripts/security-port-models.js\": 8563,\n    \"scripts/span-models.js\": 7308,\n    \"scripts/rspan-models.js\": 7950,\n    \"scripts/erspan-models.js\": 9000,\n    \"scripts/enterprise-lab-models.js\": 11143,\n    \"scripts/static-route-models.js\": 8469,\n    \"scripts/floating-route-models.js\": 11018,\n    \"scripts/pbr-models.js\": 8415,\n    \"scripts/ospf-models.js\": 9819,\n    \"scripts/ospf-area-models.js\": 11114,\n    \"scripts/ospf-dr-bdr-models.js\": 11763,\n    \"styles/ospf-dr-bdr.css\": 1331,\n    \"scripts/ospf-lsa-models.js\": 13454,\n    \"content/ospf-lsa-evidence.js\": 11622,\n    \"styles/ospf-lsa.css\": 961,\n    \"content/ospf-troubleshooting-evidence.js\": 80614,\n    \"scripts/ospf-troubleshooting.js\": 8395,\n    \"styles/ospf-troubleshooting.css\": 1342,\n    \"scripts/eigrp-models.js\": 8887,\n    \"styles/eigrp.css\": 1283,\n    \"scripts/eigrp-metric-models.js\": 8590,\n    \"styles/eigrp-metrics.css\": 1233,\n    \"styles/eigrp-neighbors.css\": 958,\n    \"styles/eigrp-topology.css\": 313,\n    \"scripts/eigrp-topology.js\": 9551,\n    \"scripts/eigrp-neighbors.js\": 9802,\n    \"content/eigrp-neighbor-evidence.js\": 37676,\n    \"styles/learning.css\": 27128,\n    \"content/batch-01.js\": 71800,\n    \"content/batch-02.js\": 57137,\n    \"content/batch-03.js\": 128672,\n    \"content/batch-04.js\": 100550,\n    \"content/batch-05.js\": 231658,\n    \"content/batch-06.js\": 170199,\n    \"content/batch-07.js\": 325720,\n    \"content/batch-08.js\": 283392,\n    \"content/batch-09.js\": 585451\n  }\n}",
+      "error": null
+    }
+  ],
+  "sourceSha256": {
+    "content/batch-09.js": "107c7e69892ad512a61953a450cb995cf9a53a01395d7353b648a617f310b448",
+    "scripts/ibgp-models.js": "b9e90a12626f2c8248781135bdd4691cd3cdbf42e1f0f85a20a95cba4fd3bff7",
+    "styles/ibgp.css": "3a8ccdfe311b9d215d6342b35faeba0192ff122e9e7e7bd24794a43871f8d9d6",
+    "scripts/learning.js": "1cce4343382b099df832089682e54b4b4244675d8a4918251bdda1b19a349e31",
+    "learn.html": "7afd2cd5a31cf722efde6f2bfdeb80c9370ead1222cd2e3abe1c737fc733e4ae"
+  },
+  "scope": "Fifteen authored routing drafts;110 authored lessons total;95 accepted original nodes. iBGP fixed declared source/target/session/role/resolution/selection context only. No actual iBGP/RR, originator/cluster-loop history, full best-path/FSM, physical forwarding, application or convergence execution."
+}

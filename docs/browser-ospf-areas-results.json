@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "Original Areas route renders ten sections, ten exams and three quick checks with draft/accepted states separate",
+    "Eleven cases independently exercise forward/reverse/ABR costs, graph/area declarations, LAN advertisements, RIB and downstream gates",
+    "Three router views retain structural area scopes and explicitly distinguish usable paths from live LSA retention",
+    "Eight independent booleans, four bounded directed costs, invalid stale-output suppression and keyboard reset",
+    "Multi-area runner and private preparation downloads match source bytes",
+    "Four widths, both themes, no page overflow and keyboard-scrolling graph/database/candidate/lab regions",
+    "Four normal/zoomed mobile mechanism steps, timed play/pause/reset and reduced-motion static sequence",
+    "Quiz feedback and original previous OSPF/next DR-BDR draft adjacency",
+    "Direct-file reader and Areas explorer without page/resource errors"
+  ],
+  "errors": [],
+  "scope": "Fixed area topology template and supplied converged chain only. Actual FRR state/fault/probes are separate. No browser neighbor/flooding/aging/timing or actual vendor/hardware/application claim."
+}

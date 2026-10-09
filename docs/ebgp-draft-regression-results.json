@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "tests/content.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "{\n  \"result\": \"PASS\",\n  \"originalNodes\": 442,\n  \"groups\": 69,\n  \"lessons\": 109,\n  \"examQuestions\": 1090,\n  \"quickChecks\": 327,\n  \"labs\": 109,\n  \"sourceHash\": \"ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25\",\n  \"batches\": 33\n}",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/ebgp-policy-models.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS ten independent scenarios and 512 prerequisite masks",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ebgp-policy.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS 3 eBGP groundwork browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-ebgp-lesson.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS 4 integrated eBGP browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-bgp-lesson.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS 5 BGP lesson browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser-bgp.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS 6 BGP foundation browser categories",
+      "error": null
+    },
+    {
+      "command": [
+        "node",
+        "tests/browser.cjs"
+      ],
+      "exitCode": 0,
+      "result": "PASS",
+      "output": "PASS original roadmap preserves all runtime node and group IDs\nPASS original dialog links to correct lesson and preserves learner storage\nPASS all seven lesson routes render complete components\nPASS stepper next/previous/play/pause/reset and diagram zoom\nPASS exam answers hidden until response; correct/wrong feedback and modes\nPASS quick check is separate from exam\nPASS clipboard copies exact command\nPASS anchors preserve lesson route\nPASS full-content search finds commands and glossary concepts\nPASS RAID known failure patterns and reset\nPASS RAID exhaustive four-drive failure masks\nPASS RAID blocks show copies, parity and missing members\nPASS pending and malformed routes are honest and recoverable\nPASS light/dark persistence\nPASS desktop/tablet/mobile layouts and screenshots\nPASS keyboard flow controls and reduced-motion behavior\nPASS file URL works without HTTP or external dependencies\nPASS no JavaScript errors or missing assets\nPASS 18 browser checks",
+      "error": null
+    }
+  ],
+  "allRouteAudit": "docs/quality-audit-latest.json",
+  "sourceSha256": {
+    "content/batch-09.js": "28061fd089408253ddac51a7194c1339b0ee6bc8db978cc47c2e6aa16ecbef1d",
+    "scripts/ebgp-policy-models.js": "66b3cec55160fee385c6ab46a932a7f3bca9e0f2911719e4ba38fb0d61dfe9c4",
+    "scripts/learning.js": "de98c12ebcedd4788357d31060510eb24bc7f8b6b6ef89df91e3650548db6d25",
+    "learn.html": "c99fabe6702ad966268b198b0fcc2f42caf00ebb04b3197d17f29bc5b48ac1e7",
+    "labs/bgp-routing.sh": "58aafd593945bcb12a1e20441c666b26b73c2290331236c342cf02c7ef255a3a"
+  },
+  "scope": "Fourteen authored routing drafts, 109 total authored lessons and 95 accepted originals. New eBGP declaration worksheet has ten scenarios and512 masks. Actual BGP companion unchanged from the preceding 44-command passing regression; no import/export/AS-loop/multihop mutation or measured application/convergence added. Full batch acceptance pending."
+}

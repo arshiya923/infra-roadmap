@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    {
+      "id": "s3-g3-t3",
+      "presets": 17,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "invalidContext": true,
+      "scope": "Declared worksheet and guided read-only procedure; no device or packet execution."
+    },
+    {
+      "id": "s3-g4-t0",
+      "presets": 11,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "invalidContext": true,
+      "scope": "Declared worksheet and guided read-only procedure; no device or packet execution."
+    },
+    {
+      "id": "s3-g4-t1",
+      "presets": 19,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "invalidContext": true,
+      "scope": "Declared worksheet and guided read-only procedure; no device or packet execution."
+    },
+    {
+      "id": "s3-g4-t2",
+      "presets": 13,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "invalidContext": true,
+      "scope": "Declared worksheet and guided read-only procedure; no device or packet execution."
+    },
+    {
+      "id": "s3-g4-t3",
+      "presets": 19,
+      "questions": 13,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "file": true,
+      "invalidContext": true,
+      "scope": "Declared worksheet and guided read-only procedure; no device or packet execution."
+    }
+  ],
+  "errors": []
+}

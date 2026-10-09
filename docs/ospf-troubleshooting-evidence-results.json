@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "views": 10,
+  "checks": [
+    "Three current passing reports hash-verified; all copied records in ten views exactly match their separate source experiment",
+    "Forwarding-disabled and restored phases independently corroborate Full neighbors, selected routes, kernel next hops, namespace forwarding and raw failed/successful endpoint and connected controls",
+    "Endpoint return fault retains healthy router control/forwarding state; no endpoint remote/default route, exact kernel restoration and raw traffic/control probes independently checked",
+    "Passive-transit scope verified from actual passive flag, carrier, absent neighbors/routes and separate recovered Full paths",
+    "Separate Areas mismatch preserves backbone Full while branch scope differs; exact restored scope and opposite-prefix calculation verified",
+    "Separate healthy broadcast view corroborates expected DROther 2-Way, Full to DR/BDR, selected direct peer paths and actual ICMP headers",
+    "Ten manually reviewed intervention-based answer keys, strict schema/provenance guards, unknown-ID rejection and fresh result isolation"
+  ],
+  "scope": "Preserved actual records from three separate isolated experiments; exercise answers use known owned interventions and retained checks. No automatic live diagnosis, merged topology, additional MTU/authentication/FSM fault, application, loss or convergence claim. Troubleshooting is an integrated draft; full Batch 09 acceptance remains pending."
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "Real packets on isolated Linux veth links; no physical wire or external service test",
+  "checks": [
+    "DHCP address, DNS answer, ICMP and application baseline",
+    "Missing server return route breaks ICMP/application while local DNS works",
+    "Server-side fault capture proves SYN arrival despite missing return route",
+    "Restored return route recovers ICMP and application",
+    "Owned processes reaped and namespaces removed"
+  ],
+  "captured_frames": {
+    "ARP": 5,
+    "DHCP": 6,
+    "DNS": 4,
+    "TCP SYN": 6,
+    "ICMP": 10
+  },
+  "verification": [
+    "Inert help",
+    "DHCP DORA shares transaction ID and fixed client MAC",
+    "Offer/ACK address, gateway and DNS options",
+    "DNS answer",
+    "TCP handshake flags in one stream",
+    "ICMP request/reply",
+    "Gateway ARP",
+    "No truncated records",
+    "Fault SYN arrival at server with no SYNACK",
+    "Two normal runs and two failure cleanup paths",
+    "Host links/routes/forwarding/resolver and service process inventory unchanged"
+  ],
+  "versions": {
+    "dnsmasq": "Dnsmasq version 2.91  Copyright (c) 2000-2025 Simon Kelley",
+    "tshark": "TShark (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3)."
+  },
+  "date": "2026-10-08",
+  "result": "PASS",
+  "lessonCommands": {
+    "result": "PASS",
+    "count": 4,
+    "details": "Inert help, sudo --run default temporary output, sudo --run --output retained output, and TShark DHCP fields. Retained path replaced by a test-owned fresh temporary directory."
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "baseline/fault/exact-restore file lifecycle",
+    "exact bytes restored",
+    "owned directory removed",
+    "three-rack total",
+    "independent thermal arithmetic",
+    "overlap rejected",
+    "out of range rejected",
+    "rack survivor overload rejected",
+    "site survivor overload rejected",
+    "shared supply domain rejected",
+    "missing power map rejected",
+    "insufficient cooling rejected",
+    "missing airflow return rejected",
+    "missing cable rejected",
+    "reused endpoint rejected",
+    "wrong cable endpoint rejected",
+    "guest grant rejected",
+    "missing standby rejected",
+    "host independence False",
+    "host independence True",
+    "denied ('guest', '192.0.2.99', '192.0.2.21', 'read', 'https', 443)",
+    "denied ('administrator', '192.0.2.99', '192.0.2.21', 'read', 'https', 443)",
+    "denied ('administrator', '192.0.2.10', '192.0.2.99', 'read', 'https', 443)",
+    "denied ('administrator', '192.0.2.10', '192.0.2.21', 'power-off', 'https', 443)",
+    "denied ('administrator', '192.0.2.10', '192.0.2.21', 'read', 'http', 80)",
+    "invalid flow None rejected",
+    "invalid flow True rejected",
+    "invalid flow nan rejected",
+    "invalid flow inf rejected",
+    "invalid flow -1 rejected",
+    "invalid flow 0 rejected",
+    "interruption exact restore and cleanup baseline",
+    "interruption exact restore and cleanup fault",
+    "interruption exact restore and cleanup restored"
+  ],
+  "normal": {
+    "baseline": {
+      "result": "PASS",
+      "issues": [],
+      "totalKW": 16,
+      "meanRiseK": 6.633499170812605,
+      "meanExhaustC": 28.633499170812605,
+      "scope": "Offline design predicates only; no hardware, electrical, thermal, network or BMC measurement.",
+      "externalUnverified": [
+        "rack depth/rails/mass/floor and service clearance",
+        "qualified electrical phase/circuit/outlet and safety approval",
+        "supported maximum inlet/humidity and failure-state cooling",
+        "vendor optics/length/bend/support and controller/role/TLS session tests"
+      ]
+    },
+    "fault": {
+      "result": "FAIL",
+      "issues": [
+        "R1 feedB cannot carry full load"
+      ],
+      "totalKW": 16,
+      "meanRiseK": 6.633499170812605,
+      "meanExhaustC": 28.633499170812605,
+      "scope": "Offline design predicates only; no hardware, electrical, thermal, network or BMC measurement.",
+      "externalUnverified": [
+        "rack depth/rails/mass/floor and service clearance",
+        "qualified electrical phase/circuit/outlet and safety approval",
+        "supported maximum inlet/humidity and failure-state cooling",
+        "vendor optics/length/bend/support and controller/role/TLS session tests"
+      ]
+    },
+    "restored": {
+      "result": "PASS",
+      "issues": [],
+      "totalKW": 16,
+      "meanRiseK": 6.633499170812605,
+      "meanExhaustC": 28.633499170812605,
+      "scope": "Offline design predicates only; no hardware, electrical, thermal, network or BMC measurement.",
+      "externalUnverified": [
+        "rack depth/rails/mass/floor and service clearance",
+        "qualified electrical phase/circuit/outlet and safety approval",
+        "supported maximum inlet/humidity and failure-state cooling",
+        "vendor optics/length/bend/support and controller/role/TLS session tests"
+      ]
+    },
+    "exactRestoredBeforeCleanup": true,
+    "restoredSha256": "3aa6e1a145432181fad6472ffd24590408575f1c52c936cfdfa9ae65ba626c1f",
+    "ownedDirectoryRemoved": true,
+    "result": "PASS",
+    "events": [
+      "baseline",
+      "fault",
+      "restored"
+    ],
+    "baselineSha256": "3aa6e1a145432181fad6472ffd24590408575f1c52c936cfdfa9ae65ba626c1f",
+    "scope": "Actual temporary JSON file write/read/validation/fault/exact restore/cleanup; not actual equipment or failover."
+  },
+  "interruptions": [
+    {
+      "baseline": {
+        "result": "PASS",
+        "issues": [],
+        "totalKW": 16,
+        "meanRiseK": 6.633499170812605,
+        "meanExhaustC": 28.633499170812605,
+        "scope": "Offline design predicates only; no hardware, electrical, thermal, network or BMC measurement.",
+        "externalUnverified": [
+          "rack depth/rails/mass/floor and service clearance",
+          "qualified electrical phase/circuit/outlet and safety approval",
+          "supported maximum inlet/humidity and failure-state cooling",
+          "vendor optics/length/bend/support and controller/role/TLS session tests"
+        ]
+      },
+      "exactRestoredBeforeCleanup": true,
+      "restoredSha256": "3aa6e1a145432181fad6472ffd24590408575f1c52c936cfdfa9ae65ba626c1f",
+      "interruption": "injected interruption",
+      "ownedDirectoryRemoved": true,
+      "result": "PASS",
+      "events": [
+        "baseline"
+      ],
+      "baselineSha256": "3aa6e1a145432181fad6472ffd24590408575f1c52c936cfdfa9ae65ba626c1f",
+      "scope": "Actual temporary JSON file write/read/validation/fault/exact restore/cleanup; not actual equipment or failover."
+    },
+    {
+      "baseline": {
+        "result": "PASS",
+        "issues": [],
+        "totalKW": 16,
+        "meanRiseK": 6.633499170812605,
+        "meanExhaustC": 28.633499170812605,
+        "scope": "Offline design predicates only; no hardware, electrical, thermal, network or BMC measurement.",
+        "externalUnverified": [
+          "rack depth/rails/mass/floor and service clearance",
+          "qualified electrical phase/circuit/outlet and safety approval",
+          "supported maximum inlet/humidity and failure-state cooling",
+          "vendor optics/length/bend/support and controller/role/TLS session tests"
+        ]
+      },
+      "fault": {
+        "result": "FAIL",
+        "issues": [
+          "R1 feedB cannot carry full load"
+        ],
+        "totalKW": 16,
+        "meanRiseK": 6.633499170812605,
+        "meanExhaustC": 28.633499170812605,
+        "scope": "Offline design predicates only; no hardware, electrical, thermal, network or BMC measurement.",
+        "externalUnverified": [
+          "rack depth/rails/mass/floor and service clearance",
+          "qualified electrical phase/circuit/outlet and safety approval",
+          "supported maximum inlet/humidity and failure-state cooling",
+          "vendor optics/length/bend/support and controller/role/TLS session tests"
+        ]
+      },
+      "exactRestoredBeforeCleanup": true,
+      "restoredSha256": "3aa6e1a145432181fad6472ffd24590408575f1c52c936cfdfa9ae65ba626c1f",
+      "interruption": "injected interruption",
+      "ownedDirectoryRemoved": true,
+      "result": "PASS",
+      "events": [
+        "baseline",
+        "fault"
+      ],
+      "baselineSha256": "3aa6e1a145432181fad6472ffd24590408575f1c52c936cfdfa9ae65ba626c1f",
+      "scope": "Actual temporary JSON file write/read/validation/fault/exact restore/cleanup; not actual equipment or failover."
+    },
+    {
+      "baseline": {
+        "result": "PASS",
+        "issues": [],
+        "totalKW": 16,
+        "meanRiseK": 6.633499170812605,
+        "meanExhaustC": 28.633499170812605,
+        "scope": "Offline design predicates only; no hardware, electrical, thermal, network or BMC measurement.",
+        "externalUnverified": [
+          "rack depth/rails/mass/floor and service clearance",
+          "qualified electrical phase/circuit/outlet and safety approval",
+          "supported maximum inlet/humidity and failure-state cooling",
+          "vendor optics/length/bend/support and controller/role/TLS session tests"
+        ]
+      },
+      "fault": {
+        "result": "FAIL",
+        "issues": [
+          "R1 feedB cannot carry full load"
+        ],
+        "totalKW": 16,
+        "meanRiseK": 6.633499170812605,
+        "meanExhaustC": 28.633499170812605,
+        "scope": "Offline design predicates only; no hardware, electrical, thermal, network or BMC measurement.",
+        "externalUnverified": [
+          "rack depth/rails/mass/floor and service clearance",
+          "qualified electrical phase/circuit/outlet and safety approval",
+          "supported maximum inlet/humidity and failure-state cooling",
+          "vendor optics/length/bend/support and controller/role/TLS session tests"
+        ]
+      },
+      "restored": {
+        "result": "PASS",
+        "issues": [],
+        "totalKW": 16,
+        "meanRiseK": 6.633499170812605,
+        "meanExhaustC": 28.633499170812605,
+        "scope": "Offline design predicates only; no hardware, electrical, thermal, network or BMC measurement.",
+        "externalUnverified": [
+          "rack depth/rails/mass/floor and service clearance",
+          "qualified electrical phase/circuit/outlet and safety approval",
+          "supported maximum inlet/humidity and failure-state cooling",
+          "vendor optics/length/bend/support and controller/role/TLS session tests"
+        ]
+      },
+      "exactRestoredBeforeCleanup": true,
+      "restoredSha256": "3aa6e1a145432181fad6472ffd24590408575f1c52c936cfdfa9ae65ba626c1f",
+      "interruption": "injected interruption",
+      "ownedDirectoryRemoved": true,
+      "result": "PASS",
+      "events": [
+        "baseline",
+        "fault",
+        "restored"
+      ],
+      "baselineSha256": "3aa6e1a145432181fad6472ffd24590408575f1c52c936cfdfa9ae65ba626c1f",
+      "scope": "Actual temporary JSON file write/read/validation/fault/exact restore/cleanup; not actual equipment or failover."
+    }
+  ],
+  "scope": "Actual owned offline file rehearsal; declared policy/calculation tests, not live equipment."
+}

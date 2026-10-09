@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-09",
+  "batch": "33",
+  "status": "accepted",
+  "scope": "Exact-pair authorization and equal-domain capacity are offline teaching models. Cost rates are fictional; the local JSON plan is actually changed and restored. No provider API, Terraform, credentials, live pricing, deployment or chargeable cloud resource is used.",
+  "primaryReview": "Reviewed lesson text and all 39 questions for model/provider boundaries, responsibility, access, data recovery and cost semantics. Inspected desktop evidence desk. Fresh checks cover denial precedence, unrelated-action denial, domain-loss/equality boundaries, invalid inputs, exact 123.50/233.00 fictional totals and byte-exact owned-file restoration with cleanup.",
+  "sources": [
+    "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/availability-zones.html",
+    "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+    "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+    "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/plan-for-disaster-recovery-dr.html"
+  ],
+  "hashes": {
+    "content/batch-33.js": "bbe6be78923cdf3327c2621315c6583738bebf46d7ea29962f792e32c89f451e",
+    "docs/browser-expansion-33.json": "7b8979296d50d3ccaa8ab3fb4ad338e892fc7046e5f5eeef8aaf6e99f999b0a0",
+    "docs/expansion-lab-33.json": "db8e1ddea4b10bac3e24e604959a7f186ecb9f46b1824dcc68860a949e2fa688",
+    "scripts/expansion.js": "a1eaed8af5dd10c212f31c1d4c9182f01ed8ae73c7f94ad7c265547f2201b045"
+  },
+  "finalReverification": "docs/expansion-final-verification.json"
+}

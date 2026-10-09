@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    {
+      "topicId": "s3-g6-t0",
+      "interactive": "vrf",
+      "result": "PASS",
+      "presets": 18,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g6-t1",
+      "interactive": "vrf-lite",
+      "result": "PASS",
+      "presets": 20,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    },
+    {
+      "topicId": "s3-g7-t2",
+      "interactive": "glbp",
+      "result": "PASS",
+      "presets": 12,
+      "exams": 10,
+      "quick": 3,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "screens": 7,
+      "file": true
+    }
+  ],
+  "errors": [],
+  "scope": "Reader/UI contract. Protocol truth, guided target commands and primary manual rendering review are separate."
+}

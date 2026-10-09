@@ -1,0 +1,225 @@
+{
+  "result": "PASS",
+  "modelChecks": 763,
+  "actualLocalRuns": 5,
+  "workbookDeliverables": 15,
+  "records": [
+    {
+      "scope": "Actual owned local SQLite backup, logical corruption, restore and cleanup; no enterprise failover or RTO/RPO measurement",
+      "events": [
+        "baseline",
+        "backup",
+        "fault",
+        "restored"
+      ],
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-capstone-zpvlbwsy",
+      "baselineRows": [
+        [
+          1,
+          "switch",
+          2
+        ],
+        [
+          2,
+          "optic",
+          8
+        ]
+      ],
+      "baselineDigest": "7b2e221aa25e66655031814be70bd8258ed36f47c4f37ff7ea3b18f41f354404",
+      "backupDigest": "7b2e221aa25e66655031814be70bd8258ed36f47c4f37ff7ea3b18f41f354404",
+      "acknowledgedRows": [
+        [
+          1,
+          "switch",
+          2
+        ],
+        [
+          2,
+          "optic",
+          8
+        ],
+        [
+          3,
+          "cable",
+          12
+        ]
+      ],
+      "faultRows": [],
+      "restoredRows": [
+        [
+          1,
+          "switch",
+          2
+        ],
+        [
+          2,
+          "optic",
+          8
+        ]
+      ],
+      "restoredDigest": "7b2e221aa25e66655031814be70bd8258ed36f47c4f37ff7ea3b18f41f354404",
+      "integrity": "ok",
+      "localRestoreAndCheckSeconds": 0.0067323999828659,
+      "lostAcknowledgedIds": [
+        3
+      ],
+      "result": "PASS",
+      "cleanupVerified": true
+    },
+    {
+      "scope": "Actual owned local SQLite backup, logical corruption, restore and cleanup; no enterprise failover or RTO/RPO measurement",
+      "events": [
+        "baseline"
+      ],
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-capstone-kvrhzdgp",
+      "baselineRows": [
+        [
+          1,
+          "switch",
+          2
+        ],
+        [
+          2,
+          "optic",
+          8
+        ]
+      ],
+      "baselineDigest": "7b2e221aa25e66655031814be70bd8258ed36f47c4f37ff7ea3b18f41f354404",
+      "result": "INTERRUPTED",
+      "error": "Injected interruption: baseline",
+      "cleanupVerified": true
+    },
+    {
+      "scope": "Actual owned local SQLite backup, logical corruption, restore and cleanup; no enterprise failover or RTO/RPO measurement",
+      "events": [
+        "baseline",
+        "backup"
+      ],
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-capstone-nml_ch9d",
+      "baselineRows": [
+        [
+          1,
+          "switch",
+          2
+        ],
+        [
+          2,
+          "optic",
+          8
+        ]
+      ],
+      "baselineDigest": "7b2e221aa25e66655031814be70bd8258ed36f47c4f37ff7ea3b18f41f354404",
+      "backupDigest": "7b2e221aa25e66655031814be70bd8258ed36f47c4f37ff7ea3b18f41f354404",
+      "result": "INTERRUPTED",
+      "error": "Injected interruption: backup",
+      "cleanupVerified": true
+    },
+    {
+      "scope": "Actual owned local SQLite backup, logical corruption, restore and cleanup; no enterprise failover or RTO/RPO measurement",
+      "events": [
+        "baseline",
+        "backup",
+        "fault"
+      ],
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-capstone-p3aao285",
+      "baselineRows": [
+        [
+          1,
+          "switch",
+          2
+        ],
+        [
+          2,
+          "optic",
+          8
+        ]
+      ],
+      "baselineDigest": "7b2e221aa25e66655031814be70bd8258ed36f47c4f37ff7ea3b18f41f354404",
+      "backupDigest": "7b2e221aa25e66655031814be70bd8258ed36f47c4f37ff7ea3b18f41f354404",
+      "acknowledgedRows": [
+        [
+          1,
+          "switch",
+          2
+        ],
+        [
+          2,
+          "optic",
+          8
+        ],
+        [
+          3,
+          "cable",
+          12
+        ]
+      ],
+      "faultRows": [],
+      "result": "INTERRUPTED",
+      "error": "Injected interruption: fault",
+      "cleanupVerified": true
+    },
+    {
+      "scope": "Actual owned local SQLite backup, logical corruption, restore and cleanup; no enterprise failover or RTO/RPO measurement",
+      "events": [
+        "baseline",
+        "backup",
+        "fault",
+        "restored"
+      ],
+      "ownedDirectory": "C:\\Users\\Arshiya\\AppData\\Local\\Temp\\infra-capstone-t2f8ul52",
+      "baselineRows": [
+        [
+          1,
+          "switch",
+          2
+        ],
+        [
+          2,
+          "optic",
+          8
+        ]
+      ],
+      "baselineDigest": "7b2e221aa25e66655031814be70bd8258ed36f47c4f37ff7ea3b18f41f354404",
+      "backupDigest": "7b2e221aa25e66655031814be70bd8258ed36f47c4f37ff7ea3b18f41f354404",
+      "acknowledgedRows": [
+        [
+          1,
+          "switch",
+          2
+        ],
+        [
+          2,
+          "optic",
+          8
+        ],
+        [
+          3,
+          "cable",
+          12
+        ]
+      ],
+      "faultRows": [],
+      "restoredRows": [
+        [
+          1,
+          "switch",
+          2
+        ],
+        [
+          2,
+          "optic",
+          8
+        ]
+      ],
+      "restoredDigest": "7b2e221aa25e66655031814be70bd8258ed36f47c4f37ff7ea3b18f41f354404",
+      "integrity": "ok",
+      "localRestoreAndCheckSeconds": 0.00603449999471195,
+      "lostAcknowledgedIds": [
+        3
+      ],
+      "result": "INTERRUPTED",
+      "error": "Injected interruption: restored",
+      "cleanupVerified": true
+    }
+  ]
+}

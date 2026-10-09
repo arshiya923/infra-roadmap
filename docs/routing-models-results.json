@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-04",
+  "result": "PASS",
+  "reference": "Python standard-library ipaddress, independent prefix matching",
+  "vectors": 1546,
+  "invalidInputs": 15,
+  "checks": [
+    "All addresses in three sample /24s plus external boundaries, default on/off",
+    "Prefix length precedes metric; equal-prefix lower metric wins",
+    "Blackhole is terminal; connected action distinct",
+    "Invalid inputs rejected; results cannot mutate subsequent lookup"
+  ],
+  "limitations": "Fixed eligible IPv4 table; no policy routing, route installation, ECMP or neighbor resolution"
+}

@@ -1,0 +1,5 @@
+{
+  "result": "PASS",
+  "checks": 2476,
+  "scope": "Independent gate truth table, full policy relation, survivor enumeration, timing boundaries and invalid input rejection"
+}

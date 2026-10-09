@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "views": 8,
+  "combinations": 32,
+  "checks": [
+    "Eight views and separate seven-field capture retain exact passing source provenance",
+    "32 independent observer/checkpoint/filter combinations match exact peer rows, selected routes/kernel paths, phase probes and overlapping headers",
+    "Known link-down and combined recovery remain separate; intermediate phase cannot borrow absent endpoint probes",
+    "UPDATE/acknowledgment overlap and missing INIT flags/timestamps/completeness are explicit",
+    "Fresh copies, bounded retained shape, fixed identities/filters, malformed rows and kind guards preserve safe separate use"
+  ],
+  "scope": "Preserved actual single-transit IPv4 observations. Shared startup capture is separate from later phases; no live diagnosis, complete INIT/timer/retry/DUAL/Cisco/application or convergence execution."
+}

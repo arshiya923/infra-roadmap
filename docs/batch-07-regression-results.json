@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    {
+      "suite": "tests/content.cjs",
+      "scope": "Original IDs/hash, catalog and lesson/question contracts",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "{\n  \"result\": \"PASS\",\n  \"originalNodes\": 442,\n  \"groups\": 69,\n  \"lessons\": 82,\n  \"examQuestions\": 820,\n  \"quickChecks\": 246,\n  \"labs\": 82,\n  \"sourceHash\": \"ac6c8cec9f3fb2b25e146cf17981d8b5498413a18a4f1035dbf5a200941f8a25\",\n  \"batches\": 33\n}"
+    },
+    {
+      "suite": "tests/cisco-models.cjs",
+      "scope": "Bounded CLI/configuration transitions",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "{\n  date: '2026-10-09',\n  result: 'PASS',\n  commandSteps: 28,\n  checks: [\n    'EXEC exit reports session semantics without downgrading mode or mutating configuration; disable changes level',\n    'Mode restrictions and prompt changes',\n    'Changes affect running only until save',\n    'Configuration inspection requires stated mode; bounded do support',\n    'Startup-to-running merge preserves commands absent from saved representation',\n    'Explicit removal and save direction',\n    'Save and reboot copy state without aliasing',\n    'Unsaved change lost on model reboot',\n    'Exact subset rejects abbreviations/reload/invalid hostname',\n    'Reset snapshots independent'\n  ],\n  limits: 'Tests cover authored teaching model only; no Cisco OS/parser, AAA, reboot or forwarding executed.'\n}"
+    },
+    {
+      "suite": "tests/boot-models.cjs",
+      "scope": "Selected register fields and boot cases",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "{\n  date: '2026-10-09',\n  result: 'PASS',\n  registerWords: 65536,\n  invalidCases: 11,\n  scenarioCases: 4,\n  checks: [\n    'Independent arithmetic field checks for every 16-bit value',\n    'Known 0x2102 versus 0x2142 differs only in selected bit 6',\n    'Strict hex input rejects malformed/out-of-range values',\n    'Other bits remain explicit and unmodeled',\n    'Scenario copies are independent; invalid scenario keys rejected'\n  ],\n  limits: 'Arithmetic selected-field decoder and authored cases only; no full register semantics, console speed, device boot or firmware execution.'\n}"
+    },
+    {
+      "suite": "tests/storage-models.cjs",
+      "scope": "Protected dry-run capacity planner",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS storage planner: capacity boundary, protected dependencies, unknown requirements, duplicate selections and isolated results"
+    },
+    {
+      "suite": "tests/lifecycle-models.cjs",
+      "scope": "Install dependencies and recovery cases",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS 64 independent dependency states, five recovery cases and invalid-state boundaries"
+    },
+    {
+      "suite": "tests/port-models.cjs",
+      "scope": "Ordinary access/trunk classification",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS 4608 ordinary-frame path cases and native mismatch boundaries"
+    },
+    {
+      "suite": "tests/vlan-control-models.cjs",
+      "scope": "DTP role table and VTP/voice/aggregation evidence",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS 72 independently tabulated DTP states, fifteen isolated evidence cases and invalid inputs"
+    },
+    {
+      "suite": "tests/aggregation-models.cjs",
+      "scope": "LACP/PAgP selected prerequisites",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS 128 independent mode/prerequisite states, isolated output and invalid inputs"
+    },
+    {
+      "suite": "tests/image-audit.py",
+      "scope": "Local byte comparison, CLI errors and cleanup",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "{\r\n  \"result\": \"PASS\",\r\n  \"platform\": \"win32\",\r\n  \"checks\": [\r\n    \"Streaming comparison is read-only, preserves bytes/mtime and accepts uppercase expected digest\",\r\n    \"Same-size single-byte change fails independently supplied digest comparison\",\r\n    \"Missing arguments, malformed digest, missing file and directory are rejected\",\r\n    \"Default invocation is inert help\",\r\n    \"Temporary demo cleanup verified on normal and injected failure paths\"\r\n  ],\r\n  \"scope\": \"Synthetic bytes only; no Cisco image, vendor signature, compatibility or boot execution\"\r\n}"
+    },
+    {
+      "suite": "tests/vlan-lab.cjs",
+      "scope": "Actual isolated Linux membership/fault/recovery and cleanup",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "{\n  \"date\": \"2026-10-09\",\n  \"result\": \"PASS\",\n  \"environment\": \"Ubuntu-24.04 / WSL2, root namespace capability\",\n  \"checks\": [\n    \"Default invocation is inert help\",\n    \"VLAN 10 peers communicate both ways across tagged trunk; VLAN 20 isolated\",\n    \"Missing trunk VLAN breaks VLAN 10 while link remains UP\",\n    \"Restored trunk VLAN recovers peers and retains cross-VLAN isolation\",\n    \"Normal cleanup leaves no owned namespaces\",\n    \"Host link inventory and IPv4/IPv6 routes unchanged\",\n    \"In-memory early-failure injection cleans all created namespaces\"\n  ],\n  \"output\": [\n    \"PASS baseline: VLAN 10 peers communicate both ways across tagged trunk.\",\n    \"PASS isolation: same-prefix VLAN 20 endpoint cannot exchange with VLAN 10.\",\n    \"PASS injected fault: deleting trunk VLAN 10 breaks that path while the link remains UP.\",\n    \"PASS recovery: VLAN 10 restored and VLAN 20 isolation retained.\",\n    \"PASS cleanup: all owned namespaces removed.\"\n  ],\n  \"limitations\": \"Two virtual bridges/shared kernel only; no physical switch, cable, routing, STP redundancy, DNS or throughput test. Raw host network inventory not retained.\"\n}"
+    },
+    {
+      "suite": "tests/browser-batch-07.cjs",
+      "scope": "CLI/register/boot UI",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS four draft lessons retain contracts, honest progress and four viewport widths\nPASS identity is synthetic and wrong-mode commands preserve state\nPASS keyboard mode navigation changes running only and preserves context\nPASS merge preserves extra description and explicit removal works\nPASS unsaved changes are lost and saved changes survive model reboot\nPASS input remains text and reset removes active and saved exercise state\nPASS help lists bounded subset and unsupported reload is rejected\nPASS CLI-to-boot navigation follows original configuration-register node\nPASS authored quiz feedback matches the save-direction question\nPASS mobile light/dark screenshots remain readable with no overflow\nPASS direct file model works without an external device or service\nPASS three boot lessons have full contracts and no overflow at four widths\nPASS register selected fields, strict input, platform boundary and keyboard reset\nPASS boot cases distinguish artifacts, policy, configuration and service checkpoints\nPASS boot direct-file operation and original adjacent storage navigation\nPASS boot mobile screenshots and separate quiz feedback\nPASS no page or missing-resource errors"
+    },
+    {
+      "suite": "tests/browser-flow-visibility.cjs",
+      "scope": "Mobile active flow step visibility in both zoom states",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS 22 mobile flow routes, both zoom states and directions"
+    },
+    {
+      "suite": "tests/browser-batch-07-acceptance.cjs",
+      "scope": "Every Batch 07 animation, static alternative and connection target",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS all 21 animation/static/connection routes"
+    },
+    {
+      "suite": "tests/browser-storage.cjs",
+      "scope": "Storage/image UI and download",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS three storage/image lessons retain full contracts and honest editorial state\nPASS keyboard dry-run controls calculate fit, block dependencies and preserve unknown requirements\nPASS downloaded lab matches the checked project artifact bytes\nPASS image question feedback remains separate from hypothetical capacity\nPASS direct-file storage exercise works without network access\nPASS mobile light/dark planner screenshots have no horizontal overflow"
+    },
+    {
+      "suite": "tests/browser-lifecycle.cjs",
+      "scope": "Install/recovery UI",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS install/recovery lessons have full contracts and four responsive widths\nPASS dependency UI separates selected reference, packages, intent and remaining boot limits\nPASS five recovery cases reveal scoped evidence and hide previous answers on change/reset\nPASS new questions and original navigation reach the next authored VLAN topic\nPASS both lifecycle exercises work directly from disk\nPASS mobile lifecycle screenshots preserve readable controls and evidence"
+    },
+    {
+      "suite": "tests/browser-ports.cjs",
+      "scope": "VLAN/access/trunk UI and download",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS three VLAN/access/trunk lessons retain contracts and four responsive widths\nPASS ordinary access classification and each trunk membership checkpoint remain distinct\nPASS native mismatch exposes domain reclassification even when a different endpoint is eligible\nPASS download matches checked shell bytes and preserves LF line endings\nPASS question feedback and original adjacent navigation reach authored DTP\nPASS direct-file and mobile path exercise work with native controls"
+    },
+    {
+      "suite": "tests/browser-vlan-control.cjs",
+      "scope": "DTP/VTP/voice UI",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS DTP/VTP/voice lessons retain contracts, honest progress and four widths\nPASS DTP controls distinguish passive pairing, suppression, asymmetric and fixed roles\nPASS five VTP cases keep revision, domain, transparent, authority and data-path conclusions scoped\nPASS five voice cases distinguish data/voice framing, unavailable path, learned intent and excluded priority semantics\nPASS voice question feedback and original adjacency reach authored EtherChannel\nPASS all three exercises work directly from disk\nPASS mobile control screenshots have no page overflow"
+    },
+    {
+      "suite": "tests/browser-channel.cjs",
+      "scope": "EtherChannel evidence UI",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS EtherChannel lesson has complete contracts and independent accepted progress at four widths\nPASS five evidence cases support keyboard selection, bounded disclosure and reset\nPASS question feedback and original adjacency reach authored LACP\nPASS direct-file exercise does not depend on HTTP\nPASS mobile evidence screenshot stays within viewport"
+    },
+    {
+      "suite": "tests/browser-aggregation.cjs",
+      "scope": "LACP/PAgP prerequisite UI",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS two protocol lessons preserve complete contracts, independent progress and four widths\nPASS LACP pairing handles initiation, incompatible peer protocol, each prerequisite and keyboard reset\nPASS PAgP responsive-peer scope distinguishes auto pairing and LACP mismatch\nPASS protocol quizzes and original adjacency retain pending STP\nPASS both pairing exercises work directly from disk\nPASS mobile protocol screenshots stay within viewport in both themes"
+    },
+    {
+      "suite": "tests/browser.cjs",
+      "scope": "General reader regressions",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "PASS original roadmap preserves all runtime node and group IDs\nPASS original dialog links to correct lesson and preserves learner storage\nPASS all seven lesson routes render complete components\nPASS stepper next/previous/play/pause/reset and diagram zoom\nPASS exam answers hidden until response; correct/wrong feedback and modes\nPASS quick check is separate from exam\nPASS clipboard copies exact command\nPASS anchors preserve lesson route\nPASS full-content search finds commands and glossary concepts\nPASS RAID known failure patterns and reset\nPASS RAID exhaustive four-drive failure masks\nPASS RAID blocks show copies, parity and missing members\nPASS pending and malformed routes are honest and recoverable\nPASS light/dark persistence\nPASS desktop/tablet/mobile layouts and screenshots\nPASS keyboard flow controls and reduced-motion behavior\nPASS file URL works without HTTP or external dependencies\nPASS no JavaScript errors or missing assets\nPASS 18 browser checks"
+    },
+    {
+      "suite": "tests/quality-audit.cjs",
+      "scope": "All authored routes and prerequisite/DOM/search audit",
+      "result": "PASS",
+      "exitCode": 0,
+      "error": null,
+      "output": "{\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"Prerequisite graph is acyclic and all prerequisites are authored\",\n    \"Per-lesson exams have ten distinct prompts; comparison/flow/port context present\",\n    \"All authored lessons have substantial structured content (word count used only as a floor, not proof of accuracy)\",\n    \"Initial reader loads only the selected lesson bundle\",\n    \"All 82 authored routes: unique DOM IDs, named form controls/buttons, one H1 and valid section anchors\",\n    \"All authored previous/next links preserve original adjacency, including pending lab nodes\",\n    \"Core body/muted/accent/warning color tokens meet 4.5:1 on paper/surface/soft backgrounds in both themes\",\n    \"Broad local search responds within the 2-second audit ceiling\",\n    \"No page exceptions while traversing the complete authored course\"\n  ],\n  \"localSearchMs\": 172,\n  \"bytes\": {\n    \"learn.html\": 3279,\n    \"content/catalog.js\": 552696,\n    \"scripts/learning.js\": 30542,\n    \"scripts/network-models.js\": 12295,\n    \"scripts/address-tools.js\": 16322,\n    \"scripts/protocol-models.js\": 8560,\n    \"scripts/service-models.js\": 9352,\n    \"scripts/switching-models.js\": 8062,\n    \"scripts/routing-models.js\": 4118,\n    \"scripts/diagnostic-models.js\": 10649,\n    \"scripts/packet-models.js\": 3905,\n    \"scripts/cisco-models.js\": 6882,\n    \"scripts/boot-models.js\": 7002,\n    \"scripts/storage-models.js\": 3781,\n    \"scripts/lifecycle-models.js\": 6609,\n    \"scripts/port-models.js\": 4448,\n    \"scripts/vlan-control-models.js\": 13183,\n    \"scripts/aggregation-models.js\": 4035,\n    \"styles/learning.css\": 21825,\n    \"content/batch-01.js\": 71800,\n    \"content/batch-02.js\": 57137,\n    \"content/batch-03.js\": 128672,\n    \"content/batch-04.js\": 100550,\n    \"content/batch-05.js\": 231658,\n    \"content/batch-06.js\": 170199,\n    \"content/batch-07.js\": 325720\n  }\n}"
+    }
+  ],
+  "limits": "Existing suite scope only. No actual Cisco software/parser, boot/install/recovery, DTP/VTP, physical phone, aggregation, vendor hash, throughput or convergence. This record does not accept a batch or replace technical/editorial review."
+}

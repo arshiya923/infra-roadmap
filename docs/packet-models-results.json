@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-08",
+  "result": "PASS",
+  "checks": [
+    "All ten displayed protocols/lengths match independent binary PCAP reads",
+    "Five exact category frame sets",
+    "Unknown filter rejected",
+    "Returned model data cannot alter later selections"
+  ],
+  "limitations": "Teaching categories only; not a general PCAP parser or arbitrary display-filter engine"
+}

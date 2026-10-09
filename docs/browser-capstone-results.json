@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "checks": [
+    "four keyboard cases; budget failures; invalid input clears stale result; reset",
+    "all 13 assessment submissions and answer explanations",
+    "flow keyboard/reset/reduced motion; exact copy; separate learner/editorial progress",
+    "both downloads byte-equivalent",
+    "eight viewport/theme combinations without document overflow",
+    "direct-file lesson and model load"
+  ],
+  "errors": []
+}

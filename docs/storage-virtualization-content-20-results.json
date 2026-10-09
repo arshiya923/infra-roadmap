@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "batch": "20",
+  "topics": 19,
+  "questions": 247,
+  "commandScope": "Actual read-only offline inspector for every topic; no vendor commands executed.",
+  "sha256": "b4d96143740f7956487d3a390ca2e92e51a0ffc326b7abbadacdc39d2e3dc097"
+}

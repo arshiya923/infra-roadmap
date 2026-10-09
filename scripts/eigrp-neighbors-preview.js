@@ -1,0 +1,1 @@
+document.getElementById('en-preview').innerHTML=window.EigrpNeighbors.html('eigrp-neighbors');window.EigrpNeighbors.mount('eigrp-neighbors');document.getElementById('en-theme').addEventListener('click',()=>{document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark';});

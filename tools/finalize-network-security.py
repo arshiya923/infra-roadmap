@@ -1,0 +1,46 @@
+"""Publish documentation after both batches are reviewed and accepted."""
+from pathlib import Path
+import json,hashlib,subprocess
+R=Path(__file__).resolve().parents[1]
+read=lambda p:json.loads((R/p).read_text(encoding='utf-8'))
+m=read('content/enrichment.json');reg=read('docs/network-security-regression-results.json');assert reg['result']=='PASS' and len(reg['results'])==9 and all(x['exit']==0 for x in reg['results'])
+assert all(next(b for b in m['batches'] if b['id']==id)['status']=='completed' for id in ['13','14'])
+assert len(m['completedNodeIds'])==198 and m['currentBatch']=='15' and m['nextNode']=='s6-g0-t0'
+browser=read('docs/browser-network-security-results.json');models=read('docs/network-security-model-results.json');visual=read('docs/network-security-visual-review.json');fixture=read('docs/network-security-fixture-results.json')
+assert browser['result']=='PASS' and browser['topics']==33 and visual['topics']==33 and visual['captures']==99
+assert models['result']=='PASS' and fixture['result']=='PASS' and len(fixture['normal']['checks'])==13 and len(fixture['interruptions'])==3
+audit=read('docs/quality-audit-batch-14.json');assert audit['result']=='PASS' and audit['lessons']==198
+validation=f'''# Network Security acceptance — 2026-10-09
+
+Batches 13 and 14 complete all 33 original Network Security units, including the integrated lab. They add 330 original exam questions and 99 quick checks. The course now has 198 accepted lessons, 1,980 exams and 594 quick checks; 244 original units remain. The next editorial step is Batch 15, Data Center Foundations, `s6-g0-t0`.
+
+The primary assistant personally authored/reviewed the mechanisms, sources, lab boundaries and all 429 assessments. Nine inspected contact sheets contain 99 actual desktop worksheet, mechanism-flow and 320-pixel dark-layout views. Thirty-three additional table-end captures and browser assertions verify horizontal start/end access. The browser run checks all 33 routes, four supplied cases per route, all question feedback paths, incorrect multiple-choice feedback, keyboard/reset, invalid/stale results, clipboard copy, exact workbook download, HTTP/direct-file loading, search, reduced-motion behavior, both themes at 1440/768/390/320 pixels and learner/editorial independence.
+
+All nine fresh regression commands pass. The model suite contains {models['checks']:,} independent checks, including every octet/noncontiguous wildcard pair and bounded cross-products for tuple, binding/mode, role, authentication/fallback, count, rate-envelope, inspection and resource-policy decisions. The seven-zone suite separately compares all supplied source/destination/transport/service/direction/state/owned-rule combinations against an independent requirement table. The broader audit visits all 198 authored routes, verifies authored/acyclic prerequisites, named controls, unique IDs, anchors, original adjacency, theme contrast tokens, lazy batch loading and local search.
+
+The integrated lab preserves Internet, DMZ, Users, Servers, Management, Guest and Backup. Explicit documented initiation rules default to deny. A response declaration can admit only the matching reverse of an allowed forward rule; new reverse initiation is evaluated separately. DNS, time and logging dependencies are deliberately outside this small classroom matrix and must be added as explicit scoped requirements for any real design.
+
+Two exact read-only WSL commands were executed (`ss -lnt` and the workbook hash). Vendor observation/configuration references remain guided/unexecuted. The separately owned actual loopback HTTP application fixture passes 13 request-level checks for allowed use, prohibited management, missing/wrong identity, unknown/encoded/query resource rejection, one owned policy fault, exact restore and independent recovery. Three injected interruptions verify restoration in memory, stopped thread and closed owned listener. It uses disposable credentials held only in memory, redacted events and harmless content; it changes no host firewall, routes, existing accounts or services.
+
+The fixture is plain HTTP on 127.0.0.1 and is not a production authentication system or encrypted transport example. It does not deploy network zones, IPsec/IKE, EAP/RADIUS, AAA, WAF, ASA, FTD or ISE. Browser worksheets calculate or trace supplied inputs: they do not query live devices, negotiate protocols, create actual state tables, scan attack content, predict CoPP drops/CPU load or certify hardware throughput. Target parser support, physical switching, VPN negotiation and vendor integration remain external guided exercises. Automated accessibility checks and visual inspection do not constitute full WCAG certification. Those limits are part of acceptance.
+
+Reproduce with the existing localhost preview at 127.0.0.1:8765:
+
+```powershell
+python tools/regression-network-security.py
+```
+
+The runner uses the installed Node/Playwright runtime and headless Microsoft Edge, WSL Ubuntu-24.04 for read-only observations, and Python's standard library for owned loopback fixtures. It installs no dependencies. The optional downloadable fixture defaults to help; execute only its owned rehearsal with `python labs/network-security-loopback.py --run`.
+
+Evidence: [regression](network-security-regression-results.json), [models](network-security-model-results.json), [browser](browser-network-security-results.json), [actual fixture](network-security-fixture-results.json), [command scope](commands-network-security-results.json), [primary review](network-security-primary-review.json), [question review](network-security-question-review.json), [visual review](network-security-visual-review.json), [full audit](quality-audit-batch-14.json), [source applicability](research-network-security.md), [Batch 13 acceptance](acceptance-batch-13.json), [Batch 14 acceptance](acceptance-batch-14.json), [workbook](../labs/network-security-workbook.md).
+'''
+for batch in ['13','14']:(R/f'docs/validation-batch-{batch}.md').write_text(validation,encoding='utf-8')
+p=R/'README.md';lines=p.read_text(encoding='utf-8').splitlines();lines[2]='Current checkpoint: 198 accepted original nodes through Batch 14; 198 authored lessons, 1,980 exams and 594 quick checks. Network Security is complete within the documented model/guided/owned-loopback scopes. Batch 15 (Data Center Foundations) is next.'
+for i,line in enumerate(lines):
+ if line.startswith('Batches 01–12 provide'):lines[i]='Batches 01–14 provide 198 accepted lessons with teaching, mechanisms, practical guidance, troubleshooting, scoped labs, three quick checks and ten original exams each. Network Security adds all 33 original topics and the integrated seven-zone lab. See [Network Security verification](docs/validation-batch-14.md) for evidence and execution limits. The dated checkpoints below are historical records.'
+ if line.startswith('Current next step: Batch 13'):lines[i]='Current next step: Batch 15 (`s6-g0-t0`). Network Security is accepted; see docs/validation-batch-14.md. Historical development notes below describe retained earlier runtime evidence.'
+ if 'The current next editorial step is Batch 13' in line:lines[i]=line.replace('The current next editorial step is Batch 13 (`s5-g0-t0`); the Batch 11 checkpoint is historical.','The current next editorial step is Batch 15 (`s6-g0-t0`); the earlier checkpoints are historical.')
+lines+=['','## Network Security accepted · 2026-10-09','','All 33 Batches 13/14 units are accepted, adding 330 reviewed exams and 99 quick checks. Nine regression commands pass, including 70,093 independent model checks, all new reader routes, shared-reader regression, the 198-route audit and actual owned application denial/recovery with interrupted cleanup. The original seven-zone objective and source hash are preserved. Device configuration and vendor integrations remain guided; loopback application evidence has a separate scope. The user instructed direct work without GapCode. See [verification and limits](docs/validation-batch-14.md).']
+p.write_text('\n'.join(lines)+'\n',encoding='utf-8')
+with (R/'ROADMAP_DECISIONS.md').open('a',encoding='utf-8') as f:f.write('\n\n## Network Security acceptance and user steering — 2026-10-09\n\nAfter GapCode usage limits blocked both installed models, the user explicitly instructed not to use GapCode. The primary assistant directly designed, authored, implemented, reviewed and verified this section. That steering supersedes the earlier worker preference for this work. Batch 13 was accepted before authoring Batch 14. All 33 original identities are preserved, with 330 exams and 99 quick checks. The original seven-zone integrated lab remains explicit; its browser policy relation, guided device workbook and actual owned HTTP application fixture are distinct evidence scopes. No network-zone/vendor/VPN deployment is inferred from loopback behavior. Nine fresh regression commands, independent model expectations, all new browser routes, 99 inspected renders and the full 198-route audit support acceptance. Learner progress stays separate. Next: Batch 15 Data Center Foundations.\n')
+print('Documentation finalized: Network Security 33/33; course 198/442; next Batch 15.')

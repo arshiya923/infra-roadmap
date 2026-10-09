@@ -1,0 +1,766 @@
+[
+  {
+    "id": "s3-g9-t1",
+    "batch": "10",
+    "title": "Traffic Classification",
+    "subtitle": "Apply an explicit header contract to place packets into local traffic classes.",
+    "level": "Intermediate → Production",
+    "minutes": 40,
+    "definition": "Traffic classification is the local decision that associates a packet with a class according to configured match criteria. The differentiated-services field is an eight-bit IPv4 or IPv6 header field. Its upper six bits encode DSCP and lower two bits encode ECN. This lesson models a fixed ordered IPv4/IPv6 transport-header contract supplied by the learner: UDP destination ports 16384–32767 map to voice; TCP destination port 443 maps to interactive; otherwise the class is default. Classification returns a local class and matching rule while leaving incoming DSCP and ECN unchanged.",
+    "purpose": "Classification groups traffic so that a later marking or forwarding policy can act on a known local class. The worksheet’s small contract makes rule order and inclusive boundaries visible. It is useful for understanding how a local classifier consumes a protocol and port declaration, but it does not identify an application from a port number alone. A port range is a chosen policy input, not proof that a packet carries a particular application or deserves special treatment.",
+    "mental": "Treat the classifier as a short ordered checklist applied to supplied header fields. First, if protocol is UDP and destination port is within the inclusive voice range, return voice. Otherwise, if protocol is TCP and destination port is 443, return interactive. If neither rule matches, return default. The source port is recorded but does not affect these rules. Classification produces a local label. It does not rewrite DSCP or ECN, authenticate an endpoint, inspect payload or schedule a packet.",
+    "components": [
+      "Protocol: accept exactly tcp, udp or icmp. TCP and UDP port values are integers from 0 through 65535. ICMP has no transport ports, so this worksheet requires source and destination port values of zero for its fixed input contract.",
+      "Voice rule: UDP destination ports 16384 through 32767 inclusive map to voice. The explicit endpoints matter: 16383 and 32768 are outside the rule. Source port does not alter the match.",
+      "Interactive rule: TCP destination port 443 maps to interactive only after the earlier UDP test fails. A UDP packet to port 443 does not match this rule because protocol is part of the predicate.",
+      "Default rule: every valid supplied header that matches neither earlier rule maps to default. This is a local example, not a requirement that production policies use this same class.",
+      "DSCP and ECN: the DS field byte is split into six DSCP bits and two ECN bits. The model reports them separately and calculates the byte as DSCP × 4 + ECN. Classification copies both values unchanged.",
+      "Application identity: software may reuse ports, encapsulation may hide inner headers, and translation may change observed values. A header match cannot verify payload, user, endpoint identity, application, or business importance.",
+      "Rule order: this example’s two predicates are disjoint, but the published order remains explicit so later changes can be reviewed. Production policy may contain overlapping classifiers, exclusions, fragments, tunnels, hardware offload or earlier/later actions not represented here."
+    ],
+    "mechanism": [
+      "Name protocol, source port, destination port, input DSCP and input ECN. Use zero for both ports with ICMP in this worksheet. Reject strings, fractions, out-of-range integers and unknown protocol values; never silently coerce them.",
+      "Validate DSCP as integer 0–63 and ECN as integer 0–3. These are independent bit fields, not one shared priority number.",
+      "Apply the voice rule first. Only UDP with destination port between 16384 and 32767 inclusive matches. Record the rule identifier with the resulting class.",
+      "If voice did not match, test TCP with destination 443. UDP/443 remains outside this rule. If neither predicate matches, return the default class and default rule identifier.",
+      "Return class, match rule, original protocol and ports, and separate before/after DS field values. This classifier leaves both incoming DSCP and ECN unchanged; marking is a later, independent policy.",
+      "On a real system, inspect the exact configured classifier and its attachment point before claiming that it matched live traffic. A show command may expose configuration, while counters may be absent or aggregate unrelated traffic. Neither a configuration line nor this worksheet proves a packet arrived, matched, or received service."
+    ],
+    "flow": [
+      [
+        "Validate supplied header",
+        "Check protocol, integer ports, ICMP zero-port convention, DSCP and ECN bounds."
+      ],
+      [
+        "Apply UDP voice rule",
+        "Match UDP destination ports 16384–32767 inclusive."
+      ],
+      [
+        "Apply TCP interactive rule",
+        "If voice did not match, test TCP destination port 443."
+      ],
+      [
+        "Default and report",
+        "Return class and matching rule; preserve DSCP and ECN."
+      ]
+    ],
+    "comparison": [
+      [
+        "Classification / marking",
+        "Assign local class / change a codepoint by policy",
+        "Classification alone leaves DSCP and ECN unchanged."
+      ],
+      [
+        "Destination / source port",
+        "Rule input / recorded but ignored by these rules",
+        "Another policy may inspect other fields."
+      ],
+      [
+        "DSCP / ECN",
+        "Six-bit behavior aggregate codepoint / two-bit congestion field",
+        "Separate values share one byte."
+      ],
+      [
+        "Port match / identity",
+        "Header predicate / authenticated identity",
+        "A match does not prove an application."
+      ],
+      [
+        "Classifier / scheduler",
+        "Local label / queue service mechanism",
+        "No scheduler or bandwidth allocation is modeled."
+      ]
+    ],
+    "example": "A supplied IPv4 header declares UDP, source port 53000, destination port 16384, DSCP 12 and ECN 2. It maps to voice because destination 16384 is the inclusive lower boundary. The rule identifier is udp-destination-16384-32767. DSCP stays 12 and ECN stays 2, so the DS-field byte stays 50. A UDP packet to 443 falls through to default; a TCP packet to 443 becomes interactive. The source port does not affect this result. These declarations do not establish that the payload is voice or HTTPS. No real packet is processed.",
+    "commands": [
+      {
+        "code": "ip -s -s link show",
+        "explanation": "Inspect link identity and available interface counters before attributing a live observation to one interface.",
+        "expected": "GUIDED, NOT EXECUTED: record interface, link state and counters shown. Counters are platform/driver evidence and do not prove this worksheet rule matched a packet.",
+        "platform": "Linux iproute2 · read-only example; target/version not inspected"
+      },
+      {
+        "code": "tc -s qdisc show dev DEV",
+        "explanation": "Inspect traffic-control queueing disciplines on the selected interface; replace DEV with the confirmed device name.",
+        "expected": "GUIDED, NOT EXECUTED: record attached qdisc and any statistics. An absent qdisc or counter does not prove a classifier result.",
+        "platform": "Linux iproute2 tc · read-only example; target/version not inspected"
+      },
+      {
+        "code": "tc -s class show dev DEV",
+        "explanation": "Inspect traffic-control classes on the selected interface; replace DEV after confirming target context.",
+        "expected": "GUIDED, NOT EXECUTED: record the actual class tree and counters if available. A class name is not a queue-service guarantee.",
+        "platform": "Linux iproute2 tc · read-only example; target/version not inspected"
+      },
+      {
+        "code": "tc -s filter show dev DEV",
+        "explanation": "Inspect filters attached to the selected interface; replace DEV with the confirmed device name.",
+        "expected": "GUIDED, NOT EXECUTED: compare actual filter keys and actions with intended contract. Counter availability and scope are target-specific; no live match is claimed.",
+        "platform": "Linux iproute2 tc · read-only example; target/version not inspected"
+      }
+    ],
+    "configuration": "The worksheet has a fixed contract and supplies no configuration commands. A real classifier depends on operating system/network OS and release, ingress or egress attachment, address family, encapsulation, offload, match syntax, fragments, and existing policy. Record those facts and review the active configuration baseline before planning a change. Do not replace a production classifier based on this lesson’s ports. This page owns no interface, rule, class, filter or device state.",
+    "ports": "The worksheet reads declared TCP/UDP port fields and creates no socket. TCP and UDP ports are 16-bit values. ICMP has no transport ports; the model represents that absence with zero in each port field.",
+    "production": "Document ownership of every class, the trust boundary, the interface direction, and the later policy that consumes the class. Validate rule order against the complete target policy, including exclusions, tunnel headers, fragments, hardware offload and any existing classifier. A service may classify encrypted traffic from headers but cannot prove application identity from a port alone. Use target counters or packet evidence for a production claim. Keep configuration review, matched-packet evidence, queue treatment and measured service as separate questions.",
+    "troubleshooting": [
+      [
+        "Symptom",
+        "Expected traffic appears as default."
+      ],
+      [
+        "Hypotheses",
+        "Wrong protocol, destination outside inclusive range, policy attachment mismatch, different header after encapsulation, or live rule differs from worksheet."
+      ],
+      [
+        "Test",
+        "Observe actual protocol/ports at the policy attachment, then inspect the installed classifier and available counters."
+      ],
+      [
+        "Observation",
+        "Compare protocol and destination with the ordered local contract. Keep source port, input DSCP and ECN visible but separate."
+      ],
+      [
+        "Conclusion / next test",
+        "A worksheet result establishes only its supplied predicate. For a live difference, inspect release, interface direction, fragmentation, offload and enclosing policy."
+      ],
+      [
+        "Fix and verify",
+        "After owner review, change only the intended policy. Repeat the same traffic observation and compare actual match counters; a config display alone is not packet proof."
+      ]
+    ],
+    "security": "A port-based classifier is not authentication. Source addresses and ports may be spoofed, shared or translated. Trust decisions require an explicit boundary and appropriate ingress controls. Avoid using a class label as user identity. Sanitize interface names, addresses, tenant labels, counters and policy output before sharing.",
+    "performance": "This page evaluates one short rule chain and makes no latency or throughput prediction. Real classification cost and available counters depend on hardware, offload, policy structure, packet path and workload. Measure the target with representative traffic before making capacity claims. A local class may be ignored or mapped differently downstream.",
+    "mistakes": [
+      "Treating UDP and TCP port 443 as the same match.",
+      "Assuming source port participates when this contract tests destination only.",
+      "Treating 16384 and 32767 as exclusive or accepting 16383 and 32768.",
+      "Calling a header match authenticated application identity.",
+      "Assuming classification changes DSCP, ECN, queues or packet treatment.",
+      "Reading a configured rule or counter as proof that the original packet matched."
+    ],
+    "interactive": "classification",
+    "artifacts": [],
+    "lab": {
+      "topologyKind": "shared",
+      "objective": "Apply a fixed two-rule header contract and explain inclusive boundary behavior while tracking DSCP and ECN unchanged.",
+      "requirements": "The worksheet needs no equipment. Linux inspection commands are guided, read-only examples and were not executed. Use a prepared authorized target and replace DEV only after identifying the actual interface.",
+      "topology": [
+        "Supplied packet header: protocol, source port, destination port, DSCP and ECN",
+        "Fixed ordered classifier: UDP voice range, then TCP/443 interactive, then default",
+        "Independent target inspection of interface, qdisc, classes, filters and actual counters"
+      ],
+      "steps": [
+        "Load baseline voice and record protocol, source/destination ports, DSCP, ECN, rule and class.",
+        "Compare UDP destination ports 16383, 16384, 32767 and 32768. Explain which values fall inside the inclusive range.",
+        "Compare TCP/443 with UDP/443 and identify why only the TCP header reaches interactive.",
+        "Change only source port while keeping UDP destination inside range; explain why class remains voice under this contract.",
+        "Use TCP-other, ICMP and ECN presets. Explain the default rule, ICMP zero-port convention and unchanged DS field.",
+        "On a prepared Linux target, inspect link/qdisc/class/filter state with the guided commands. Record only output actually returned; do not edit policy or generate traffic."
+      ],
+      "verification": "For each supplied case, identify first match or default. State that output DSCP equals input DSCP and output ECN equals input ECN. 16384 and 32767 match the UDP range; 16383 and 32768 do not. Target commands remain guided/not executed unless independently run by an authorized operator.",
+      "troubleshooting": "If a class surprises you, verify protocol first, apply the ordered predicates, then confirm the inspected interface sees the same headers. The worksheet cannot represent fragments, tunnels, payload inspection, authentication, hardware counters or target configuration. Record uncertainty instead of fabricating output.",
+      "challenge": "Why does TCP/443 become interactive while UDP/443 falls through to default? What live evidence would show that a real device classified an actual packet under this rule?",
+      "cleanup": "The worksheet changes only browser-local declarations. Guided commands are read-only. No rules, classes, qdiscs, interfaces, packets, counters, routes or learner state are created or changed."
+    },
+    "quick": [
+      {
+        "testedConcept": "Protocol match",
+        "question": "Does UDP destination 443 match the TCP/443 interactive rule?",
+        "answer": "No.",
+        "explanation": "The rule requires TCP.",
+        "difficulty": "Beginner",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Inclusive range",
+        "question": "Does UDP destination 32768 match the voice range?",
+        "answer": "No.",
+        "explanation": "The upper bound is 32767.",
+        "difficulty": "Beginner",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "DS field",
+        "question": "Does classification change input DSCP here?",
+        "answer": "No.",
+        "explanation": "The class is local; the model preserves DSCP and ECN.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      }
+    ],
+    "exams": [
+      {
+        "testedConcept": "Voice lower boundary",
+        "question": "Which class matches UDP destination 16384?",
+        "answer": "voice",
+        "explanation": "16384 is included in the UDP voice range.",
+        "difficulty": "Beginner",
+        "type": "multiple-choice",
+        "options": [
+          "voice",
+          "interactive",
+          "default",
+          "invalid because source port is missing"
+        ]
+      },
+      {
+        "testedConcept": "Voice upper boundary",
+        "question": "Which class matches UDP destination 32767?",
+        "answer": "voice",
+        "explanation": "32767 is the inclusive upper boundary.",
+        "difficulty": "Beginner",
+        "type": "multiple-choice",
+        "options": [
+          "voice",
+          "interactive",
+          "default",
+          "ICMP"
+        ]
+      },
+      {
+        "testedConcept": "Below range",
+        "question": "Which class matches UDP destination 16383?",
+        "answer": "default",
+        "explanation": "It is below the voice range and matches no later rule.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "voice",
+          "interactive",
+          "default",
+          "trusted-preserve"
+        ]
+      },
+      {
+        "testedConcept": "Above range",
+        "question": "Which class matches UDP destination 32768?",
+        "answer": "default",
+        "explanation": "It is one above the inclusive range.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "voice",
+          "interactive",
+          "default",
+          "malformed DSCP"
+        ]
+      },
+      {
+        "testedConcept": "Transport distinction",
+        "question": "A packet declares UDP destination 443. Which class matches?",
+        "answer": "default",
+        "explanation": "Interactive requires TCP; UDP/443 is outside voice range.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "voice",
+          "interactive",
+          "default",
+          "TCP/443 rule"
+        ]
+      },
+      {
+        "testedConcept": "HTTPS rule",
+        "question": "A packet declares TCP destination 443. Which class is selected?",
+        "answer": "interactive",
+        "explanation": "The TCP/443 rule maps to interactive.",
+        "difficulty": "Beginner",
+        "type": "multiple-choice",
+        "options": [
+          "voice",
+          "interactive",
+          "default",
+          "untrusted-zero"
+        ]
+      },
+      {
+        "testedConcept": "Source port",
+        "question": "What happens if source port changes but UDP destination remains 20000?",
+        "answer": "The class remains voice",
+        "explanation": "This voice rule checks protocol and destination only.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "The class remains voice",
+          "The class becomes default",
+          "The class becomes interactive",
+          "Input DSCP is rewritten"
+        ]
+      },
+      {
+        "testedConcept": "ICMP contract",
+        "question": "Which port values does this worksheet require for ICMP?",
+        "answer": "Source and destination ports both equal zero",
+        "explanation": "Zero represents no transport port in this fixed schema.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Source and destination ports both equal zero",
+          "Destination port 443",
+          "Any integer ports",
+          "Ports 16384 and 32767"
+        ]
+      },
+      {
+        "testedConcept": "DSCP/ECN preservation",
+        "question": "Input DSCP is 12 and ECN is 2. What output pair does classification produce?",
+        "answer": "DSCP 12 and ECN 2",
+        "explanation": "Classification does not alter DS field in this model.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "DSCP 12 and ECN 2",
+          "DSCP 46 and ECN 0",
+          "DSCP 18 and ECN 2",
+          "DSCP 0 and ECN 3"
+        ]
+      },
+      {
+        "testedConcept": "Identity boundary",
+        "question": "A UDP header matches the voice range. What has this worksheet established?",
+        "answer": "Only that the declared headers match the local voice rule",
+        "explanation": "A port match does not authenticate an application or user.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Only that the declared headers match the local voice rule",
+          "That payload is a voice call",
+          "That sender is authenticated",
+          "That a queue guarantees bandwidth"
+        ]
+      }
+    ],
+    "glossary": {
+      "Classification": "Configured decision assigning a packet or supplied header to a local class.",
+      "DS field": "Eight-bit IPv4/IPv6 field containing DSCP and ECN.",
+      "DSCP": "Six-bit differentiated services codepoint used to identify a behavior aggregate.",
+      "ECN": "Two-bit Explicit Congestion Notification field, separate from DSCP.",
+      "Classifier": "Entity selecting packets by defined header criteria.",
+      "Default class": "Class assigned here when neither ordered rule matches.",
+      "DPI": "Deep packet inspection of payload or deeper protocol context; outside this model.",
+      "Ingress boundary": "Point where traffic enters a policy domain and local classification may apply."
+    },
+    "prerequisites": [
+      "s3-g9-t0"
+    ],
+    "related": [
+      "s3-g9-t2"
+    ],
+    "sources": [
+      {
+        "title": "RFC 2474: Differentiated Services Field",
+        "url": "https://www.rfc-editor.org/rfc/rfc2474",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 3168: Explicit Congestion Notification",
+        "url": "https://www.rfc-editor.org/rfc/rfc3168",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "tc(8): Linux traffic-control inspection commands",
+        "url": "https://man7.org/linux/man-pages/man8/tc.8.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Linux kernel interface statistics documentation",
+        "url": "https://www.kernel.org/doc/html/latest/networking/statistics.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "id": "s3-g9-t2",
+    "batch": "10",
+    "title": "Traffic Marking",
+    "subtitle": "Apply a local trust and class policy to DSCP while preserving ECN.",
+    "level": "Intermediate → Production",
+    "minutes": 45,
+    "definition": "Traffic marking is an action that changes a packet marking under administrative policy. IPv4 and IPv6 each carry an eight-bit DS field: six bits encode DSCP and two encode ECN. This lesson models a policy over a supplied class, input DSCP, input ECN and trust-boundary declaration. It supports trusted-preserve, untrusted-zero and class-map. The local map assigns voice 46, interactive 18 and default 0. All policies preserve supplied ECN. The model calculates a displayed DS field as DSCP × 4 + ECN; it never edits a real packet.",
+    "purpose": "Marking communicates a locally chosen behavior aggregate to downstream nodes configured to use that codepoint. A trust boundary helps decide whether to retain a marking from another domain or reset it under local policy. A class map can overwrite DSCP based on a local class. These are policy choices, not universal priority rankings or guarantees that a queue, route or application receives particular service.",
+    "mental": "Treat the DS field as two adjacent labels sharing one byte. Six upper bits carry DSCP and two lower bits carry ECN. First declare whether the incoming DSCP is trusted at this boundary. Then select one policy: preserve only when trust is true, clear DSCP to zero under untrusted-zero, or select a fixed class-map value. In every branch preserve the supplied ECN codepoint. The displayed result is arithmetic on inputs; it is not a rewritten packet or a scheduler decision.",
+    "components": [
+      "DSCP: a six-bit codepoint from 0 through 63. It selects a configured per-hop behavior at a differentiated-services node; it is not itself a queue or bandwidth allocation.",
+      "ECN: a separate two-bit field from 0 through 3. Its values represent Not-ECT, ECT(1), ECT(0) and CE. This worksheet preserves the exact input and does not run a congestion engine.",
+      "Trust boundary: an explicit boolean declaration about whether input DSCP may be retained under local policy. It is an operator input, not an authentication protocol or inferred fact.",
+      "trusted-preserve: output DSCP equals input DSCP only when trustBoundary is true. A mismatch is rejected as inconsistent rather than silently preserving a declared-untrusted value.",
+      "untrusted-zero: output DSCP is 0. ECN remains as supplied, so clearing DSCP does not erase the ECN codepoint.",
+      "class-map: voice maps to local value 46, interactive to 18, and default to 0. RFCs recommend EF codepoint 46 and AF21 codepoint 18 for those behaviors; these local class labels do not define a universal order or priority.",
+      "DS field arithmetic: byte value is output DSCP multiplied by four plus input ECN. DSCP 46 and ECN 3 produce byte 187. The six high bits and two low bits remain visually distinct.",
+      "Layer 2 marking: IEEE 802.1Q PCP is a separate three-bit field. This lesson does not map DSCP to PCP or invent automatic CoS behavior.",
+      "Boundary and trust: domains can use different policies. A marking accepted inside one domain may be overwritten at another boundary. Determine administrative ownership and contract rather than trusting arbitrary inbound bits."
+    ],
+    "mechanism": [
+      "Validate class voice, interactive or default; integer input DSCP 0–63; integer ECN 0–3; policy enum and trustBoundary boolean. Reject extra or missing fields, coercible strings, fractions and out-of-range values.",
+      "For trusted-preserve, require trustBoundary=true and retain input DSCP. If the declaration says false, show a validation error rather than pretending the input is trusted.",
+      "For untrusted-zero, set output DSCP to zero. Keep the ECN number unchanged. This policy is independent of class map and trust declaration.",
+      "For class-map, select voice 46, interactive 18 or default 0. These fixed local examples align with RFC-recommended EF and AF21 codepoint numbers for those PHBs, but do not assert a universal priority relationship.",
+      "Compute input DS field as inputDSCP × 4 + inputECN and output field as outputDSCP × 4 + inputECN. Display decimal byte and binary DSCP/ECN sections.",
+      "On a live target, inspect policy attachment and target counters with the correct interface and direction. A marking command or displayed config does not prove a packet traversed the policy or that a downstream scheduler honored the codepoint."
+    ],
+    "flow": [
+      [
+        "Validate declarations",
+        "Check class, policy, trust boundary and DSCP/ECN integer bounds."
+      ],
+      [
+        "Apply trust gate",
+        "Preserve only for trusted-preserve with trustBoundary=true; otherwise follow selected reset or map policy."
+      ],
+      [
+        "Choose output DSCP",
+        "Retain input, clear to zero, or map the supplied class locally."
+      ],
+      [
+        "Rebuild displayed byte",
+        "Preserve ECN and calculate before/after DS field without claiming a packet edit."
+      ]
+    ],
+    "comparison": [
+      [
+        "DSCP / ECN",
+        "Six-bit behavior codepoint / two-bit congestion notification",
+        "Different semantics share one octet."
+      ],
+      [
+        "Trusted-preserve / class-map",
+        "Retain trusted input / overwrite by local class",
+        "Both preserve ECN here."
+      ],
+      [
+        "Untrusted-zero / class-map",
+        "Reset DSCP to 0 / apply fixed local value",
+        "Choose according to reviewed domain policy."
+      ],
+      [
+        "EF 46 / local voice",
+        "RFC-recommended EF codepoint / example class-map label",
+        "No EF scheduler or voice identity is implemented."
+      ],
+      [
+        "AF21 18 / local interactive",
+        "RFC-recommended AF21 codepoint / example class label",
+        "No universal ranking is implied."
+      ],
+      [
+        "PCP / DSCP",
+        "Three-bit 802.1Q VLAN field / six-bit IP field",
+        "No automatic conversion is specified."
+      ],
+      [
+        "Marking / scheduling",
+        "Set a codepoint / service packets in queues",
+        "Marking alone does not create forwarding treatment."
+      ]
+    ],
+    "example": "At a declared trusted boundary, input DSCP 12 and ECN 2 under trusted-preserve remain 12 and 2; both DS-field bytes equal 50. If the same input is treated with untrusted-zero, output DSCP becomes 0 while ECN remains 2, so output byte is 2. With class interactive and class-map, output DSCP is 18, ECN remains 2 and byte is 74. No branch updates checksum or sends packets. RFC references identify recommended codepoints for defined PHBs, not a universal service priority or guarantee.",
+    "commands": [
+      {
+        "code": "ip -s -s link show",
+        "explanation": "Inspect interface identity and available packet counters before examining a live marking result.",
+        "expected": "GUIDED, NOT EXECUTED: record actual interface and counters. Broad counters alone do not prove this policy marked a packet.",
+        "platform": "Linux iproute2 · read-only example; target/version not inspected"
+      },
+      {
+        "code": "tc -s qdisc show dev DEV",
+        "explanation": "Inspect qdisc attachments and statistics; replace DEV with confirmed interface.",
+        "expected": "GUIDED, NOT EXECUTED: note qdisc and actual stats. Queue presence is not proof that a DSCP received treatment.",
+        "platform": "Linux iproute2 tc · read-only example; target/version not inspected"
+      },
+      {
+        "code": "tc -s class show dev DEV",
+        "explanation": "Inspect classes and reported counters on the selected device.",
+        "expected": "GUIDED, NOT EXECUTED: record actual class IDs and counters if present. A class name does not establish a DSCP mapping without filter and qdisc context.",
+        "platform": "Linux iproute2 tc · read-only example; target/version not inspected"
+      },
+      {
+        "code": "tc -s filter show dev DEV",
+        "explanation": "Inspect filters that may classify or mark packets on the selected interface.",
+        "expected": "GUIDED, NOT EXECUTED: verify actual match keys, action, direction and counters. No target configuration or output is asserted.",
+        "platform": "Linux iproute2 tc · read-only example; target/version not inspected"
+      }
+    ],
+    "configuration": "This lesson supplies no device configuration commands. Real marking depends on platform/release, ingress or egress direction, interface, trust boundary, IPv4/IPv6 handling, rule order, ECN treatment, encapsulation and hardware offload. Preserve active policy before a reviewed change. The example values 46, 18 and 0 do not define a deployable service contract; no 802.1p PCP or CoS mapping is inferred.",
+    "ports": "The marking model consumes a class and DS field integers. It creates no sockets and does not classify transport ports; classification is a preceding, separate decision.",
+    "production": "Define trust policy at each administrative boundary and document how local classes map to DSCP. Check whether target policy copies, overwrites or remarks fields at ingress, egress, tunnel edges or hardware offload points. Verify DSCP and ECN independently, then inspect downstream behavior and service objectives with real measurements. Apply policing or shaping if contract requires it; do not infer congestion control or priority from a marking alone.",
+    "troubleshooting": [
+      [
+        "Symptom",
+        "Observed output marking differs from intended policy."
+      ],
+      [
+        "Hypotheses",
+        "Trust gate differs, another action runs later, class map differs, direction is wrong, or encapsulation/offload changes observation."
+      ],
+      [
+        "Test",
+        "Inspect actual policy attachment, action order, counters and observation point on the target interface."
+      ],
+      [
+        "Observation",
+        "Record input/output DSCP, input/output ECN, direction, policy revision and counter scope."
+      ],
+      [
+        "Conclusion / next test",
+        "Separate policy mismatch from observation point or tunnel difference. This worksheet does not model checksum, tunnel propagation or device behavior."
+      ],
+      [
+        "Fix and verify",
+        "After owner review, change only intended local policy. Repeat the same header observation and service measurement."
+      ]
+    ],
+    "security": "Untrusted DSCP can be used to request resources or disrupt local policy. A marking is not a user identity. Set trust only at reviewed boundaries, apply local policy to untrusted sources, and protect configuration/counter evidence from disclosure.",
+    "performance": "The worksheet computes one byte; it implements no scheduler, queue, policer or congestion algorithm. RFC PHBs require node behavior and capacity conditions. Measure per-interface loss, delay, ECN marking and throughput under load before describing service quality. Higher-looking codepoint numbers do not imply better service.",
+    "mistakes": [
+      "Treating 46 or 18 as universally higher priority than other codepoints.",
+      "Assuming DSCP automatically maps to 802.1p PCP or CoS.",
+      "Preserving untrusted input without an explicit trust declaration.",
+      "Resetting ECN when only DSCP is set to zero.",
+      "Claiming checksum update, tunnel copy or packet rewrite from this worksheet.",
+      "Treating DSCP as a queue, scheduler, bandwidth or service guarantee.",
+      "Confusing an ECN CE value with a TCP congestion response; no transport endpoint acts here."
+    ],
+    "interactive": "marking",
+    "artifacts": [],
+    "lab": {
+      "topologyKind": "shared",
+      "objective": "Compare trust-preserve, untrusted-zero and class-map marking while tracking DSCP and ECN separately.",
+      "requirements": "Worksheet uses supplied values. Linux inspections are guided, read-only examples and were not executed. Confirm target, device, policy direction and release before any use.",
+      "topology": [
+        "Declared trust boundary and incoming DSCP/ECN",
+        "Class supplied by the separate classifier",
+        "One chosen local marking policy",
+        "Before/after DS field arithmetic; separate target policy/qdisc evidence"
+      ],
+      "steps": [
+        "Load trusted-preserve and confirm trustBoundary=true. Record input/output DSCP/ECN and byte values.",
+        "Load trust-mismatch. Observe validation error and hidden result. Change unrelated ECN and verify invalid output remains hidden; set trust true or reset to recover.",
+        "Load untrusted-zero with ECN 3. Confirm DSCP becomes zero and ECN remains three.",
+        "Load each class map. Record voice 46, interactive 18 and default 0; do not infer universal ranking.",
+        "Compare ECN 00, 01, 10 and 11 presets. Each is preserved unchanged by class-map.",
+        "Calculate one case manually as outputDSField=(outputDSCP×4)+inputECN; compare decimal byte and bit split.",
+        "On a prepared Linux target, inspect qdisc/class/filter/interface state. Record only actual returned evidence; do not change configuration."
+      ],
+      "verification": "For each valid policy output ECN equals input ECN and output byte equals outputDSCP×4+inputECN. trusted-preserve is accepted only when trustBoundary=true; untrusted-zero outputs DSCP 0; class-map uses 46/18/0. These are supplied declarations, not packets or service treatment.",
+      "troubleshooting": "If preserve is rejected, check explicit trust declaration. If ECN appears to change, verify inputs and formula independently. If live output differs, inspect the exact policy and observation point, including encapsulation and offload. Do not claim checksum, congestion-control or scheduler behavior from the worksheet.",
+      "challenge": "Why must the trust boundary be explicit when an inbound DSCP happens to equal a local class value? Explain how to reset untrusted DSCP while retaining ECN.",
+      "cleanup": "The worksheet changes only browser-local controls. Guided commands are read-only. No device configuration, packet, qdisc, class, filter, interface or learner state is created or changed."
+    },
+    "quick": [
+      {
+        "testedConcept": "Field widths",
+        "question": "How many DSCP bits and ECN bits are represented here?",
+        "answer": "Six DSCP bits and two ECN bits.",
+        "explanation": "Both fields share one octet but retain separate meanings.",
+        "difficulty": "Beginner",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Trust gate",
+        "question": "May trusted-preserve run when trustBoundary is false?",
+        "answer": "No.",
+        "explanation": "The model rejects that inconsistent declaration.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "ECN preservation",
+        "question": "Under untrusted-zero, what happens to input ECN?",
+        "answer": "It remains unchanged.",
+        "explanation": "Only DSCP is reset under this policy.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      }
+    ],
+    "exams": [
+      {
+        "testedConcept": "Trusted preserve",
+        "question": "Input DSCP 12 and ECN 2 use trusted-preserve with trustBoundary=true. What is output DSCP?",
+        "answer": "12",
+        "explanation": "The trusted policy retains the supplied DSCP.",
+        "difficulty": "Beginner",
+        "type": "multiple-choice",
+        "options": [
+          "0",
+          "12",
+          "18",
+          "46"
+        ]
+      },
+      {
+        "testedConcept": "Trust consistency",
+        "question": "What happens when trusted-preserve is selected with trustBoundary=false?",
+        "answer": "The worksheet rejects the inconsistent declaration",
+        "explanation": "It does not silently preserve a declared-untrusted marking.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The worksheet rejects the inconsistent declaration",
+          "Output DSCP is always 46",
+          "ECN is forced to 0",
+          "Class changes to default"
+        ]
+      },
+      {
+        "testedConcept": "Untrusted zero",
+        "question": "Input DSCP is 46 and ECN is 3 under untrusted-zero. What output pair is shown?",
+        "answer": "DSCP 0 and ECN 3",
+        "explanation": "The local policy clears DSCP and preserves ECN.",
+        "difficulty": "Beginner",
+        "type": "multiple-choice",
+        "options": [
+          "DSCP 0 and ECN 3",
+          "DSCP 0 and ECN 0",
+          "DSCP 46 and ECN 3",
+          "DSCP 63 and ECN 1"
+        ]
+      },
+      {
+        "testedConcept": "Voice map",
+        "question": "Which local DSCP value does class-map assign to voice?",
+        "answer": "46",
+        "explanation": "This is the local example mapping and the EF codepoint number.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "0",
+          "18",
+          "46",
+          "63"
+        ]
+      },
+      {
+        "testedConcept": "Interactive map",
+        "question": "Which local DSCP value does class-map assign to interactive?",
+        "answer": "18",
+        "explanation": "18 is the chosen local value and the AF21 codepoint number.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "0",
+          "18",
+          "46",
+          "48"
+        ]
+      },
+      {
+        "testedConcept": "Default map",
+        "question": "What DSCP does the fixed class map assign to default?",
+        "answer": "0",
+        "explanation": "The supplied local map assigns default to zero.",
+        "difficulty": "Beginner",
+        "type": "multiple-choice",
+        "options": [
+          "0",
+          "1",
+          "18",
+          "46"
+        ]
+      },
+      {
+        "testedConcept": "DS field calculation",
+        "question": "For output DSCP 18 and ECN 2, what decimal DS-field byte is displayed?",
+        "answer": "74",
+        "explanation": "18×4+2 equals 74.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "20",
+          "72",
+          "74",
+          "182"
+        ]
+      },
+      {
+        "testedConcept": "ECN split",
+        "question": "Which integer represents ECN bit pattern 11?",
+        "answer": "3",
+        "explanation": "Two bits encode values zero through three.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "testedConcept": "Codepoint semantics",
+        "question": "Do 46 and 18 define a universal priority order between voice and interactive?",
+        "answer": "No; they are local examples and do not define universal class ordering",
+        "explanation": "Codepoint definitions do not establish a universal policy ranking.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "Yes; 46 always receives more service",
+          "No; they are local examples and do not define universal class ordering",
+          "Yes; every device queues 46 first",
+          "No; DSCP is the ECN field"
+        ]
+      },
+      {
+        "testedConcept": "Layer 2 marking",
+        "question": "What does this lesson specify about 802.1Q PCP?",
+        "answer": "It is a separate three-bit field and no automatic mapping is modeled",
+        "explanation": "PCP is distinct from DSCP and this lesson invents no CoS mapping.",
+        "difficulty": "Advanced",
+        "type": "multiple-choice",
+        "options": [
+          "It is a separate three-bit field and no automatic mapping is modeled",
+          "It is identical to six-bit DSCP",
+          "It always equals ECN",
+          "It is automatically set to 46"
+        ]
+      }
+    ],
+    "glossary": {
+      "Traffic marking": "Local traffic-conditioning policy that sets a marking according to declared rules.",
+      "DSCP": "Six-bit differentiated services codepoint used to select configured behavior.",
+      "ECN": "Two-bit Explicit Congestion Notification field preserved by this model.",
+      "Trust boundary": "Declared administrative point where policy decides whether input marking may be retained.",
+      "Class map": "Fixed local mapping from voice, interactive, default to 46, 18, 0.",
+      "EF": "Expedited Forwarding PHB; RFC 3246 recommends DSCP 46 for this PHB.",
+      "AF21": "Assured Forwarding class 2, low drop precedence; RFC 2597 gives codepoint 18.",
+      "PCP": "Three-bit 802.1Q Priority Code Point; separate from IP DSCP.",
+      "DS field": "Eight-bit IPv4/IPv6 field composed of DSCP and ECN."
+    },
+    "prerequisites": [
+      "s3-g9-t1"
+    ],
+    "related": [
+      "s3-g9-t1"
+    ],
+    "sources": [
+      {
+        "title": "RFC 2474: Differentiated Services Field",
+        "url": "https://www.rfc-editor.org/rfc/rfc2474",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 3168: Explicit Congestion Notification",
+        "url": "https://www.rfc-editor.org/rfc/rfc3168",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 3246: Expedited Forwarding PHB and recommended codepoint",
+        "url": "https://www.rfc-editor.org/rfc/rfc3246",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 2597: Assured Forwarding PHB Group codepoints",
+        "url": "https://www.rfc-editor.org/rfc/rfc2597",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "tc(8): Linux traffic-control inspection commands",
+        "url": "https://man7.org/linux/man-pages/man8/tc.8.html",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "Linux kernel interface statistics documentation",
+        "url": "https://www.kernel.org/doc/html/latest/networking/statistics.html",
+        "checked": "2026-10-09"
+      }
+    ]
+  }
+]

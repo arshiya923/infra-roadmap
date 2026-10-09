@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "install/recovery lessons have full contracts and four responsive widths",
+    "dependency UI separates selected reference, packages, intent and remaining boot limits",
+    "five recovery cases reveal scoped evidence and hide previous answers on change/reset",
+    "new questions and original navigation reach the next authored VLAN topic",
+    "both lifecycle exercises work directly from disk",
+    "mobile lifecycle screenshots preserve readable controls and evidence"
+  ],
+  "errors": [],
+  "scope": "Two accepted routes; authored dependencies and recovery cases, no actual Cisco install/restore"
+}

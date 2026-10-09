@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-09",
+  "browser": "Microsoft Edge / Chromium",
+  "checks": [
+    "original roadmap preserves all runtime node and group IDs",
+    "original dialog links to correct lesson and preserves learner storage",
+    "all seven lesson routes render complete components",
+    "stepper next/previous/play/pause/reset and diagram zoom",
+    "exam answers hidden until response; correct/wrong feedback and modes",
+    "quick check is separate from exam",
+    "clipboard copies exact command",
+    "anchors preserve lesson route",
+    "full-content search finds commands and glossary concepts",
+    "RAID known failure patterns and reset",
+    "RAID exhaustive four-drive failure masks",
+    "RAID blocks show copies, parity and missing members",
+    "pending and malformed routes are honest and recoverable",
+    "light/dark persistence",
+    "desktop/tablet/mobile layouts and screenshots",
+    "keyboard flow controls and reduced-motion behavior",
+    "file URL works without HTTP or external dependencies",
+    "no JavaScript errors or missing assets"
+  ],
+  "errors": [],
+  "result": "PASS"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "commandSteps": 28,
+  "checks": [
+    "EXEC exit reports session semantics without downgrading mode or mutating configuration; disable changes level",
+    "Mode restrictions and prompt changes",
+    "Changes affect running only until save",
+    "Configuration inspection requires stated mode; bounded do support",
+    "Startup-to-running merge preserves commands absent from saved representation",
+    "Explicit removal and save direction",
+    "Save and reboot copy state without aliasing",
+    "Unsaved change lost on model reboot",
+    "Exact subset rejects abbreviations/reload/invalid hostname",
+    "Reset snapshots independent"
+  ],
+  "limits": "Tests cover authored teaching model only; no Cisco OS/parser, AAA, reboot or forwarding executed."
+}

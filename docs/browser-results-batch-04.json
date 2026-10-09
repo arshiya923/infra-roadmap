@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-04",
+  "result": "PASS",
+  "checks": [
+    "unopened addressing bundle is searchable and loads only when opened",
+    "all nine lessons, lab contract, source links and four viewport widths",
+    "numeric lessons connect through foundation lab to accepted OSI Model",
+    "octet toggles, explicit bases and keyboard operation",
+    "invalid octets hide old output and disable stale bit controls",
+    "bit explorer screenshots desktop and mobile",
+    "subnet default result and labelled 26 network / 6 host bits",
+    "/0 /31 /32 semantics and cross-octet boundaries",
+    "invalid address/prefix suppress stale calculation",
+    "subnet screenshots desktop dark and mobile",
+    "IPv6 expansion, tie rule, single-zero and invalid compression",
+    "IPv6 expanded address wraps on narrow layout",
+    "VLSM exact allocation, request identity and remaining interval",
+    "VLSM rejects capacity, host-bit parent and invalid demands without partial plan",
+    "allocation screenshots and keyboard calculation",
+    "download link returns exact reviewed lab script",
+    "foundation quiz answers, clipboard and shared progress",
+    "address tools work directly from disk",
+    "no page, console or HTTP errors"
+  ],
+  "errors": [],
+  "viewports": [
+    1440,
+    768,
+    390,
+    320
+  ]
+}

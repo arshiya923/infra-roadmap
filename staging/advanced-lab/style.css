@@ -1,0 +1,12 @@
+#al-tool fieldset{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;padding:1rem;border:1px solid var(--line)}
+#al-tool fieldset label{display:flex;flex-direction:column;gap:.4rem;min-width:0}
+#al-tool select{max-width:100%;font:inherit;background:var(--surface);color:var(--ink);padding:.5rem;border:1px solid var(--line);border-radius:4px}
+#al-tool input[type=checkbox]{align-self:flex-start}
+#al-tool .en-scroll{max-width:100%;overflow:auto}
+#al-tool table{min-width:820px;width:100%;border-collapse:collapse}
+#al-tool th,#al-tool td{text-align:left;padding:.7rem;border-bottom:1px solid var(--line)}
+#al-tool p,#al-tool td{overflow-wrap:anywhere}
+#al-error{color:var(--amber)}
+#al-tool [hidden]{display:none!important}
+#al-tool :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:480px){#al-tool fieldset{grid-template-columns:1fr;padding:.75rem}}

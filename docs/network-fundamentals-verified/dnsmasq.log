@@ -1,0 +1,13 @@
+Oct  8 22:39:47 dnsmasq[4370]: started, version 2.91 cachesize 150
+Oct  8 22:39:47 dnsmasq[4370]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct  8 22:39:47 dnsmasq[4370]: warning: no upstream servers configured
+Oct  8 22:39:47 dnsmasq-dhcp[4370]: DHCP, IP range 192.0.2.10 -- 192.0.2.10, lease time 1h
+Oct  8 22:39:47 dnsmasq-dhcp[4370]: DHCP, sockets bound exclusively to interface left
+Oct  8 22:39:47 dnsmasq[4370]: cleared cache
+Oct  8 22:39:50 dnsmasq-dhcp[4370]: DHCPDISCOVER(left) 2a:c3:4b:bb:1f:e5 
+Oct  8 22:39:50 dnsmasq-dhcp[4370]: DHCPOFFER(left) 192.0.2.10 2a:c3:4b:bb:1f:e5 
+Oct  8 22:39:50 dnsmasq-dhcp[4370]: DHCPDISCOVER(left) 2a:c3:4b:bb:1f:e5 
+Oct  8 22:39:50 dnsmasq-dhcp[4370]: DHCPOFFER(left) 192.0.2.10 2a:c3:4b:bb:1f:e5 
+Oct  8 22:39:50 dnsmasq-dhcp[4370]: DHCPREQUEST(left) 192.0.2.10 2a:c3:4b:bb:1f:e5 
+Oct  8 22:39:50 dnsmasq-dhcp[4370]: DHCPACK(left) 192.0.2.10 2a:c3:4b:bb:1f:e5 
+Oct  8 22:39:56 dnsmasq[4370]: exiting on receipt of SIGTERM

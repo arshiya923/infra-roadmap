@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "combinations": 24,
+  "views": 8,
+  "prefixScopes": 3,
+  "checks": [
+    "Topology views reuse exact source-hashed passing actual records without merged or invented observations",
+    "24 independent observer/checkpoint/prefix combinations reproduce literal headers/paths, candidate flags, kernel entries and corroboration predicates",
+    "Fault displayed successor is not installed forwarding; local Connected candidate remains unselected with independent direct kernel entry",
+    "Pinned parser preserves duplicate Connected lines and unsigned literal boundaries without inferring physical multipath or unreachable/history semantics",
+    "Fresh copies, fixed identities/prefix scopes, malformed format rejection and kind guards preserve safe separate use"
+  ],
+  "scope": "Literal retained FRR topology compared with actual peer/RIB/kernel/probe records. No full historical FD/DUAL, ACTIVE/query/SIA, valid-peer endorsement of anomalous tokens, software-root-cause, physical multipath/Cisco/application/convergence execution."
+}

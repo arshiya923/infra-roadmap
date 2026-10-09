@@ -1,0 +1,1442 @@
+[
+  {
+    "batch": "10",
+    "level": "Intermediate → Advanced",
+    "minutes": 65,
+    "commands": [
+      {
+        "code": "tc -s qdisc show dev \"$QOS_DEV\"",
+        "explanation": "Set QOS_DEV separately to the exact interface of an exclusively owned, already prepared context. Inspect qdisc identity and statistics without changing policy.",
+        "expected": "GUIDED, NOT EXECUTED: Preserve the actual root/child handles, qdisc types and counters. A counter snapshot is not a measured original application result.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      },
+      {
+        "code": "tc -s class show dev \"$QOS_DEV\"",
+        "explanation": "Inspect existing classes and their available statistics on the same mapped interface. An empty class listing can be valid for a classless qdisc.",
+        "expected": "GUIDED, NOT EXECUTED: Correlate class handles with the qdisc hierarchy and actual configured rates; do not manufacture a class for every worksheet row.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      },
+      {
+        "code": "tc filter show dev \"$QOS_DEV\"",
+        "explanation": "Inspect filters in this mapped context. Additional parent or ingress context may be needed for the actual deployment.",
+        "expected": "GUIDED, NOT EXECUTED: Record what the command actually lists and identify the hook/hierarchy before interpreting a missing filter. This command does not create classification or marking.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      },
+      {
+        "code": "tc -d -s qdisc show dev \"$QOS_DEV\"\ntc -d -s class show dev \"$QOS_DEV\"",
+        "explanation": "Use the documented detail and statistics options for a second read-only view. Compare the same interface, namespace and observer context.",
+        "expected": "GUIDED, NOT EXECUTED: Inspect actual parameter details and cumulative counters. No supplied output, kernel scheduling trace or packet capture is claimed.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      }
+    ],
+    "configuration": "Use the browser for the tabletop calculations. Optional command inspection requires an exclusively owned, already configured Linux context, a mapped interface name, correct network namespace and a known traffic-control hierarchy. Set QOS_DEV outside the supplied commands to that exact interface. The iproute2 v6.6.0 manual is a pinned syntax reference; installed binaries, kernel support, hardware offload and distribution packaging must be checked at the actual target. No qdisc add, change, replace, delete, filter mutation, packet generator or namespace creation is supplied. Record the existing policy and observer context before any separately authorized experiment. A browser preset is an input declaration and cannot configure a Linux interface.",
+    "production": "Place each observation at a named interface and direction. The local egress device, an ingress redirect target, an upstream switch and a remote provider can have different congestion points. Confirm which resource is constrained before choosing a rate or scheduler. Preserve the original application, endpoint, route, return path and observation interval when comparing results. A favorable local worksheet result does not establish receiver performance or an SLA. Deployments also need ownership, change control, independent management and a recovery baseline. The optional read-only commands describe an existing object; absent objects, offloaded counters or a different namespace need investigation rather than an assumed default policy.",
+    "security": "Treat class and marking declarations as policy inputs, not proof of trusted traffic. An endpoint can request a preferred DSCP without being entitled to it. Establish a trust boundary and validate or remark traffic according to the actual administrative policy. Limit changes to authorized interfaces and protect management traffic independently. Packet or counter evidence can expose endpoint identities and workload patterns, so preserve only necessary context. This worksheet accepts bounded numeric declarations and inert text; it does not authenticate a flow, configure a filter or protect a device. A priority label alone is not a security boundary.",
+    "performance": "The calculations use exact declared units and ideal local arithmetic. They omit framing overhead, interpacket gaps, segmentation, retransmissions, clock granularity, driver queues, device offload and competing unlisted traffic. These omissions are explicit scope limits, not estimates of zero cost. Fractional milliseconds are retained internally and rounded only for display. Serialization concerns one selected link; propagation and application response time remain separate. Compare actual counters and application evidence over a known interval before drawing a performance conclusion. The independent application-readiness checkbox expresses context only and cannot turn model arithmetic into an observed service result.",
+    "id": "s3-g9-t0",
+    "title": "QoS fundamentals",
+    "subtitle": "Compare declared demand and local link capacity before choosing a policy.",
+    "interactive": "qos-fundamentals",
+    "definition": "Quality of Service is a collection of mechanisms for handling traffic according to an administrative policy when resources are shared. Classification identifies traffic, marking communicates treatment intent, metering compares traffic with a profile, and queues and schedulers organize service. RFC 3290 describes a conceptual differentiated-services model rather than a universal device implementation. This topic begins with a smaller question: how do three declared aggregate rates compare with one supplied local capacity, and how long would one packet take to serialize on that ideal link?",
+    "purpose": "Use a capacity comparison to make the constraint visible before debating priority, policing or shaping. Voice, interactive and bulk are workload labels here; none automatically receives a queue or a reservation. A supplied demand below capacity is arithmetic headroom, not evidence that the application succeeds. A supplied demand above capacity identifies an aggregate excess under this declaration, not which packet will be dropped. The later worksheets introduce explicit action and scheduling contracts. Keeping those questions separate prevents a traffic label from silently becoming a service guarantee.",
+    "mental": "Think of a link as a service resource with a declared bit budget per second. Add the three offered budgets and compare the total with capacity. Next, place one packet on an otherwise ideal serializer and calculate its bit count divided by the same rate. These are two distinct calculations: offered demand is an aggregate rate, while serialization is the duration of one packet. Neither calculation contains a queue, a classifier implementation, a route lookup or an end-to-end transaction.",
+    "components": [
+      "Capacity C is supplied in bits per second and must be a positive integer. It is not inferred from interface names, negotiated speed or counters. The relevant bottleneck might be somewhere else in a real network. This local worksheet chooses one capacity explicitly so the arithmetic has a known denominator. It does not sum separate physical links or model an oversubscribed fabric.",
+      "Voice, interactive and bulk demand are nonnegative integer bits per second. Their sum is the declared total. These labels do not imply packet sizes, burst distributions, admission limits, DSCP values or a preferred service class. A zero declaration means zero modeled offered demand for that label, not a discovery that no actual traffic exists. Traffic outside the three declarations is excluded.",
+      "Utilization is total demand divided by capacity. The displayed percentage can exceed 100 percent because the input represents offered demand rather than measured transmitted throughput. At 120 percent, a 10 Mb/s link has 12 Mb/s of supplied demand; it cannot continuously transmit that demand at the stated capacity. This worksheet does not decide how the excess is delayed or discarded.",
+      "Overload is max(0, total demand minus capacity), in bits per second. Equal demand and capacity give zero overload but no arithmetic headroom. That equality does not erase bursts, packet overhead or variation in a real application. An overload value is a deficit in the declared budget, not a byte counter, queue occupancy or count of failed voice calls.",
+      "One packet size is supplied in bytes. Serialization milliseconds equal packet bytes times 8000 divided by capacity in bits per second. The factor includes eight bits per byte and one thousand milliseconds per second. Changing packet size changes this duration even when aggregate utilization stays fixed. Changing capacity changes both utilization and the serializer duration.",
+      "The original application-readiness declaration is independent of all arithmetic. Changing it must not alter demand, overload or serialization. It is a reminder that addressing, routing, return path, transport behavior and endpoint readiness require their own evidence. A checked box is a supplied assumption; the browser performs no probe, voice call, TCP transfer or admission decision."
+    ],
+    "mechanism": [
+      "Validate every supplied field without coercing strings, fractional numbers, NaN or booleans into rates. All demands are integers within the declared bounds, capacity is positive and packet size is positive. There is no fallback to a hidden interface speed when an input is invalid.",
+      "Add voice, interactive and bulk demand using their common bits-per-second unit. Record the total before calculating a ratio. For 1,000,000 plus 2,000,000 plus 3,000,000 bits per second, the total is 6,000,000 bits per second regardless of the descriptive workload names.",
+      "Divide total by C to obtain utilization and subtract C only when total exceeds it. At C = 10,000,000, the baseline utilization is 0.6 and overload is zero. Increasing bulk to 9,000,000 raises total to 12,000,000, utilization to 1.2 and overload to 2,000,000.",
+      "Compute serialization separately from offered demand. A 1500-byte packet contains 12,000 bits and takes 1.2 milliseconds at 10,000,000 bits per second. At 1,000,000 bits per second it takes 12 milliseconds. Those values exclude wait, propagation, framing and any unlisted bottleneck.",
+      "Compare below-capacity, equality, overload, idle, slow-link and small-packet presets. The idle preset still has a nonzero serialization duration for the supplied hypothetical packet: zero offered aggregate demand does not mean a physical packet has zero bits.",
+      "Interpret the result as a local accounting statement. Classification, DSCP/ECN handling, policing, shaping and scheduling need separate policy definitions. RFC 2474 defines the six-bit DSCP; RFC 3168 defines the remaining two IP DS-field bits for ECN. Neither field increases the local link capacity."
+    ],
+    "flow": [
+      [
+        "Declare one local resource",
+        "Supply C and three aggregate demands in bits per second."
+      ],
+      [
+        "Compare aggregate budgets",
+        "Calculate total, utilization and overload without a scheduling assumption."
+      ],
+      [
+        "Time one packet",
+        "Convert bytes to bits and divide by C for serialization only."
+      ],
+      [
+        "Check original context",
+        "Keep application readiness and actual performance evidence independent."
+      ]
+    ],
+    "comparison": [
+      [
+        "Offered demand / transmitted rate",
+        "Requested aggregate service / actual observed transmission",
+        "An offered utilization above 100 percent does not create extra capacity."
+      ],
+      [
+        "Serialization / queue wait",
+        "Time occupying a link / time awaiting service",
+        "Only serialization is computed here."
+      ],
+      [
+        "DSCP / ECN",
+        "Six-bit treatment codepoint / two-bit congestion signaling field",
+        "A mark neither reserves capacity nor proves service."
+      ],
+      [
+        "Arithmetic headroom / application readiness",
+        "Local declared budget / original end-to-end context",
+        "Neither substitutes for the other."
+      ]
+    ],
+    "example": "With voice 1 Mb/s, interactive 2 Mb/s and bulk 3 Mb/s on a 10 Mb/s link, total demand is 6 Mb/s and utilization is 60 percent. A 1500-byte packet takes 1.2 ms to serialize under the ideal link calculation. Raise bulk to 9 Mb/s and overload becomes 2 Mb/s. The worksheet still cannot say which application loses packets because no packet sequence, queue or action has been supplied. Toggle original application readiness and observe that the numeric results stay the same.",
+    "ports": "QoS is not one transport service or port. Applications can use different transports; local classification may inspect fields supported at its actual hook. DSCP and ECN are IP header fields. No socket, classifier or packet is created by this worksheet.",
+    "troubleshooting": [
+      [
+        "Utilization seems impossibly high",
+        "Check whether the input is offered demand rather than observed link throughput, and confirm bits versus bytes."
+      ],
+      [
+        "Zero overload but poor application behavior",
+        "Inspect bursts, actual bottleneck, route/return context and endpoint evidence; the model computes no queue delay."
+      ],
+      [
+        "Serialization is eight times too small",
+        "Verify the bytes-to-bits factor before converting seconds to milliseconds."
+      ],
+      [
+        "A named voice class receives no special result",
+        "The label supplies demand only; no service priority is configured by this worksheet."
+      ]
+    ],
+    "mistakes": [
+      "Treating six-bit DSCP as a reservation of bandwidth.",
+      "Reading offered utilization as measured throughput.",
+      "Adding bytes per second to bits per second without conversion.",
+      "Combining serialization, propagation and queue wait into one unexplained number."
+    ],
+    "prerequisites": [
+      "s0-g2-t8",
+      "s0-g2-t9",
+      "s1-g4-t0"
+    ],
+    "related": [
+      "s3-g9-t1",
+      "s3-g9-t2",
+      "s3-g9-t3",
+      "s3-g9-t4",
+      "s3-g9-t5"
+    ],
+    "lab": {
+      "objective": "Explain the declared aggregate budget and one packet serialization without inventing a service policy.",
+      "requirements": "Browser only for the supplied exercise. Optional guided inspection needs an exclusively owned, already prepared Linux interface with known namespace and policy. There is no live Linux traffic-control execution in this lesson.",
+      "topologyKind": "shared",
+      "topology": [
+        "Declared finite workload → local worksheet → computed rows",
+        "Original application readiness: supplied independently",
+        "Optional existing Linux interface: inspect only, outside browser calculations"
+      ],
+      "steps": [
+        "Select the baseline and independently sum its three demand rates.",
+        "Use the equality and overload presets; explain why utilization can exceed 100 percent.",
+        "Compare the slow-link and small-packet presets while holding the other declarations fixed.",
+        "Select idle and explain why the hypothetical packet still has a serialization duration.",
+        "Toggle application readiness and verify the arithmetic stays unchanged.",
+        "Enter an invalid integer and confirm stale output hides until the input is valid again. Separately, select an unknown scenario in a test harness; output must stay hidden through other field edits until a valid scenario or Reset is selected.",
+        "Keyboard-focus the named result region and use Reset. Optional inspection is read-only and requires a mapped prepared Linux context."
+      ],
+      "verification": "Verify the supplied arithmetic row by row, including the units and the exact contract. Independent model tests cover meaningful presets, strict input rejection, unchanged source input, boundary decisions and manually derived timelines. Primary browser review is separate. No test here demonstrates a kernel queue, packet delivery, latency improvement or a live target result.",
+      "troubleshooting": "Reset if the selected scenario is invalid. Read the field error and check integer units, packet order and exact enum values. A valid numeric declaration can still describe a poor policy. For optional actual inspection, check interface, namespace, direction and parent hierarchy before interpreting an empty listing.",
+      "challenge": "What additional workload and policy declarations would be needed to decide whether the 2 Mb/s excess is queued, shaped or dropped?",
+      "cleanup": "Reset restores the first supplied scenario without changing device state or learner progress. The worksheet owns no interface, process, namespace or qdisc. Any separately authorized device experiment must recover its own exact prior baseline."
+    },
+    "glossary": {
+      "Quality of Service": "Administrative mechanisms for traffic treatment on shared resources.",
+      "Offered demand": "Traffic service requested by the supplied aggregate rates.",
+      "Link capacity": "Declared local service rate in bits per second.",
+      "Utilization": "Offered demand divided by declared capacity.",
+      "Overload": "Positive amount by which declared demand exceeds capacity.",
+      "Serialization": "Time needed to place one packet’s bits on the supplied ideal link.",
+      "Differentiated Services Code Point": "Six-bit IP codepoint selecting a per-hop behavior according to policy.",
+      "Explicit Congestion Notification": "IP congestion signaling using the two ECN bits with transport participation."
+    },
+    "exams": [
+      {
+        "testedConcept": "Aggregate demand",
+        "question": "Voice is 1 Mb/s, interactive 2 Mb/s and bulk 3 Mb/s. What is the declared total?",
+        "answer": "6 Mb/s.",
+        "explanation": "Add the three rates with the same unit; the capacity is not included in the sum.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "3 Mb/s.",
+          "6 Mb/s.",
+          "10 Mb/s.",
+          "12 Mb/s."
+        ]
+      },
+      {
+        "testedConcept": "Offered utilization",
+        "question": "What does 120 percent utilization mean in this worksheet?",
+        "answer": "Declared demand is 1.2 times supplied capacity.",
+        "explanation": "The numerator is supplied offered demand, so it can exceed available service.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The link has negotiated 20 percent more speed.",
+          "ECN has expanded the serializer rate.",
+          "Declared demand is 1.2 times supplied capacity.",
+          "The application throughput was measured at 120 percent."
+        ]
+      },
+      {
+        "testedConcept": "Overload arithmetic",
+        "question": "Total demand is 12 Mb/s and C is 10 Mb/s. What is overload?",
+        "answer": "2 Mb/s.",
+        "explanation": "Only the positive demand minus capacity difference is overload.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "2 Mb/s.",
+          "10 Mb/s.",
+          "12 Mb/s.",
+          "22 Mb/s."
+        ]
+      },
+      {
+        "testedConcept": "Serialization units",
+        "question": "A 1500-byte packet on ideal C = 10 Mb/s takes how long to serialize?",
+        "answer": "1.2 ms.",
+        "explanation": "1500 × 8 / 10,000,000 seconds is 1.2 milliseconds.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "0.15 ms.",
+          "12 ms.",
+          "120 ms.",
+          "1.2 ms."
+        ]
+      },
+      {
+        "testedConcept": "Equal demand",
+        "question": "Total demand equals C. What follows from the supplied arithmetic?",
+        "answer": "Overload is zero and arithmetic headroom is zero.",
+        "explanation": "Equality removes the arithmetic deficit but supplies no burst or service guarantee.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "There is a one-packet reserved queue.",
+          "Overload is zero and arithmetic headroom is zero.",
+          "The original application meets its latency target.",
+          "Every class receives equal scheduling turns."
+        ]
+      },
+      {
+        "testedConcept": "Idle declaration",
+        "question": "All demand fields are zero but packetBytes is 1500. Why is serialization nonzero?",
+        "answer": "The hypothetical packet still contains bits.",
+        "explanation": "The individual hypothetical packet calculation is separate from aggregate offered rates.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The hypothetical packet still contains bits.",
+          "A hidden queue adds a minimum delay.",
+          "The model assumes background TCP traffic.",
+          "DSCP inserts an extra packet."
+        ]
+      },
+      {
+        "testedConcept": "DS field",
+        "question": "Which division reflects RFC 2474 with RFC 3168 ECN use?",
+        "answer": "Six DSCP bits and two ECN bits.",
+        "explanation": "The treatment codepoint and ECN occupy different portions of the IP DS field.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Eight DSCP bits and no ECN bits.",
+          "Three DSCP bits and five ECN bits.",
+          "Six DSCP bits and two ECN bits.",
+          "Two DSCP bits and six ECN bits."
+        ]
+      },
+      {
+        "testedConcept": "Application context",
+        "question": "Changing only applicationReady from true to false should change which result?",
+        "answer": "The independent readiness declaration.",
+        "explanation": "The declaration does not alter local arithmetic or measure the application.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Total demand.",
+          "Packet serialization.",
+          "Capacity.",
+          "The independent readiness declaration."
+        ]
+      },
+      {
+        "testedConcept": "Policy boundary",
+        "question": "Which additional model is needed to decide which waiting packet gets service next?",
+        "answer": "A scheduler with an explicit selection rule.",
+        "explanation": "An aggregate budget contains no packet-selection rule.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "A scheduler with an explicit selection rule.",
+          "A DSCP width calculation alone.",
+          "The aggregate sum alone.",
+          "A TCP port number alone."
+        ]
+      },
+      {
+        "testedConcept": "Capacity location",
+        "question": "Why map the actual resource before interpreting production QoS?",
+        "answer": "Different interfaces and directions may have different congestion points.",
+        "explanation": "The local worksheet capacity is declared; actual congestion placement needs evidence.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Every route uses the same egress capacity.",
+          "Different interfaces and directions may have different congestion points.",
+          "The DSCP value identifies the physical bottleneck.",
+          "An interface name determines its actual offered workload."
+        ]
+      }
+    ],
+    "quick": [
+      {
+        "testedConcept": "Calculation",
+        "question": "For 250,000 + 750,000 + 2,000,000 bps on C = 2,000,000 bps, give total and overload.",
+        "answer": "Total 3,000,000 bps; overload 1,000,000 bps.",
+        "explanation": "Aggregate rates share a unit; subtract C only for positive excess.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Serialization",
+        "question": "Calculate ideal serialization of 200 bytes at C = 1,000,000 bps.",
+        "answer": "1.6 milliseconds.",
+        "explanation": "200 × 8000 / 1,000,000 = 1.6 ms.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Scope",
+        "question": "Name two quantities this worksheet does not calculate.",
+        "answer": "Queue wait and end-to-end application response time.",
+        "explanation": "A one-link serializer and aggregate demand do not supply either quantity.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 3290 — differentiated services conceptual model",
+        "url": "https://www.rfc-editor.org/rfc/rfc3290",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 2474 — differentiated services field",
+        "url": "https://www.rfc-editor.org/rfc/rfc2474",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 3168 — ECN IP field",
+        "url": "https://www.rfc-editor.org/rfc/rfc3168",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "iproute2 v6.6.0 — tc manual",
+        "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "batch": "10",
+    "level": "Intermediate → Advanced",
+    "minutes": 65,
+    "commands": [
+      {
+        "code": "tc -s qdisc show dev \"$QOS_DEV\"",
+        "explanation": "Set QOS_DEV separately to the exact interface of an exclusively owned, already prepared context. Inspect qdisc identity and statistics without changing policy.",
+        "expected": "GUIDED, NOT EXECUTED: Preserve the actual root/child handles, qdisc types and counters. A counter snapshot is not a measured original application result.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      },
+      {
+        "code": "tc -s class show dev \"$QOS_DEV\"",
+        "explanation": "Inspect existing classes and their available statistics on the same mapped interface. An empty class listing can be valid for a classless qdisc.",
+        "expected": "GUIDED, NOT EXECUTED: Correlate class handles with the qdisc hierarchy and actual configured rates; do not manufacture a class for every worksheet row.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      },
+      {
+        "code": "tc filter show dev \"$QOS_DEV\"",
+        "explanation": "Inspect filters in this mapped context. Additional parent or ingress context may be needed for the actual deployment.",
+        "expected": "GUIDED, NOT EXECUTED: Record what the command actually lists and identify the hook/hierarchy before interpreting a missing filter. This command does not create classification or marking.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      },
+      {
+        "code": "tc -d -s qdisc show dev \"$QOS_DEV\"\ntc -d -s class show dev \"$QOS_DEV\"",
+        "explanation": "Use the documented detail and statistics options for a second read-only view. Compare the same interface, namespace and observer context.",
+        "expected": "GUIDED, NOT EXECUTED: Inspect actual parameter details and cumulative counters. No supplied output, kernel scheduling trace or packet capture is claimed.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      }
+    ],
+    "configuration": "Use the browser for the tabletop calculations. Optional command inspection requires an exclusively owned, already configured Linux context, a mapped interface name, correct network namespace and a known traffic-control hierarchy. Set QOS_DEV outside the supplied commands to that exact interface. The iproute2 v6.6.0 manual is a pinned syntax reference; installed binaries, kernel support, hardware offload and distribution packaging must be checked at the actual target. No qdisc add, change, replace, delete, filter mutation, packet generator or namespace creation is supplied. Record the existing policy and observer context before any separately authorized experiment. A browser preset is an input declaration and cannot configure a Linux interface.",
+    "production": "Place each observation at a named interface and direction. The local egress device, an ingress redirect target, an upstream switch and a remote provider can have different congestion points. Confirm which resource is constrained before choosing a rate or scheduler. Preserve the original application, endpoint, route, return path and observation interval when comparing results. A favorable local worksheet result does not establish receiver performance or an SLA. Deployments also need ownership, change control, independent management and a recovery baseline. The optional read-only commands describe an existing object; absent objects, offloaded counters or a different namespace need investigation rather than an assumed default policy.",
+    "security": "Treat class and marking declarations as policy inputs, not proof of trusted traffic. An endpoint can request a preferred DSCP without being entitled to it. Establish a trust boundary and validate or remark traffic according to the actual administrative policy. Limit changes to authorized interfaces and protect management traffic independently. Packet or counter evidence can expose endpoint identities and workload patterns, so preserve only necessary context. This worksheet accepts bounded numeric declarations and inert text; it does not authenticate a flow, configure a filter or protect a device. A priority label alone is not a security boundary.",
+    "performance": "The calculations use exact declared units and ideal local arithmetic. They omit framing overhead, interpacket gaps, segmentation, retransmissions, clock granularity, driver queues, device offload and competing unlisted traffic. These omissions are explicit scope limits, not estimates of zero cost. Fractional milliseconds are retained internally and rounded only for display. Serialization concerns one selected link; propagation and application response time remain separate. Compare actual counters and application evidence over a known interval before drawing a performance conclusion. The independent application-readiness checkbox expresses context only and cannot turn model arithmetic into an observed service result.",
+    "id": "s3-g9-t3",
+    "title": "Policing",
+    "subtitle": "Apply one explicit full-bucket conformance contract without inventing a queue.",
+    "interactive": "policing",
+    "definition": "Policing meters traffic against a declared profile and applies an action to traffic outside it. This worksheet chooses a single initially full token bucket, one rate, one bucket size and two outcomes: conform or drop excess. Tokens represent bytes, refill continuously under ideal arithmetic, and are consumed only by conforming packets. This chosen teaching contract is not the complete RFC 2697 single-rate three-color marker, which has two buckets and green, yellow and red outcomes. Nor does it stand for every vendor policer.",
+    "purpose": "Use the packet-by-packet meter to distinguish a permitted burst from a long-term refill rate. A packet can conform at time zero because the bucket begins full; that does not require prior idle time in the declared input. A later packet can fail even when a coarse average rate appears modest because token availability is checked at its arrival. Policing here discards excess rather than delaying it. Actual deployments may use different actions, color awareness or algorithms, so the local decision must be tied to this exact contract.",
+    "mental": "Imagine a byte-credit wallet that starts with B credits. Time earns credits at R divided by eight bytes per second, but the wallet never holds more than B. A packet asks for its entire size at arrival. If enough credit exists, the wallet pays and the packet conforms. If not, this policy drops the packet and leaves the credit unchanged. There is no waiting room, partial packet payment or borrowing from a future refill.",
+    "components": [
+      "R is a positive integer bits-per-second refill rate. In this worksheet one millisecond earns R divided by 8000 bytes, so a rate of 8000 bits per second earns exactly one byte per millisecond. Rates that are not multiples of 8000 generate fractional token balances. Fractional tokens are retained internally; the integer constraint applies to input rates and packet sizes, not to every computed balance.",
+      "B is a positive integer bucket capacity in bytes. Initial credit is exactly B at time zero. Refill is capped at B regardless of how long the input is idle. A large idle interval therefore cannot grant unbounded future burst credit. B controls a stored allowance, while R controls how quickly consumed allowance returns. They have different units and cannot substitute for one another.",
+      "The finite packet sequence contains one to twelve entries. Each has an integer arrival time in milliseconds and a positive integer size in bytes. Arrival times are nondecreasing; equal times preserve the supplied input order. Each packet sees the token balance left by the preceding decision, so changing the order of different-size packets at one timestamp can change which packets conform.",
+      "The refill step adds elapsed milliseconds times R divided by 8000, capped by the remaining space in the bucket. The row reports the actual capped refill, the balance before decision and the balance afterward. A reported zero refill at a full bucket does not mean the rate was zero; the capacity cap prevented additional stored credit.",
+      "A packet conforms only when its size is no greater than B and its size is no greater than available tokens. Equality conforms and consumes the entire remaining balance if equal to it. An excess packet drops and consumes no tokens. A packet larger than B is always nonconforming in this fixed contract, even after a long idle refill, because the bucket can never contain enough credit.",
+      "The action is a declared local drop. It is not ECN marking, DSCP remarking, a three-color result or a transport response. The browser emits no packet and predicts no TCP recovery. Independent application readiness does not affect conformance arithmetic. Linux filter policing, hardware meters and RFC-defined markers must be investigated with their own supported configuration and implementation scope."
+    ],
+    "mechanism": [
+      "Validate the exact state shape, integer rate and bucket bounds, boolean context and ordered packet fields. Reject strings, NaN, negative time, zero-byte packets, unknown fields and too many entries. Invalid data cannot be silently repaired by sorting or converting it.",
+      "Initialize tokens to B and previous arrival to zero. For each packet, calculate elapsed time from the previous packet arrival. Even a dropped packet advances the observation time, so subsequent refill counts each interval once rather than reusing time.",
+      "Refill to min(B, old tokens plus elapsed milliseconds times R/8000). Report the capped amount actually added. For R = 8000, B = 1000 and a first 600-byte packet at zero, the first before balance is 1000 and the after balance is 400.",
+      "Check the next same-arrival 600-byte packet. It sees 400 tokens, so it drops and leaves 400. At 200 ms, another 200 tokens become available; a 500-byte packet sees 600, conforms and leaves 100. That sequence differs from both a queue and an unconditional average-rate comparison.",
+      "Compare exact-capacity, same-arrival, idle-cap, oversized and fractional-refill presets. At R = 3000, one millisecond earns 0.375 bytes. A one-byte packet immediately after an empty bucket drops; it does not round the refill upward or consume a fractional part of its size.",
+      "Interpret each row as a profile decision under the chosen action. RFC 3290 separates meter results from actions, and RFC 2697 provides a useful comparison with a different two-bucket marker. Do not relabel this single-bucket result green/yellow/red or claim it is a complete srTCM implementation."
+    ],
+    "flow": [
+      [
+        "Declare profile",
+        "Supply R in bits per second and B in bytes, initially full."
+      ],
+      [
+        "Refill at arrival",
+        "Add elapsed ideal credit and cap it at B."
+      ],
+      [
+        "Apply atomic packet decision",
+        "Conform and consume all size, or drop excess without consuming."
+      ],
+      [
+        "Interpret within scope",
+        "Separate this chosen action from coloring, queuing and actual service."
+      ]
+    ],
+    "comparison": [
+      [
+        "Rate / bucket capacity",
+        "Refill speed / maximum stored burst allowance",
+        "Changing one need not change the other."
+      ],
+      [
+        "Policing / shaping",
+        "Drop excess at arrival / delay eligible packets",
+        "Only policing’s chosen drop action is modeled here."
+      ],
+      [
+        "Chosen bucket / RFC 2697 srTCM",
+        "One bucket and two outcomes / two buckets and three colors",
+        "Do not substitute this worksheet for the RFC algorithm."
+      ],
+      [
+        "Conformance / application result",
+        "Local profile decision / actual original exchange",
+        "A conforming row is not a delivered-packet observation."
+      ]
+    ],
+    "example": "Begin with 1000 tokens at R = 8000 bps. Packet 1 is 600 bytes at 0 ms and conforms, leaving 400. Packet 2 is also 600 bytes at 0 ms and drops, still leaving 400. Packet 3 is 500 bytes at 200 ms; refill adds 200, it conforms and leaves 100. If Packet 2 consumed tokens despite dropping, the later result would be wrong for this contract. If it waited until 200 ms, the result would be a shaping behavior instead.",
+    "ports": "The meter has no protocol port. An actual classifier can select traffic by supported packet fields, but these entries contain only arrival and size. No Linux filter, ECN mark, DSCP write or packet emission occurs.",
+    "troubleshooting": [
+      [
+        "A first burst exceeds the steady rate yet conforms",
+        "Check the initially full B allowance and packet size before treating it as a violation."
+      ],
+      [
+        "A dropped packet seems to reduce future credit",
+        "Confirm the chosen excess action consumes no tokens."
+      ],
+      [
+        "Long idle admits an oversized packet in a proposed explanation",
+        "Recheck the B cap; size greater than B cannot conform."
+      ],
+      [
+        "Fractional refill produces an unexpected decision",
+        "Keep full arithmetic precision and compare tokens against the complete integer packet size."
+      ]
+    ],
+    "mistakes": [
+      "Calling this one-bucket drop contract RFC 2697 srTCM.",
+      "Confusing R bits per second with B bytes.",
+      "Assuming drop excess waits for later credit.",
+      "Allowing an idle interval to store more than B."
+    ],
+    "prerequisites": [
+      "s3-g9-t0",
+      "s3-g9-t1",
+      "s3-g9-t2"
+    ],
+    "related": [
+      "s3-g9-t4",
+      "s3-g9-t5"
+    ],
+    "lab": {
+      "objective": "Derive conformance and token balances for a bounded packet sequence.",
+      "requirements": "Browser only for the supplied exercise. Optional guided inspection needs an exclusively owned, already prepared Linux interface with known namespace and policy. There is no live Linux traffic-control execution in this lesson.",
+      "topologyKind": "shared",
+      "topology": [
+        "Declared finite workload → local worksheet → computed rows",
+        "Original application readiness: supplied independently",
+        "Optional existing Linux interface: inspect only, outside browser calculations"
+      ],
+      "steps": [
+        "Calculate the burst preset without looking at the output; record all before and after balances.",
+        "Compare exact and same-arrival presets to test equality and input order.",
+        "Use idle to show that refill stops at B.",
+        "Use oversize to show that a dropped packet does not consume initial tokens.",
+        "Use fractional refill and keep 0.375-byte precision before the decision.",
+        "Toggle application context, reject malformed packet text and verify invalid scenario output remains hidden through edits.",
+        "Keyboard-scroll the result table and Reset; optional commands inspect an existing prepared context only."
+      ],
+      "verification": "Verify the supplied arithmetic row by row, including the units and the exact contract. Independent model tests cover meaningful presets, strict input rejection, unchanged source input, boundary decisions and manually derived timelines. Primary browser review is separate. No test here demonstrates a kernel queue, packet delivery, latency improvement or a live target result.",
+      "troubleshooting": "Reset if the selected scenario is invalid. Read the field error and check integer units, packet order and exact enum values. A valid numeric declaration can still describe a poor policy. For optional actual inspection, check interface, namespace, direction and parent hierarchy before interpreting an empty listing.",
+      "challenge": "At R = 8000 and B = 1000, compare two same-arrival sequences [600,400,500] and [500,600,400]. Which entries conform and why?",
+      "cleanup": "Reset restores the first supplied scenario without changing device state or learner progress. The worksheet owns no interface, process, namespace or qdisc. Any separately authorized device experiment must recover its own exact prior baseline."
+    },
+    "glossary": {
+      "Policer": "Meter plus action handling traffic outside a declared profile.",
+      "Token bucket": "Stored byte credit capped at B and refilled at a declared rate.",
+      "Conforming packet": "Packet with sufficient complete byte credit under this contract.",
+      "Excess packet": "Packet dropped by the chosen insufficient-credit action.",
+      "Burst allowance": "Stored credit available independently of the next refill interval.",
+      "Capped refill": "Actual new credit limited by the bucket’s remaining capacity.",
+      "Single-rate three-color marker": "RFC 2697 algorithm with two buckets and green/yellow/red outcomes.",
+      "Atomic packet decision": "Complete packet admission or rejection without partial size consumption."
+    },
+    "exams": [
+      {
+        "testedConcept": "Rate conversion",
+        "question": "R = 8000 bps supplies how many token bytes per millisecond?",
+        "answer": "1 byte.",
+        "explanation": "8000 bits/second divided by eight and by 1000 gives one byte/ms.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "1 byte.",
+          "8 bytes.",
+          "1000 bytes.",
+          "0.125 byte."
+        ]
+      },
+      {
+        "testedConcept": "Initial credit",
+        "question": "What balance exists before the first packet at 0 ms when B = 1000?",
+        "answer": "1000 bytes.",
+        "explanation": "The chosen teaching contract initializes the bucket full.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "0 bytes.",
+          "1000 bytes.",
+          "8000 bytes.",
+          "The first packet’s size."
+        ]
+      },
+      {
+        "testedConcept": "Excess action",
+        "question": "A 600-byte packet sees 400 tokens. What follows?",
+        "answer": "It drops and leaves 400 tokens.",
+        "explanation": "Excess is dropped atomically without consuming credit.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "It waits 200 ms.",
+          "It consumes the 400 and drops the remainder.",
+          "It drops and leaves 400 tokens.",
+          "It borrows 200 from the next refill."
+        ]
+      },
+      {
+        "testedConcept": "Equality",
+        "question": "A 1000-byte packet sees exactly 1000 tokens. What is the result?",
+        "answer": "Conform and leave zero tokens.",
+        "explanation": "The comparison uses tokens greater than or equal to packet size.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Drop because one extra token is required.",
+          "Yellow with 1000 tokens retained.",
+          "Wait for one refill interval.",
+          "Conform and leave zero tokens."
+        ]
+      },
+      {
+        "testedConcept": "Idle cap",
+        "question": "An empty B = 1000 bucket at R = 8000 idles for 10 seconds. How much can it hold?",
+        "answer": "1000 bytes.",
+        "explanation": "The stored balance is capped at B regardless of idle duration.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "1000 bytes.",
+          "10,000 bytes.",
+          "80,000 bytes.",
+          "Unlimited credit until another packet arrives."
+        ]
+      },
+      {
+        "testedConcept": "Oversized packet",
+        "question": "A 1001-byte packet arrives with a full B = 1000 bucket. Which outcome applies?",
+        "answer": "Drop because size exceeds the maximum credit.",
+        "explanation": "This contract includes no fragmentation or oversized exception.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Conform using the next millisecond’s token.",
+          "Drop because size exceeds the maximum credit.",
+          "Fragment into two conforming packets.",
+          "Expand B temporarily to 1001."
+        ]
+      },
+      {
+        "testedConcept": "RFC comparison",
+        "question": "What distinguishes RFC 2697 srTCM from this worksheet?",
+        "answer": "It uses two buckets and three colors.",
+        "explanation": "RFC 2697 is a different marker, not this single-bucket drop action.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "It replaces bytes with DSCP bit counts.",
+          "It uses one unlimited bucket.",
+          "It uses two buckets and three colors.",
+          "It schedules high-priority packets before low packets."
+        ]
+      },
+      {
+        "testedConcept": "Fractional balance",
+        "question": "At R = 3000, an empty bucket refills for 1 ms. Can a 1-byte packet conform?",
+        "answer": "No; only 0.375 bytes are available.",
+        "explanation": "The model retains fractional credit and needs the whole packet size.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Yes, refill rounds to one byte.",
+          "Yes, packet size is divided by eight again.",
+          "Yes, the first fraction is borrowed.",
+          "No; only 0.375 bytes are available."
+        ]
+      },
+      {
+        "testedConcept": "Same-arrival order",
+        "question": "B = 1000; packets of 600 then 600 arrive at 0 ms. What are the outcomes?",
+        "answer": "First conforms; second drops with 400 tokens retained.",
+        "explanation": "The first consumes 600; no time passes before the second.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "First conforms; second drops with 400 tokens retained.",
+          "Both conform because rate is checked over one second.",
+          "Both wait until the bucket refills.",
+          "First drops; second conforms from unused credit."
+        ]
+      },
+      {
+        "testedConcept": "Production observation",
+        "question": "What does a conforming worksheet row establish?",
+        "answer": "Conformance under the supplied local contract.",
+        "explanation": "The browser performs a profile calculation, not target execution or delivery.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The receiver acknowledged that packet.",
+          "Conformance under the supplied local contract.",
+          "The device has an installed filter policer.",
+          "The original application met its SLA."
+        ]
+      }
+    ],
+    "quick": [
+      {
+        "testedConcept": "Sequence",
+        "question": "R = 8000, B = 1000: packets (0 ms,600 B),(0 ms,600 B),(200 ms,500 B). Give outcomes and final tokens.",
+        "answer": "Conform, drop, conform; final tokens 100 bytes.",
+        "explanation": "The drop leaves 400; 200 ms adds 200; the last consumes 500.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Rate units",
+        "question": "What is the refill formula in bytes for elapsed milliseconds?",
+        "answer": "elapsedMs × R / 8000, capped by remaining bucket space.",
+        "explanation": "Eight bits per byte and 1000 milliseconds per second give the denominator.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Algorithm distinction",
+        "question": "Why is this not RFC 2697 srTCM?",
+        "answer": "It has one bucket and two outcomes instead of the RFC’s two buckets and three colors.",
+        "explanation": "Meter algorithm and action scope must stay explicit.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 3290 — meters and actions",
+        "url": "https://www.rfc-editor.org/rfc/rfc3290",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "RFC 2697 — comparison: single-rate three-color marker",
+        "url": "https://www.rfc-editor.org/rfc/rfc2697",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "iproute2 v6.6.0 — tc inspection syntax",
+        "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "batch": "10",
+    "level": "Intermediate → Advanced",
+    "minutes": 65,
+    "commands": [
+      {
+        "code": "tc -s qdisc show dev \"$QOS_DEV\"",
+        "explanation": "Set QOS_DEV separately to the exact interface of an exclusively owned, already prepared context. Inspect qdisc identity and statistics without changing policy.",
+        "expected": "GUIDED, NOT EXECUTED: Preserve the actual root/child handles, qdisc types and counters. A counter snapshot is not a measured original application result.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      },
+      {
+        "code": "tc -s class show dev \"$QOS_DEV\"",
+        "explanation": "Inspect existing classes and their available statistics on the same mapped interface. An empty class listing can be valid for a classless qdisc.",
+        "expected": "GUIDED, NOT EXECUTED: Correlate class handles with the qdisc hierarchy and actual configured rates; do not manufacture a class for every worksheet row.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      },
+      {
+        "code": "tc filter show dev \"$QOS_DEV\"",
+        "explanation": "Inspect filters in this mapped context. Additional parent or ingress context may be needed for the actual deployment.",
+        "expected": "GUIDED, NOT EXECUTED: Record what the command actually lists and identify the hook/hierarchy before interpreting a missing filter. This command does not create classification or marking.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      },
+      {
+        "code": "tc -d -s qdisc show dev \"$QOS_DEV\"\ntc -d -s class show dev \"$QOS_DEV\"",
+        "explanation": "Use the documented detail and statistics options for a second read-only view. Compare the same interface, namespace and observer context.",
+        "expected": "GUIDED, NOT EXECUTED: Inspect actual parameter details and cumulative counters. No supplied output, kernel scheduling trace or packet capture is claimed.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      }
+    ],
+    "configuration": "Use the browser for the tabletop calculations. Optional command inspection requires an exclusively owned, already configured Linux context, a mapped interface name, correct network namespace and a known traffic-control hierarchy. Set QOS_DEV outside the supplied commands to that exact interface. The iproute2 v6.6.0 manual is a pinned syntax reference; installed binaries, kernel support, hardware offload and distribution packaging must be checked at the actual target. No qdisc add, change, replace, delete, filter mutation, packet generator or namespace creation is supplied. Record the existing policy and observer context before any separately authorized experiment. A browser preset is an input declaration and cannot configure a Linux interface.",
+    "production": "Place each observation at a named interface and direction. The local egress device, an ingress redirect target, an upstream switch and a remote provider can have different congestion points. Confirm which resource is constrained before choosing a rate or scheduler. Preserve the original application, endpoint, route, return path and observation interval when comparing results. A favorable local worksheet result does not establish receiver performance or an SLA. Deployments also need ownership, change control, independent management and a recovery baseline. The optional read-only commands describe an existing object; absent objects, offloaded counters or a different namespace need investigation rather than an assumed default policy.",
+    "security": "Treat class and marking declarations as policy inputs, not proof of trusted traffic. An endpoint can request a preferred DSCP without being entitled to it. Establish a trust boundary and validate or remark traffic according to the actual administrative policy. Limit changes to authorized interfaces and protect management traffic independently. Packet or counter evidence can expose endpoint identities and workload patterns, so preserve only necessary context. This worksheet accepts bounded numeric declarations and inert text; it does not authenticate a flow, configure a filter or protect a device. A priority label alone is not a security boundary.",
+    "performance": "The calculations use exact declared units and ideal local arithmetic. They omit framing overhead, interpacket gaps, segmentation, retransmissions, clock granularity, driver queues, device offload and competing unlisted traffic. These omissions are explicit scope limits, not estimates of zero cost. Fractional milliseconds are retained internally and rounded only for display. Serialization concerns one selected link; propagation and application response time remain separate. Compare actual counters and application evidence over a known interval before drawing a performance conclusion. The independent application-readiness checkbox expresses context only and cannot turn model arithmetic into an observed service result.",
+    "id": "s3-g9-t4",
+    "title": "Shaping",
+    "subtitle": "Delay a finite FIFO workload until byte credit is available.",
+    "interactive": "shaping",
+    "definition": "Shaping delays traffic to make its release conform to a supplied profile. This worksheet uses an initially full single token bucket, ideal continuous refill and FIFO storage for a finite input. It reports the earliest token-eligible release time of each admissible packet. It does not claim that release is a physical serialized departure, an observed kernel timestamp or a measured application delay. A separately declared link capacity supplies each packet’s standalone serialization duration without adding it to the token-release timeline.",
+    "purpose": "Compare delaying a packet with dropping it when credit is missing. The same burst that loses an excess packet in the policing worksheet can wait here until enough tokens return. That delay must be visible rather than hidden behind an average-rate statement. A shaper can move congestion into its own queue; it does not eliminate the cost of constrained service. This lesson deliberately isolates token eligibility from physical service so a learner can identify which timing quantity has actually been calculated.",
+    "mental": "Packets enter one FIFO waiting line beside the byte-credit wallet. An admissible packet checks the wallet at the later of its own arrival and the previous release. If credit is missing, time advances exactly enough to earn the deficit, then the whole packet consumes credit and becomes eligible. The next packet cannot pass it. The worksheet stops at this eligibility boundary. A downstream serializer, driver or hardware queue can impose additional delay after that boundary.",
+    "components": [
+      "Rate R is a positive integer in bits per second. Ideal refill is R/8000 bytes per millisecond. Bucket capacity B is a positive integer in bytes and starts full. These fields use the same unit meanings as policing, but the missing-credit action changes from drop to wait. Continuous arithmetic permits fractional eligibility times even though supplied arrival timestamps are integer milliseconds.",
+      "Input contains one to twelve packets with nondecreasing integer arrivals and positive integer sizes. Equal timestamps retain input order. The buffer is declared infinite for this finite workload, so there is no queue-length admission limit or buffer-overflow action. This does not describe a real infinite memory device or permit conclusions about a production queue’s safe size.",
+      "Eligibility base time is max(packet arrival, previous eligible release). A packet arriving while an earlier packet waits cannot overtake it. At the base time, replenish the bucket by elapsed time since its prior accounting checkpoint, capped at B. A packet arriving after a long idle can start with a full bucket, but that stored allowance remains bounded.",
+      "If tokens before the decision are insufficient, deficit is packet size minus tokens. Waiting milliseconds equal deficit times 8000 divided by R. Tokens generated during this wait exactly pay the deficit. Once the whole packet consumes its credit, remaining tokens are zero in a positive-wait case. If no wait is needed, subtract its size from the available balance.",
+      "A packet larger than B cannot ever collect enough credit under this fixed no-fragment, no-oversized-exception contract. It is explicitly dropped as impossible rather than scheduled at an invented future time. That choice is a teaching boundary, not a claim that every shaper or hardware meter handles large packets this way. The dropped packet consumes no credit and does not move the eligible-release checkpoint.",
+      "Link capacity C is independent of token rate R. The output shows packet bytes times 8000/C milliseconds as separate standalone serialization. Several packets can have the same token-eligible time when the initial burst credit covers them; their physical bits still cannot occupy one link simultaneously. The browser does not combine these columns into a downstream schedule or promise a wire departure time."
+    ],
+    "mechanism": [
+      "Validate exact fields, arrival order, packet size limits and integer rates before calculation. The UI accepts one arrival and size per line and displays invalid input immediately. It does not coerce a string API value, reorder packets or treat malformed lines as missing traffic.",
+      "Initialize the bucket to B and its last eligibility checkpoint to zero. For each size no greater than B, choose the later of arrival and the previous checkpoint, then refill from the last checkpoint to that base. Report actual capped refill and before balance.",
+      "For the baseline R = 8000 and B = 1000, a 600-byte packet at 0 ms releases at 0 and leaves 400. The next 600-byte packet at 0 sees a 200-byte deficit and releases at 200 ms with zero tokens. Its queue wait is 200 ms.",
+      "A following 500-byte packet arriving at 200 ms begins at 200, has no tokens and waits another 500 ms. It releases at 700 ms and its wait from arrival is 500 ms. The model uses FIFO token accounting; it does not reset the bucket independently for each packet.",
+      "Keep fractional times when R is 3000 bps. After a 1000-byte packet consumes the full initial bucket, a one-byte packet at the same arrival releases at 8/3 ms, and the following two-byte packet releases at 8 ms. Display rounding must not become the next packet’s accounting time.",
+      "Compare the line-capacity preset with the baseline. Changing C changes the separate serialization column but leaves token-release times unchanged. The pinned tc-tbf manual describes a Linux token-bucket qdisc with additional parameters and implementation considerations; this ideal worksheet does not emulate its clock, buffer limit, peakrate or oversized-packet behavior."
+    ],
+    "flow": [
+      [
+        "Declare ordered workload",
+        "Supply arrival times, bytes, token rate and capacity."
+      ],
+      [
+        "Maintain FIFO credit history",
+        "Refill at the later of arrival and previous token release."
+      ],
+      [
+        "Wait for the complete deficit",
+        "Release eligible packets; explicitly reject size greater than B."
+      ],
+      [
+        "Separate timing boundaries",
+        "Show token eligibility, queue wait and standalone serialization distinctly."
+      ]
+    ],
+    "comparison": [
+      [
+        "Policer excess / shaper deficit",
+        "Chosen drop action / delayed eligible release",
+        "Missing tokens need not mean the same action."
+      ],
+      [
+        "Token release / wire departure",
+        "Profile eligibility / physical serialization completion",
+        "Only the first is scheduled here."
+      ],
+      [
+        "Token rate R / link rate C",
+        "Credit supply / standalone serializer capacity",
+        "Changing C does not change this token timeline."
+      ],
+      [
+        "Infinite worksheet buffer / real queue",
+        "Finite-input teaching assumption / bounded implementation",
+        "No kernel buffer or latency limit is tested."
+      ]
+    ],
+    "example": "The baseline packets are 600 B at 0 ms, 600 B at 0 ms and 500 B at 200 ms with R = 8000 bps and B = 1000 B. Eligible releases are 0, 200 and 700 ms. At C = 1,000,000 bps their separate serialization durations are 4.8, 4.8 and 4 ms. Those durations are not added to release times in this worksheet. They illustrate why a token release column alone cannot be reported as physical departure or application latency.",
+    "ports": "The shaper contract has no port or packet classification rule. Actual egress traffic control depends on the mapped hook and hierarchy. This browser emits no traffic and installs no Linux TBF qdisc.",
+    "troubleshooting": [
+      [
+        "Two rows release at the same time",
+        "Check initial burst credit; eligible release is not serialized physical departure."
+      ],
+      [
+        "A packet waits after arriving later than its predecessor",
+        "Review remaining credit and FIFO base time rather than resetting the bucket."
+      ],
+      [
+        "Changing C changes the claimed shaper release",
+        "Keep standalone serialization separate from token-rate eligibility."
+      ],
+      [
+        "An oversized packet has an enormous invented wait",
+        "Use the explicit impossible-packet drop contract; B cannot accumulate its full size."
+      ]
+    ],
+    "mistakes": [
+      "Calling eligible release a measured wire departure.",
+      "Adding serialization into eligibility without changing the declared model.",
+      "Allowing a later FIFO packet to pass an earlier waiting packet.",
+      "Treating the ideal buffer as actual unlimited device memory."
+    ],
+    "prerequisites": [
+      "s3-g9-t0",
+      "s3-g9-t1",
+      "s3-g9-t2",
+      "s3-g9-t3"
+    ],
+    "related": [
+      "s3-g9-t5"
+    ],
+    "lab": {
+      "objective": "Derive FIFO token-eligible release and wait without conflating them with physical departures.",
+      "requirements": "Browser only for the supplied exercise. Optional guided inspection needs an exclusively owned, already prepared Linux interface with known namespace and policy. There is no live Linux traffic-control execution in this lesson.",
+      "topologyKind": "shared",
+      "topology": [
+        "Declared finite workload → local worksheet → computed rows",
+        "Original application readiness: supplied independently",
+        "Optional existing Linux interface: inspect only, outside browser calculations"
+      ],
+      "steps": [
+        "Calculate baseline release times 0, 200 and 700 ms from the credit history.",
+        "Compare the same-arrival preset and explain simultaneous eligibility.",
+        "Use fractional rate and derive 8/3 ms before reading rounded display.",
+        "Use the idle preset to verify the cap and future one-byte wait.",
+        "Use oversize to confirm explicit drop and unchanged credit for the next admissible packet.",
+        "Change only C and compare the separate serialization values with unchanged release times.",
+        "Toggle readiness, test invalid packet order and invalid scenario persistence, then keyboard-scroll and Reset."
+      ],
+      "verification": "Verify the supplied arithmetic row by row, including the units and the exact contract. Independent model tests cover meaningful presets, strict input rejection, unchanged source input, boundary decisions and manually derived timelines. Primary browser review is separate. No test here demonstrates a kernel queue, packet delivery, latency improvement or a live target result.",
+      "troubleshooting": "Reset if the selected scenario is invalid. Read the field error and check integer units, packet order and exact enum values. A valid numeric declaration can still describe a poor policy. For optional actual inspection, check interface, namespace, direction and parent hierarchy before interpreting an empty listing.",
+      "challenge": "What additional nonpreemptive serializer model would be required to turn token-eligible releases into one-link physical finish times?",
+      "cleanup": "Reset restores the first supplied scenario without changing device state or learner progress. The worksheet owns no interface, process, namespace or qdisc. Any separately authorized device experiment must recover its own exact prior baseline."
+    },
+    "glossary": {
+      "Shaper": "Mechanism delaying traffic to conform to a supplied profile.",
+      "Token-eligible release": "Earliest modeled time the complete packet has sufficient byte credit.",
+      "FIFO": "First-in, first-out ordering of the supplied finite sequence.",
+      "Deficit": "Positive difference between packet bytes and currently available tokens.",
+      "Queue wait": "Modeled eligible-release time minus original packet arrival time.",
+      "Eligibility checkpoint": "Previous admitted packet’s modeled release time used for refill accounting.",
+      "Standalone serialization": "Per-packet link duration shown separately from eligibility.",
+      "Oversized-packet contract": "Explicit local rejection of a packet larger than B without fragmentation or exception."
+    },
+    "exams": [
+      {
+        "testedConcept": "Missing credit",
+        "question": "How does this shaper handle a packet no larger than B when tokens are missing?",
+        "answer": "Wait until the full deficit refills.",
+        "explanation": "Admissible packets are delayed for complete token credit.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Drop immediately like the chosen policer.",
+          "Wait until the full deficit refills.",
+          "Mark it yellow and transmit immediately.",
+          "Consume only its available fraction."
+        ]
+      },
+      {
+        "testedConcept": "Baseline release",
+        "question": "After 600 B releases at 0 ms from B = 1000, another 600 B at 0 with R = 8000 releases when?",
+        "answer": "200 ms.",
+        "explanation": "Only 200 bytes are missing and refill is one byte/ms.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "0 ms.",
+          "600 ms.",
+          "200 ms.",
+          "1000 ms."
+        ]
+      },
+      {
+        "testedConcept": "FIFO continuation",
+        "question": "The previous packet releases at 200 ms leaving zero. A 500 B packet arrives at 200 ms, R = 8000. Its release is?",
+        "answer": "700 ms.",
+        "explanation": "Its 500-byte deficit requires 500 ms after the 200-ms checkpoint.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "200 ms.",
+          "500 ms.",
+          "600 ms.",
+          "700 ms."
+        ]
+      },
+      {
+        "testedConcept": "Output boundary",
+        "question": "What is a token-eligible release in this lesson?",
+        "answer": "Profile eligibility, before any separately modeled physical serializer.",
+        "explanation": "Eligibility is the specific modeled timing boundary.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Profile eligibility, before any separately modeled physical serializer.",
+          "The last bit reaching the receiver.",
+          "A measured Linux dequeue timestamp.",
+          "The application acknowledgement arrival."
+        ]
+      },
+      {
+        "testedConcept": "Oversized packet",
+        "question": "What does size greater than B do here?",
+        "answer": "Drop explicitly as impossible under the chosen contract.",
+        "explanation": "This model has no fragmentation or oversized exception.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Wait indefinitely with a computed finite release.",
+          "Drop explicitly as impossible under the chosen contract.",
+          "Increase B for that packet.",
+          "Fragment automatically before shaping."
+        ]
+      },
+      {
+        "testedConcept": "Independent C",
+        "question": "Changing only C affects which output?",
+        "answer": "Standalone serialization duration.",
+        "explanation": "Token release uses R and B; C supplies a separate serializer duration.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The token deficit.",
+          "The FIFO ordering.",
+          "Standalone serialization duration.",
+          "The initial bucket balance."
+        ]
+      },
+      {
+        "testedConcept": "Fractional eligibility",
+        "question": "After emptying the bucket, one byte at R = 3000 becomes eligible after what delay?",
+        "answer": "8/3 ms.",
+        "explanation": "One byte requires 8000/3000 milliseconds of refill.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "0.375 ms.",
+          "1 ms.",
+          "8 ms.",
+          "8/3 ms."
+        ]
+      },
+      {
+        "testedConcept": "Same-time release",
+        "question": "Why can two packets have identical eligible release timestamps?",
+        "answer": "Initial tokens can pay both without advancing time.",
+        "explanation": "Burst credit can create simultaneous eligibility but not simultaneous wire service.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Initial tokens can pay both without advancing time.",
+          "The link physically serializes both simultaneously.",
+          "FIFO is disabled for same-arrival packets.",
+          "Their packet sizes were ignored."
+        ]
+      },
+      {
+        "testedConcept": "Buffer scope",
+        "question": "Which buffer assumption is declared?",
+        "answer": "Infinite queue for this finite workload only.",
+        "explanation": "This is a bounded teaching workload with an explicit ideal storage assumption.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Linux’s installed TBF limit was discovered.",
+          "Infinite queue for this finite workload only.",
+          "One packet maximum on all devices.",
+          "No waiting storage because shaping drops every excess."
+        ]
+      },
+      {
+        "testedConcept": "Kernel distinction",
+        "question": "Why does the pinned tc-tbf manual not make this a TBF emulator?",
+        "answer": "Actual TBF has additional parameters and implementation behavior absent here.",
+        "explanation": "The lesson isolates continuous token eligibility rather than claiming kernel equivalence.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "The manual describes only DSCP.",
+          "TBF cannot use a rate parameter.",
+          "Actual TBF has additional parameters and implementation behavior absent here.",
+          "TBF is the same two-class scheduler used in queuing."
+        ]
+      }
+    ],
+    "quick": [
+      {
+        "testedConcept": "Timeline",
+        "question": "Give eligible releases for baseline (0,600),(0,600),(200,500), R = 8000, B = 1000.",
+        "answer": "0, 200 and 700 milliseconds.",
+        "explanation": "Initial tokens pay the first; later deficits require 200 and 500 ms.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Scope",
+        "question": "Does changing line capacity C change token-release times here?",
+        "answer": "No; it changes only the separate serialization column.",
+        "explanation": "R supplies tokens and C supplies the separate link duration.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Impossible packet",
+        "question": "Why is size greater than B dropped in this contract?",
+        "answer": "The capped bucket can never hold the full packet credit and no oversized exception is modeled.",
+        "explanation": "This is an explicit local choice, not a universal hardware rule.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 3290 — shapers and token-bucket discussion",
+        "url": "https://www.rfc-editor.org/rfc/rfc3290",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "iproute2 v6.6.0 — tc-tbf manual, comparison only",
+        "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-tbf.8",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "iproute2 v6.6.0 — tc inspection syntax",
+        "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "batch": "10",
+    "level": "Intermediate → Advanced",
+    "minutes": 65,
+    "commands": [
+      {
+        "code": "tc -s qdisc show dev \"$QOS_DEV\"",
+        "explanation": "Set QOS_DEV separately to the exact interface of an exclusively owned, already prepared context. Inspect qdisc identity and statistics without changing policy.",
+        "expected": "GUIDED, NOT EXECUTED: Preserve the actual root/child handles, qdisc types and counters. A counter snapshot is not a measured original application result.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      },
+      {
+        "code": "tc -s class show dev \"$QOS_DEV\"",
+        "explanation": "Inspect existing classes and their available statistics on the same mapped interface. An empty class listing can be valid for a classless qdisc.",
+        "expected": "GUIDED, NOT EXECUTED: Correlate class handles with the qdisc hierarchy and actual configured rates; do not manufacture a class for every worksheet row.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      },
+      {
+        "code": "tc filter show dev \"$QOS_DEV\"",
+        "explanation": "Inspect filters in this mapped context. Additional parent or ingress context may be needed for the actual deployment.",
+        "expected": "GUIDED, NOT EXECUTED: Record what the command actually lists and identify the hook/hierarchy before interpreting a missing filter. This command does not create classification or marking.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      },
+      {
+        "code": "tc -d -s qdisc show dev \"$QOS_DEV\"\ntc -d -s class show dev \"$QOS_DEV\"",
+        "explanation": "Use the documented detail and statistics options for a second read-only view. Compare the same interface, namespace and observer context.",
+        "expected": "GUIDED, NOT EXECUTED: Inspect actual parameter details and cumulative counters. No supplied output, kernel scheduling trace or packet capture is claimed.",
+        "filename": "bash",
+        "platform": "Linux iproute2 v6.6.0 manual scope; read-only, mapped owned interface required"
+      }
+    ],
+    "configuration": "Use the browser for the tabletop calculations. Optional command inspection requires an exclusively owned, already configured Linux context, a mapped interface name, correct network namespace and a known traffic-control hierarchy. Set QOS_DEV outside the supplied commands to that exact interface. The iproute2 v6.6.0 manual is a pinned syntax reference; installed binaries, kernel support, hardware offload and distribution packaging must be checked at the actual target. No qdisc add, change, replace, delete, filter mutation, packet generator or namespace creation is supplied. Record the existing policy and observer context before any separately authorized experiment. A browser preset is an input declaration and cannot configure a Linux interface.",
+    "production": "Place each observation at a named interface and direction. The local egress device, an ingress redirect target, an upstream switch and a remote provider can have different congestion points. Confirm which resource is constrained before choosing a rate or scheduler. Preserve the original application, endpoint, route, return path and observation interval when comparing results. A favorable local worksheet result does not establish receiver performance or an SLA. Deployments also need ownership, change control, independent management and a recovery baseline. The optional read-only commands describe an existing object; absent objects, offloaded counters or a different namespace need investigation rather than an assumed default policy.",
+    "security": "Treat class and marking declarations as policy inputs, not proof of trusted traffic. An endpoint can request a preferred DSCP without being entitled to it. Establish a trust boundary and validate or remark traffic according to the actual administrative policy. Limit changes to authorized interfaces and protect management traffic independently. Packet or counter evidence can expose endpoint identities and workload patterns, so preserve only necessary context. This worksheet accepts bounded numeric declarations and inert text; it does not authenticate a flow, configure a filter or protect a device. A priority label alone is not a security boundary.",
+    "performance": "The calculations use exact declared units and ideal local arithmetic. They omit framing overhead, interpacket gaps, segmentation, retransmissions, clock granularity, driver queues, device offload and competing unlisted traffic. These omissions are explicit scope limits, not estimates of zero cost. Fractional milliseconds are retained internally and rounded only for display. Serialization concerns one selected link; propagation and application response time remain separate. Compare actual counters and application evidence over a known interval before drawing a performance conclusion. The independent application-readiness checkbox expresses context only and cannot turn model arithmetic into an observed service result.",
+    "id": "s3-g9-t5",
+    "title": "Queuing",
+    "subtitle": "Compare FIFO with nonpreemptive strict priority on one ideal link.",
+    "interactive": "queuing",
+    "definition": "Queuing stores packets awaiting service, while a scheduler chooses the next eligible packet when the resource is free. This worksheet supplies a finite workload of at most eight packets and one ideal link server. It compares FIFO with strict priority between supplied H and L classes. Service is nonpreemptive: a packet already on the link finishes before another begins. The calculated start, finish, wait and sojourn times belong to this explicit local schedule, not to a measured Linux queue or an end-to-end application transaction.",
+    "purpose": "Use a complete small timeline to understand how selection rules change waiting time without changing packet serialization. Priority matters only among packets that have already arrived and are waiting at the moment the server becomes free. A high-priority packet arriving during a low-priority transmission still waits for that transmission to finish. The finite model demonstrates individual outcomes and tie handling. It cannot measure starvation from unbounded future high-priority arrivals or reproduce every weighted or vendor-specific scheduler.",
+    "mental": "Picture one checkout desk that serves complete packets. FIFO chooses the oldest waiting arrival, using input order when times tie. Strict priority first looks for any waiting H packet; if one exists it selects the oldest H, otherwise the oldest L. Once a packet begins, the desk stays occupied for bytes times 8000/C milliseconds. No class can interrupt those already-started bits. A silent interval leaves the desk idle until the next declared arrival.",
+    "components": [
+      "C is a positive integer bits-per-second capacity. Each packet’s service duration is bytes times 8000 divided by C milliseconds. The finite workload supplies integer sizes and nondecreasing integer arrivals; computed times can be fractional. Packet sizes determine how long the server remains busy, so equal packet counts need not mean equal transmitted bytes or equal service time.",
+      "Class H or L is an exact supplied enum. It is not derived from DSCP, transport port, payload or authenticated application identity. Under FIFO the label does not alter selection. Under strict priority H takes precedence only over L packets that are already waiting. The lesson supplies no classification implementation and does not equate H with a configured Cisco low-latency queue.",
+      "The waiting queue is infinite for this finite input. There are no buffer drops, admission limits, ECN marks or tail-drop decisions. Every valid packet eventually completes because the listed workload ends and each service duration is finite. This termination fact is a consequence of bounded input, not a claim that low-priority traffic avoids starvation under continuous future high-priority load.",
+      "Input order resolves equal arrival times within a selected priority class or across all classes under FIFO. This deterministic rule is part of the teaching contract. At initial time zero, all entries with arrival zero are already available; strict priority can choose a later-listed H ahead of an earlier-listed L. It must not choose a future H before that packet has arrived.",
+      "Start time is when the selected packet begins occupying the link. Finish time is start plus serialization. Wait is start minus arrival. Sojourn is finish minus arrival and therefore wait plus serialization. These columns expose different boundaries. Propagation to a remote endpoint, driver buffering and application acknowledgement are outside this local one-server timeline.",
+      "The scheduler is work-conserving under the declared input: if any packet is waiting when the link becomes free, service starts immediately. If none is waiting, time advances to the earliest pending arrival. Strict priority can disadvantage L when H remains continuously backlogged. Fairer byte-based methods such as DRR or WFQ involve additional state and weights; none is implemented by assigning equal packet turns here."
+    ],
+    "mechanism": [
+      "Validate one to eight exact packet objects with ordered arrival, bounded integer byte size and class H or L. Validate capacity, policy enum and independent readiness boolean without coercion. Do not silently accept lowercase class names, unknown policy text, extra packet properties or unsorted arrivals.",
+      "Begin with a free server at time zero. Gather only packets with arrival no later than the current free instant. If this set is empty, move the server clock to the earliest remaining arrival, preserving an explicit idle interval rather than inventing service before arrival.",
+      "For FIFO, select the waiting packet with the earliest arrival and then earliest input index. For strict priority, select waiting H before waiting L, then apply the same arrival/index rule within that class. Selection is repeated only when the current complete packet finishes.",
+      "At C = 8000, the baseline 1000-byte L packet at 0 starts immediately and finishes at 1000 ms. A 100-byte L arrives at 100 ms and a 100-byte H at 200 ms. Neither can interrupt the first packet. At the 1000-ms free instant FIFO serves the waiting L first, while strict priority serves H first.",
+      "Under FIFO baseline finishes are 1000, 1100 and 1200 ms in input order. Under strict priority the H packet finishes at 1100 and the second L at 1200. The H wait changes from 900 to 800 ms; the second L wait changes from 900 to 1000 ms. Total listed byte service remains the same.",
+      "Compare simultaneous arrival and fractional capacity cases. With C = 3000, a one-byte service duration is 8/3 ms and two bytes take 16/3 ms. Retain full precision through successive finishes. The pinned tc-prio guide describes a specific Linux priority-band hierarchy, but this two-class abstract scheduler does not reproduce that qdisc’s filters, child disciplines or kernel runtime."
+    ],
+    "flow": [
+      [
+        "Declare finite workload",
+        "Provide ordered arrivals, packet bytes, H/L class and link capacity."
+      ],
+      [
+        "Wait for a free server",
+        "Gather arrived packets or advance to the next actual arrival."
+      ],
+      [
+        "Select and finish one packet",
+        "Apply FIFO or H-first selection without interrupting service."
+      ],
+      [
+        "Compare timing boundaries",
+        "Read start, finish, wait and sojourn; keep application context independent."
+      ]
+    ],
+    "comparison": [
+      [
+        "FIFO / strict priority",
+        "Oldest waiting packet / oldest waiting H before L",
+        "Selection changes only at server-free instants."
+      ],
+      [
+        "Waiting priority / preemption",
+        "Choice of next packet / interruption of current service",
+        "This scheduler offers priority without packet interruption."
+      ],
+      [
+        "Wait / sojourn",
+        "Arrival to start / arrival to finish",
+        "Sojourn includes serialization as well as wait."
+      ],
+      [
+        "Packet WRR / byte fairness",
+        "Turns counted in packets / service accounting in bytes",
+        "Unequal sizes make equal packet turns unequal byte service."
+      ],
+      [
+        "Finite completion / starvation risk",
+        "All listed packets finish / sustained future H can delay L",
+        "A bounded input cannot measure unbounded starvation."
+      ]
+    ],
+    "example": "The nonpreemptive preset sends a 1000-byte L at 0 ms and introduces a 100-byte H at 1 ms on C = 8000 bps. L occupies the server until 1000 ms. H starts then, finishes at 1100 ms and waits 999 ms. Raising H’s preference does not remove the already-started packet’s serialization. To compare FIFO and strict priority, use the baseline with two waiting packets of different classes at the next free instant.",
+    "ports": "The H/L labels contain no transport port or actual classifier. Linux PRIO selection requires a supported mapped hierarchy and classification behavior. No qdisc is installed, no packet is transmitted and no capture is produced by the browser.",
+    "troubleshooting": [
+      [
+        "H starts before its arrival in a proposed trace",
+        "Restrict candidates to arrived waiting packets at the server-free instant."
+      ],
+      [
+        "H interrupts L mid-packet",
+        "Apply nonpreemptive service; priority selects the next packet only."
+      ],
+      [
+        "Equal packet turns are called equal bandwidth",
+        "Compare byte sizes and total serialization time, not just packet counts."
+      ],
+      [
+        "All finite packets finish, so starvation is dismissed",
+        "Separate this ending workload from sustained future high-priority arrivals."
+      ]
+    ],
+    "mistakes": [
+      "Giving priority to a future packet that has not arrived.",
+      "Treating strict priority as preemption of bits already in service.",
+      "Calling FIFO versus H/L priority a WFQ, DRR or vendor LLQ implementation.",
+      "Using local sojourn as a receiver or application latency measurement."
+    ],
+    "prerequisites": [
+      "s3-g9-t0",
+      "s3-g9-t1",
+      "s3-g9-t2"
+    ],
+    "related": [
+      "s3-g9-t3",
+      "s3-g9-t4"
+    ],
+    "lab": {
+      "objective": "Build and compare complete finite FIFO and strict-priority schedules.",
+      "requirements": "Browser only for the supplied exercise. Optional guided inspection needs an exclusively owned, already prepared Linux interface with known namespace and policy. There is no live Linux traffic-control execution in this lesson.",
+      "topologyKind": "shared",
+      "topology": [
+        "Declared finite workload → local worksheet → computed rows",
+        "Original application readiness: supplied independently",
+        "Optional existing Linux interface: inspect only, outside browser calculations"
+      ],
+      "steps": [
+        "Derive the baseline FIFO order, starts and finishes at C = 8000.",
+        "Switch to strict priority and compare each packet’s wait, not only final completion time.",
+        "Use nonpreemptive to show that H arriving at 1 ms cannot interrupt L.",
+        "Compare same-arrival presets and state the input-order tie rule.",
+        "Use idle to preserve the gap before the next arrival.",
+        "Use fractional capacity to derive 8/3 and 8 ms finishes without rounding intermediate time.",
+        "Toggle readiness, reject unknown policies/classes and unsorted input, confirm invalid scenario persistence, then keyboard-scroll and Reset."
+      ],
+      "verification": "Verify the supplied arithmetic row by row, including the units and the exact contract. Independent model tests cover meaningful presets, strict input rejection, unchanged source input, boundary decisions and manually derived timelines. Primary browser review is separate. No test here demonstrates a kernel queue, packet delivery, latency improvement or a live target result.",
+      "troubleshooting": "Reset if the selected scenario is invalid. Read the field error and check integer units, packet order and exact enum values. A valid numeric declaration can still describe a poor policy. For optional actual inspection, check interface, namespace, direction and parent hierarchy before interpreting an empty listing.",
+      "challenge": "Can a finite eight-packet worksheet establish a lower-priority starvation bound when arbitrary future high-priority arrivals are unknown? Explain the missing information.",
+      "cleanup": "Reset restores the first supplied scenario without changing device state or learner progress. The worksheet owns no interface, process, namespace or qdisc. Any separately authorized device experiment must recover its own exact prior baseline."
+    },
+    "glossary": {
+      "Queue": "Storage for arrived packets awaiting service.",
+      "Scheduler": "Rule selecting the next waiting packet at a free resource.",
+      "FIFO": "Selection by earliest arrival, with input order resolving equal times.",
+      "Strict priority": "Selection of waiting H before waiting L in this two-class model.",
+      "Nonpreemptive service": "A packet already started completes before another begins.",
+      "Wait time": "Packet start time minus its original arrival time.",
+      "Sojourn time": "Packet finish time minus its original arrival time.",
+      "Work-conserving scheduler": "Server begins work whenever a packet is waiting.",
+      "Starvation": "Persistent lack of service for a class under continuing competing workload.",
+      "Deficit round robin": "Scheduling method using byte-based deficit accounting rather than equal packet turns."
+    },
+    "exams": [
+      {
+        "testedConcept": "Nonpreemption",
+        "question": "L of 1000 B starts at 0 on C = 8000; H arrives at 1 ms. When can H start?",
+        "answer": "1000 ms.",
+        "explanation": "The current L service lasts 1000 ms and cannot be interrupted.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "1 ms.",
+          "1000 ms.",
+          "100 ms.",
+          "After half the L packet."
+        ]
+      },
+      {
+        "testedConcept": "Eligible candidates",
+        "question": "At server-free time 100 ms, H arrives at 101 and L is already waiting. Strict priority selects?",
+        "answer": "The waiting L now.",
+        "explanation": "Only already-arrived waiting packets are candidates.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Future H before it arrives.",
+          "Neither until every class is populated.",
+          "The waiting L now.",
+          "H at time zero retroactively."
+        ]
+      },
+      {
+        "testedConcept": "FIFO tie",
+        "question": "Two packets arrive at 0: listed L then H. FIFO chooses which first?",
+        "answer": "The first-listed L.",
+        "explanation": "FIFO ignores H/L for selection and uses input order for equal arrivals.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "H because it has a preferred class.",
+          "The smaller real IP.",
+          "The longest packet.",
+          "The first-listed L."
+        ]
+      },
+      {
+        "testedConcept": "Priority tie",
+        "question": "Listed L,H,H all arrive at 0. Strict priority chooses what order?",
+        "answer": "First H, second H, then L.",
+        "explanation": "H precedes L, and input order resolves the tie between H packets.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "First H, second H, then L.",
+          "L, first H, second H.",
+          "Second H, L, first H.",
+          "All three start simultaneously."
+        ]
+      },
+      {
+        "testedConcept": "Sojourn",
+        "question": "Arrival is 100 ms, start 1000 and finish 1100. What is sojourn?",
+        "answer": "1000 ms.",
+        "explanation": "Sojourn is finish minus arrival; wait is 900 and service is 100.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "900 ms.",
+          "1000 ms.",
+          "100 ms.",
+          "1100 ms."
+        ]
+      },
+      {
+        "testedConcept": "Fractional service",
+        "question": "One byte at C = 3000 requires what service duration?",
+        "answer": "8/3 ms.",
+        "explanation": "One byte is eight bits, giving 8000/3000 milliseconds.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "0.375 ms.",
+          "3 ms.",
+          "8/3 ms.",
+          "8000 ms."
+        ]
+      },
+      {
+        "testedConcept": "Idle server",
+        "question": "No packet is waiting and the next arrival is at 500 ms. What does the scheduler do?",
+        "answer": "Remain idle until 500 ms.",
+        "explanation": "The server advances only to an actual next arrival.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Transmit a placeholder packet.",
+          "Start the future packet at the prior finish.",
+          "Set wait to negative time.",
+          "Remain idle until 500 ms."
+        ]
+      },
+      {
+        "testedConcept": "Finite starvation scope",
+        "question": "What can this finite workload establish about starvation?",
+        "answer": "Listed packets complete; unbounded future starvation is not measured.",
+        "explanation": "The finite input ends; sustained unlisted arrivals require a separate argument.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Listed packets complete; unbounded future starvation is not measured.",
+          "L can never starve under continuous H traffic.",
+          "All strict-priority systems guarantee equal class wait.",
+          "The final timestamp is a universal starvation bound."
+        ]
+      },
+      {
+        "testedConcept": "Packet versus byte fairness",
+        "question": "Why are equal packet turns not necessarily equal byte bandwidth?",
+        "answer": "Packet sizes can differ, so turns consume different byte totals.",
+        "explanation": "Service consumption depends on bytes, not only packet counts.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "DSCP changes packet length to one byte.",
+          "Packet sizes can differ, so turns consume different byte totals.",
+          "FIFO removes serialization.",
+          "Every H packet is the same size as every L packet."
+        ]
+      },
+      {
+        "testedConcept": "Policy boundary",
+        "question": "Which algorithm is implemented by this worksheet?",
+        "answer": "Two-class FIFO or strict priority on one ideal server.",
+        "explanation": "The declared model excludes kernel hierarchy and weighted/vendor algorithms.",
+        "difficulty": "Intermediate",
+        "type": "multiple-choice",
+        "options": [
+          "Linux’s full three-band PRIO hierarchy.",
+          "Cisco LLQ with its policer.",
+          "Two-class FIFO or strict priority on one ideal server.",
+          "Weighted fair queuing with inferred weights."
+        ]
+      }
+    ],
+    "quick": [
+      {
+        "testedConcept": "Baseline priority",
+        "question": "At C = 8000, baseline packets are (0,1000,L),(100,100,L),(200,100,H). Give strict-priority service order.",
+        "answer": "Packet 1, packet 3, packet 2.",
+        "explanation": "Packet 1 has already begun; at 1000 ms both others wait and H wins.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Wait arithmetic",
+        "question": "H arrives at 1 ms, starts at 1000 and finishes at 1100. Give wait and sojourn.",
+        "answer": "Wait 999 ms; sojourn 1099 ms.",
+        "explanation": "Subtract arrival from start and finish respectively.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      },
+      {
+        "testedConcept": "Fairness distinction",
+        "question": "Why should byte-based DRR/WFQ not be described as equal packet turns?",
+        "answer": "Unequal packet sizes require byte/service accounting rather than packet-count equality.",
+        "explanation": "Those algorithms have additional accounting and are not implemented here.",
+        "difficulty": "Intermediate",
+        "type": "short-answer"
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 3290 — queues and schedulers",
+        "url": "https://www.rfc-editor.org/rfc/rfc3290",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "iproute2 v6.6.0 — tc-prio manual, scoped comparison",
+        "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-prio.8",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "iproute2 v6.6.0 — tc inspection syntax",
+        "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc.8",
+        "checked": "2026-10-09"
+      },
+      {
+        "title": "iproute2 v6.6.0 — tc-drr byte deficit accounting, prose comparison only",
+        "url": "https://github.com/iproute2/iproute2/blob/v6.6.0/man/man8/tc-drr.8",
+        "checked": "2026-10-09"
+      }
+    ]
+  }
+]

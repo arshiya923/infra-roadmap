@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "vectors": 3072,
+  "checks": [
+    "3072 independent graph-walk expectations across directed costs and eight boolean declarations",
+    "Eleven manually expected cases including unequal directions and independently withheld endpoint LANs",
+    "Fixed structural area scopes, excluded foreign router LSAs and unchanged /24 prefixes",
+    "Inter-area endpoint and intra-area ABR candidate costs before declared RIB/service gates",
+    "Cost boundaries, strict booleans, invalid cases, input preservation and fresh nested results"
+  ],
+  "scope": "Fixed supplied converged two-normal-area chain with no alternate ABR, range, external route, flooding, LSA aging, neighbor FSM, timer, packet or hardware model. Structural template is not live retained LSDB state."
+}

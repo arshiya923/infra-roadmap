@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "decoder": "TShark (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3).",
+  "sha256": "1365c7f0710ad9f10ac57612ddf513a34d962ab7e39aa311aa9ce523d97b9b5e",
+  "records": 4,
+  "fieldRows": [
+    "1\t192.0.2.20\t100\t0\t1550\t1550",
+    "2\t192.0.2.20\t101\t0\t1550\t1550",
+    "3\t192.0.2.30\t100\t0\t1550\t1550",
+    "4\t192.0.2.20\t100\t1\t110\t110"
+  ],
+  "filters": {
+    "erspan": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "erspan.spanid == 100": [
+      "1",
+      "3",
+      "4"
+    ],
+    "erspan.spanid == 100 && ip.dst == 192.0.2.20": [
+      "1",
+      "4"
+    ],
+    "erspan.truncated == 1": [
+      "4"
+    ],
+    "frame.cap_len < frame.len": []
+  },
+  "checks": [
+    "Pinned deterministic bytes and independent PCAP/IP/GRE/ERSPAN/inner-header lengths",
+    "IPv4 checksums all records and UDP checksum for three complete inner copies",
+    "ERSPAN truncation distinct from complete PCAP record lengths",
+    "Installed TShark fields and five offline filters",
+    "Generator default inert, explicit owned write and refusal to replace different bytes"
+  ],
+  "scope": "Offline synthetic bytes only; no live capture, network emission, target session, transport arrival or original service"
+}

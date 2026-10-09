@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "combinations": 19600,
+  "cases": 9,
+  "checks": [
+    "19600 independent BigInt reference combinations cover both path positions, two conventions, bottleneck/delay/RD/total/ties and unchanged input",
+    "Nine authored cases have independent golden values including unchanged local-only bandwidth, delay change and 175-point rounding difference",
+    "Classic high-speed inverse-term collapse yields a numeric tie without ECMP/traffic claims",
+    "Strict numeric bounds, fixed shape/ID/mode and malformed input rejection; delay zero is permitted within declared arithmetic",
+    "Fresh scenario/catalog/results and kind guards preserve safe separate use",
+    "Recorded uniform-default 30720/28160 topology and interface values reconcile arithmetically; no metric configuration or arbitrary FRR parity inferred"
+  ],
+  "scope": "Default-classic supplied two-link vectors. Truncate-first RFC note and scale-first comparison; no full FRR aggregation/nondefault-K/saturation, wide metric, historical FD/DUAL, installed route or actual metric-mutation experiment."
+}

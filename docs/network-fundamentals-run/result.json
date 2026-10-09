@@ -1,0 +1,16 @@
+{
+  "scope": "Real packets on isolated Linux veth links; no physical wire or external service test",
+  "checks": [
+    "DHCP address, DNS answer, ICMP and application baseline",
+    "Missing server return route breaks ICMP/application while local DNS works",
+    "Restored return route recovers ICMP and application",
+    "Owned processes reaped and namespaces removed"
+  ],
+  "captured_frames": {
+    "ARP": 5,
+    "DHCP": 6,
+    "DNS": 2,
+    "TCP SYN": 4,
+    "ICMP": 4
+  }
+}

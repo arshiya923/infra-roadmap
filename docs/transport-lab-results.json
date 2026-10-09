@@ -1,0 +1,36 @@
+{
+  "result": "PASS",
+  "checks": [
+    "default help",
+    "loopback-only endpoints",
+    "stream reconstruction",
+    "datagram boundaries in this run",
+    "all five sockets closed",
+    "three sockets closed after injected failure"
+  ],
+  "observed": {
+    "result": "PASS",
+    "scope": "IPv4 loopback only; ephemeral ports; sockets closed on exit",
+    "tcp": {
+      "write_lengths": [
+        5,
+        5
+      ],
+      "read_lengths": [
+        3,
+        3,
+        3,
+        1
+      ],
+      "bytes": "HELLOWORLD",
+      "note": "Reads use a three-byte buffer; this is not a wire-segmentation measurement."
+    },
+    "udp": {
+      "datagram_lengths": [
+        5,
+        5
+      ],
+      "note": "Observed delivery in this run does not guarantee UDP delivery, ordering or duplicate suppression."
+    }
+  }
+}

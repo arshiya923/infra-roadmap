@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant",
+  "result": "PASS",
+  "topics": [
+    {
+      "id": "s5-g0-t0",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Asset/threat/vulnerability/residual-risk distinction and separate positive/negative operations reviewed; no zero-risk claim.",
+      "sha256": "ea14fe4ded3ccb3b1e86e4f78289d90c3a60ed38835c7864d3c02b992897eaff"
+    },
+    {
+      "id": "s5-g0-t1",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Disclosure, unauthorized alteration and timely use remain independent; public digest versus trusted reference reviewed.",
+      "sha256": "7e3435c78a7cd6693a0534b542237214a94321b9a27b0a5f63dac0357ec58802"
+    },
+    {
+      "id": "s5-g0-t2",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Listener versus reachable endpoint versus vulnerability separated; no remote scanning/exploitation instructions.",
+      "sha256": "ce7a38554bfbb898adba7b564a776472be283827fb642d8e796ff16f91af8246"
+    },
+    {
+      "id": "s5-g0-t3",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Layer 2 separation differs from routed enforcement; selected tuple and independent return path reviewed.",
+      "sha256": "5a132041f05960e85a79c3e327a4e9edda0d24f8af5338681789fe76540097c5"
+    },
+    {
+      "id": "s5-g0-t4",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Prevent/detect/recover and common failure domains separated; no unsupported probability multiplication.",
+      "sha256": "7ac3f6405ec9f5508bc59de8b44c47ba598c721c3a5a128ded9386f59e964900"
+    },
+    {
+      "id": "s5-g1-t0",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "First-match order, wildcard ignored bits, nonempty-list implicit deny, empty/absent consumer exception and stateless limits reviewed.",
+      "sha256": "7a2eafa3ab33510e180810780876fb0e05bea5b08d2cdd725dd1481553092668"
+    },
+    {
+      "id": "s5-g1-t1",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Source-only semantics and destination-side heuristic limits reviewed; visible destination/port context explicitly ignored.",
+      "sha256": "80a851883ce99c4b1c80473aaa3c3238f0ada09815ead024c8c1ed479d56226b"
+    },
+    {
+      "id": "s5-g1-t2",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Transport/destination-port match, NAT observation and fragment exclusions retained; response state never inferred.",
+      "sha256": "f8b475eb20a7bec89c4b21b64549c8cb52843fbf07d9aed5017c35d973382149"
+    },
+    {
+      "id": "s5-g1-t3",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Names/sequences and shared consumers reviewed; no new algorithm or statefulness attributed to naming.",
+      "sha256": "a32e8826f02ff4bd0ce6cbc4c6da8d1f1c6611c280f0226ef0c1ac35eb10f264"
+    },
+    {
+      "id": "s5-g2-t0",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Ingress trust bypass distinguished from accepted binding; ARP ACL precedence/rate/header checks remain excluded from model.",
+      "sha256": "df8fbd9defd2a8bcf3329f0e5a67347f62b921c695d79e1db638bad110ad627b"
+    },
+    {
+      "id": "s5-g2-t1",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Server trust, VLAN scope, binding prerequisite and persistence distinguished from allocation and authenticated identity.",
+      "sha256": "f8c9da95041cb66ecca5c85f872c82f4f1bbee942f2725f0a46e384ebbfc2cfe"
+    },
+    {
+      "id": "s5-g2-t2",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "IP-only/IP-and-MAC and attachment scope reviewed; static host address is not a valid switch binding.",
+      "sha256": "c77189688d8d6d57a586f6cbcf76a001f301fd23903457c2069ee53cf053d5ad"
+    },
+    {
+      "id": "s5-g2-t3",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Distinct mapped roles and same-community relation reviewed; gateway-routed bypass remains separate.",
+      "sha256": "035b52da25f6141805af518aef0b0b60dc6b8573b9815f5ac3126f496c9bd464"
+    },
+    {
+      "id": "s5-g2-t4",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "EAPOL/RADIUS roles, returned policy consumption, MAB exception and protected server trust reviewed.",
+      "sha256": "158403f537bcac31a5d22df5b5fd5a49f077ec4a5de4b86e5d3bd24316f88e18"
+    },
+    {
+      "id": "s5-g2-t5",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Accept/reject/unavailable, configured local fallback, command permission and accounting retention kept independent.",
+      "sha256": "f975a0721c83cc706a6a5ca39545fa6b564465fa0b35e72f14224959804a0c62"
+    },
+    {
+      "id": "s5-g2-t6",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Protect/restrict/shutdown effects and accepted/count boundary reviewed; error-disabled target recovery remains guided.",
+      "sha256": "ce0c421402b2fdd2e45ffafd64946af387c5c077513bdad084e3e10d0c94b8de"
+    },
+    {
+      "id": "s5-g3-t0",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Transit versus CPU punts and service continuity reviewed; no actual CPU/drop prediction from arithmetic.",
+      "sha256": "de04690e4f5c4931a92984a7a2480eecef53ebc6c905dbcbc0dd863420aaa0de"
+    },
+    {
+      "id": "s5-g3-t1",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Pps/bit/s/packet-size conversion, equality boundary and burst/token/accounting exclusions reviewed.",
+      "sha256": "0fc7e69f46a597befa9b11c8fe74980213c66aee8f52fdab33c6f9d965e80f02"
+    },
+    {
+      "id": "s5-g4-t0",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Overlay scope, independent underlay and protected application operation reviewed; no tunnel created by worksheet.",
+      "sha256": "4e9c871b6a37eb353d6f6fbba8583d3445561c89d90bb790262fc5c7d1a0f2ba"
+    },
+    {
+      "id": "s5-g4-t1",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "SPD/SAD/selectors, directional SAs, anti-replay and ESP/AH limits reviewed; transform support and execution remain external.",
+      "sha256": "3500c41383459ad457f0b24747ef09a02d0706ec22890e72c67f9ccd00bdd7e7"
+    },
+    {
+      "id": "s5-g4-t2",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "IKEv2 initial exchange/authentication/child-SA distinction, identities and renewal reviewed; no IKEv1 phase labels substituted.",
+      "sha256": "9a42743926c0d937032d752f46c03ce8570165c4872f0bd24490b99c35812dd7"
+    },
+    {
+      "id": "s5-g4-t3",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Gateway identities/selectors, protected source route, NAT handling and return/app evidence reviewed independently.",
+      "sha256": "15bc38ea49c30a3616968f42feae4694861c8425c301079a099cde06feb35f23"
+    },
+    {
+      "id": "s5-g4-t4",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "User/device validation, route/DNS/split policy, least privilege and account revocation reviewed.",
+      "sha256": "733fd7e3cbd0a4c510f8332680f6de7959ffdbe3d628a4bc880f6bcd0a044c38"
+    },
+    {
+      "id": "s5-g5-t0",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Packet filtering versus stateful return, NAT and endpoint/application authorization kept distinct.",
+      "sha256": "75b4365220165e2519447f747707ca0aaf044d0331f13f27c3793adbecaf0a84"
+    },
+    {
+      "id": "s5-g5-t1",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Directional zone pair and inspect/pass/drop relation reviewed; self/same-zone policy caveats preserved.",
+      "sha256": "7e400227102bddef6e2a31e2f45f747f1b6a79cf0213e59738df0a9944f3749a"
+    },
+    {
+      "id": "s5-g5-t2",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "ASA 9.20 routed/transparent/context/security-level and NAT/inspection scope reviewed without universal template.",
+      "sha256": "64f5e481f0d648cc0eb33afe9c3124383c6af587c4117e043a04c03ffe43a0e3"
+    },
+    {
+      "id": "s5-g5-t3",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "FMC/FTD configuration/deployment, connection decision and intrusion content visibility reviewed; licensing/lifecycle external.",
+      "sha256": "8b68409e04fcd04c58598e3aa9fe33a76359d8a171cbb52b4105f343887026c5"
+    },
+    {
+      "id": "s5-g5-t4",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Passive alert versus inline prevention, visibility, false positives and fail-open/closed boundary reviewed.",
+      "sha256": "7148f431ef62fce50fd413b673da5ed12d0106f325ba697ace7e9a78dbfa480a"
+    },
+    {
+      "id": "s5-g5-t5",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "HTTP-aware deployment, TLS visibility, rule match/tuning and app authorization remain independent; no regex sold as real WAF.",
+      "sha256": "66c793f88baecbf1ef3486b69475d41b64ea4855ea835fe4535e809ce19c9d5b"
+    },
+    {
+      "id": "s5-g6-t0",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Identity/device/resource/session policy and enforcement separated; location never substitutes for trust.",
+      "sha256": "f0da9111587e8421ff7c277afe95d14e398fc36882ffedd021150b552f3b770b"
+    },
+    {
+      "id": "s5-g6-t1",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Attachment/posture/profiling/role consumption and remediation exceptions reviewed; classification is not protected identity.",
+      "sha256": "dab15429bafd0bb0379579da348b9f2e2d371c24608e7031f87c6169c78da006"
+    },
+    {
+      "id": "s5-g6-t2",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "ISE 3.4 ordered policy-set selection and authentication/authorization/profile consumption reviewed; live logs not end-to-end proof.",
+      "sha256": "7a1b7c8410491db6236e6f5b6859a9835fddd6d602afacb219d58c62d19fbacf"
+    },
+    {
+      "id": "lab-5",
+      "result": "PASS",
+      "reviewer": "Primary assistant",
+      "notes": "Original security scope joins segmentation, allowed/denied operations, identity and independent recovery; loopback fixture is application scope only.",
+      "sha256": "64cb6f50c25ac8fd9be323174bcf6c4ac05789586a7d50a459397bfe570530fb"
+    }
+  ]
+}

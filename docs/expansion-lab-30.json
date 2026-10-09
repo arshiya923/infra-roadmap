@@ -1,0 +1,49 @@
+{
+  "batch": "30",
+  "result": "PASS",
+  "evidence": {
+    "access": {
+      "mode": "0o640",
+      "denied": true,
+      "restored": true,
+      "scope": "Actual owner read denial and mode restoration; not a complete ACL/capability/security-module audit.",
+      "cleanupVerified": true,
+      "platform": "linux",
+      "euid": 1000
+    },
+    "process": {
+      "baseline": {
+        "exit": 0,
+        "stdout": "READY",
+        "stderr": ""
+      },
+      "fault": {
+        "exit": 3,
+        "stdout": "DISABLED",
+        "stderr": ""
+      },
+      "recovery": {
+        "exit": 0,
+        "stdout": "READY",
+        "stderr": ""
+      },
+      "scope": "Actual bounded child executions; no systemd unit or timer is installed.",
+      "cleanupVerified": true,
+      "platform": "linux",
+      "euid": 1000
+    },
+    "storage": {
+      "faultDiffers": true,
+      "restored": true,
+      "suppliedCapacity": {
+        "vgFreeGiB": 12,
+        "requestedGrowthGiB": 8,
+        "remainingGiB": 4
+      },
+      "scope": "Actual owned-file restore; supplied capacity arithmetic does not extend an LV or filesystem. No host disk pressure is induced.",
+      "cleanupVerified": true,
+      "platform": "linux",
+      "euid": 1000
+    }
+  }
+}

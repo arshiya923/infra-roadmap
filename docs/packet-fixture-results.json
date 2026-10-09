@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-08",
+  "result": "PASS",
+  "sha256": "6fac48f1c199a3f88130a56073ef267635f403237d512fabffe63190b9fa4db5",
+  "checks": [
+    "Inert generator help and deterministic bytes",
+    "Independent PCAP lengths, link type and timestamps",
+    "IPv4 and complete transport/ICMP checksums valid",
+    "Final packet intentionally has 54 captured / 162 original bytes",
+    "Five libpcap filter cases and six Wireshark display-filter cases",
+    "Cross-language filter mistakes rejected",
+    "Offline analysis leaves fixture unchanged"
+  ],
+  "cases": [
+    {
+      "tool": "tcpdump",
+      "filter": "arp",
+      "packets": 2
+    },
+    {
+      "tool": "tcpdump",
+      "filter": "icmp",
+      "packets": 2
+    },
+    {
+      "tool": "tcpdump",
+      "filter": "tcp port 443",
+      "packets": 4
+    },
+    {
+      "tool": "tcpdump",
+      "filter": "udp port 53",
+      "packets": 2
+    },
+    {
+      "tool": "tcpdump",
+      "filter": "tcp port 80",
+      "packets": 0
+    },
+    {
+      "tool": "tshark",
+      "filter": "arp",
+      "frames": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "tool": "tshark",
+      "filter": "icmp",
+      "frames": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "tool": "tshark",
+      "filter": "tcp.flags.syn == 1",
+      "frames": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "tool": "tshark",
+      "filter": "dns.flags.response == 1",
+      "frames": [
+        "9"
+      ]
+    },
+    {
+      "tool": "tshark",
+      "filter": "frame.cap_len < frame.len",
+      "frames": [
+        "10"
+      ]
+    },
+    {
+      "tool": "tshark",
+      "filter": "tcp.stream == 0",
+      "frames": [
+        "5",
+        "6",
+        "7",
+        "10"
+      ]
+    }
+  ],
+  "limitations": "Generated Ethernet bytes; no live capture, GUI interaction, real timing, TLS or production traffic tested"
+}

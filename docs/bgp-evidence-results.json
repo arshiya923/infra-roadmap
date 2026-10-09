@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "views": 6,
+  "prefixScopes": 2,
+  "combinations": 12,
+  "checks": [
+    "Six views preserve exact source SHA and separate startup fields from the passing actual report",
+    "Twelve independently compared observer/checkpoint/prefix combinations preserve exact attributes, RIB/kernel predicates, all raw records and phase-specific probes",
+    "Established can coexist with absent R1 destination and retained R2 opposite prefix while original round trips fail; local origin/sentinel differs from connected forwarding",
+    "Startup decoded message-type fields may contain several PDUs per frame; no later withdrawal body, timestamps or full capture inferred",
+    "Fresh copies, strict fixed observer/prefix identities, shape guards and unrelated-kind guards preserve separate read-only use"
+  ],
+  "scope": "Read-only foundation; original BGP fundamentals full lesson remains pending. No full policy/best-path contest, iBGP, complete Adj-RIB-In/TCP/FSM, wire proof of fault withdrawal, Cisco/application/hardware/convergence certification."
+}

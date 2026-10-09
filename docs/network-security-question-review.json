@@ -1,0 +1,3010 @@
+{
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant",
+  "result": "PASS",
+  "questions": [
+    {
+      "id": "s5-g0-t0-QC2",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "fb6e17c23d3dc384376760bb68817512f41108f797866c008eae31cce1e5c29b"
+    },
+    {
+      "id": "s5-g0-t0-QC4",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "97d5f7f99a7ac322b04cdeb6efd7889d0e69600a5d10a2b4f4873a9bc7119c33"
+    },
+    {
+      "id": "s5-g0-t0-QC8",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "aae612b2faea2707d91cc81a0a32209d0fb20c8bb2fa7f81d6d55d52f80d93e7"
+    },
+    {
+      "id": "s5-g0-t0-Q01",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "71aad672f06c9f73ebb2b6cc8133f15cc012956a7653b0e7a529df9503ca874f"
+    },
+    {
+      "id": "s5-g0-t0-Q02",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9066f1d35d028db73cb2f3067c9ae4dc5ceb41a17ecb8855909bd9689b0184d5"
+    },
+    {
+      "id": "s5-g0-t0-Q03",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "16cba365a992b2ff52831382d16c000966ce1320cc95927f998410a6fbb37f96"
+    },
+    {
+      "id": "s5-g0-t0-Q04",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "44717c42fb65fdf5e8a11af5e4413b5d44918b557a592cd6ef92ec2932970583"
+    },
+    {
+      "id": "s5-g0-t0-Q05",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d7113d6bca043cacab681379e35d884a03c14b9be7b2788ab172db629f8a6cea"
+    },
+    {
+      "id": "s5-g0-t0-Q06",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "67cab93ec232019426e07f98b6014a07ff981f847eaf6f2055ccfd3ee5b0f561"
+    },
+    {
+      "id": "s5-g0-t0-Q07",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "1186593e8e14240abd379d44b50d310b67cf52df8e3787eb181fcdb273c2a609"
+    },
+    {
+      "id": "s5-g0-t0-Q08",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "bd7f4a65f36de446793222af847c947a2bd8c708e0612ba1594ffdfc6067d005"
+    },
+    {
+      "id": "s5-g0-t0-Q09",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "03b5e39f6f46acd17bd95630a2d27df8e67c1f44a2c2134925792b32fa9f380f"
+    },
+    {
+      "id": "s5-g0-t0-Q10",
+      "topic": "s5-g0-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d1e6e64870b3761728785e17d48649edd17a46f322ca96c4237b58320c6c03a9"
+    },
+    {
+      "id": "s5-g0-t1-QC2",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4668265fb6eb38c55e19cbde85265ec25978a8b331b1165963ad79e2ad35b603"
+    },
+    {
+      "id": "s5-g0-t1-QC4",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "60672c4e6f2a0f0cf1d5b0be5d8d0ac134bf693df6ebd8049834283c498b5bc4"
+    },
+    {
+      "id": "s5-g0-t1-QC8",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "aa7e8c9c8cb71b5cf0e2bed30b37ec913d9e90fbec0283673ecbd64210e3ac17"
+    },
+    {
+      "id": "s5-g0-t1-Q01",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "25474def7bc6b25371885c8d59f2bec32b9d5c948dd7852f841a2057b26a31bf"
+    },
+    {
+      "id": "s5-g0-t1-Q02",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "7cf455f3a0f365af0c8ac71776ab5e8365e48337faaafa3080f0b3985368ae75"
+    },
+    {
+      "id": "s5-g0-t1-Q03",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ddd88da488d9d4c8259a4312987faf81c37ba874d281b9eaca3493fc6505220c"
+    },
+    {
+      "id": "s5-g0-t1-Q04",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ec55cdf3e59ac7c112a577f581031e3c6cba720c028cf8d95f50067bd0aaa75a"
+    },
+    {
+      "id": "s5-g0-t1-Q05",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0c7fe7dae33bdb951696f654828508644c2259773a10641430e418525a798d6b"
+    },
+    {
+      "id": "s5-g0-t1-Q06",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "24b5956cd669295ec17be5f5bc6b371020ea9ce78130a9bce8c1d0aafe90c7f2"
+    },
+    {
+      "id": "s5-g0-t1-Q07",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "cb1ca8162aed302af6dc96ad23b2dc9f77544da9847a238174d29fba3f242320"
+    },
+    {
+      "id": "s5-g0-t1-Q08",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "86bc8b262cfabbcdfe7b2baf11728175b4da23f9c2b492877e14a35ab8d339b3"
+    },
+    {
+      "id": "s5-g0-t1-Q09",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "1550214cb294128ff972fbc442c7236f9629ec7021bcaa28341b17182704bc06"
+    },
+    {
+      "id": "s5-g0-t1-Q10",
+      "topic": "s5-g0-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "7e542af93315f044f6a36dfa9a4dfe0f639c14cbfe91126ddc7f8a36437f1ac3"
+    },
+    {
+      "id": "s5-g0-t2-QC2",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "6b289bd250a7bb76829ca444c1a4f976d87d52b9523717d4749ad68ece9472ee"
+    },
+    {
+      "id": "s5-g0-t2-QC4",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3ecae69353bb61e4f2ffb02bdd7f8508e41bf3b79ae820e67ce8c6111ce2a6fb"
+    },
+    {
+      "id": "s5-g0-t2-QC8",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "6f10d82a308f17d505fcc5cf96e184cc945af2ae45b49988a4018d7ac181acc3"
+    },
+    {
+      "id": "s5-g0-t2-Q01",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "6048e3b835877b4f6694f942782a434f226fb9b3de5eff733e0a8d72ac0b8dfa"
+    },
+    {
+      "id": "s5-g0-t2-Q02",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "19ae98466af7f0a9473ef65f5a597be059c597ed8849a79cf52bcc060f627a2c"
+    },
+    {
+      "id": "s5-g0-t2-Q03",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "edf2700fb6f8b751d1196ac0517d12aa460f32fbd8fd179783065d2bda79ad00"
+    },
+    {
+      "id": "s5-g0-t2-Q04",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "03083a9ae21ce82e3136e53d073626736c8ee82dd422133338346eeb6d6f52fe"
+    },
+    {
+      "id": "s5-g0-t2-Q05",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "448794452d91f33cb3a3a149b24f49d60acad5ac684e9be91a9cfffe20080b33"
+    },
+    {
+      "id": "s5-g0-t2-Q06",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "b7b8d7bfa1a622fd167a387bef49cb0e5f1705f8424e81642ab6d1c6c33246e6"
+    },
+    {
+      "id": "s5-g0-t2-Q07",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f50901e18f0c48fcbc9e2fedfc8ca9b00c4b244edabbefe0f53c9335048c630e"
+    },
+    {
+      "id": "s5-g0-t2-Q08",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "08590a5e30eab95bc42c3462a9f2bcba0c1713f0197a222ae5c3873f56e28638"
+    },
+    {
+      "id": "s5-g0-t2-Q09",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "91412a4251fb58b0eab4380d54719fc2793b5f621edbaa97864bcf17567bb2f9"
+    },
+    {
+      "id": "s5-g0-t2-Q10",
+      "topic": "s5-g0-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8c06ce975f40a6ef4a554057fbf1973d5b5d45958a52bf91e65b76e418d72c23"
+    },
+    {
+      "id": "s5-g0-t3-QC2",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4328a05148e2db112d8e9915de92e0190af44e41438c239f482fd662da286c52"
+    },
+    {
+      "id": "s5-g0-t3-QC4",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "814b68a252c26540f237e39380c64c34828a5f6a385f87bac66128dbec57b414"
+    },
+    {
+      "id": "s5-g0-t3-QC8",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "daaa44bd6154936b109a1110ab217ef0b2d6d0d81247e00bee82a99ceb7a5e56"
+    },
+    {
+      "id": "s5-g0-t3-Q01",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "95ef9796a13207c1f4a44719211226005a5d30d55a87d110a2cdaed428c154de"
+    },
+    {
+      "id": "s5-g0-t3-Q02",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "02f8f81a1c93c0684ed562221c6f08ec6a4a38ff78d3fd007a3fbf6e8fe2fc84"
+    },
+    {
+      "id": "s5-g0-t3-Q03",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "261c59aaff415968b0671b0f19152bf82170702f8b9d0ecf9ca22a41ca7519a2"
+    },
+    {
+      "id": "s5-g0-t3-Q04",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a504935629c5544e549d6fe200453cfd4d59984205ccab5a1dd04726926e222d"
+    },
+    {
+      "id": "s5-g0-t3-Q05",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "161baf293311e6e0f8032aef47bc89115f0cb7405d473a81d177dcbb2a98e6c0"
+    },
+    {
+      "id": "s5-g0-t3-Q06",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "649d65270a42114de7d2fba032be5d7bdae462d3357835974e1900f7d5062923"
+    },
+    {
+      "id": "s5-g0-t3-Q07",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "cc5295cebd9283ad45d4e89b448d54f51c5346c64ad2ee10c369bfdff96b1a4b"
+    },
+    {
+      "id": "s5-g0-t3-Q08",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "eb38754e4292ad2c7a98db1811a67401b621df0f023e3fea4d4044de1797209c"
+    },
+    {
+      "id": "s5-g0-t3-Q09",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "97469ffec3528fdfcd9c21a0a4ae283d53e4906d17e75bf27a18c4fd297a4bd5"
+    },
+    {
+      "id": "s5-g0-t3-Q10",
+      "topic": "s5-g0-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5142ece933ea4fda4c5fc17ca92853820ba2e35300cbae157ad4ce7571338adb"
+    },
+    {
+      "id": "s5-g0-t4-QC2",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d31b0cd286e93a576d7da7b288a6ebfe4c506daa7b5fe192212267db04e75a0b"
+    },
+    {
+      "id": "s5-g0-t4-QC4",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8faa9215f2e259417d39119854b5db1773a143f450b0cd3d0e739698945cd02b"
+    },
+    {
+      "id": "s5-g0-t4-QC8",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3cf2473f5da6714687d7adb9d44cfcfa67b3d671031a390bb63377ef0563e2cd"
+    },
+    {
+      "id": "s5-g0-t4-Q01",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "99481154d961abd518608514224673d8f4b6036903f9eb571d477377df3ef9bd"
+    },
+    {
+      "id": "s5-g0-t4-Q02",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8d872497388e715786eb6309bb565364b8f11c4f72cd4796586f26aef8293be0"
+    },
+    {
+      "id": "s5-g0-t4-Q03",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "bc02336284e355bc2f0c5e4a9682586bd6c9fcbbbbfb5773c36f53b89959b070"
+    },
+    {
+      "id": "s5-g0-t4-Q04",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c8b035ec43e0a44e644580fad419df905cd1aa234249899b84a7e59fbeb0feea"
+    },
+    {
+      "id": "s5-g0-t4-Q05",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "b598ca61f62b1d996028b994b899b35d5f53934110054bb1f8154ee04ea8ca67"
+    },
+    {
+      "id": "s5-g0-t4-Q06",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "1e1332e9dbef0fca2206233d7bf1f5e3e6784fe9b768deb0672c30955ee45db7"
+    },
+    {
+      "id": "s5-g0-t4-Q07",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ce25cd5efe9490d82042c3ec76b10df2ef2414cff8eda266eb6fe3ba3c216ec0"
+    },
+    {
+      "id": "s5-g0-t4-Q08",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "b1d43168ae7170a213af14f1fa4609c2bee233505e35919a987cb8574d4c4671"
+    },
+    {
+      "id": "s5-g0-t4-Q09",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ac3d47052f93dc3852c4fe335c9dcaf5188e520cf2b8fa9386338c9a84730571"
+    },
+    {
+      "id": "s5-g0-t4-Q10",
+      "topic": "s5-g0-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d182954a856df8cdea9179b09c740158dacafa6878549b83effb6b583d57898d"
+    },
+    {
+      "id": "s5-g1-t0-QC2",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "66c045fbf406688d1e6127aafaa6901e40c72a98870ae876534235ccce4dbefb"
+    },
+    {
+      "id": "s5-g1-t0-QC4",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "da51572d3ecef00eadec2603490abee6047db0cc8ed58c652af062e022508c33"
+    },
+    {
+      "id": "s5-g1-t0-QC8",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a9b11d040ffcad69d3f0ecf93b7de62c02239cca8e70a5e3dc7ee6956cbf2360"
+    },
+    {
+      "id": "s5-g1-t0-Q01",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "80a9be7b77b08fe0a5a5cd6d7e0b7dc82e4ab6b4374d5cbcf032be346ededa8f"
+    },
+    {
+      "id": "s5-g1-t0-Q02",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "34eaf080d6d0e93eec8cbb073e92e462ccb0295aeeaa4a0767f26ee5fb45c276"
+    },
+    {
+      "id": "s5-g1-t0-Q03",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9a5689ec372cf8c5b9c5389d12d30334c3e534366aca4676f713ba21abb11536"
+    },
+    {
+      "id": "s5-g1-t0-Q04",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4436afaf036900d3f0cf55605b84b23b31835b86e2f7c4545f624dc8b51e9900"
+    },
+    {
+      "id": "s5-g1-t0-Q05",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f7786415110ea6de5e22dd7a82d2c09d53a683ec8b7deef5adc083c4edaff505"
+    },
+    {
+      "id": "s5-g1-t0-Q06",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "dad1cd73a468ab0f6d4c13bf75a5a63945bb79275fcb9bbbe3e5c728c9b2b4de"
+    },
+    {
+      "id": "s5-g1-t0-Q07",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c579564590ba13661851bd561d355f71d2d29b3dff21038da7397652d58017bb"
+    },
+    {
+      "id": "s5-g1-t0-Q08",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "54dfb2c180fcf7f643387a53faf5b27c3bf2b2c2cc4942ad2d2002d478bddc9d"
+    },
+    {
+      "id": "s5-g1-t0-Q09",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4b99d002dd0fee3c7f1a16405f0a3a99ce6b6bfe5b682bfb7caf3c82ff6e453b"
+    },
+    {
+      "id": "s5-g1-t0-Q10",
+      "topic": "s5-g1-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c30789693e0f8a2423e3ae454bc27c145ab67d7735dcd6e948a9d09e9258a20d"
+    },
+    {
+      "id": "s5-g1-t1-QC2",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "e1efa5dc2b46c95cc1ebccb52c7d49a77cac2d640c2b1cf0aff65173742f7333"
+    },
+    {
+      "id": "s5-g1-t1-QC4",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "7f40ae9ed407a169410defd8b28ad880963db2396498edf2f92aa028a8e746cb"
+    },
+    {
+      "id": "s5-g1-t1-QC8",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "023d597fc9a0940784e45c8aa1a1a686e21c9fa1c02d79de4940dfde404ac034"
+    },
+    {
+      "id": "s5-g1-t1-Q01",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "19cf6f3f6f8d16ef6e187eab5fe44460d6736d42c93ea045417f812ed6af6f99"
+    },
+    {
+      "id": "s5-g1-t1-Q02",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c4e7cbd9b7dd8819bf4bf35d1b2b11b17bb736c5a1db281aae87dd8bb3b43663"
+    },
+    {
+      "id": "s5-g1-t1-Q03",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9d01a13773a42e5bfcd91746643318a9e5652dbe909cf0d9604934eb0b400cf5"
+    },
+    {
+      "id": "s5-g1-t1-Q04",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "acde2449132a2a0526781b9a5029c96500675449e1abe2bad111b1f3375432cd"
+    },
+    {
+      "id": "s5-g1-t1-Q05",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "bee3bc2dace732cc17ff8703a5644735e7347496ab4e270980ec0f95f3411a5f"
+    },
+    {
+      "id": "s5-g1-t1-Q06",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3b053785046ffbb5b2aab9bb11d5019d6d72db4386f1b00c5844fbbb0a3ce441"
+    },
+    {
+      "id": "s5-g1-t1-Q07",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "bfa49ccba06b3c6f4b33c6da609c90cd417acb5b8fdd5afcff18eeec289c51c3"
+    },
+    {
+      "id": "s5-g1-t1-Q08",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8e6ebe498b4a291305c01d183f1a533e5b376b3d9175b21250f2e2126b61d590"
+    },
+    {
+      "id": "s5-g1-t1-Q09",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9aacc94ed35148cead65072c7b90294da5d2bc95f8b085484d2c0048745bd752"
+    },
+    {
+      "id": "s5-g1-t1-Q10",
+      "topic": "s5-g1-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f40573ae9649ab2978dabafd201670b7b16ea2c2ef2937f989863dba5eb4f1fb"
+    },
+    {
+      "id": "s5-g1-t2-QC2",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "7490dce7f4b3dae0e209b9ea73b156578f4b19dc5b58bfcbf4aa4e54993d9c8e"
+    },
+    {
+      "id": "s5-g1-t2-QC4",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ba95c165ed41c28a7efa448b5fab52e9fe58bfdb5e982dd1d57d8b330aec0db2"
+    },
+    {
+      "id": "s5-g1-t2-QC8",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9de37b6a93733ba6f9584651bd0efae878e2ae82cbc4886ac29bdc31ee1e3915"
+    },
+    {
+      "id": "s5-g1-t2-Q01",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "85db68217c094c55571d75c4024efe4f0b02d738359f8d1dac84d486d8f389ca"
+    },
+    {
+      "id": "s5-g1-t2-Q02",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "60ce1e4ab811e9cd0bdc6783b2a5407c5c74bc3f422cf8a45c8432b548876af3"
+    },
+    {
+      "id": "s5-g1-t2-Q03",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "721d588aa9b53cb70a45d60f8b78d9b4594fdd88eb9701151044b5809e553944"
+    },
+    {
+      "id": "s5-g1-t2-Q04",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c3890842bf9459d15df5431aa7feb84285ac5ff0e75ce6f5f910c802abc7546f"
+    },
+    {
+      "id": "s5-g1-t2-Q05",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f8508a21145398d34df1b2a8eef18998cad9d1cba19cc789cc02eca5d01fb3a9"
+    },
+    {
+      "id": "s5-g1-t2-Q06",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4e60a6d25d5a5b044435b2c371a168e5f932dd51ea6453d96a89a5131bb5cacd"
+    },
+    {
+      "id": "s5-g1-t2-Q07",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0c19d3767ced96ddceb18896c0863aacdfebccf34720e93d37343a53e17031ec"
+    },
+    {
+      "id": "s5-g1-t2-Q08",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "667f47194ecb69e818655bf5e92f7336cac8b6edd0aab2c9bec5109367832856"
+    },
+    {
+      "id": "s5-g1-t2-Q09",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5cbed6d291b2165fcc890b790aa32a780d4e65c3a293f0bbf744734e4da185e9"
+    },
+    {
+      "id": "s5-g1-t2-Q10",
+      "topic": "s5-g1-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a500d47d6c265b82a83b927a6c2e43f9ad6ab106b7bc9c30c7cbcc997ab2271d"
+    },
+    {
+      "id": "s5-g1-t3-QC2",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "03b68513eac304a3202ff721cd2c80d74d03014d187bcbcca1b70d8de218dc1f"
+    },
+    {
+      "id": "s5-g1-t3-QC4",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0d837bba5737b270378572a0dad984186e1afc166b382ef663e49259309e4a47"
+    },
+    {
+      "id": "s5-g1-t3-QC8",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "e28a65869d4f40e12a38915113383e40315b80b3b639c8a03fb8477affee68b4"
+    },
+    {
+      "id": "s5-g1-t3-Q01",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "097078f661c7ddd9f314acb2757fe05e68e1f7ba72ebca71b25b064515350d1b"
+    },
+    {
+      "id": "s5-g1-t3-Q02",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "dc9beb0d86937346a199e8d851b41f6b008e5aca3d8e71ee7a82d76b2f3da4de"
+    },
+    {
+      "id": "s5-g1-t3-Q03",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d6d8816e0e5e1bb7df88f1926e8785d856ff84b916703eef4571211a628f249e"
+    },
+    {
+      "id": "s5-g1-t3-Q04",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "eb8200d8c89951aa891a006a74a9842474ed87af028a81366e3f60076bd34796"
+    },
+    {
+      "id": "s5-g1-t3-Q05",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "911070139b1911b7ddc93d9f1d512d3f2ce116b478392e8460617145b8340c14"
+    },
+    {
+      "id": "s5-g1-t3-Q06",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f94fe384eaf225aac118994fc049855f7821ded09f00a7f9c59ddcc306174be9"
+    },
+    {
+      "id": "s5-g1-t3-Q07",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "b18c78ab8f71fc4f10983e1d0158419b6b262fc2da48b53c01cc5d1f35801818"
+    },
+    {
+      "id": "s5-g1-t3-Q08",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d2625971b021e199e02947744d10340d1fc0f051fef1eb4aa55e60987444b5f1"
+    },
+    {
+      "id": "s5-g1-t3-Q09",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9d721f4c14be3dd499d7d26525a9fe00dbbf6189256d8332909cd3065ae4233a"
+    },
+    {
+      "id": "s5-g1-t3-Q10",
+      "topic": "s5-g1-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "2284d7c14fade11549ce30e0786251020c0b5e6be74831651a77e8acc649bbb5"
+    },
+    {
+      "id": "s5-g2-t0-QC2",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d04f3fc75a0f9555f05742fe1b41ac72490620ffd7d507dffbd2e7f0b3c94391"
+    },
+    {
+      "id": "s5-g2-t0-QC4",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3675ced287dacc07c06743bd8a3f4e9c2f4ab6d781962d7d8088513be6568565"
+    },
+    {
+      "id": "s5-g2-t0-QC8",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "17d25d32963828372da7fa757ce58c53ee523cde596e33a9bb93395cf4bf2b16"
+    },
+    {
+      "id": "s5-g2-t0-Q01",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5fc1ca5b2823d5da5167f6992488666d389c1ca814cc827a8f022eaf048686d1"
+    },
+    {
+      "id": "s5-g2-t0-Q02",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0177c547bfd7cda6d31980e4aa51bb53b85bbc5eef8dda502f55aed5f3d90da2"
+    },
+    {
+      "id": "s5-g2-t0-Q03",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "fca10d80662c513346103f6bf015eb113f766aa879e47cf7219e3517e0dcfc6b"
+    },
+    {
+      "id": "s5-g2-t0-Q04",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "6c82d2e96937b542f5517fa7000107855a03db5e63326ae87391b7a6ec42d6f0"
+    },
+    {
+      "id": "s5-g2-t0-Q05",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5434a29aa0da50ad5d226ed55559cf69af3ab28fbd28439c99e09b3abec6807e"
+    },
+    {
+      "id": "s5-g2-t0-Q06",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c9171b22c9d0acb6accceadfbe91658988a3c017e1944cfb104f4fc1bfb12361"
+    },
+    {
+      "id": "s5-g2-t0-Q07",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8bdd3b7b04207484995bbf20acb01ee4d30f87087ab6db01663340ef4eaeb602"
+    },
+    {
+      "id": "s5-g2-t0-Q08",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "04693dfb1b3fe186d90b8a418cc0e99d5d95a7a7fd08b3bf2ef176e281a35e8c"
+    },
+    {
+      "id": "s5-g2-t0-Q09",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "b3d0b64a0a8ad7f0dd5b3ba0bfcd7cb61dfebee089ec7e300af894c4657ad598"
+    },
+    {
+      "id": "s5-g2-t0-Q10",
+      "topic": "s5-g2-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "cc66f4176731f548e471598a9a631400bad197f2c286ed1a1028aa375ed1b0e2"
+    },
+    {
+      "id": "s5-g2-t1-QC2",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9a035688c1efa8785aa86a3522016e96581ddd9e288bec7653a9d78d0f0c6d09"
+    },
+    {
+      "id": "s5-g2-t1-QC4",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "950dbd2e079b66a1c3f8cbe8c0a4c4d057e6e0f9f9de82fc49d20b7249a1ceaa"
+    },
+    {
+      "id": "s5-g2-t1-QC8",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "7667ee4df4721ab872a4cc8fa551945412d09e842df6e5bf66447727809713e2"
+    },
+    {
+      "id": "s5-g2-t1-Q01",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0f4713e95d8adbbe9d7f4155e9039fceb94ce7e840b28a57f2f653761b2ecc3f"
+    },
+    {
+      "id": "s5-g2-t1-Q02",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "b649baf07a9fc1a03419ffecae2f9cca1b7596d5b0ef7e0b5d96ed1addae33f5"
+    },
+    {
+      "id": "s5-g2-t1-Q03",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4c7df09b6ee66d7050379d74e8f7bd179e49502615a847d9d2ffbbdea5c7aa54"
+    },
+    {
+      "id": "s5-g2-t1-Q04",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8b7bd2bc937d2cc47355fb4f9d0004d3fb07f4638286ec94cc49fca50ce827d9"
+    },
+    {
+      "id": "s5-g2-t1-Q05",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ed39582b7f79996c92e0ac7a8145f8a3d7c380e14e950fbce07744aea4130ff4"
+    },
+    {
+      "id": "s5-g2-t1-Q06",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "108b764f531d0f233dbbbf792d5202bacd9aa9fd0c284563a34191c184856977"
+    },
+    {
+      "id": "s5-g2-t1-Q07",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "6677b93ee508a097148b0ddf7de4da467800a7fc0b81a4b4ac49ef2106f6feda"
+    },
+    {
+      "id": "s5-g2-t1-Q08",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "235fb938756dfaad486fc914348a267ed608d40e892150c93179f626e917142f"
+    },
+    {
+      "id": "s5-g2-t1-Q09",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "10c1369f93652f204036736a4941833abc97255ea408131f49707498899ffcad"
+    },
+    {
+      "id": "s5-g2-t1-Q10",
+      "topic": "s5-g2-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "33e78cf8727f2ac665fc72020c74ff0111c62bd25d0ff941e4c8fe8908a7fe66"
+    },
+    {
+      "id": "s5-g2-t2-QC2",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "184e5cc0c129548417868d5e0aa39854cc66dc26abd20bc50f3288474b21045c"
+    },
+    {
+      "id": "s5-g2-t2-QC4",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f6f77bcb88bcfbe90d596eb24e9e727940c43f2c6c1847cb4007aa0854bc05a2"
+    },
+    {
+      "id": "s5-g2-t2-QC8",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c4a62b87ba10e5956c3dcf7a940370021cf31050d0601c4a20f8d03ac46714c5"
+    },
+    {
+      "id": "s5-g2-t2-Q01",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f6f39e55831f70dc56c2eeb786524cab09edd3ee8482307b122c0abecad83c2e"
+    },
+    {
+      "id": "s5-g2-t2-Q02",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "1bba06462deb63eedecd7134ea0610dd5ba7a20c4615cf1f6ee1083de8cbf86b"
+    },
+    {
+      "id": "s5-g2-t2-Q03",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "cf6217374235eb2af91325bc8a9222d887cc88bd938126962142d74e699b5ca0"
+    },
+    {
+      "id": "s5-g2-t2-Q04",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3c7ee0370903f65bc4a430a300d2f87060eafa0efe55caa66207ee19f0c36964"
+    },
+    {
+      "id": "s5-g2-t2-Q05",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ebce51081556ad9f82022bb1609b7a794bf31127f055366e7148b0c4b77ba980"
+    },
+    {
+      "id": "s5-g2-t2-Q06",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "868999babc876342bd41dfdf5eeaf32a6346424ad347260d056262689383a6ca"
+    },
+    {
+      "id": "s5-g2-t2-Q07",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d1c880b36360c07eabd714dfa22c08f8b59f7b95566ff327728c004f86e69c07"
+    },
+    {
+      "id": "s5-g2-t2-Q08",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "881e5cb27be2ff5e3d52a020daf8d748db12f891e3a7f14d96610b11bdd8893a"
+    },
+    {
+      "id": "s5-g2-t2-Q09",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "70ba2be6dc697f5803dee0c37c0182929a3392008565eada825c5f0b091161d0"
+    },
+    {
+      "id": "s5-g2-t2-Q10",
+      "topic": "s5-g2-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "568a2f2ab5efe97d83b96d50663a08ccf30dca9dc50a26a2ac412dd2063fffde"
+    },
+    {
+      "id": "s5-g2-t3-QC2",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "b13b911fa4608baf7590add7a1bf94b52e860c5ce88572dc7cebd3b1227459a3"
+    },
+    {
+      "id": "s5-g2-t3-QC4",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ffa057cbd539d7660c3134a7c08825d93fda14df97d5b49a05b16d1ec67cf036"
+    },
+    {
+      "id": "s5-g2-t3-QC8",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "b1a851825e03d0b536ea358fcd2a8bf98944479d57482e81d726b8515c4230b8"
+    },
+    {
+      "id": "s5-g2-t3-Q01",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "52b639dce2c3c4c0221568f9bbf1b2c52c6d95e87f293fc39b327fad3fa774f4"
+    },
+    {
+      "id": "s5-g2-t3-Q02",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5d5ed78b8b45793abeb23a54eb25ef2f371280b43d7587941db562feddc57b28"
+    },
+    {
+      "id": "s5-g2-t3-Q03",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "e0d5e3d62b2d6fdbf43343bf3d28be3da3fb9dc126193a57faf257f62154dae1"
+    },
+    {
+      "id": "s5-g2-t3-Q04",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0b261904eceb04cfbca99bbffd432fba15f7d2dbb76b93ab910db7449bff93a6"
+    },
+    {
+      "id": "s5-g2-t3-Q05",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "55fe695223de97894f60e1aeee585d4ca907ff7c4e7bddbe7e3909f7a7c3c481"
+    },
+    {
+      "id": "s5-g2-t3-Q06",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "89b76ff04ff4e87cf51b9f01f1ecc0bccc5458fc208fb7d585176b4c9c1b770f"
+    },
+    {
+      "id": "s5-g2-t3-Q07",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5e5269860060e9b6b36607ddf91cea1a982544f5a3c680d59f01444a50aa715b"
+    },
+    {
+      "id": "s5-g2-t3-Q08",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "31823b018fe84c5806400508d62d60e0030b95e9064d829019d1eee5d68450e3"
+    },
+    {
+      "id": "s5-g2-t3-Q09",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "77519744ddaac4b56b1a4c82651f01217378765c304db4fadb8793ee5311a55f"
+    },
+    {
+      "id": "s5-g2-t3-Q10",
+      "topic": "s5-g2-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d1971b4069cd731901e155ce4667a98aa63f83ac9dccf5f1220849d17956e340"
+    },
+    {
+      "id": "s5-g2-t4-QC2",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "97fba93ec6e64b8fdd24c19c10441abcf1612bead16c5f864b4020b9d36cc6b5"
+    },
+    {
+      "id": "s5-g2-t4-QC4",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "77256e8788a84e4bb5e6556e9eeee508adf885a7499352715efcb3b5b68c52b5"
+    },
+    {
+      "id": "s5-g2-t4-QC8",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "01b58ffe5b2eafe29575c646e9a228d7b45aedd52110ff66f73942fc0f391b73"
+    },
+    {
+      "id": "s5-g2-t4-Q01",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "e83bf37eb6781d9a645c6b6577de229ecd5295859faff99eadb0d19843ef9377"
+    },
+    {
+      "id": "s5-g2-t4-Q02",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "be45165cb411e9922a392926539957a5c13f217d8fda83288341df8acc7e1858"
+    },
+    {
+      "id": "s5-g2-t4-Q03",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f58063c76462cb3e962ef429c411f6801f8f8b48ffde48fa2e0c693d3050449d"
+    },
+    {
+      "id": "s5-g2-t4-Q04",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0fabe02f0edf3d9832eb83dacccb75932d40714a7157eaa4b92cc0d4c8ad2538"
+    },
+    {
+      "id": "s5-g2-t4-Q05",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "7752ecee03b2c651a4179744ceb2f684678c80c3b98f5138bf91373513d7ce14"
+    },
+    {
+      "id": "s5-g2-t4-Q06",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "efcf10c4a8960800d0ae0920e3a88376c6935542430fe5e886b8c9cee1dd9f22"
+    },
+    {
+      "id": "s5-g2-t4-Q07",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "174a1f2cd31180ffd8487b11fad8f470c484ef7e5d3b471cb2a25b8959602537"
+    },
+    {
+      "id": "s5-g2-t4-Q08",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "332c8bffe1e68ace95353030df31b287a21f46fc7f43f11b06c0d3393575e5d8"
+    },
+    {
+      "id": "s5-g2-t4-Q09",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "e4399abcb3c48bea84ad056b46e4ad207f99fac44e0c2b046b8d8d0c163d7603"
+    },
+    {
+      "id": "s5-g2-t4-Q10",
+      "topic": "s5-g2-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4a2e7142baaa2c4dc9509d59e30999be18ff7206a899341848197e83617d2dd9"
+    },
+    {
+      "id": "s5-g2-t5-QC2",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "615a14349fe2b9fde493058f22ab35e75a10b7545bc9248f3b87353ae5b64692"
+    },
+    {
+      "id": "s5-g2-t5-QC4",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9dec2fffaa8fe6d911f34274ca2c13fd22f7944288b7bb73dd3f3ca00d90a5ba"
+    },
+    {
+      "id": "s5-g2-t5-QC8",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "cdfda71aec2f489247d6b8a7984ed3d3bac8d80238e812691c1ee43824deb433"
+    },
+    {
+      "id": "s5-g2-t5-Q01",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3e3faea17359df8daaa9ae15431bac8541c0508f204f66da10f600c8e4e0752f"
+    },
+    {
+      "id": "s5-g2-t5-Q02",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ad2cc88997728f5827dd48d4ff56bd23efc38887fe81a5df03f48066d9a0758d"
+    },
+    {
+      "id": "s5-g2-t5-Q03",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a4dff6b259fc302f3e5dcc2cfcbe866432e6dc2687a6f90af50e285a292c78ad"
+    },
+    {
+      "id": "s5-g2-t5-Q04",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "b8ca116bc1e309cc877f650d430f4e2c901332fe45340a32b1ffad01a31f4363"
+    },
+    {
+      "id": "s5-g2-t5-Q05",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d670181dea3eb1b95ffe75a499cdb5141082e720c2053c05ccc3e7f5b6ae727f"
+    },
+    {
+      "id": "s5-g2-t5-Q06",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3e521294f28f0ff1465177a194115ff2536a851bbc7ae4211add06199001036b"
+    },
+    {
+      "id": "s5-g2-t5-Q07",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d636e6371cc2bae428a3979570536f4e31c1db53b88cb0583dd9370ed55bb2af"
+    },
+    {
+      "id": "s5-g2-t5-Q08",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "01775dceb8bc3fbd079b3ae6acf109ccfc434b151872acab3cccf18b0f0b34f8"
+    },
+    {
+      "id": "s5-g2-t5-Q09",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "47760c96639d261cada3ab0d31a511e346200cf15ff5357a8b6a3605272a591c"
+    },
+    {
+      "id": "s5-g2-t5-Q10",
+      "topic": "s5-g2-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "6a8aa9513b7c9be69279b59b58cccaff2e89fcd70253fb0d4fbf61aec6b2ad74"
+    },
+    {
+      "id": "s5-g2-t6-QC2",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f23518f78312b493ea1c018692bc3fc35ba670529af7839b6bc6c6828b077926"
+    },
+    {
+      "id": "s5-g2-t6-QC4",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9e9c4903a77c3dc222d9d1428aeabaf1793a7873300000684a9171a1995bf7a7"
+    },
+    {
+      "id": "s5-g2-t6-QC8",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "86f2feb9da956311af1f3753d31b5bc6cd363aaecd99d1e16e23656523dcbe99"
+    },
+    {
+      "id": "s5-g2-t6-Q01",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c712dc5a3a37663cf3ba61ef6fc458ce359f75c0e4c0f4552aab1eb1805ee987"
+    },
+    {
+      "id": "s5-g2-t6-Q02",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f7fb30ad8a9fbf9f3fb1dce5d110ca2a1963fb853a7ac47ec25d932ebb7f9352"
+    },
+    {
+      "id": "s5-g2-t6-Q03",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "b8c86ed960f3aa6e69d6e996c4658a8ba55e212edd9d2e0b7f05e526b84b0ad9"
+    },
+    {
+      "id": "s5-g2-t6-Q04",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "547d28bba15e4bc30509652628ecc6c8591d9fe300662a46af0c1155380161af"
+    },
+    {
+      "id": "s5-g2-t6-Q05",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "edc43b27979eac09a60fadf4831d1c60b2f6b7f0056be632cd219ef0e76892b9"
+    },
+    {
+      "id": "s5-g2-t6-Q06",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "bcd18c65e10b90b68ed5af352a3b09ba3cfc48772681cb048f5c6f21c457c356"
+    },
+    {
+      "id": "s5-g2-t6-Q07",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "679888b8e4d309acdcb63a5854b541a3db6380822214200cf8d01200d6ed71c5"
+    },
+    {
+      "id": "s5-g2-t6-Q08",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "96f752337edc667b53552588efc4b352d3893f5a8308ec7eb3d5e63a281355f1"
+    },
+    {
+      "id": "s5-g2-t6-Q09",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "35f78d1a08233489a2288f1e9f3c95b57cbe6be5df7e06963ab463f71d15352c"
+    },
+    {
+      "id": "s5-g2-t6-Q10",
+      "topic": "s5-g2-t6",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "35f2e0d5caaf355c43878845ef4c1437f4499589a5ea3c56ef871d30659f4528"
+    },
+    {
+      "id": "s5-g3-t0-QC2",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "05d6d195b2e50f438d31e73930c4de9dc6f3bc5e04b8ff41aa5db48d52a793cf"
+    },
+    {
+      "id": "s5-g3-t0-QC4",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5ff1e733f726b2a8db110241bb19cd95a43c2319b8787b76ac2a412d7f8979fe"
+    },
+    {
+      "id": "s5-g3-t0-QC8",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "70b1d62461457ff04557d25e38186967c74a149046671d3f1b9c192bd4352061"
+    },
+    {
+      "id": "s5-g3-t0-Q01",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "47593a89200ad9126c7feaf4b6f5805552311474b6fb9fe9df7bf594ad0a924d"
+    },
+    {
+      "id": "s5-g3-t0-Q02",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "34c9b1a46c4cde31809ab3cc207c6773976a0b0833fa289d7681e5ec391b0efa"
+    },
+    {
+      "id": "s5-g3-t0-Q03",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "069eaa40dd620305b12697c9cb2002ed91af055a39857499420297a097fe177f"
+    },
+    {
+      "id": "s5-g3-t0-Q04",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4d7dc2dc300803d827ca4b9e7652da89d8d561863429ad83b9aa7af6a2ff5c40"
+    },
+    {
+      "id": "s5-g3-t0-Q05",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "23f5cbf8503a2766d1a257ee8a324addc58e6609c307b730c333fc00e2154470"
+    },
+    {
+      "id": "s5-g3-t0-Q06",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "e56c730101d9fff77f1b0ffc04962b2c57e871a9b057246ca27a33172401a24b"
+    },
+    {
+      "id": "s5-g3-t0-Q07",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ff875e291fe8838b17a3910f500426943600292df923254a5822d50b845a601b"
+    },
+    {
+      "id": "s5-g3-t0-Q08",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "58d0359b6b693036a9ab70f8dc85dcab16766395b8b6553940131eb1fc402a1c"
+    },
+    {
+      "id": "s5-g3-t0-Q09",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "006d15b80cd5178790f34ae1ff7272626c59c739e00c7729442438f37597cf5d"
+    },
+    {
+      "id": "s5-g3-t0-Q10",
+      "topic": "s5-g3-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8da7ee72d5e47f1b85a571cd251d86da6685de37c9e288fba293c5704204f607"
+    },
+    {
+      "id": "s5-g3-t1-QC2",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a92c2fbb9be986c5728c0f5e94a911ff6c11269d70c721052691768bbf9b3131"
+    },
+    {
+      "id": "s5-g3-t1-QC4",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "99222212b130f2a28bd9b1fa67621be08c2b7e8503f0c290a4e9add736d230c6"
+    },
+    {
+      "id": "s5-g3-t1-QC8",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8881c926ea332c2b0a0f13996b8a73dfa3ac9fea57980f2253f47ebde2d2fb42"
+    },
+    {
+      "id": "s5-g3-t1-Q01",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "499f40eb0251a1594d8be74a1a8b691c712e2912118709c5c4ad7f8b60a50d6d"
+    },
+    {
+      "id": "s5-g3-t1-Q02",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "251e45b9c7ce94fad438eb5bb2e0665d3c963c6aec4d9fdc881ad8192bfbb15a"
+    },
+    {
+      "id": "s5-g3-t1-Q03",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "7c3b3d6d5a044eabe75ca191c9f31381311d49c734b3090cf6ff9fca6bdf6846"
+    },
+    {
+      "id": "s5-g3-t1-Q04",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8befb404f30d3d85c05e32facaa4b2fa298cc124945c7193b68d980ea3ac6876"
+    },
+    {
+      "id": "s5-g3-t1-Q05",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "6d325bd5d96120e2a9ab9d7db7a16aaf5591a3892de8a114751def38ff226130"
+    },
+    {
+      "id": "s5-g3-t1-Q06",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ef69541c41cba9981d9ce86d91113b030ec844a2615d44b8e612e575a17a713d"
+    },
+    {
+      "id": "s5-g3-t1-Q07",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ce441722202820df9cf038c7448bda57efd0be49a99a5b9e2671e8df55235505"
+    },
+    {
+      "id": "s5-g3-t1-Q08",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "b6f352d8d8901ed5ec50142f7215c408f2004fa95cf409040998eb0764fdd064"
+    },
+    {
+      "id": "s5-g3-t1-Q09",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "824d6c2dd31a0d9e244f50ffd9638cc1238ca2c3cb5f47686c4070cffe341788"
+    },
+    {
+      "id": "s5-g3-t1-Q10",
+      "topic": "s5-g3-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4263f1a32ae7fcd8ee4d87951ec257e00671f19ac1578a63439ea44bac5d0db3"
+    },
+    {
+      "id": "s5-g4-t0-QC2",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "baedf18ea76bd1ee0a94c46244e2037df175e90adaf54a87a482ff825590d539"
+    },
+    {
+      "id": "s5-g4-t0-QC4",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "1c730e99fc1e4ceec3c0bc1eefed11ccdc58b6b211a3b3c3b27afed4b0847503"
+    },
+    {
+      "id": "s5-g4-t0-QC8",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a865ba14bbc0c1a1f990b41331643ddf0066f4ca20ac5211b25729994acd07cf"
+    },
+    {
+      "id": "s5-g4-t0-Q01",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "2907fcf3c08ed699e1f227f3910c1e73067562917ff06d78f5921bb2d02ef84d"
+    },
+    {
+      "id": "s5-g4-t0-Q02",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f87fda0aa7855920f569156c145ee683479cae8837caaf858c3b0e8ed1466e49"
+    },
+    {
+      "id": "s5-g4-t0-Q03",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0d14f78080bb31d1563b55fcef342c642fdd8be8feca20da7dcb4bddb1671215"
+    },
+    {
+      "id": "s5-g4-t0-Q04",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9a37acbee357102e2c05421b7d218f678e9729548a459ba48fadf4f99323b7a1"
+    },
+    {
+      "id": "s5-g4-t0-Q05",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5ac4b3a80007080b6e14ebc13de40dc6f41f63a47a01c9a5e76747da2e0aba3d"
+    },
+    {
+      "id": "s5-g4-t0-Q06",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "227bec22844d03c1c60181656636e3e8b81ab871cdd38da8c3306b28a93649a8"
+    },
+    {
+      "id": "s5-g4-t0-Q07",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5c23aed8b443712c880169d73c249426c9453a380ef6beaf98d9d1c0377f09c9"
+    },
+    {
+      "id": "s5-g4-t0-Q08",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9ab14d36afe7286bbfc878b0ccf01dfd883e5a89c443c04735d367b8f6217ed7"
+    },
+    {
+      "id": "s5-g4-t0-Q09",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a54123cb65c09f036dcb5d6ed26ee8eb90296ef5aba99e1d0901194de7b6d5d1"
+    },
+    {
+      "id": "s5-g4-t0-Q10",
+      "topic": "s5-g4-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "206108315848dda231e512fb7f0ec8bbc68e85efb04e5fbf355fdbc936c6efdb"
+    },
+    {
+      "id": "s5-g4-t1-QC2",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c67b681a0dc321dc280ae3ac9a482607f06a02beb44e9e23f4ac5f155b3742df"
+    },
+    {
+      "id": "s5-g4-t1-QC4",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "14e6aecc4c67f04bffde481cb59ebfb7ec155994b23077b1b80c072f50a5c4e4"
+    },
+    {
+      "id": "s5-g4-t1-QC8",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0856003213286d6611e81551707d98c5116ca73b14845a59e18484d338f058aa"
+    },
+    {
+      "id": "s5-g4-t1-Q01",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f31cbfb4a1cca6931f004e3d5a9105b5ee84a50f7a20a048ef73e8fbce844f0a"
+    },
+    {
+      "id": "s5-g4-t1-Q02",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "85b08976f5fb34a4ff21500e53637e8c66508b895251bc51318e5d093a441617"
+    },
+    {
+      "id": "s5-g4-t1-Q03",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "71f2890b06f5dbc8bed9ed42c85851c9f3f55aca2d27389dd2528ffb70afdf2c"
+    },
+    {
+      "id": "s5-g4-t1-Q04",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "cc69da6b86172a5ce0e7650b0a8fa5872debd6e27f53de82442072ff0cd12f95"
+    },
+    {
+      "id": "s5-g4-t1-Q05",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "6e3e8bb92ac5bfe70a3f386c3215bed298c2bc3da39cac8cbfd5dc34cbcae269"
+    },
+    {
+      "id": "s5-g4-t1-Q06",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "6cb8b72865ca0e79d50ded01be5b78fc387efd39c20858f50e6da8ec3b895dc0"
+    },
+    {
+      "id": "s5-g4-t1-Q07",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "34f6869b75f7906bf5c8a9acfecd0215c030b289eb13ceb1d0d34851a0b928b5"
+    },
+    {
+      "id": "s5-g4-t1-Q08",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c6235cd86fa52b6b08ee6b0ea85c542f623ad28cef47ae2a1540c07498d6e803"
+    },
+    {
+      "id": "s5-g4-t1-Q09",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "422097e61bc667ec06d3a6f2f98a5bd4182a7b76bb350d6e00accba61636c45d"
+    },
+    {
+      "id": "s5-g4-t1-Q10",
+      "topic": "s5-g4-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "63cd5d7d5923df1d69dd095b21d1da74a48bb512b289a0296e1a7cadba3b0796"
+    },
+    {
+      "id": "s5-g4-t2-QC2",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5cb606d980f3dfa1140f1abca8a82349d482164de595791f40c3912b1878e49d"
+    },
+    {
+      "id": "s5-g4-t2-QC4",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8347568359e309eb02ae3e537658e4a5811e438544a947c35f424b1c26f1357d"
+    },
+    {
+      "id": "s5-g4-t2-QC8",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "48b648a7faead7b20d8ba5be5f937c8ebbd46691603bc60561087e82cc4a3041"
+    },
+    {
+      "id": "s5-g4-t2-Q01",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a32705ac1631a6e82a2648f3d51a5b960b80bc9013a4fdba80750a94ff568674"
+    },
+    {
+      "id": "s5-g4-t2-Q02",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a5a40a904544e6e732eac72b3a3d47dcfb695322554bbb7c13b18dc12f560460"
+    },
+    {
+      "id": "s5-g4-t2-Q03",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "847b22ad7dcc1e6ec1f97b3e492c2b4a54f15390b61fe9a973290f54405a6bc0"
+    },
+    {
+      "id": "s5-g4-t2-Q04",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "487149c3c8257bd5f70994ea6dfdbb7ff48668ff6b1e1d60a8dc26eb303dfe52"
+    },
+    {
+      "id": "s5-g4-t2-Q05",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "1f5d4a5a951b7500aeb3877bde89687a627e6adb838478928969bfbe98586d23"
+    },
+    {
+      "id": "s5-g4-t2-Q06",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f9223a1a813d0fc82db70f64b95a11ef1fade3c0f9cf001a7643c0b82a7033ec"
+    },
+    {
+      "id": "s5-g4-t2-Q07",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c0591adf6d997061abad104e588fd57d1ce3c6e741bf535add8416902e184cdd"
+    },
+    {
+      "id": "s5-g4-t2-Q08",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5adfcdccca12f4fdd2263c0f8e4fae40d0e200ffd2e4a5303498a603f0950fce"
+    },
+    {
+      "id": "s5-g4-t2-Q09",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a9c3d18a8619e183c1f0e9140ff840c814f10687acaa0c1d88941d28abb9f8da"
+    },
+    {
+      "id": "s5-g4-t2-Q10",
+      "topic": "s5-g4-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "358a551f5e4937694ddadfe389ec797a84560e75c0d347dd29ae13f8035a7acb"
+    },
+    {
+      "id": "s5-g4-t3-QC2",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3560582b989d4d3f416213104fbc85b35a8faf91515d2ea94a590edbf7a48e66"
+    },
+    {
+      "id": "s5-g4-t3-QC4",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "2755ee3e34bbe8a20ea34c66e481b72bfdec4014f698b0954e69ede99a882ea3"
+    },
+    {
+      "id": "s5-g4-t3-QC8",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ed4a0e9c68bbc94243c6fa4469cb5f670e9063d83b031c56627beec842709e7d"
+    },
+    {
+      "id": "s5-g4-t3-Q01",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "bdf53b37b67f2fe1e21c053365dd377e3db4347d2169b47618f3f309a06f25d5"
+    },
+    {
+      "id": "s5-g4-t3-Q02",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "772153ff967c03866fd0cab943e2af6ad98237e3a806e9a6007b9efd10d52c12"
+    },
+    {
+      "id": "s5-g4-t3-Q03",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d265aba39416c7d35ee807aff3c06ecdc808ab7cf87e2b66f0e3ae896d29d6ef"
+    },
+    {
+      "id": "s5-g4-t3-Q04",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "14f18b88e1222e95f1c60bad27b2fc6247c90b3da26946da06be16fd68256f6d"
+    },
+    {
+      "id": "s5-g4-t3-Q05",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d041987ef42743b0a29e490b7a418c44f12a4980b8bc11a953672aca124733fe"
+    },
+    {
+      "id": "s5-g4-t3-Q06",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d2955542753d2978aebacd82fb33900964f0165825af4a9fa9568074788fdfe4"
+    },
+    {
+      "id": "s5-g4-t3-Q07",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "6afb9c0d5010689e44d4bf0f0dc27ad106e1f46f9c9509ea704d14d2d86dbf30"
+    },
+    {
+      "id": "s5-g4-t3-Q08",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a5092ac6df9c5103acef6601fe2921b830f81b0603482aba65fb88e298262fea"
+    },
+    {
+      "id": "s5-g4-t3-Q09",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ced844466fac8033a353a54acbea6f50880fec9386dc8f3ae778c816c4b3d353"
+    },
+    {
+      "id": "s5-g4-t3-Q10",
+      "topic": "s5-g4-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "19ae6765ba176d62e11d2111f9dcce7b306e7c87bb96a3e69b19c11f581ed3f0"
+    },
+    {
+      "id": "s5-g4-t4-QC2",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4d57bf66c4b83730654806d867de23caa715427d24781faa2b148d02d18f6284"
+    },
+    {
+      "id": "s5-g4-t4-QC4",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a44b9fa46d11b70b5eac5da41bda82f65c0ca4761e82453e10e86c8973fab9b7"
+    },
+    {
+      "id": "s5-g4-t4-QC8",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "2523fdfb5e76d25025567acbc8e4ebbe69abae71dcec7a1b80405bd277b90c75"
+    },
+    {
+      "id": "s5-g4-t4-Q01",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "08db1b5a2aff4022d368eda5555b5a4887c6c6832aaff8c283b0dfa978fa6b46"
+    },
+    {
+      "id": "s5-g4-t4-Q02",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "b3ef4e04dd3a8c9ff053c14bf319703efe4930885e8550f030dd199a76b71d97"
+    },
+    {
+      "id": "s5-g4-t4-Q03",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "7e66b1b4029a1eb66336346fe4884245faea427b69e415de26e056d078012580"
+    },
+    {
+      "id": "s5-g4-t4-Q04",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "dead6005dc659ce34a46659609a46e747fcc845d9239e7ba22b709a4c0727c63"
+    },
+    {
+      "id": "s5-g4-t4-Q05",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0735019a4f9057f61f7147c4f4248fb2d9d68bc933ce99e57a83cdd32452a33d"
+    },
+    {
+      "id": "s5-g4-t4-Q06",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "cfd08d89af3b350994a95a4ef86b37b74ab3a05f2f38fce222e0e52ce5ac3ac9"
+    },
+    {
+      "id": "s5-g4-t4-Q07",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "face3627248115aafc76a7fcb9aaa4c7639d16a6c14e9f70964af142b1185a9b"
+    },
+    {
+      "id": "s5-g4-t4-Q08",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "534076d30fd61e86455a776b20636b051d22f0500d92d14d719d1072070a5a82"
+    },
+    {
+      "id": "s5-g4-t4-Q09",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "43b9395a60916565759d0a524a97206c38ad9367333f2612ef6ec008b5b9d68d"
+    },
+    {
+      "id": "s5-g4-t4-Q10",
+      "topic": "s5-g4-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "09cafdda33025130002f9f2278e47991eeddf61a0b67e1699f38e99da3766f46"
+    },
+    {
+      "id": "s5-g5-t0-QC2",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "cce7242e759af8f277f8a52f8ea470c457f5d520aa773b85ccd0f4c60ed946a8"
+    },
+    {
+      "id": "s5-g5-t0-QC4",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "601dd633846b6e3c7c6e724ead358341c4227d6ac2ac4a79bc227ee0a96fb643"
+    },
+    {
+      "id": "s5-g5-t0-QC8",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "17170d33080fffd0de5270ef30a5ea68a70f05f0afd89b44465470516588e204"
+    },
+    {
+      "id": "s5-g5-t0-Q01",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f7db8dbfee76684c2a315950eaae91b84733080017804c869a904a6c8ef7389f"
+    },
+    {
+      "id": "s5-g5-t0-Q02",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a20423a4176960cbb1f02bd39ed3f44a1ff653b6490862a91c0ca0092b0e06ab"
+    },
+    {
+      "id": "s5-g5-t0-Q03",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "bd73406a074b2b8bbd69560095825820fb41f4bda9559e436b6c79bf9410e9e6"
+    },
+    {
+      "id": "s5-g5-t0-Q04",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "2907cdc8354d4425f77ac725ac5b457fd1985ecf07fc58c8ed4b9b444a2023af"
+    },
+    {
+      "id": "s5-g5-t0-Q05",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "895a5495d1a6e46223a1c89ee002a0d94f04f0f07ccc538f083b44c4cbc8dc54"
+    },
+    {
+      "id": "s5-g5-t0-Q06",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c9c53d680fba1a74030cddb1b8ddf158b7036b775a73078878a1dc96f784337c"
+    },
+    {
+      "id": "s5-g5-t0-Q07",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "be79b0575b1963a6d1717191b77e63f485edcda28de0cf780af16c21f39a40da"
+    },
+    {
+      "id": "s5-g5-t0-Q08",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "6e24f9346cada03dc75442e99bec7cacb325d1effcb230e20d7a33469f09b25b"
+    },
+    {
+      "id": "s5-g5-t0-Q09",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "1edba5d4ab67e794df80b7d3ac5c2a0c56788bebc976a1189b47ddcb47d7e533"
+    },
+    {
+      "id": "s5-g5-t0-Q10",
+      "topic": "s5-g5-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "1d494a1ef2b2437bea2f9b1ebb8d0536bf6cbd8ed76205f535672bb1d9e3a2b0"
+    },
+    {
+      "id": "s5-g5-t1-QC2",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f675766d2fc6f6c8eaef9dca224c100c43e3ee5b42b132cf740174a7e91143bf"
+    },
+    {
+      "id": "s5-g5-t1-QC4",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3bf14b3f89c16846f7ef21e367a9b7e6cde536ae5dcecff2478cf0f881ed6165"
+    },
+    {
+      "id": "s5-g5-t1-QC8",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "420cfa1e4748acfe0c37a7f12cee2393866057a8892ad1a8099439787a25b2b2"
+    },
+    {
+      "id": "s5-g5-t1-Q01",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0b8f75132225c9ec01bebcce3225d21a2bcd0625acc5e7207a4e9684fcc41ee6"
+    },
+    {
+      "id": "s5-g5-t1-Q02",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a021b04045537bff3e2fe27c9058ba79fa379154f90966a8d4aaa291a3fe0225"
+    },
+    {
+      "id": "s5-g5-t1-Q03",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "eefdf73fa351114b41547b2a7f8b9ff780ab3f0903f964e37101bebb004ffbad"
+    },
+    {
+      "id": "s5-g5-t1-Q04",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "7e09d4a9677290f18bb42bba29e3d334d4d256456a8003cf91d136671dead990"
+    },
+    {
+      "id": "s5-g5-t1-Q05",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "dd59066b77cd43cac095f580e1c9c82da25bfb68e8d7577bf875ddf73a907bc6"
+    },
+    {
+      "id": "s5-g5-t1-Q06",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4a721f1b9076c359cddbe09aff4bb84935a7cd02bd4b225359c7c8150f3824a9"
+    },
+    {
+      "id": "s5-g5-t1-Q07",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0dce2695fb6dce671610439bffedffc6d50dc368f5937b9b1a96472b131dd85c"
+    },
+    {
+      "id": "s5-g5-t1-Q08",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5dcb80aa5b4bcd88533425a447c510d1b7996f62f392d54b8af58f20243e3996"
+    },
+    {
+      "id": "s5-g5-t1-Q09",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "733e3917480f810984fca9fd7e1fa5460b2845893a41521d197287402de2dc7f"
+    },
+    {
+      "id": "s5-g5-t1-Q10",
+      "topic": "s5-g5-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8d2d20ea1b0b119a27db35cfd4ce2e978dffb9b458d2b154d28b8ebbfaada079"
+    },
+    {
+      "id": "s5-g5-t2-QC2",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "540380eddef1b4227db2181cf0b90dc4d5e2553303ab1fb11cf8744ef6ec0795"
+    },
+    {
+      "id": "s5-g5-t2-QC4",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0773ea0290d5427d0c7139c11f8b9d5f2583a7f13b30c9c4937510d556216ab2"
+    },
+    {
+      "id": "s5-g5-t2-QC8",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3b4b4899c2e27682de3d9476e423f9e8dcba36eeeea8857dd40624820a1a0db7"
+    },
+    {
+      "id": "s5-g5-t2-Q01",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "51f67e5901594dc10440e5c6bc1ae449d3371d7450a6798285d517535f2c49a4"
+    },
+    {
+      "id": "s5-g5-t2-Q02",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "daf31dc4950ac58a0c805cac36f9035ae328b28c7cf21d718702afdcd767da0f"
+    },
+    {
+      "id": "s5-g5-t2-Q03",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "bc365accb7bbbd209bfcba28a9a343069f35e089efef748a1a6cd5bae9ba75f8"
+    },
+    {
+      "id": "s5-g5-t2-Q04",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "213bde707bd8ff26aea31f60601c7b0555f6ca3fcbd8e80a7aa3fc928d3afe70"
+    },
+    {
+      "id": "s5-g5-t2-Q05",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "410d01f0a1bdb8f68e5f8f259f06991e5913338a8b979f6fbe31b4d8fee81ea2"
+    },
+    {
+      "id": "s5-g5-t2-Q06",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "bceaf11436f0eef08320e36bc14ac271658d2320785996ec9e59a1f85d7e0da4"
+    },
+    {
+      "id": "s5-g5-t2-Q07",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "47913b4910cc0d8ba67ef96c20675312e84e8d93647a3ba99861fa6e65177fb0"
+    },
+    {
+      "id": "s5-g5-t2-Q08",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "41f5843c5fdc37c3cbe98115d6d4528b6d8bd7de9da471a4c3b173e7b366518d"
+    },
+    {
+      "id": "s5-g5-t2-Q09",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4c1735bc42d3d19d16796955b5d69d4f710ffe431c970d224003de585d38c867"
+    },
+    {
+      "id": "s5-g5-t2-Q10",
+      "topic": "s5-g5-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "12869d97b1dc2d670dd43ab914fcb021a33080065dbfefc24f64f47632d4ba8b"
+    },
+    {
+      "id": "s5-g5-t3-QC2",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "160f5a66a3e72700444d25d00312b8a185b8ca0a1683fb2d495970a5d6f673bf"
+    },
+    {
+      "id": "s5-g5-t3-QC4",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "82e6b696eb02d7b0ba9075711fa9a38608dbb77ba0337f5d2da16aca3f014730"
+    },
+    {
+      "id": "s5-g5-t3-QC8",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "40df5fa755539bd33dca70c9399221d51bd748a66b7774c926e4263ea24d1067"
+    },
+    {
+      "id": "s5-g5-t3-Q01",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "fcd314fed206678ce2d4496486021713efa5b718b6bce7c00a77be0f4eeff7bf"
+    },
+    {
+      "id": "s5-g5-t3-Q02",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3634ee1916976cdf811de9dc84a8dd581c97eeba66ad5590907fa11fe3fcd03c"
+    },
+    {
+      "id": "s5-g5-t3-Q03",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3e04792bd74639f8284b4f9ea7089300de5a42c994c4a4371ebcdb84c7ccf0d2"
+    },
+    {
+      "id": "s5-g5-t3-Q04",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "850dcdbbb7b28e82ec1c5fc374dc9b11dec8eb793963698ce273f68065f88b21"
+    },
+    {
+      "id": "s5-g5-t3-Q05",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4838ee2c1c8de4dd0f633bb3f1c30a29a8ee90e0d6f5ec0f84be6594614a4d0a"
+    },
+    {
+      "id": "s5-g5-t3-Q06",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5df4e51c2b2466a947d19d6137c564cca17bd8126048a04172ae2638dfb22eac"
+    },
+    {
+      "id": "s5-g5-t3-Q07",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "7da8efce1a72d93f5d275968b851876ee58d8290be8f326263f96a8b8dda9c5a"
+    },
+    {
+      "id": "s5-g5-t3-Q08",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "39767c69a739883a70de3caa66240513bf6a7b2995d51c53917e64d26b7b9f1b"
+    },
+    {
+      "id": "s5-g5-t3-Q09",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9671afb5f2835a96250d843998fcc95aacb0c9bbe5368d8335e18e39a0ecb101"
+    },
+    {
+      "id": "s5-g5-t3-Q10",
+      "topic": "s5-g5-t3",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "e0f509dc1549068e17acd4d4ce06a269734ed810f9c3d58df275354e5de9408a"
+    },
+    {
+      "id": "s5-g5-t4-QC2",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "fd43a4f323a2276e075cf87b2ac62b9a146d6f9f2a9fb4892f1ad73b6010b50c"
+    },
+    {
+      "id": "s5-g5-t4-QC4",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "0e430c30b4a0658a7dfbcd4aa5c8987657718c6bbd37d168a58319aa74b94dd8"
+    },
+    {
+      "id": "s5-g5-t4-QC8",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "2021c1038532dff775dc8a07a35121f81a7f21680e71ad05cd8dcfcc5b9cfa48"
+    },
+    {
+      "id": "s5-g5-t4-Q01",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "e95221c36dde18b05a4bc30c6a75df23c3ea039246ca8a0176f6c1fe07fdfa70"
+    },
+    {
+      "id": "s5-g5-t4-Q02",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ab65f79118d4630ee7afc7ac08c638bd0ad1117845dd4c896986ead7ffa50ee3"
+    },
+    {
+      "id": "s5-g5-t4-Q03",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "93f12e2743f7277d45bf26ff95d793e5cb7b05d5e4e1657eeb89327838543826"
+    },
+    {
+      "id": "s5-g5-t4-Q04",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "dbe6579f148ef4f98c7acd5ad9b4ce12505c4c7b38edaf5355f0063607311efd"
+    },
+    {
+      "id": "s5-g5-t4-Q05",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "388034e84e877c7efbf6e3e6d14dad3ea5d3dbef3bbdc7d4b6d32cc7ec896fca"
+    },
+    {
+      "id": "s5-g5-t4-Q06",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "348f19a7289cd529edaa980275e3f97738fc76a47e0d072580df7b832557084a"
+    },
+    {
+      "id": "s5-g5-t4-Q07",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ffc1d702db37c32c107fd1083697d91182c7444b6e9503155ce96e804e188818"
+    },
+    {
+      "id": "s5-g5-t4-Q08",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9d74361524abbf2fed3fdb8fbc3e68613338ca42bec5c82c6a3f20e585863352"
+    },
+    {
+      "id": "s5-g5-t4-Q09",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "eb34da0cf07e3492a2d65fb84feef86655e686037cfa08cbc1af12cbf194bb68"
+    },
+    {
+      "id": "s5-g5-t4-Q10",
+      "topic": "s5-g5-t4",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "a91dcd6690f7a76e9eb56823559ca705912204d1c56aaba4080fd632ab383e37"
+    },
+    {
+      "id": "s5-g5-t5-QC2",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9a67d4d0ae4c8229837d4780f303d07ac305b3b66d45eea7888aff0d7ea2cd9d"
+    },
+    {
+      "id": "s5-g5-t5-QC4",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8f9e81388120d4f77ebec95bc6c9b578bc80a6742cb533f5c93102ccb7c53086"
+    },
+    {
+      "id": "s5-g5-t5-QC8",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "1c07545b1904cc07a65ce0f53b219f4e461d0f94d2340f6a55c077416e527cbd"
+    },
+    {
+      "id": "s5-g5-t5-Q01",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "af69dbfbd5ec7ed807dcf9d1ce7724fcb7e288a62818c0be63722649d48d6266"
+    },
+    {
+      "id": "s5-g5-t5-Q02",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "29e2c06eac8f625ee2a94175d244da8b2b8462cd11541bf9b60ba1e647eb34f8"
+    },
+    {
+      "id": "s5-g5-t5-Q03",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "e59e524fac83770aa5c4d35b22f60a0f58de785f1a5c4b65084de1c51124f680"
+    },
+    {
+      "id": "s5-g5-t5-Q04",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3e8d088a2c4bb3482188b0aaf41373673937e2367644860f595c302446cb4cb0"
+    },
+    {
+      "id": "s5-g5-t5-Q05",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "6aead0c7a1e20d9db062978e6daec88ccaffc78f9dfbd8077c23c99a2fa39ad9"
+    },
+    {
+      "id": "s5-g5-t5-Q06",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4983fc35200264207a2a4be129866d390daf0ff1be35be12f3c3c1f3668f9b98"
+    },
+    {
+      "id": "s5-g5-t5-Q07",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "f55c60320e1e3bb3aed605193370775af1812bfeb4de14b6ab563b785d80efc3"
+    },
+    {
+      "id": "s5-g5-t5-Q08",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9f508c0c1e0d198974ecf788e490681a033a3a756dce8121341c33d0fe42ac8f"
+    },
+    {
+      "id": "s5-g5-t5-Q09",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "897eefd48797c48dfc9828749415029c0f435d26218edb7725f617200573d196"
+    },
+    {
+      "id": "s5-g5-t5-Q10",
+      "topic": "s5-g5-t5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ae29cf01f0f9bc2115f5b12c73032a128562c9926f0d32943b689f6e07203c85"
+    },
+    {
+      "id": "s5-g6-t0-QC2",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4becc2c6679057c1055ab2866addddda787dc2237ae868ba921ca08d7007848b"
+    },
+    {
+      "id": "s5-g6-t0-QC4",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "919cbf5655ce199b4516819263a69770690e8c06533ca85131a6998babb69be7"
+    },
+    {
+      "id": "s5-g6-t0-QC8",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "92990f1bf7de96bb39e8cf29c4663954b579113f3ab089772517dac3e1376a15"
+    },
+    {
+      "id": "s5-g6-t0-Q01",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "cf665340b9f9a0e18901cfa618d4253f1a6b36f14728cb9111bcfdafe83f90ca"
+    },
+    {
+      "id": "s5-g6-t0-Q02",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9ade28f38ce1199d5aa4325170089bf13a9d17b89265431740e90f639105cc76"
+    },
+    {
+      "id": "s5-g6-t0-Q03",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "2c179753961ba2838894ea4f6f549f429df76d7ee97482678885c22b356366ea"
+    },
+    {
+      "id": "s5-g6-t0-Q04",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "392f26ed385bac2be398b2fdd1709c30cc57051d929c8f3a400c5f8da14d7fce"
+    },
+    {
+      "id": "s5-g6-t0-Q05",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "eb5a55c80686005f06464e83aa4d8299695c75ab8c859f6e127442be86a6c620"
+    },
+    {
+      "id": "s5-g6-t0-Q06",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "2918e82005c3e93ce805072fcba85e262212ffe97159447262c996328a8d246c"
+    },
+    {
+      "id": "s5-g6-t0-Q07",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "3a43582709e1cb0290b3263250f48992b41e71832e1dbe0176c22d6bcfea56d4"
+    },
+    {
+      "id": "s5-g6-t0-Q08",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "75ba15f477481010be26953d8887f7430d87b1ab4b1d774475a4ca09dd58add7"
+    },
+    {
+      "id": "s5-g6-t0-Q09",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "2085aee5bdc4e03a6cfc255ad7dbf4625b95b585feb3dd0812b01ead765b116b"
+    },
+    {
+      "id": "s5-g6-t0-Q10",
+      "topic": "s5-g6-t0",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "941e5b86cd886e7c36ea9cbf55d1144cd2961c31ff4c619bc8f137d09aa342b4"
+    },
+    {
+      "id": "s5-g6-t1-QC2",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "e347dc729f305f254fc18061f2c19dceace437b29148dd27e9db71e28fd8d781"
+    },
+    {
+      "id": "s5-g6-t1-QC4",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "401c4c4131daca2707d0b69adcb1f53cd4d55d0430ed4319ba3d30b2282a3e54"
+    },
+    {
+      "id": "s5-g6-t1-QC8",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "af703d01604283cd6523e72b8d6fb803f05d9946a63ab01dca60c008a2e46fc6"
+    },
+    {
+      "id": "s5-g6-t1-Q01",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "adf40a95cf98ebcd64ed5ee8f391f723253678149748d9bf3687e1476f8bcc27"
+    },
+    {
+      "id": "s5-g6-t1-Q02",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "bb58686f088136aa08275604347db27ec6a102db9807660693a0f7ac766efb78"
+    },
+    {
+      "id": "s5-g6-t1-Q03",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "377fb97ac559a4b45a892e7c38df7521f4689a8b04eb3beff931e4f14512fe3c"
+    },
+    {
+      "id": "s5-g6-t1-Q04",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "2df1789f1e9c3cd6e39569b0ef0e770b5fd8719ca20436c727f27736ea500d2d"
+    },
+    {
+      "id": "s5-g6-t1-Q05",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8762490f421e64f9162c84e63d9f1a62d8771bb09f6216437f3c2ef923818fc6"
+    },
+    {
+      "id": "s5-g6-t1-Q06",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ddf98d0f51ed0aef5f6a35d8dd7706991cf60c3fc8d6f0ce976e2655824191f6"
+    },
+    {
+      "id": "s5-g6-t1-Q07",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "161dd0e724a6fd94d1372a539b56d7af087c81d9ff88192666d3634c44e8c7d0"
+    },
+    {
+      "id": "s5-g6-t1-Q08",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "8e9baa899622a4bdcb9b4e4d35e44ede274952eb531cfbc3acf0d41b4ee2cefa"
+    },
+    {
+      "id": "s5-g6-t1-Q09",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "2f4d1cf199a13b46f92c31401375cc9d4ba42671eb3ad86568df1193d8486368"
+    },
+    {
+      "id": "s5-g6-t1-Q10",
+      "topic": "s5-g6-t1",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "946311bc3a503c7516614207b1c334b57291834def219aa77c2cda67b204712e"
+    },
+    {
+      "id": "s5-g6-t2-QC2",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9618e60c15a0f3e392eae97c43987aef55c73ac84ed1348787c76178613a5943"
+    },
+    {
+      "id": "s5-g6-t2-QC4",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "82dcb1a0c35ed9d98f8e413262778a0333332456181b7b62766e61993f3269c5"
+    },
+    {
+      "id": "s5-g6-t2-QC8",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "68df38ad3689316e99956365fa9b53e734faf51fd6eca9e42c782d0263dd2199"
+    },
+    {
+      "id": "s5-g6-t2-Q01",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "7a8cd7dbc4567465ed4ef072653d81084fcc00b43a548f94b3e40bcd8799facb"
+    },
+    {
+      "id": "s5-g6-t2-Q02",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "13ce9116cec226419acd368ff28d9ad35dce77389bcc68b9f4681188348414a3"
+    },
+    {
+      "id": "s5-g6-t2-Q03",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c4b0a4a62a2350a152604af1fb7a0e59fcd03dd1d51049fb676e3f141a431c19"
+    },
+    {
+      "id": "s5-g6-t2-Q04",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "357914701f6e6a41d334dbd2b8586e28e48d1b3efaeca3ada070d06dcc34dff4"
+    },
+    {
+      "id": "s5-g6-t2-Q05",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "312c362280c0a3035dd7e4d56b35b6f076f9163a7643eae9ff0b93b8013cc72b"
+    },
+    {
+      "id": "s5-g6-t2-Q06",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "abb5efde1d9c677a27cc6e72ece325376631d9ed7293b047dfeed5b24d3d68ac"
+    },
+    {
+      "id": "s5-g6-t2-Q07",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "5e36e2cb268c652ffb20bb036151711338f78884e439d16f005db7d980a1fc43"
+    },
+    {
+      "id": "s5-g6-t2-Q08",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "38996c058ddb5bee8d084fc8371dce99ee40ec0e3cdb1f4d09c1a3ae28f3bb92"
+    },
+    {
+      "id": "s5-g6-t2-Q09",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "205fafb0c8ead32633ba582c3e1395bb2089bb8457a7fe66efb71118a6a63b63"
+    },
+    {
+      "id": "s5-g6-t2-Q10",
+      "topic": "s5-g6-t2",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "ab5d3a11c1b4cb72134cb4fd56fbd09d992e8130dc055a85ca9584cc6523ff53"
+    },
+    {
+      "id": "lab-5-QC2",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "39fa10167bf1602a81cdd3e64555c96eb074bdf22327502d6f154e4d3a03bd1b"
+    },
+    {
+      "id": "lab-5-QC4",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "624445e3c598601d13f43c8cc616826749c64d55f50344374ac1cc8d8bcd10d3"
+    },
+    {
+      "id": "lab-5-QC8",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4f70858edf87914d825996372966c82fd7bc16f8cab399082f1f4c394d8d79ee"
+    },
+    {
+      "id": "lab-5-Q01",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "02f14f2c889238489a319f68e96b6042e2b8f934b63443538394337f6c71a2a5"
+    },
+    {
+      "id": "lab-5-Q02",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "dc9f5064fb1ab46ab1d55f5da967dce21c09ab04e7a52969996c326449d5ccd0"
+    },
+    {
+      "id": "lab-5-Q03",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "c4b14952ba583146b7aa0075d70588cd63a9a5ae43c7d69dd58d081bbddfce16"
+    },
+    {
+      "id": "lab-5-Q04",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "63c9c4f5c0c6b9f8714a38aa24d92daa04cfcc3513447f60120c3c47e8658d16"
+    },
+    {
+      "id": "lab-5-Q05",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "aed9a238e3bcc6057c1fd55219fbaab524bafba4031d3e2ffb0b7600c5cc9a22"
+    },
+    {
+      "id": "lab-5-Q06",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "d8accb426777e099d18c277ea5c5f99dcbde62a3f599cfacb48ae2ac4a23f1dd"
+    },
+    {
+      "id": "lab-5-Q07",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "9a7e9cbb9c91db07124ecf250e72e881c875bfb7ef1f6715b40e57ea0e52b900"
+    },
+    {
+      "id": "lab-5-Q08",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4624a6e81b24a420ac014acfe2052989aeb2d65a01f8d06f666a02376caf8b32"
+    },
+    {
+      "id": "lab-5-Q09",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "4b5738723e1ff0f7e1ba6c3360338d7e5295e5189a0b65b80cba8382b449f5ed"
+    },
+    {
+      "id": "lab-5-Q10",
+      "topic": "lab-5",
+      "result": "PASS",
+      "review": "Primary authored/reviewed prompt, answer, explanation and applicable distractors against the mechanism and source scope.",
+      "sha256": "145e34ddc52aab1ab26b89c87de55f9779e4f39d5e51f0f8f288d2a065ff660e"
+    }
+  ]
+}

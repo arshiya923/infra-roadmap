@@ -1,0 +1,2144 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "lessons": 383,
+  "checks": [
+    "Prerequisite graph is acyclic and all prerequisites are authored",
+    "Per-lesson exams have ten distinct prompts; comparison/flow/port context present",
+    "All authored lessons have substantial structured content (word count used only as a floor, not proof of accuracy)",
+    "Initial reader loads only the selected lesson bundle",
+    "All 383 authored routes: unique DOM IDs, named form controls/buttons, one H1 and valid section anchors",
+    "All authored previous/next links preserve original adjacency, including pending lab nodes",
+    "Core body/muted/accent/warning color tokens meet 4.5:1 on paper/surface/soft backgrounds in both themes",
+    "Broad local search responds within the 2-second audit ceiling",
+    "No page exceptions while traversing the complete authored course"
+  ],
+  "issues": [],
+  "contentWordCounts": [
+    {
+      "id": "s3-g5-t0",
+      "words": 2437
+    },
+    {
+      "id": "s3-g5-t1",
+      "words": 2392
+    },
+    {
+      "id": "s3-g5-t2",
+      "words": 2428
+    },
+    {
+      "id": "s3-g5-t3",
+      "words": 2349
+    },
+    {
+      "id": "s3-g5-t4",
+      "words": 2508
+    },
+    {
+      "id": "s3-g6-t0",
+      "words": 3511
+    },
+    {
+      "id": "s3-g6-t1",
+      "words": 3646
+    },
+    {
+      "id": "s3-g7-t0",
+      "words": 2626
+    },
+    {
+      "id": "s3-g7-t1",
+      "words": 2490
+    },
+    {
+      "id": "s3-g7-t2",
+      "words": 2692
+    },
+    {
+      "id": "s3-g8-t0",
+      "words": 2901
+    },
+    {
+      "id": "s3-g8-t1",
+      "words": 2913
+    },
+    {
+      "id": "s3-g8-t2",
+      "words": 3014
+    },
+    {
+      "id": "s3-g9-t0",
+      "words": 2926
+    },
+    {
+      "id": "s3-g9-t1",
+      "words": 2399
+    },
+    {
+      "id": "s3-g9-t2",
+      "words": 2416
+    },
+    {
+      "id": "s3-g9-t3",
+      "words": 2931
+    },
+    {
+      "id": "s3-g9-t4",
+      "words": 2899
+    },
+    {
+      "id": "s3-g9-t5",
+      "words": 2978
+    },
+    {
+      "id": "lab-3",
+      "words": 3837
+    },
+    {
+      "id": "s4-g0-t0",
+      "words": 2508
+    },
+    {
+      "id": "s4-g0-t1",
+      "words": 2447
+    },
+    {
+      "id": "s4-g0-t2",
+      "words": 2432
+    },
+    {
+      "id": "s4-g0-t3",
+      "words": 2216
+    },
+    {
+      "id": "s4-g1-t0",
+      "words": 2269
+    },
+    {
+      "id": "s4-g1-t1",
+      "words": 2192
+    },
+    {
+      "id": "s4-g2-t0",
+      "words": 2257
+    },
+    {
+      "id": "s4-g2-t1",
+      "words": 2324
+    },
+    {
+      "id": "s4-g2-t2",
+      "words": 2202
+    },
+    {
+      "id": "s4-g3-t0",
+      "words": 2256
+    },
+    {
+      "id": "s4-g3-t1",
+      "words": 2207
+    },
+    {
+      "id": "s4-g3-t2",
+      "words": 2235
+    },
+    {
+      "id": "s4-g3-t3",
+      "words": 2234
+    },
+    {
+      "id": "s4-g4-t0",
+      "words": 2139
+    },
+    {
+      "id": "s4-g4-t1",
+      "words": 2039
+    },
+    {
+      "id": "s4-g4-t2",
+      "words": 2213
+    },
+    {
+      "id": "s4-g4-t3",
+      "words": 2206
+    },
+    {
+      "id": "s4-g4-t4",
+      "words": 2189
+    },
+    {
+      "id": "s4-g4-t5",
+      "words": 2187
+    },
+    {
+      "id": "s4-g4-t6",
+      "words": 2228
+    },
+    {
+      "id": "s4-g5-t0",
+      "words": 2267
+    },
+    {
+      "id": "s4-g5-t1",
+      "words": 2234
+    },
+    {
+      "id": "s4-g5-t2",
+      "words": 2209
+    },
+    {
+      "id": "s4-g5-t3",
+      "words": 2192
+    },
+    {
+      "id": "s4-g6-t0",
+      "words": 2168
+    },
+    {
+      "id": "s4-g6-t1",
+      "words": 2154
+    },
+    {
+      "id": "s4-g6-t2",
+      "words": 2044
+    },
+    {
+      "id": "s4-g6-t3",
+      "words": 2157
+    },
+    {
+      "id": "s4-g6-t4",
+      "words": 2144
+    },
+    {
+      "id": "lab-4",
+      "words": 2391
+    },
+    {
+      "id": "s5-g0-t0",
+      "words": 2140
+    },
+    {
+      "id": "s5-g0-t1",
+      "words": 2044
+    },
+    {
+      "id": "s5-g0-t2",
+      "words": 2003
+    },
+    {
+      "id": "s5-g0-t3",
+      "words": 1982
+    },
+    {
+      "id": "s5-g0-t4",
+      "words": 1942
+    },
+    {
+      "id": "s5-g1-t0",
+      "words": 2013
+    },
+    {
+      "id": "s5-g1-t1",
+      "words": 1912
+    },
+    {
+      "id": "s5-g1-t2",
+      "words": 1952
+    },
+    {
+      "id": "s5-g1-t3",
+      "words": 1992
+    },
+    {
+      "id": "s5-g2-t0",
+      "words": 2117
+    },
+    {
+      "id": "s5-g2-t1",
+      "words": 1975
+    },
+    {
+      "id": "s5-g2-t2",
+      "words": 2035
+    },
+    {
+      "id": "s5-g2-t3",
+      "words": 1952
+    },
+    {
+      "id": "s5-g2-t4",
+      "words": 1972
+    },
+    {
+      "id": "s5-g2-t5",
+      "words": 1891
+    },
+    {
+      "id": "s5-g2-t6",
+      "words": 1992
+    },
+    {
+      "id": "s5-g3-t0",
+      "words": 1939
+    },
+    {
+      "id": "s5-g3-t1",
+      "words": 2077
+    },
+    {
+      "id": "s5-g4-t0",
+      "words": 1967
+    },
+    {
+      "id": "s5-g4-t1",
+      "words": 1958
+    },
+    {
+      "id": "s5-g4-t2",
+      "words": 1938
+    },
+    {
+      "id": "s5-g4-t3",
+      "words": 1988
+    },
+    {
+      "id": "s5-g4-t4",
+      "words": 1973
+    },
+    {
+      "id": "s5-g5-t0",
+      "words": 1992
+    },
+    {
+      "id": "s5-g5-t1",
+      "words": 1982
+    },
+    {
+      "id": "s5-g5-t2",
+      "words": 1979
+    },
+    {
+      "id": "s5-g5-t3",
+      "words": 1971
+    },
+    {
+      "id": "s5-g5-t4",
+      "words": 1987
+    },
+    {
+      "id": "s5-g5-t5",
+      "words": 1971
+    },
+    {
+      "id": "s5-g6-t0",
+      "words": 2023
+    },
+    {
+      "id": "s5-g6-t1",
+      "words": 1893
+    },
+    {
+      "id": "s5-g6-t2",
+      "words": 1952
+    },
+    {
+      "id": "lab-5",
+      "words": 2395
+    },
+    {
+      "id": "s6-g0-t0",
+      "words": 2207
+    },
+    {
+      "id": "s6-g0-t1",
+      "words": 2115
+    },
+    {
+      "id": "s6-g0-t2",
+      "words": 2076
+    },
+    {
+      "id": "s6-g0-t3",
+      "words": 2029
+    },
+    {
+      "id": "s6-g0-t4",
+      "words": 2023
+    },
+    {
+      "id": "s6-g0-t5",
+      "words": 2011
+    },
+    {
+      "id": "s6-g0-t6",
+      "words": 1994
+    },
+    {
+      "id": "s6-g0-t7",
+      "words": 1927
+    },
+    {
+      "id": "s6-g0-t8",
+      "words": 1940
+    },
+    {
+      "id": "s6-g1-t0",
+      "words": 1978
+    },
+    {
+      "id": "s6-g1-t1",
+      "words": 1969
+    },
+    {
+      "id": "s6-g1-t2",
+      "words": 1917
+    },
+    {
+      "id": "s6-g1-t3",
+      "words": 1938
+    },
+    {
+      "id": "s6-g1-t4",
+      "words": 1925
+    },
+    {
+      "id": "s6-g1-t5",
+      "words": 1912
+    },
+    {
+      "id": "s6-g1-t6",
+      "words": 1937
+    },
+    {
+      "id": "s6-g1-t7",
+      "words": 1999
+    },
+    {
+      "id": "s6-g1-t8",
+      "words": 2065
+    },
+    {
+      "id": "s6-g2-t0",
+      "words": 1929
+    },
+    {
+      "id": "s6-g2-t1",
+      "words": 1870
+    },
+    {
+      "id": "s6-g2-t2",
+      "words": 1901
+    },
+    {
+      "id": "s6-g2-t3",
+      "words": 1897
+    },
+    {
+      "id": "s6-g3-t0",
+      "words": 1947
+    },
+    {
+      "id": "s6-g3-t1",
+      "words": 1969
+    },
+    {
+      "id": "s6-g3-t2",
+      "words": 1985
+    },
+    {
+      "id": "s6-g3-t3",
+      "words": 1916
+    },
+    {
+      "id": "s6-g3-t4",
+      "words": 1920
+    },
+    {
+      "id": "s6-g3-t5",
+      "words": 1922
+    },
+    {
+      "id": "s6-g3-t6",
+      "words": 1949
+    },
+    {
+      "id": "s6-g3-t7",
+      "words": 2003
+    },
+    {
+      "id": "s6-g4-t0",
+      "words": 1967
+    },
+    {
+      "id": "s6-g4-t1",
+      "words": 2008
+    },
+    {
+      "id": "s6-g4-t2",
+      "words": 1931
+    },
+    {
+      "id": "s6-g4-t3",
+      "words": 1883
+    },
+    {
+      "id": "s6-g4-t4",
+      "words": 2032
+    },
+    {
+      "id": "s6-g4-t5",
+      "words": 1885
+    },
+    {
+      "id": "s6-g4-t6",
+      "words": 1830
+    },
+    {
+      "id": "s6-g4-t7",
+      "words": 1819
+    },
+    {
+      "id": "s6-g4-t8",
+      "words": 1993
+    },
+    {
+      "id": "s6-g5-t0",
+      "words": 2073
+    },
+    {
+      "id": "s6-g5-t1",
+      "words": 2009
+    },
+    {
+      "id": "s6-g5-t2",
+      "words": 1914
+    },
+    {
+      "id": "s6-g5-t3",
+      "words": 1917
+    },
+    {
+      "id": "lab-6",
+      "words": 2343
+    },
+    {
+      "id": "s7-g0-t0",
+      "words": 2076
+    },
+    {
+      "id": "s7-g0-t1",
+      "words": 1953
+    },
+    {
+      "id": "s7-g0-t2",
+      "words": 2061
+    },
+    {
+      "id": "s7-g0-t3",
+      "words": 2004
+    },
+    {
+      "id": "s7-g0-t4",
+      "words": 1917
+    },
+    {
+      "id": "s7-g0-t5",
+      "words": 1948
+    },
+    {
+      "id": "s7-g0-t6",
+      "words": 1949
+    },
+    {
+      "id": "s7-g0-t7",
+      "words": 1881
+    },
+    {
+      "id": "s7-g1-t0",
+      "words": 2066
+    },
+    {
+      "id": "s7-g1-t1",
+      "words": 1963
+    },
+    {
+      "id": "s7-g1-t2",
+      "words": 2045
+    },
+    {
+      "id": "s7-g1-t3",
+      "words": 2086
+    },
+    {
+      "id": "s7-g2-t0",
+      "words": 1858
+    },
+    {
+      "id": "s7-g2-t1",
+      "words": 1911
+    },
+    {
+      "id": "s7-g2-t2",
+      "words": 1967
+    },
+    {
+      "id": "s7-g2-t3",
+      "words": 1904
+    },
+    {
+      "id": "s7-g3-t0",
+      "words": 2161
+    },
+    {
+      "id": "s7-g3-t1",
+      "words": 2025
+    },
+    {
+      "id": "s7-g3-t2",
+      "words": 2018
+    },
+    {
+      "id": "s7-g4-t0",
+      "words": 1951
+    },
+    {
+      "id": "s7-g4-t1",
+      "words": 1948
+    },
+    {
+      "id": "s7-g4-t2",
+      "words": 1969
+    },
+    {
+      "id": "s7-g5-t0",
+      "words": 2108
+    },
+    {
+      "id": "s7-g5-t1",
+      "words": 2193
+    },
+    {
+      "id": "s7-g5-t2",
+      "words": 2148
+    },
+    {
+      "id": "s7-g5-t3",
+      "words": 2160
+    },
+    {
+      "id": "s7-g5-t4",
+      "words": 2108
+    },
+    {
+      "id": "s7-g5-t5",
+      "words": 2199
+    },
+    {
+      "id": "s7-g5-t6",
+      "words": 2091
+    },
+    {
+      "id": "s7-g5-t7",
+      "words": 2102
+    },
+    {
+      "id": "s7-g5-t8",
+      "words": 2112
+    },
+    {
+      "id": "lab-7",
+      "words": 2315
+    },
+    {
+      "id": "s8-g0-t0",
+      "words": 2239
+    },
+    {
+      "id": "s8-g0-t1",
+      "words": 2196
+    },
+    {
+      "id": "s8-g0-t2",
+      "words": 2127
+    },
+    {
+      "id": "s8-g0-t3",
+      "words": 2169
+    },
+    {
+      "id": "s8-g0-t4",
+      "words": 2111
+    },
+    {
+      "id": "s8-g0-t5",
+      "words": 2038
+    },
+    {
+      "id": "s8-g0-t6",
+      "words": 2042
+    },
+    {
+      "id": "s8-g1-t0",
+      "words": 2072
+    },
+    {
+      "id": "s8-g1-t1",
+      "words": 2032
+    },
+    {
+      "id": "s8-g1-t2",
+      "words": 2012
+    },
+    {
+      "id": "s8-g1-t3",
+      "words": 2114
+    },
+    {
+      "id": "s8-g1-t4",
+      "words": 2075
+    },
+    {
+      "id": "s8-g1-t5",
+      "words": 2020
+    },
+    {
+      "id": "s8-g2-t0",
+      "words": 2043
+    },
+    {
+      "id": "s8-g2-t1",
+      "words": 2073
+    },
+    {
+      "id": "s8-g2-t2",
+      "words": 2058
+    },
+    {
+      "id": "s8-g2-t3",
+      "words": 2155
+    },
+    {
+      "id": "s8-g2-t4",
+      "words": 2091
+    },
+    {
+      "id": "s8-g2-t5",
+      "words": 2165
+    },
+    {
+      "id": "s8-g2-t6",
+      "words": 2096
+    },
+    {
+      "id": "s8-g2-t7",
+      "words": 2070
+    },
+    {
+      "id": "s8-g2-t8",
+      "words": 2128
+    },
+    {
+      "id": "s8-g3-t0",
+      "words": 2149
+    },
+    {
+      "id": "s8-g3-t1",
+      "words": 2139
+    },
+    {
+      "id": "s8-g3-t2",
+      "words": 2165
+    },
+    {
+      "id": "s8-g3-t3",
+      "words": 2126
+    },
+    {
+      "id": "s8-g4-t0",
+      "words": 2120
+    },
+    {
+      "id": "s8-g4-t1",
+      "words": 2065
+    },
+    {
+      "id": "s8-g4-t2",
+      "words": 2074
+    },
+    {
+      "id": "s8-g5-t0",
+      "words": 2127
+    },
+    {
+      "id": "s8-g5-t1",
+      "words": 2066
+    },
+    {
+      "id": "s8-g5-t2",
+      "words": 2111
+    },
+    {
+      "id": "s8-g5-t3",
+      "words": 2155
+    },
+    {
+      "id": "s8-g5-t4",
+      "words": 2143
+    },
+    {
+      "id": "s8-g5-t5",
+      "words": 2156
+    },
+    {
+      "id": "s8-g5-t6",
+      "words": 2167
+    },
+    {
+      "id": "s8-g5-t7",
+      "words": 2149
+    },
+    {
+      "id": "s8-g5-t8",
+      "words": 2049
+    },
+    {
+      "id": "s8-g5-t9",
+      "words": 2147
+    },
+    {
+      "id": "s8-g5-t10",
+      "words": 2042
+    },
+    {
+      "id": "s8-g5-t11",
+      "words": 2196
+    },
+    {
+      "id": "s8-g6-t0",
+      "words": 2103
+    },
+    {
+      "id": "s8-g6-t1",
+      "words": 2108
+    },
+    {
+      "id": "s8-g6-t2",
+      "words": 2104
+    },
+    {
+      "id": "s8-g6-t3",
+      "words": 2124
+    },
+    {
+      "id": "s8-g6-t4",
+      "words": 2112
+    },
+    {
+      "id": "lab-8",
+      "words": 2869
+    },
+    {
+      "id": "s9-g0-t0",
+      "words": 2043
+    },
+    {
+      "id": "s9-g0-t1",
+      "words": 2052
+    },
+    {
+      "id": "s9-g0-t2",
+      "words": 2082
+    },
+    {
+      "id": "s9-g0-t3",
+      "words": 2000
+    },
+    {
+      "id": "s9-g0-t4",
+      "words": 2024
+    },
+    {
+      "id": "s9-g0-t5",
+      "words": 2072
+    },
+    {
+      "id": "s9-g0-t6",
+      "words": 1984
+    },
+    {
+      "id": "s9-g0-t7",
+      "words": 1910
+    },
+    {
+      "id": "s9-g0-t8",
+      "words": 2010
+    },
+    {
+      "id": "s9-g1-t0",
+      "words": 1909
+    },
+    {
+      "id": "s9-g1-t1",
+      "words": 1878
+    },
+    {
+      "id": "s9-g1-t2",
+      "words": 1848
+    },
+    {
+      "id": "s9-g1-t3",
+      "words": 1927
+    },
+    {
+      "id": "s9-g1-t4",
+      "words": 1980
+    },
+    {
+      "id": "s9-g1-t5",
+      "words": 1922
+    },
+    {
+      "id": "s9-g1-t6",
+      "words": 1965
+    },
+    {
+      "id": "s9-g1-t7",
+      "words": 1917
+    },
+    {
+      "id": "s9-g1-t8",
+      "words": 1893
+    },
+    {
+      "id": "s9-g1-t9",
+      "words": 1922
+    },
+    {
+      "id": "s9-g2-t0",
+      "words": 1933
+    },
+    {
+      "id": "s9-g2-t1",
+      "words": 1920
+    },
+    {
+      "id": "s9-g2-t2",
+      "words": 1926
+    },
+    {
+      "id": "s9-g2-t3",
+      "words": 1893
+    },
+    {
+      "id": "s9-g3-t0",
+      "words": 1861
+    },
+    {
+      "id": "s9-g3-t1",
+      "words": 1871
+    },
+    {
+      "id": "s9-g3-t2",
+      "words": 1972
+    },
+    {
+      "id": "s9-g3-t3",
+      "words": 1898
+    },
+    {
+      "id": "s9-g3-t4",
+      "words": 1871
+    },
+    {
+      "id": "s9-g3-t5",
+      "words": 1822
+    },
+    {
+      "id": "s9-g4-t0",
+      "words": 1914
+    },
+    {
+      "id": "s9-g4-t1",
+      "words": 1943
+    },
+    {
+      "id": "s9-g4-t2",
+      "words": 1882
+    },
+    {
+      "id": "s9-g4-t3",
+      "words": 1865
+    },
+    {
+      "id": "s9-g4-t4",
+      "words": 1852
+    },
+    {
+      "id": "s9-g5-t0",
+      "words": 1865
+    },
+    {
+      "id": "s9-g5-t1",
+      "words": 1865
+    },
+    {
+      "id": "s9-g5-t2",
+      "words": 1937
+    },
+    {
+      "id": "s9-g5-t3",
+      "words": 1871
+    },
+    {
+      "id": "s9-g5-t4",
+      "words": 1890
+    },
+    {
+      "id": "s9-g5-t5",
+      "words": 1874
+    },
+    {
+      "id": "s9-g5-t6",
+      "words": 1866
+    },
+    {
+      "id": "s9-g6-t0",
+      "words": 1891
+    },
+    {
+      "id": "s9-g6-t1",
+      "words": 1916
+    },
+    {
+      "id": "s9-g6-t2",
+      "words": 1873
+    },
+    {
+      "id": "s9-g6-t3",
+      "words": 1952
+    },
+    {
+      "id": "s9-g6-t4",
+      "words": 1965
+    },
+    {
+      "id": "s9-g6-t5",
+      "words": 1915
+    },
+    {
+      "id": "s9-g6-t6",
+      "words": 1892
+    },
+    {
+      "id": "s9-g6-t7",
+      "words": 1841
+    },
+    {
+      "id": "s9-g6-t8",
+      "words": 1886
+    },
+    {
+      "id": "s9-g7-t0",
+      "words": 1876
+    },
+    {
+      "id": "s9-g7-t1",
+      "words": 1902
+    },
+    {
+      "id": "s9-g7-t2",
+      "words": 1891
+    },
+    {
+      "id": "s9-g7-t3",
+      "words": 1900
+    },
+    {
+      "id": "s9-g8-t0",
+      "words": 1863
+    },
+    {
+      "id": "s9-g8-t1",
+      "words": 1886
+    },
+    {
+      "id": "s9-g8-t2",
+      "words": 1838
+    },
+    {
+      "id": "s9-g8-t3",
+      "words": 1804
+    },
+    {
+      "id": "s9-g8-t4",
+      "words": 1836
+    },
+    {
+      "id": "s9-g8-t5",
+      "words": 1971
+    },
+    {
+      "id": "s9-g8-t6",
+      "words": 1959
+    },
+    {
+      "id": "lab-9",
+      "words": 2253
+    },
+    {
+      "id": "s0-g0-t0",
+      "words": 1449
+    },
+    {
+      "id": "s0-g0-t1",
+      "words": 1398
+    },
+    {
+      "id": "s0-g0-t2",
+      "words": 1341
+    },
+    {
+      "id": "s0-g0-t3",
+      "words": 1316
+    },
+    {
+      "id": "s0-g0-t4",
+      "words": 1341
+    },
+    {
+      "id": "s0-g0-t5",
+      "words": 1333
+    },
+    {
+      "id": "s0-g0-t6",
+      "words": 1355
+    },
+    {
+      "id": "s0-g1-t0",
+      "words": 1794
+    },
+    {
+      "id": "s0-g1-t1",
+      "words": 1760
+    },
+    {
+      "id": "s0-g1-t2",
+      "words": 1849
+    },
+    {
+      "id": "s0-g1-t3",
+      "words": 1915
+    },
+    {
+      "id": "s0-g2-t0",
+      "words": 1694
+    },
+    {
+      "id": "s0-g2-t1",
+      "words": 1593
+    },
+    {
+      "id": "s0-g2-t2",
+      "words": 1581
+    },
+    {
+      "id": "s0-g2-t3",
+      "words": 1513
+    },
+    {
+      "id": "s0-g2-t4",
+      "words": 1596
+    },
+    {
+      "id": "s0-g2-t5",
+      "words": 1628
+    },
+    {
+      "id": "s0-g2-t6",
+      "words": 1595
+    },
+    {
+      "id": "s0-g2-t7",
+      "words": 1672
+    },
+    {
+      "id": "s0-g2-t8",
+      "words": 1584
+    },
+    {
+      "id": "s0-g2-t9",
+      "words": 1601
+    },
+    {
+      "id": "s0-g2-t10",
+      "words": 1601
+    },
+    {
+      "id": "s0-g3-t0",
+      "words": 1484
+    },
+    {
+      "id": "s0-g3-t1",
+      "words": 1451
+    },
+    {
+      "id": "s0-g3-t2",
+      "words": 1383
+    },
+    {
+      "id": "s0-g3-t3",
+      "words": 1497
+    },
+    {
+      "id": "s0-g3-t4",
+      "words": 1488
+    },
+    {
+      "id": "s0-g3-t5",
+      "words": 1428
+    },
+    {
+      "id": "s0-g3-t6",
+      "words": 1496
+    },
+    {
+      "id": "s0-g3-t7",
+      "words": 1443
+    },
+    {
+      "id": "lab-0",
+      "words": 1820
+    },
+    {
+      "id": "s1-g0-t0",
+      "words": 1963
+    },
+    {
+      "id": "s1-g0-t1",
+      "words": 1984
+    },
+    {
+      "id": "s1-g1-t0",
+      "words": 1779
+    },
+    {
+      "id": "s1-g1-t1",
+      "words": 1715
+    },
+    {
+      "id": "s1-g1-t2",
+      "words": 1691
+    },
+    {
+      "id": "s1-g2-t0",
+      "words": 1837
+    },
+    {
+      "id": "s1-g2-t1",
+      "words": 1939
+    },
+    {
+      "id": "s1-g2-t2",
+      "words": 1806
+    },
+    {
+      "id": "s1-g2-t3",
+      "words": 1752
+    },
+    {
+      "id": "s1-g3-t0",
+      "words": 1711
+    },
+    {
+      "id": "s1-g3-t1",
+      "words": 1626
+    },
+    {
+      "id": "s1-g3-t2",
+      "words": 1673
+    },
+    {
+      "id": "s1-g3-t3",
+      "words": 1806
+    },
+    {
+      "id": "s1-g3-t4",
+      "words": 1745
+    },
+    {
+      "id": "s1-g4-t0",
+      "words": 1633
+    },
+    {
+      "id": "s1-g4-t1",
+      "words": 1698
+    },
+    {
+      "id": "s1-g4-t2",
+      "words": 1669
+    },
+    {
+      "id": "s1-g4-t3",
+      "words": 1796
+    },
+    {
+      "id": "s1-g5-t0",
+      "words": 1859
+    },
+    {
+      "id": "s1-g5-t1",
+      "words": 1990
+    },
+    {
+      "id": "s1-g5-t2",
+      "words": 1919
+    },
+    {
+      "id": "s1-g5-t3",
+      "words": 1883
+    },
+    {
+      "id": "s1-g5-t4",
+      "words": 1920
+    },
+    {
+      "id": "s1-g5-t5",
+      "words": 1938
+    },
+    {
+      "id": "s1-g5-t6",
+      "words": 1820
+    },
+    {
+      "id": "s1-g5-t7",
+      "words": 1780
+    },
+    {
+      "id": "s1-g5-t8",
+      "words": 1810
+    },
+    {
+      "id": "s1-g5-t9",
+      "words": 1916
+    },
+    {
+      "id": "s1-g5-t10",
+      "words": 1884
+    },
+    {
+      "id": "lab-1",
+      "words": 2306
+    },
+    {
+      "id": "s2-g0-t0",
+      "words": 1930
+    },
+    {
+      "id": "s2-g0-t1",
+      "words": 2076
+    },
+    {
+      "id": "s2-g0-t2",
+      "words": 2051
+    },
+    {
+      "id": "s2-g0-t3",
+      "words": 2025
+    },
+    {
+      "id": "s2-g1-t0",
+      "words": 2005
+    },
+    {
+      "id": "s2-g1-t1",
+      "words": 1951
+    },
+    {
+      "id": "s2-g1-t2",
+      "words": 2002
+    },
+    {
+      "id": "s2-g1-t3",
+      "words": 1878
+    },
+    {
+      "id": "s2-g1-t4",
+      "words": 1800
+    },
+    {
+      "id": "s2-g1-t5",
+      "words": 2019
+    },
+    {
+      "id": "s2-g1-t6",
+      "words": 1862
+    },
+    {
+      "id": "s2-g1-t7",
+      "words": 2224
+    },
+    {
+      "id": "s2-g2-t0",
+      "words": 1959
+    },
+    {
+      "id": "s2-g2-t1",
+      "words": 1887
+    },
+    {
+      "id": "s2-g2-t2",
+      "words": 2390
+    },
+    {
+      "id": "s2-g2-t3",
+      "words": 1949
+    },
+    {
+      "id": "s2-g2-t4",
+      "words": 1909
+    },
+    {
+      "id": "s2-g2-t5",
+      "words": 1979
+    },
+    {
+      "id": "s2-g3-t0",
+      "words": 2135
+    },
+    {
+      "id": "s2-g3-t1",
+      "words": 2497
+    },
+    {
+      "id": "s2-g3-t2",
+      "words": 1941
+    },
+    {
+      "id": "s2-g4-t0",
+      "words": 2521
+    },
+    {
+      "id": "s2-g4-t1",
+      "words": 2540
+    },
+    {
+      "id": "s2-g4-t2",
+      "words": 2553
+    },
+    {
+      "id": "s2-g5-t0",
+      "words": 2563
+    },
+    {
+      "id": "s2-g5-t1",
+      "words": 2490
+    },
+    {
+      "id": "s2-g5-t2",
+      "words": 2519
+    },
+    {
+      "id": "s2-g5-t3",
+      "words": 2646
+    },
+    {
+      "id": "s2-g5-t4",
+      "words": 2639
+    },
+    {
+      "id": "s2-g5-t5",
+      "words": 2834
+    },
+    {
+      "id": "s2-g6-t0",
+      "words": 2999
+    },
+    {
+      "id": "s2-g6-t1",
+      "words": 3229
+    },
+    {
+      "id": "s2-g6-t2",
+      "words": 3454
+    },
+    {
+      "id": "lab-2",
+      "words": 4471
+    },
+    {
+      "id": "s3-g0-t0",
+      "words": 4054
+    },
+    {
+      "id": "s3-g0-t1",
+      "words": 3999
+    },
+    {
+      "id": "s3-g0-t2",
+      "words": 4115
+    },
+    {
+      "id": "s3-g1-t0",
+      "words": 4084
+    },
+    {
+      "id": "s3-g1-t1",
+      "words": 4601
+    },
+    {
+      "id": "s3-g1-t2",
+      "words": 5469
+    },
+    {
+      "id": "s3-g1-t3",
+      "words": 4467
+    },
+    {
+      "id": "s3-g1-t4",
+      "words": 4979
+    },
+    {
+      "id": "s3-g2-t0",
+      "words": 5009
+    },
+    {
+      "id": "s3-g2-t1",
+      "words": 4921
+    },
+    {
+      "id": "s3-g2-t2",
+      "words": 4597
+    },
+    {
+      "id": "s3-g2-t3",
+      "words": 4470
+    },
+    {
+      "id": "s3-g3-t0",
+      "words": 3350
+    },
+    {
+      "id": "s3-g3-t1",
+      "words": 3182
+    },
+    {
+      "id": "s3-g3-t2",
+      "words": 3292
+    },
+    {
+      "id": "s3-g3-t3",
+      "words": 3333
+    },
+    {
+      "id": "s3-g4-t0",
+      "words": 2501
+    },
+    {
+      "id": "s3-g4-t1",
+      "words": 3567
+    },
+    {
+      "id": "s3-g4-t2",
+      "words": 2805
+    },
+    {
+      "id": "s3-g4-t3",
+      "words": 2643
+    }
+  ],
+  "bytes": {
+    "learn.html": 8104,
+    "content/catalog.js": 2214884,
+    "scripts/learning.js": 34626,
+    "scripts/network-models.js": 12295,
+    "scripts/address-tools.js": 16322,
+    "scripts/protocol-models.js": 8560,
+    "scripts/service-models.js": 9352,
+    "scripts/switching-models.js": 8062,
+    "scripts/routing-models.js": 4118,
+    "scripts/diagnostic-models.js": 10649,
+    "scripts/packet-models.js": 3905,
+    "scripts/cisco-models.js": 6882,
+    "scripts/boot-models.js": 7002,
+    "scripts/storage-models.js": 3781,
+    "scripts/lifecycle-models.js": 6609,
+    "scripts/port-models.js": 4448,
+    "scripts/vlan-control-models.js": 13183,
+    "scripts/aggregation-models.js": 4035,
+    "scripts/stp-evidence.js": 5642,
+    "scripts/mst-models.js": 5652,
+    "scripts/edge-models.js": 4426,
+    "scripts/guard-models.js": 3908,
+    "scripts/root-guard-models.js": 6098,
+    "scripts/loop-guard-models.js": 6478,
+    "scripts/storm-models.js": 8027,
+    "scripts/security-port-models.js": 8563,
+    "scripts/span-models.js": 7308,
+    "scripts/rspan-models.js": 7950,
+    "scripts/erspan-models.js": 9000,
+    "scripts/enterprise-lab-models.js": 11143,
+    "scripts/static-route-models.js": 8469,
+    "scripts/floating-route-models.js": 11018,
+    "scripts/pbr-models.js": 8415,
+    "scripts/ospf-models.js": 9819,
+    "scripts/ospf-area-models.js": 11114,
+    "scripts/ospf-dr-bdr-models.js": 11763,
+    "styles/ospf-dr-bdr.css": 1331,
+    "scripts/ospf-lsa-models.js": 13454,
+    "content/ospf-lsa-evidence.js": 11618,
+    "styles/ospf-lsa.css": 961,
+    "content/ospf-troubleshooting-evidence.js": 80755,
+    "scripts/ospf-troubleshooting.js": 8395,
+    "styles/ospf-troubleshooting.css": 1342,
+    "scripts/eigrp-models.js": 8887,
+    "styles/eigrp.css": 1283,
+    "scripts/eigrp-metric-models.js": 8590,
+    "styles/eigrp-metrics.css": 1233,
+    "styles/eigrp-neighbors.css": 958,
+    "styles/eigrp-topology.css": 313,
+    "scripts/eigrp-topology.js": 9551,
+    "scripts/eigrp-neighbors.js": 9802,
+    "content/eigrp-neighbor-evidence.js": 37673,
+    "styles/learning.css": 27128,
+    "scripts/bgp-attributes-models.js": 11854,
+    "styles/bgp-attributes.css": 1403,
+    "scripts/local-preference-models.js": 9868,
+    "styles/local-preference.css": 655,
+    "scripts/med-models.js": 12639,
+    "styles/med.css": 911,
+    "scripts/as-path-models.js": 8688,
+    "styles/as-path.css": 959,
+    "scripts/communities-models.js": 10988,
+    "styles/communities.css": 566,
+    "content/batch-01.js": 71800,
+    "content/batch-02.js": 57137,
+    "content/batch-03.js": 128672,
+    "content/batch-04.js": 100550,
+    "content/batch-05.js": 231658,
+    "content/batch-06.js": 170199,
+    "content/batch-07.js": 325720,
+    "content/batch-08.js": 283392,
+    "content/batch-09.js": 720594,
+    "content/batch-10.js": 538368,
+    "content/batch-11.js": 435214,
+    "content/batch-12.js": 215699,
+    "content/batch-13.js": 357355,
+    "content/batch-14.js": 305971,
+    "content/batch-15.js": 436611,
+    "content/batch-16.js": 440277,
+    "content/batch-17.js": 430938,
+    "content/batch-18.js": 210827,
+    "content/batch-19.js": 440490,
+    "content/batch-20.js": 389432,
+    "content/batch-21.js": 126975,
+    "content/batch-22.js": 366336,
+    "content/batch-23.js": 413860,
+    "content/batch-24.js": 399664
+  },
+  "initialResources": [
+    {
+      "name": "/styles/learning.css",
+      "bytes": 27128,
+      "durationMs": 24
+    },
+    {
+      "name": "/styles/ospf-dr-bdr.css",
+      "bytes": 1331,
+      "durationMs": 28
+    },
+    {
+      "name": "/styles/ospf-lsa.css",
+      "bytes": 961,
+      "durationMs": 25
+    },
+    {
+      "name": "/styles/ospf-troubleshooting.css",
+      "bytes": 1342,
+      "durationMs": 30
+    },
+    {
+      "name": "/styles/eigrp.css",
+      "bytes": 1283,
+      "durationMs": 31
+    },
+    {
+      "name": "/styles/eigrp-metrics.css",
+      "bytes": 1233,
+      "durationMs": 33
+    },
+    {
+      "name": "/styles/eigrp-neighbors.css",
+      "bytes": 958,
+      "durationMs": 35
+    },
+    {
+      "name": "/styles/eigrp-topology.css",
+      "bytes": 313,
+      "durationMs": 36
+    },
+    {
+      "name": "/styles/bgp.css",
+      "bytes": 287,
+      "durationMs": 38
+    },
+    {
+      "name": "/styles/ebgp-policy.css",
+      "bytes": 210,
+      "durationMs": 39
+    },
+    {
+      "name": "/styles/ibgp.css",
+      "bytes": 243,
+      "durationMs": 40
+    },
+    {
+      "name": "/scripts/network-models.js",
+      "bytes": 12295,
+      "durationMs": 89
+    },
+    {
+      "name": "/content/catalog.js",
+      "bytes": 2214884,
+      "durationMs": 142
+    },
+    {
+      "name": "/scripts/address-tools.js",
+      "bytes": 16322,
+      "durationMs": 94
+    },
+    {
+      "name": "/scripts/protocol-models.js",
+      "bytes": 8560,
+      "durationMs": 99
+    },
+    {
+      "name": "/scripts/service-models.js",
+      "bytes": 9352,
+      "durationMs": 101
+    },
+    {
+      "name": "/scripts/routing-models.js",
+      "bytes": 4118,
+      "durationMs": 106
+    },
+    {
+      "name": "/scripts/switching-models.js",
+      "bytes": 8062,
+      "durationMs": 103
+    },
+    {
+      "name": "/scripts/diagnostic-models.js",
+      "bytes": 10649,
+      "durationMs": 106
+    },
+    {
+      "name": "/scripts/packet-models.js",
+      "bytes": 3905,
+      "durationMs": 111
+    },
+    {
+      "name": "/scripts/cisco-models.js",
+      "bytes": 6882,
+      "durationMs": 115
+    },
+    {
+      "name": "/scripts/lifecycle-models.js",
+      "bytes": 6609,
+      "durationMs": 117
+    },
+    {
+      "name": "/scripts/storage-models.js",
+      "bytes": 3781,
+      "durationMs": 115
+    },
+    {
+      "name": "/scripts/boot-models.js",
+      "bytes": 7002,
+      "durationMs": 116
+    },
+    {
+      "name": "/scripts/port-models.js",
+      "bytes": 4448,
+      "durationMs": 122
+    },
+    {
+      "name": "/scripts/stp-evidence.js",
+      "bytes": 5642,
+      "durationMs": 128
+    },
+    {
+      "name": "/scripts/vlan-control-models.js",
+      "bytes": 13183,
+      "durationMs": 127
+    },
+    {
+      "name": "/scripts/aggregation-models.js",
+      "bytes": 4035,
+      "durationMs": 127
+    },
+    {
+      "name": "/scripts/edge-models.js",
+      "bytes": 4426,
+      "durationMs": 134
+    },
+    {
+      "name": "/scripts/mst-models.js",
+      "bytes": 5652,
+      "durationMs": 129
+    },
+    {
+      "name": "/scripts/guard-models.js",
+      "bytes": 3908,
+      "durationMs": 138
+    },
+    {
+      "name": "/scripts/root-guard-models.js",
+      "bytes": 6098,
+      "durationMs": 138
+    },
+    {
+      "name": "/scripts/loop-guard-models.js",
+      "bytes": 6478,
+      "durationMs": 139
+    },
+    {
+      "name": "/scripts/storm-models.js",
+      "bytes": 8027,
+      "durationMs": 138
+    },
+    {
+      "name": "/scripts/security-port-models.js",
+      "bytes": 8563,
+      "durationMs": 145
+    },
+    {
+      "name": "/scripts/rspan-models.js",
+      "bytes": 7950,
+      "durationMs": 148
+    },
+    {
+      "name": "/scripts/erspan-models.js",
+      "bytes": 9000,
+      "durationMs": 153
+    },
+    {
+      "name": "/scripts/span-models.js",
+      "bytes": 7308,
+      "durationMs": 149
+    },
+    {
+      "name": "/scripts/enterprise-lab-models.js",
+      "bytes": 11143,
+      "durationMs": 151
+    },
+    {
+      "name": "/scripts/static-route-models.js",
+      "bytes": 8469,
+      "durationMs": 152
+    },
+    {
+      "name": "/scripts/pbr-models.js",
+      "bytes": 8415,
+      "durationMs": 155
+    },
+    {
+      "name": "/scripts/ospf-models.js",
+      "bytes": 9819,
+      "durationMs": 156
+    },
+    {
+      "name": "/scripts/ospf-dr-bdr-models.js",
+      "bytes": 11763,
+      "durationMs": 159
+    },
+    {
+      "name": "/scripts/ospf-area-models.js",
+      "bytes": 11114,
+      "durationMs": 159
+    },
+    {
+      "name": "/scripts/floating-route-models.js",
+      "bytes": 11018,
+      "durationMs": 153
+    },
+    {
+      "name": "/scripts/ospf-lsa-models.js",
+      "bytes": 13454,
+      "durationMs": 160
+    },
+    {
+      "name": "/content/ospf-lsa-evidence.js",
+      "bytes": 11618,
+      "durationMs": 159
+    },
+    {
+      "name": "/content/ospf-troubleshooting-evidence.js",
+      "bytes": 80755,
+      "durationMs": 163
+    },
+    {
+      "name": "/scripts/ospf-troubleshooting.js",
+      "bytes": 8395,
+      "durationMs": 162
+    },
+    {
+      "name": "/scripts/eigrp-models.js",
+      "bytes": 8887,
+      "durationMs": 166
+    },
+    {
+      "name": "/scripts/eigrp-metric-models.js",
+      "bytes": 8590,
+      "durationMs": 167
+    },
+    {
+      "name": "/content/eigrp-neighbor-evidence.js",
+      "bytes": 37673,
+      "durationMs": 167
+    },
+    {
+      "name": "/scripts/eigrp-neighbors.js",
+      "bytes": 9802,
+      "durationMs": 167
+    },
+    {
+      "name": "/scripts/eigrp-topology.js",
+      "bytes": 9551,
+      "durationMs": 169
+    },
+    {
+      "name": "/scripts/bgp.js",
+      "bytes": 8481,
+      "durationMs": 173
+    },
+    {
+      "name": "/content/bgp-evidence.js",
+      "bytes": 49525,
+      "durationMs": 169
+    },
+    {
+      "name": "/scripts/ebgp-policy-models.js",
+      "bytes": 6309,
+      "durationMs": 172
+    },
+    {
+      "name": "/scripts/ibgp-models.js",
+      "bytes": 7646,
+      "durationMs": 173
+    },
+    {
+      "name": "/styles/bgp-attributes.css",
+      "bytes": 1403,
+      "durationMs": 39
+    },
+    {
+      "name": "/scripts/bgp-attributes-models.js",
+      "bytes": 11854,
+      "durationMs": 174
+    },
+    {
+      "name": "/styles/local-preference.css",
+      "bytes": 655,
+      "durationMs": 40
+    },
+    {
+      "name": "/scripts/local-preference-models.js",
+      "bytes": 9868,
+      "durationMs": 176
+    },
+    {
+      "name": "/styles/med.css",
+      "bytes": 911,
+      "durationMs": 41
+    },
+    {
+      "name": "/scripts/med-models.js",
+      "bytes": 12639,
+      "durationMs": 176
+    },
+    {
+      "name": "/styles/as-path.css",
+      "bytes": 959,
+      "durationMs": 42
+    },
+    {
+      "name": "/scripts/as-path-models.js",
+      "bytes": 8688,
+      "durationMs": 179
+    },
+    {
+      "name": "/styles/communities.css",
+      "bytes": 566,
+      "durationMs": 44
+    },
+    {
+      "name": "/scripts/communities-models.js",
+      "bytes": 10988,
+      "durationMs": 180
+    },
+    {
+      "name": "/styles/route-control.css",
+      "bytes": 972,
+      "durationMs": 48
+    },
+    {
+      "name": "/styles/vrf-scope.css",
+      "bytes": 763,
+      "durationMs": 62
+    },
+    {
+      "name": "/scripts/route-control-models.js",
+      "bytes": 17991,
+      "durationMs": 180
+    },
+    {
+      "name": "/scripts/vrf-scope-models.js",
+      "bytes": 17304,
+      "durationMs": 181
+    },
+    {
+      "name": "/styles/gateway-redundancy.css",
+      "bytes": 1462,
+      "durationMs": 67
+    },
+    {
+      "name": "/scripts/gateway-redundancy-models.js",
+      "bytes": 15356,
+      "durationMs": 183
+    },
+    {
+      "name": "/styles/multicast.css",
+      "bytes": 1366,
+      "durationMs": 71
+    },
+    {
+      "name": "/styles/qos-service.css",
+      "bytes": 1583,
+      "durationMs": 75
+    },
+    {
+      "name": "/styles/qos-labels.css",
+      "bytes": 1013,
+      "durationMs": 76
+    },
+    {
+      "name": "/scripts/multicast-models.js",
+      "bytes": 16829,
+      "durationMs": 183
+    },
+    {
+      "name": "/scripts/qos-service-models.js",
+      "bytes": 17547,
+      "durationMs": 185
+    },
+    {
+      "name": "/styles/advanced-lab.css",
+      "bytes": 913,
+      "durationMs": 76
+    },
+    {
+      "name": "/scripts/qos-labels-models.js",
+      "bytes": 13744,
+      "durationMs": 185
+    },
+    {
+      "name": "/scripts/advanced-lab-models.js",
+      "bytes": 9761,
+      "durationMs": 185
+    },
+    {
+      "name": "/styles/network-services.css",
+      "bytes": 819,
+      "durationMs": 77
+    },
+    {
+      "name": "/content/network-services-cases.js",
+      "bytes": 27849,
+      "durationMs": 187
+    },
+    {
+      "name": "/styles/network-security.css",
+      "bytes": 691,
+      "durationMs": 77
+    },
+    {
+      "name": "/scripts/network-services-models.js",
+      "bytes": 7668,
+      "durationMs": 187
+    },
+    {
+      "name": "/content/network-security-cases.js",
+      "bytes": 66684,
+      "durationMs": 189
+    },
+    {
+      "name": "/styles/data-center.css",
+      "bytes": 669,
+      "durationMs": 78
+    },
+    {
+      "name": "/scripts/network-security-models.js",
+      "bytes": 14204,
+      "durationMs": 190
+    },
+    {
+      "name": "/content/data-center-cases.js",
+      "bytes": 84299,
+      "durationMs": 192
+    },
+    {
+      "name": "/styles/cisco-dc.css",
+      "bytes": 1787,
+      "durationMs": 81
+    },
+    {
+      "name": "/scripts/data-center-models.js",
+      "bytes": 13895,
+      "durationMs": 191
+    },
+    {
+      "name": "/scripts/storage-virtualization.js",
+      "bytes": 10228,
+      "durationMs": 192
+    },
+    {
+      "name": "/scripts/automation-architecture.js",
+      "bytes": 9312,
+      "durationMs": 193
+    },
+    {
+      "name": "/scripts/cisco-dc.js",
+      "bytes": 12772,
+      "durationMs": 192
+    },
+    {
+      "name": "/styles/storage-virtualization.css",
+      "bytes": 1072,
+      "durationMs": 82
+    },
+    {
+      "name": "/styles/automation-architecture.css",
+      "bytes": 1183,
+      "durationMs": 80
+    },
+    {
+      "name": "/scripts/learning.js",
+      "bytes": 34626,
+      "durationMs": 194
+    },
+    {
+      "name": "/content/batch-01.js",
+      "bytes": 71800,
+      "durationMs": 4
+    },
+    {
+      "name": "/assets/favicon.svg",
+      "bytes": 260,
+      "durationMs": 3
+    }
+  ],
+  "localSearchMs": 173,
+  "limits": "Local Edge audit, not real-device/network performance certification. Automated accessible-name/contrast/structure checks supplement manual screenshots; they are not a full WCAG audit. Editorial technical review and source scope are documented separately."
+}

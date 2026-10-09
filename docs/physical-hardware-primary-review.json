@@ -1,0 +1,142 @@
+{
+  "result": "PASS",
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant, direct work without GapCode",
+  "topics": [
+    {
+      "id": "hardware-0",
+      "foundation": "s6-g0-t0",
+      "sha256": "7e8d4cc0b9cfe444403bfc603bd155bbcbaeccc7bbb3b0dfc208e18782855544",
+      "questions": 13
+    },
+    {
+      "id": "hardware-1",
+      "foundation": "s6-g0-t0",
+      "sha256": "cdba827c0053aaca9432dc49b3965518198ee07fbbbd4d4334ffcf342a6c6858",
+      "questions": 13
+    },
+    {
+      "id": "hardware-2",
+      "foundation": "s6-g5-t3",
+      "sha256": "43b34011d9ebbb8866ac67ffef9c69a3e4ef73ee42d9dde01c9a73c8c4e2b31c",
+      "questions": 13
+    },
+    {
+      "id": "hardware-3",
+      "foundation": "s6-g0-t1",
+      "sha256": "065247c14aeafb6bcc6df0cd006e0542cb1219788c04a095cffdb9f5b4ec4917",
+      "questions": 13
+    },
+    {
+      "id": "hardware-4",
+      "foundation": "s6-g0-t2",
+      "sha256": "5883f5af8b49d5e5d0886495dfb6f789a2ce243f929faa1705b6c64dacc83f89",
+      "questions": 13
+    },
+    {
+      "id": "hardware-5",
+      "foundation": "s8-g0-t3",
+      "sha256": "4c005c5a5bbec5329dc473e2f51a33b426651b22218705b5cce902e0bbd4351c",
+      "questions": 13
+    },
+    {
+      "id": "hardware-6",
+      "foundation": "s8-g2-t5",
+      "sha256": "9ff9dde322ed23cba0fe5f829fffc7fa50724b60f78f2d068bc9b46edd66fec9",
+      "questions": 13
+    },
+    {
+      "id": "hardware-7",
+      "foundation": "s8-g2-t4",
+      "sha256": "63ccdf2799648372234fedc4a98c57ae4c8fbc721996c225c76f419684bf0e90",
+      "questions": 13
+    },
+    {
+      "id": "hardware-8",
+      "foundation": "s8-g2-t3",
+      "sha256": "4f88c71b2dd25c78700b7da150a2e50691a8a701807d4bd2f0cd2bc2de474f10",
+      "questions": 13
+    },
+    {
+      "id": "hardware-9",
+      "foundation": "s8-g2-t6",
+      "sha256": "e099131b4e2f887f5f5ef7bcbb3c7aa58f494758d6842545c047c80f3989c442",
+      "questions": 13
+    },
+    {
+      "id": "hardware-10",
+      "foundation": "s8-g2-t7",
+      "sha256": "117355e2cf72fd47e8fcce0fa5ebd8ee3f6b2feb1177687481e1f5c470fcc2de",
+      "questions": 13
+    },
+    {
+      "id": "hardware-11",
+      "foundation": "s8-g2-t8",
+      "sha256": "d776b8d10d3a238727a9044376609adf773f77fd2599297cc8ce0cffe0e207b0",
+      "questions": 13
+    },
+    {
+      "id": "hardware-12",
+      "foundation": "s6-g4-t2",
+      "sha256": "6000a61cbc158978bc2aa4918867e22721da33282421a1ad380ae0bf3df0b93c",
+      "questions": 13
+    },
+    {
+      "id": "hardware-13",
+      "foundation": "s6-g4-t3",
+      "sha256": "00f2fde9f53efed1010e9bf3ddcc183c3962ab38294096ac0a1127dc1e381e7f",
+      "questions": 13
+    },
+    {
+      "id": "hardware-14",
+      "foundation": "s6-g4-t0",
+      "sha256": "f45bacc20a84f064e25f399487195e3e982d4d4f264fd6ede196e9d4fa2db7d8",
+      "questions": 13
+    },
+    {
+      "id": "hardware-15",
+      "foundation": "s6-g4-t4",
+      "sha256": "d4c0b0988a8c99900982b34bfea423bac34b24b6a4eeb4b3e5cbb31deded1407",
+      "questions": 13
+    },
+    {
+      "id": "hardware-16",
+      "foundation": "s6-g5-t0",
+      "sha256": "65b81573211cfa293d56b4cb9b63ac36980f5e99ed6d300473b23e13336ee0f5",
+      "questions": 13
+    },
+    {
+      "id": "hardware-17",
+      "foundation": "s6-g5-t1",
+      "sha256": "a7b0ebdb188f297c80e56e9772fc7655e4194efce46d348ad81b22cb5d703569",
+      "questions": 13
+    },
+    {
+      "id": "hardware-18",
+      "foundation": "s6-g5-t2",
+      "sha256": "c6fb36a7c56767d979df19c48c6a599b463b6758e3a6639228b5cc7843dfd883",
+      "questions": 13
+    },
+    {
+      "id": "hardware-19",
+      "foundation": "s6-g5-t3",
+      "sha256": "486a19f580785869b858ba0c97efb32ef7e90f74e93db1d1d849ce257d17ee84",
+      "questions": 13
+    }
+  ],
+  "review": [
+    "Reviewed all twenty dedicated incidents, diagnosis and recovery criteria against their declared teaching boundary.",
+    "Reviewed inherited assessment answers and incident questions; retained foundation questions explicitly as reinforcement.",
+    "Inspected five contact sheets covering sixty desktop, mobile and flow captures. Narrow tables remain contained scroll regions; controls and model scope labels remain visible.",
+    "Reviewed source applicability and recorded inaccessible HPE extraction rather than claiming a verified target procedure.",
+    "Preserved stable identities, learner progress and concurrent work in other batches."
+  ],
+  "visualSheets": [
+    "docs/screenshots/physical-hardware/batch-26-review-1.jpg",
+    "docs/screenshots/physical-hardware/batch-26-review-2.jpg",
+    "docs/screenshots/physical-hardware/batch-26-review-3.jpg",
+    "docs/screenshots/physical-hardware/batch-26-review-4.jpg",
+    "docs/screenshots/physical-hardware/batch-26-review-5.jpg"
+  ],
+  "limits": "Editorial acceptance of guided/tabletop/model material. No physical hardware or vendor execution."
+}

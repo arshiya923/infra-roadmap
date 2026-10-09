@@ -1,0 +1,37 @@
+{
+  "batch": "32",
+  "result": "PASS",
+  "evidence": {
+    "container": {
+      "imageId": "sha256:4a73073bd557c65b759505da037898b61f1be6cbcc3c2c3aeac22d2a470c1752",
+      "observations": [
+        "baseline=ready",
+        "fault=not-ready",
+        "recovery=ready",
+        "65534"
+      ],
+      "containerRemoved": true,
+      "composeSyntaxValidated": true,
+      "cleanupVerified": true,
+      "scope": "Actual isolated non-root container file fault/recovery and Compose syntax check; no Compose deployment, resource-pressure injection or network service."
+    },
+    "selectors": {
+      "baseline": [
+        "web-a"
+      ],
+      "fault": [],
+      "recovery": [
+        "web-a"
+      ],
+      "scope": "Authored exact-label and readiness model only; no API server, scheduler, EndpointSlice controller, network or RBAC execution."
+    },
+    "recovery": {
+      "restoredExact": true,
+      "lostAcknowledged": [
+        "order-3"
+      ],
+      "cleanupVerified": true,
+      "scope": "Actual local JSON snapshot restoration; not Kubernetes rollout, etcd, PV or database recovery. Acknowledged loss is intentional and explicit."
+    }
+  }
+}

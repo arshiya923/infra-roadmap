@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "reviewedIds": [
+    "s3-g3-t3",
+    "s3-g4-t0",
+    "s3-g4-t1",
+    "s3-g4-t2",
+    "s3-g4-t3"
+  ],
+  "independentPrimaryCases": 8064,
+  "presets": 79,
+  "manualRenders": 35,
+  "regressionCommands": 58,
+  "assessments": {
+    "exams": 50,
+    "quick": 15
+  },
+  "evidence": [
+    "content/batch-09.js",
+    "docs/review-batch-09.json",
+    "docs/exam-review-batch-09.json",
+    "docs/commands-results-batch-09.json",
+    "docs/batch-09-regression-results.json",
+    "docs/browser-bgp-policy-series-results.json",
+    "docs/bgp-policy-primary-results.json",
+    "docs/bgp-policy-series-manual-screenshot-hashes.json"
+  ],
+  "scope": "Actual isolated Linux/FRR fixtures retain their explicitly recorded topologies and phases. The five policy worksheets consume supplied declarations; no live UPDATE, full universal best-path, iBGP/RR execution, vendor hardware, packet service or convergence evidence is inferred. First fifteen manual reviews remain historical; the five new lessons have 35 directly reviewed current renders."
+}

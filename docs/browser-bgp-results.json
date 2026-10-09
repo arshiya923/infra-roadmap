@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "Standalone foundation links integrated BGP draft and states authored status separately from editorial acceptance",
+    "Twelve combinations preserve literal BGP attributes, installation context, exact raw records/source hash and original phase-specific probes",
+    "Feedback invalidates after context changes; invalid identities hide stale output, keyboard reset works and dynamic markup remains inert text",
+    "Both companion/private-preparation downloads match exact local bytes",
+    "Four widths/both themes avoid page overflow; table/raw evidence use named keyboard scrolling; five current screenshots",
+    "Theme, exact original draft-node navigation and HTTP/direct-file loading work without resource/page errors"
+  ],
+  "errors": [],
+  "scope": "Standalone BGP foundation only. Full draft lesson is separately checked by browser-bgp-lesson.cjs; Editorial count is validated by the main reader. Full batch acceptance remains pending."
+}

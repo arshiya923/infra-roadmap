@@ -1,0 +1,365 @@
+{
+  "id": "s3-g4-t0",
+  "batch": "09",
+  "title": "BGP Local Preference",
+  "subtitle": "Use an internal preference to express which eligible exit your AS should favor.",
+  "level": "Intermediate → Advanced",
+  "minutes": 35,
+  "definition": "LOCAL_PREF is a well-known discretionary BGP path attribute expressing a speaker’s degree of preference for a route inside its AS. It is a four-octet unsigned integer. RFC 4271 says higher preference MUST be preferred and requires the attribute on UPDATEs to internal peers. Ordinary UPDATEs to external peers MUST omit it, except in the BGP confederation case.",
+  "purpose": "Use LOCAL_PREF to coordinate which eligible external exit your AS prefers for outbound traffic to a destination. Set policy where route ownership and scope are clear, distribute preference over iBGP, and inspect selected BGP path separately from system RIB installation and actual forwarding. This guides the local AS outbound exit preference. A preference value expresses policy; it does not make an unusable path usable.",
+  "mental": "Imagine two doors to the same prefix. First ask whether each door is admitted and its next hop usable. Among the remaining candidates, higher LOCAL_PREF wins this lesson’s scoped stage. Equal values leave later BGP selection stages to decide. Then inspect system RIB selection and the actual forward and return paths separately.",
+  "components": [
+    "LOCAL_PREF is carried inside the AS to communicate route preference. It is well-known discretionary; ordinary eBGP UPDATEs omit it, with confederations as the specified exception.",
+    "RFC 4271 requires the higher degree of preference to be preferred. LOCAL_PREF is not bandwidth, link cost, distance, or proof of reachability.",
+    "A rejected route or one failing applicable resolvability cannot win because its supplied value is high.",
+    "Equal eligible values require later BGP selection rules. The scoped comparison assumes earlier implementation-local factors, such as FRR Weight, do not distinguish the candidates. This page does not calculate those criteria or promise a universal complete best-path order.",
+    "A BGP-stage choice can be displaced in the system routing table. Installation and original forward/return exchange are separate questions."
+  ],
+  "mechanism": [
+    "Bound the AS, AFI/SAFI, exact prefix and two candidates. Identify route sources and local import policy. This worksheet fixes both candidates to IPv4 198.51.100.0/24.",
+    "Record admission, next-hop resolvability and LOCAL_PREF for each. The worksheet accepts booleans and integers 0 through 4294967295; it does not infer facts from a configured line.",
+    "Exclude candidates that are not admitted or resolvable. One remaining candidate wins this scoped stage. With two, higher LOCAL_PREF wins; equal values remain tied for later stages. Earlier implementation-local factors, including vendor Weight and any local-origination distinction, are held equal or excluded.",
+    "Check system RIB selection independently, then record forward and return readiness. These declarations do not change preference comparison and do not measure packet delivery.",
+    "Compare intended policy with actual FRR BGP and system route observations on the exact target. Preserve baseline and follow target-specific change control before editing."
+  ],
+  "flow": [
+    [
+      "Admit candidates",
+      "Record import-policy admission for each exact-prefix route."
+    ],
+    [
+      "Check resolution",
+      "Exclude an unresolvable candidate from this scoped comparison."
+    ],
+    [
+      "Compare LOCAL_PREF",
+      "Higher eligible value wins this scoped stage under the stated earlier-factor assumption; equal values need later BGP criteria."
+    ],
+    [
+      "Check installation and exchange",
+      "Inspect system RIB selection, then verify original forward and return paths independently."
+    ]
+  ],
+  "comparison": [
+    [
+      "LOCAL_PREF / MED",
+      "Within-AS preference / attribute with a different policy role",
+      "Do not compare their numbers as a shared metric."
+    ],
+    [
+      "LOCAL_PREF / system route preference",
+      "BGP path attribute / competition among routing sources in the local system RIB",
+      "A BGP winner need not be the installed system route."
+    ],
+    [
+      "Higher / reachable",
+      "Preference ordering / candidate usability",
+      "A high value cannot repair rejected policy or unresolved next hop."
+    ],
+    [
+      "Equal values / tie-break",
+      "Same scoped preference / later BGP selection stages",
+      "This worksheet does not invent a tie winner."
+    ],
+    [
+      "iBGP / eBGP advertisement",
+      "LOCAL_PREF is distributed internally / ordinarily omitted externally",
+      "Confederation behavior is an exception."
+    ],
+    [
+      "BGP selection / forwarding",
+      "Control-plane path decision / packet path and return",
+      "Neither an installed route nor a BGP winner proves service."
+    ]
+  ],
+  "example": "Both supplied candidates represent 198.51.100.0/24 and are admitted and resolvable. A has LOCAL_PREF 200; B has 100, so A wins this worksheet’s scoped stage. If A becomes unresolved, B is the only eligible candidate despite A’s higher number. Equal values leave later selection unresolved. The comparison assumes earlier implementation-local factors such as vendor Weight and local-origination distinctions are equal; it does not calculate a complete best-path sequence. Even when A wins the BGP stage, the system RIB may select another source; forward and return prerequisites remain independent. FRR stable 8.4 documents a default local preference of 100; 200 here is an illustrative policy override, not a universal recommendation.",
+  "commands": [
+    {
+      "code": "vtysh -c 'show bgp ipv4 unicast summary'",
+      "explanation": "Inspect the IPv4 unicast BGP peer summary on the named FRR instance.",
+      "expected": "GUIDED, NOT EXECUTED: record peer state and AFI/SAFI. This does not prove exact-prefix preference or forwarding.",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here"
+    },
+    {
+      "code": "vtysh -c 'show bgp ipv4 unicast 198.51.100.0/24'",
+      "explanation": "Inspect FRR BGP paths and displayed LOCAL_PREF for the fixed prefix.",
+      "expected": "GUIDED, NOT EXECUTED: inspect paths, validity, best marker, next hop and LOCAL_PREF. Actual output depends on the instance; no sample output is asserted.",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here"
+    },
+    {
+      "code": "vtysh -c 'show bgp ipv4 unicast neighbors PEER routes'",
+      "explanation": "Inspect routes accepted from one named peer after inbound policy; replace PEER with its observed address.",
+      "expected": "GUIDED, NOT EXECUTED: confirm peer, AFI/SAFI, accepted prefix and attributes. FRR documents this as accepted routes; it does not show all rejected pre-policy input.",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here"
+    },
+    {
+      "code": "vtysh -c 'show ip route 198.51.100.0/24'",
+      "explanation": "Inspect the system IPv4 route choice separately from BGP path selection.",
+      "expected": "GUIDED, NOT EXECUTED: record route source, next hop and table/VRF. A BGP best path may be displaced in the system RIB; neither view proves the original transaction.",
+      "platform": "FRRouting stable 8.4 · read-only guided command; not executed here"
+    }
+  ],
+  "configuration": "Prepared isolated FRR stable 8.4 policy example: an inbound route-map entry matching an owned prefix-list could apply set local-preference 200 to the permitted exact prefix. Record existing route-map order and implicit deny behavior first, permit only intended routes and attach the map to the intended neighbor and IPv4-unicast direction. A route-map existing in configuration alone is not proof that a peer uses it. Capture baseline accepted paths and system RIB, apply a reviewed target-specific update method, inspect resulting post-policy attributes and reverse only the intended change if scope differs. No configuration change or policy refresh was executed here; the four command blocks are read-only observation guidance.",
+  "ports": "BGP uses TCP port 179. The worksheet opens no sockets and does not establish or inspect a BGP session.",
+  "production": "Choose values from documented within-AS exit policy, apply consistent import policy across intended speakers, and verify what iBGP peers receive. Preserve peer, VRF, AFI/SAFI and routing-source context. Confirm BGP selection, system installation, next-hop resolution and original traffic in separate evidence sources.",
+  "troubleshooting": [
+    [
+      "Symptom",
+      "The intended exit does not appear as the selected path."
+    ],
+    [
+      "Hypotheses",
+      "A candidate was rejected, has unresolved next hop, has lower LOCAL_PREF, ties at this stage or is displaced in the system RIB."
+    ],
+    [
+      "Test",
+      "Inspect exact-prefix BGP paths and accepted peer routes, then the system route for the same prefix."
+    ],
+    [
+      "Observation",
+      "Record actual admission, LOCAL_PREF, next hop, BGP best status and system route source. Do not assume missing output proves protocol failure."
+    ],
+    [
+      "Conclusion / next test",
+      "Identify which layer differs from intent. If values tie, inspect later target-specific selection evidence rather than choosing a winner."
+    ],
+    [
+      "Fix and verify",
+      "After reviewing ownership and baseline, change only intended policy through target change control, then repeat BGP, RIB and original exchange observations."
+    ]
+  ],
+  "security": "Treat routing policy and route outputs as sensitive. Redact peer addresses, internal prefixes, communities, ASNs and topology details before external sharing. Enforce who may change import policy and which exact prefixes may receive an override. Do not let an untrusted customer tag trigger a privileged preference without a documented matching contract and boundary filter. A preference change can redirect traffic while all sessions remain established; verify its intended scope and rollback.",
+  "performance": "LOCAL_PREF is a policy input, not a throughput metric. Measure selected path, forwarding behavior, loss and application latency under the relevant workload; a higher value alone establishes none of these.",
+  "mistakes": [
+    "Treating a larger value as proof a route is admitted or reachable.",
+    "Assuming equal values have a universal winner or calculating unspecified later stages here.",
+    "Conflating BGP selected path with system RIB installation.",
+    "Assuming LOCAL_PREF is ordinarily sent to eBGP peers.",
+    "Treating route output or a readiness checkbox as a packet or service test.",
+    "Presenting FRR’s default 100 as universal or example 200 as a recommendation.",
+    "Ignoring an implementation-specific factor that precedes LOCAL_PREF; this worksheet assumes any such factor is equal for both candidates."
+  ],
+  "interactive": "local-preference",
+  "lab": {
+    "objective": "Compare two supplied candidates for one exact IPv4 prefix at the LOCAL_PREF stage and separate that result from system route selection and end-to-end readiness.",
+    "requirements": "Worksheet uses supplied declarations and sends no BGP messages or packets. Guided FRR 8.4 commands are read-only examples and were not executed. Replace PEER and confirm AFI/SAFI, VRF, ownership and target version before use.",
+    "topology": [
+      "Candidate A → 198.51.100.0/24",
+      "Candidate B → 198.51.100.0/24",
+      "One local BGP speaker and system RIB",
+      "Independent original forward and return declarations"
+    ],
+    "steps": [
+      "Load baseline. Record admission, resolution and preference for each candidate; explain why A wins the modeled stage.",
+      "Load equal. Record that later-stage tie resolution remains open.",
+      "Load higher-unresolved and rejected. Explain why B may win despite A having the higher number. The model assumes any earlier implementation-specific factors, such as Weight or local-origination preference, are equal.",
+      "Load none, zero and max to inspect eligibility and numeric boundaries.",
+      "Load system-displaced, return-missing and forward-missing. Explain how each independent declaration changes output without changing the LOCAL_PREF comparison.",
+      "On a prepared FRR stable 8.4 target, run the four guided read-only commands after confirming peer and table context. Record only actual observations."
+    ],
+    "verification": "Report admitted/resolvable candidates, the scoped LOCAL_PREF winner or unresolved tie, system RIB installation and original forward/return readiness separately. The scoped comparison holds earlier implementation-local factors such as Weight and local-origination preference equal. Cite actual output for live-target claims; label worksheet results as supplied declarations.",
+    "troubleshooting": "If no candidate is eligible, identify admission and resolution separately. If tied, inspect later BGP stages on target. If BGP and system route views differ, record separate decisions. If a command is unavailable, record target version and exact error; do not invent output.",
+    "challenge": "Can candidate A’s higher preference make it win when unresolved? What evidence explains an equal-value tie on a live FRR router?",
+    "cleanup": "Worksheet changes only browser-local controls. Guided commands are show-only. No device configuration, session, route, namespace, packet or learner progress is changed.",
+    "topologyKind": "shared"
+  },
+  "quick": [
+    {
+      "testedConcept": "Preference direction",
+      "question": "When both candidates are admitted and resolvable and their values differ, which LOCAL_PREF wins this stage?",
+      "answer": "The higher value.",
+      "explanation": "RFC 4271 requires the higher degree of preference to be preferred.",
+      "difficulty": "Beginner",
+      "type": "short-answer"
+    },
+    {
+      "testedConcept": "Eligibility",
+      "question": "A has LOCAL_PREF 500 but is unresolved; B is eligible at 100. Which wins this scoped comparison?",
+      "answer": "Candidate B.",
+      "explanation": "The unresolved candidate is excluded before preference comparison.",
+      "difficulty": "Intermediate",
+      "type": "short-answer"
+    },
+    {
+      "testedConcept": "Tie handling",
+      "question": "Both eligible candidates have LOCAL_PREF 100. Does this worksheet pick one?",
+      "answer": "No; later BGP selection stages remain unresolved.",
+      "explanation": "The model does not invent a tie winner.",
+      "difficulty": "Intermediate",
+      "type": "short-answer"
+    }
+  ],
+  "exams": [
+    {
+      "options": [
+        "Candidate A",
+        "Candidate B",
+        "Neither; the lower value wins",
+        "Both must be installed"
+      ],
+      "testedConcept": "Preference direction",
+      "explanation": "The higher eligible LOCAL_PREF wins the modeled stage.",
+      "question": "Both admitted, resolvable candidates represent 198.51.100.0/24. A has LOCAL_PREF 150 and B has 120. Which candidate wins this scoped stage?",
+      "type": "multiple-choice",
+      "difficulty": "Beginner",
+      "answer": "Candidate A"
+    },
+    {
+      "options": [
+        "Candidate A wins because 900 is largest",
+        "Candidate B is the only eligible candidate",
+        "The system necessarily installs Candidate B",
+        "The values are added"
+      ],
+      "testedConcept": "Eligibility before preference",
+      "explanation": "A high value does not reinstate a rejected route.",
+      "question": "A has LOCAL_PREF 900 but is rejected by import policy. B is admitted and resolvable at 100. What is the result?",
+      "type": "multiple-choice",
+      "difficulty": "Intermediate",
+      "answer": "Candidate B is the only eligible candidate"
+    },
+    {
+      "options": [
+        "Candidate A wins alphabetically",
+        "Candidate B wins because it is listed second",
+        "Tie remains unresolved for later BGP stages",
+        "The system necessarily installs both"
+      ],
+      "testedConcept": "Tie handling",
+      "explanation": "The model does not invent a tie winner or calculate the full best-path sequence.",
+      "question": "Two eligible candidates have equal LOCAL_PREF. What does this worksheet report?",
+      "type": "multiple-choice",
+      "difficulty": "Intermediate",
+      "answer": "Tie remains unresolved for later BGP stages"
+    },
+    {
+      "options": [
+        "A wins this BGP stage but is not declared installed",
+        "A is removed from the BGP table",
+        "B wins the LOCAL_PREF comparison",
+        "A packet test proved installation"
+      ],
+      "testedConcept": "System installation",
+      "explanation": "BGP path choice and system route selection are separate.",
+      "question": "A is the scoped BGP winner, but systemSelectsBgpWinner is false. What is reported?",
+      "type": "multiple-choice",
+      "difficulty": "Advanced",
+      "answer": "A wins this BGP stage but is not declared installed"
+    },
+    {
+      "options": [
+        "Yes, to every eBGP peer",
+        "No, except for BGP confederations",
+        "Only when its value is 100",
+        "Only after a packet test"
+      ],
+      "testedConcept": "Attribute scope",
+      "explanation": "RFC 4271 describes it for internal peers and specifies the confederation exception.",
+      "question": "Is LOCAL_PREF ordinarily included in UPDATEs sent to external BGP peers?",
+      "type": "multiple-choice",
+      "difficulty": "Intermediate",
+      "answer": "No, except for BGP confederations"
+    },
+    {
+      "options": [
+        "0 through 65535",
+        "1 through 4294967295",
+        "0 through 4294967295",
+        "Any decimal or text value"
+      ],
+      "testedConcept": "Unsigned width",
+      "explanation": "Four octets encode an unsigned 32-bit integer.",
+      "question": "What numeric range does the four-octet unsigned LOCAL_PREF attribute allow?",
+      "type": "multiple-choice",
+      "difficulty": "Advanced",
+      "answer": "0 through 4294967295"
+    },
+    {
+      "options": [
+        "Every BGP router uses 100",
+        "100 is required by RFC 4271",
+        "Nothing universal; check the target implementation",
+        "The example override 200 is recommended everywhere"
+      ],
+      "testedConcept": "Default interpretation",
+      "explanation": "An implementation default is not a universal recommendation.",
+      "question": "FRR stable 8.4 documents a default LOCAL_PREF of 100. What does that establish about every router?",
+      "type": "multiple-choice",
+      "difficulty": "Intermediate",
+      "answer": "Nothing universal; check the target implementation"
+    },
+    {
+      "options": [
+        "A wins because 700 is larger",
+        "B wins because A is excluded as unresolved",
+        "The route values are averaged",
+        "A must be installed in the system RIB"
+      ],
+      "testedConcept": "Resolution",
+      "explanation": "The scoped model excludes unresolvable candidates before comparing preference.",
+      "question": "A has LOCAL_PREF 700 but is unresolved; B is admitted, resolvable and has 100. What does this worksheet report?",
+      "type": "multiple-choice",
+      "difficulty": "Intermediate",
+      "answer": "B wins because A is excluded as unresolved"
+    },
+    {
+      "options": [
+        "The exchange is proven successful",
+        "Exchange prerequisites are incomplete; no traffic result is measured",
+        "LOCAL_PREF changes to zero",
+        "The system route is withdrawn"
+      ],
+      "testedConcept": "End-to-end evidence",
+      "explanation": "The reverse path is independent and the worksheet does not send packets.",
+      "question": "The winner is installed and the forward declaration is ready, but returnReady is false. What does the worksheet report?",
+      "type": "multiple-choice",
+      "difficulty": "Advanced",
+      "answer": "Exchange prerequisites are incomplete; no traffic result is measured"
+    },
+    {
+      "options": [
+        "Ping only the destination",
+        "Inspect the exact-prefix BGP table and system route table separately",
+        "Read only the route-map configuration",
+        "Assume the higher LOCAL_PREF proves both"
+      ],
+      "testedConcept": "Operational observation",
+      "explanation": "Each view answers a different selection question.",
+      "question": "Which observations distinguish BGP path choice from system route installation?",
+      "type": "multiple-choice",
+      "difficulty": "Advanced",
+      "answer": "Inspect the exact-prefix BGP table and system route table separately"
+    }
+  ],
+  "glossary": {
+    "LOCAL_PREF": "Four-octet BGP attribute expressing degree of route preference inside an AS.",
+    "Eligible candidate": "Supplied route that passes this model’s admission and resolvability declarations.",
+    "BGP-stage winner": "Candidate that wins this worksheet’s limited comparison; ties remain unresolved.",
+    "System RIB": "Routing information base selecting among route sources independently of this BGP-stage result.",
+    "AFI/SAFI": "Address Family Identifier and Subsequent Address Family Identifier, which scope BGP exchange.",
+    "Confederation": "BGP extension that is an exception to ordinary eBGP LOCAL_PREF handling."
+  },
+  "prerequisites": [
+    "s3-g3-t0",
+    "s3-g3-t1",
+    "s3-g3-t2",
+    "s3-g3-t3"
+  ],
+  "related": [
+    "s3-g4-t1",
+    "s3-g4-t2",
+    "s3-g4-t3"
+  ],
+  "sources": [
+    {
+      "title": "RFC 4271: LOCAL_PREF attribute and route-selection preference",
+      "url": "https://www.rfc-editor.org/rfc/rfc4271",
+      "checked": "2026-10-09"
+    },
+    {
+      "title": "FRRouting stable 8.4 BGP documentation: LOCAL_PREF default and show commands",
+      "url": "https://docs.frrouting.org/en/stable-8.4/bgp.html",
+      "checked": "2026-10-09"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "headers": 33,
+  "checks": [
+    "Two actual passing reports independently hash-verified; seven separate preserved views",
+    "Every copied type/area/LSID/advertiser/sequence/checksum/age matches original parsed CLI fields",
+    "Area-local router topology and ABR-originated opposite-LAN summary headers preserved",
+    "Same ABR RID in two areas remains two database objects",
+    "Current broadcast DR interface-IP/advertiser identity matches separate detailed network-LSA records before and after reset/rejoin",
+    "Only actually observed types 1/2/3 are included; no type-4/5/7 execution claim"
+  ],
+  "scope": "Offline corroboration of current actual FRR reports. No new live experiment, combined LSDB, freshness-event timing, checksum validity or application claim."
+}

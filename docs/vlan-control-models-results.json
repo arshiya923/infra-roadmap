@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "dtpCases": 72,
+  "evidenceCases": 15,
+  "limits": "Authored DTP table and evidence cases only; no real DTP/VTP/phone/QoS/aggregation/throughput execution"
+}

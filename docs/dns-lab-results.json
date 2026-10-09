@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-04",
+  "result": "PASS",
+  "checks": [
+    "Inert default help",
+    "Seven real dig/nslookup cases including TCP and timeout",
+    "Only loopback listeners on ephemeral port",
+    "Independent wire header, question, A data and no recursion capability",
+    "Malformed/compressed questions ignored; unrelated names refused",
+    "Listener cleanup after success and injected client failure",
+    "Host resolver configuration unchanged"
+  ],
+  "observed": {
+    "result": "PASS",
+    "scope": "IPv4 loopback UDP/TCP, ephemeral port; no recursion or resolver configuration changes",
+    "cases": [
+      {
+        "case": "answer",
+        "client": "dig",
+        "status": "NOERROR",
+        "exitCode": 0
+      },
+      {
+        "case": "nodata",
+        "client": "dig",
+        "status": "NOERROR",
+        "exitCode": 0
+      },
+      {
+        "case": "nxdomain",
+        "client": "dig",
+        "status": "NXDOMAIN",
+        "exitCode": 0
+      },
+      {
+        "case": "servfail",
+        "client": "dig",
+        "status": "SERVFAIL",
+        "exitCode": 0
+      },
+      {
+        "case": "timeout",
+        "client": "dig",
+        "status": "NO RESPONSE",
+        "exitCode": 9
+      },
+      {
+        "case": "tcp",
+        "client": "dig",
+        "status": "NOERROR",
+        "exitCode": 0
+      },
+      {
+        "case": "answer",
+        "client": "nslookup",
+        "status": "192.0.2.80",
+        "exitCode": 0
+      }
+    ],
+    "cleanup": "Owned listeners closed after all cases"
+  },
+  "limitations": "Minimal explicit fixture, no caching/recursion/delegation/DNSSEC, no external or Windows DNS-client validation"
+}

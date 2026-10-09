@@ -1,0 +1,1203 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "reviewer": "Primary assistant",
+  "topicCriteria": [
+    {
+      "number": 1,
+      "requirement": "original content inspected",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 2,
+      "requirement": "explanation improved",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 3,
+      "requirement": "technical accuracy reviewed",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 4,
+      "requirement": "terminology defined",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 5,
+      "requirement": "mental model provided",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 6,
+      "requirement": "internal mechanism explained",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 7,
+      "requirement": "meaningful diagram added where useful",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 8,
+      "requirement": "practical example added",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 9,
+      "requirement": "commands/configuration added where applicable",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 10,
+      "requirement": "production context included",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 11,
+      "requirement": "failure scenario included",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 12,
+      "requirement": "troubleshooting included",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 13,
+      "requirement": "common mistakes included",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 14,
+      "requirement": "security implications considered",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 15,
+      "requirement": "performance implications considered",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 16,
+      "requirement": "prerequisites/related topics linked",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 17,
+      "requirement": "quick knowledge check included",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 18,
+      "requirement": "hands-on exercise included where appropriate",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 19,
+      "requirement": "10 exam questions included",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 20,
+      "requirement": "answers/explanations reviewed",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 21,
+      "requirement": "responsive layout tested",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 22,
+      "requirement": "links/interactions tested",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    }
+  ],
+  "batchGates": [
+    {
+      "number": 1,
+      "requirement": "Every included roadmap node processed",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 2,
+      "requirement": "Every substantial topic satisfies Topic Completion Definition",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 3,
+      "requirement": "All diagrams render correctly",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 4,
+      "requirement": "Animations function correctly",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 5,
+      "requirement": "No obvious JavaScript errors",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 6,
+      "requirement": "Navigation works",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 7,
+      "requirement": "Mobile layout remains usable",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 8,
+      "requirement": "Questions have answers and explanations",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 9,
+      "requirement": "Lab instructions coherent",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 10,
+      "requirement": "Cross-topic links work",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 11,
+      "requirement": "Progress files updated",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 12,
+      "requirement": "Application builds/runs successfully",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    },
+    {
+      "number": 13,
+      "requirement": "No unfinished placeholders incorrectly marked completed",
+      "result": "PASS",
+      "evidence": [
+        "docs/data-center-primary-review.json",
+        "docs/data-center-question-review.json",
+        "docs/data-center-visual-review.json",
+        "docs/browser-data-center-results.json",
+        "docs/data-center-model-results.json",
+        "docs/commands-data-center-results.json",
+        "docs/quality-audit-batch-15.json",
+        "labs/data-center-workbook.md"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "s6-g0-t0",
+      "result": "PASS",
+      "contentHash": "c5bb3e2d8fad43a16d70cae81d132f1e88de039d8203ccad691761ce3df940a4",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g0-t1",
+      "result": "PASS",
+      "contentHash": "c1aea87a1a8738e9268bb420abf991396a40b90ab18df0260f0e039c1f41eef3",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g0-t2",
+      "result": "PASS",
+      "contentHash": "95a44dbe6e36fa1a8cc7df6c826e7281d52e5c3a25d69223bb5f2848ce5084eb",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g0-t3",
+      "result": "PASS",
+      "contentHash": "8574df44461a40cd7029ba3a5945638c099cf20ee5010d87e061f625926f6274",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g0-t4",
+      "result": "PASS",
+      "contentHash": "10849e7a925862f31c249096c927b037602bde00df5f614b3d6337382000d1dd",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g0-t5",
+      "result": "PASS",
+      "contentHash": "dc95648cbebc3f2c6a4eb32282ac2e98579c4967d5b41874a446f27d17971637",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g0-t6",
+      "result": "PASS",
+      "contentHash": "94097c0437cc44a6527d91c18ac9d8465e32a23ba20f4f64c5298eb947a0e9c2",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g0-t7",
+      "result": "PASS",
+      "contentHash": "1cd151f1d38b9e0c1fe83bbded44b1a395249077f7bcb2ec35989974704d589b",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g0-t8",
+      "result": "PASS",
+      "contentHash": "3396cc38b010a6be2597ede3bea2b3a95c7e55218b03bca1ee7f4a97e66c8a65",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g1-t0",
+      "result": "PASS",
+      "contentHash": "ef47789693d3e8cd0ee69bae68adddec1cc529cb404720f5e74049db0e519458",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g1-t1",
+      "result": "PASS",
+      "contentHash": "fc900675d3a3eb816bdbbf1386595333308d887ec5bc53086f59a8f6ce1fbbb8",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g1-t2",
+      "result": "PASS",
+      "contentHash": "5138a0e44a9e01483771da5bd46cb6565523a9bb7e86deeed0a8e273e889fbd1",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g1-t3",
+      "result": "PASS",
+      "contentHash": "7d174bac95c02c8665e6cb71672b26d0f04247604753690fb5ee1763425dfa99",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g1-t4",
+      "result": "PASS",
+      "contentHash": "8525b009437b22ee77b03cf38587faa07a3f4ff89b9fb7042de9cca7f8240296",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g1-t5",
+      "result": "PASS",
+      "contentHash": "c0cdbd85251ab1cfab951852b8b37ed36245cd4d639bd96d42c234400520e396",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g1-t6",
+      "result": "PASS",
+      "contentHash": "ae20b6922e659357a74516009e4579414b0cedfb316000fc510d31198b06c726",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g1-t7",
+      "result": "PASS",
+      "contentHash": "1783838e404dd1efc6042d3c90a2f2b2ebe6a58e6d08180504ac7fe3133d11de",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g1-t8",
+      "result": "PASS",
+      "contentHash": "260f6a5006d0e15982809e8765c76b3ec53f1a7fa5b9a9372aa5615fc70067be",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g2-t0",
+      "result": "PASS",
+      "contentHash": "f352fd79a81076cf57c8546614b785ca8afcc6f9da41c06430cefe6c0455225b",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g2-t1",
+      "result": "PASS",
+      "contentHash": "5ea22391b1de00d28353ee5a8a9d2e99214e026e83e0cd92d7e8cad57fdf5212",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g2-t2",
+      "result": "PASS",
+      "contentHash": "030ad035d58197ffc6f1a1c077d3b2fa8164be18e3016a8f33c0327cdaee0996",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    },
+    {
+      "id": "s6-g2-t3",
+      "result": "PASS",
+      "contentHash": "a400abf6e7f7c13f1469902b35d439f758b45e5e09f4e6e841963c6f00c46ddb",
+      "criteria": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "exams": 10,
+      "quick": 3
+    }
+  ],
+  "courseAccepted": 220,
+  "limits": [
+    "All browser worksheets are supplied-input calculations, not observed hardware, electrical or thermal behavior.",
+    "Read-only observations run in WSL guest context; physical inventory, RAID operations and BMC sessions remain guided.",
+    "Three-rack artifact rehearsal validates offline declared design, not a physical or electrical installation.",
+    "No full WCAG, vendor interoperability, workload throughput or facility compliance certification."
+  ]
+}

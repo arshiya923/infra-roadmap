@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "cases": 10,
+  "combinations": 512,
+  "scope": "Declared single ordinary eBGP candidate only. No actual protocol/installation/service/convergence execution."
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "checks": [
+    "HTTPS local fixture: trusted owned certificate, correct hostname and expected HTTP body",
+    "HTTPS validation rejects wrong hostname with verification enabled",
+    "HTTPS validation rejects untrusted root with verification enabled",
+    "HTTPS owned listener closed; temporary certificate/key removed without changing host trust",
+    "Actual loopback UDP marker receipt and owned file retention; PRI164 decodes facility20/severity4",
+    "No-data interval is timeout, not an observed numeric zero or delivery success",
+    "Owned UDP collector and temporary retention file cleaned"
+  ],
+  "scope": "Actual loopback TLS hostname/trust/HTTP-body and scripted UDP marker transport/retention. Self-signed owned fixture is not public PKI, full Syslog daemon, SNMP, NTP, AAA, production or physical-network validation."
+}

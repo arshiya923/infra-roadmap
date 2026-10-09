@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "reviewer": "Primary assistant",
+  "result": "PASS",
+  "scope": "Six personally inspected contact sheets containing 90 worksheet, flow and narrow dark-theme captures. Scroll-table start/end behavior separately asserted in browser tests; viewport/theme checks cover1440/768/390/320. Scaled sheets supplement original captures.",
+  "sha256": {
+    "docs/screenshots/network-services/review/01-contact.png": "bba1a79d20057d9cc9097078e3a60e9271eea0f6cb7b14f3a29bdf572c62ec3f",
+    "docs/screenshots/network-services/review/02-contact.png": "8723f9eeeefc9b0484f84f926f395e6d89a05542c2b4ea760da84f5392ac4a5c",
+    "docs/screenshots/network-services/review/03-contact.png": "68eba00712c915d3851d662151df833d2aadd5e2e3a67a0313a3c7e8596c7e2a",
+    "docs/screenshots/network-services/review/04-contact.png": "66559d5529bf3d33d3a0812b5d166aa21fb13e9596204c729ed2c910a1615fc7",
+    "docs/screenshots/network-services/review/05-contact.png": "5f21bc4289ce8176c7a19bbb47507edaa31b5c5631846656838e66bafb5454ad",
+    "docs/screenshots/network-services/review/06-contact.png": "5f1f9618cdf60366e6ca87bd3eba3fbb38bd474cab2068fd95ef87fbedd95ce0"
+  }
+}

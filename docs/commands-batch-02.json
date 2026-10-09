@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-04",
+  "results": [
+    {
+      "name": "CLI example 3",
+      "result": "PASS",
+      "output": [
+        "2",
+        "previous status: 1"
+      ]
+    },
+    {
+      "name": "CLI example 4",
+      "result": "PASS",
+      "output": [
+        "default: 0",
+        "pipefail: 1"
+      ]
+    },
+    {
+      "name": "Ubuntu distribution/kernel/systemd/package observations",
+      "result": "PASS",
+      "context": "Ubuntu 24.04 / WSL2; systemd active"
+    },
+    {
+      "name": "Windows read-only example 1",
+      "result": "PASS",
+      "outputRetained": false
+    },
+    {
+      "name": "Windows read-only example 2",
+      "result": "PASS",
+      "outputRetained": false
+    },
+    {
+      "name": "Windows read-only example 3",
+      "result": "PASS",
+      "outputRetained": false
+    },
+    {
+      "name": "Windows read-only example 4",
+      "result": "PASS",
+      "outputRetained": false
+    },
+    {
+      "name": "Windows Server role inventory",
+      "result": "NOT EXECUTED",
+      "reason": "No Windows Server VM provided; ServerManager syntax verified against Microsoft documentation; tabletop lab is explicit."
+    }
+  ]
+}

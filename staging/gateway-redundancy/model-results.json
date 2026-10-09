@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-09",
+  "result": "PASS",
+  "presets": 36,
+  "independentCases": 687,
+  "scope": "Supplied settled election/history/readiness and declared GLBP ownership; no device/packet/timer execution.",
+  "mountedTests": "Stub DOM invalid scenario persists through field edits, immediate invalid integers/history, inert text and Reset; real-browser verification remains primary acceptance."
+}
